@@ -1,6 +1,7 @@
 """Інтэрфейс рухавіка і тое, што агульнае для ўсіх рухавікоў.
 
-Рухавік — модуль у belloc/engines/ з такімі імёнамі:
+Рухавік — папка belloc/engines/<рухавік>/ (common.py, extract.py, apply.py, фарматы);
+яе __init__.py выстаўляе такія імёны:
 
   NAME = "unity-localization"         — значэнне "engine" у game.json
   SECTION = "unity"                   — секцыя game.json з наладамі рухавіка
@@ -20,31 +21,13 @@ apply — адзін код для `belloc patch`, усталёўшчыка exe 
 аднолькавы байт у байт. Payload — JSON: толькі наш тэкст і апісанне гульні, ні
 радка з файлаў гульні.
 
-Новы рухавік — новы модуль тут і радок у ENGINES (engines/__init__.py).
+Новы рухавік — новая папка з той жа раскладкай і радок у ENGINES (engines/__init__.py).
+Payload — payload.py.
 """
 from __future__ import annotations
 
-import json
-import os
-
-from .. import tables
 from ..config import Loc
-
-SCHEMA = 1
-
-
-def build_payload(loc: Loc, engine) -> dict:
-    """Payload гульні: агульныя палі + палі рухавіка."""
-    meta_path = os.path.join(loc.source, "meta.json")
-    meta = {}
-    if os.path.exists(meta_path):
-        with open(meta_path, encoding="utf-8") as f:
-            meta = json.load(f)
-    p = {"schema": SCHEMA, "engine": engine.NAME, "game_id": loc.id, "game": loc.name,
-         "steam_appid": loc.steam_appid, "steam_buildid": meta.get("steam_buildid"),
-         "strings": {t: rows for t, rows in tables.translation_by_key(loc).items() if rows}}
-    p.update(engine.payload(loc))
-    return p
+from ..payload import build_payload  # noqa: F401 — base.build_payload для выклікаў
 
 
 def patch(loc: Loc, engine, out: str | None = None):

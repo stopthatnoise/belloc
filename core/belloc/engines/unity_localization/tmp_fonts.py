@@ -26,7 +26,7 @@ import UnityPy
 from PIL import Image
 from UnityPy.enums import TextureFormat
 
-from .bundles import monobehaviours, save
+from ..unity.bundles import monobehaviours, save
 
 ALIASES = {"і": "i", "І": "I"}          # новы сімвал → гліф лацінкі
 COMPOSE = {"ў": ("у", "й", "и"),        # новы → (аснова, донар брэвіса, донар без яго)

@@ -8,7 +8,7 @@
 пасля выдалення `\\n` і прабелаў без уліку рэгістра; ID — толькі для
 `LocalizeTextById`.
 
-Канфіг (секцыя "textasset_csv") і вынік extract — у engines/unity_textasset_csv.py.
+Канфіг (секцыя "textasset_csv") і вынік extract — у engines/unity_textasset_csv/__init__.py.
 """
 from __future__ import annotations
 
@@ -21,7 +21,7 @@ import struct
 import UnityPy
 
 from . import scene_text
-from .bundles import save
+from ..unity.bundles import save
 
 # CsvReader гульні (Assembly-CSharp): коска па-за двукоссямі; радок, дзе
 # двукоссяў няцотна, — працяг на наступным фізічным радку
