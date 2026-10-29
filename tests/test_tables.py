@@ -54,7 +54,8 @@ class TablesTest(unittest.TestCase):
         data = b""
         for root, _, files in os.walk(self.game):
             for f in files:
-                data += open(os.path.join(root, f), "rb").read()
+                with open(os.path.join(root, f), "rb") as fh:
+                    data += fh.read()
         return data.decode("utf-8")
 
     def translate(self, table, key, bel, note=""):
@@ -88,7 +89,8 @@ class TablesTest(unittest.TestCase):
 
     def test_crlf_kept(self):
         self.translate("dlg/intro", "1", "Радок з\r\nCRLF")
-        raw = open(tables.table_path(self.loc, "dlg/intro"), "rb").read()
+        with open(tables.table_path(self.loc, "dlg/intro"), "rb") as f:
+            raw = f.read()
         self.assertIn("Радок з\r\nCRLF".encode("utf-8"), raw)
         self.assertNotIn(b"\r\n" + b"1,", raw)                # канцы радкоў CSV — \n
 
@@ -123,7 +125,8 @@ class TablesTest(unittest.TestCase):
         out = os.path.join(self.loc.build, "pairs.json")
         with redirect_stdout(io.StringIO()):
             tables.pairs(self.loc, out)
-        self.assertEqual(json.load(open(out, encoding="utf-8")), {"strings": {"Quit": "Выйсці"}})
+        with open(out, encoding="utf-8") as f:
+            self.assertEqual(json.load(f), {"strings": {"Quit": "Выйсці"}})
         self.assertTrue(out.startswith(self.loc.local))       # тэкст гульні — толькі лакальна
 
 
