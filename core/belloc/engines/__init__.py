@@ -6,6 +6,7 @@ import importlib
 ENGINES = {
     "unity-localization": "unity_localization",
     "glacier": "glacier",
+    "unity-textasset-csv": "unity_textasset_csv",
 }
 
 
