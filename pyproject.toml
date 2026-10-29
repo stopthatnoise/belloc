@@ -12,6 +12,7 @@ requires-python = ">=3.12"
 lint = ["spylls==0.1.7"]                                   # hunspell без праграмы hunspell (Windows)
 unity = ["UnityPy==1.25.4", "numpy==2.5.4", "Pillow", "fonttools"]   # fonttools — дынамічныя TTF
 glacier = ["lz4", "numpy==2.5.4"]                          # .rpkg: LZ4 і XTEA масівам
+unreal = ["pyooz", "pycryptodome", "fonttools"]           # .pak: Oodle, AES; кірыліца ў шрыфты
 
 [tool.setuptools.packages.find]
 where = ["core"]

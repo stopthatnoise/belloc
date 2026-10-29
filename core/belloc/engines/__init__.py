@@ -8,6 +8,7 @@ ENGINES = {
     "glacier": "glacier",
     "unity-textasset-csv": "unity_textasset_csv",
     "csv-folder": "csv_folder",
+    "unreal-locres": "unreal_locres",
 }
 
 
