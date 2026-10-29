@@ -16,6 +16,12 @@
   fantasy-report  тэрміны «Дапаможніка для перакладчыкаў фэнтэзі» ў гульні → build/fantasy.md
   batch      пачкі для паралельнай працы: batch status|export|lint|apply <гульня> [пачкі…]
 
+Гульня (рухавік — "engine" у game.json, belloc/engines/):
+  extract    файлы гульні → local/<гульня>/source/
+  patch      пераклад у файлы гульні (арыгіналы — .orig побач); --out ПАПКА — вынік
+             туды, гульня не чапаецца; --restore — вярнуць арыгіналы
+  fonts      якія літары ёсць у шрыфтах гульні (--text: ці хапае для перакладу)
+
 Без гульні:
   list                  спіс гульняў
   dicts [--force] [імёны…]  спампаваць слоўнікі ў local/dicts/
@@ -88,6 +94,15 @@ def main(argv=None):
     p = with_loc("fantasy-report", "тэрміны фэнтэзі ў гульні → даклад")
     p.add_argument("--out", help="іншы файл даклада")
     p.add_argument("--examples", type=int, default=5, help="колькі радкоў паказваць на тэрмін")
+    p = with_loc("extract", "файлы гульні → source/")
+    p.add_argument("--out", help="іншая папка (для праверак)")
+    # --restore чапае гульню, --out — не: разам іх не даём
+    p = with_loc("patch", "пераклад у файлы гульні")
+    g = p.add_mutually_exclusive_group()
+    g.add_argument("--restore", action="store_true", help="вярнуць арыгіналы ў гульню")
+    g.add_argument("--out", help="запісаць вынік у гэтую папку, не чапаючы гульню")
+    p = with_loc("fonts", "літары ў шрыфтах гульні")
+    p.add_argument("--text", action="store_true", help="ці пакрываюць шрыфты ўсе літары перакладу")
     p = sub.add_parser("batch", help="пачкі для паралельнай працы")
     p.add_argument("action", choices=["status", "export", "lint", "apply"])
     p.add_argument("loc")
@@ -160,6 +175,20 @@ def main(argv=None):
     elif args.cmd == "glossary":
         return glossary.run(loc.glossary, os.path.join(loc.build, "glossary.md"),
                             loc.name, args.check)
+    elif args.cmd in ("extract", "patch", "fonts"):
+        from . import engines
+        from .engines import base
+        engine = engines.get(loc.engine)
+        if args.cmd == "extract":
+            engine.extract(loc, args.out)
+        elif args.cmd == "patch" and args.restore:
+            base.restore(loc, engine)
+        elif args.cmd == "patch":
+            base.patch(loc, engine, args.out)
+        elif not hasattr(engine, "fonts_report"):
+            raise SystemExit(f"{loc.engine}: справаздачы па шрыфтах няма")
+        else:
+            engine.fonts_report(loc, tables.used_chars(loc) if args.text else None)
     return 0
 
 

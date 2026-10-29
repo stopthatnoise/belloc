@@ -8,5 +8,9 @@ version = "0.1.0"
 description = "Беларускія пераклады гульняў і інструменты для іх"
 requires-python = ">=3.12"
 
+[project.optional-dependencies]
+lint = ["spylls==0.1.7"]                                   # hunspell без праграмы hunspell (Windows)
+unity = ["UnityPy==1.25.4", "numpy==2.5.4", "Pillow"]
+
 [tool.setuptools.packages.find]
 where = ["core"]
