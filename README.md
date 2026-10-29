@@ -50,6 +50,24 @@ local/           (не ў git) тэксты і файлы вашай копіі 
 першакрыніц, кожны — пад сваёй ліцэнзіяй. Калі слоўнік нам дапамог або мы
 знайшлі ў ім памылку — пішам аўтарам: так ён становіцца лепшым для ўсіх.
 
+## Чужы код, на які мы абапіраемся
+
+| праект | аўтары | што ў нас |
+|---|---|---|
+| [TTG Tools](https://github.com/HeitorSpectre/TTG-Tools) (GPL-3.0) | Den Em, Pashok6798; форк HeitorSpectre | разбор `.landb`, `.font`, `.d3dtx`, Lua Telltale — па іх кодзе (`core/belloc/telltale/`) |
+| [ooz](https://github.com/powzix/ooz) праз [pyooz](https://github.com/zao/pyooz) (GPL-3.0) | Powzix; zao | распакоўка Oodle ў паках Unreal |
+| [UnityPy](https://github.com/K0lb3/UnityPy) (MIT) | K0lb3 | чытанне і запіс файлаў Unity |
+| [fontTools](https://github.com/fonttools/fonttools) (MIT) | праект fontTools | беларускія літары ў шрыфтах |
+
+## Ліцэнзія
+
+- **Код** (`core/`, `installer/`, `tests/`) — [GPL-3.0-or-later](LICENSE). Частка кода
+  зроблена па TTG Tools і ooz, якія самі пад GPL, таму і ўвесь belloc — пад GPL:
+  змены і форкі таксама застаюцца адкрытымі.
+- **Пераклады** (`games/`) — [CC BY-SA 4.0](games/LICENSE.md): можна браць і
+  змяняць, пазначыўшы аўтарства і захаваўшы ліцэнзію.
+- Гульні, іх тэкст і афіцыйныя пераклады належаць іх аўтарам і тут не публікуюцца.
+
 ## Аўтары
 
 Кіраўнік праекта: Віталь Аляхновіч.
