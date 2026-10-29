@@ -7,6 +7,7 @@ ENGINES = {
     "unity-localization": "unity_localization",
     "glacier": "glacier",
     "unity-textasset-csv": "unity_textasset_csv",
+    "csv-folder": "csv_folder",
 }
 
 
