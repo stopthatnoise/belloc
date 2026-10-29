@@ -5,6 +5,7 @@ import importlib
 
 ENGINES = {
     "unity-localization": "unity_localization",
+    "glacier": "glacier",
 }
 
 
