@@ -1,0 +1,56 @@
+key,src_hash,bel,note
+Hint_Crouch,b97f2dcbf9579563,Прысесці,
+Hint_Break,23f9d58a1ed30349,{input_0} Некаторыя прадметы можна разбіць ударамі,
+Hint_Dodge,80ee0f5a655a46d6,"Націсніце {input_0}, каб <color=white><b>ухіліцца</b></color> ад перашкод",
+Hint_Jump_Climb,513e615d77867a10,"Утрымлівайце ўверх і скокніце, каб ухапіцца за выступ",
+Hint_Keyring,8784fd04cb102819,Аб'ядноўвайце ключы з <color=white><b>вязкай ключоў</b></color>,
+Hint_Phone,c0b20014c1c1da9e,"Выкарыстоўвайце <color=white><b>срэбныя манеты</b></color>, каб тэлефанаваць",
+Hint_Save,18717f0b873db554,"Выкарыстоўвайце <color=white><b>тэлефон</b></color>, каб захаваць прагрэс",
+Hint_RangedAim,374166eaf5ac04b4,<color=white><b>Прыцэліцца</b></color>,
+Hint_Map,1b8fa2d83fa9174f,Адкрыць <color=white><b>Карту</b></color>,
+Hint_MeleeEquip,8de10cdac38d2589,"Адкрыйце <color=white><b>Інвентар</b></color>, каб экіпіраваць зброю блізкага бою",
+Hint_MeleeAttack,bf1f41e41912f97a,"Націсніце {input_0}, каб <color=white><b>атакаваць</b></color> зброяй блізкага бою",
+Hint_Run,38dbfba74e38c053,"<b>Утрымлівайце</b>, каб <color=white><b>бегчы</b></color>",
+Hint_RangedAttack,63e2ad1b9081dcf3,"<color=white><b>Страляйце</b></color> кнопкай {input_1}, утрымліваючы <color=white><b>Прыцэліцца</b></color> {input_0}",
+Hint_Inventory,ef65153368c285c7,Адкрыць <color=white><b>Інвентар</b></color>,
+Hint_Flashlight,56b92f6d242b1cf8,Уключыць/выключыць <color=white><b>ліхтарык</b></color>,
+Hint_Lore,a7acd07ff0236053,Глядзіце ва ўкладцы «Нататкі»,
+Hint_Climb,87f85a677897390c,"Націсніце <color=white>{ManualInput:ClimbUp/Display:Уверх}</color> або {input_0}, каб залезці","вычытана: Display: перакладзены (Уверх/Уніз), як у RU; лінтэр подпіс пасля Display: не правярае"
+Hint_Jump,9ee0ca3e24d60ea0,Скокнуць,
+Hint_Climb_Object,3bd8c575d7006bfa,"Утрымлівайце ўверх, каб караскацца па перашкодах",
+New Entry,36ecdcef4ccace9c,"Утрымлівайце ўверх і скокніце, каб залезці",
+Hint_Camera,47ebce8d6d5b5a7b,"Выкарыстоўвайце <color=white><b>фотаапарат</b></color>, каб адзначаць на карце тое, што хочаце запомніць",
+Hint_Block,81f6edd999734d1e,"Утрымлівайце, каб блакіраваць",block → засланіцца (не «блакаваць»)
+Hint_Ladder,b540d7884e285763,"Утрымлівайце ўверх або ўніз, каб лезці па драбінах","ladder → драбіны (лесвіца = stairs, Map_Stairs)"
+Hint_ThrowSecondary,2018f76050f52148,<color=white><b>Кідайце</b></color> экіпіраваныя бутэлькі падчас прыцэльвання,
+Hint_MeleeBlock,3ff40c761209e226,<color=white><b>Блакіраваць</b></color> зброяй блізкага бою,
+Hint_Dig,06817be5ba9e4de0,<color=white><b>Капаць</b></color> рыдлёўкай,
+hint_drop_down,063e524c539dd596,"Націсніце <color=white>{ManualInput:ClimbDown/Display:Уніз}</color>, каб павіснуць на выступе","вычытана: Display: перакладзены (Уверх/Уніз), як у RU; лінтэр подпіс пасля Display: не правярае"
+Hint_Reload,143910d35d1e391f,"Націсніце {input_0}, каб перазарадзіць зброю, пакуль утрымліваеце прыцэл {input_1}",
+Hint_Phone_DialNumber,6ae62a808e8555e3,"Потым набярыце нумар з <color=white>тэлефоннай кнігі</color> і націсніце <color=white>кнопку «Выклік»</color>, каб захаваць прагрэс",
+Hint_Phone_InsertCoin,80b15293037fb7a8,Спачатку кіньце грошы ў таксафон: выберыце <color=white>шчыліну для манет</color>,
+Hint_ShootingRange_Reload,2193cf5516156579,"Націсніце {input_0}, каб перазарадзіць зброю падчас прыцэльвання",
+Hint_ShootingRange_ReloadActive,231a82ee63e661c5,"Націсніце {input_0} яшчэ раз, калі з'явіцца падказка, каб даслаць наступны патрон",
+Hint_ShootingRange_Shoot,d47c5977b6752ebc,"Націсніце {input_0}, каб стрэліць",
+Hint_QuickHeal,f0d47c6303960c17,Хуткае лячэнне,
+hint_Stealth,d7447b2904a49d14,"Рухайцеся павольна, каб вас не заўважылі",
+Hint_FirstArtifact_Text,9d02735c4227cde4,"<b><color=white>Памятныя рэчы</b></color> — асаблівыя прадметы: калі іх экіпіраваць, яны даюць пасіўныя бонусы
+
+Спачатку актыўнай можа быць толькі адна <b><color=white>памятная рэч</b></color>",
+Hint_Poisoned,253fa625fa1e2c51,"Пакуль дзейнічае <b>атручэнне</b>, здароўе паступова падае, а запас вынослівасці памяншаецца.",
+Hint_NoArtifactSlots_Text,a24bbe3bc9a16a2b,"Каб экіпіраваць больш <b>памятных рэчаў</b>, трэба адкрыць новыя ячэйкі. Шукайце <b>аскепкі</b>, каб павялічыць колькасць ячэек для памятных рэчаў",
+Hint_FirstArtifact_Title,0fdac9e4a161363b,Памятныя рэчы,
+Hint_Poisoned_Title,6dc21afe4edec3c1,Атручэнне,
+Hint_Repair_Title,c9e140d9cd246fc2,Рамонт зброі,
+Hint_NoArtifactSlots_Title,22998372ba12855c,Пасудзіны для памятных рэчаў,
+MenuHint_ItemBoxStorage_Title,a69c4dece144a46e,Сховішча,
+MenuHint_ItemBoxStorage_Description,eba3da076c49dc21,"Кладзіце прадметы ў сховішча, каб скарыстацца імі пазней. 
+
+Пакладзенае сюды можна забраць з любога сховішча ў гульні.",
+Hint_QuickItemUse,56b93e5999e222e6,Перабірайце прадметы кнопкамі {input_0} {input_1} і выкарыстоўвайце кнопкай {input_2},
+Hint_MeleeChargeAttack,194c682efa177df8,"Утрымлівайце {input_0} і адпусціце, каб правесці <color=white>зараджаную атаку</color>",
+Hint_RangedWeaponSwap,d2d01c625bf0bb94,{input_0} — <color=white><b>змяніць</b></color> выбраную <color=white><b>агнястрэльную зброю</b></color>,
+Hint_MainMap,799f59d04287f0a9,"Націсніце {input_0} на хуткай карце, каб пераключыцца на <color=white><b>асноўную карту</b></color>",
+Hint_MapChangeFloors,4d1d26678bc58096,Пераключайце паверхі кнопкамі {input_0} і {input_1},
+Hint_Poison,0dca27f5d24581ea,"Пакуль дзейнічае <color=white><b>атручэнне</b></color>, здароўе паступова падае, а вынослівасць памяншаецца",
+Hint_StandingVerticalJump,624c9dbe563dabdc,"Утрымлівайце <color=white>{ManualInput:ClimbUp/Display:Уверх}</color> і націсніце {input_0}, не рухаючыся, каб скокнуць з месца","вычытана: Display: перакладзены (Уверх/Уніз), як у RU; лінтэр подпіс пасля Display: не правярае"

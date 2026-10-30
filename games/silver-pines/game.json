@@ -1,0 +1,32 @@
+{
+ "name": "Silver Pines",
+ "engine": "unity-localization",
+ "steam_appid": 2333000,
+ "source_lang": "en",
+ "hint_lang": "ru",
+ "credits": "Нейрапераклад: мадэль Claude (Anthropic). Кіраўнік праекта: Віталь Аляхновіч.",
+ "unity": {
+  "data_dir": "Carpenter_Data",
+  "bundles": "Carpenter_Data/StreamingAssets/aa/StandaloneWindows64",
+  "extract_langs": [
+   "en",
+   "ru"
+  ],
+  "preview_locale": "ru",
+  "font_bundles": [
+   "localization-assets-russian(ru)_assets_all.bundle",
+   "fonts-russian_assets_all.bundle"
+  ]
+ },
+ "release": {
+  "title": "Беларускі пераклад Silver Pines",
+  "version": "1.1",
+  "exe": "Carpenter.exe",
+  "file": "SilverPines_BE",
+  "language_name": "Беларуская",
+  "replaces": "Русский",
+  "menu": "Налады → Мова",
+  "contents": "Перакладзена ўсё, што ёсць у моўных табліцах гульні: дыялогі, нататкі,\nпрадметы, меню, падказкі (усяго радкоў: {strings}). Надпісы, намаляваныя\nна тэкстурах (шыльды, коміксы), застаюцца англійскімі.",
+  "how": "Ён змяняе тры\nфайлы ў Carpenter_Data/StreamingAssets/aa/StandaloneWindows64: табліцы\nрускай мовы (у іх запісваецца беларускі тэкст) і два файлы шрыфтоў (у іх\nдадаюцца літары І і Ў). Арыгіналы захоўваюцца побач з канчаткам .orig."
+ }
+}

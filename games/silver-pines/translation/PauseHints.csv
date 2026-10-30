@@ -1,0 +1,89 @@
+key,src_hash,bel,note
+PauseHint_Phones_Title,157894d71623e791,Тэлефоны і захаванне,
+PauseHint_Phones_Body,9081d9535be67f35,"Тэлефонам можна <color=white><b>захаваць прагрэс</b></color>, а таксама патэлефанаваць людзям, з якімі вы пазнаёміцеся.
+
+Званок з таксафона каштуе <color=white><b>$1</b></color>.",
+PauseHint_EquippingFlashlight_Title,2fb96b22c2f11ee4,Уключэнне ліхтарыка,
+PauseHint_EquippingFlashlight_Body,f1228ef4fe6eaa47,"Каб уключыць ліхтарык, адкрыйце <color=white><b>Інвентар</b></color>.
+
+У цемры ўключаны ліхтарык моцна паляпшае бачнасць, але пакуль ён гарыць, расходуецца зарад.
+
+Каб падзарадзіць ліхтарык, аб'яднайце яго з <color=white><b>батарэйкамі</b></color>.",
+PauseHint_Dropdown_Title,be42714de2557244,Спуск,
+PauseHint_Dropdown_Body,f721d773f02d2756,"Спускайцеся з выступаў, каб не атрымаць шкоду ад падзення.
+
+Націсніце <color=white><b>Уніз</b></color>, каб павіснуць на выступе. Потым яшчэ раз — каб саскочыць.",
+PauseHint_Storage_Title,35f168fbc834293f,Сховішча,
+PauseHint_Storage_Body,3c46ccc1a71339e5,"Каб перакладваць прадметы паміж інвентаром і сховішчам, выкарыстоўвайце дзеянне <color=""white>Перамясціць</color>.
+
+Месца ў інвентары вельмі мала, бярыце толькі самае неабходнае.",
+PauseHint_Attacking_Melee_Title,dbacc8ccae71d4dc,Атакі блізкага бою,
+PauseHint_Attacking_Melee_Body,a1f84ab838eb8d0e,"Зброяй блізкага бою можна атакаваць двума спосабамі.
+
+<color=white><b>Націсніце</b></color> {input_0}, каб хутка ўдарыць.
+
+<color=white><b>Утрымлівайце</b></color> {input_0}, каб замахнуцца і ўдарыць зверху.",
+PauseHint_Equipping_Melee_Title,114d10fd009e0055,Экіпіроўка зброі блізкага бою,
+PauseHint_Equipping_Melee_Body,99733b2dae8a328f,"Адкрыйце <color=white><b>Інвентар</b></color>, каб экіпіраваць зброю блізкага бою, напрыклад канцылярскі нож.
+
+Выберыце зброю і выберыце дзеянне <color=white><b>Экіпіраваць</b></color>.",
+PauseHint_Equipping_Firearm_Title,89068c155ac9021c,Экіпіроўка зброі далёкага бою,
+PauseHint_Equipping_Firearm_Body,484e360df7407a81,"Адкрыйце <color=white><b>Інвентар</b></color>, каб экіпіраваць агнястрэльную зброю.",
+PauseHint_Keyring_Title,4a8cbbf9b0b99d53,Вязка ключоў,
+PauseHint_Keyring_Body,b463ca3a9b4060e7,"Ключы з інвентару можна <color=""white>аб'яднаць</color> з вязкай, каб вызваліць месца ў інвентары.
+ 
+<color=""white>Выкарыстайце</color> вязку, каб дастаць ключы, што ў ёй захоўваюцца.",
+PauseHint_Dodge_Title,ca0a8c8dd2d87259,Ухіленне ад ворагаў,
+PauseHint_Dodge_Body,53c6c7503aa19bac,"<color=white><b>Націсніце</b></color> {input_0}, рухаючыся ў які-небудзь бок, каб праскочыць міма ворагаў.",
+PauseHint_ReloadingWeapons_Title,4c6c9cffd5b9e274,Перазарадка зброі,
+PauseHint_ReloadingWeapons_Body,6b30650153e22351,"Націсніце <color=white><b>Перазарадка</b></color> падчас прыцэльвання, каб пачаць перазараджаць.
+
+Націсніце <color=white><b>Перазарадка</color></b> яшчэ раз, калі індыкатар у вылучанай зоне, каб уставіць патрон.",
+PauseHint_InputLabel_Attack,4cd548f3cc29cf9c,Атака,
+PauseHint_InputLabel_Reload,bdc090ec61e3fcfc,Перазарадка,
+PauseHint_InputLabel_Dodge,53e75daf07ad06bd,Ухіленне,
+PauseHint_Attacking_Ranged_Title,3c89b302f9fd687b,Атакі далёкага бою,
+PauseHint_Attacking_Ranged_Body,94ce973e4c93cc21,"Утрымлівайце {input_0}, каб прыцэліцца, а потым націсніце {input_1}, каб стрэліць.
+
+Цэліцца можна, толькі калі зброя далёкага бою <color=white><b>экіпіраваная</b></color>.",
+PauseHint_InputLabel_Aim,28427fa78a230e42,Прыцэльванне,
+PauseHint_Melee_Durability_Body,506ea2a49eaf5e07,"Зброя блізкага бою зношваецца ад удараў і з часам ламаецца.
+
+Зламаная зброя значна менш дзейсная. 
+
+Зброю можна адрамантаваць, аб'яднаўшы яе з рамонтнымі прадметамі, напрыклад з <b><color=white>армаваным скотчам</color></b>.",
+PauseHint_Melee_Durability_Title,e5fb6eafc4b6f3dd,Трываласць зброі,
+PauseHint_InputLabel_Secondary,d50594218af63108,Дадатковы прадмет,вычытана: скарочана ў параўнанні з RU — подпіс кнопкі
+PauseHint_Using_Secondary_Title,aa37351fc52224e0,Дадатковыя і кідальныя прадметы,
+PauseHint_Using_Secondary_Body,2fa756ce951d991d,"Утрымліваючы <color=white><b>Прыцэльванне</b></color>, націсніце <color=white><b>Дадатковае дзеянне</b></color>, каб скарыстаць (кінуць) прадмет.",
+PauseHint_LoreReader_Title,9025d8de731fe2b8,Нататкі па справе,
+PauseHint_LoreReader_Body,8878975996ce5e33,Знойдзеныя важныя дакументы трапляюць на карту — іх можна перачытаць пазней.,
+PauseHint_Artifacts_Title,0fdac9e4a161363b,Памятныя рэчы,
+PauseHint_Artifacts_Body,ccb17ec944b69e64,"Афіцыянтка Джулі дапаможа апазнаць <b>памятныя рэчы</b>, якія вы знойдзеце. 
+
+Апазнаныя памятныя рэчы можна экіпіраваць — яны даюць розныя ўзмацненні. 
+
+Каб адкрыць больш <b>ячэек для памятных рэчаў</b>, прыносьце Джулі знойдзеныя <b>пасведчанні асобы</b>.",ТЭРМІН: Julee → Джулі; Identify Documents (памылка EN) = Identity Documents → пасведчанні асобы (UIGame)
+PauseHint_CombineHealing_Title,b192eeaa14adbf91,Аб'яднанне прадметаў,
+PauseHint_CombineHealing_Body,023519519b7fbdc6,"Аб'ядноўвайце прадметы на экране інвентару. 
+
+Аб'яднаныя лячэбныя прадметы дзейнічаюць мацней і займаюць менш месца ў інвентары.",
+PauseHint_Camera_QuickItems_Title,03494b0d1f803522,Фотаапарат,
+PauseHint_Camera_QuickItems_Body,f8f98ef249e8d329,"Фотаапаратам можна рабіць здымкі падчас вандровак. Здымкі прымацоўваюцца да карты ў тым месцы, дзе іх зрабілі. Часам варта адзначыць месца, каб вярнуцца туды пазней.
+
+Націсніце {input_0}, каб выкарыстаць выбраны прадмет.",
+PauseHint_InputLabel_ItemWheel,8ae55f69b29ef34a,Хуткі выбар прадмета,
+PauseHint_ShovelDigging_Title,bf2bc5c90fac6d2c,Капанне,
+PauseHint_ShovelDigging_Body,d4248680796c161e,"Рыдлёўкай можна шукаць прадметы, закапаныя ў зямлю.",
+Hint_Repair,506ea2a49eaf5e07,"Зброя блізкага бою зношваецца ад удараў і з часам ламаецца.
+
+Зламаная зброя значна менш дзейсная. 
+
+Зброю можна адрамантаваць, аб'яднаўшы яе з рамонтнымі прадметамі, напрыклад з <b><color=white>армаваным скотчам</color></b>.",
+Hint_CombineHealing,c5a509903245d6e8,"Аб'ядноўвайце прадметы праз пункт «Аб'яднаць» у меню прадмета.
+
+Аб'ядноўвайце травы з бутэлькамі, каб атрымаць лячэбныя <color=white><b>тонікі</b></color>.",
+PauseHint_QuickUseItem_Title,68d170443b8611ce,Хуткае выкарыстанне,
+PauseHint_QuickUseItem_Description,ba23ee350626d67f,"Націсніце {input_0} і {input_1}, каб выбраць прадмет, а потым {input_2}, каб яго выкарыстаць.
+
+Так можна хутка ўжываць, напрыклад, лячэбныя прадметы, не адкрываючы інвентар.",

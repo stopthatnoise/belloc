@@ -1,0 +1,66 @@
+key,src_hash,bel,note
+AvailableCoins,d53c5ff047a9f201,Даступныя сродкі,
+PhoneBook_Addresses,76179aafc43c51f3,Адрасы,
+PhoneBook_QuickDial,07adeea449bc01b7,Націсніце для хуткага набору,
+VendingMachine_InsufficientCredit,70f744c899c8f630,Не хапае грошай,
+VendingMachine_InvalidEntry,54a0e8c17ebb21a1,Памылка,
+VendingMachine_SuccesfulPurchase,1cfb63c7081d8b10,Выбрана: {0},
+VendingMachine_AttractText,f107cd84b14f1c9e,КІНЬЦЕ МАНЕТЫ,
+VendingMachine_SelectedItem,2de33ddf29a9e00f,Выбраны тавар,
+VendingMachine_CoinReturn,15e31597794efac4,ВЯРТАННЕ МАНЕТ,
+FuseBox_FuseSlot_40A,ad21fd267473fa86,Тут ёсць гняздо для засцерагальніка на 40 А.,
+FuseBox_FuseSlot_20A,38caa660f8cec592,Тут ёсць гняздо для засцерагальніка на 20 А.,
+Phone_ReturnCoins_Empty,45236a796de7884d,Пуста.,
+Phone_ReturnCoins_OneCoin,e36abb8735e1d82e,Унутры заставалася адна манета.,
+Phone_ReturnCoins_MultipleCoins,133751c5bac591cb,Унутры заставалася некалькі манет.,
+VHS_Shelf_RearViewLies,04f2bd4960132468,"Люстэрка хлусіць
+Забойстваў: 0","назвы фільмаў на VHS — вольна, пад тэму дарогі/машын"
+VHS_Shelf_FInaleLastExit,921e3b1e2d41522d,"Фінал: апошні з'езд
+Забойстваў: 2",
+VHS_Shelf_DriverKills,1fb7a55fd647aec4,"Кіроўца забівае
+Забойстваў: 6",
+VHS_Shelf_RedLightDeadNight,1b51f5f04a863083,"Чырвонае святло, мёртвая ноч
+Забойстваў: 0",
+VHS_Shelf_HitchhikersRide,33b92619c6fd211b,"Паездка аўтаспынам
+Забойстваў: 8",
+VHS_Shelf_MidnightCollision,63a95784ea6ef7af,"Апоўначнае сутыкненне
+Забойстваў: 22",
+VHS_Shelf_TheFirstPain,76d5e34f4d80b3a8,"Першы боль
+Забойстваў: 4",
+VHS_Shelf_EngineRoarsYouDie,4f033ad4b3278193,"Рыкае матор — ты паміраеш
+Забойстваў: 63",
+VHS_Shelf_UnderARedRainbow,e2f400714ec46330,"Пад чырвонай вясёлкай
+Забойстваў: 5",
+VHS_Shelf_NoBrakesNoMercy,7aff094e144cc2c8,"Без тармазоў, без літасці
+Забойстваў: 0",
+Apartment_Supervisor_Wall_ItCameForTheRest,3e7fcd630db32f2b,Яно прыйшло па астатніх,
+WashingMachine_Tokens,f8fee9d086d3e083,4 жэтоны за пранне,
+Garland_InLovingMemory,8f70e5d39dc6ad44,Светлай памяці,
+Garland_FatherJacobFoster,699f78cdf9b00a49,Айцец Джэйкаб Фостэр,
+CogsPuzzle_InsertCrank,405b1e70d946ec67,"Устаўце корбу, каб падаць ток",
+CogsPuzzle_SluiceGate,b5a5c6a2703c6bb9,Шлюз,
+NewspaperStand_PleasePayHere,103134481c5b948f,Плаціце тут,
+Sewer_Pressure_Warning,86f56fe8221f029d,УВАГА,
+SportJersey_PlayerOfTheYear,3c0e8e58cc753447,"Гулец года
+Выпуск 67-га",
+Calendar_DateOctober,2b730eca87282a63,Кастрычнік 1993,
+MotelGateKeypad_Instructions,934652dce41d62d3,Інструкцыя,
+MotelGateKeypad_EnterGuestNumber,7cf50916c84e79bf,"Увядзіце нумар госця, каб адчыніць браму",
+MotelGateKeypad_HaveANiceStay,67c4d03e031bc817,Прыемнага адпачынку!,
+MotelFusebox_Checkin,adc719587244723b,Рэгістрацыя,
+MotelFusebox_GameRoom,84d6fdd7697f281b,Гульнявая зала,
+MotelFusebox_Shop,d00aae6b7fbf77a4,Крама,
+NightmareRotaryPhone_Reset,daee7606b339f3c3,Скід,
+Studio_CablePanel_LineOut,68eb805805a7fda7,Аўдыя / лінейны выхад,
+Studio_CablePanel_LineIn,a00e549ff1a0ffa8,Аўдыя / лінейны ўваход,
+ApartmentBuzzer_UtilityRoom,2ddf0472badb531a,Падсобка,
+Phone_Reset,daee7606b339f3c3,Скід,
+Phone_Call,d6e645b7d2b2da64,Выклік,
+Phone_InsertCoin,d2451241dec7d6f0,Кіньце манету,
+Phone_DialNumber,6bbc19b981ffc660,Набярыце нумар,
+VendingMachine_Instructions,ba334ae69bc18aea,"Інструкцыя
+Кіньце манеты ўнізе
+Увядзіце літару і лічбу
+Націсніце «Купіць» і забярыце тавар!",
+VendingMachine_Buy,64e3cb0e4960ba69,Купіць,
+VendingMachine_Cancel,19766ed6ccb2f4a3,Адмена,

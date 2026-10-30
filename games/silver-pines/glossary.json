@@ -1,0 +1,771 @@
+{
+  "_about": "Гласарый уласных назваў Silver Pines. bel — наш варыянт (пуста = яшчэ не вырашана), ru — як у афіцыйным рускім перакладзе (толькі падказка), key — ключ у табліцы гульні. gender: м/ж. note — тлумачэнні. Брэнды (Conmag, OpCo, Thelend, Omega, Terminal Drive) пішам лацінкай.",
+  "characters": {
+    "Jonas": {
+      "bel": "Джонас",
+      "ru": "Джонас",
+      "key": "Characters/DiggingMan",
+      "gender": "м",
+      "note": "ён жа The Digging Man; у ключах Dialogue — _DiggingMan"
+    },
+    "Phone": {
+      "bel": "Тэлефон",
+      "ru": "Телефон",
+      "key": "Characters/PhoneSpeakerSettings, Characters/Phone"
+    },
+    "Phone Operator": {
+      "bel": "Тэлефаніст",
+      "ru": "Телефонист",
+      "key": "Characters/PhoneOperatorSettings",
+      "gender": "м"
+    },
+    "Red Walker": {
+      "bel": "Рэд Уокер",
+      "ru": "Рэд Уокер",
+      "key": "Characters/PlayerCharacterSpeakerSettings",
+      "gender": "м",
+      "note": "пасля слова на галосную — «Ўокер»"
+    },
+    "The Digging Man": {
+      "bel": "Капальшчык",
+      "ru": "Копатель",
+      "key": "Characters/CharacterDiggingMan",
+      "gender": "м"
+    },
+    "Singing Salmon": {
+      "bel": "Пеўчы ласось",
+      "ru": "Поющий лосось",
+      "key": "Characters/SingingSalmon",
+      "gender": "м",
+      "note": "рыба-цацка; у ключах Dialogue — _Billy Bass"
+    },
+    "Deputy Roberts": {
+      "bel": "Памочнік шэрыфа Робертс",
+      "ru": "Помощник шерифа Робертс",
+      "key": "Characters/Deputy Roberts",
+      "gender": "м"
+    },
+    "Cat": {
+      "bel": "Кот",
+      "ru": "Кот",
+      "key": "Characters/Cat",
+      "gender": "м"
+    },
+    "Unknown Caller": {
+      "bel": "Невядомы абанент",
+      "ru": "Неизвестный абонент",
+      "key": "Characters/UnknownCaller"
+    },
+    "Town Hall Woman": {
+      "bel": "Жанчына з мэрыі",
+      "ru": "Женщина из мэрии",
+      "key": "Characters/Townhall Woman",
+      "gender": "ж"
+    },
+    "Conmag": {
+      "bel": "Conmag",
+      "ru": "Conmag",
+      "key": "Characters/Conmag",
+      "note": "бранд — лацінкай, як у RU"
+    },
+    "Drew": {
+      "bel": "Дру",
+      "ru": "Дрю",
+      "key": "Characters/BurningMan",
+      "gender": "м",
+      "note": "поўнае імя Drew Laker — Дру Лэйкер"
+    },
+    "Gallery Man": {
+      "bel": "Мужчына з галерэі",
+      "ru": "Мужчина из галереи",
+      "key": "Characters/GalleryMan",
+      "gender": "м"
+    },
+    "Wulfe": {
+      "bel": "Вульф",
+      "ru": "Вульф",
+      "key": "Characters/Wulfe",
+      "gender": "ж",
+      "note": "шэрыф Дж. Вульф — жанчына (Lore: «She just laughed it off»); прозвішча не скланяецца: шэрыфу Вульф, запіска Вульф."
+    },
+    "Eddie Velvet": {
+      "bel": "Эдзі Вельвет",
+      "ru": "Эдди Вельвет",
+      "key": "Characters/Eddie Velvet",
+      "gender": "м"
+    },
+    "TV": {
+      "bel": "Тэлевізар",
+      "ru": "ТВ",
+      "key": "Characters/TV"
+    },
+    "Hitchhiker": {
+      "bel": "Аўтаспыншчыца",
+      "ru": "Попутчица",
+      "key": "Characters/Hitchhiker",
+      "gender": "ж"
+    },
+    "Clerk": {
+      "bel": "Касір",
+      "ru": "Администратор",
+      "key": "Characters/Clerk",
+      "gender": "м"
+    },
+    "The Driver": {
+      "bel": "Кіроўца",
+      "ru": "Водитель",
+      "key": "Characters/Driver",
+      "gender": "м"
+    },
+    "Show Host": {
+      "bel": "Вядучы праграмы",
+      "ru": "Ведущий программы",
+      "key": "Characters/Show Host",
+      "gender": "м"
+    },
+    "Hank Jackman": {
+      "bel": "Хэнк Джэкман",
+      "ru": "Хэнк Джекман",
+      "key": "Characters/HankJackman",
+      "gender": "м",
+      "note": "у ключах Dialogue, мабыць, _Handler (называюць «Mr Jackman»)"
+    },
+    "Voicemail": {
+      "bel": "Галасавая пошта",
+      "ru": "Голосовая почта",
+      "key": "Characters/Vetclinic Anonymous"
+    },
+    "Alice": {
+      "bel": "Эліс",
+      "ru": "Элис",
+      "key": "Characters/Alice",
+      "gender": "ж",
+      "note": "поўнае імя Alice Baker — Эліс Бэйкер"
+    },
+    "911 Operator": {
+      "bel": "Аператар службы 911",
+      "ru": "Оператор службы 911",
+      "key": "Characters/EmergencyServicesOperator"
+    },
+    "Bartender": {
+      "bel": "Бармен",
+      "ru": "Бармен",
+      "key": "Characters/Bartender",
+      "gender": "м",
+      "note": "у ключах Dialogue, мабыць, _Cowboy («за кошт установы»)"
+    },
+    "Boots": {
+      "bel": "Бутс",
+      "ru": "Бутс",
+      "key": "Characters/Boots",
+      "gender": "м"
+    },
+    "Cop": {
+      "bel": "Паліцэйскі",
+      "ru": "Полицейский",
+      "key": "Characters/Cop",
+      "gender": "м"
+    },
+    "Man": {
+      "bel": "Мужчына",
+      "ru": "Мужчина",
+      "key": "Characters/EndingMan",
+      "gender": "м"
+    },
+    "Woman": {
+      "bel": "Жанчына",
+      "ru": "Женщина",
+      "key": "Characters/EndingWoman",
+      "gender": "ж"
+    },
+    "Lady": {
+      "bel": "Лэдзі",
+      "ru": "Леди",
+      "key": "Characters/Jade",
+      "gender": "ж",
+      "note": "у ключах Dialogue — _Jade"
+    },
+    "Mario's Pizza": {
+      "bel": "Піцэрыя «У Марыа»",
+      "ru": "Пиццерия «У Марио»",
+      "key": "Characters/MariosPizza",
+      "gender": "ж",
+      "note": "адказвае Дана (Dana)"
+    },
+    "Radio Show Host": {
+      "bel": "Вядучая радыёпраграмы",
+      "ru": "Ведущая радиопрограммы",
+      "key": "Characters/RadioHost",
+      "gender": "ж"
+    },
+    "Chairman": {
+      "bel": "Старшыня",
+      "ru": "Председатель",
+      "key": "Characters/TownHallChairman",
+      "gender": "м"
+    },
+    "Town Hall Man": {
+      "bel": "Мужчына з мэрыі",
+      "ru": "Мужчина из мэрии",
+      "key": "Characters/TownHallMan",
+      "gender": "м"
+    },
+    "Jane Doe": {
+      "bel": "Джэйн Доў",
+      "ru": "Джейн Доу",
+      "key": "Characters/Jane Doe",
+      "gender": "ж",
+      "note": "у ключах Dialogue — _JaneDoe"
+    },
+    "Garth": {
+      "bel": "Гарт",
+      "ru": "Гарт",
+      "key": "Characters/Omega_Garth",
+      "gender": "м"
+    },
+    "Johnson": {
+      "bel": "Джонсан",
+      "ru": "Джонсон",
+      "key": "Characters/Omega_Johnson",
+      "gender": "м"
+    },
+    "Dwarf": {
+      "bel": "",
+      "ru": ".",
+      "key": "Characters/Dwarf",
+      "gender": "м",
+      "note": "імя на экране — «.»; у ключах Dialogue — _Dwarf (67 рэплік)"
+    },
+    "Drew Laker": {
+      "bel": "Дру Лэйкер",
+      "ru": "Дрю Лейкер",
+      "key": "Lore, Levels",
+      "gender": "м"
+    },
+    "Alice Baker": {
+      "bel": "Эліс Бэйкер",
+      "ru": "Элис Бейкер",
+      "key": "Dialogue",
+      "gender": "ж"
+    },
+    "Billy Bass": {
+      "bel": "Білі Бэс",
+      "ru": "",
+      "key": "Dialogue_BillyBass_*",
+      "gender": "м",
+      "note": "толькі ў ключах Dialogue, на экране — Singing Salmon"
+    },
+    "Frankie Boy": {
+      "bel": "Фрэнкі-Бой",
+      "ru": "Фрэнки-Бой",
+      "key": "Items/Story_FrankieBoots_Name",
+      "gender": "м"
+    },
+    "Marie": {
+      "bel": "Мары",
+      "gender": "ж",
+      "note": "калега аператаркі 911",
+      "key": "Dialogue_Phone_911_A_4"
+    },
+    "Dana": {
+      "bel": "Дана",
+      "gender": "ж",
+      "note": "адказвае ў піцэрыі «У Марыа»; таксама аўтамайстэрня Даны",
+      "key": "Dialogue_Phone_MariosPizza_2"
+    },
+    "Duncan": {
+      "bel": "Дункан",
+      "gender": "м",
+      "note": "кліент лодачнай майстэрні (аўтаадказчык)"
+    },
+    "Sam": {
+      "bel": "Сэм",
+      "gender": "м",
+      "note": "майстар лодачнай майстэрні (аўтаадказчык)"
+    },
+    "Holloway": {
+      "bel": "Холаўэй",
+      "note": "Holloway Key — ключ Холаўэя"
+    },
+    "Father Jacob Foster": {
+      "bel": "айцец Джэйкаб Фостэр",
+      "gender": "м",
+      "note": "вянок (Minigames)"
+    },
+    "Frank Myers": {
+      "bel": "Фрэнк Маерс",
+      "gender": "м",
+      "note": "= Frankie Boy (Фрэнкі-Бой); ці гэта Boots — не высветлена"
+    },
+    "Errin Johnson": {
+      "bel": "Эрын Джонсан",
+      "note": "апісанне пропуска"
+    },
+    "the little man": {
+      "bel": "маленькі чалавечак",
+      "note": "так пра Dwarf кажуць Drew, Jade, Jane Doe; RU «коротышка/карлик»"
+    },
+    "Julee": {
+      "bel": "Джулі",
+      "gender": "ж",
+      "note": "афіцыянтка (PauseHints)"
+    },
+    "Samuel Wyse": {
+      "bel": "Сэмюэл Уайз",
+      "gender": "м",
+      "note": "уладальнік закусачнай «Шахцёр»; жонка June Wyse — Джун Уайз, мянушка June-bug — «чэрвеньскі жучок»"
+    },
+    "Mayor Stephens": {
+      "bel": "мэр Стывенс",
+      "gender": "м"
+    },
+    "Louis Reeve": {
+      "bel": "Луіс Рыў",
+      "gender": "м"
+    },
+    "Deputy A. Lee": {
+      "bel": "памочнік шэрыфа А. Лі",
+      "gender": "м",
+      "note": "American Lee — імя: «Амерыкан Лі» (A. = Амерыкан); вырашана 2026-10-20",
+      "alt": [
+        "Амерыкан Лі"
+      ]
+    },
+    "John Doe": {
+      "bel": "Джон Доў",
+      "gender": "м",
+      "note": "пара да Jane Doe"
+    },
+    "Alberta Wells": {
+      "bel": "Альберта «Элбі» Уэлс",
+      "gender": "ж"
+    },
+    "Karl": {
+      "bel": "Карл",
+      "gender": "м"
+    },
+    "Rooster": {
+      "bel": "Рустэр",
+      "note": "мянушка, транслітарацыяй як у RU; ?: «Певень»"
+    },
+    "Sharon Maple": {
+      "bel": "Шэран Мэйпл",
+      "gender": "ж",
+      "note": "выканаўца на радыё"
+    },
+    "Chester Reynolds": {
+      "bel": "Чэстэр Рэйналдс",
+      "gender": "м",
+      "note": "выканаўца на радыё"
+    },
+    "Stephen Waters": {
+      "bel": "Стывен Уотэрс",
+      "gender": "м",
+      "note": "радыё; каламбур з water"
+    }
+  },
+  "places": {
+    "The Miner Diner": {
+      "bel": "Закусачная «Шахцёр»",
+      "ru": "Закусочная «Шахтер»",
+      "key": "Regions/Diner"
+    },
+    "Main Street": {
+      "bel": "Галоўная вуліца",
+      "ru": "Главная улица",
+      "key": "Regions/MainStreet"
+    },
+    "Crimson Bear Motel": {
+      "bel": "Матэль «Барвовы мядзведзь»",
+      "ru": "Мотель «Багровый медведь»",
+      "key": "Regions/Motel"
+    },
+    "OpCo Regional Offices": {
+      "bel": "Рэгіянальны офіс OpCo",
+      "ru": "Региональный офис OpCo",
+      "key": "Regions/OpCoOffices",
+      "note": "бранд — лацінкай, як у RU"
+    },
+    "Pine Cove Marina": {
+      "bel": "Гавань Пайн-Коў",
+      "ru": "Марина Пайн-Коув",
+      "key": "Regions/Pier_Name"
+    },
+    "Outskirts": {
+      "bel": "Ускраіны",
+      "ru": "Окраины",
+      "key": "Regions/Outskirts_Name"
+    },
+    "Riverside": {
+      "bel": "Рыверсайд",
+      "ru": "Риверсайд",
+      "key": "Regions/Riverside_Name"
+    },
+    "Mount Siah Kopa": {
+      "bel": "Гара Сіа-Копа",
+      "ru": "Гора Сиа-Копа",
+      "key": "Regions/Mountain"
+    },
+    "Downtown": {
+      "bel": "Цэнтр горада",
+      "ru": "Центр города",
+      "key": "Regions/Downtown"
+    },
+    "The Mirage Lodge": {
+      "bel": "Гасцініца «Міраж»",
+      "ru": "Гостиница «Мираж»",
+      "key": "Regions/Mountain Lodge"
+    },
+    "Silver Lake": {
+      "bel": "Сільвер-Лэйк",
+      "ru": "Силвер-Лейк",
+      "key": "Regions/Lake",
+      "note": "у RU «Силвер», у горада «Сильвер» — у нас абодва «Сільвер»"
+    },
+    "Union Apartments": {
+      "bel": "Жылы дом «Юніян»",
+      "ru": "Жилой комплекс «Юнион»",
+      "key": "Regions/Apartments",
+      "note": "адзін будынак (Union building — дом «Юніян»)"
+    },
+    "Church of St Adjutor": {
+      "bel": "Царква святога Ад'ютара",
+      "ru": "Церковь Святого Адъютора",
+      "key": "Regions/Church"
+    },
+    "Church Hill": {
+      "bel": "Чэрч-Хіл",
+      "ru": "Черч-Хилл",
+      "key": "Regions/Church_Hill"
+    },
+    "St Adjutor Parish Grounds": {
+      "bel": "Тэрыторыя парафіі святога Ад'ютара",
+      "ru": "Территория прихода Святого Адъютора",
+      "key": "Regions/Church_Grounds"
+    },
+    "Market": {
+      "bel": "Рынак",
+      "ru": "Рынок",
+      "key": "Regions/Market"
+    },
+    "Sheriff's Office": {
+      "bel": "Офіс шэрыфа",
+      "ru": "Управление шерифа",
+      "note": "і Sheriff's Department; не «ўпраўленне» (рашэнне карыстальніка 2026-10-23)",
+      "key": "Regions/Silver Pines Sheriff's Office"
+    },
+    "Thelend Broadcasting": {
+      "bel": "Тэлецэнтр Thelend",
+      "ru": "Телецентр Thelend",
+      "key": "Regions/Studio",
+      "note": "бранд — лацінкай, як у RU"
+    },
+    "Town Square": {
+      "bel": "Гарадская плошча",
+      "ru": "Городская площадь",
+      "key": "Regions/Park"
+    },
+    "Sewers": {
+      "bel": "Каналізацыя",
+      "ru": "Канализация",
+      "key": "Regions/Sewer"
+    },
+    "Silver Pines": {
+      "bel": "Сільвер-Пайнс",
+      "ru": "Сильвер-Пайнс",
+      "key": "(у тэкстах, 48 радкоў)",
+      "note": "нескланяльнае: у Сільвер-Пайнс"
+    },
+    "Rabbit Hole": {
+      "bel": "Трусіная нара",
+      "ru": "«Кроличья нора»",
+      "key": "Dialogue",
+      "note": "бар; у тэксце ў двукоссях: у «Трусінай нары»"
+    },
+    "Grizzly Suite": {
+      "bel": "люкс «Грызлі»",
+      "note": "у матэлі «Барвовы мядзведзь»"
+    },
+    "Rodney's General Store": {
+      "bel": "крама Родні"
+    },
+    "Funland Tunnel": {
+      "bel": "тунэль «Фанленд»"
+    },
+    "Night Owl Cafe & Slots": {
+      "bel": "кавярня і аўтаматы «Начная сава»"
+    },
+    "The Quiet Hour Cafe": {
+      "bel": "кавярня «Ціхая гадзіна»"
+    },
+    "Dana's Auto Repair": {
+      "bel": "аўтамайстэрня Даны",
+      "alt": [
+        "майстэрня Даны"
+      ]
+    },
+    "Loomis Street": {
+      "bel": "Луміс-стрыт",
+      "note": "вуліцы з імем — транслітарацыяй"
+    },
+    "Market Street": {
+      "bel": "Рынкавая вуліца",
+      "note": "апісальныя назвы вуліц — перакладам"
+    },
+    "Silver Road": {
+      "bel": "Сільвер-Роўд"
+    },
+    "Church Hill Street": {
+      "bel": "вуліца Чэрч-Хіл",
+      "note": "Lower/Upper — Ніжняя/Верхняя вуліца Чэрч-Хіл"
+    },
+    "Old Cannery Art Gallery": {
+      "bel": "галерэя «Старая кансервавая фабрыка»"
+    },
+    "Big Winberg's Boat Workshop": {
+      "bel": "лодачная майстэрня Вялікага Вінберга"
+    },
+    "Silver Pines Boat Repair": {
+      "bel": "«Рамонт лодак Сільвер-Пайнс»",
+      "note": "аўтаадказчык майстэрні"
+    },
+    "Mr Scrub Laundromat": {
+      "bel": "пральня «Містэр Скраб»"
+    },
+    "Ashbrook Funeral Home": {
+      "bel": "пахавальнае бюро «Эшбрук»",
+      "note": "Ashbrook Flowers — кветкі «Эшбрук»"
+    },
+    "Silver Gazette": {
+      "bel": "«Срэбная газета»",
+      "note": "?: як у RU; alt-варыянт — «Сільвер газэт»"
+    },
+    "Turf by the Surf": {
+      "bel": "рэстаран «Каля прыбою»",
+      "note": "?: каламбур surf and turf"
+    },
+    "Century Street": {
+      "bel": "Сенчуры-стрыт",
+      "note": "адрас у Сіэтле"
+    },
+    "Seattle": {
+      "bel": "Сіэтл"
+    },
+    "A Ride to the Stars": {
+      "bel": "«Паездка да зорак»",
+      "note": "надпіс/атракцыён канатнай дарогі"
+    },
+    "A Place Between": {
+      "bel": "Месца паміж",
+      "note": "кашмар; пара з A Place That Ends — «Месца, дзе канец»"
+    },
+    "Silver City": {
+      "bel": "Сільвер-Сіці",
+      "note": "горад з бірак ключоў"
+    },
+    "Friendly Paws": {
+      "bel": "«Прыязныя лапы»",
+      "note": "ветэрынарная клініка; зведзена 2026-10-20 (у items было «Добрыя лапы»)"
+    },
+    "Mountain Lodge": {
+      "bel": "гасцініца «Міраж»",
+      "note": "унутраная назва The Mirage Lodge"
+    },
+    "Community Center": {
+      "bel": "грамадскі цэнтр"
+    },
+    "St. Vincent's Hospital": {
+      "bel": "шпіталь Святога Вінцэнта"
+    },
+    "Riverside Bridge": {
+      "bel": "мост Рыверсайд"
+    }
+  },
+  "terms": {
+    "Omega": {
+      "bel": "Omega",
+      "ru": "Omega",
+      "note": "бранд (Omega Rifle) — лацінкай"
+    },
+    "Terminal Drive": {
+      "bel": "Terminal Drive",
+      "ru": "Terminal Drive",
+      "note": "тэлешоу — лацінкай, як у RU"
+    },
+    "'Leave' ending": {
+      "bel": "Уцёкі",
+      "ru": "Бегство",
+      "note": "назва канцоўкі"
+    },
+    "'Rest' ending": {
+      "bel": "Спакой",
+      "ru": "Покой",
+      "note": "назва канцоўкі"
+    },
+    "'Live' ending": {
+      "bel": "Жыццё",
+      "ru": "Жизнь / Жить",
+      "note": "назва канцоўкі"
+    },
+    "Survival Horror": {
+      "bel": "Выжыванне і жах",
+      "ru": "Выживание и ужас",
+      "note": "узровень складанасці"
+    },
+    "memento": {
+      "bel": "памятная рэч",
+      "ru": "памятная вещь",
+      "note": "Mementos — «Памятныя рэчы»"
+    },
+    "Wing Oil": {
+      "bel": "Wing Oil",
+      "note": "брэнд — лацінкай"
+    },
+    "Sport Smart": {
+      "bel": "Sport Smart",
+      "note": "брэнд — лацінкай"
+    },
+    "RR-Mart": {
+      "bel": "RR-Mart",
+      "note": "брэнд — лацінкай"
+    },
+    "Pro TV": {
+      "bel": "Pro TV",
+      "note": "брэнд — лацінкай"
+    },
+    "Lucky Strike": {
+      "bel": "Lucky Strike",
+      "note": "брэнд — лацінкай"
+    },
+    "Cable Car": {
+      "bel": "канатная дарога",
+      "note": "станцыя канатнай дарогі; коратка — канатная станцыя"
+    },
+    "Cable Station Bell": {
+      "bel": "звон канатнай станцыі",
+      "note": "мн. — званы; не «колакал» (зведзена 2026-10-19)"
+    },
+    "Interrogation Tape": {
+      "bel": "запіс допыту",
+      "note": "у гутарцы — касета (з допытам), не «плёнка»"
+    },
+    "Gold Ring": {
+      "bel": "залаты пярсцёнак"
+    },
+    "supply locker": {
+      "bel": "шафка з прыпасамі"
+    },
+    "creatures": {
+      "bel": "пачвары",
+      "note": "агульная назва ворагаў у гутарцы"
+    },
+    "The Plough": {
+      "bel": "Вялікі Воз"
+    },
+    "ferry": {
+      "bel": "паром"
+    },
+    "damage": {
+      "bel": "шкода"
+    },
+    "stamina": {
+      "bel": "вынослівасць"
+    },
+    "durability": {
+      "bel": "трываласць"
+    },
+    "melee": {
+      "bel": "блізкі бой",
+      "note": "зброя блізкага бою; ranged — зброя далёкага бою"
+    },
+    "Tonic": {
+      "bel": "тонік"
+    },
+    "Healing Mixture": {
+      "bel": "лячэбная сумесь",
+      "note": "G/R/B → З/Ч/С"
+    },
+    "Memento Vessel": {
+      "bel": "пасудзіна для памятных рэчаў"
+    },
+    "Repair Kit": {
+      "bel": "рамонтны камплект",
+      "note": "kit для вырабу — «набор»"
+    },
+    "Keyring": {
+      "bel": "вязка ключоў"
+    },
+    "Fuse Box": {
+      "bel": "электрашчыток",
+      "alt": [
+        "электрашчытк"
+      ]
+    },
+    "Crank Handle": {
+      "bel": "корба"
+    },
+    "Check-in": {
+      "bel": "рэгістрацыя"
+    },
+    "Gas Station": {
+      "bel": "запраўка"
+    },
+    "Funeral Home": {
+      "bel": "пахавальнае бюро"
+    },
+    "shotgun": {
+      "bel": "драбавік"
+    },
+    "Nailgun": {
+      "bel": "цвікамёт",
+      "note": "?: RU «монтажный пистолет»"
+    },
+    "Grief": {
+      "bel": "«Скруха»",
+      "note": "выстава Дру Лэйкера; зведзена (у lore было «Гора»)"
+    },
+    "Red Bird": {
+      "bel": "Чырвоная птушка"
+    },
+    "Shogun": {
+      "bel": "«Сёгун»",
+      "note": "зін"
+    },
+    "Anchor Keystone": {
+      "bel": "Anchor Keystone",
+      "note": "марка сейфа — лацінкай"
+    },
+    "Seedlings": {
+      "bel": "Seedlings",
+      "note": "гурт — лацінкай"
+    },
+    "keypad": {
+      "bel": "кодавая панэль"
+    },
+    "Ladder": {
+      "bel": "драбіны",
+      "note": "лесвіца — гэта Stairs"
+    },
+    "block": {
+      "bel": "блакіраваць",
+      "note": "блакіраванне атак; зведзена ў Hints (было «засланіцца»)"
+    },
+    "Charged Attack": {
+      "bel": "зараджаная атака",
+      "note": "зведзена ў Hints (было «моцны ўдар»)"
+    },
+    "Lever Arm": {
+      "bel": "штанга рычага"
+    },
+    "stopping power": {
+      "bel": "спыняльнае дзеянне"
+    },
+    "makeshift weapon": {
+      "bel": "падручная зброя"
+    },
+    "Love (VHS)": {
+      "bel": "«Каханне»",
+      "note": "відэакасета ў студыі"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+key,src_hash,bel,note
+CorruptedDataDialogTitle,b5608a88494b22cd,Даныя пашкоджаныя,
+"CorruptedDataDialogBody
+",ee33a3ebdfab79c5,"Немагчыма загрузіць захаваныя даныя, бо яны пашкоджаныя.",
+LoadErrorDialogTitle,719bec81459eb49d,Памылка загрузкі,
+LoadErrorFileTooNewDialogBody,7df59e17e10a4d79,"Гэта захаванне створана ў больш новай версіі гульні. Абнавіце гульню, каб загрузіць яго.",
+SaveErrorDialogTitle,f3913cbdaeff5d5d,Памылка захавання,
+SaveErrorDialogDefaultMessage,2c07997249abaa76,Не ўдалося захаваць,

@@ -1,0 +1,38 @@
+key,src_hash,bel,note
+Examine,dddcb91267e218be,Агледзець: {0},"{0} — назва ў назоўным склоне, таму праз двукроп'е"
+Talk,449f5a775762cdc5,Гаварыць,
+Hide,ac20a57bfde0bbc4,Схавацца,"вычытана: RU «Скрыть»; у InteractPrompts, мабыць, схавацца (дзеянне гульца)"
+UseStorageBox,b64512ff540ea3dc,Адкрыць сховішча,
+Use,c36d819e7bc6d2b7,Выкарыстаць,
+Open,ed077f3d8125d60d,Адкрыць,
+Close,7d9eb7acb13e2462,Закрыць,
+Search,49c266baaaa70981,Абшукаць,
+TravelTo,af39ebc16cd3813a,Перайсці: {0},{0} — назва месца ў назоўным склоне
+TurnOff,09b1798b222179df,Выключыць,
+TurnOn,1154e7fb1cd0f75a,Уключыць,
+Enter,833ccc7fbff5fc56,Увайсці: {0},{0} — назва месца ў назоўным склоне
+Unlock,4ac709aa58bcfe5d,Адамкнуць,
+Pull,b66d044181a0e296,Цягнуць,
+Exit,7f2e545dcef88011,Выйсці: {0},{0} — назва месца ў назоўным склоне
+Pick Up,7288f0194ee53316,Узяць: {0},як UIGame: «Узяць памятную рэч: {0}?»
+Mementos,f30922e8f8eb1e66,Агледзець памятныя рэчы,
+Move,6ecc3df6bffdd06c,Перамясціць,
+interact_Pet_Animal,8f0d1b30eba57426,Пагладзіць,
+Dig,02f700ef4c22c270,Капаць,
+Climb,98ca5f27d9642dc7,Залезці,
+Minigame_Interact,04adda4ac0c788b8,Узаемадзейнічаць,
+BoatUse,19e583882d2d68f3,Сесці ў лодку,
+Travel_Basic,d2b98fb53714f23c,Перайсці,
+Enter_Basic,dc8659db6d416dc3,Увайсці,
+Exit_Basic,d17d84a604994b72,Выйсці,
+Minigame_Rotate,c3613b1704f54c8b,Павярнуць,
+Minigame_Move,6ecc3df6bffdd06c,Перамясціць,
+Sit,bcf686d39beed93c,Сесці,
+Jump,9ee0ca3e24d60ea0,Скокнуць,
+ExamineBody,68fff1d14a870c11,Агледзець цела,
+Drink,e4a060ef35b7525f,Выпіць,
+Examine_NoItem,8898b9f2350b2bf3,Агледзець,
+Minigame_Adjust,fd8a7d7b3e7bdf8c,Наладзіць,
+PlayerBoat_Use,8d48da2e2eb93eae,Скарыстацца лодкай?,
+DriveBoat,05b01934e6322544,Плыць на лодцы,
+Minigame_Photograph,1ca36a90c342fa4f,Сфатаграфаваць,
