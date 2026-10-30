@@ -9,6 +9,8 @@
   steam_appid, steam_buildid
                 па чым шукаць гульню і пад якую яе версію сабраны пераклад
   strings       {табліца: {ключ: bel}} — толькі перакладзенае
+  from_original рэгулярка кавалкаў арыгінала (tables.py): у strings яны — заглушка `[]`,
+                рухавік (FROM_ORIGINAL = True) падстаўляе іх з файлаў гульні
   assets        [шлях адносна games/<гульня>/] — нашы файлы, патрэбныя apply (вольныя
                 шрыфты і іх ліцэнзіі); усталёўшчык нясе іх побач з payload
   …             палі рухавіка (engines/<рухавік>/apply.py: payload)
@@ -37,6 +39,10 @@ def build_payload(loc: Loc, engine) -> dict:
     p = {"schema": SCHEMA, "engine": engine.NAME, "game_id": loc.id, "game": loc.name,
          "steam_appid": loc.steam_appid, "steam_buildid": meta.get("steam_buildid"),
          "strings": {t: rows for t, rows in tables.translation_by_key(loc).items() if rows}}
+    if loc.raw.get("from_original"):
+        if not getattr(engine, "FROM_ORIGINAL", False):
+            raise SystemExit(f"{engine.NAME}: from_original рухавік не падтрымлівае")
+        p["from_original"] = loc.raw["from_original"]
     p.update(engine.payload(loc))
     if p.get("assets"):
         p["assets_root"] = loc.dir

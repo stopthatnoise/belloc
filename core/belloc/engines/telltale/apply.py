@@ -7,6 +7,7 @@ import os
 import re
 
 from ... import payload as payload_mod
+from ... import tables
 from ...config import Loc
 from . import font as tfont
 from .common import (TAG, decode, from_other_sets, game_sets, is_language_set, key_hash,
@@ -113,6 +114,8 @@ def build(game_dir: str, payload: dict, dest: str, log=print) -> list[str]:
     chars = s.get("font_chars", tfont.BEL_CHARS)
     fonts = {k: payload_mod.asset(payload, v) for k, v in s.get("fonts", {}).items()}
     tex_spec = payload.get("textures", {})
+    pat = tables.from_original(payload.get("from_original"))   # заглушкі [] ← кавалкі арыгінала
+    left = 0
     sets = game_sets(game)
     os.makedirs(dest, exist_ok=True)
     written = []
@@ -132,20 +135,24 @@ def build(game_dir: str, payload: dict, dest: str, log=print) -> list[str]:
             table = f"{set_name}/{scene}"
             kv = texts.get(table, {})
             width = _wrap_width(wrap, table)
-            if width:
-                kv = {k: wrap_text(v, width) for k, v in kv.items()}
             ren = rename.get(table, {})
             if not (kv or fill or ren):
                 continue
             lb = Landb(first(f"{scene}{suffix}"))
             src = {r.id: r.text for r in Landb(first(f"{scene}_{lang}.landb")).records} \
-                if fill or ren else {}
+                if fill or ren or (pat and kv) else {}
             have = set()
             for r in lb.records:
                 key = str(r.id)
                 have.add(key)
                 if key in kv:
-                    r.text = kv[key].encode("utf-8")
+                    text = kv[key]
+                    if pat:
+                        text = tables.expand(text, decode(src.get(r.id, b"")), pat)
+                        left += tables.PLACEHOLDER in text
+                    if width:
+                        text = wrap_text(text, width)
+                    r.text = text.encode("utf-8")
                     n += 1
                 elif fill and r.id in src:
                     r.text = src[r.id]
@@ -199,6 +206,8 @@ def build(game_dir: str, payload: dict, dest: str, log=print) -> list[str]:
             + (f", тэкстур {kinds['.d3dtx']}" if kinds[".d3dtx"] else "")
             + (f", Lua {kinds['.lua']} (радкоў {nlua})" if kinds[".lua"] else "")
             + (f", ID няма ў гульні: {miss}" if miss else ""))
+    if left:
+        log(f"  радкоў з заглушкай {tables.PLACEHOLDER}, якой няма пары ў арыгінале: {left}")
     unknown = sorted({t.partition("/")[0] for t in texts} - set(sets))
     if unknown:
         log(f"  наборы з перакладу, якіх няма ў гульні: {', '.join(unknown)}")

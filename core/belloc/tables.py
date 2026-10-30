@@ -14,6 +14,12 @@ load_all() далучае іх у памяці: радок = key, <source_lang>,
 note, ctx, src_hash. Без source/ тэкст гульні пусты, а прагрэс і пераклад
 па ключах усё роўна працуюць.
 
+**Кавалкі арыгінала** (`"from_original"` у game.json — рэгулярка, напр. `\\[[^\\]]*\\]`):
+нябачныя ў гульні кавалкі (рэмаркі акцёрам у TWAU), якія пераклад пакідае як у
+арыгінале, у рэпазіторыі захоўваюцца заглушкай `[]`. Адпаведнасць — па парадку:
+k-ты збег у bel ↔ k-ты ў арыгінале. save() згортвае (collapse), load_all()
+разгортвае (expand), рухавік пры зборцы падстаўляе кавалкі з файлаў гульні.
+
 Табліца можа быць з падпапкамі (activities/coronation_activity →
 translation/activities/coronation_activity.csv); імя — шлях праз «/».
 
@@ -28,6 +34,7 @@ import glob
 import hashlib
 import json
 import os
+import re
 
 from .config import Loc
 
@@ -48,6 +55,47 @@ def own_note(note: str) -> str:
 def with_ctx(ctx: str, note: str) -> str:
     """Заўвага для працоўных файлаў: `ctx: …` гульні ў пачатку."""
     return " | ".join(([f"ctx: {ctx}"] if ctx else []) + ([note] if note else []))
+
+
+# ---------------------------------------------------------------- кавалкі арыгінала
+
+PLACEHOLDER = "[]"
+
+
+def from_original(pattern: str | None) -> re.Pattern | None:
+    """Рэгулярка кавалкаў арыгінала; заглушка мусіць ёй адпавядаць (парадак збегаў)."""
+    if not pattern:
+        return None
+    pat = re.compile(pattern)
+    if not pat.fullmatch(PLACEHOLDER):
+        raise SystemExit(f"from_original: «{pattern}» не адпавядае заглушцы {PLACEHOLDER}")
+    return pat
+
+
+def _swap(bel: str, src: str, pat: re.Pattern | None, to_placeholder: bool) -> str:
+    if not pat or not bel or not src:
+        return bel
+    orig = [m.group(0) for m in pat.finditer(src)]
+    if len(orig) != sum(1 for _ in pat.finditer(bel)):
+        return bel
+    k = iter(orig)
+
+    def one(m):
+        o = next(k)
+        if to_placeholder:
+            return PLACEHOLDER if m.group(0) == o else m.group(0)
+        return o if m.group(0) == PLACEHOLDER else m.group(0)
+    return pat.sub(one, bel)
+
+
+def collapse(bel: str, src: str, pat: re.Pattern | None) -> str:
+    """Кавалкі bel, роўныя кавалкам арыгінала на тым жа месцы, → заглушка."""
+    return _swap(bel, src, pat, True)
+
+
+def expand(bel: str, src: str, pat: re.Pattern | None) -> str:
+    """Заглушкі → кавалкі арыгінала (калі колькасць збегаў не супала — як ёсць)."""
+    return _swap(bel, src, pat, False)
 
 
 # ---------------------------------------------------------------- CSV
@@ -92,13 +140,14 @@ def save(loc: Loc, table: str, rows: list[dict]):
     """Запісаць табліцу ў рэпазіторый: толькі key, src_hash, bel, note.
 
     src_hash лічыцца з арыгінала, калі ён ёсць у радку, інакш застаецца
-    стары; ctx з note выразаецца.
+    стары; ctx з note выразаецца; кавалкі арыгінала ў bel → заглушка.
     """
     out = []
+    pat = from_original(loc.raw.get("from_original"))
     for r in rows:
         text = r.get(loc.source_lang) or ""
         out.append({"key": r["key"], "src_hash": src_hash(text) if text else r.get("src_hash", ""),
-                    "bel": r.get("bel", ""), "note": own_note(r.get("note", ""))})
+                    "bel": collapse(r.get("bel", ""), text, pat), "note": own_note(r.get("note", ""))})
     write_csv(table_path(loc, table), out, REPO_COLS)
 
 
@@ -121,6 +170,7 @@ def load_all(loc: Loc) -> dict[str, list[dict]]:
     src = _source(loc, loc.source_lang)
     hints = {lang: _source(loc, lang) for lang in hint_langs(loc)}
     context = _source(loc, "context")
+    pat = from_original(loc.raw.get("from_original"))
     res = {}
     for table, rows in load_repo(loc).items():
         s, c = src.get(table, {}), context.get(table, {})
@@ -130,7 +180,8 @@ def load_all(loc: Loc) -> dict[str, list[dict]]:
             row = {"key": k, loc.source_lang: s.get(k, "")}
             for lang, h in hints.items():
                 row[lang] = h.get(table, {}).get(k, "")
-            row.update(bel=r["bel"], note=r["note"], ctx=c.get(k, ""), src_hash=r["src_hash"])
+            row.update(bel=expand(r["bel"], row[loc.source_lang], pat), note=r["note"],
+                       ctx=c.get(k, ""), src_hash=r["src_hash"])
             full.append(row)
         res[table] = full
     return res

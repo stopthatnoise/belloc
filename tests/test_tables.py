@@ -130,5 +130,25 @@ class TablesTest(unittest.TestCase):
         self.assertTrue(out.startswith(self.loc.local))       # тэкст гульні — толькі лакальна
 
 
+class FromOriginalTest(unittest.TestCase):
+    pat = tables.from_original(r"\[[^\]]*\]")
+
+    def test_roundtrip(self):
+        src = "{Angry}[shouts] Get out! [door slams]"
+        bel = "{Angry}[shouts] Прэч! [грукае дзвярыма]"
+        short = tables.collapse(bel, src, self.pat)
+        self.assertEqual(short, "{Angry}[] Прэч! [грукае дзвярыма]")
+        self.assertEqual(tables.expand(short, src, self.pat), bel)
+
+    def test_count_mismatch(self):
+        # арыгінал змяніўся — колькасць кавалкаў не тая: нічога не чапаем
+        self.assertEqual(tables.collapse("[a] Так", "[a] [b] Yes", self.pat), "[a] Так")
+        self.assertEqual(tables.expand("[] Так", "[a] [b] Yes", self.pat), "[] Так")
+
+    def test_placeholder_must_match(self):
+        with self.assertRaises(SystemExit):
+            tables.from_original(r"<[^>]*>")
+
+
 if __name__ == "__main__":
     unittest.main()

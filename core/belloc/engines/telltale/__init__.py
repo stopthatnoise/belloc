@@ -45,6 +45,10 @@ lenc.py і luac.py (Lua), texture.py (надпісы на тэкстурах). �
 запісу. Набор — частка ключа: адно імя landb у розных эпізодах — розныя сцэны.
 Хто кажа → source/context.json.
 
+Рэмаркі акцёрам `[…]` гульня не паказвае; калі пераклад пакідае іх як у арыгінале,
+у рэпазіторыі яны — заглушка `[]` (`"from_original"` у game.json, гл. tables.py),
+apply падстаўляе іх з landb мовы lang.
+
 Наборы і дэскрыптары. Гульня чытае ўсе `_resdesc_50_<набор>.lua` з папкі архіваў
 (адкрыты Lua, у арыгінале 2013 г. — зашыфраваны .lenc) і мантуе архівы
 набору; у межах набору выйграе архіў, які ў спісе раней. Моўныя наборы
@@ -68,5 +72,7 @@ lenc.py і luac.py (Lua), texture.py (надпісы на тэкстурах). �
 Файлы гульні не мяняюцца; restore выдаляе ўсе файлы *BelLoc*.
 """
 from .common import NAME, SECTION, key_hash  # noqa: F401
+
+FROM_ORIGINAL = True        # падстаўляе кавалкі арыгінала на месца заглушак (tables.py)
 from .extract import extract  # noqa: F401
 from .apply import payload, check_path, apply, restore, installed, textures_preview  # noqa: F401
