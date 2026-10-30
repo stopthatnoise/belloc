@@ -38,6 +38,12 @@ def payload(loc: Loc) -> dict:
                         "roots": s.get("roots", ["game"])}}
 
 
+def files_dir(payload: dict) -> str:
+    """Архіў для ручной усталёўкі (release.py): apply(out=…) піша толькі наш тэкст
+    з payload, файлы гульні не чытае — вынік кладзецца сюды ў каталогу гульні."""
+    return payload["paradox"]["replace_dir"]
+
+
 def check_path(payload: dict) -> str:
     return payload["paradox"]["roots"][0]
 

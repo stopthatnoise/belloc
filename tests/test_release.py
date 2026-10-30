@@ -6,6 +6,7 @@ installer/run.py на выдуманай гульні paradox (усталёўк�
 import io
 import json
 import os
+import zipfile
 import shutil
 import sys
 import tempfile
@@ -39,7 +40,7 @@ class ReleaseTest(unittest.TestCase):
         yml = os.path.join(g, "game", "localization", "english", "menu_l_english.yml")
         os.makedirs(os.path.dirname(yml))
         with open(yml, "w", encoding="utf-8-sig", newline="\n") as f:
-            f.write('l_english:\n START:0 "Start"\n QUIT:0 "Quit"\n')
+            f.write('l_english:\n START:0 "Start"\n QUIT:0 "Quit and close the game"\n')
         self.gamedir = g
         game = os.path.join(self.tmp, "games", "demo")
         os.makedirs(game)
@@ -98,6 +99,26 @@ class ReleaseTest(unittest.TestCase):
         p = installer.load_payload(path)
         self.assertEqual(payload.asset(p, "fonts/a/A.ttf:Bold"),
                          os.path.join(self.tmp, "exe", "assets", "fonts/a/A.ttf:Bold"))
+
+    def test_files_archive(self):
+        p = release.release_payload(self.loc, paradox)
+        out = os.path.join(self.tmp, "rel")
+        os.makedirs(out)
+        with zipfile.ZipFile(release.build_files(self.loc, paradox, p, "Demo_BE_1.0", out)) as z:
+            names = sorted(z.namelist())
+            readme = z.read("ЧЫТАЙ.txt").decode("utf-8-sig")
+        self.assertEqual(names, ["game/localization/replace/russian/bel/menu_l_russian.yml", "ЧЫТАЙ.txt"])
+        self.assertIn("Выдаліце папку game/localization/replace/russian/bel", readme)
+        self.assertIn("Перацягніце папку game", readme)
+
+    def test_files_archive_refuses_game_text(self):
+        rows = tables.load_all(self.loc)["menu"]
+        for r in rows:
+            r["bel"] = {"START": "Пачаць (Quit and close the game)"}.get(r["key"], "")
+        tables.save(self.loc, "menu", rows)
+        p = release.release_payload(self.loc, paradox)
+        with redirect_stdout(io.StringIO()), self.assertRaises(SystemExit):
+            release.build_files(self.loc, paradox, p, "Demo_BE_1.0", self.tmp)
 
 
 if __name__ == "__main__":

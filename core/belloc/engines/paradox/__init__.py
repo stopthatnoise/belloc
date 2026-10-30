@@ -30,7 +30,7 @@ localization/<мова>/; файлы не з каранёвай `game/` атры
 """
 from .common import NAME, SECTION  # noqa: F401
 from .extract import extract  # noqa: F401
-from .apply import payload, check_path, apply, restore, installed  # noqa: F401
+from .apply import payload, check_path, apply, restore, installed, files_dir  # noqa: F401
 from .fonts import fonts_report  # noqa: F401
 
 # усталёўшчык (release.py): толькі стандартная бібліятэка
