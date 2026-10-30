@@ -54,7 +54,7 @@ local/           (не ў git) тэксты і файлы вашай копіі 
 
 | праект | аўтары | што ў нас |
 |---|---|---|
-| [TTG Tools](https://github.com/HeitorSpectre/TTG-Tools) (GPL-3.0) | Den Em, Pashok6798; форк HeitorSpectre | разбор `.landb`, `.font`, `.d3dtx`, Lua Telltale — па іх кодзе (`core/belloc/telltale/`) |
+| [TTG Tools](https://github.com/HeitorSpectre/TTG-Tools) (GPL-3.0) | Den Em, Pashok6798; форк HeitorSpectre | разбор `.landb`, `.font`, `.d3dtx`, Lua Telltale — па іх кодзе (`core/belloc/engines/telltale/`) |
 | [ooz](https://github.com/powzix/ooz) праз [pyooz](https://github.com/zao/pyooz) (GPL-3.0) | Powzix; zao | распакоўка Oodle ў паках Unreal |
 | [UnityPy](https://github.com/K0lb3/UnityPy) (MIT) | K0lb3 | чытанне і запіс файлаў Unity |
 | [fontTools](https://github.com/fonttools/fonttools) (MIT) | праект fontTools | беларускія літары ў шрыфтах |

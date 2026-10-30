@@ -21,6 +21,7 @@
   patch      пераклад у файлы гульні (арыгіналы — .orig побач); --out ПАПКА — вынік
              туды, гульня не чапаецца; --restore — вярнуць арыгіналы
   fonts      якія літары ёсць у шрыфтах гульні (--text: ці хапае для перакладу)
+  textures   прэв'ю надпісаў textures.json (да / пасля) → build/textures/ (--out ПАПКА)
 
 Без гульні:
   list                  спіс гульняў
@@ -107,6 +108,8 @@ def main(argv=None):
     g.add_argument("--out", help="запісаць вынік у гэтую папку, не чапаючы гульню")
     p = with_loc("fonts", "літары ў шрыфтах гульні")
     p.add_argument("--text", action="store_true", help="ці пакрываюць шрыфты ўсе літары перакладу")
+    p = with_loc("textures", "прэв'ю надпісаў на тэкстурах")
+    p.add_argument("--out", help="іншая папка")
     p = sub.add_parser("batch", help="пачкі для паралельнай працы")
     p.add_argument("action", choices=["status", "export", "lint", "apply"])
     p.add_argument("loc")
@@ -182,7 +185,7 @@ def main(argv=None):
     elif args.cmd == "glossary":
         return glossary.run(loc.glossary, os.path.join(loc.build, "glossary.md"),
                             loc.name, args.check)
-    elif args.cmd in ("extract", "patch", "fonts"):
+    elif args.cmd in ("extract", "patch", "fonts", "textures"):
         from . import engines
         from .engines import base
         engine = engines.get(loc.engine)
@@ -192,6 +195,10 @@ def main(argv=None):
             base.restore(loc, engine)
         elif args.cmd == "patch":
             base.patch(loc, engine, args.out)
+        elif args.cmd == "textures":
+            if not hasattr(engine, "textures_preview"):
+                raise SystemExit(f"{loc.engine}: надпісаў на тэкстурах няма")
+            engine.textures_preview(loc, args.out)
         elif not hasattr(engine, "fonts_report"):
             raise SystemExit(f"{loc.engine}: справаздачы па шрыфтах няма")
         else:
