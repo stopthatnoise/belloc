@@ -17,6 +17,7 @@ glacier = ["lz4", "numpy==2.5.4"]                          # .rpkg: LZ4 і XTEA 
 unreal = ["pyooz", "pycryptodome", "fonttools"]           # .pak: Oodle, AES; кірыліца ў шрыфты
 telltale = ["numpy==2.5.4", "Pillow", "texture2ddecoder", "etcpak", "opencv-python-headless"]
                                                           # шрыфты і тэкстуры: BC1/BC3, inpaint
+release = ["pyinstaller==6.22.3"]                          # belloc package: усталёўшчык .exe
 
 [tool.setuptools.packages.find]
 where = ["core"]

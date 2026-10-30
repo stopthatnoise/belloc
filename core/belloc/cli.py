@@ -22,6 +22,7 @@
              туды, гульня не чапаецца; --restore — вярнуць арыгіналы
   fonts      якія літары ёсць у шрыфтах гульні (--text: ці хапае для перакладу)
   textures   прэв'ю надпісаў textures.json (да / пасля) → build/textures/ (--out ПАПКА)
+  package    рэліз: усталёўшчык .exe + ЧЫТАЙ.txt → build/release/ (release.py)
 
 Без гульні:
   list                  спіс гульняў
@@ -108,6 +109,7 @@ def main(argv=None):
     g.add_argument("--out", help="запісаць вынік у гэтую папку, не чапаючы гульню")
     p = with_loc("fonts", "літары ў шрыфтах гульні")
     p.add_argument("--text", action="store_true", help="ці пакрываюць шрыфты ўсе літары перакладу")
+    with_loc("package", "рэліз: усталёўшчык .exe")
     p = with_loc("textures", "прэв'ю надпісаў на тэкстурах")
     p.add_argument("--out", help="іншая папка")
     p = sub.add_parser("batch", help="пачкі для паралельнай працы")
@@ -185,6 +187,9 @@ def main(argv=None):
     elif args.cmd == "glossary":
         return glossary.run(loc.glossary, os.path.join(loc.build, "glossary.md"),
                             loc.name, args.check)
+    elif args.cmd == "package":
+        from . import release
+        release.build(loc)
     elif args.cmd in ("extract", "patch", "fonts", "textures"):
         from . import engines
         from .engines import base

@@ -31,3 +31,8 @@ restore проста выдаляе мод.
 from .common import NAME, SECTION  # noqa: F401
 from .extract import extract  # noqa: F401
 from .apply import payload, check_path, apply, restore, installed  # noqa: F401
+
+# усталёўшчык (release.py): Oodle — dll з pyooz; fontTools грузіць табліцы шрыфта па імені
+PYINSTALLER = ["--collect-all", "pyooz", "--collect-submodules", "fontTools.ttLib.tables",
+               "--exclude-module", "UnityPy", "--exclude-module", "cv2", "--exclude-module", "spylls",
+               "--exclude-module", "PIL"]

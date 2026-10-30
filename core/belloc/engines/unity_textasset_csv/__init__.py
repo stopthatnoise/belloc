@@ -32,3 +32,9 @@ patch.fonts, patch.ui_text (назва мовы), надпісы сцэн (та�
 from .common import NAME, SECTION  # noqa: F401
 from .extract import extract  # noqa: F401
 from .apply import payload, check_path, apply, restore, installed  # noqa: F401
+
+# усталёўшчык (release.py); fontTools грузіць табліцы шрыфта па імені — PyInstaller іх сам не бачыць
+from ..unity import PYINSTALLER as _UNITY  # noqa: E402
+PYINSTALLER = [*_UNITY, "--collect-submodules", "belloc.engines.unity",
+               "--collect-submodules", "fontTools.ttLib.tables",
+               "--exclude-module", "cv2", "--exclude-module", "spylls"]

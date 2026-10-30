@@ -34,3 +34,7 @@ packagedefinition.txt; з out — тое ж у папку, гульня не ч�
 from .common import NAME, SECTION  # noqa: F401
 from .extract import extract  # noqa: F401
 from .apply import payload, check_path, apply, restore, installed  # noqa: F401
+
+# усталёўшчык (release.py): numpy (XTEA) і lz4 PyInstaller бачыць сам
+PYINSTALLER = ["--exclude-module", "UnityPy", "--exclude-module", "cv2", "--exclude-module", "spylls",
+               "--exclude-module", "fontTools", "--exclude-module", "PIL"]

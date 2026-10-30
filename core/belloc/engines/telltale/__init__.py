@@ -72,7 +72,10 @@ apply падстаўляе іх з landb мовы lang.
 Файлы гульні не мяняюцца; restore выдаляе ўсе файлы *BelLoc*.
 """
 from .common import NAME, SECTION, key_hash  # noqa: F401
-
-FROM_ORIGINAL = True        # падстаўляе кавалкі арыгінала на месца заглушак (tables.py)
 from .extract import extract  # noqa: F401
 from .apply import payload, check_path, apply, restore, installed, textures_preview  # noqa: F401
+
+FROM_ORIGINAL = True        # падстаўляе кавалкі арыгінала на месца заглушак (tables.py)
+# усталёўшчык (release.py): BC1/BC3 — dll з пакетаў, cv2 — надпісы на тэкстурах
+PYINSTALLER = ["--collect-all", "etcpak", "--collect-all", "texture2ddecoder",
+               "--exclude-module", "UnityPy", "--exclude-module", "spylls", "--exclude-module", "fontTools"]

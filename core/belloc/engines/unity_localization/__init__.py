@@ -25,3 +25,8 @@ from .common import NAME, SECTION  # noqa: F401
 from .extract import extract  # noqa: F401
 from .apply import payload, check_path, apply, restore, installed  # noqa: F401
 from .fonts import fonts_report  # noqa: F401
+
+# усталёўшчык (release.py)
+from ..unity import PYINSTALLER as _UNITY  # noqa: E402
+PYINSTALLER = [*_UNITY, "--collect-submodules", "belloc.engines.unity",
+               "--exclude-module", "cv2", "--exclude-module", "spylls", "--exclude-module", "fontTools"]
