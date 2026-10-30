@@ -38,7 +38,9 @@ class VersionTest(unittest.TestCase):
         self.assertTrue(catalog.newer("1.0", None))
 
 
-class LauncherTest(unittest.TestCase):
+class Fixture(unittest.TestCase):
+    """Выдуманая гульня paradox, яе пакет і лакальны каталог (без тэстаў — для LauncherTest і AppTest)."""
+
     def setUp(self):
         self.tmp = tempfile.mkdtemp()
         g = os.path.join(self.tmp, "game")
@@ -90,6 +92,8 @@ class LauncherTest(unittest.TestCase):
             code = launcher.main([*argv, "--catalog", self.cat], self.apps)
         return code, out.getvalue()
 
+
+class LauncherTest(Fixture):
     def test_package_is_stable(self):
         p = release.release_payload(self.loc, paradox)
         again = os.path.join(self.tmp, "again.zip")

@@ -30,7 +30,7 @@ def steam_roots() -> list[str]:
     for root in roots:
         vdf = os.path.join(root, "steamapps", "libraryfolders.vdf")
         if os.path.exists(vdf):
-            text = open(vdf, encoding="utf-8", errors="replace").read()
+            text = _manifest(vdf)
             libs += [p.replace("\\\\", "\\") for p in re.findall(r'"path"\s+"([^"]+)"', text)]
         libs.append(root)
     seen, out = set(), []
@@ -43,7 +43,8 @@ def steam_roots() -> list[str]:
 
 
 def _manifest(path: str) -> str:
-    return open(path, encoding="utf-8", errors="replace").read()
+    with open(path, encoding="utf-8", errors="replace") as f:
+        return f.read()
 
 
 def find_game(appid: int) -> tuple[str | None, str | None]:
@@ -83,6 +84,21 @@ def installed_apps() -> dict[int, dict]:
                 out[int(m.group(1))] = {"dir": path, "buildid": b and b.group(1),
                                         "name": name.group(1) if name else d.group(1)}
     return out
+
+
+def cover(appid: int) -> str | None:
+    """Вокладка гульні з лакальнага кэша кліента Steam (appcache/librarycache) — без сеткі."""
+    import glob
+    for root in steam_roots():
+        cache = os.path.join(root, "appcache", "librarycache")
+        if not os.path.isdir(cache):
+            continue
+        for pat in (f"{appid}/header.jpg", f"{appid}/*/header.jpg", f"{appid}_header.jpg",
+                    f"{appid}/library_header.jpg", f"{appid}/*/library_header.jpg"):
+            found = glob.glob(os.path.join(cache, pat))
+            if found:
+                return found[0]
+    return None
 
 
 def buildid(game_dir: str, appid: int | None) -> str | None:
