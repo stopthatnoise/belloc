@@ -37,6 +37,11 @@ class VersionTest(unittest.TestCase):
         self.assertFalse(catalog.newer("1.0", "1.0"))
         self.assertTrue(catalog.newer("1.0", None))
 
+    def test_show_date(self):
+        self.assertEqual(catalog.show_date("2026-10-31"), "31.10.2026")
+        self.assertEqual(catalog.show_date("2026-1-5"), "05.01.2026")
+        self.assertEqual(catalog.show_date(None), "")
+
 
 class Fixture(unittest.TestCase):
     """Выдуманая гульня paradox, яе пакет і лакальны каталог (без тэстаў — для LauncherTest і AppTest)."""

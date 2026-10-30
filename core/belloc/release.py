@@ -147,7 +147,8 @@ def readme(loc: Loc, p: dict, exe_name: str) -> str:
         with open(loc.path(rel["readme"]), encoding="utf-8") as f:
             tpl = f.read()
     n = sum(len(v) for v in p["strings"].values())
-    return tpl.format(**p["release"], game=p["game"], game_exe=p["release"]["exe"], exe_name=exe_name,
+    return tpl.format(**{**p["release"], "date": catalog.show_date(p["release"]["date"])},
+                      game=p["game"], game_exe=p["release"]["exe"], exe_name=exe_name,
                       menu=rel["menu"], contents=rel["contents"].format(strings=n), how=rel["how"],
                       buildid=p.get("steam_buildid"))
 
@@ -200,7 +201,8 @@ def build_files(loc: Loc, engine, p: dict, name: str, out_dir: str) -> str | Non
         with open(loc.path(rel["files_readme"]), encoding="utf-8") as f:
             tpl = f.read()
     n = sum(len(v) for v in p["strings"].values())
-    text = tpl.format(**p["release"], game=p["game"], game_exe=p["release"]["exe"], menu=rel["menu"],
+    text = tpl.format(**{**p["release"], "date": catalog.show_date(p["release"]["date"])},
+                      game=p["game"], game_exe=p["release"]["exe"], menu=rel["menu"],
                       contents=rel["contents"].format(strings=n), buildid=p.get("steam_buildid"),
                       files_dir=rel_dir, top_dir=rel_dir.split("/")[0])
     zpath = os.path.join(out_dir, f"{name}_files.zip")

@@ -54,6 +54,15 @@ def newer(a: str | None, b: str | None) -> bool:
     return version_key(a) > version_key(b)
 
 
+def show_date(iso: str | None) -> str:
+    """"2026-10-31" → "31.10.2026": так дата паказваецца гульцу; у даных — ISO."""
+    try:
+        y, m, d = (iso or "").split("-")
+        return f"{int(d):02d}.{int(m):02d}.{int(y)}"
+    except ValueError:
+        return iso or ""
+
+
 # ---------------------------------------------------------------- кліент
 
 def _get(src: str, timeout: float) -> bytes:

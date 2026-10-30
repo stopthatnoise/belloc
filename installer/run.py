@@ -53,7 +53,7 @@ def remind(payload: dict, src: str = catalog.CATALOG_URL):
     """Калі ў каталогу ёсць навейшая версія гэтага перакладу — сказаць пра яе."""
     e = (catalog.fetch(src, timeout=3) or {}).get("games", {}).get(payload["game_id"])
     if e and catalog.newer(e.get("version"), payload["release"]["version"]):
-        print(f"Ёсць новая версія перакладу: {e['version']} ({e.get('date', '')}).")
+        print(f"Ёсць новая версія перакладу: {e['version']} (ад {catalog.show_date(e.get('date'))}).")
         if e.get("changes"):
             print(f"  {e['changes']}")
         print(f"  Спампаваць: {e.get('page')}\n")
@@ -78,7 +78,7 @@ def main(argv=None, payload_path: str | None = None, catalog_src: str = catalog.
     args = ap.parse_args(argv)
     auto = args.yes
 
-    print(f"{rel['title']}, версія {rel['version']} ({rel['date']})")
+    print(f"{rel['title']}, версія {rel['version']} ад {catalog.show_date(rel['date'])}")
     print(f"{rel['credits']}\n")
     remind(payload, catalog_src)
 

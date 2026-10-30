@@ -130,7 +130,7 @@ class Card(QFrame):
         self.status.setProperty("state", st)
         self.status.style().unpolish(self.status)
         self.status.style().polish(self.status)
-        info = f"У каталогу — версія {e['version']}" + (f" ад {e['date']}" if e.get("date") else "")
+        info = f"У каталогу — версія {e['version']}" + (f" ад {catalog.show_date(e['date'])}" if e.get("date") else "")
         if e.get("changes") and games.update_available(row):
             info += f"\nШто новага: {e['changes']}"
         self.info.setText(info)
