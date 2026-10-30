@@ -19,13 +19,12 @@ catalog.json (публічна) ──► лаўнчар / exe: ці ёсць п
 `sha256`, `size`) і `probe` — payload без тэксту, каб спытаць `engine.installed()`
 да спампоўкі. Поўны прыклад — у docstring `catalog.py`.
 
-**Дзе ляжыць.** Пакуль belloc закрыты — у асобным публічным рэпазіторыі
-[stopthatnoise/belloc-catalog](https://github.com/stopthatnoise/belloc-catalog):
+**Дзе ляжыць.** Пакуль belloc закрыты, лаўнчар тэстуецца на часовым публічным
+рэпазіторыі [stopthatnoise/belloc-catalog](https://github.com/stopthatnoise/belloc-catalog):
 `catalog.json` у `main`, пакеты — у Releases (тэг `<гульня>-v<версія>`). Калі belloc
-стане публічным, каталог пераедзе туды, а ў старым `catalog.json` застанецца толькі
-`"moved_to": "<новы адрас>"` — па ім пойдуць і лаўнчары, і ўжо выпушчаныя exe.
-Таму **belloc-catalog не выдаляць**, пакуль ёсць exe, што глядзяць на яго (або
-пакінуць у ім адзін `catalog.json` з `moved_to`).
+адкрыецца, `CATALOG_URL` і `RELEASES` у `catalog.py` пераключаюцца на яго, а
+belloc-catalog выдаляецца. exe, сабраныя да гэтага, проста перастануць нагадваць пра
+новыя версіі (без сеткі і без каталога ўсталёўшчык працуе як звычайна).
 
 **Сумяшчальнасць.** `payload_schema` большы, чым `payload.SCHEMA` у лаўнчары, або
 невядомы рухавік → «патрэбна новая версія лаўнчара»: стары код не ламае гульню

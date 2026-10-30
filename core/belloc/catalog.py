@@ -1,11 +1,11 @@
 """Каталог перакладаў: які пераклад якой гульні ёсць і якой версіі (для лаўнчара і exe).
 
-Каталог — адзін публічны catalog.json (CATALOG_URL). Пакуль belloc закрыты, ён
-ляжыць у асобным публічным рэпазіторыі belloc-catalog: catalog.json у main, пакеты
-перакладаў — у яго Releases (тэг <game_id>-v<версія>). Калі каталог пераедзе,
-у старым пішацца "moved_to" — кліенты (у тым ліку старыя exe) ідуць па новым адрасе.
+Каталог — адзін публічны catalog.json (CATALOG_URL). Пакуль belloc закрыты, лаўнчар
+тэстуецца на часовым публічным рэпазіторыі belloc-catalog: catalog.json у main, пакеты
+перакладаў — у яго Releases (тэг <game_id>-v<версія>). Калі belloc адкрыецца,
+CATALOG_URL і RELEASES глядзяць на яго, а belloc-catalog выдаляецца.
 
-  {"schema": 1, "updated": "2026-10-31", "moved_to": null, "launcher": null,
+  {"schema": 1, "updated": "2026-10-31", "launcher": null,
    "games": {"pony-island": {
        "name": "Pony Island", "stores": {"steam": 405640},   — пакуль толькі steam
        "engine": "unity-textasset-csv", "payload_schema": 1,
@@ -69,8 +69,6 @@ def fetch(src: str = CATALOG_URL, timeout: float = 5) -> dict | None:
     """Каталог або None (няма сеткі, бітая адказ): без каталога ўсё працуе далей."""
     try:
         cat = json.loads(_get(src, timeout))
-        if cat.get("moved_to") and cat["moved_to"] != src:
-            cat = json.loads(_get(cat["moved_to"], timeout))
         return cat if isinstance(cat.get("games"), dict) else None
     except Exception:
         return None
@@ -156,7 +154,7 @@ def publish(loc: Loc, catalog_path: str | None = None) -> tuple[str, dict]:
     build_package(p, pkg)
     e = entry(loc, p, pkg, f"{RELEASES}/download/{loc.id}-v{version}/{name}")
     catalog_path = catalog_path or os.path.join(os.path.dirname(loc.local), "catalog", "catalog.json")
-    cat = {"schema": SCHEMA, "moved_to": None, "launcher": None, "games": {}}
+    cat = {"schema": SCHEMA, "launcher": None, "games": {}}
     if os.path.exists(catalog_path):
         with open(catalog_path, encoding="utf-8") as f:
             cat = json.load(f)
