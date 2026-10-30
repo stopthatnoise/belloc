@@ -1,0 +1,110 @@
+{
+ "name": "Pony Island",
+ "engine": "unity-textasset-csv",
+ "steam_appid": 405640,
+ "source_lang": "en",
+ "hint_lang": "ru",
+ "credits": "Нейрапераклад: мадэль Claude (Anthropic). Кіраўнік праекта: Віталь Аляхновіч.",
+ "lint_args": [
+  "--tag-re",
+  "</?(?:b|i|color|size|material|quad)(?:=[^<>]*)?>"
+ ],
+ "textasset_csv": {
+  "data_dir": "PonyIsland_Data",
+  "assets": "resources.assets",
+  "textasset": "localization",
+  "header_row": 1,
+  "id_column": "STRING ID",
+  "note_column": 0,
+  "langs": {
+   "en": "ENGLISH",
+   "ru": "RUSSIAN"
+  },
+  "target": "ru",
+  "sections": {
+   "MAIN MENU": "01-menu",
+   "INTRO": "02-intro",
+   "ACT I": "03-act1",
+   "ACT I (BOSS)": "04-act1-boss",
+   "ACT II": "05-act2",
+   "ACT II (World Map)": "06-act2-map",
+   "ACT II (Broken World)": "07-act2-broken",
+   "ACT II (Boss)": "08-act2-boss",
+   "ACT III": "09-act3",
+   "ACT III (Desktop)": "10-act3-desktop",
+   "ACT III (Boss)": "11-act3-boss",
+   "Finale": "12-finale",
+   "Secret Scenes": "13-secret",
+   "Super Secret Scenes": "14-super-secret",
+   "Code Puzzle Language": "15-code",
+   "Marketing Material (Steam Store Page)": "16-store",
+   "Steam Achievement Names and Decriptions": "17-achievements",
+   "Misc. Missing Lines": "18-misc"
+  },
+  "patch": {
+   "files": [
+    "level0",
+    "level3",
+    "level4",
+    "level5",
+    "level6",
+    "level7",
+    "level8",
+    "level10",
+    "level11",
+    "level12",
+    "level13"
+   ],
+   "fonts": [
+    "Crumbled-Pixels",
+    "04B_30__",
+    "dpcomic"
+   ],
+   "ui_text": {
+    "Pусский": "Беларуская"
+   }
+  },
+  "scenes": {
+   "_about": "Надпісы TextMesh у сцэнах па-за CSV → табліца 19-scenes (belloc/unity/scene_text.py). ignore — плэйсхолдары, якія гульня перапісвае, імёны, нікі, назвы файлаў лацінкай і пасхалкі",
+   "ignore": [
+    "text",
+    "text text text",
+    "PI TEXT MESH",
+    "PI MENU ITEM",
+    "<name>",
+    "FILE.EXE",
+    "MACK",
+    "DANIEL MULLINS",
+    "<h0peles$0uL>",
+    "\n<h0peles\n$0uL>",
+    "<1U©iF#r>",
+    "missingno",
+    "Pony_Galaxy",
+    "PONY \nGALAXY",
+    "PONY_ISLAND.EXE",
+    "PONY_ISLAND.E..",
+    "PONY_ISLAN...",
+    "                 TECH\nINCORPORATED",
+    "CLOWNWARD\nOLWAYS\nWINS",
+    "CLOWNWAR     \n LWAY \n"
+   ],
+   "ignore_re": [
+    "^[0-9A-Z]{5}-[0-9A-Z]{5}-",
+    "^<color=#909090FF>u just said",
+    "^<color=#509BB9FF>tasha"
+   ]
+  }
+ },
+ "release": {
+  "title": "Беларускі пераклад Pony Island",
+  "version": "1.0",
+  "exe": "PonyIsland.exe",
+  "file": "PonyIsland_BE",
+  "language_name": "Беларуская",
+  "replaces": "Русский",
+  "built_for": "на кастрычнік 2026",
+  "menu": "Options → Language Settings",
+  "contents": "Перакладзены ўвесь тэкст з моўнай табліцы гульні (дыялогі, меню,\nзагадкі, дасягненні) і надпісы ў сцэнах — код у галаваломках, вокны,\nкнопкі (усяго радкоў: {strings}). Карцінкі з тэкстам і тытры застаюцца\nанглійскімі. Калі гульня просіць нешта напісаць, пішыце па-беларуску\n(часцей за ўсё падыходзіць і руская раскладка).",
+  "how": "Ён змяняе файлы\nў PonyIsland_Data: resources.assets (у табліцу перакладаў на месца\nрускай мовы запісваецца беларускі тэкст, у тры шрыфты дадаюцца літары І\nі Ў, мяняецца назва мовы), level0 (назва мовы ў наладах) і сцэны\nlevel3–level8, level10–level13 (надпісы ў галаваломках і вокнах).\nАрыгіналы захоўваюцца побач з канчаткам .orig."
+ }
+}

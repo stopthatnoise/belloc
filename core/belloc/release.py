@@ -39,7 +39,7 @@ import subprocess
 import sys
 import zipfile
 
-from . import engines, payload as payload_mod, tables
+from . import catalog, engines, payload as payload_mod, tables
 from .config import ROOT, Loc
 
 README = """{title}
@@ -134,7 +134,8 @@ def release_payload(loc: Loc, engine) -> dict:
     p["release"] = {
         "title": rel["title"], "version": rel["version"], "credits": credits(loc),
         "date": datetime.date.today().isoformat(), "exe": rel["exe"],
-        "language_name": rel["language_name"], "replaces": rel["replaces"], "url": rel.get("url", ""),
+        "language_name": rel["language_name"], "replaces": rel["replaces"],
+        "url": rel.get("url") or catalog.RELEASES,     # старонка рэліза: па змаўчанні — Releases каталога
     }
     return p
 
