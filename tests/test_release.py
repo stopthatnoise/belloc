@@ -96,7 +96,7 @@ class ReleaseTest(unittest.TestCase):
         os.makedirs(os.path.dirname(path))
         with open(path, "w", encoding="utf-8") as f:
             json.dump({"assets": ["fonts/a/A.ttf"]}, f)
-        p = installer.load_payload(path)
+        p = payload.load(path)
         self.assertEqual(payload.asset(p, "fonts/a/A.ttf:Bold"),
                          os.path.join(self.tmp, "exe", "assets", "fonts/a/A.ttf:Bold"))
 

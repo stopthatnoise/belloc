@@ -27,13 +27,20 @@ Payload — payload.py.
 from __future__ import annotations
 
 from ..config import Loc
+from ..install import state
 from ..payload import build_payload  # noqa: F401 — base.build_payload для выклікаў
 
 
 def patch(loc: Loc, engine, out: str | None = None):
-    """Пераклад у гульню або, з out, у іншую папку (арыгіналы чытаюцца з гульні)."""
-    return engine.apply(loc.game_dir, build_payload(loc, engine), out)
+    """Пераклад у гульню (з меткай belloc.json) або, з out, у іншую папку
+    (арыгіналы чытаюцца з гульні)."""
+    p = build_payload(loc, engine)
+    res = engine.apply(loc.game_dir, p, out)
+    if not out:
+        state.write(loc.game_dir, p, "belloc patch")
+    return res
 
 
 def restore(loc: Loc, engine):
     engine.restore(loc.game_dir, build_payload(loc, engine))
+    state.remove(loc.game_dir)

@@ -12,6 +12,8 @@
   гульні да рэліза;
 - [docs/agent-brief.md](docs/agent-brief.md) — шаблон задання агенту, які перакладае
   пачку радкоў, і правілы такой працы;
+- [docs/launcher.md](docs/launcher.md) — каталог перакладаў, пакеты, метка
+  ўсталёўкі, версіі і лаўнчар;
 - [docs/engines.md](docs/engines.md) — рухавікі, шрыфты, новы рухавік; падрабязнасці
   кожнага — у docstring `core/belloc/engines/<рухавік>/__init__.py`;
 - `python -X utf8 -m belloc --help` — каманды.

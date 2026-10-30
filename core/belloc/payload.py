@@ -8,6 +8,7 @@
   game_id, game імя папкі ў games/ і назва гульні
   steam_appid, steam_buildid
                 па чым шукаць гульню і пад якую яе версію сабраны пераклад
+  version       версія перакладу (release.version у game.json; без яе — None)
   strings       {табліца: {ключ: bel}} — толькі перакладзенае
   from_original рэгулярка кавалкаў арыгінала (tables.py): у strings яны — заглушка `[]`,
                 рухавік (FROM_ORIGINAL = True) падстаўляе іх з файлаў гульні
@@ -38,6 +39,7 @@ def build_payload(loc: Loc, engine) -> dict:
             meta = json.load(f)
     p = {"schema": SCHEMA, "engine": engine.NAME, "game_id": loc.id, "game": loc.name,
          "steam_appid": loc.steam_appid, "steam_buildid": meta.get("steam_buildid"),
+         "version": loc.raw.get("release", {}).get("version"),
          "strings": {t: rows for t, rows in tables.translation_by_key(loc).items() if rows}}
     if loc.raw.get("from_original"):
         if not getattr(engine, "FROM_ORIGINAL", False):
@@ -58,3 +60,12 @@ def asset(p: dict, rel: str) -> str:
 def dump(p: dict) -> dict:
     """Payload для запісу ў файл — без assets_root."""
     return {k: v for k, v in p.items() if k != "assets_root"}
+
+
+def load(path: str) -> dict:
+    """payload.json з дыска; assets — у папцы assets/ побач з ім (exe, пакет перакладу)."""
+    with open(path, encoding="utf-8") as f:
+        p = json.load(f)
+    if p.get("assets"):
+        p["assets_root"] = os.path.join(os.path.dirname(os.path.abspath(path)), "assets")
+    return p

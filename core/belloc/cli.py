@@ -23,6 +23,7 @@
   fonts      якія літары ёсць у шрыфтах гульні (--text: ці хапае для перакладу)
   textures   прэв'ю надпісаў textures.json (да / пасля) → build/textures/ (--out ПАПКА)
   package    рэліз: усталёўшчык .exe + ЧЫТАЙ.txt → build/release/ (release.py)
+  catalog    пакет перакладу для лаўнчара + запіс у каталог (catalog.py; --catalog ФАЙЛ)
 
 Без гульні:
   list                  спіс гульняў
@@ -110,6 +111,8 @@ def main(argv=None):
     p = with_loc("fonts", "літары ў шрыфтах гульні")
     p.add_argument("--text", action="store_true", help="ці пакрываюць шрыфты ўсе літары перакладу")
     with_loc("package", "рэліз: усталёўшчык .exe")
+    p = with_loc("catalog", "пакет перакладу і запіс у каталог")
+    p.add_argument("--catalog", help="файл каталога (па змаўчанні local/catalog/catalog.json)")
     p = with_loc("textures", "прэв'ю надпісаў на тэкстурах")
     p.add_argument("--out", help="іншая папка")
     p = sub.add_parser("batch", help="пачкі для паралельнай працы")
@@ -187,6 +190,9 @@ def main(argv=None):
     elif args.cmd == "glossary":
         return glossary.run(loc.glossary, os.path.join(loc.build, "glossary.md"),
                             loc.name, args.check)
+    elif args.cmd == "catalog":
+        from . import catalog
+        catalog.publish(loc, args.catalog)
     elif args.cmd == "package":
         from . import release
         release.build(loc)

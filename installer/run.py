@@ -8,6 +8,9 @@
 
 Файлы гульні не распаўсюджваюцца: усё робіцца на камп'ютары гульца тым жа кодам,
 што `belloc patch` (engine.apply / restore), — вынік байт у байт аднолькавы.
+Пасля ўсталёўкі ў каталогу гульні застаецца метка belloc.json (install/state.py) — па
+ёй лаўнчар бачыць пераклад. Пры запуску exe правярае каталог перакладаў (catalog.py):
+калі ёсць навейшая версія — кажа, адкуль яе ўзяць; без сеткі — проста працуе далей.
 
     <exe>                       меню
     <exe> --install [--yes]     усталяваць / абнавіць
@@ -17,11 +20,11 @@
 from __future__ import annotations
 
 import argparse
-import json
 import os
 import sys
 
-from belloc import engines, steam
+from belloc import catalog, engines, payload as payload_mod, steam
+from belloc.install import state
 from belloc.install.process import game_running
 
 PAYLOAD = "payload.json"
@@ -46,22 +49,24 @@ def pause(auto: bool):
             pass
 
 
-def load_payload(path: str) -> dict:
-    with open(path, encoding="utf-8") as f:
-        p = json.load(f)
-    if p.get("assets"):
-        p["assets_root"] = os.path.join(os.path.dirname(path), "assets")
-    return p
+def remind(payload: dict, src: str = catalog.CATALOG_URL):
+    """Калі ў каталогу ёсць навейшая версія гэтага перакладу — сказаць пра яе."""
+    e = (catalog.fetch(src, timeout=3) or {}).get("games", {}).get(payload["game_id"])
+    if e and catalog.newer(e.get("version"), payload["release"]["version"]):
+        print(f"Ёсць новая версія перакладу: {e['version']} ({e.get('date', '')}).")
+        if e.get("changes"):
+            print(f"  {e['changes']}")
+        print(f"  Спампаваць: {e.get('page')}\n")
 
 
-def main(argv=None, payload_path: str | None = None) -> int:
+def main(argv=None, payload_path: str | None = None, catalog_src: str = catalog.CATALOG_URL) -> int:
     # кірыліца ў кансолі: калі вывад перанакіраваны, Python бярэ cp1252 і падае
     for stream in (sys.stdout, sys.stderr):
         try:
             stream.reconfigure(encoding="utf-8", errors="replace")
         except Exception:
             pass
-    payload = load_payload(payload_path or here(PAYLOAD))
+    payload = payload_mod.load(payload_path or here(PAYLOAD))
     rel = payload["release"]
     engine = engines.get(payload["engine"])
     ap = argparse.ArgumentParser(description=f"{rel['title']} — усталёўшчык")
@@ -75,6 +80,7 @@ def main(argv=None, payload_path: str | None = None) -> int:
 
     print(f"{rel['title']}, версія {rel['version']} ({rel['date']})")
     print(f"{rel['credits']}\n")
+    remind(payload, catalog_src)
 
     game, buildid = (args.game, None) if args.game else steam.find_game(payload["steam_appid"])
     while not game or not os.path.isdir(os.path.join(game, engine.check_path(payload))):
@@ -94,8 +100,8 @@ def main(argv=None, payload_path: str | None = None) -> int:
 
     action = "install" if args.install else "uninstall" if args.uninstall else None
     if not action:
-        state = "пераклад усталяваны" if engine.installed(game, payload) else "пераклад не ўсталяваны"
-        print(f"Стан: {state}\n")
+        now = "пераклад усталяваны" if engine.installed(game, payload) else "пераклад не ўсталяваны"
+        print(f"Стан: {now}\n")
         print("  1 — усталяваць / абнавіць пераклад")
         print("  2 — выдаліць пераклад (вярнуць арыгінал)")
         print("  0 — выхад")
@@ -109,9 +115,11 @@ def main(argv=None, payload_path: str | None = None) -> int:
                   "гэтай мовы ў гульні не будзе.")
             if ask("Усталяваць?", auto):
                 engine.apply(game, payload, None, print)
+                state.write(game, payload, "installer")
                 print(f"\nГатова. У наладах гульні выберыце мову «{rel['language_name']}».")
         elif ask("Выдаліць пераклад?", auto):
             engine.restore(game, payload, print)
+            state.remove(game)
             print("\nГатова: гульня зноў з арыгінальнымі файламі.")
     except PermissionError as e:
         print(f"\nНе атрымалася запісаць файл ({e.filename}). Зачыніце гульню; калі гульня ў "

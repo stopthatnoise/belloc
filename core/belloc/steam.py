@@ -61,6 +61,30 @@ def find_game(appid: int) -> tuple[str | None, str | None]:
     return None, None
 
 
+def installed_apps() -> dict[int, dict]:
+    """Усе ўсталяваныя гульні Steam: {appid: {"dir", "buildid", "name"}} (па appmanifest)."""
+    out = {}
+    for lib in steam_roots():
+        apps = os.path.join(lib, "steamapps")
+        if not os.path.isdir(apps):
+            continue
+        for n in os.listdir(apps):
+            m = re.fullmatch(r"appmanifest_(\d+)\.acf", n)
+            if not m or int(m.group(1)) in out:
+                continue
+            text = _manifest(os.path.join(apps, n))
+            d = re.search(r'"installdir"\s+"([^"]+)"', text)
+            if not d:
+                continue
+            path = os.path.join(apps, "common", d.group(1))
+            if os.path.isdir(path):
+                b = re.search(r'"buildid"\s+"(\d+)"', text)
+                name = re.search(r'"name"\s+"([^"]+)"', text)
+                out[int(m.group(1))] = {"dir": path, "buildid": b and b.group(1),
+                                        "name": name.group(1) if name else d.group(1)}
+    return out
+
+
 def buildid(game_dir: str, appid: int | None) -> str | None:
     """buildid гульні з appmanifest побач з яе каталогам (steamapps/common/<гульня>)."""
     if not appid:
