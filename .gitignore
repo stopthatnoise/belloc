@@ -11,3 +11,7 @@ __pycache__/
 build/
 dist/
 *.spec
+
+# лакальныя налады і worktree Claude Code (шляхі машыны)
+.claude/worktrees/
+.claude/settings.local.json
