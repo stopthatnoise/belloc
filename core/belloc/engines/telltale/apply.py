@@ -111,6 +111,8 @@ def build(game_dir: str, payload: dict, dest: str, log=print) -> list[str]:
     fill = target != lang                        # неперакладзенае — тэкстам мовы lang
     rename = s.get("rename", {})
     wrap = s.get("wrap", {})
+    for pat in wrap:
+        tables.regex(pat, "telltale.wrap")
     bf = Blowfish7(bytes.fromhex(s["lua_key"])) if s.get("lua_files") else None
     chars = s.get("font_chars", tfont.BEL_CHARS)
     fonts = {k: payload_mod.asset(payload, v) for k, v in s.get("fonts", {}).items()}

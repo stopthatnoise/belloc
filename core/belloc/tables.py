@@ -62,11 +62,54 @@ def with_ctx(ctx: str, note: str) -> str:
 PLACEHOLDER = "[]"
 
 
+def _nested_repeat(items, inside: bool = False) -> bool:
+    """Ці ёсць паўтор у паўторы — (a+)+, (.*)*: на радку, які амаль падыходзіць, такая
+    рэгулярка думае экспаненцыйна доўга (ReDoS)."""
+    from re import _constants as c
+    for op, av in items:
+        if op in (c.MAX_REPEAT, c.MIN_REPEAT, c.POSSESSIVE_REPEAT):
+            lo, hi, sub = av
+            if hi == c.MAXREPEAT or hi > 1:
+                if inside or _nested_repeat(sub, op != c.POSSESSIVE_REPEAT):
+                    return True
+                continue
+            if _nested_repeat(sub, inside):
+                return True
+        elif op == c.SUBPATTERN:
+            if _nested_repeat(av[-1], inside):
+                return True
+        elif op == c.BRANCH:
+            if any(_nested_repeat(b, inside) for b in av[1]):
+                return True
+        elif op in (c.ASSERT, c.ASSERT_NOT, c.ATOMIC_GROUP):
+            if _nested_repeat(av[-1] if op != c.ATOMIC_GROUP else av, inside and op != c.ATOMIC_GROUP):
+                return True
+    return False
+
+
+def regex(pattern: str, what: str = "рэгулярка") -> re.Pattern:
+    """re.compile для рэгулярак з game.json і batches.json (іх могуць прыслаць у PR, а
+    from_original і wrap выконваюцца і ў гульцоў): паўтор у паўторы — памылка."""
+    try:
+        pat = re.compile(pattern)
+    except (re.error, TypeError) as e:
+        raise SystemExit(f"{what}: «{pattern}» — {e}")
+    try:
+        from re import _parser
+        nested = _nested_repeat(_parser.parse(pattern))
+    except ImportError:                     # унутраны модуль іншай версіі Python
+        nested = False
+    if nested:
+        raise SystemExit(f"{what}: «{pattern}» — паўтор у паўторы ((…+)+, (…*)*) можа завіснуць; "
+                         "перапішыце без яго або праз (?>…) / *+")
+    return pat
+
+
 def from_original(pattern: str | None) -> re.Pattern | None:
     """Рэгулярка кавалкаў арыгінала; заглушка мусіць ёй адпавядаць (парадак збегаў)."""
     if not pattern:
         return None
-    pat = re.compile(pattern)
+    pat = regex(pattern, "from_original")
     if not pat.fullmatch(PLACEHOLDER):
         raise SystemExit(f"from_original: «{pattern}» не адпавядае заглушцы {PLACEHOLDER}")
     return pat

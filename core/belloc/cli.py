@@ -40,6 +40,27 @@ import sys
 
 from . import batch, config, dicts, glossary, tables
 
+# lint_args з game.json — толькі гэтыя: --report, --dict, --wordlist і пад. з PR пісалі б
+# і чыталі б файлы машыны мейнтейнера
+LINT_FLAGS = {"--ink-prefix", "--paradox"}
+LINT_VALUES = {"--tag-re", "--marks", "--checks", "--skip", "--max-print"}
+
+
+def game_lint_args(args) -> list[str]:
+    out, it = [], iter(args if isinstance(args, list) else [args])
+    for a in it:
+        opt = str(a).split("=", 1)[0]
+        if opt in LINT_FLAGS and "=" not in str(a):
+            out.append(a)
+        elif opt in LINT_VALUES:
+            out += [a] if "=" in str(a) else [a, next(it, "")]
+        else:
+            raise SystemExit(f"lint_args у game.json: «{a}» нельга; можна {', '.join(sorted(LINT_FLAGS | LINT_VALUES))}")
+    for i, a in enumerate(out):
+        if a == "--tag-re" or str(a).startswith("--tag-re="):
+            tables.regex(str(a).split("=", 1)[1] if "=" in str(a) else out[i + 1], "lint_args --tag-re")
+    return out
+
 
 def run_lint(loc, pairs, report, extra):
     """Лінтэр з гласарыем, белымі спісамі і слоўнікамі гэтай гульні."""
@@ -49,7 +70,7 @@ def run_lint(loc, pairs, report, extra):
         argv += ["--glossary", path]
     if loc.lint_allow:
         argv += ["--allow", *loc.lint_allow]
-    argv += loc.raw.get("lint_args", []) + extra
+    argv += game_lint_args(loc.raw.get("lint_args", [])) + extra
     if not dicts.lint_args():
         print("(слоўнікаў няма — spell/names/ruwords выключаныя; `python -m belloc dicts`)")
     sys.argv = argv

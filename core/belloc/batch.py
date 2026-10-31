@@ -72,10 +72,10 @@ def _load(loc: Loc) -> dict[str, list[dict]]:
 def _signature(loc: Loc, rules: list[dict], table: str, r: dict):
     """Подпіс радка для пошуку паўтораў (або None — табліца не пад правілам)."""
     for i, rule in enumerate(rules):
-        if re.search(rule["tables"], table):
+        if tables.regex(rule["tables"], "_repeats").search(table):
             sig = [r.get(f, "") for f in rule.get("by", [loc.source_lang])]
             if rule.get("note"):
-                m = re.search(rule["note"], r["note"])
+                m = tables.regex(rule["note"], "_repeats").search(r["note"])
                 sig += [g for g in m.groups() if g] if m else [r["note"]]
             return (i, *sig)
     return None
@@ -103,14 +103,14 @@ def assign(loc: Loc, repeats: dict | None = None, data: dict | None = None
         rows = []
         for rule in b["rows"]:
             if "tables" in rule:
-                names = [t for t in data if re.search(rule["tables"], t)]
+                names = [t for t in data if tables.regex(rule["tables"], name).search(t)]
             elif rule["table"] in data:
                 names = [rule["table"]]
             else:
                 raise SystemExit(f"{name}: няма табліцы {rule['table']}")
-            m = re.compile(rule["match"]) if rule.get("match") else None
-            x = re.compile(rule["exclude"]) if rule.get("exclude") else None
-            nt = re.compile(rule["note"]) if rule.get("note") else None
+            m = tables.regex(rule["match"], name) if rule.get("match") else None
+            x = tables.regex(rule["exclude"], name) if rule.get("exclude") else None
+            nt = tables.regex(rule["note"], name) if rule.get("note") else None
             lo, hi = rule.get("slice") or [None, None]
             for table in names:
                 for r in data[table][lo:hi]:

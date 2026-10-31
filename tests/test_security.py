@@ -16,7 +16,7 @@ HERE = os.path.dirname(__file__)
 sys.path.insert(0, os.path.join(HERE, "..", "core"))
 sys.path.insert(0, HERE)
 
-from belloc import catalog, config, payload  # noqa: E402
+from belloc import catalog, cli, config, payload, tables  # noqa: E402
 from belloc.engines import csv_folder, paradox, unreal_locres  # noqa: E402
 from belloc.install import paths  # noqa: E402
 from belloc.install.process import tasklist  # noqa: E402
@@ -48,6 +48,28 @@ class InsideTest(unittest.TestCase):
 
     def test_tasklist_full_path(self):
         self.assertTrue(os.path.isabs(tasklist()))
+
+
+class RegexTest(unittest.TestCase):
+    """Рэгуляркі з game.json і batches.json: паўтор у паўторы (ReDoS) — памылка."""
+
+    def test_regex(self):
+        for p in (r"(?s)\A(?:\[\]|.{1000,})\Z", r"\[[^\]]*\]", r"^Fables[0-9]+/(?!ui_)",
+                  r"<[^>]*>|\{[^}]*\}", r"(?:ab)+", r"(?>a+)+"):
+            tables.regex(p)
+        for p in (r"(a+)+$", r"(.*)*", r"(?:\w+\s?)+$", r"((a|b)+c?)*", r"(?=(a+)+)b", "(", 7):
+            with self.subTest(p), self.assertRaises(SystemExit):
+                tables.regex(p)
+        with self.assertRaises(SystemExit):
+            tables.from_original(r"(\[\]+)+")
+
+    def test_lint_args(self):
+        self.assertEqual(cli.game_lint_args(["--tag-re", "<[^>]*>", "--marks", "|^", "--paradox"]),
+                         ["--tag-re", "<[^>]*>", "--marks", "|^", "--paradox"])
+        for bad in (["--report", "C:/x.bat"], ["--dict=x"], ["--rep", "x"], ["--marks", "--report", "x"],
+                    ["--tag-re", "(a+)+"]):
+            with self.subTest(bad), self.assertRaises(SystemExit):
+                cli.game_lint_args(bad)
 
 
 class EngineTest(unittest.TestCase):
