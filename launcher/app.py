@@ -1,7 +1,8 @@
 """Лаўнчар — акно (PySide6): гульні Steam з беларускім перакладам, паставіць / абнавіць / выдаліць.
 
-Логіка — games.py (тая ж, што ў кансольным main.py); тут толькі інтэрфейс. Доўгія
-справы (каталог, сканаванне, усталёўка) ідуць у асобным патоку, журнал — унізе акна.
+Логіка — games.py (тая ж, што ў кансольным main.py); тут толькі інтэрфейс. Каталог і
+сканаванне — у асобным патоку, усталёўка і выдаленне — у асобным працэсе (start_process),
+журнал — унізе акна.
 Вокладкі — з лакальнага кэша Steam (steam.cover), у сетку лаўнчар ходзіць толькі
 па каталог і пакет перакладу.
 
@@ -10,10 +11,12 @@
 from __future__ import annotations
 
 import argparse
+import multiprocessing
+import queue
 import sys
 import traceback
 
-from PySide6.QtCore import QObject, Qt, QThread, QUrl, Signal
+from PySide6.QtCore import QObject, Qt, QThread, QTimer, QUrl, Signal
 from PySide6.QtGui import QDesktopServices, QPixmap
 from PySide6.QtWidgets import (QApplication, QFileDialog, QFrame, QHBoxLayout, QLabel, QMainWindow,
                                QMessageBox, QPlainTextEdit, QPushButton, QScrollArea, QSplitter, QVBoxLayout,
@@ -382,7 +385,58 @@ class Window(QMainWindow):
         def failed(text, busy):
             finish()
             self.show_error(text, busy)
-        self.start(lambda log: fn(card.row, log), done, failed)
+        self.start_process(what, card, done, failed)
+
+    def start_process(self, what: str, card: Card, on_done, on_failed):
+        """Усталёўка і выдаленне — у асобным працэсе: UnityPy і сціск трымаюць GIL
+        секундамі, і акно ў патоку таго ж працэсу «не адказвала» б; а падзенне рухавіка
+        не кране лаўнчар. Журнал і вынік прыходзяць праз чаргу, акно правярае яе таймерам."""
+        ctx = multiprocessing.get_context("spawn")
+        q = ctx.Queue()
+        proc = ctx.Process(target=work_process, args=(what, card.row, q), daemon=True)
+        proc.start()
+        timer = QTimer(self)
+
+        def poll():
+            while True:
+                try:
+                    kind, val = q.get_nowait()
+                except queue.Empty:
+                    break
+                if kind == "log":
+                    self.log(val)
+                    continue
+                timer.stop()
+                proc.join(5)
+                if kind == "done":
+                    card.row.update(val)
+                    on_done(val)
+                else:
+                    on_failed(val, kind == "busy")
+                return
+            if not proc.is_alive():
+                timer.stop()
+                on_failed(f"Працэс усталёўкі нечакана спыніўся (код {proc.exitcode}).", False)
+        timer.timeout.connect(poll)
+        timer.start(100)
+
+
+def ping(q):
+    from belloc import engines
+    q.put(f"ok ({len(engines.ENGINES)} рухавікоў)")
+
+
+def work_process(what: str, row: dict, q):
+    """Цела асобнага працэсу: games.install / remove, журнал і вынік — у чаргу."""
+    try:
+        (games.install if what == "install" else games.remove)(row, lambda s: q.put(("log", s)))
+        q.put(("done", {"state": row["state"], "mark": row["mark"]}))
+    except games.Busy as e:
+        q.put(("busy", str(e)))
+    except SystemExit as e:
+        q.put(("error", str(e)))
+    except Exception:
+        q.put(("error", traceback.format_exc()))
 
 
 def selftest(out: str, catalog_src: str) -> int:
@@ -406,6 +460,16 @@ def selftest(out: str, catalog_src: str) -> int:
             lines.append(f"{lib}: ok")
         except Exception as e:
             lines.append(f"{lib}: ПАМЫЛКА {type(e).__name__}: {e}")
+    # дачынны працэс (усталёўка ідзе ў ім): у exe яго запускае сам exe праз freeze_support
+    ctx = multiprocessing.get_context("spawn")
+    q = ctx.Queue()
+    proc = ctx.Process(target=ping, args=(q,), daemon=True)
+    proc.start()
+    try:
+        lines.append(f"працэс усталёўкі: {q.get(timeout=60)}")
+    except queue.Empty:
+        lines.append("працэс усталёўкі: ПАМЫЛКА — не адказаў")
+    proc.join(10)
     app = QApplication.instance() or QApplication(sys.argv[:1])
     app.setStyle("Fusion")
     w = Window(catalog_src, {})
@@ -441,4 +505,5 @@ def main(argv=None) -> int:
 
 
 if __name__ == "__main__":
+    multiprocessing.freeze_support()        # exe: дачынны працэс усталёўкі запускае гэты ж exe
     sys.exit(main())
