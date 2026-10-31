@@ -1,0 +1,30 @@
+# Хто мусіць зацвердзіць змены (GitHub: ruleset «Require review from Code Owners»).
+# Усё — уладальнік; шляхі ніжэй пералічаныя яўна, бо яны выконваюцца або чытаюцца як
+# інструкцыі на машыне таго, хто правярае PR, ці трапляюць у exe да гульцоў.
+
+*                               @stopthatnoise
+
+# інструкцыі агентам і налады інструментаў
+/CLAUDE.md                      @stopthatnoise
+/AGENTS.md                      @stopthatnoise
+/docs/                          @stopthatnoise
+/.claude/                       @stopthatnoise
+/.mcp.json                      @stopthatnoise
+/.github/                       @stopthatnoise
+/.gitmodules                    @stopthatnoise
+/.gitattributes                 @stopthatnoise
+
+# код, які ідзе ў exe і лаўнчар
+/core/                          @stopthatnoise
+/installer/                     @stopthatnoise
+/launcher/                      @stopthatnoise
+/tests/                         @stopthatnoise
+/pyproject.toml                 @stopthatnoise
+
+# канфігі гульняў: шляхі, рэгуляркі, assets — трапляюць у payload і ў гульню гульца
+/games/*/game.json              @stopthatnoise
+/games/*/textures.json          @stopthatnoise
+/games/*/batches.json           @stopthatnoise
+/games/*/research/              @stopthatnoise
+/games/*/release/               @stopthatnoise
+/games/*/fonts/                 @stopthatnoise
