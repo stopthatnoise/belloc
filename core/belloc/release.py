@@ -40,7 +40,7 @@ import subprocess
 import sys
 import zipfile
 
-from . import catalog, engines, payload as payload_mod, tables
+from . import catalog, engines, oodle, payload as payload_mod, tables
 from .config import ROOT, Loc
 from .install import paths
 
@@ -223,6 +223,8 @@ def build_files(loc: Loc, engine, p: dict, name: str, out_dir: str) -> str | Non
 def build(loc: Loc) -> str:
     rel = loc.section("release")
     engine = engines.get(loc.engine)
+    if "ooz" in getattr(engine, "PYINSTALLER", []):
+        oodle.check()                    # у exe — толькі наша зборка pyooz (GPL: зыходнікі побач)
     work = os.path.join(loc.build, "package")
     shutil.rmtree(work, ignore_errors=True)
     os.makedirs(work)

@@ -14,7 +14,8 @@ license-files = ["LICENSE"]
 lint = ["spylls==0.1.7"]                                   # hunspell без праграмы hunspell (Windows)
 unity = ["UnityPy==1.25.4", "numpy==2.5.4", "Pillow", "fonttools"]   # fonttools — дынамічныя TTF
 glacier = ["lz4", "numpy==2.5.4"]                          # .rpkg: LZ4 і XTEA масівам
-unreal = ["pyooz", "pycryptodome", "fonttools"]           # .pak: Oodle, AES; кірыліца ў шрыфты
+unreal = ["pyooz==0.0.8", "pycryptodome", "fonttools"]    # .pak: Oodle, AES; кірыліца ў шрыфты;
+                                                          # для exe — сваё кола pyooz (core/belloc/oodle.py)
 telltale = ["numpy==2.5.4", "Pillow", "texture2ddecoder", "etcpak", "opencv-python-headless"]
                                                           # шрыфты і тэкстуры: BC1/BC3, inpaint
 release = ["pyinstaller==6.22.3"]

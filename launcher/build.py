@@ -24,7 +24,7 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "core"))
 sys.path.insert(0, HERE)
 
-from belloc import engines  # noqa: E402
+from belloc import engines, oodle  # noqa: E402
 
 NAME = "belloc"
 
@@ -57,6 +57,7 @@ def engine_modules() -> list[str]:
 
 def build() -> str:
     from app import VERSION
+    oodle.check()                        # лаўнчар нясе ўсе рухавікі, у тым ліку ooz.pyd
     work = os.path.join(ROOT, "local", "launcher")
     shutil.rmtree(os.path.join(work, "dist"), ignore_errors=True)
     os.makedirs(work, exist_ok=True)

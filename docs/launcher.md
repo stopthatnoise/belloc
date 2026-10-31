@@ -113,7 +113,10 @@ python launcher/build.py      # → local/launcher/belloc-launcher_<версія
 - усе рухавікі — `--hidden-import` кожнага модуля `belloc.engines.*` (рухавік грузіцца
   па імені з каталога, PyInstaller сам яго не бачыць) + `PYINSTALLER` з кожнага рухавіка;
 - відэа-плагін OpenCV выдаляецца (30 МБ, не патрэбны);
-- версія — `VERSION` у `launcher/app.py`, у загалоўку акна.
+- версія — `VERSION` у `launcher/app.py`, у загалоўку акна;
+- `ooz.pyd` (pyooz, GPL) — толькі з нашага рэліза `pyooz-0.0.8.<n>` з зыходнікамі побач:
+  зборка правярае яго SHA-256 і без яго спыняецца (як усталяваць — `core/belloc/oodle.py`);
+  пробная зборка з колам з PyPI — `BELLOC_ALLOW_PYPI_OOZ=1`, не для выкладкі.
 
 Праверка зборкі — `belloc.exe --selftest <шлях> --catalog <файл>`: імпарт усіх рухавікоў і
 бібліятэк, якія яны грузяць толькі падчас усталёўкі (UnityPy, cv2, ooz…), акно, каталог;
