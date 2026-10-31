@@ -16,6 +16,9 @@
   "font_bundles": [
    "localization-assets-russian(ru)_assets_all.bundle",
    "fonts-russian_assets_all.bundle"
+  ],
+  "font_assets": [
+   "resources.assets"
   ]
  },
  "release": {
@@ -27,6 +30,6 @@
   "replaces": "Русский",
   "menu": "Налады → Мова",
   "contents": "Перакладзена ўсё, што ёсць у моўных табліцах гульні: дыялогі, нататкі,\nпрадметы, меню, падказкі (усяго радкоў: {strings}). Надпісы, намаляваныя\nна тэкстурах (шыльды, коміксы), застаюцца англійскімі.",
-  "how": "Ён змяняе тры\nфайлы ў Carpenter_Data/StreamingAssets/aa/StandaloneWindows64: табліцы\nрускай мовы (у іх запісваецца беларускі тэкст) і два файлы шрыфтоў (у іх\nдадаюцца літары І і Ў). Арыгіналы захоўваюцца побач з канчаткам .orig."
+  "how": "Ён змяняе чатыры\nфайлы гульні: у Carpenter_Data/StreamingAssets/aa/StandaloneWindows64 —\nтабліцы рускай мовы (у іх запісваецца беларускі тэкст) і два файлы\nшрыфтоў, у Carpenter_Data — resources.assets (копіі тых жа шрыфтоў);\nу шрыфты дадаюцца літары І і Ў. Арыгіналы захоўваюцца побач з\nканчаткам .orig."
  }
 }

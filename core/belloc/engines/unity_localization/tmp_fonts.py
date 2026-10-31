@@ -14,7 +14,9 @@
 _TextureHeight матэрыялу правіцца разам з ёй.
 
 Секцыя "unity" у game.json: font_bundles — спіс бандлаў, у якіх
-патчыць кірылічныя шрыфты (астатнія не чапаюцца).
+патчыць кірылічныя шрыфты (астатнія не чапаюцца); font_assets — класічныя
+файлы (адносна data_dir), у якіх ляжаць свае копіі тых жа шрыфтоў
+(resources.assets). Копіі шукаць праз Resources: `belloc fonts` бачыць толькі бандлы.
 """
 from __future__ import annotations
 
@@ -201,25 +203,58 @@ def set_material_height(mat_obj, height):
     mat_obj.save_typetree(m)
 
 
-def patch_bundle(base: str, out: str, preview: list | None):
-    """Патчыць кірылічныя шрыфты бандла base і піша вынік у out."""
-    env = UnityPy.load(base)
-    objs = {o.path_id: o for o in env.objects}
-    print(os.path.basename(out))
-    for o, t in list(monobehaviours(env)):
-        if "m_CharacterTable" not in t or 0x0410 not in {c["m_Unicode"] for c in t["m_CharacterTable"]}:
+def _fonts(env, nodes=None):
+    """(obj, typetree) кірылічных TMP-шрыфтоў. nodes — тыпавое дрэва TMP_FontAsset для
+    файлаў без яго (класічныя .assets гульні)."""
+    for o in env.objects:
+        if o.type.name != "MonoBehaviour":
             continue
+        try:
+            t = o.read_typetree(nodes) if nodes is not None else o.read_typetree()
+        except Exception:
+            continue
+        if "m_CharacterTable" in t and 0x0410 in {c["m_Unicode"] for c in t["m_CharacterTable"]}:
+            yield o, t
+
+
+def _patch_env(env, preview: list | None, nodes=None):
+    objs = {o.path_id: o for o in env.objects}
+    for o, t in list(_fonts(env, nodes)):
         tex_obj = objs[t["m_AtlasTextures"][0]["m_PathID"]]
         tex = tex_obj.read()
         atlas = Atlas(tex.image)
         if not patch_font(t, atlas, t["m_AtlasPadding"]):
             continue
-        o.save_typetree(t)
-        tex.set_image(atlas.image(), target_format=TextureFormat.Alpha8)
+        o.save_typetree(t, nodes) if nodes is not None else o.save_typetree(t)
+        tex.set_image(atlas.image(), target_format=TextureFormat.Alpha8)   # дадзеныя — у файле, без .resS
         tex.save()
         set_material_height(objs[t["m_Material"]["m_PathID"]], t["m_AtlasHeight"])
         if preview is not None:
             preview.append((t, atlas))
+
+
+def patch_bundle(base: str, out: str, preview: list | None):
+    """Патчыць кірылічныя шрыфты бандла base і піша вынік у out."""
+    env = UnityPy.load(base)
+    print(os.path.basename(out))
+    _patch_env(env, preview)
+    save(env, out)
+
+
+def font_type_tree(bundle: str):
+    """Тыпавое дрэва TMP_FontAsset з бандла (у бандлах Addressables яно ёсць)."""
+    for o, _ in _fonts(UnityPy.load(bundle)):
+        return o.serialized_type.node
+    return None
+
+
+def patch_assets(base: str, out: str, nodes, preview: list | None = None):
+    """Тое ж для класічнага .assets (resources.assets): у ім свае копіі шрыфтоў, тыпавога
+    дрэва няма — яго дае font_type_tree. Silver Pines: экраны вынікаў і «Новай гульні+»
+    бяруць Montserrat з Resources."""
+    env = UnityPy.load(base)
+    print(os.path.basename(out))
+    _patch_env(env, preview, nodes)
     save(env, out)
 
 

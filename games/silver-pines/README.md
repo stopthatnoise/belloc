@@ -80,6 +80,10 @@ Television 87, астатняе — дробныя табліцы. Рускі п
 - Noticia Text, Impact Label, Caveat, Permanent Marker — без кірыліцы; для `ru` іх ролі ў
   AssetTable `Fonts` займаюць рускія шрыфты;
 - ёсць адзін дынамічны `LiberationSans SDF - Fallback` (пусты атлас).
+- у `resources.assets` — свае копіі рускіх Montserrat Regular/Bold (без `І і Ў ў`):
+  іх бяруць экраны вынікаў праходжання і бонусаў «Новай гульні+». `belloc fonts` іх не
+  бачыць (глядзіць толькі бандлы) — патчацца праз `font_assets` у game.json (заўвага
+  гульца 2026-10-31: на гэтых экранах прападалі «і» і «ў»).
 
 ## Дастаўка ў гульню
 

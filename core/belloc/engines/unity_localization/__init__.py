@@ -12,6 +12,9 @@
   extract_langs   ["en", "ru"]                — што выцягваць у source/
   preview_locale  "ru"                        — чыю табліцу перапісвае apply
   font_bundles    ["fonts_….bundle"]          — дзе ў кірылічныя TMP-шрыфты дадаюцца І/і, Ў/ў
+  font_assets     ["resources.assets"]        — тое ж у класічных файлах (адносна data_dir):
+                                                копіі шрыфтоў з Resources (Silver Pines: вынікі
+                                                праходжання, «Новая гульня+»)
 
 Ключ табліцы — m_Key з Shared Data (чытэльны і сталы); m_Id для запісу apply
 бярэ з Shared Data гульні гульца. Радкі без перакладу застаюцца на мове локалі.
