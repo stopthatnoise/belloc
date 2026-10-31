@@ -72,6 +72,23 @@ class AppTest(Fixture):
             self.assertTrue(self.idle())
         self.assertIsNone(state.read(self.gamedir))
         self.assertEqual(card.primary.text(), "Усталяваць")
+        self.assertEqual(self.w.cat_cards[0].chip.text(), "Гульня ёсць — можна паставіць")
+
+    def test_catalog_tab(self):
+        w = self.w
+        self.assertEqual(w.nav_cat.text(), "КАТАЛОГ  1")
+        cc = w.cat_cards[0]
+        self.assertEqual(cc.gid, "demo")
+        self.assertEqual(cc.chip.text(), "Гульня ёсць — можна паставіць")
+        w.nav_cat.click()
+        self.assertEqual(w.pages.currentIndex(), 1)
+        self.assertIn("Перакладаў у каталогу: 1", w.sub.text())
+        cc.button.click()                                  # «У бібліятэку»
+        self.assertEqual(w.pages.currentIndex(), 0)
+        w.search.setText("няма такой")
+        self.assertFalse(w.cards[0].isVisibleTo(w.list))
+        w.search.setText("dem")
+        self.assertTrue(w.cards[0].isVisibleTo(w.list))
 
     def test_update_offered(self):
         with redirect_stdout(io.StringIO()):
@@ -91,9 +108,9 @@ class AppTest(Fixture):
         w.load()
         self.assertTrue(wait(lambda: w.refresh_btn.isEnabled() and hasattr(w, "cat")))
         self.assertEqual(w.cards, [])
-        others = w.list.findChildren(app.OtherCard)
-        self.assertEqual([o.row["id"] for o in others], ["demo"])
-        self.assertEqual(others[0].store.text(), "Старонка ў Steam")
+        self.assertEqual([c.gid for c in w.cat_cards], ["demo"])
+        self.assertEqual(w.cat_cards[0].button.text(), "Старонка ў Steam")
+        self.assertEqual(w.cat_cards[0].chip.text(), "Гульні няма на камп'ютары")
         texts = [lb.text() for lb in w.list.findChildren(app.QLabel)]
         self.assertIn("Пакуль няма гульняў з беларускім перакладам", texts)
         # гулец паказвае папку — гульня з'яўляецца ў «Вашы гульні» і застаецца пасля перазапуску

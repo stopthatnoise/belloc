@@ -1,8 +1,11 @@
-"""Лаўнчар — акно (PySide6): гульні Steam з беларускім перакладам, паставіць / абнавіць / выдаліць.
+"""Лаўнчар — акно (PySide6): бібліятэка (гульні на камп'ютары) і каталог перакладаў.
+
+Уверсе — цёмная панэль: «Бібліятэка» / «Каталог», пошук, абнаўленне спісу. Бібліятэка —
+гульні Steam (і папкі, пазначаныя ўручную) з перакладам: паставіць / абнавіць / выдаліць.
+Каталог — усе пераклады і іх стан на гэтым камп'ютары. Унізе — журнал.
 
 Логіка — games.py (тая ж, што ў кансольным main.py); тут толькі інтэрфейс. Каталог і
-сканаванне — у асобным патоку, усталёўка і выдаленне — у асобным працэсе (start_process),
-журнал — унізе акна.
+сканаванне — у асобным патоку, усталёўка і выдаленне — у асобным працэсе (start_process).
 Вокладкі — з лакальнага кэша Steam (steam.cover), у сетку лаўнчар ходзіць толькі
 па каталог і пакет перакладу.
 
@@ -18,9 +21,9 @@ import traceback
 
 from PySide6.QtCore import QObject, Qt, QThread, QTimer, QUrl, Signal
 from PySide6.QtGui import QDesktopServices, QPixmap
-from PySide6.QtWidgets import (QApplication, QFileDialog, QFrame, QHBoxLayout, QLabel, QMainWindow,
-                               QMessageBox, QPlainTextEdit, QPushButton, QScrollArea, QSplitter, QVBoxLayout,
-                               QWidget)
+from PySide6.QtWidgets import (QApplication, QButtonGroup, QFileDialog, QFrame, QHBoxLayout, QLabel,
+                               QLineEdit, QMainWindow, QMessageBox, QPlainTextEdit, QPushButton, QScrollArea,
+                               QSplitter, QStackedWidget, QVBoxLayout, QWidget)
 
 from belloc import catalog, steam
 
@@ -28,34 +31,85 @@ import games
 
 TITLE = "Беларускія пераклады гульняў"
 VERSION = "0.1"                         # версія лаўнчара (у загалоўку акна; каталог: "launcher")
-COVER_W, COVER_H = 230, 107
+COVER_W, COVER_H = 230, 107             # прапорцыі header.jpg Steam (460×215)
 
+# цёмная тэма ў духу Steam; акцэнт брэнда — чырвоны квадрат у назве
 STYLE = """
-QMainWindow, QScrollArea, #list { background: #f4f2ee; }
-#card { background: white; border: 1px solid #e0dcd4; border-radius: 10px; }
-#name { font-size: 16px; font-weight: 600; color: #222; }
-#status { color: #555; }
-#status[state="installed"] { color: #2e7d32; }
-#status[state="wiped"] { color: #c62828; }
-#note { color: #b26a00; }
-#cover { background: #ddd8cf; border-radius: 6px; color: #888; }
-QPushButton { padding: 6px 14px; border-radius: 6px; border: 1px solid #c9c3b8; background: #fbfaf7; }
-QPushButton:hover { background: #f0ece4; }
-QPushButton#primary { background: #c8102e; color: white; border: none; font-weight: 600; }
-QPushButton#primary:hover { background: #a60d26; }
-QPushButton:disabled { color: #aaa; background: #eee; }
-#log { background: #1f1f1f; color: #ddd; font-family: Consolas, monospace; font-size: 12px; border: none; }
-#header { font-size: 20px; font-weight: 600; color: #222; }
-#section { font-size: 14px; font-weight: 600; color: #555; margin-top: 8px; }
-#empty { font-size: 17px; font-weight: 600; color: #333; margin-top: 24px; }
-#other { background: #faf8f4; border: 1px dashed #d6d0c5; border-radius: 10px; }
-#otherName { font-size: 14px; font-weight: 600; color: #444; }
-QPushButton#link { border: none; background: transparent; color: #1a5fb4; text-align: left; padding: 6px 2px; }
-QPushButton#link:hover { text-decoration: underline; }
-#sub { color: #777; }
+QMainWindow, #page, QScrollArea { background: #1b2838; }
+QWidget { color: #c7d5e0; font-size: 13px; }
+#topbar { background: #171a21; }
+#brand { color: #ffffff; font-size: 15px; font-weight: 700; letter-spacing: 1px; }
+#brandMark { background: #c8102e; border-radius: 2px; }
+QPushButton#nav { background: transparent; border: none; border-bottom: 3px solid transparent;
+                  color: #8f98a0; font-size: 13px; font-weight: 700; letter-spacing: 1px;
+                  padding: 14px 10px 11px 10px; border-radius: 0; }
+QPushButton#nav:hover { color: #ffffff; }
+QPushButton#nav:checked { color: #ffffff; border-bottom: 3px solid #1a9fff; }
+QLineEdit#search { background: #2a3f5a; border: 1px solid #2a3f5a; border-radius: 4px; color: #ffffff;
+                   padding: 5px 10px; min-width: 200px; }
+QLineEdit#search:focus { border: 1px solid #1a9fff; }
+QPushButton#icon { background: #2a3f5a; border: none; border-radius: 4px; color: #ffffff; font-size: 16px;
+                   min-width: 32px; min-height: 28px; padding: 0; }
+QPushButton#icon:hover { background: #3d5a80; }
+#subbar { background: #1b2838; }
+#sub { color: #8f98a0; }
+#section { color: #8f98a0; font-size: 12px; font-weight: 700; letter-spacing: 1px; margin-top: 6px; }
+#empty { color: #ffffff; font-size: 18px; font-weight: 600; margin-top: 30px; }
+#card { background: #16202d; border-radius: 6px; }
+#card:hover { background: #1e2b3a; }
+#name { color: #ffffff; font-size: 16px; font-weight: 600; }
+#status { color: #8f98a0; }
+#status[state="installed"], #status[state="unknown"] { color: #a1cd44; }
+#status[state="wiped"] { color: #e05a5a; }
+#note { color: #d9a441; }
+#cover { background: #0e141b; border-radius: 4px; color: #556772; font-weight: 600; }
+#chip { border-radius: 3px; padding: 2px 8px; font-size: 11px; font-weight: 700; background: #2a3f5a; color: #8f98a0; }
+#chip[state="installed"] { background: #4c6b22; color: #d2efa9; }
+#chip[state="update"] { background: #1a9fff; color: #ffffff; }
+#chip[state="wiped"] { background: #6e2b2b; color: #f3c0c0; }
+#chip[state="available"] { background: #3d5a80; color: #ffffff; }
+QPushButton { background: #3d4450; color: #dfe3e6; border: none; border-radius: 3px; padding: 7px 16px; }
+QPushButton:hover { background: #4c5563; }
+QPushButton#primary { background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #75b022, stop:1 #588a1b);
+                      color: #ffffff; font-weight: 700; }
+QPushButton#primary:hover { background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #8ed629, stop:1 #6aa621); }
+QPushButton:disabled, QPushButton#primary:disabled { background: #2a2f38; color: #5d6670; }
+QPushButton#link { background: transparent; color: #66c0f4; text-align: left; padding: 6px 2px; }
+QPushButton#link:hover { color: #ffffff; }
+QScrollBar:vertical { background: #1b2838; width: 10px; margin: 0; }
+QScrollBar::handle:vertical { background: #3d4450; border-radius: 5px; min-height: 30px; }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }
+QSplitter::handle { background: #171a21; height: 4px; }
+#log { background: #0e0e0e; color: #c7d5e0; font-family: Consolas, monospace; font-size: 12px; border: none; }
+QStatusBar { background: #171a21; color: #8f98a0; }
+QMessageBox { background: #1b2838; }
+QMessageBox QLabel { color: #c7d5e0; }
 """
 
 ACTION_LABEL = {"install": "Усталяваць", "update": "Абнавіць да {v}", "reinstall": "Паставіць нанова"}
+
+
+def cover_label(appid, name: str, w: int = COVER_W, h: int = COVER_H) -> QLabel:
+    """Вокладка з лакальнага кэша Steam або назва на цёмным фоне."""
+    cover = QLabel()
+    cover.setObjectName("cover")
+    cover.setFixedSize(w, h)
+    cover.setAlignment(Qt.AlignCenter)
+    path = steam.cover(appid) if appid else None
+    pix = QPixmap(path) if path else QPixmap()
+    if not pix.isNull():
+        cover.setPixmap(pix.scaled(w, h, Qt.KeepAspectRatioByExpanding, Qt.SmoothTransformation))
+    else:
+        cover.setText(name)
+        cover.setWordWrap(True)
+    return cover
+
+
+def repolish(w: QWidget, state: str):
+    """Змяніць уласцівасць state і перамаляваць па стылях (#status[state=…], #chip[state=…])."""
+    w.setProperty("state", state)
+    w.style().unpolish(w)
+    w.style().polish(w)
 
 
 class Job(QObject):
@@ -80,26 +134,16 @@ class Job(QObject):
 
 
 class Card(QFrame):
+    """Гульня ў бібліятэцы: стан перакладу і кнопкі."""
+
     def __init__(self, row: dict, window: "Window"):
         super().__init__()
         self.row, self.window = row, window
         self.setObjectName("card")
         lay = QHBoxLayout(self)
-        lay.setContentsMargins(12, 12, 12, 12)
-        lay.setSpacing(14)
-
-        cover = QLabel()
-        cover.setObjectName("cover")
-        cover.setFixedSize(COVER_W, COVER_H)
-        cover.setAlignment(Qt.AlignCenter)
-        path = steam.cover(row["appid"]) if row.get("appid") else None
-        pix = QPixmap(path) if path else QPixmap()
-        if not pix.isNull():
-            cover.setPixmap(pix.scaled(COVER_W, COVER_H, Qt.KeepAspectRatioByExpanding, Qt.SmoothTransformation))
-        else:
-            cover.setText(row["entry"]["name"])
-            cover.setWordWrap(True)
-        lay.addWidget(cover)
+        lay.setContentsMargins(12, 12, 14, 12)
+        lay.setSpacing(16)
+        lay.addWidget(cover_label(row.get("appid"), row["entry"]["name"]))
 
         text = QVBoxLayout()
         text.setSpacing(4)
@@ -122,6 +166,7 @@ class Card(QFrame):
         buttons = QVBoxLayout()
         self.primary = QPushButton()
         self.primary.setObjectName("primary")
+        self.primary.setCursor(Qt.PointingHandCursor)
         self.primary.clicked.connect(lambda: window.run_action(self, "install"))
         self.remove = QPushButton("Выдаліць")
         self.remove.clicked.connect(lambda: window.run_action(self, "remove"))
@@ -138,9 +183,7 @@ class Card(QFrame):
         if st == "installed":
             status += f": версія {games.installed_version(row)}"
         self.status.setText(status)
-        self.status.setProperty("state", st)
-        self.status.style().unpolish(self.status)
-        self.status.style().polish(self.status)
+        repolish(self.status, st)
         info = f"У каталогу — версія {e['version']}" + (f" ад {catalog.show_date(e['date'])}" if e.get("date") else "")
         if e.get("changes") and games.update_available(row):
             info += f"\nШто новага: {e['changes']}"
@@ -159,35 +202,68 @@ class Card(QFrame):
         self.remove.setEnabled(not busy)
 
 
-class OtherCard(QFrame):
-    """Пераклад ёсць, гульні на камп'ютары няма: што перакладзена і спасылка на краму."""
+def catalog_state(row: dict | None) -> tuple[str, str]:
+    """(state, тэкст) пазнакі ў каталогу: што з гэтым перакладам на камп'ютары."""
+    if row is None:
+        return "absent", "Гульні няма на камп'ютары"
+    if row["state"] == "installed":
+        if games.update_available(row):
+            return "update", "Ёсць абнаўленне"
+        return "installed", f"Усталявана · {games.installed_version(row)}"
+    if row["state"] == "unknown":
+        return "installed", "Усталявана"
+    if row["state"] == "wiped":
+        return "wiped", "Зляцеў пасля абнаўлення гульні"
+    return "available", "Гульня ёсць — можна паставіць"
 
-    def __init__(self, row: dict):
+
+class CatalogCard(QFrame):
+    """Пераклад з каталога: што перакладзена, версія, стан на камп'ютары."""
+
+    def __init__(self, gid: str, e: dict, row: dict | None, window: "Window"):
         super().__init__()
-        self.row = row
-        e = row["entry"]
-        self.setObjectName("other")
+        self.gid, self.row = gid, row
+        self.setObjectName("card")
         lay = QHBoxLayout(self)
-        lay.setContentsMargins(12, 10, 12, 10)
+        lay.setContentsMargins(12, 12, 14, 12)
+        lay.setSpacing(16)
+        appid = e.get("stores", {}).get("steam")
+        lay.addWidget(cover_label(appid, e["name"], 184, 86))
+
         text = QVBoxLayout()
-        text.setSpacing(2)
+        text.setSpacing(4)
+        head = QHBoxLayout()
         name = QLabel(e["name"])
-        name.setObjectName("otherName")
-        info = QLabel(f"Пераклад {e['version']}" + (f" ад {catalog.show_date(e['date'])}" if e.get("date") else ""))
-        info.setObjectName("sub")
-        text.addWidget(name)
-        text.addWidget(info)
+        name.setObjectName("name")
+        head.addWidget(name)
+        state, label = catalog_state(row)
+        self.chip = QLabel(label)
+        self.chip.setObjectName("chip")
+        repolish(self.chip, state)
+        head.addWidget(self.chip)
+        head.addStretch()
+        text.addLayout(head)
+        ver = QLabel(f"Версія {e['version']}" + (f" ад {catalog.show_date(e['date'])}" if e.get("date") else "")
+                     + (f" · што новага: {e['changes']}" if e.get("changes") else ""))
+        ver.setObjectName("sub")
+        ver.setWordWrap(True)
+        text.addWidget(ver)
         if e.get("contents"):
             about = QLabel(e["contents"])
-            about.setObjectName("sub")
             about.setWordWrap(True)
             text.addWidget(about)
+        text.addStretch()
         lay.addLayout(text, 1)
-        url = games.store_url(row.get("appid"))
-        if url:
-            self.store = QPushButton("Старонка ў Steam")
-            self.store.clicked.connect(lambda: QDesktopServices.openUrl(QUrl(url)))
-            lay.addWidget(self.store, 0, Qt.AlignTop)
+
+        if row is not None:
+            self.button = QPushButton("У бібліятэку")
+            self.button.clicked.connect(lambda: window.show_in_library(gid))
+        else:
+            url = games.store_url(appid)
+            self.button = QPushButton("Старонка ў Steam")
+            self.button.setEnabled(bool(url))
+            self.button.clicked.connect(lambda: QDesktopServices.openUrl(QUrl(url)))
+        lay.addWidget(self.button, 0, Qt.AlignTop)
 
 
 class Window(QMainWindow):
@@ -195,55 +271,135 @@ class Window(QMainWindow):
         super().__init__()
         self.catalog_src, self.apps = catalog_src, apps
         self.cards: list[Card] = []
+        self.cat_cards: list[CatalogCard] = []
         self.thread: QThread | None = None
         self.setWindowTitle(f"{TITLE} — лаўнчар {VERSION}")
-        self.resize(820, 640)
+        self.resize(900, 680)
         self.setStyleSheet(STYLE)
 
-        top = QWidget()
-        head = QHBoxLayout(top)
-        head.setContentsMargins(16, 12, 16, 4)
-        titles = QVBoxLayout()
-        h = QLabel(TITLE)
-        h.setObjectName("header")
+        # --- верхняя панэль
+        top = QFrame()
+        top.setObjectName("topbar")
+        bar = QHBoxLayout(top)
+        bar.setContentsMargins(18, 0, 14, 0)
+        bar.setSpacing(6)
+        mark = QFrame()
+        mark.setObjectName("brandMark")
+        mark.setFixedSize(10, 18)
+        brand = QLabel("БЕЛАРУСКІЯ ПЕРАКЛАДЫ")
+        brand.setObjectName("brand")
+        bar.addWidget(mark)
+        bar.addWidget(brand)
+        bar.addSpacing(26)
+        self.nav = QButtonGroup(self)
+        self.nav_lib = self.nav_button("БІБЛІЯТЭКА", 0, bar)
+        self.nav_cat = self.nav_button("КАТАЛОГ", 1, bar)
+        self.nav_lib.setChecked(True)
+        bar.addStretch()
+        self.search = QLineEdit()
+        self.search.setObjectName("search")
+        self.search.setPlaceholderText("Пошук гульні")
+        self.search.setClearButtonEnabled(True)
+        self.search.textChanged.connect(self.apply_filter)
+        bar.addWidget(self.search)
+        self.refresh_btn = QPushButton("⟳")
+        self.refresh_btn.setObjectName("icon")
+        self.refresh_btn.setToolTip("Абнавіць спіс")
+        self.refresh_btn.setCursor(Qt.PointingHandCursor)
+        self.refresh_btn.clicked.connect(self.load)
+        bar.addWidget(self.refresh_btn)
+
+        sub = QFrame()
+        sub.setObjectName("subbar")
+        sl = QHBoxLayout(sub)
+        sl.setContentsMargins(20, 10, 20, 2)
         self.sub = QLabel("Шукаю гульні…")
         self.sub.setObjectName("sub")
-        titles.addWidget(h)
-        titles.addWidget(self.sub)
-        head.addLayout(titles, 1)
-        self.refresh_btn = QPushButton("Абнавіць спіс")
-        self.refresh_btn.clicked.connect(self.load)
-        head.addWidget(self.refresh_btn)
+        sl.addWidget(self.sub)
 
-        self.list = QWidget()
-        self.list.setObjectName("list")
-        self.list_lay = QVBoxLayout(self.list)
-        self.list_lay.setContentsMargins(16, 8, 16, 16)
-        self.list_lay.setSpacing(10)
-        scroll = QScrollArea()
-        scroll.setWidgetResizable(True)
-        scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
-        scroll.setFrameShape(QFrame.NoFrame)
-        scroll.setWidget(self.list)
+        # --- старонкі: бібліятэка і каталог
+        self.pages = QStackedWidget()
+        self.list, self.list_lay, lib_scroll = self.page()
+        self.catalog_list, self.cat_lay, cat_scroll = self.page()
+        self.lib_scroll = lib_scroll
+        self.pages.addWidget(lib_scroll)
+        self.pages.addWidget(cat_scroll)
+        self.nav.idClicked.connect(self.switch)
 
         self.log_view = QPlainTextEdit()
         self.log_view.setObjectName("log")
         self.log_view.setReadOnly(True)
-
         split = QSplitter(Qt.Vertical)
-        split.addWidget(scroll)
+        split.addWidget(self.pages)
         split.addWidget(self.log_view)
         split.setStretchFactor(0, 4)
         split.setStretchFactor(1, 1)
-        split.setSizes([520, 110])
+        split.setSizes([540, 110])
 
         body = QWidget()
         v = QVBoxLayout(body)
         v.setContentsMargins(0, 0, 0, 0)
+        v.setSpacing(0)
         v.addWidget(top)
+        v.addWidget(sub)
         v.addWidget(split, 1)
         self.setCentralWidget(body)
         self.statusBar().showMessage("Нейрапераклад: мадэль Claude (Anthropic). Кіраўнік праекта: Віталь Аляхновіч.")
+
+    def nav_button(self, text: str, idx: int, bar: QHBoxLayout) -> QPushButton:
+        b = QPushButton(text)
+        b.setObjectName("nav")
+        b.setCheckable(True)
+        b.setCursor(Qt.PointingHandCursor)
+        self.nav.addButton(b, idx)
+        bar.addWidget(b)
+        return b
+
+    def page(self):
+        w = QWidget()
+        w.setObjectName("page")
+        lay = QVBoxLayout(w)
+        lay.setContentsMargins(20, 10, 20, 20)
+        lay.setSpacing(10)
+        scroll = QScrollArea()
+        scroll.setWidgetResizable(True)
+        scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        scroll.setFrameShape(QFrame.NoFrame)
+        scroll.setWidget(w)
+        return w, lay, scroll
+
+    def switch(self, idx: int):
+        self.pages.setCurrentIndex(idx)
+        (self.nav_lib if idx == 0 else self.nav_cat).setChecked(True)
+        self.update_sub()
+
+    def show_in_library(self, gid: str):
+        self.search.clear()
+        self.switch(0)
+        card = next((c for c in self.cards if c.row["id"] == gid), None)
+        if card:
+            self.lib_scroll.ensureWidgetVisible(card)
+
+    def apply_filter(self, text: str = ""):
+        q = (text or self.search.text()).strip().casefold()
+        for c in self.cards:
+            c.setVisible(q in c.row["entry"]["name"].casefold())
+        for c in self.cat_cards:
+            c.setVisible(q in self.cat["games"][c.gid]["name"].casefold())
+
+    def update_sub(self):
+        cat = getattr(self, "cat", None)
+        if cat is None:
+            return
+        n_all, rows = len(cat.get("games", {})), [c.row for c in self.cards]
+        if not n_all:
+            self.sub.setText("У каталогу яшчэ няма перакладаў")
+        elif self.pages.currentIndex() == 0:
+            n_upd = sum(1 for r in rows if games.action(r) in ("update", "reinstall"))
+            self.sub.setText(f"Знойдзена гульняў з перакладам: {len(rows)} з {n_all}"
+                             + (f" · абнаўленняў: {n_upd}" if n_upd else ""))
+        else:
+            self.sub.setText(f"Перакладаў у каталогу: {n_all} · на гэтым камп'ютары: {len(rows)}")
 
     # ------------------------------------------------------------ фон
     def start(self, fn, on_done, on_failed=None):
@@ -284,9 +440,6 @@ class Window(QMainWindow):
             self.show_error(text, busy)
         self.start(work, self.show_games, failed)
 
-    def add(self, w: QWidget):
-        self.list_lay.addWidget(w)
-
     def label(self, text: str, name: str, center=False) -> QLabel:
         lb = QLabel(text)
         lb.setObjectName(name)
@@ -295,50 +448,71 @@ class Window(QMainWindow):
             lb.setAlignment(Qt.AlignCenter)
         return lb
 
+    @staticmethod
+    def clear(lay):
+        while lay.count():
+            item = lay.takeAt(0)
+            if item.widget():
+                item.widget().deleteLater()
+
     def show_games(self, result):
         cat, rows, steam_ok = result
         self.cat = cat
         self.refresh_btn.setEnabled(True)
-        while self.list_lay.count():
-            item = self.list_lay.takeAt(0)
-            if item.widget():
-                item.widget().deleteLater()
-        rest = games.others(cat, rows)
+        self.clear(self.list_lay)
+        self.clear(self.cat_lay)
         self.cards = [Card(r, self) for r in rows]
+        by_id = {r["id"]: r for r in rows}
+        self.cat_cards = [CatalogCard(gid, e, by_id.get(gid), self)
+                          for gid, e in sorted(cat.get("games", {}).items(), key=lambda x: x[1].get("name", x[0]))]
 
+        # бібліятэка
+        lib = self.list_lay
         if not cat.get("games"):
-            self.add(self.label("Каталог перакладаў пакуль пусты", "empty", True))
-            self.add(self.label("Пераклады з'явяцца тут, як толькі выйдуць. Каб праверыць зноў — "
-                                "«Абнавіць спіс».", "sub", True))
-            self.list_lay.addStretch()
-            self.sub.setText("У каталогу яшчэ няма перакладаў")
-            return
-        if not steam_ok and not rows:
-            self.add(self.label("Steam не знойдзены", "empty", True))
-            self.add(self.label("Лаўнчар шукае гульні ў бібліятэках Steam. Калі гульня ўсталявана "
-                                "іначай — пакажыце яе папку.", "sub", True))
+            lib.addWidget(self.label("Каталог перакладаў пакуль пусты", "empty", True))
+            lib.addWidget(self.label("Пераклады з'явяцца тут, як толькі выйдуць. Каб праверыць зноў — "
+                                     "кнопка ⟳ уверсе.", "sub", True))
         elif not rows:
-            self.add(self.label("Пакуль няма гульняў з беларускім перакладам", "empty", True))
-            self.add(self.label("Ніводнай гульні з каталога няма на гэтым камп'ютары. Пераклады, "
-                                "якія ёсць, — ніжэй.", "sub", True))
+            lib.addWidget(self.label("Steam не знойдзены" if not steam_ok
+                                     else "Пакуль няма гульняў з беларускім перакладам", "empty", True))
+            lib.addWidget(self.label(
+                "Лаўнчар шукае гульні ў бібліятэках Steam. Калі гульня ўсталявана іначай — пакажыце яе папку."
+                if not steam_ok else
+                f"Ніводнай гульні з каталога няма на гэтым камп'ютары. У каталогу — перакладаў: "
+                f"{len(cat['games'])}.", "sub", True))
+            to_cat = QPushButton("Глядзець каталог")
+            to_cat.setObjectName("primary")
+            to_cat.clicked.connect(lambda: self.switch(1))
+            row_l = QHBoxLayout()
+            row_l.addStretch()
+            row_l.addWidget(to_cat)
+            row_l.addStretch()
+            lib.addLayout(row_l)
         else:
-            self.add(self.label("Вашы гульні", "section"))
+            lib.addWidget(self.label("ВАШЫ ГУЛЬНІ", "section"))
         for c in self.cards:
-            self.add(c)
-        if rest:
-            self.add(self.label("Ёсць пераклад, але гульні няма на гэтым камп'ютары" if rows
-                                else "Пераклады", "section"))
-            for r in rest:
-                self.add(OtherCard(r))
-        folder = QPushButton("Гульня ўсталявана ў іншае месца? Пазначыць папку")
-        folder.setObjectName("link")
-        folder.setCursor(Qt.PointingHandCursor)
-        folder.clicked.connect(self.pick_folder)
-        self.add(folder)
-        self.list_lay.addStretch()
-        n_upd = sum(1 for r in rows if games.action(r) in ("update", "reinstall"))
-        self.sub.setText(f"Знойдзена гульняў з перакладам: {len(rows)} з {len(cat.get('games', {}))}"
-                         + (f" · абнаўленняў: {n_upd}" if n_upd else ""))
+            lib.addWidget(c)
+        if cat.get("games"):
+            folder = QPushButton("Гульня ўсталявана ў іншае месца? Пазначыць папку")
+            folder.setObjectName("link")
+            folder.setCursor(Qt.PointingHandCursor)
+            folder.clicked.connect(self.pick_folder)
+            lib.addWidget(folder)
+        lib.addStretch()
+
+        # каталог
+        if not cat.get("games"):
+            self.cat_lay.addWidget(self.label("Каталог перакладаў пакуль пусты", "empty", True))
+        else:
+            self.cat_lay.addWidget(self.label("УСЕ ПЕРАКЛАДЫ", "section"))
+        for c in self.cat_cards:
+            self.cat_lay.addWidget(c)
+        self.cat_lay.addStretch()
+
+        self.nav_lib.setText(f"БІБЛІЯТЭКА  {len(rows)}" if rows else "БІБЛІЯТЭКА")
+        self.nav_cat.setText(f"КАТАЛОГ  {len(cat.get('games', {}))}" if cat.get("games") else "КАТАЛОГ")
+        self.apply_filter()
+        self.update_sub()
 
     def pick_folder(self):
         folder = QFileDialog.getExistingDirectory(self, "Папка гульні")
@@ -376,6 +550,12 @@ class Window(QMainWindow):
                 c.set_busy(False)
             self.refresh_btn.setEnabled(True)
             card.update_view()
+            for cc in self.cat_cards:          # пазнака ў каталогу — па новым стане
+                if cc.gid == card.row["id"]:
+                    state, text = catalog_state(card.row)
+                    cc.chip.setText(text)
+                    repolish(cc.chip, state)
+            self.update_sub()
 
         def done(_):
             finish()
