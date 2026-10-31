@@ -1,0 +1,109 @@
+# Зборка pyooz (распакоўка Oodle для рухавіка unreal-locres) для exe і лаўнчара belloc.
+#
+# Кола з PyPI — бінарнік без зыходнікаў побач. Мы збіраем сваё з замацаваных камітаў
+# арыгіналаў і кладзём у рэліз belloc поўныя зыходнікі (pyooz + ooz + simde): так
+# belloc выконвае GPL для ooz.pyd у сваіх exe і не залежыць ад таго, ці застануцца
+# рэпазіторыі аўтараў. SHA-256 гэтага ooz.pyd правяраюць launcher/build.py і
+# `belloc package` (core/belloc/oodle.py) — кола з PyPI ў exe не трапіць.
+#
+# Запуск — уручную (Actions → pyooz → Run workflow) з нумарам зборкі. Новыя каміты
+# арыгіналаў — толькі свядома: змяніць SHA тут і нумар зборкі.
+name: pyooz
+
+on:
+  workflow_dispatch:
+    inputs:
+      build:
+        description: "Нумар зборкі (рэліз pyooz-0.0.8.<нумар>)"
+        required: true
+        default: "1"
+
+permissions:
+  contents: read
+
+env:
+  PYOOZ_SHA: f27d04f6d9000654b79eb07a251a98e02a7136e3   # zao/pyooz, тэг v0.0.8 (той жа, што на PyPI)
+  OOZ_SHA: 2480701c664d33efa6c0165ff214cb44b991199f     # zao/ooz (форк rarten/ooz), падмодуль pyooz — GPL-3.0-or-later
+  SIMDE_SHA: dd0b662fd8cf4b1617dbbb4d08aa053e512b08e4   # simd-everywhere/simde, падмодуль ooz — MIT
+
+jobs:
+  wheel:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: zao/pyooz
+          ref: ${{ env.PYOOZ_SHA }}
+          persist-credentials: false
+          path: pyooz
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: zao/ooz
+          ref: ${{ env.OOZ_SHA }}
+          persist-credentials: false
+          path: pyooz/ooz/dep/ooz
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: simd-everywhere/simde
+          ref: ${{ env.SIMDE_SHA }}
+          persist-credentials: false
+          path: pyooz/ooz/dep/ooz/simde
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+      - name: Кола (abi3, cp38+)
+        shell: bash
+        run: |
+          python -m pip install "setuptools==80.9.0" "wheel==0.45.1"
+          python -m pip wheel --no-deps --no-build-isolation -w dist ./pyooz
+      - name: Праверка
+        shell: bash
+        run: |
+          python -m pip install --no-index --find-links dist pyooz
+          python -c "import ooz; assert callable(ooz.decompress); print(ooz.__file__)"
+      - name: Зыходнікі (GPL) і SHA-256
+        shell: bash
+        env:
+          BUILD: ${{ inputs.build }}
+        run: |
+          [[ "$BUILD" =~ ^[0-9]+$ ]] || { echo "нумар зборкі — толькі лічбы"; exit 1; }
+          src="pyooz-0.0.8.${BUILD}-source"
+          mkdir "$src"
+          cp -r pyooz/. "$src/"
+          find "$src" -name .git -prune -exec rm -rf {} +
+          rm -rf "$src/build" "$src"/*.egg-info
+          cat > "$src/BELLOC-SOURCES.txt" <<EOF
+          Зыходны код кола pyooz з гэтага рэліза belloc:
+            pyooz  https://github.com/zao/pyooz                 ${PYOOZ_SHA}  (v0.0.8)
+            ooz    https://github.com/zao/ooz                   ${OOZ_SHA}  — GPL-3.0-or-later (Powzix)
+            simde  https://github.com/simd-everywhere/simde     ${SIMDE_SHA}  — MIT
+          Зборка: .github/workflows/pyooz.yml у belloc, каміт ${GITHUB_SHA}.
+          EOF
+          7z a -tzip "dist/${src}.zip" "$src" > /dev/null
+          python -c "import zipfile,hashlib,glob; w=glob.glob('dist/*.whl')[0]; d=zipfile.ZipFile(w).read('ooz.pyd'); print('ooz.pyd sha256:', hashlib.sha256(d).hexdigest())" | tee dist/ooz.pyd.sha256.txt
+          cd dist && sha256sum *.whl *.zip > SHA256SUMS.txt && cat SHA256SUMS.txt
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: dist
+          path: dist/
+
+  release:
+    needs: wheel
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write                 # толькі тут: рэліз з колам і зыходнікамі
+    steps:
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: dist
+          path: dist
+      - name: Рэліз
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BUILD: ${{ inputs.build }}
+        run: |
+          [[ "$BUILD" =~ ^[0-9]+$ ]] || { echo "нумар зборкі — толькі лічбы"; exit 1; }
+          gh release create "pyooz-0.0.8.$BUILD" dist/* --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+            --title "pyooz 0.0.8 для belloc (зборка $BUILD)" \
+            --notes "Кола pyooz для Windows x64, з якім збіраюцца exe і лаўнчар belloc, і поўныя зыходнікі (pyooz + ooz + simde) — гл. BELLOC-SOURCES.txt у архіве. ooz — GPL-3.0-or-later."
