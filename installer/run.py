@@ -92,7 +92,8 @@ def main(argv=None, payload_path: str | None = None, catalog_src: str = catalog.
     if buildid and payload.get("steam_buildid") and buildid != payload["steam_buildid"]:
         print(f"Увага: версія гульні ({buildid}) не тая, пад якую рабіўся пераклад "
               f"({payload['steam_buildid']}). Пераклад ставіцца па ключах — новыя радкі,\n"
-              f"калі яны ёсць, застануцца на мове «{rel['replaces']}».")
+              + (f"калі яны ёсць, застануцца на мове «{rel['replaces']}»." if rel.get("replaces")
+                 else "калі яны ёсць, застануцца на мове арыгінала."))
     if game_running(rel["exe"], game):
         print(f"\nЗачыніце {payload['game']} і запусціце ўсталёўшчык нанова.")
         pause(auto)
@@ -111,8 +112,9 @@ def main(argv=None, payload_path: str | None = None, catalog_src: str = catalog.
 
     try:
         if action == "install":
-            print(f"\nУвага: пераклад ставіцца замест мовы «{rel['replaces']}» — пакуль ён усталяваны, "
-                  "гэтай мовы ў гульні не будзе.")
+            if rel.get("replaces"):
+                print(f"\nУвага: пераклад ставіцца замест мовы «{rel['replaces']}» — пакуль ён усталяваны, "
+                      "гэтай мовы ў гульні не будзе.")
             if ask("Усталяваць?", auto):
                 engine.apply(game, payload, None, print)
                 state.write(game, payload, "installer")

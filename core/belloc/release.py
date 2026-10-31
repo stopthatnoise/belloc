@@ -4,7 +4,8 @@
 
   "release": {"title": "Беларускі пераклад Silver Pines", "version": "1.0",
               "exe": "Carpenter.exe", "file": "SilverPines_BE",
-              "language_name": "Беларуская", "replaces": "Русский",
+              "language_name": "Беларуская", "replaces": "Русский",   — без replaces: асобная
+                                                         мова, нічога не замяняе (Esoteric Ebb)
               "url": "https://…/releases",
               "menu": "Налады → Мова",                — дзе ў гульні выбіраецца мова
               "contents": "Перакладзена … (усяго радкоў: {strings}) …",  — што перакладзена
@@ -134,7 +135,7 @@ def release_payload(loc: Loc, engine) -> dict:
     p["release"] = {
         "title": rel["title"], "version": rel["version"], "credits": credits(loc),
         "date": datetime.date.today().isoformat(), "exe": rel["exe"],
-        "language_name": rel["language_name"], "replaces": rel["replaces"],
+        "language_name": rel["language_name"], "replaces": rel.get("replaces"),   # None — асобная мова
         "url": rel.get("url") or catalog.RELEASES,     # старонка рэліза: па змаўчанні — Releases каталога
     }
     return p

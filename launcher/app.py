@@ -533,7 +533,8 @@ class Window(QMainWindow):
         e = card.row["entry"]
         if what == "install":
             q = (f"{e['name']} {e['version']}: пераклад ставіцца замест мовы «{e['replaces']}» — "
-                 f"пакуль ён усталяваны, гэтай мовы ў гульні не будзе.\n\nУсталяваць?")
+                 f"пакуль ён усталяваны, гэтай мовы ў гульні не будзе.\n\nУсталяваць?" if e.get("replaces")
+                 else f"{e['name']} {e['version']}: усталяваць пераклад?")
             fn = games.install
         else:
             q = f"Выдаліць пераклад {e['name']} і вярнуць арыгінальныя файлы гульні?"

@@ -30,7 +30,8 @@ def confirm(prompt: str, auto: bool) -> bool:
 
 def install(row: dict, auto: bool) -> int:
     e = row["entry"]
-    print(f"\n{e['name']} {e['version']}: пераклад ставіцца замест мовы «{e['replaces']}».")
+    print(f"\n{e['name']} {e['version']}" + (f": пераклад ставіцца замест мовы «{e['replaces']}»."
+                                              if e.get("replaces") else "."))
     if not confirm("Усталяваць?", auto):
         return 0
     try:

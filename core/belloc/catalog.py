@@ -12,7 +12,7 @@ CATALOG_URL і RELEASES глядзяць на яго, а belloc-catalog выда
        "version": "1.0", "date": "2026-10-31", "changes": "…",
        "contents": "Перакладзены ўвесь тэкст… (1232 радкі)",     — што перакладзена (release.contents)
        "steam_buildid": "25928685",                          — пад якую версію гульні
-       "exe": "PonyIsland.exe", "language_name": "Беларуская", "replaces": "Русский",
+       "exe": "PonyIsland.exe", "language_name": "Беларуская", "replaces": "Русский",   — null: асобная мова
        "page": "https://…/releases/tag/pony-island-v1.0",
        "package": {"url": "…/pony-island-1.0.zip", "sha256": "…", "size": 123},
        "probe": {…}}}}                                       — payload без strings:
@@ -147,7 +147,7 @@ def entry(loc: Loc, p: dict, pkg_path: str, url: str) -> dict:
             "contents": " ".join(rel.get("contents", "").format(
                 strings=sum(len(v) for v in p["strings"].values())).split()),
             "steam_buildid": p.get("steam_buildid"), "exe": rel["exe"],
-            "language_name": rel["language_name"], "replaces": rel["replaces"],
+            "language_name": rel["language_name"], "replaces": rel.get("replaces"),
             "page": rel.get("url") or f"{RELEASES}/tag/{loc.id}-v{rel['version']}",
             "package": {"url": url, "sha256": sha256(pkg_path), "size": os.path.getsize(pkg_path)},
             "probe": probe}
