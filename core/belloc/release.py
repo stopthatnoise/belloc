@@ -42,6 +42,7 @@ import zipfile
 
 from . import catalog, engines, payload as payload_mod, tables
 from .config import ROOT, Loc
+from .install import paths
 
 README = """{title}
 Версія {version} ({date})
@@ -131,6 +132,9 @@ def credits(loc: Loc) -> str:
 def release_payload(loc: Loc, engine) -> dict:
     """Payload гульні + апісанне рэліза для меню ўсталёўшчыка."""
     rel = loc.section("release")
+    for k in ("version", "exe", "file"):        # ідуць у імёны файлаў і ў каталог
+        if k in rel:
+            paths.name(str(rel[k]))
     p = payload_mod.build_payload(loc, engine)
     p["release"] = {
         "title": rel["title"], "version": rel["version"], "credits": credits(loc),

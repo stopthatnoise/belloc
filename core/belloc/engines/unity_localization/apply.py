@@ -4,6 +4,7 @@ from __future__ import annotations
 import os
 
 from ...config import Loc
+from ...install.paths import inside, name as one
 from ...install.target import Target, write_to
 from .common import SECTION, _shared, _string_bundle, _string_bundles
 
@@ -50,8 +51,8 @@ def _patch_strings(base: str, dst: str, want: dict) -> int:
 def apply(game_dir: str, payload: dict, out: str | None = None, log=print) -> dict:
     """Радкі локалі + І/і/Ў/ў у шрыфтах. out — папка для вынікаў, гульня не чапаецца."""
     from .tmp_fonts import font_type_tree, patch_assets, patch_bundle
-    bundles = os.path.join(game_dir, payload["bundles_dir"])
-    strings = _string_bundle(bundles, payload["locale"])
+    bundles = inside(game_dir, payload["bundles_dir"])
+    strings = _string_bundle(bundles, one(payload["locale"]))
     shared = _shared(bundles)
     want, missing = {}, 0
     for table, rows in payload["strings"].items():
@@ -73,19 +74,19 @@ def apply(game_dir: str, payload: dict, out: str | None = None, log=print) -> di
 
     log("Шрыфты (І і Ў)…")
     for name in payload["font_bundles"]:
-        path = os.path.join(bundles, name)
+        path = os.path.join(bundles, one(name))
         if not os.path.exists(path):
             log(f"  няма {name} — прапускаю")
             continue
         write_to(Target(path), out, lambda base, dst: patch_bundle(base, dst, None))
     if payload.get("font_assets"):
         # тыпавое дрэва TMP_FontAsset — з арыгінальнага бандла шрыфтоў (у .assets яго няма)
-        nodes = next((font_type_tree(Target(os.path.join(bundles, n)).source())
-                      for n in payload["font_bundles"] if os.path.exists(os.path.join(bundles, n))), None)
+        nodes = next((font_type_tree(Target(os.path.join(bundles, one(n))).source())
+                      for n in payload["font_bundles"] if os.path.exists(os.path.join(bundles, one(n)))), None)
         if nodes is None:
             log("  няма бандла шрыфтоў для тыпавога дрэва — font_assets прапускаю")
         for name in payload["font_assets"] if nodes is not None else []:
-            path = os.path.join(game_dir, payload["data_dir"], name)
+            path = inside(game_dir, payload["data_dir"], one(name))
             if not os.path.exists(path):
                 log(f"  няма {name} — прапускаю")
                 continue
@@ -94,10 +95,10 @@ def apply(game_dir: str, payload: dict, out: str | None = None, log=print) -> di
 
 
 def _targets(game_dir: str, payload: dict) -> list[Target]:
-    bundles = os.path.join(game_dir, payload["bundles_dir"])
-    paths = _string_bundles(bundles, payload["locale"])
-    paths += [os.path.join(bundles, n) for n in payload["font_bundles"]]
-    paths += [os.path.join(game_dir, payload["data_dir"], n) for n in payload.get("font_assets", [])]
+    bundles = inside(game_dir, payload["bundles_dir"])
+    paths = _string_bundles(bundles, one(payload["locale"]))
+    paths += [os.path.join(bundles, one(n)) for n in payload["font_bundles"]]
+    paths += [inside(game_dir, payload["data_dir"], one(n)) for n in payload.get("font_assets", [])]
     return [Target(p) for p in paths]
 
 
@@ -108,6 +109,6 @@ def restore(game_dir: str, payload: dict, log=print):
 
 
 def installed(game_dir: str, payload: dict) -> bool:
-    bundles = os.path.join(game_dir, payload["bundles_dir"])
-    strings = _string_bundles(bundles, payload["locale"])
+    bundles = inside(game_dir, payload["bundles_dir"])
+    strings = _string_bundles(bundles, one(payload["locale"]))
     return bool(strings) and Target(strings[0]).installed()

@@ -5,6 +5,7 @@ import os
 import shutil
 
 from ...config import Loc
+from ...install.paths import inside, name as one
 from .common import SECTION
 
 
@@ -52,11 +53,11 @@ def apply(game_dir: str, payload: dict, out: str | None = None, log=print) -> di
     """bel → <replace_dir>/<табліца>_l_<target>.yml. Ключы глабальныя: ключ, які
     ўжо запісаны з іншай табліцы, другі раз не пішацца. out — у гэтую папку."""
     s = payload["paradox"]
-    target = s["target"]
+    target = one(s["target"])
     if out:
         dest = os.path.abspath(out)
     else:
-        dest = os.path.join(game_dir, s["replace_dir"])
+        dest = inside(game_dir, s["replace_dir"], strict=True)
         remove_tree(dest)                   # наша папка — пішам нанова
     seen: set[str] = set()
     n_files = n_keys = 0
@@ -65,7 +66,7 @@ def apply(game_dir: str, payload: dict, out: str | None = None, log=print) -> di
         seen.update(k for k, _ in items)
         if not items:
             continue
-        write_yml(os.path.join(dest, table.lstrip("@") + f"_l_{target}.yml"), target, items)
+        write_yml(inside(dest, table.lstrip("@") + f"_l_{target}.yml"), target, items)
         n_files += 1
         n_keys += len(items)
     log(f"запісана {n_keys} радкоў у {n_files} файлаў → {dest}")
@@ -73,7 +74,7 @@ def apply(game_dir: str, payload: dict, out: str | None = None, log=print) -> di
 
 
 def restore(game_dir: str, payload: dict, log=print):
-    dest = os.path.join(game_dir, payload["paradox"]["replace_dir"])
+    dest = inside(game_dir, payload["paradox"]["replace_dir"], strict=True)
     if os.path.isdir(dest):
         remove_tree(dest)
         log(f"папка перакладу выдаленая: {dest}")
@@ -82,4 +83,4 @@ def restore(game_dir: str, payload: dict, log=print):
 
 
 def installed(game_dir: str, payload: dict) -> bool:
-    return os.path.isdir(os.path.join(game_dir, payload["paradox"]["replace_dir"]))
+    return os.path.isdir(inside(game_dir, payload["paradox"]["replace_dir"], strict=True))

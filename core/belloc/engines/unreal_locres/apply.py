@@ -4,6 +4,7 @@ from __future__ import annotations
 import os
 
 from ...config import Loc
+from ...install.paths import inside
 from . import pak
 from .common import locres_path, read_locres, sec, table_name, targets
 
@@ -13,7 +14,7 @@ def build_mod(game_dir: str, s: dict, source_lang: str, texts: dict[str, dict[st
     """Мод-пак з locres культуры target (па адным на мэту), дзе texts замяняюць арыгінал."""
     files, n = {}, 0
     for target, pak_path in targets(s).items():
-        p = pak.Pak(os.path.join(game_dir, pak_path), s.get("aes_key"))
+        p = pak.Pak(inside(game_dir, pak_path), s.get("aes_key"))
         try:
             base = read_locres(game_dir, s, source_lang, target, p)
             t = {ns: texts[table_name(target, ns)] for ns in base.to_dict()
@@ -36,7 +37,7 @@ def patched_fonts(game_dir: str, s: dict, log=print) -> dict[str, bytes]:
     if not s.get("font_patches"):
         return {}
     from . import fonts
-    p = pak.Pak(os.path.join(game_dir, targets(s)[s.get("font_patches_target")]), s.get("aes_key"))
+    p = pak.Pak(inside(game_dir, targets(s)[s.get("font_patches_target")]), s.get("aes_key"))
     out = {}
     try:
         for fp in s["font_patches"]:
@@ -57,10 +58,17 @@ def check_path(payload: dict) -> str:
     return next(iter(targets(payload["unreal"]).values()))
 
 
+def mod_path(game_dir: str, s: dict) -> str:
+    """Наш мод-пак у гульні: толькі .pak унутры папкі гульні (restore яго выдаляе)."""
+    if not str(s["mod"]).lower().endswith(".pak"):
+        raise SystemExit(f"мод мусіць быць .pak: {s['mod']}")
+    return inside(game_dir, s["mod"])
+
+
 def apply(game_dir: str, payload: dict, out: str | None = None, log=print) -> dict:
     """Мод-пак у ~mods (файлы гульні не мяняюцца) або, з out, у гэтую папку."""
     s = payload["unreal"]
-    mod = os.path.join(game_dir, s["mod"])
+    mod = mod_path(game_dir, s)
     dest = os.path.join(out, os.path.basename(mod)) if out else mod
     os.makedirs(os.path.dirname(dest), exist_ok=True)
     n = build_mod(game_dir, s, payload["source_lang"], payload["strings"], dest, log)
@@ -69,7 +77,7 @@ def apply(game_dir: str, payload: dict, out: str | None = None, log=print) -> di
 
 
 def restore(game_dir: str, payload: dict, log=print):
-    mod = os.path.join(game_dir, payload["unreal"]["mod"])
+    mod = mod_path(game_dir, payload["unreal"])
     if os.path.exists(mod):
         os.remove(mod)
         log(f"выдалена: {mod}")
@@ -78,4 +86,4 @@ def restore(game_dir: str, payload: dict, log=print):
 
 
 def installed(game_dir: str, payload: dict) -> bool:
-    return os.path.exists(os.path.join(game_dir, payload["unreal"]["mod"]))
+    return os.path.exists(mod_path(game_dir, payload["unreal"]))

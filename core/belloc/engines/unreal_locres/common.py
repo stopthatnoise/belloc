@@ -5,6 +5,7 @@ import os
 import re
 
 from ...config import Loc
+from ...install.paths import inside
 from . import pak
 from .locres import Locres
 
@@ -40,7 +41,7 @@ def table_name(target: str | None, ns: str) -> str:
 def read_locres(game_dir: str, s: dict, lang: str, target: str | None = None,
                 p: pak.Pak | None = None) -> Locres:
     own = p is None
-    p = p or pak.Pak(os.path.join(game_dir, targets(s)[target]), s.get("aes_key"))
+    p = p or pak.Pak(inside(game_dir, targets(s)[target]), s.get("aes_key"))
     try:
         return Locres(p.read(locres_path(s, lang, target)))
     finally:

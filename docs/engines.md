@@ -37,6 +37,10 @@ SHA-256 таго, што мы запісалі (`core/belloc/install/target.py`)
 - `apply(game_dir, payload, out, log)` — адзін код для `belloc patch`, усталёўшчыка і
   лаўнчара; з `out` — вынік у папку, гульня не чапаецца. `restore`, `installed`,
   `check_path` — для меню ўсталёўшчыка.
+- **Payload — даныя з сеткі.** Кожны шлях з payload, які склейваецца з папкай гульні, —
+  праз `install.paths.inside(game_dir, …)` (тое, што выдаляецца цалкам, — з `strict=True`),
+  імёны файлаў і моў — праз `paths.name`; ніякага `os.path.join(game_dir, payload[…])`
+  напрасткі. Інакш шкодны каталог або PR выдаліў бы ці перапісаў файлы па-за гульнёй.
 - `PYINSTALLER` — аргументы для зборкі exe (`core/belloc/release.py`);
   `files_dir(payload)` — толькі калі вынік `apply(out=…)` цалкам наш (архіў ручной
   усталёўкі); `fonts_report`, `textures_preview` — неабавязкова.

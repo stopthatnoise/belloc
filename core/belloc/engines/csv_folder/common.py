@@ -5,6 +5,8 @@ import csv
 import glob
 import os
 
+from ...install.paths import inside
+
 
 NAME = "csv-folder"
 
@@ -22,4 +24,4 @@ def _tables(path: str) -> list[tuple[str, str]]:
 
 
 def _folder(game_dir: str, s: dict, name: str) -> str:
-    return os.path.join(game_dir, s["dir"], s[name])
+    return inside(game_dir, s["dir"], s[name], strict=True)

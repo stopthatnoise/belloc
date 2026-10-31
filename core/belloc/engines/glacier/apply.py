@@ -7,6 +7,7 @@ import shutil
 
 from ... import tables
 from ...config import Loc
+from ...install.paths import inside
 from . import rpkg
 from .dlge import CODE, SPEAKER, Dlge, join, segments, split
 from .locr import Locr
@@ -172,7 +173,7 @@ def check_path(payload: dict) -> str:
 
 def _args(game_dir: str, payload: dict):
     g = payload["glacier"]
-    return (os.path.join(game_dir, g["runtime"]), g["target"], payload["source_lang"],
+    return (inside(game_dir, g["runtime"]), g["target"], payload["source_lang"],
             rpkg.parse_key(g["keys"]["text"]), rpkg.parse_key(g["keys"]["packagedefinition"]))
 
 
@@ -189,9 +190,9 @@ def apply(game_dir: str, payload: dict, out: str | None = None, log=print) -> di
 
 
 def restore(game_dir: str, payload: dict, log=print):
-    if not restore_rt(os.path.join(game_dir, payload["glacier"]["runtime"])):
+    if not restore_rt(inside(game_dir, payload["glacier"]["runtime"])):
         log("  пераклад не ўсталяваны")
 
 
 def installed(game_dir: str, payload: dict) -> bool:
-    return bool(our_patches(os.path.join(game_dir, payload["glacier"]["runtime"])))
+    return bool(our_patches(inside(game_dir, payload["glacier"]["runtime"])))

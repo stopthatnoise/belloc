@@ -16,8 +16,9 @@
                 шрыфты і іх ліцэнзіі); усталёўшчык нясе іх побач з payload
   …             палі рухавіка (engines/<рухавік>/apply.py: payload)
 
-assets_root — толькі ў памяці, у файл payload не пішацца: адкуль чытаць assets
-(games/<гульня>/ у `belloc patch`, папка з файламі ў усталёўшчыку).
+assets_root, from_package — толькі ў памяці, у файл payload не пішуцца: адкуль чытаць
+assets (games/<гульня>/ у `belloc patch`, папка з файламі ў усталёўшчыку) і ці payload
+прыйшоў з пакета/exe (тады абсалютныя шляхі assets не дапушчаюцца).
 """
 from __future__ import annotations
 
@@ -52,20 +53,30 @@ def build_payload(loc: Loc, engine) -> dict:
 
 
 def asset(p: dict, rel: str) -> str:
-    """Шлях да файла assets (абсалютны шлях з local.json — як ёсць)."""
+    """Шлях да файла assets (абсалютны шлях з local.json — як ёсць). Адносны шлях не
+    выходзіць за assets_root: інакш `../../…` у game.json занёс бы ў публічны пакет
+    любы файл машыны, на якой ён збіраецца."""
     root = p.get("assets_root")
-    return os.path.join(root, rel) if root else rel
+    if not root:
+        return rel
+    if os.path.isabs(rel) and not p.get("from_package"):
+        return rel
+    path = os.path.join(root, rel)
+    base = os.path.normcase(os.path.abspath(root)).rstrip(os.sep) + os.sep
+    if not os.path.normcase(os.path.abspath(path) + os.sep).startswith(base):
+        raise SystemExit(f"файл assets па-за {root}: {rel}")
+    return path
 
 
 def dump(p: dict) -> dict:
     """Payload для запісу ў файл — без assets_root."""
-    return {k: v for k, v in p.items() if k != "assets_root"}
+    return {k: v for k, v in p.items() if k not in ("assets_root", "from_package")}
 
 
 def load(path: str) -> dict:
     """payload.json з дыска; assets — у папцы assets/ побач з ім (exe, пакет перакладу)."""
     with open(path, encoding="utf-8") as f:
         p = json.load(f)
-    if p.get("assets"):
-        p["assets_root"] = os.path.join(os.path.dirname(os.path.abspath(path)), "assets")
+    p["assets_root"] = os.path.join(os.path.dirname(os.path.abspath(path)), "assets")
+    p["from_package"] = True                # абсалютных шляхоў assets тут не бывае
     return p

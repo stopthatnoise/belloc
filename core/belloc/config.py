@@ -31,6 +31,7 @@ from dataclasses import dataclass, field
 from functools import cached_property
 
 from . import steam
+from .install.paths import inside
 
 PKG = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(PKG))
@@ -56,7 +57,9 @@ class Loc:
 
     # --- рэпазіторый: games/<id>/
     def path(self, *parts: str) -> str:
-        return os.path.join(self.dir, *parts)
+        """Файл у games/<id>/; шлях з game.json па-за ёй (`../…`) — памылка: PR з такім
+        шляхам інакш чытаў бы файлы машыны мейнтейнера (і нёс бы іх у рэліз)."""
+        return inside(self.dir, *parts)
 
     @property
     def translation(self) -> str:

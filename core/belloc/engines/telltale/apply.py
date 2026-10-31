@@ -9,6 +9,7 @@ import re
 from ... import payload as payload_mod
 from ... import tables
 from ...config import Loc
+from ...install.paths import inside
 from . import font as tfont
 from .common import (TAG, decode, from_other_sets, game_sets, is_language_set, key_hash,
                      sec, set_archives)
@@ -105,7 +106,7 @@ def build(game_dir: str, payload: dict, dest: str, log=print) -> list[str]:
     (landb з перакладам; пры target ≠ lang — усе landb мовы target; шрыфты —
     у Project і моўных наборах). Вяртае імёны запісаных файлаў."""
     s, texts = payload["telltale"], payload["strings"]
-    game = os.path.join(game_dir, s["archive"])
+    game = inside(game_dir, s["archive"])
     lang, target = s["lang"], s["target"]
     fill = target != lang                        # неперакладзенае — тэкстам мовы lang
     rename = s.get("rename", {})
@@ -251,12 +252,12 @@ def check_path(payload: dict) -> str:
 
 
 def _ours(game_dir: str, payload: dict) -> list[str]:
-    return glob.glob(os.path.join(game_dir, payload["telltale"]["archive"], f"*{TAG}*"))
+    return glob.glob(os.path.join(glob.escape(inside(game_dir, payload["telltale"]["archive"])), f"*{TAG}*"))
 
 
 def apply(game_dir: str, payload: dict, out: str | None = None, log=print) -> dict:
     """Мод у папку архіваў гульні (стары мод спачатку выдаляецца) або, з out, у іншую папку."""
-    dest = out or os.path.join(game_dir, payload["telltale"]["archive"])
+    dest = out or inside(game_dir, payload["telltale"]["archive"])
     if not out:
         for p in _ours(game_dir, payload):
             os.remove(p)                       # наборы, якіх больш няма ў перакладзе

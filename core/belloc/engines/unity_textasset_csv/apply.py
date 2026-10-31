@@ -5,6 +5,7 @@ import os
 import shutil
 
 from ...config import Loc
+from ...install.paths import inside
 from ...install.target import Target
 from .common import SECTION
 
@@ -20,7 +21,7 @@ def check_path(payload: dict) -> str:
 def _paths(game_dir: str, payload: dict) -> dict[str, str]:
     from .textasset_csv import files
     s = payload["textasset_csv"]
-    return {rel: os.path.join(game_dir, s["data_dir"], rel) for rel in files(s)}
+    return {rel: inside(game_dir, s["data_dir"], rel) for rel in files(s)}
 
 
 def apply(game_dir: str, payload: dict, out: str | None = None, log=print) -> dict:
@@ -66,4 +67,4 @@ def restore(game_dir: str, payload: dict, log=print):
 
 def installed(game_dir: str, payload: dict) -> bool:
     s = payload["textasset_csv"]
-    return Target(os.path.join(game_dir, s["data_dir"], s["assets"])).installed()
+    return Target(inside(game_dir, s["data_dir"], s["assets"])).installed()
