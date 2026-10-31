@@ -33,6 +33,7 @@ def apply(game_dir: str, payload: dict, out: str | None = None, log=print) -> di
         i = rows[0].index(src_col)
         official[t] = {r[0]: r[i] for r in rows[1:] if r}
     fixed, tr, hashes = s.get("fixed", {}), payload["strings"], payload.get("src_hash", {})
+    pat = ttables.from_original(payload.get("from_original"))   # заглушкі [] ← кавалкі арыгінала
     os.makedirs(target, exist_ok=True)
     done = total = stale = 0
     for table, path in _tables(_folder(game_dir, s, "template")):
@@ -52,7 +53,7 @@ def apply(game_dir: str, payload: dict, out: str | None = None, log=print) -> di
             if en is not None and h.get(row[0]) and ttables.src_hash(en) != h[row[0]]:
                 stale += 1          # гульня абнавілася пасля перакладу
                 continue
-            row[-1] = bel[row[0]]
+            row[-1] = ttables.expand(bel[row[0]], en or "", pat) if pat else bel[row[0]]
             done += 1
         with open(os.path.join(target, f"{table}.csv"), "w", encoding="utf-8", newline="") as f:
             csv.writer(f, lineterminator="\r\n").writerows(rows)

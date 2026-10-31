@@ -23,10 +23,16 @@
 apply: шаблон гульні + наш bel → папка target. Радок, чый арыгінал у гульні
 змяніўся пасля перакладу (src_hash у payload не супадае), застаецца пустым —
 гульня возьме запасную мову; трэба `extract` і `sync`.
+
+Кавалкі арыгінала (`"from_original"` у game.json, гл. tables.py): заглушка `[]` ← радок
+Official мовы source_lang (Esoteric Ebb: рэплікі на выдуманых і замежных мовах, пакінутыя як
+у арыгінале).
 """
 from .common import NAME, SECTION  # noqa: F401
 from .extract import extract  # noqa: F401
 from .apply import payload, check_path, apply, restore, installed  # noqa: F401
+
+FROM_ORIGINAL = True
 
 # усталёўшчык (release.py): толькі стандартная бібліятэка
 PYINSTALLER = ["--exclude-module", "UnityPy", "--exclude-module", "cv2", "--exclude-module", "spylls",

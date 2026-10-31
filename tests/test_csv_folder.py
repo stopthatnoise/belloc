@@ -82,6 +82,17 @@ class CsvFolderTest(unittest.TestCase):
         self.assertIn("арыгінал змяніўся ў 1", log.getvalue())
         self.assertEqual(self.out()[1], ["Start", ""])
 
+    def test_from_original(self):
+        # радок, пакінуты як у арыгінале: у рэпазіторыі — заглушка, у гульні — тэкст Official
+        self.loc.raw["from_original"] = r"(?s)\A(?:\[\]|.+)\Z"
+        rows = tables.load_all(self.loc)["Menu"]
+        rows[1]["bel"] = rows[1]["en"]
+        tables.save(self.loc, "Menu", rows)
+        self.assertEqual([r["bel"] for r in tables.load_repo(self.loc)["Menu"]], ["Пачаць гульню", "[]"])
+        with redirect_stdout(io.StringIO()):
+            base.patch(self.loc, csv_folder, os.path.join(self.tmp, "out"))
+        self.assertEqual(self.out()[2], ["Hello", "Hello there"])
+
 
 if __name__ == "__main__":
     unittest.main()
