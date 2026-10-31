@@ -92,8 +92,11 @@ def scan(cat: dict, apps: dict | None = None) -> list[dict]:
             folder, buildid = manual[gid], steam.buildid(manual[gid], appid)
         else:
             continue
-        found.append(refresh({"id": gid, "entry": e, "appid": appid, "dir": folder,
-                              "buildid": buildid, "supported": catalog.supported(e)}))
+        try:
+            found.append(refresh({"id": gid, "entry": e, "appid": appid, "dir": folder,
+                                  "buildid": buildid, "supported": catalog.supported(e)}))
+        except (SystemExit, KeyError, TypeError, AttributeError):
+            continue                        # бітая запіс каталога не ламае астатнія гульні
     return found
 
 
@@ -170,6 +173,8 @@ def install(row: dict, log=print):
     log("Спампоўваю пакет перакладу…")
     pkg = catalog.download(e, catalog.cache_dir())
     p = catalog.open_package(pkg, catalog.unpack_dir(row["id"]))
+    if p.get("game_id") != row["id"] or p.get("engine") != e["engine"]:
+        raise SystemExit("Пакет перакладу не для гэтай гульні — усталёўка спынена.")
     engines.get(p["engine"]).apply(row["dir"], p, None, log)
     state.write(row["dir"], p, "launcher")
     log(f"Гатова. У гульні выберыце мову «{e['language_name']}».")

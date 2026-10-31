@@ -89,9 +89,16 @@ QMessageBox QLabel { color: #c7d5e0; }
 ACTION_LABEL = {"install": "Усталяваць", "update": "Абнавіць да {v}", "reinstall": "Паставіць нанова"}
 
 
+def plain(text: str = "") -> QLabel:
+    """Надпіс для тэксту з каталога: толькі звычайны тэкст — HTML з сеткі не разбіраецца."""
+    lb = QLabel(str(text))
+    lb.setTextFormat(Qt.PlainText)
+    return lb
+
+
 def cover_label(appid, name: str, w: int = COVER_W, h: int = COVER_H) -> QLabel:
     """Вокладка з лакальнага кэша Steam або назва на цёмным фоне."""
-    cover = QLabel()
+    cover = plain()
     cover.setObjectName("cover")
     cover.setFixedSize(w, h)
     cover.setAlignment(Qt.AlignCenter)
@@ -147,15 +154,15 @@ class Card(QFrame):
 
         text = QVBoxLayout()
         text.setSpacing(4)
-        self.name = QLabel(row["entry"]["name"])
+        self.name = plain(row["entry"]["name"])
         self.name.setObjectName("name")
-        self.status = QLabel()
+        self.status = plain()
         self.status.setObjectName("status")
         self.status.setWordWrap(True)
-        self.info = QLabel()
+        self.info = plain()
         self.info.setObjectName("sub")
         self.info.setWordWrap(True)
-        self.note = QLabel()
+        self.note = plain()
         self.note.setObjectName("note")
         self.note.setWordWrap(True)
         for w in (self.name, self.status, self.info, self.note):
@@ -233,7 +240,7 @@ class CatalogCard(QFrame):
         text = QVBoxLayout()
         text.setSpacing(4)
         head = QHBoxLayout()
-        name = QLabel(e["name"])
+        name = plain(e["name"])
         name.setObjectName("name")
         head.addWidget(name)
         state, label = catalog_state(row)
@@ -243,13 +250,13 @@ class CatalogCard(QFrame):
         head.addWidget(self.chip)
         head.addStretch()
         text.addLayout(head)
-        ver = QLabel(f"Версія {e['version']}" + (f" ад {catalog.show_date(e['date'])}" if e.get("date") else "")
+        ver = plain(f"Версія {e['version']}" + (f" ад {catalog.show_date(e['date'])}" if e.get("date") else "")
                      + (f" · што новага: {e['changes']}" if e.get("changes") else ""))
         ver.setObjectName("sub")
         ver.setWordWrap(True)
         text.addWidget(ver)
         if e.get("contents"):
-            about = QLabel(e["contents"])
+            about = plain(e["contents"])
             about.setWordWrap(True)
             text.addWidget(about)
         text.addStretch()

@@ -22,6 +22,11 @@ CATALOG_URL і RELEASES глядзяць на яго, а belloc-catalog выда
 апісанне рэліза) і assets/ — тое ж, што ўсярэдзіне exe. Кода ў ім няма: рухавікі —
 у лаўнчары. payload_schema большы за payload.SCHEMA лаўнчара → «абнавіце лаўнчар».
 
+Каталог і пакет — даныя з сеткі, ім не давяраем: толькі https (і пасля
+перанакіраванняў), абмежаваныя памеры, пакет — па sha256 з каталога да распакоўкі,
+у zip — толькі payload.json і assets/, id гульні — толькі [a-z0-9._-] (ідзе ў шляхі),
+шляхі payload — толькі ўнутры папкі гульні (install/paths.py).
+
     python -m belloc catalog <гульня> [--catalog ФАЙЛ] → пакет у build/release/ + запіс у каталог
 """
 from __future__ import annotations
@@ -32,15 +37,20 @@ import json
 import os
 import shutil
 import tempfile
+import urllib.error
 import urllib.request
 import zipfile
 
 from . import engines, payload as payload_mod
 from .config import Loc
+from .install import paths
 
 CATALOG_URL = "https://raw.githubusercontent.com/stopthatnoise/belloc-catalog/main/catalog.json"
 RELEASES = "https://github.com/stopthatnoise/belloc-catalog/releases"
 SCHEMA = 1
+MAX_CATALOG = 8 << 20               # catalog.json, байтаў
+MAX_PACKAGE = 256 << 20             # пакет: спампаваны zip і ўсё, што ў ім, разам
+MAX_FILES = 10000                   # файлаў у пакеце
 
 
 # ---------------------------------------------------------------- версіі
@@ -66,22 +76,45 @@ def show_date(iso: str | None) -> str:
 
 # ---------------------------------------------------------------- кліент
 
-def _get(src: str, timeout: float) -> bytes:
-    if "://" not in src:                     # лакальны файл (тэсты, свой каталог)
+class _HttpsOnly(urllib.request.HTTPRedirectHandler):
+    """Перанакіраванні — толькі на https (GitHub Releases вядзе на свой CDN)."""
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        if not newurl.lower().startswith("https://"):
+            raise urllib.error.URLError(f"перанакіраванне не на https: {newurl}")
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+
+_opener = urllib.request.build_opener(_HttpsOnly)
+
+
+def _get(src: str, timeout: float, limit: int) -> bytes:
+    """Змесціва па https або лакальнага файла (тэсты, свой каталог); больш за limit — памылка."""
+    if "://" not in src:
         with open(src, "rb") as f:
-            return f.read()
-    req = urllib.request.Request(src, headers={"User-Agent": "belloc"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read()
+            data = f.read(limit + 1)
+    elif not src.lower().startswith("https://"):
+        raise ValueError(f"толькі https: {src}")
+    else:
+        req = urllib.request.Request(src, headers={"User-Agent": "belloc"})
+        with _opener.open(req, timeout=timeout) as r:
+            data = r.read(limit + 1)
+    if len(data) > limit:
+        raise ValueError(f"больш за {limit} байтаў: {src}")
+    return data
 
 
 def fetch(src: str = CATALOG_URL, timeout: float = 5) -> dict | None:
     """Каталог або None (няма сеткі, бітая адказ): без каталога ўсё працуе далей."""
     try:
-        cat = json.loads(_get(src, timeout))
-        return cat if isinstance(cat.get("games"), dict) else None
+        cat = json.loads(_get(src, timeout, MAX_CATALOG))
+        if not isinstance(cat.get("games"), dict):
+            return None
     except Exception:
         return None
+    # запіс з дзіўным id або не слоўнікам — не наш: адкідаем, астатнія працуюць
+    cat["games"] = {gid: e for gid, e in cat["games"].items()
+                    if isinstance(e, dict) and paths.GAME_ID.fullmatch(gid) and ".." not in gid}
+    return cat
 
 
 def supported(entry: dict) -> bool:
@@ -100,12 +133,21 @@ def sha256(path: str) -> str:
 def download(entry: dict, cache: str, timeout: float = 60) -> str:
     """Пакет перакладу ў cache (калі ўжо ёсць з тым жа sha256 — не спампоўваецца)."""
     pkg = entry["package"]
+    want = str(pkg.get("sha256", "")).lower()
+    if len(want) != 64 or any(c not in "0123456789abcdef" for c in want):
+        raise SystemExit("У каталогу няма sha256 пакета — усталёўка спынена.")
+    name = paths.name(pkg["url"].split("?")[0].replace("\\", "/").rsplit("/", 1)[-1])
+    if not name.lower().endswith(".zip"):
+        raise SystemExit(f"Пакет перакладу — не .zip: {name}")
     os.makedirs(cache, exist_ok=True)
-    dst = os.path.join(cache, os.path.basename(pkg["url"].split("?")[0]))
-    if os.path.exists(dst) and sha256(dst) == pkg["sha256"]:
+    dst = os.path.join(cache, name)
+    if os.path.exists(dst) and sha256(dst) == want:
         return dst
-    data = _get(pkg["url"], timeout)
-    if hashlib.sha256(data).hexdigest() != pkg["sha256"]:
+    try:
+        data = _get(pkg["url"], timeout, MAX_PACKAGE)
+    except ValueError as e:
+        raise SystemExit(f"Пакет перакладу не спампаваны: {e}")
+    if hashlib.sha256(data).hexdigest() != want:
         raise SystemExit("Пакет перакладу пашкоджаны (sha256 не супадае) — паспрабуйце пазней.")
     with open(dst + ".part", "wb") as f:
         f.write(data)
@@ -115,11 +157,18 @@ def download(entry: dict, cache: str, timeout: float = 60) -> str:
 
 def open_package(path: str, dest: str) -> dict:
     """Распакаваць пакет у dest і вярнуць payload (assets — у dest/assets)."""
-    shutil.rmtree(dest, ignore_errors=True)
     with zipfile.ZipFile(path) as z:
-        for n in z.namelist():
-            if n.startswith("/") or ".." in n.split("/"):
-                raise SystemExit(f"дзіўны шлях у пакеце: {n}")
+        infos = z.infolist()
+        if len(infos) > MAX_FILES or sum(i.file_size for i in infos) > MAX_PACKAGE:
+            raise SystemExit("Пакет перакладу завялікі пасля распакоўкі.")
+        for i in infos:
+            n = i.filename
+            if n != "payload.json" and not (n.startswith("assets/") and not n.endswith("/")):
+                raise SystemExit(f"дзіўны файл у пакеце: {n}")
+            paths.inside(dest, *n.split("/"))
+            if (i.external_attr >> 16) & 0o170000 == 0o120000:      # сімвальная спасылка (unix)
+                raise SystemExit(f"дзіўны файл у пакеце: {n}")
+        shutil.rmtree(dest, ignore_errors=True)
         z.extractall(dest)
     return payload_mod.load(os.path.join(dest, "payload.json"))
 
@@ -189,4 +238,5 @@ def cache_dir() -> str:
 
 
 def unpack_dir(game_id: str) -> str:
-    return os.path.join(tempfile.gettempdir(), "belloc", game_id)
+    """Часовая папка пакета (open_package яе выдаляе і стварае нанова)."""
+    return os.path.join(tempfile.gettempdir(), "belloc", paths.game_id(game_id))

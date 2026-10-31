@@ -22,12 +22,18 @@ def process_path(pid: int) -> str | None:
         return None
 
 
+def tasklist() -> str:
+    """Поўны шлях: голае "tasklist" Windows шукае і ў папцы exe (напр. «Спампоўкі»
+    побач з усталёўшчыкам), а там можа ляжаць чужы tasklist.exe."""
+    return os.path.join(os.environ.get("SystemRoot", r"C:\Windows"), "System32", "tasklist.exe")
+
+
 def game_running(exe: str, game: str) -> bool:
     """Ці запушчаная гульня з гэтага каталога (копія ў іншым месцы не замінае).
     Калі шлях працэсу не ўдалося даведацца — лічым, што запушчаная."""
     try:
         # вывад — у кодавай старонцы OEM (памяць з неразрыўным прабелам): патрэбныя толькі імя і PID
-        out = subprocess.run(["tasklist", "/FO", "CSV", "/NH", "/FI", f"IMAGENAME eq {exe}"],
+        out = subprocess.run([tasklist(), "/FO", "CSV", "/NH", "/FI", f"IMAGENAME eq {exe}"],
                              capture_output=True, timeout=10).stdout.decode("ascii", "replace")
     except Exception:
         return False
