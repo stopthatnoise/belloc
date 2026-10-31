@@ -24,6 +24,7 @@ from belloc import catalog, steam
 import games
 
 TITLE = "Беларускія пераклады гульняў"
+VERSION = "0.1"                         # версія лаўнчара (у загалоўку акна; каталог: "launcher")
 COVER_W, COVER_H = 230, 107
 
 STYLE = """
@@ -192,7 +193,7 @@ class Window(QMainWindow):
         self.catalog_src, self.apps = catalog_src, apps
         self.cards: list[Card] = []
         self.thread: QThread | None = None
-        self.setWindowTitle(TITLE)
+        self.setWindowTitle(f"{TITLE} — лаўнчар {VERSION}")
         self.resize(820, 640)
         self.setStyleSheet(STYLE)
 
@@ -377,10 +378,53 @@ class Window(QMainWindow):
         self.start(lambda log: fn(card.row, log), done, failed)
 
 
+def selftest(out: str, catalog_src: str) -> int:
+    """Праверка сабранага exe: усе рухавікі імпартуюцца, акно будуецца, каталог чытаецца.
+    Вынік — out.txt і здымак акна out.png (exe без кансолі — друкаваць няма куды)."""
+    import importlib
+    import time
+    from belloc import engines
+    lines = []
+    for name, mod in engines.ENGINES.items():
+        try:
+            importlib.import_module(f"belloc.engines.{mod}.apply")
+            lines.append(f"{name}: ok")
+        except Exception as e:
+            lines.append(f"{name}: ПАМЫЛКА {type(e).__name__}: {e}")
+    # бібліятэкі, якія рухавікі грузяць толькі падчас усталёўкі
+    for lib in ("UnityPy", "cv2", "ooz", "Crypto.Cipher.AES", "lz4.block", "numpy", "PIL.Image",
+                "fontTools.ttLib", "etcpak", "texture2ddecoder"):
+        try:
+            importlib.import_module(lib)
+            lines.append(f"{lib}: ok")
+        except Exception as e:
+            lines.append(f"{lib}: ПАМЫЛКА {type(e).__name__}: {e}")
+    app = QApplication.instance() or QApplication(sys.argv[:1])
+    app.setStyle("Fusion")
+    w = Window(catalog_src, {})
+    w.resize(860, 640)
+    w.show()
+    w.load()
+    end = time.time() + 30
+    while time.time() < end and not hasattr(w, "cat"):
+        app.processEvents()
+        time.sleep(0.05)
+    app.processEvents()
+    lines.append(f"каталог: {len(getattr(w, 'cat', {}).get('games', {}))} гульняў" if hasattr(w, "cat")
+                 else "каталог: не загрузіўся")
+    w.grab().save(out + ".png")
+    with open(out + ".txt", "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+    return 0 if all("ПАМЫЛКА" not in x for x in lines) and hasattr(w, "cat") else 1
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=TITLE)
     ap.add_argument("--catalog", default=catalog.CATALOG_URL)
+    ap.add_argument("--selftest", metavar="OUT", help=argparse.SUPPRESS)
     args = ap.parse_args(argv)
+    if args.selftest:
+        return selftest(args.selftest, args.catalog)
     app = QApplication(sys.argv[:1])
     app.setStyle("Fusion")
     w = Window(args.catalog)
