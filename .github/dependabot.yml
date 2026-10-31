@@ -1,0 +1,13 @@
+# Абнаўленні залежнасцей — PR раз на тыдзень: actions па SHA (ci.yml) і пакеты з pyproject.toml.
+# Кожны такі PR — праз CI і агляд уладальніка (CODEOWNERS), як любы іншы.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5

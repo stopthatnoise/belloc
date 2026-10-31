@@ -1,0 +1,39 @@
+# Праверкі кожнага PR і main: тэсты на сінтэтычных фікстурах і змесціва games/
+# (tests/test_games.py — game.json, payload, CSV толькі з нашым слоем, гласарый,
+# лакальныя шляхі). Тэкстаў і файлаў гульняў у CI няма і не будзе.
+#
+# Бяспека: толькі `pull_request` (код PR без сакрэтаў, токен на чытанне), ніякага
+# `pull_request_target`; actions — па поўным SHA (Dependabot абнаўляе);
+# persist-credentials: false — токен не застаецца ў .git для наступных крокаў.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tests:
+    runs-on: windows-latest          # усталёўшчык і лаўнчар — толькі пад Windows
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+      - name: Залежнасці
+        run: python -m pip install ".[lint,unity,glacier,unreal,telltale,launcher]"
+      - name: Тэсты і змесціва games/
+        env:
+          PYTHONPATH: core
+          QT_QPA_PLATFORM: offscreen
+        run: python -X utf8 -m unittest discover -s tests -v
