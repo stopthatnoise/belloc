@@ -13,10 +13,11 @@ import argparse
 import sys
 import traceback
 
-from PySide6.QtCore import QObject, Qt, QThread, Signal
-from PySide6.QtGui import QPixmap
-from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel, QMainWindow, QMessageBox,
-                               QPlainTextEdit, QPushButton, QScrollArea, QSplitter, QVBoxLayout, QWidget)
+from PySide6.QtCore import QObject, Qt, QThread, QUrl, Signal
+from PySide6.QtGui import QDesktopServices, QPixmap
+from PySide6.QtWidgets import (QApplication, QFileDialog, QFrame, QHBoxLayout, QLabel, QMainWindow,
+                               QMessageBox, QPlainTextEdit, QPushButton, QScrollArea, QSplitter, QVBoxLayout,
+                               QWidget)
 
 from belloc import catalog, steam
 
@@ -41,6 +42,12 @@ QPushButton#primary:hover { background: #a60d26; }
 QPushButton:disabled { color: #aaa; background: #eee; }
 #log { background: #1f1f1f; color: #ddd; font-family: Consolas, monospace; font-size: 12px; border: none; }
 #header { font-size: 20px; font-weight: 600; color: #222; }
+#section { font-size: 14px; font-weight: 600; color: #555; margin-top: 8px; }
+#empty { font-size: 17px; font-weight: 600; color: #333; margin-top: 24px; }
+#other { background: #faf8f4; border: 1px dashed #d6d0c5; border-radius: 10px; }
+#otherName { font-size: 14px; font-weight: 600; color: #444; }
+QPushButton#link { border: none; background: transparent; color: #1a5fb4; text-align: left; padding: 6px 2px; }
+QPushButton#link:hover { text-decoration: underline; }
 #sub { color: #777; }
 """
 
@@ -148,6 +155,37 @@ class Card(QFrame):
         self.remove.setEnabled(not busy)
 
 
+class OtherCard(QFrame):
+    """Пераклад ёсць, гульні на камп'ютары няма: што перакладзена і спасылка на краму."""
+
+    def __init__(self, row: dict):
+        super().__init__()
+        self.row = row
+        e = row["entry"]
+        self.setObjectName("other")
+        lay = QHBoxLayout(self)
+        lay.setContentsMargins(12, 10, 12, 10)
+        text = QVBoxLayout()
+        text.setSpacing(2)
+        name = QLabel(e["name"])
+        name.setObjectName("otherName")
+        info = QLabel(f"Пераклад {e['version']}" + (f" ад {catalog.show_date(e['date'])}" if e.get("date") else ""))
+        info.setObjectName("sub")
+        text.addWidget(name)
+        text.addWidget(info)
+        if e.get("contents"):
+            about = QLabel(e["contents"])
+            about.setObjectName("sub")
+            about.setWordWrap(True)
+            text.addWidget(about)
+        lay.addLayout(text, 1)
+        url = games.store_url(row.get("appid"))
+        if url:
+            self.store = QPushButton("Старонка ў Steam")
+            self.store.clicked.connect(lambda: QDesktopServices.openUrl(QUrl(url)))
+            lay.addWidget(self.store, 0, Qt.AlignTop)
+
+
 class Window(QMainWindow):
     def __init__(self, catalog_src: str = catalog.CATALOG_URL, apps: dict | None = None):
         super().__init__()
@@ -232,7 +270,9 @@ class Window(QMainWindow):
             cat = catalog.fetch(self.catalog_src)
             if cat is None:
                 raise SystemExit("Не атрымалася загрузіць каталог перакладаў — праверце інтэрнэт.")
-            return cat, games.scan(cat, self.apps)
+            # з падстаўленым спісам гульняў (тэсты) Steam не правяраем
+            steam_ok = True if self.apps is not None else games.steam_found()
+            return cat, games.scan(cat, self.apps), steam_ok
 
         def failed(text, busy):
             self.refresh_btn.setEnabled(True)
@@ -240,30 +280,68 @@ class Window(QMainWindow):
             self.show_error(text, busy)
         self.start(work, self.show_games, failed)
 
+    def add(self, w: QWidget):
+        self.list_lay.addWidget(w)
+
+    def label(self, text: str, name: str, center=False) -> QLabel:
+        lb = QLabel(text)
+        lb.setObjectName(name)
+        lb.setWordWrap(True)
+        if center:
+            lb.setAlignment(Qt.AlignCenter)
+        return lb
+
     def show_games(self, result):
-        cat, rows = result
+        cat, rows, steam_ok = result
+        self.cat = cat
         self.refresh_btn.setEnabled(True)
-        for c in self.cards:
-            c.deleteLater()
         while self.list_lay.count():
             item = self.list_lay.takeAt(0)
             if item.widget():
                 item.widget().deleteLater()
+        rest = games.others(cat, rows)
         self.cards = [Card(r, self) for r in rows]
+
+        if not steam_ok and not rows:
+            self.add(self.label("Steam не знойдзены", "empty", True))
+            self.add(self.label("Лаўнчар шукае гульні ў бібліятэках Steam. Калі гульня ўсталявана "
+                                "іначай — пакажыце яе папку.", "sub", True))
+        elif not rows:
+            self.add(self.label("Пакуль няма гульняў з беларускім перакладам", "empty", True))
+            self.add(self.label("Ніводнай гульні з каталога няма на гэтым камп'ютары. Пераклады, "
+                                "якія ёсць, — ніжэй.", "sub", True))
+        else:
+            self.add(self.label("Вашы гульні", "section"))
         for c in self.cards:
-            self.list_lay.addWidget(c)
-        if not rows:
-            names = ", ".join(e["name"] for e in cat.get("games", {}).values()) or "—"
-            empty = QLabel(f"На гэтым камп'ютары не знайшлося гульняў Steam з беларускім перакладам.\n\n"
-                           f"Пераклады ёсць для: {names}")
-            empty.setObjectName("sub")
-            empty.setWordWrap(True)
-            empty.setAlignment(Qt.AlignCenter)
-            self.list_lay.addWidget(empty)
+            self.add(c)
+        if rest:
+            self.add(self.label("Ёсць пераклад, але гульні няма на гэтым камп'ютары" if rows
+                                else "Пераклады", "section"))
+            for r in rest:
+                self.add(OtherCard(r))
+        folder = QPushButton("Гульня ўсталявана ў іншае месца? Пазначыць папку")
+        folder.setObjectName("link")
+        folder.setCursor(Qt.PointingHandCursor)
+        folder.clicked.connect(self.pick_folder)
+        self.add(folder)
         self.list_lay.addStretch()
         n_upd = sum(1 for r in rows if games.action(r) in ("update", "reinstall"))
-        self.sub.setText(f"Знойдзена гульняў з перакладам: {len(rows)}"
+        self.sub.setText(f"Знойдзена гульняў з перакладам: {len(rows)} з {len(cat.get('games', {}))}"
                          + (f" · абнаўленняў: {n_upd}" if n_upd else ""))
+
+    def pick_folder(self):
+        folder = QFileDialog.getExistingDirectory(self, "Папка гульні")
+        if not folder:
+            return
+        found = games.match_folder(getattr(self, "cat", {}), folder)
+        if not found:
+            QMessageBox.warning(self, TITLE, "У гэтай папцы не знайшлося гульні, для якой ёсць пераклад.\n"
+                                "Пакажыце галоўную папку гульні — тую, дзе ляжыць яе exe.")
+            return
+        for gid in found:
+            games.remember(gid, folder)
+            self.log(f"Папка {folder} — {self.cat['games'][gid]['name']}")
+        self.load()
 
     # ------------------------------------------------------------ дзеянні
     def run_action(self, card: Card, what: str):

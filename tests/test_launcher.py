@@ -54,6 +54,8 @@ class Fixture(unittest.TestCase):
         with open(yml, "w", encoding="utf-8-sig", newline="\n") as f:
             f.write('l_english:\n START:0 "Start"\n')
         self.gamedir = g
+        os.makedirs(os.path.join(g, "binaries"))
+        open(os.path.join(g, "binaries", "demo.exe"), "w").close()     # па exe гульню пазнае выбар папкі
         game = os.path.join(self.tmp, "games", "demo")
         os.makedirs(game)
         with open(os.path.join(game, "game.json"), "w", encoding="utf-8") as f:
@@ -162,6 +164,20 @@ class LauncherTest(Fixture):
         with redirect_stdout(io.StringIO()):
             installer.main(["--game", self.gamedir, "--yes", "--uninstall"], path, self.cat)
         self.assertIsNone(state.read(self.gamedir))
+
+    def test_others_and_folders(self):
+        sys.path.insert(0, os.path.join(HERE, "..", "launcher"))
+        import games
+        with open(self.cat, encoding="utf-8") as f:
+            cat = json.load(f)
+        self.assertEqual(games.scan(cat, {}), [])
+        self.assertEqual([o["id"] for o in games.others(cat, [])], ["demo"])
+        self.assertEqual(games.match_folder(cat, self.gamedir), ["demo"])
+        self.assertEqual(games.match_folder(cat, os.path.join(self.gamedir, "game")), [])   # не тая папка
+        games.remember("demo", self.gamedir)
+        self.assertEqual([r["dir"] for r in games.scan(cat, {})], [self.gamedir])
+        self.assertEqual(games.others(cat, games.scan(cat, {})), [])
+        self.assertEqual(games.store_url(7), "https://store.steampowered.com/app/7/")
 
     def test_no_network(self):
         self.assertIsNone(catalog.fetch(os.path.join(self.tmp, "missing.json")))

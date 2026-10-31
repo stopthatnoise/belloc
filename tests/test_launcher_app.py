@@ -84,6 +84,29 @@ class AppTest(Fixture):
         self.assertIn("Што новага: выпраўленні", self.w.cards[0].info.text())
         self.assertIn("абнаўленняў: 1", self.w.sub.text())
 
+    def test_no_games_and_manual_folder(self):
+        import app
+        from PySide6.QtWidgets import QFileDialog
+        w = app.Window(self.cat, {})                       # у Steam гульні няма
+        w.load()
+        self.assertTrue(wait(lambda: w.refresh_btn.isEnabled() and hasattr(w, "cat")))
+        self.assertEqual(w.cards, [])
+        others = w.list.findChildren(app.OtherCard)
+        self.assertEqual([o.row["id"] for o in others], ["demo"])
+        self.assertEqual(others[0].store.text(), "Старонка ў Steam")
+        texts = [lb.text() for lb in w.list.findChildren(app.QLabel)]
+        self.assertIn("Пакуль няма гульняў з беларускім перакладам", texts)
+        # гулец паказвае папку — гульня з'яўляецца ў «Вашы гульні» і застаецца пасля перазапуску
+        QFileDialog.getExistingDirectory = staticmethod(lambda *a, **k: self.gamedir)
+        w.pick_folder()
+        self.assertTrue(wait(lambda: w.cards))
+        self.assertEqual(w.cards[0].row["dir"], self.gamedir)
+        w2 = app.Window(self.cat, {})
+        w2.load()
+        self.assertTrue(wait(lambda: w2.cards))
+        w.close()
+        w2.close()
+
 
 if __name__ == "__main__":
     unittest.main()

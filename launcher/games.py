@@ -5,6 +5,9 @@
 """
 from __future__ import annotations
 
+import json
+import os
+
 from belloc import catalog, engines, steam
 from belloc.install import state
 from belloc.install.process import game_running
@@ -17,17 +20,93 @@ class Busy(Exception):
     """Гульня запушчаная — файлы чапаць нельга."""
 
 
+# ---------------------------------------------------------------- налады лаўнчара
+
+def settings_path() -> str:
+    """%LOCALAPPDATA%/belloc/launcher.json: папкі гульняў, пазначаныя ўручную."""
+    return os.path.join(os.path.dirname(catalog.cache_dir()), "launcher.json")
+
+
+def load_settings() -> dict:
+    try:
+        with open(settings_path(), encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
+
+
+def save_settings(s: dict):
+    os.makedirs(os.path.dirname(settings_path()), exist_ok=True)
+    with open(settings_path(), "w", encoding="utf-8", newline="\n") as f:
+        json.dump(s, f, ensure_ascii=False, indent=1)
+
+
+# ---------------------------------------------------------------- пошук гульняў
+
+def steam_found() -> bool:
+    """Ці ёсць на камп'ютары Steam (хоць адна бібліятэка)."""
+    return any(os.path.isdir(os.path.join(r, "steamapps")) for r in steam.steam_roots())
+
+
+def has_exe(folder: str, exe: str, depth: int = 2) -> bool:
+    """Ці ёсць exe гульні ў папцы або на глыбіні да depth (007: Retail/007FirstLight.exe)."""
+    for dirpath, dirs, files in os.walk(folder):
+        if exe.lower() in (f.lower() for f in files):
+            return True
+        if os.path.relpath(dirpath, folder).count(os.sep) + 1 >= depth and dirpath != folder:
+            dirs[:] = []
+    return False
+
+
+def fits(e: dict, folder: str) -> bool:
+    """Ці падобная папка на каталог гэтай гульні: ёсць тое, па чым яе пазнае рухавік
+    (check_path), і exe гульні."""
+    if not catalog.supported(e):
+        return False
+    if not os.path.isdir(os.path.join(folder, engines.get(e["engine"]).check_path(e["probe"]))):
+        return False
+    return not e.get("exe") or has_exe(folder, e["exe"])
+
+
+def match_folder(cat: dict, folder: str) -> list[str]:
+    """Якім гульням каталога падыходзіць папка, якую пазначыў гулец."""
+    return [gid for gid, e in cat.get("games", {}).items() if fits(e, folder)]
+
+
+def remember(gid: str, folder: str):
+    s = load_settings()
+    s.setdefault("folders", {})[gid] = folder
+    save_settings(s)
+
+
 def scan(cat: dict, apps: dict | None = None) -> list[dict]:
-    """Гульні з каталога, якія ёсць на камп'ютары: id, запіс каталога, каталог гульні, стан."""
+    """Гульні з каталога, якія ёсць на камп'ютары: Steam і папкі, пазначаныя ўручную."""
     apps = steam.installed_apps() if apps is None else apps
+    manual = load_settings().get("folders", {})
     found = []
     for gid, e in sorted(cat.get("games", {}).items(), key=lambda x: x[1].get("name", x[0])):
         appid = e.get("stores", {}).get("steam")
-        if appid not in apps:
+        if appid in apps:
+            folder, buildid = apps[appid]["dir"], apps[appid]["buildid"]
+        elif gid in manual and os.path.isdir(manual[gid]) and fits(e, manual[gid]):
+            folder, buildid = manual[gid], steam.buildid(manual[gid], appid)
+        else:
             continue
-        found.append(refresh({"id": gid, "entry": e, "appid": appid, "dir": apps[appid]["dir"],
-                              "buildid": apps[appid]["buildid"], "supported": catalog.supported(e)}))
+        found.append(refresh({"id": gid, "entry": e, "appid": appid, "dir": folder,
+                              "buildid": buildid, "supported": catalog.supported(e)}))
     return found
+
+
+def others(cat: dict, rows: list[dict]) -> list[dict]:
+    """Пераклады з каталога для гульняў, якіх на камп'ютары няма."""
+    have = {r["id"] for r in rows}
+    return [{"id": gid, "entry": e, "appid": e.get("stores", {}).get("steam")}
+            for gid, e in sorted(cat.get("games", {}).items(), key=lambda x: x[1].get("name", x[0]))
+            if gid not in have]
+
+
+def store_url(appid) -> str | None:
+    return f"https://store.steampowered.com/app/{appid}/" if appid else None
 
 
 def refresh(row: dict) -> dict:

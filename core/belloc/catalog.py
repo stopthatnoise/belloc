@@ -10,6 +10,7 @@ CATALOG_URL і RELEASES глядзяць на яго, а belloc-catalog выда
        "name": "Pony Island", "stores": {"steam": 405640},   — пакуль толькі steam
        "engine": "unity-textasset-csv", "payload_schema": 1,
        "version": "1.0", "date": "2026-10-31", "changes": "…",
+       "contents": "Перакладзены ўвесь тэкст… (1232 радкі)",     — што перакладзена (release.contents)
        "steam_buildid": "25928685",                          — пад якую версію гульні
        "exe": "PonyIsland.exe", "language_name": "Беларуская", "replaces": "Русский",
        "page": "https://…/releases/tag/pony-island-v1.0",
@@ -143,6 +144,8 @@ def entry(loc: Loc, p: dict, pkg_path: str, url: str) -> dict:
     stores = {"steam": loc.steam_appid} if loc.steam_appid else {}
     return {"name": loc.name, "stores": stores, "engine": loc.engine, "payload_schema": p["schema"],
             "version": rel["version"], "date": p["release"]["date"], "changes": rel.get("changes", ""),
+            "contents": " ".join(rel.get("contents", "").format(
+                strings=sum(len(v) for v in p["strings"].values())).split()),
             "steam_buildid": p.get("steam_buildid"), "exe": rel["exe"],
             "language_name": rel["language_name"], "replaces": rel["replaces"],
             "page": rel.get("url") or f"{RELEASES}/tag/{loc.id}-v{rel['version']}",
