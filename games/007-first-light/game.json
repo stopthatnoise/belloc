@@ -1,0 +1,130 @@
+{
+ "name": "007 First Light",
+ "engine": "glacier",
+ "steam_appid": 3768760,
+ "source_lang": "en",
+ "hint_lang": "ru",
+ "extra_hints": [
+  "uk"
+ ],
+ "credits": "Нейрапераклад: мадэль Claude (Anthropic). Кіраўнік праекта: Віталь Аляхновіч.",
+ "_from_original": "юрыдычныя тэксты (6 радкоў ui/01179467BC0E9F2F) застаюцца англійскімі: у рэпазіторыі — заглушка [], рухавік бярэ радок мовы source_lang з гульні",
+ "from_original": "(?s)\\A(?:\\[\\]|.{1000,})\\Z",
+ "glacier": {
+  "runtime": "Runtime",
+  "exe": "Retail/007FirstLight.exe",
+  "target": "ru",
+  "missions": [
+   [
+    "/clover/",
+    "M01_clover"
+   ],
+   [
+    "lotusstarthub|/onyx/",
+    "M02.1_lotus_start"
+   ],
+   [
+    "/lotus_training/|/sapphire/",
+    "M02.2_lotus_training"
+   ],
+   [
+    "lotusmidhub",
+    "M02.3_lotus_mid"
+   ],
+   [
+    "/lotus_nightclub/",
+    "M02.5_lotus_nightclub"
+   ],
+   [
+    "lotusendhub",
+    "M02.6_lotus_end"
+   ],
+   [
+    "/lotus/",
+    "M02_lotus"
+   ],
+   [
+    "/rose/",
+    "M03_rose"
+   ],
+   [
+    "/lily/",
+    "M03.2_lily"
+   ],
+   [
+    "/daisy/",
+    "M03.5_daisy"
+   ],
+   [
+    "/dahlia/",
+    "M04_dahlia"
+   ],
+   [
+    "/poppy/",
+    "M04.5_poppy"
+   ],
+   [
+    "/pepper/",
+    "M05_pepper"
+   ],
+   [
+    "/bluebell/",
+    "M06_bluebell"
+   ],
+   [
+    "/lavender/",
+    "M06.5_lavender"
+   ],
+   [
+    "/magnolia/",
+    "M07_magnolia"
+   ],
+   [
+    "/iris/",
+    "M08_iris"
+   ],
+   [
+    "/buttercup/",
+    "M08.5_buttercup"
+   ],
+   [
+    "/orchid/",
+    "M09_orchid"
+   ],
+   [
+    "/ivy/",
+    "M10_ivy"
+   ],
+   [
+    "/sunflower/",
+    "M10.5_sunflower"
+   ],
+   [
+    "/ruby/",
+    "MI6_ruby"
+   ],
+   [
+    "/tsim/",
+    "TacSim"
+   ]
+  ],
+  "_missions": "храналогія — JSON гульні KNT_Missions (_NOTE «M01 - Iceland (Clover)» …): Ісландыя, MI6/Мальта (Lotus), Славакія, Англія, MI6, Маўрытанія, MI6, Кенсінгтан, Англія, MI6, В'етнам, MI6, яхта, Антарктыда, MI6, Англія",
+  "keys": {
+   "_about": "XTEA гульні 1.3.1.0 — канстанты .rdata exe, знойдзеныя перабором (RESEARCH.md); ідуць і ў payload усталёўшчыка. Пасля абнаўлення гульні — праверыць",
+   "text": "68AC3361 562B4AA0 B9F2771F 28EB3CE7",
+   "packagedefinition": "71482CF0 5FDC4B9F 86CE569D 0509FC1E"
+  }
+ },
+ "release": {
+  "title": "Беларускі пераклад 007 First Light",
+  "version": "1.1",
+  "exe": "007FirstLight.exe",
+  "file": "007FirstLight_BE",
+  "language_name": "Беларуская",
+  "replaces": "Русский",
+  "menu": "Налады → Мова → Мова тэксту",
+  "contents": "Перакладзены інтэрфейс і ўсе субтытры ({strings} радкоў). Агучка\nі юрыдычныя тэксты застаюцца англійскімі.",
+  "how": "Дадае ў папку Runtime\nдва файлы (chunk0patch1.rpkg, chunk1patch1.rpkg) і правіць\npackagedefinition.txt — арыгінал захоўваецца як packagedefinition.txt.orig.",
+  "readme": "release/readme.txt"
+ }
+}

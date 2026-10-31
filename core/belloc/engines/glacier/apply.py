@@ -5,6 +5,7 @@ import os
 import re
 import shutil
 
+from ... import tables
 from ...config import Loc
 from . import rpkg
 from .dlge import CODE, SPEAKER, Dlge, join, segments, split
@@ -13,14 +14,17 @@ from .common import SPEAKERS, base_packagedefinition, sec, speaker_key, voice_ge
 
 
 def build_rt(rt: str, texts: dict[str, dict[str, str]], dest: str, target: str, source_lang: str,
-             text_key, pkg_key) -> list[str]:
-    """Патчы chunkNpatchM.rpkg і packagedefinition.txt у dest. Вяртае імёны файлаў."""
+             text_key, pkg_key, pat=None) -> list[str]:
+    """Патчы chunkNpatchM.rpkg і packagedefinition.txt у dest. Вяртае імёны файлаў.
+
+    pat — рэгулярка кавалкаў арыгінала (tables.from_original): заглушкі `[]` у
+    інтэрфейсе бяруцца з радка мовы source_lang той жа LOCR."""
     arc = rpkg.Archive(rt)
     header, pd = rpkg.read_packagedefinition(base_packagedefinition(rt), pkg_key)
     levels = rpkg.patchlevels(pd)
 
     out: dict[int, list[tuple[rpkg.Entry, bytes]]] = {}
-    n_ui = n_sub = miss = 0
+    n_ui = n_sub = miss = left = 0
     for table, kv in texts.items():
         if not table.startswith("ui/") or not kv:
             continue
@@ -30,12 +34,17 @@ def build_rt(rt: str, texts: dict[str, dict[str, str]], dest: str, target: str, 
             continue
         lc = Locr(rpkg.read(e))
         tgt = lc.lang(target)
+        src = (lc.lang(source_lang) or {}) if pat else {}
         changed = False
         for key, bel in kv.items():
             h = int(key, 16)
             if tgt is None or h not in tgt:
                 miss += 1
                 continue
+            if pat and tables.PLACEHOLDER in bel:
+                orig = rpkg.blob_text(rpkg.decrypt(src[h], text_key)) if h in src else ""
+                bel = tables.expand(bel, orig, pat)
+                left += tables.PLACEHOLDER in bel
             enc = rpkg.encrypt(rpkg.text_blob(bel), text_key)
             changed |= enc != tgt[h]
             tgt[h] = enc
@@ -103,6 +112,7 @@ def build_rt(rt: str, texts: dict[str, dict[str, str]], dest: str, target: str, 
     print(f"  інтэрфейс: {n_ui} радкоў, субтытры: {n_sub}, прамоўцаў: {len(speakers)}"
           + (f", радкоў не па кавалках арыгінала (таймінгі прапарцыйна): {n_reseg}" if n_reseg else "")
           + (f", ключоў няма ў гульні: {miss}" if miss else "")
+          + (f", заглушак без кавалкаў арыгінала: {left}" if left else "")
           + f"; рэсурсаў: {sum(len(v) for v in out.values())}")
     return written
 
@@ -135,12 +145,12 @@ def restore_rt(rt: str) -> bool:
     return did
 
 
-def install_rt(rt: str, texts, target: str, source_lang: str, text_key, pkg_key) -> list[str]:
+def install_rt(rt: str, texts, target: str, source_lang: str, text_key, pkg_key, pat=None) -> list[str]:
     """Патч у гульню: заўсёды ад арыгінала, packagedefinition.txt — з .orig, нашы файлы — з .bel."""
     restore_rt(rt)
     pd = os.path.join(rt, "packagedefinition.txt")
     shutil.copyfile(pd, pd + ".orig")
-    written = build_rt(rt, texts, rt, target, source_lang, text_key, pkg_key)
+    written = build_rt(rt, texts, rt, target, source_lang, text_key, pkg_key, pat)
     for name in written:
         rpkg.mark_ours(os.path.join(rt, name))
     if not written:
@@ -168,11 +178,12 @@ def _args(game_dir: str, payload: dict):
 
 def apply(game_dir: str, payload: dict, out: str | None = None, log=print) -> dict:
     rt, target, source_lang, text_key, pkg_key = _args(game_dir, payload)
+    pat = tables.from_original(payload.get("from_original"))
     log("Збіраю патч з файлаў гульні (хвіліна-дзве)…")
     if out:
-        written = build_rt(rt, payload["strings"], out, target, source_lang, text_key, pkg_key)
+        written = build_rt(rt, payload["strings"], out, target, source_lang, text_key, pkg_key, pat)
     else:
-        written = install_rt(rt, payload["strings"], target, source_lang, text_key, pkg_key)
+        written = install_rt(rt, payload["strings"], target, source_lang, text_key, pkg_key, pat)
     log(f"→ {out or rt}: {', '.join(written) or 'нічога'}")
     return {"written": written}
 

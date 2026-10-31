@@ -30,10 +30,16 @@ chunkNpatchM.rpkg (M = афіцыйны patchlevel + 1) і patchlevel у package
 Нашы файлы пазначаюцца <файл>.bel (SHA-256); packagedefinition.txt — .orig + .bel:
 калі Steam абнавіў файл, за аснову бярэцца новы. restore выдаляе патчы і вяртае
 packagedefinition.txt; з out — тое ж у папку, гульня не чапаецца.
+
+Кавалкі арыгінала (`"from_original"` у game.json, гл. tables.py) — толькі ў інтэрфейсе:
+заглушка `[]` у LOCR ← радок мовы source_lang (007: юрыдычныя тэксты, пакінутыя
+па-англійску, у рэпазіторыі — `[]`).
 """
 from .common import NAME, SECTION  # noqa: F401
 from .extract import extract  # noqa: F401
 from .apply import payload, check_path, apply, restore, installed  # noqa: F401
+
+FROM_ORIGINAL = True
 
 # усталёўшчык (release.py): numpy (XTEA) і lz4 PyInstaller бачыць сам
 PYINSTALLER = ["--exclude-module", "UnityPy", "--exclude-module", "cv2", "--exclude-module", "spylls",

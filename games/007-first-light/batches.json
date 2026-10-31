@@ -1,0 +1,2273 @@
+{
+ "_about": "Пачкі 007 First Light (core/belloc/batch.py), ~3 тыс. унікальных слоў на пачку (паўторы не лічацца — _repeats). Хваля 1 (u) — імёны прамоўцаў, дасье і інтэрфейс (з іх папаўняецца гласарый); 2 (m) — місіі ў храналагічным парадку, сцэна за сцэнай (dlg/<місія>/<сцэна>, рэплікі ў парадку гульні — core/belloc/engines/glacier/scenes.py); 3 (c) — агульныя рэплікі з розных місій (dlg/_common): спачатку сюжэтныя катэгорыі, потым гутаркі NPC, баркі, бой.",
+ "_repeats": [
+  {
+   "tables": "^ui/",
+   "by": [
+    "en",
+    "ru"
+   ]
+  },
+  {
+   "tables": "^dlg/(?!_speakers)",
+   "by": [
+    "en"
+   ],
+   "note": "^ctx: (?:\\S+ ([мж]) |(\\S+?)\\d* )"
+  }
+ ],
+ "u00": {
+  "wave": 1,
+  "title": "Імёны прамоўцаў і дасье герояў (~3778 слоў)",
+  "rows": [
+   {
+    "table": "dlg/_speakers"
+   },
+   {
+    "table": "ui/01815574989C4717"
+   }
+  ]
+ },
+ "u01": {
+  "wave": 1,
+  "title": "Інтэрфейс 1 (~3024 слоў)",
+  "rows": [
+   {
+    "table": "ui/010011DE678DA7CE"
+   },
+   {
+    "table": "ui/01016CE7AFD99CDA"
+   },
+   {
+    "table": "ui/0102E49C3D7707C6"
+   },
+   {
+    "table": "ui/01031B2E6CC6A7E3"
+   },
+   {
+    "table": "ui/010677D6CF3B746D"
+   },
+   {
+    "table": "ui/0107B7F6E0D15EAB"
+   },
+   {
+    "table": "ui/0108037DC9E22709"
+   },
+   {
+    "table": "ui/01081E1AE7884E21"
+   },
+   {
+    "table": "ui/0109D24F2A447405"
+   },
+   {
+    "table": "ui/010A962C5D1FE762"
+   },
+   {
+    "table": "ui/010D69121F8D00D0"
+   },
+   {
+    "table": "ui/010D87B96C8BC0BF"
+   },
+   {
+    "table": "ui/010F5A6D9DE07BE6"
+   },
+   {
+    "table": "ui/0111341AF4E54729"
+   },
+   {
+    "table": "ui/01132EB802C784CB",
+    "slice": [
+     0,
+     4
+    ]
+   }
+  ]
+ },
+ "u02": {
+  "wave": 1,
+  "title": "Інтэрфейс 2 (~3019 слоў)",
+  "rows": [
+   {
+    "table": "ui/01132EB802C784CB",
+    "slice": [
+     4,
+     null
+    ]
+   },
+   {
+    "table": "ui/0115DBB2CAEC167F"
+   },
+   {
+    "table": "ui/0116307CABEF4634"
+   },
+   {
+    "table": "ui/0117164044C684A4"
+   },
+   {
+    "table": "ui/011752462D6BEBC8"
+   },
+   {
+    "table": "ui/01179467BC0E9F2F"
+   },
+   {
+    "table": "ui/0119DC9725068E09"
+   },
+   {
+    "table": "ui/0119FDF6FA06C404"
+   },
+   {
+    "table": "ui/011A5962DBD864B6"
+   },
+   {
+    "table": "ui/011B8BA546DF6F29",
+    "slice": [
+     0,
+     13
+    ]
+   }
+  ]
+ },
+ "u03": {
+  "wave": 1,
+  "title": "Інтэрфейс 3 (~3002 слоў)",
+  "rows": [
+   {
+    "table": "ui/011B8BA546DF6F29",
+    "slice": [
+     13,
+     null
+    ]
+   },
+   {
+    "table": "ui/011CE424DAADAA2D"
+   },
+   {
+    "table": "ui/011D8A68EE805145"
+   },
+   {
+    "table": "ui/011D98B2433603CB"
+   },
+   {
+    "table": "ui/011E1D540ED7C499"
+   },
+   {
+    "table": "ui/011E219C785493F4"
+   },
+   {
+    "table": "ui/011ED1E35158F5A7"
+   },
+   {
+    "table": "ui/011FD3AAE1AC04A9"
+   },
+   {
+    "table": "ui/0120ADA8FBD3074E"
+   },
+   {
+    "table": "ui/01231BC0C60DA43A"
+   },
+   {
+    "table": "ui/012381F125FD403F"
+   },
+   {
+    "table": "ui/01245B00C98E9669"
+   },
+   {
+    "table": "ui/0126CFF05034A78E"
+   },
+   {
+    "table": "ui/0127F5383334518D"
+   },
+   {
+    "table": "ui/0128BE2AA9815E60"
+   },
+   {
+    "table": "ui/01292828FD0E9E9C"
+   },
+   {
+    "table": "ui/0129C94933B87E8C"
+   },
+   {
+    "table": "ui/012A22CFB455E37C"
+   },
+   {
+    "table": "ui/012AEE294C87AB81"
+   },
+   {
+    "table": "ui/012B2BCE40B783D2",
+    "slice": [
+     0,
+     14
+    ]
+   }
+  ]
+ },
+ "u04": {
+  "wave": 1,
+  "title": "Інтэрфейс 4 (~3005 слоў)",
+  "rows": [
+   {
+    "table": "ui/012B2BCE40B783D2",
+    "slice": [
+     14,
+     null
+    ]
+   },
+   {
+    "table": "ui/012BC1440CC8BD5F"
+   },
+   {
+    "table": "ui/012BEB206C0B1897"
+   },
+   {
+    "table": "ui/012C2C6E00407DD5"
+   },
+   {
+    "table": "ui/012D64C5009739DC"
+   },
+   {
+    "table": "ui/012FE9B5D6943262"
+   },
+   {
+    "table": "ui/01319291E9941938"
+   },
+   {
+    "table": "ui/0131EF00566ED6A9"
+   },
+   {
+    "table": "ui/0133ECB47979E665"
+   },
+   {
+    "table": "ui/0133F8407AD41C5B"
+   },
+   {
+    "table": "ui/0135785354E4C414"
+   },
+   {
+    "table": "ui/0135D61A4D1724EB"
+   },
+   {
+    "table": "ui/013659586F367CD3"
+   },
+   {
+    "table": "ui/01373961722B6D74"
+   },
+   {
+    "table": "ui/01397AA4E57B536A"
+   },
+   {
+    "table": "ui/013A3598D3F1504A"
+   },
+   {
+    "table": "ui/013A9D83A810DB03"
+   },
+   {
+    "table": "ui/013BD75E851E22C6"
+   },
+   {
+    "table": "ui/013C9CB95EEBC692",
+    "slice": [
+     0,
+     7
+    ]
+   }
+  ]
+ },
+ "u05": {
+  "wave": 1,
+  "title": "Інтэрфейс 5 (~3001 слоў)",
+  "rows": [
+   {
+    "table": "ui/013C9CB95EEBC692",
+    "slice": [
+     7,
+     null
+    ]
+   },
+   {
+    "table": "ui/01404AF21B80A07E"
+   },
+   {
+    "table": "ui/01416E517D732AEB"
+   },
+   {
+    "table": "ui/0143C985A773BFA7"
+   },
+   {
+    "table": "ui/01482FF1F4DC3122"
+   },
+   {
+    "table": "ui/01492EAB34D81521"
+   },
+   {
+    "table": "ui/014CDB0958151969"
+   },
+   {
+    "table": "ui/014DF438F45FCCF3"
+   },
+   {
+    "table": "ui/014DF8359D8104B3"
+   },
+   {
+    "table": "ui/014EE4E4B92645F2"
+   },
+   {
+    "table": "ui/014F1077FE61E047"
+   },
+   {
+    "table": "ui/01504B8BAE6DCA27"
+   },
+   {
+    "table": "ui/0150E1E74D041BAA",
+    "slice": [
+     0,
+     116
+    ]
+   }
+  ]
+ },
+ "u06": {
+  "wave": 1,
+  "title": "Інтэрфейс 6 (~3000 слоў)",
+  "rows": [
+   {
+    "table": "ui/0150E1E74D041BAA",
+    "slice": [
+     116,
+     null
+    ]
+   },
+   {
+    "table": "ui/015541A0DF62C660"
+   },
+   {
+    "table": "ui/0155595CDBE662C2"
+   },
+   {
+    "table": "ui/0157208C4528A127"
+   },
+   {
+    "table": "ui/01577E4A62847D03"
+   },
+   {
+    "table": "ui/0157A4C30EB0CB87"
+   },
+   {
+    "table": "ui/01587D22D72798AE"
+   },
+   {
+    "table": "ui/01590F3DAE5009F4"
+   },
+   {
+    "table": "ui/015A47A913228B24"
+   },
+   {
+    "table": "ui/015CD893E736768A"
+   },
+   {
+    "table": "ui/015DAEC2BFCEEB7E"
+   },
+   {
+    "table": "ui/015E489BBC58ABAD"
+   },
+   {
+    "table": "ui/015F43E3F724F189"
+   },
+   {
+    "table": "ui/015F59A55B236EB8"
+   },
+   {
+    "table": "ui/015FCF054DF3FE72"
+   },
+   {
+    "table": "ui/0166F9DC3CF86CF6"
+   },
+   {
+    "table": "ui/01679BA07B61C09F"
+   },
+   {
+    "table": "ui/0168051CBBE7A893",
+    "slice": [
+     0,
+     9
+    ]
+   }
+  ]
+ },
+ "u07": {
+  "wave": 1,
+  "title": "Інтэрфейс 7 (~3000 слоў)",
+  "rows": [
+   {
+    "table": "ui/0168051CBBE7A893",
+    "slice": [
+     9,
+     null
+    ]
+   },
+   {
+    "table": "ui/016A18A866C128F2"
+   },
+   {
+    "table": "ui/016A34D8F646BA50"
+   },
+   {
+    "table": "ui/016C1A911D895FB7"
+   },
+   {
+    "table": "ui/016EF09448F520A2"
+   },
+   {
+    "table": "ui/016F269C4D0109A7"
+   },
+   {
+    "table": "ui/017019D55AFCAD6F"
+   },
+   {
+    "table": "ui/01733105E695CE64"
+   },
+   {
+    "table": "ui/01735478D3CFF230"
+   },
+   {
+    "table": "ui/0176E1681A20FE24"
+   },
+   {
+    "table": "ui/0176ED1012C4CEAB"
+   },
+   {
+    "table": "ui/017B5A51EF9CFB58"
+   },
+   {
+    "table": "ui/017E0213FE1839A9"
+   },
+   {
+    "table": "ui/018152A6899E7E07"
+   },
+   {
+    "table": "ui/018201164161BF49"
+   },
+   {
+    "table": "ui/018225F606338A05"
+   },
+   {
+    "table": "ui/0186AC07B4F4058C",
+    "slice": [
+     0,
+     66
+    ]
+   }
+  ]
+ },
+ "u08": {
+  "wave": 1,
+  "title": "Інтэрфейс 8 (~3004 слоў)",
+  "rows": [
+   {
+    "table": "ui/0186AC07B4F4058C",
+    "slice": [
+     66,
+     null
+    ]
+   },
+   {
+    "table": "ui/01870AE5E65313D6"
+   },
+   {
+    "table": "ui/0187EF0226002848"
+   },
+   {
+    "table": "ui/018825BE1C97079B"
+   },
+   {
+    "table": "ui/018D94E35C8F5183"
+   },
+   {
+    "table": "ui/018DBE2A09982C57"
+   },
+   {
+    "table": "ui/018F5AEF1B6CBBBB"
+   },
+   {
+    "table": "ui/018F885996B80E4A"
+   },
+   {
+    "table": "ui/0191FD901264FC15"
+   },
+   {
+    "table": "ui/0192B79AAABA4790",
+    "slice": [
+     0,
+     43
+    ]
+   }
+  ]
+ },
+ "u09": {
+  "wave": 1,
+  "title": "Інтэрфейс 9 (~3001 слоў)",
+  "rows": [
+   {
+    "table": "ui/0192B79AAABA4790",
+    "slice": [
+     43,
+     null
+    ]
+   },
+   {
+    "table": "ui/01943AA090EC58E6"
+   },
+   {
+    "table": "ui/0194B9910070B025"
+   },
+   {
+    "table": "ui/0196341B19836B90"
+   },
+   {
+    "table": "ui/0197058DE7FFB393"
+   },
+   {
+    "table": "ui/0197CF14AC9563C7"
+   },
+   {
+    "table": "ui/019812523CB57FCE"
+   },
+   {
+    "table": "ui/0198A36A63C5750B"
+   },
+   {
+    "table": "ui/019A4F288963F8BE"
+   },
+   {
+    "table": "ui/019ACD7BF6EEE5FD",
+    "slice": [
+     0,
+     289
+    ]
+   }
+  ]
+ },
+ "u10": {
+  "wave": 1,
+  "title": "Інтэрфейс 10 (~3006 слоў)",
+  "rows": [
+   {
+    "table": "ui/019ACD7BF6EEE5FD",
+    "slice": [
+     289,
+     null
+    ]
+   },
+   {
+    "table": "ui/019CD7E60D94FC71"
+   },
+   {
+    "table": "ui/019FE9E5D4EEA835"
+   },
+   {
+    "table": "ui/01A217082C5CF1CF"
+   },
+   {
+    "table": "ui/01A3D4BD7DF4F4FE"
+   },
+   {
+    "table": "ui/01A3D69EED4EE376"
+   },
+   {
+    "table": "ui/01A738694F424322"
+   },
+   {
+    "table": "ui/01A8FFDF926DF2A9"
+   },
+   {
+    "table": "ui/01A9FA4C69D94152"
+   },
+   {
+    "table": "ui/01AB1EEECEA509BF"
+   },
+   {
+    "table": "ui/01ADBF2A929651E3"
+   },
+   {
+    "table": "ui/01AE0A617A147A9C"
+   },
+   {
+    "table": "ui/01AE4D67D3D72FCE",
+    "slice": [
+     0,
+     178
+    ]
+   }
+  ]
+ },
+ "u11": {
+  "wave": 1,
+  "title": "Інтэрфейс 11 (~3006 слоў)",
+  "rows": [
+   {
+    "table": "ui/01AE4D67D3D72FCE",
+    "slice": [
+     178,
+     800
+    ]
+   }
+  ]
+ },
+ "u12": {
+  "wave": 1,
+  "title": "Інтэрфейс 12 (~3007 слоў)",
+  "rows": [
+   {
+    "table": "ui/01AE4D67D3D72FCE",
+    "slice": [
+     800,
+     null
+    ]
+   },
+   {
+    "table": "ui/01AEA68D4B4DFFDD"
+   },
+   {
+    "table": "ui/01AFE843D8688CA8"
+   },
+   {
+    "table": "ui/01B0ED6CF3AA349D"
+   },
+   {
+    "table": "ui/01B28A04B03D435F"
+   },
+   {
+    "table": "ui/01B39390AE998B76"
+   },
+   {
+    "table": "ui/01B4B8D71B46C3B8",
+    "slice": [
+     0,
+     241
+    ]
+   }
+  ]
+ },
+ "u13": {
+  "wave": 1,
+  "title": "Інтэрфейс 13 (~3001 слоў)",
+  "rows": [
+   {
+    "table": "ui/01B4B8D71B46C3B8",
+    "slice": [
+     241,
+     627
+    ]
+   }
+  ]
+ },
+ "u14": {
+  "wave": 1,
+  "title": "Інтэрфейс 14 (~3001 слоў)",
+  "rows": [
+   {
+    "table": "ui/01B4B8D71B46C3B8",
+    "slice": [
+     627,
+     null
+    ]
+   },
+   {
+    "table": "ui/01B83ECB108C9A33"
+   },
+   {
+    "table": "ui/01B96A5ACF09EA3F"
+   },
+   {
+    "table": "ui/01BA290E9007B2FC"
+   },
+   {
+    "table": "ui/01BA69950AAA54F0"
+   },
+   {
+    "table": "ui/01BB19B27F394BCF"
+   },
+   {
+    "table": "ui/01BBBDD12629670D"
+   },
+   {
+    "table": "ui/01BC158FA8035CAF"
+   },
+   {
+    "table": "ui/01C0C1B187439F99"
+   },
+   {
+    "table": "ui/01C238405C7C62CA"
+   },
+   {
+    "table": "ui/01C32CADD3E35BBA"
+   },
+   {
+    "table": "ui/01C5D7160A3D5566"
+   },
+   {
+    "table": "ui/01C60F7F0A636F7D"
+   },
+   {
+    "table": "ui/01C76A08493EEE11"
+   },
+   {
+    "table": "ui/01C7EEB3AAE7796D"
+   },
+   {
+    "table": "ui/01C86A4727BCAB1F",
+    "slice": [
+     0,
+     8
+    ]
+   }
+  ]
+ },
+ "u15": {
+  "wave": 1,
+  "title": "Інтэрфейс 15 (~3001 слоў)",
+  "rows": [
+   {
+    "table": "ui/01C86A4727BCAB1F",
+    "slice": [
+     8,
+     null
+    ]
+   },
+   {
+    "table": "ui/01C907E04C9A964E"
+   },
+   {
+    "table": "ui/01C952668FF59125"
+   },
+   {
+    "table": "ui/01C9885AA6CB0662"
+   },
+   {
+    "table": "ui/01C9B61D776DD434"
+   },
+   {
+    "table": "ui/01CA47006FEFC6D9"
+   },
+   {
+    "table": "ui/01CCD5397CEAFD97"
+   },
+   {
+    "table": "ui/01CF5B1F67C9AC83"
+   },
+   {
+    "table": "ui/01D288CDBFB9A8FB"
+   },
+   {
+    "table": "ui/01D2A20B7E7FD860"
+   },
+   {
+    "table": "ui/01D2FE0CBD1CB9F7",
+    "slice": [
+     0,
+     59
+    ]
+   }
+  ]
+ },
+ "u16": {
+  "wave": 1,
+  "title": "Інтэрфейс 16 (~3002 слоў)",
+  "rows": [
+   {
+    "table": "ui/01D2FE0CBD1CB9F7",
+    "slice": [
+     59,
+     null
+    ]
+   },
+   {
+    "table": "ui/01D5DCFD9502468A"
+   },
+   {
+    "table": "ui/01D6453518B7F53C"
+   },
+   {
+    "table": "ui/01D803FF5EE219B5"
+   },
+   {
+    "table": "ui/01D9E3EC689A6B6E"
+   },
+   {
+    "table": "ui/01DB01E2F253C29C"
+   },
+   {
+    "table": "ui/01DBF9AE296DD042"
+   },
+   {
+    "table": "ui/01E091296168EC02"
+   },
+   {
+    "table": "ui/01E0EF01640BC48C"
+   },
+   {
+    "table": "ui/01E2BC17EACFFF3A"
+   },
+   {
+    "table": "ui/01E396571C5A9DF8"
+   },
+   {
+    "table": "ui/01E6DF2E509E65D9"
+   },
+   {
+    "table": "ui/01E796AB9E4791E5"
+   },
+   {
+    "table": "ui/01EA4C1B4215A6E3"
+   },
+   {
+    "table": "ui/01EB121689C25467"
+   },
+   {
+    "table": "ui/01EB1A19B5DC3DDC",
+    "slice": [
+     0,
+     61
+    ]
+   }
+  ]
+ },
+ "u17": {
+  "wave": 1,
+  "title": "Інтэрфейс 17 (~3026 слоў)",
+  "rows": [
+   {
+    "table": "ui/01EB1A19B5DC3DDC",
+    "slice": [
+     61,
+     null
+    ]
+   },
+   {
+    "table": "ui/01EB8D013D7AFDC2"
+   },
+   {
+    "table": "ui/01EDA1DAE6D09BF7"
+   },
+   {
+    "table": "ui/01EF602398DD1A16"
+   },
+   {
+    "table": "ui/01EFCABE45A52809"
+   },
+   {
+    "table": "ui/01F04BA0BAEC2A8F"
+   },
+   {
+    "table": "ui/01F0F07CEB618B4D"
+   },
+   {
+    "table": "ui/01F2A4226E95C932"
+   },
+   {
+    "table": "ui/01F42963FB3A4CB7"
+   },
+   {
+    "table": "ui/01F4BF8CBAB6F264"
+   },
+   {
+    "table": "ui/01F516DD71758EC7"
+   },
+   {
+    "table": "ui/01F66B96654B7259"
+   },
+   {
+    "table": "ui/01F6FDFCC3CA799A"
+   }
+  ]
+ },
+ "u18": {
+  "wave": 1,
+  "title": "Інтэрфейс 18 (~886 слоў)",
+  "rows": [
+   {
+    "table": "ui/01F8376AE57C60C4"
+   },
+   {
+    "table": "ui/01FAB37E89190CAE"
+   },
+   {
+    "table": "ui/01FBBB76E9956CD6"
+   },
+   {
+    "table": "ui/01FC6A382545AAA2"
+   },
+   {
+    "table": "ui/01FCF539E9086143"
+   },
+   {
+    "table": "ui/01FF73FDDFA54DC7"
+   },
+   {
+    "table": "ui/01FF8FD1D37DB622"
+   },
+   {
+    "table": "ui/01FFEE5A764E6863"
+   }
+  ]
+ },
+ "m01": {
+  "wave": 2,
+  "title": "Місіі: M01_clover/00_introcinematic … M01_clover/04_centralcamp (~3004 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M01_clover/00_introcinematic"
+   },
+   {
+    "table": "dlg/M01_clover/01_theshoreline"
+   },
+   {
+    "table": "dlg/M01_clover/02_thedescent"
+   },
+   {
+    "table": "dlg/M01_clover/03_thecrashsite"
+   },
+   {
+    "table": "dlg/M01_clover/04_centralcamp",
+    "slice": [
+     0,
+     224
+    ]
+   }
+  ]
+ },
+ "m02": {
+  "wave": 2,
+  "title": "Місіі: M01_clover/04_centralcamp … M02.2_lotus_training/lotus_02_deep_end (~3008 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M01_clover/04_centralcamp",
+    "slice": [
+     224,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M01_clover/05_therun"
+   },
+   {
+    "table": "dlg/M01_clover/race_gameplay"
+   },
+   {
+    "table": "dlg/M02.1_lotus_start/starthub_01_lobby"
+   },
+   {
+    "table": "dlg/M02.1_lotus_start/starthub_02_elevator"
+   },
+   {
+    "table": "dlg/M02.1_lotus_start/starthub_17_office"
+   },
+   {
+    "table": "dlg/M02.1_lotus_start/starthub_moneypennycompanion"
+   },
+   {
+    "table": "dlg/M02.2_lotus_training/lotus_01_apartment_move_in"
+   },
+   {
+    "table": "dlg/M02.2_lotus_training/lotus_01_intro"
+   },
+   {
+    "table": "dlg/M02.2_lotus_training/lotus_02_deep_end",
+    "slice": [
+     0,
+     54
+    ]
+   }
+  ]
+ },
+ "m03": {
+  "wave": 2,
+  "title": "Місіі: M02.2_lotus_training/lotus_02_deep_end … M02.2_lotus_training/lotus_12_ctf (~3005 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M02.2_lotus_training/lotus_02_deep_end",
+    "slice": [
+     54,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M02.2_lotus_training/lotus_03_mi6_first"
+   },
+   {
+    "table": "dlg/M02.2_lotus_training/lotus_03_training_second"
+   },
+   {
+    "table": "dlg/M02.2_lotus_training/lotus_05_montage"
+   },
+   {
+    "table": "dlg/M02.2_lotus_training/lotus_06_monroe_fight"
+   },
+   {
+    "table": "dlg/M02.2_lotus_training/lotus_09_apartment_dating"
+   },
+   {
+    "table": "dlg/M02.2_lotus_training/lotus_11_mi6_third"
+   },
+   {
+    "table": "dlg/M02.2_lotus_training/lotus_12_ctf",
+    "slice": [
+     0,
+     114
+    ]
+   }
+  ]
+ },
+ "m04": {
+  "wave": 2,
+  "title": "Місіі: M02.2_lotus_training/lotus_12_ctf … M02.5_lotus_nightclub/lotusnightclub (~3001 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M02.2_lotus_training/lotus_12_ctf",
+    "slice": [
+     114,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M02.2_lotus_training/lotus_13_apartment_nightclub"
+   },
+   {
+    "table": "dlg/M02.2_lotus_training/_shared"
+   },
+   {
+    "table": "dlg/M02.3_lotus_mid/midhub_09_lab"
+   },
+   {
+    "table": "dlg/M02.3_lotus_mid/midhub_12_core"
+   },
+   {
+    "table": "dlg/M02.3_lotus_mid/midhub_17_office"
+   },
+   {
+    "table": "dlg/M02.3_lotus_mid/_shared"
+   },
+   {
+    "table": "dlg/M02.5_lotus_nightclub/lotusnightclub",
+    "slice": [
+     0,
+     20
+    ]
+   }
+  ]
+ },
+ "m05": {
+  "wave": 2,
+  "title": "Місіі: M02.5_lotus_nightclub/lotusnightclub (~3002 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M02.5_lotus_nightclub/lotusnightclub",
+    "slice": [
+     20,
+     442
+    ]
+   }
+  ]
+ },
+ "m06": {
+  "wave": 2,
+  "title": "Місіі: M02.5_lotus_nightclub/lotusnightclub … M02.6_lotus_end/endhub_09_lab (~3003 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M02.5_lotus_nightclub/lotusnightclub",
+    "slice": [
+     442,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M02.6_lotus_end/endhub_05_operationsoffice"
+   },
+   {
+    "table": "dlg/M02.6_lotus_end/endhub_07_operations"
+   },
+   {
+    "table": "dlg/M02.6_lotus_end/endhub_09_lab",
+    "slice": [
+     0,
+     113
+    ]
+   }
+  ]
+ },
+ "m07": {
+  "wave": 2,
+  "title": "Місіі: M02.6_lotus_end/endhub_09_lab … M03_rose/03_chesstournament (~3000 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M02.6_lotus_end/endhub_09_lab",
+    "slice": [
+     113,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M02.6_lotus_end/endhub_17_office"
+   },
+   {
+    "table": "dlg/M02.6_lotus_end/endhub_companions"
+   },
+   {
+    "table": "dlg/M03_rose/00_drivein"
+   },
+   {
+    "table": "dlg/M03_rose/02_staffentrance"
+   },
+   {
+    "table": "dlg/M03_rose/03_chesstournament",
+    "slice": [
+     0,
+     124
+    ]
+   }
+  ]
+ },
+ "m08": {
+  "wave": 2,
+  "title": "Місіі: M03_rose/03_chesstournament … M03_rose/06_securityandkitchen (~3005 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M03_rose/03_chesstournament",
+    "slice": [
+     124,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M03_rose/05_laundry"
+   },
+   {
+    "table": "dlg/M03_rose/06_securityandkitchen",
+    "slice": [
+     0,
+     41
+    ]
+   }
+  ]
+ },
+ "m09": {
+  "wave": 2,
+  "title": "Місіі: M03_rose/06_securityandkitchen … M03.5_daisy/09_lab (~3004 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M03_rose/06_securityandkitchen",
+    "slice": [
+     41,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M03_rose/07_throphy room"
+   },
+   {
+    "table": "dlg/M03_rose/08_postexplosion"
+   },
+   {
+    "table": "dlg/M03_rose/09_chase"
+   },
+   {
+    "table": "dlg/M03_rose/09_s3751_airfieldsplitup"
+   },
+   {
+    "table": "dlg/M03_rose/10_airstrip"
+   },
+   {
+    "table": "dlg/M03_rose/introbriefingcinematic"
+   },
+   {
+    "table": "dlg/M03_rose/spectialmoment_freefall"
+   },
+   {
+    "table": "dlg/M03_rose/spectialmoment_onthecargoplane"
+   },
+   {
+    "table": "dlg/M03_rose/spectialmoment_planetilt"
+   },
+   {
+    "table": "dlg/M03_rose/_shared"
+   },
+   {
+    "table": "dlg/M03.2_lily/funeral_01"
+   },
+   {
+    "table": "dlg/M03.5_daisy/05_operationsoffice"
+   },
+   {
+    "table": "dlg/M03.5_daisy/07_operations"
+   },
+   {
+    "table": "dlg/M03.5_daisy/09_lab",
+    "slice": [
+     0,
+     153
+    ]
+   }
+  ]
+ },
+ "m10": {
+  "wave": 2,
+  "title": "Місіі: M03.5_daisy/09_lab … M04_dahlia/bawmalogistics (~3006 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M03.5_daisy/09_lab",
+    "slice": [
+     153,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M03.5_daisy/17_office"
+   },
+   {
+    "table": "dlg/M03.5_daisy/companions"
+   },
+   {
+    "table": "dlg/M04_dahlia/009boat"
+   },
+   {
+    "table": "dlg/M04_dahlia/auction"
+   },
+   {
+    "table": "dlg/M04_dahlia/backgate"
+   },
+   {
+    "table": "dlg/M04_dahlia/bawmalogistics",
+    "slice": [
+     0,
+     92
+    ]
+   }
+  ]
+ },
+ "m11": {
+  "wave": 2,
+  "title": "Місіі: M04_dahlia/bawmalogistics … M04_dahlia/market_s4070_cine (~3012 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M04_dahlia/bawmalogistics",
+    "slice": [
+     92,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M04_dahlia/crocodilepit"
+   },
+   {
+    "table": "dlg/M04_dahlia/drivetoaleph"
+   },
+   {
+    "table": "dlg/M04_dahlia/greenwaycompanion"
+   },
+   {
+    "table": "dlg/M04_dahlia/introbriefingcinematic"
+   },
+   {
+    "table": "dlg/M04_dahlia/logoship"
+   },
+   {
+    "table": "dlg/M04_dahlia/market_s4070_cine",
+    "slice": [
+     0,
+     3
+    ]
+   }
+  ]
+ },
+ "m12": {
+  "wave": 2,
+  "title": "Місіі: M04_dahlia/market_s4070_cine … M04_dahlia/marketandvipentrance (~3004 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M04_dahlia/market_s4070_cine",
+    "slice": [
+     3,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M04_dahlia/marketandvipentrance",
+    "slice": [
+     0,
+     332
+    ]
+   }
+  ]
+ },
+ "m13": {
+  "wave": 2,
+  "title": "Місіі: M04_dahlia/marketandvipentrance (~3004 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M04_dahlia/marketandvipentrance",
+    "slice": [
+     332,
+     674
+    ]
+   }
+  ]
+ },
+ "m14": {
+  "wave": 2,
+  "title": "Місіі: M04_dahlia/marketandvipentrance … M04_dahlia/mentortunnel (~3003 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M04_dahlia/marketandvipentrance",
+    "slice": [
+     674,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M04_dahlia/mentortunnel",
+    "slice": [
+     0,
+     61
+    ]
+   }
+  ]
+ },
+ "m15": {
+  "wave": 2,
+  "title": "Місіі: M04_dahlia/mentortunnel … M04_dahlia/_shared (~3001 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M04_dahlia/mentortunnel",
+    "slice": [
+     61,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M04_dahlia/mentortunnel_b"
+   },
+   {
+    "table": "dlg/M04_dahlia/mentortunnel_c"
+   },
+   {
+    "table": "dlg/M04_dahlia/parkingentrance"
+   },
+   {
+    "table": "dlg/M04_dahlia/vehicle_drivetologoship"
+   },
+   {
+    "table": "dlg/M04_dahlia/vip_npcsbydj"
+   },
+   {
+    "table": "dlg/M04_dahlia/_shared",
+    "slice": [
+     0,
+     716
+    ]
+   }
+  ]
+ },
+ "m16": {
+  "wave": 2,
+  "title": "Місіі: M04_dahlia/_shared … M05_pepper/gala (~3005 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M04_dahlia/_shared",
+    "slice": [
+     716,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M04.5_poppy/cinematic"
+   },
+   {
+    "table": "dlg/M05_pepper/apartment"
+   },
+   {
+    "table": "dlg/M05_pepper/backlot"
+   },
+   {
+    "table": "dlg/M05_pepper/basement"
+   },
+   {
+    "table": "dlg/M05_pepper/escape"
+   },
+   {
+    "table": "dlg/M05_pepper/gala",
+    "slice": [
+     0,
+     51
+    ]
+   }
+  ]
+ },
+ "m17": {
+  "wave": 2,
+  "title": "Місіі: M05_pepper/gala (~3002 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M05_pepper/gala",
+    "slice": [
+     51,
+     453
+    ]
+   }
+  ]
+ },
+ "m18": {
+  "wave": 2,
+  "title": "Місіі: M05_pepper/gala … M06_bluebell/02_executiveoffices (~3003 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M05_pepper/gala",
+    "slice": [
+     453,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M05_pepper/loadingdock"
+   },
+   {
+    "table": "dlg/M05_pepper/museumrooftop"
+   },
+   {
+    "table": "dlg/M05_pepper/outrocine"
+   },
+   {
+    "table": "dlg/M05_pepper/redroom"
+   },
+   {
+    "table": "dlg/M05_pepper/security"
+   },
+   {
+    "table": "dlg/M05_pepper/streets"
+   },
+   {
+    "table": "dlg/M05_pepper/workshop"
+   },
+   {
+    "table": "dlg/M06_bluebell/00_lobby"
+   },
+   {
+    "table": "dlg/M06_bluebell/01_elevator"
+   },
+   {
+    "table": "dlg/M06_bluebell/02_executiveoffices",
+    "slice": [
+     0,
+     5
+    ]
+   }
+  ]
+ },
+ "m19": {
+  "wave": 2,
+  "title": "Місіі: M06_bluebell/02_executiveoffices … M06_bluebell/05_perch (~3000 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M06_bluebell/02_executiveoffices",
+    "slice": [
+     5,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M06_bluebell/03_thepenthouse"
+   },
+   {
+    "table": "dlg/M06_bluebell/04_therun"
+   },
+   {
+    "table": "dlg/M06_bluebell/05_perch",
+    "slice": [
+     0,
+     94
+    ]
+   }
+  ]
+ },
+ "m20": {
+  "wave": 2,
+  "title": "Місіі: M06_bluebell/05_perch … M07_magnolia/03_emperor_suite (~3009 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M06_bluebell/05_perch",
+    "slice": [
+     94,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M06_bluebell/06_perchescape"
+   },
+   {
+    "table": "dlg/M06_bluebell/07_flightdeck"
+   },
+   {
+    "table": "dlg/M06_bluebell/introgadgetselection"
+   },
+   {
+    "table": "dlg/M06_bluebell/_shared"
+   },
+   {
+    "table": "dlg/M06.5_lavender/02_elevator"
+   },
+   {
+    "table": "dlg/M06.5_lavender/11_valhalla"
+   },
+   {
+    "table": "dlg/M07_magnolia/00_docks"
+   },
+   {
+    "table": "dlg/M07_magnolia/03_emperor_suite",
+    "slice": [
+     0,
+     131
+    ]
+   }
+  ]
+ },
+ "m21": {
+  "wave": 2,
+  "title": "Місіі: M07_magnolia/03_emperor_suite … M07_magnolia/resort_day (~3004 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M07_magnolia/03_emperor_suite",
+    "slice": [
+     131,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M07_magnolia/05_resort_shootout"
+   },
+   {
+    "table": "dlg/M07_magnolia/06_quarry"
+   },
+   {
+    "table": "dlg/M07_magnolia/07_caves"
+   },
+   {
+    "table": "dlg/M07_magnolia/08_storage"
+   },
+   {
+    "table": "dlg/M07_magnolia/arrival"
+   },
+   {
+    "table": "dlg/M07_magnolia/cave"
+   },
+   {
+    "table": "dlg/M07_magnolia/outside"
+   },
+   {
+    "table": "dlg/M07_magnolia/resort_day",
+    "slice": [
+     0,
+     35
+    ]
+   }
+  ]
+ },
+ "m22": {
+  "wave": 2,
+  "title": "Місіі: M07_magnolia/resort_day (~3010 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M07_magnolia/resort_day",
+    "slice": [
+     35,
+     342
+    ]
+   }
+  ]
+ },
+ "m23": {
+  "wave": 2,
+  "title": "Місіі: M07_magnolia/resort_day (~3001 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M07_magnolia/resort_day",
+    "slice": [
+     342,
+     687
+    ]
+   }
+  ]
+ },
+ "m24": {
+  "wave": 2,
+  "title": "Місіі: M07_magnolia/resort_day (~3000 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M07_magnolia/resort_day",
+    "slice": [
+     687,
+     1474
+    ]
+   }
+  ]
+ },
+ "m25": {
+  "wave": 2,
+  "title": "Місіі: M07_magnolia/resort_day … M08_iris/05_office (~3007 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M07_magnolia/resort_day",
+    "slice": [
+     1474,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M07_magnolia/resort_night"
+   },
+   {
+    "table": "dlg/M07_magnolia/shed"
+   },
+   {
+    "table": "dlg/M07_magnolia/skiff_lorca_cinematic"
+   },
+   {
+    "table": "dlg/M07_magnolia/_shared"
+   },
+   {
+    "table": "dlg/M08_iris/01_lobby"
+   },
+   {
+    "table": "dlg/M08_iris/02_elevator"
+   },
+   {
+    "table": "dlg/M08_iris/05_office",
+    "slice": [
+     0,
+     6
+    ]
+   }
+  ]
+ },
+ "m26": {
+  "wave": 2,
+  "title": "Місіі: M08_iris/05_office … M09_orchid/02_webbplex (~3002 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M08_iris/05_office",
+    "slice": [
+     6,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M08_iris/07_operations"
+   },
+   {
+    "table": "dlg/M08_iris/09_lab"
+   },
+   {
+    "table": "dlg/M08_iris/12_core"
+   },
+   {
+    "table": "dlg/M08.5_buttercup/yacht_01"
+   },
+   {
+    "table": "dlg/M09_orchid/00_infiltration"
+   },
+   {
+    "table": "dlg/M09_orchid/02_webbplex",
+    "slice": [
+     0,
+     60
+    ]
+   }
+  ]
+ },
+ "m27": {
+  "wave": 2,
+  "title": "Місіі: M09_orchid/02_webbplex … M09_orchid/04_operations (~3003 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M09_orchid/02_webbplex",
+    "slice": [
+     60,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M09_orchid/03_cablecarstation"
+   },
+   {
+    "table": "dlg/M09_orchid/04_operations",
+    "slice": [
+     0,
+     212
+    ]
+   }
+  ]
+ },
+ "m28": {
+  "wave": 2,
+  "title": "Місіі: M09_orchid/04_operations … M10_ivy/03_security (~3007 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M09_orchid/04_operations",
+    "slice": [
+     212,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M09_orchid/04b_rndrobotics"
+   },
+   {
+    "table": "dlg/M09_orchid/05_rdupper"
+   },
+   {
+    "table": "dlg/M09_orchid/08_hyperionsilo"
+   },
+   {
+    "table": "dlg/M09_orchid/11_hyperion"
+   },
+   {
+    "table": "dlg/M09_orchid/13_crevasse"
+   },
+   {
+    "table": "dlg/M09_orchid/14_docks"
+   },
+   {
+    "table": "dlg/M09_orchid/15_boatchase"
+   },
+   {
+    "table": "dlg/M09_orchid/16_icesheet"
+   },
+   {
+    "table": "dlg/M09_orchid/_shared"
+   },
+   {
+    "table": "dlg/M10_ivy/02_elevator"
+   },
+   {
+    "table": "dlg/M10_ivy/03_security",
+    "slice": [
+     0,
+     57
+    ]
+   }
+  ]
+ },
+ "m29": {
+  "wave": 2,
+  "title": "Місіі: M10_ivy/03_security … MI6_ruby/09_lab_tacsim (~3002 слоў)",
+  "rows": [
+   {
+    "table": "dlg/M10_ivy/03_security",
+    "slice": [
+     57,
+     null
+    ]
+   },
+   {
+    "table": "dlg/M10_ivy/04_securitytooffice"
+   },
+   {
+    "table": "dlg/M10_ivy/05_office"
+   },
+   {
+    "table": "dlg/M10_ivy/07_operations"
+   },
+   {
+    "table": "dlg/M10_ivy/08_operationstolab"
+   },
+   {
+    "table": "dlg/M10_ivy/09_lab"
+   },
+   {
+    "table": "dlg/M10_ivy/11_valhalla"
+   },
+   {
+    "table": "dlg/M10_ivy/12_core"
+   },
+   {
+    "table": "dlg/M10_ivy/13_coretolab"
+   },
+   {
+    "table": "dlg/M10_ivy/15_tunnels"
+   },
+   {
+    "table": "dlg/M10_ivy/16_silo"
+   },
+   {
+    "table": "dlg/M10.5_sunflower/cinematic"
+   },
+   {
+    "table": "dlg/MI6_ruby/09_lab"
+   },
+   {
+    "table": "dlg/MI6_ruby/09_lab_tacsim",
+    "slice": [
+     0,
+     109
+    ]
+   }
+  ]
+ },
+ "m30": {
+  "wave": 2,
+  "title": "Місіі: MI6_ruby/09_lab_tacsim … TacSim/rose_tigerbeetle (~1481 слоў)",
+  "rows": [
+   {
+    "table": "dlg/MI6_ruby/09_lab_tacsim",
+    "slice": [
+     109,
+     null
+    ]
+   },
+   {
+    "table": "dlg/TacSim/rose_tigerbeetle"
+   }
+  ]
+ },
+ "c01": {
+  "wave": 3,
+  "title": "Агульныя: Cinematic_Main/VALHALLA … Bond/BOND (~3006 слоў)",
+  "rows": [
+   {
+    "table": "dlg/_common/Cinematic_Main/VALHALLA"
+   },
+   {
+    "table": "dlg/_common/Comms_Extras/GREENWAY"
+   },
+   {
+    "table": "dlg/_common/Bond/BOND",
+    "slice": [
+     0,
+     490
+    ]
+   }
+  ]
+ },
+ "c02": {
+  "wave": 3,
+  "title": "Агульныя: Bond/BOND (~3002 слоў)",
+  "rows": [
+   {
+    "table": "dlg/_common/Bond/BOND",
+    "slice": [
+     490,
+     938
+    ]
+   }
+  ]
+ },
+ "c03": {
+  "wave": 3,
+  "title": "Агульныя: Bond/BOND … Buddy/MONEYPENNY (~3004 слоў)",
+  "rows": [
+   {
+    "table": "dlg/_common/Bond/BOND",
+    "slice": [
+     938,
+     null
+    ]
+   },
+   {
+    "table": "dlg/_common/Buddy/BOND"
+   },
+   {
+    "table": "dlg/_common/Buddy/CIVZAM"
+   },
+   {
+    "table": "dlg/_common/Buddy/GREENWAY"
+   },
+   {
+    "table": "dlg/_common/Buddy/ISOLA"
+   },
+   {
+    "table": "dlg/_common/Buddy/KINGSLEY"
+   },
+   {
+    "table": "dlg/_common/Buddy/M"
+   },
+   {
+    "table": "dlg/_common/Buddy/MONEYPENNY",
+    "slice": [
+     0,
+     42
+    ]
+   }
+  ]
+ },
+ "c04": {
+  "wave": 3,
+  "title": "Агульныя: Buddy/MONEYPENNY … NPC_Story/CIVEEM (~3004 слоў)",
+  "rows": [
+   {
+    "table": "dlg/_common/Buddy/MONEYPENNY",
+    "slice": [
+     42,
+     null
+    ]
+   },
+   {
+    "table": "dlg/_common/Buddy/MONROE"
+   },
+   {
+    "table": "dlg/_common/Buddy/NASH"
+   },
+   {
+    "table": "dlg/_common/Buddy/Q"
+   },
+   {
+    "table": "dlg/_common/Buddy/RONSON"
+   },
+   {
+    "table": "dlg/_common/Buddy/SELINA"
+   },
+   {
+    "table": "dlg/_common/Special_InCar/BOND"
+   },
+   {
+    "table": "dlg/_common/Special_Tannoy/QVPA"
+   },
+   {
+    "table": "dlg/_common/NPC_Story/BOND"
+   },
+   {
+    "table": "dlg/_common/NPC_Story/CIVEEF"
+   },
+   {
+    "table": "dlg/_common/NPC_Story/CIVEEM",
+    "slice": [
+     0,
+     391
+    ]
+   }
+  ]
+ },
+ "c05": {
+  "wave": 3,
+  "title": "Агульныя: NPC_Story/CIVEEM … NPC_Story/CIVUKM (~3004 слоў)",
+  "rows": [
+   {
+    "table": "dlg/_common/NPC_Story/CIVEEM",
+    "slice": [
+     391,
+     null
+    ]
+   },
+   {
+    "table": "dlg/_common/NPC_Story/CIVESF"
+   },
+   {
+    "table": "dlg/_common/NPC_Story/CIVESM"
+   },
+   {
+    "table": "dlg/_common/NPC_Story/CIVINF"
+   },
+   {
+    "table": "dlg/_common/NPC_Story/CIVINM"
+   },
+   {
+    "table": "dlg/_common/NPC_Story/CIVUKF"
+   },
+   {
+    "table": "dlg/_common/NPC_Story/CIVUKM",
+    "slice": [
+     0,
+     33
+    ]
+   }
+  ]
+ },
+ "c06": {
+  "wave": 3,
+  "title": "Агульныя: NPC_Story/CIVUKM … NPC_Story/MERCMRM (~3001 слоў)",
+  "rows": [
+   {
+    "table": "dlg/_common/NPC_Story/CIVUKM",
+    "slice": [
+     33,
+     null
+    ]
+   },
+   {
+    "table": "dlg/_common/NPC_Story/CIVZAM"
+   },
+   {
+    "table": "dlg/_common/NPC_Story/MERCMRM",
+    "slice": [
+     0,
+     199
+    ]
+   }
+  ]
+ },
+ "c07": {
+  "wave": 3,
+  "title": "Агульныя: NPC_Story/MERCMRM (~3000 слоў)",
+  "rows": [
+   {
+    "table": "dlg/_common/NPC_Story/MERCMRM",
+    "slice": [
+     199,
+     1004
+    ]
+   }
+  ]
+ },
+ "c08": {
+  "wave": 3,
+  "title": "Агульныя: NPC_Story/MERCMRM … NPC_Story/MERCUKM (~3002 слоў)",
+  "rows": [
+   {
+    "table": "dlg/_common/NPC_Story/MERCMRM",
+    "slice": [
+     1004,
+     null
+    ]
+   },
+   {
+    "table": "dlg/_common/NPC_Story/MERCUKM",
+    "slice": [
+     0,
+     1177
+    ]
+   }
+  ]
+ },
+ "c09": {
+  "wave": 3,
+  "title": "Агульныя: NPC_Story/MERCUKM … NPC_Story/SECEEM (~3003 слоў)",
+  "rows": [
+   {
+    "table": "dlg/_common/NPC_Story/MERCUKM",
+    "slice": [
+     1177,
+     null
+    ]
+   },
+   {
+    "table": "dlg/_common/NPC_Story/MONEYPENNY"
+   },
+   {
+    "table": "dlg/_common/NPC_Story/MONROE"
+   },
+   {
+    "table": "dlg/_common/NPC_Story/SECEEM",
+    "slice": [
+     0,
+     378
+    ]
+   }
+  ]
+ },
+ "c10": {
+  "wave": 3,
+  "title": "Агульныя: NPC_Story/SECEEM … NPC_Story/SECUKM (~3002 слоў)",
+  "rows": [
+   {
+    "table": "dlg/_common/NPC_Story/SECEEM",
+    "slice": [
+     378,
+     null
+    ]
+   },
+   {
+    "table": "dlg/_common/NPC_Story/SECUKM",
+    "slice": [
+     0,
+     619
+    ]
+   }
+  ]
+ },
+ "c11": {
+  "wave": 3,
+  "title": "Агульныя: NPC_Story/SECUKM … NPC_Ambience/CIVEEF (~3000 слоў)",
+  "rows": [
+   {
+    "table": "dlg/_common/NPC_Story/SECUKM",
+    "slice": [
+     619,
+     null
+    ]
+   },
+   {
+    "table": "dlg/_common/NPC_Story/SELINA"
+   },
+   {
+    "table": "dlg/_common/NPC_Story/SILENT"
+   },
+   {
+    "table": "dlg/_common/NPC_StoryAmb/CIVUKF"
+   },
+   {
+    "table": "dlg/_common/NPC_Ambience/CIVCNM"
+   },
+   {
+    "table": "dlg/_common/NPC_Ambience/CIVEEF"
+   }
+  ]
+ },
+ "c12": {
+  "wave": 3,
+  "title": "Агульныя: NPC_Ambience/CIVEEM … AI_Whispered/SELINA (~2655 слоў)",
+  "rows": [
+   {
+    "table": "dlg/_common/NPC_Ambience/CIVEEM"
+   },
+   {
+    "table": "dlg/_common/NPC_Ambience/CIVESF"
+   },
+   {
+    "table": "dlg/_common/NPC_Ambience/CIVESM"
+   },
+   {
+    "table": "dlg/_common/NPC_Ambience/CIVINF"
+   },
+   {
+    "table": "dlg/_common/NPC_Ambience/CIVINM"
+   },
+   {
+    "table": "dlg/_common/NPC_Ambience/CIVUKF"
+   },
+   {
+    "table": "dlg/_common/NPC_Ambience/CIVUKM"
+   },
+   {
+    "table": "dlg/_common/NPC_Ambience/CIVZAM"
+   },
+   {
+    "table": "dlg/_common/NPC_Ambience/FEMALEBRIEF"
+   },
+   {
+    "table": "dlg/_common/NPC_Ambience/MALEBRIEF"
+   },
+   {
+    "table": "dlg/_common/NPC_Ambience/MERCMRM"
+   },
+   {
+    "table": "dlg/_common/NPC_Ambience/MERCUKM"
+   },
+   {
+    "table": "dlg/_common/NPC_Ambience/PIRATE"
+   },
+   {
+    "table": "dlg/_common/NPC_Ambience/SECEEM"
+   },
+   {
+    "table": "dlg/_common/NPC_Ambience/SECUKM"
+   },
+   {
+    "table": "dlg/_common/NPC_Ambience/SELINA"
+   },
+   {
+    "table": "dlg/_common/AI_Boss/WEBBMERC"
+   },
+   {
+    "table": "dlg/_common/AI_Cmbt_Projected/BOND"
+   },
+   {
+    "table": "dlg/_common/AI_Cmbt_Projected/CIVUKF"
+   },
+   {
+    "table": "dlg/_common/AI_Cmbt_Projected/CIVZAM"
+   },
+   {
+    "table": "dlg/_common/AI_Cmbt_Projected/M"
+   },
+   {
+    "table": "dlg/_common/AI_Cmbt_Projected/SILENT"
+   },
+   {
+    "table": "dlg/_common/AI_LongRange/WEBBMERC"
+   },
+   {
+    "table": "dlg/_common/AI_Projected/MERCUKM"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/CIVCNM"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/CIVEEF"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/CIVEEM"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/CIVESF"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/CIVESM"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/CIVINF"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/CIVINM"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/CIVUKF"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/CIVUKM"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/CIVZAM"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/CRESSIDA"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/GREENWAY"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/ISOLA"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/M"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/MERCMRM"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/MERCUKM"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/MISS"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/MONEYPENNY"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/MONROE"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/NASH"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/Q"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/SECEEM"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/SECUKM"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/SELINA"
+   },
+   {
+    "table": "dlg/_common/AI_Regular/SINGH"
+   },
+   {
+    "table": "dlg/_common/AI_RngdCombat/BOND"
+   },
+   {
+    "table": "dlg/_common/AI_Whispered/MERCUKM"
+   },
+   {
+    "table": "dlg/_common/AI_Whispered/SELINA"
+   }
+  ]
+ }
+}
