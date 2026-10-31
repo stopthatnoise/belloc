@@ -220,6 +220,27 @@ def build_files(loc: Loc, engine, p: dict, name: str, out_dir: str) -> str | Non
     return zpath
 
 
+def engine_modules(engine) -> list[str]:
+    """Пакет рухавіка і ўсе яго модулі — для --hidden-import."""
+    import pkgutil
+    return [engine.__name__] + [m.name for m in pkgutil.walk_packages(engine.__path__, engine.__name__ + ".")]
+
+
+def check_exe(exe: str, modules: list[str]):
+    """Усе модулі рухавіка — у PYZ exe: без іх усталёўшчык падае на першым кроку."""
+    from PyInstaller.archive.readers import CArchiveReader, ZlibArchiveReader
+    pyz = os.path.join(os.path.dirname(exe), "PYZ-check.pyz")
+    with open(pyz, "wb") as f:
+        f.write(CArchiveReader(exe).extract("PYZ.pyz"))
+    try:
+        have = set(ZlibArchiveReader(pyz).toc)
+    finally:
+        os.remove(pyz)
+    missing = [m for m in modules if m not in have]
+    if missing:
+        raise SystemExit(f"у exe няма модуляў рухавіка: {', '.join(missing)}")
+
+
 def build(loc: Loc) -> str:
     rel = loc.section("release")
     engine = engines.get(loc.engine)
@@ -242,17 +263,18 @@ def build(loc: Loc) -> str:
     print(f"payload: {n} радкоў, {len(p['strings'])} табліц, assets: {len(p.get('assets', []))}")
 
     name = f"{rel['file']}_{rel['version']}"
-    pkg = engines.ENGINES[loc.engine]
     cmd = [sys.executable, "-m", "PyInstaller", "--noconfirm", "--onefile", "--console",
            "--name", name, "--distpath", os.path.join(work, "dist"),
            "--workpath", os.path.join(work, "pyi"), "--specpath", work, "--paths", CORE,
-           # рухавік грузіцца па імені з payload (importlib) — PyInstaller яго сам не бачыць
-           "--collect-submodules", f"belloc.engines.{pkg}",
+           # рухавік грузіцца па імені з payload (importlib) — PyInstaller яго сам не бачыць;
+           # --collect-submodules з --paths модулі не знаходзіць (exe быў без рухавіка), таму яўна
+           *[x for m in engine_modules(engine) for x in ("--hidden-import", m)],
            *[x for d in data for x in ("--add-data", d)],
            *getattr(engine, "PYINSTALLER", []), INSTALLER]
     print("PyInstaller…")
     subprocess.run(cmd, check=True, cwd=work, stdout=subprocess.DEVNULL)
     exe = os.path.join(work, "dist", name + ".exe")
+    check_exe(exe, engine_modules(engine))
 
     out_dir = os.path.join(loc.build, "release")
     os.makedirs(out_dir, exist_ok=True)
