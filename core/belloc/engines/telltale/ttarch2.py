@@ -107,6 +107,8 @@ class TTArch2:
         while size > 0:
             b, o = divmod(pos, self.bsize)
             chunk = self._block(b)[o:o + size]
+            if not chunk:                       # бітая табліца блокаў — інакш цыкл без канца
+                raise ValueError(f"ttarch2: няма даных @{pos:#x}")
             out += chunk
             pos += len(chunk)
             size -= len(chunk)

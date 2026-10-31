@@ -355,7 +355,7 @@ def add_glyphs(font: Font, ttf: str, chars: str, ref="H"):
         x += w + 2
         row = max(row, h)
     need = y + row + 2 + down
-    newH = H
+    newH = max(H, 1)
     while need > newH:
         newH *= 2
     img = Image.new("L", (W, newH - y0), 0)
