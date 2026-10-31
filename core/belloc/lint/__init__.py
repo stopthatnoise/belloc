@@ -652,7 +652,8 @@ def main():
     ap.add_argument("--wordlist", metavar="FILE",
                     help="дадатковы спіс вядомых беларускіх формаў "
                          "(адна на радок, можна .gz) — да hunspell-слоўніка")
-    ap.add_argument("--glossary", metavar="FILE", help="гласарый JSON")
+    ap.add_argument("--glossary", action="append", default=[], metavar="FILE",
+                    help="гласарый JSON (можна некалькі: публічны і лакальны слой)")
     ap.add_argument("--allow", nargs="*", default=[], metavar="FILE",
                     help="белы спіс словаў (адзін на радок, * у канцы = прэфікс)")
     ap.add_argument("--ink-prefix", action="store_true",
@@ -726,8 +727,12 @@ def main():
         allow.load_file(path)
     glossary = []
     if args.glossary:
-        terms, all_bel = load_glossary(args.glossary)
-        glossary = compile_glossary(terms)
+        by_en, all_bel = {}, []
+        for path in args.glossary:          # аднолькавы тэрмін у наступным слоі перамагае
+            t, b = load_glossary(path)
+            by_en.update((term[0], term) for term in t)
+            all_bel += b
+        glossary = compile_glossary(list(by_en.values()))
         for bel in all_bel:
             # націск разрэзаў бы слова напалам, таму спачатку strip_stress
             for w in CYR_WORD_RE.findall(strip_stress(bel)):

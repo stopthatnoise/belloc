@@ -194,8 +194,8 @@ def report(loc, out_md: str, examples: int = 5) -> int:
         terms.append((e, vs, rx, qs))
 
     gloss = {}
-    if os.path.exists(loc.glossary):
-        for _, entries in glossary.sections(glossary.load(loc.glossary)):
+    if loc.glossaries:
+        for _, entries in glossary.sections(glossary.load_layers(loc.glossaries)):
             for en, info in entries.items():
                 if isinstance(info, dict) and info.get("bel"):
                     for f in en_forms(en) + [en]:

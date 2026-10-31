@@ -12,6 +12,7 @@
     local.json       налады гэтай машыны: {"game_dir": "…"} і перавызначэнні
                      секцый game.json (напр. ключы рухавіка: {"unreal": {"aes_key": …}})
     source/          выцягнутае з гульні: <мова>.json, context.json, meta.json
+    glossary.local.json  лакальны слой гласарыя — запісы з цытатамі тэксту гульні (glossary.py)
     build/           прамежкавыя вынікі
     work/            файлы пачак для агентаў
 
@@ -64,6 +65,12 @@ class Loc:
     @property
     def glossary(self) -> str:
         return self.path(self.raw.get("glossary", "glossary.json"))
+
+    @property
+    def glossaries(self) -> list[str]:
+        """Слаі гласарыя, што ёсць: публічны і лакальны (glossary.py)."""
+        files = [self.glossary, self.local_path("glossary.local.json")]
+        return [f for f in files if os.path.exists(f)]
 
     @property
     def lint_allow(self) -> list[str]:

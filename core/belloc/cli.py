@@ -45,8 +45,8 @@ def run_lint(loc, pairs, report, extra):
     """Лінтэр з гласарыем, белымі спісамі і слоўнікамі гэтай гульні."""
     from . import lint
     argv = ["belloc.lint", "--pairs", pairs, "--report", report, *dicts.lint_args()]
-    if os.path.exists(loc.glossary):
-        argv += ["--glossary", loc.glossary]
+    for path in loc.glossaries:
+        argv += ["--glossary", path]
     if loc.lint_allow:
         argv += ["--allow", *loc.lint_allow]
     argv += loc.raw.get("lint_args", []) + extra
@@ -188,7 +188,7 @@ def main(argv=None):
                                  os.path.join(loc.build, f"lint-{n}.md"), extra) or 0
             return code
     elif args.cmd == "glossary":
-        return glossary.run(loc.glossary, os.path.join(loc.build, "glossary.md"),
+        return glossary.run(loc.glossaries, os.path.join(loc.build, "glossary.md"),
                             loc.name, args.check)
     elif args.cmd == "catalog":
         from . import catalog
