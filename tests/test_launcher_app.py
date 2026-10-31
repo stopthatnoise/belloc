@@ -107,6 +107,22 @@ class AppTest(Fixture):
         w.close()
         w2.close()
 
+    def test_empty_catalog(self):
+        import app
+        self.write_catalog_raw({"schema": 1, "games": {}})
+        w = app.Window(self.cat, {})
+        w.load()
+        self.assertTrue(wait(lambda: w.refresh_btn.isEnabled() and hasattr(w, "cat")))
+        texts = [lb.text() for lb in w.list.findChildren(app.QLabel)]
+        self.assertIn("Каталог перакладаў пакуль пусты", texts)
+        self.assertEqual(w.sub.text(), "У каталогу яшчэ няма перакладаў")
+        w.close()
+
+    def write_catalog_raw(self, cat):
+        import json
+        with open(self.cat, "w", encoding="utf-8") as f:
+            json.dump(cat, f)
+
 
 if __name__ == "__main__":
     unittest.main()

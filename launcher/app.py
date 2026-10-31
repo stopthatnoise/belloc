@@ -303,6 +303,13 @@ class Window(QMainWindow):
         rest = games.others(cat, rows)
         self.cards = [Card(r, self) for r in rows]
 
+        if not cat.get("games"):
+            self.add(self.label("Каталог перакладаў пакуль пусты", "empty", True))
+            self.add(self.label("Пераклады з'явяцца тут, як толькі выйдуць. Каб праверыць зноў — "
+                                "«Абнавіць спіс».", "sub", True))
+            self.list_lay.addStretch()
+            self.sub.setText("У каталогу яшчэ няма перакладаў")
+            return
         if not steam_ok and not rows:
             self.add(self.label("Steam не знойдзены", "empty", True))
             self.add(self.label("Лаўнчар шукае гульні ў бібліятэках Steam. Калі гульня ўсталявана "
