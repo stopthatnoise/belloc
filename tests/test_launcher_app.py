@@ -20,7 +20,7 @@ except ImportError:                      # PySide6 — толькі для ла�
 
 from belloc.install import state  # noqa: E402
 from belloc import steam  # noqa: E402
-from test_launcher import Fixture  # noqa: E402
+from test_launcher import Fixture, write_catalog_file  # noqa: E402
 
 
 def wait(cond, timeout=30):
@@ -136,9 +136,7 @@ class AppTest(Fixture):
         w.close()
 
     def write_catalog_raw(self, cat):
-        import json
-        with open(self.cat, "w", encoding="utf-8") as f:
-            json.dump(cat, f)
+        write_catalog_file(self.cat, cat)
 
 
 if __name__ == "__main__":

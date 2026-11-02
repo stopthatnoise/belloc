@@ -20,7 +20,7 @@ from belloc import catalog, cli, config, payload, tables  # noqa: E402
 from belloc.engines import csv_folder, paradox, unreal_locres  # noqa: E402
 from belloc.install import paths  # noqa: E402
 from belloc.install.process import tasklist  # noqa: E402
-from test_launcher import Fixture  # noqa: E402
+from test_launcher import PUB, Fixture, write_catalog_file  # noqa: E402
 
 BAD = ["../x", "a/../../x", "/x", "\\x", "C:/x", "C:x", "\\\\srv\\share\\x", "a:b"]
 
@@ -176,15 +176,45 @@ class PackageTest(unittest.TestCase):
                 catalog.download({"package": {"url": url, "sha256": s}}, self.tmp)
 
     def test_get_https_only(self):
-        for url in ("http://example.com/c.json", "ftp://example.com/c.json", "file:///etc/passwd"):
+        for url in ("http://example.com/c.json", "ftp://example.com/c.json", "file:///etc/passwd",
+                    "https://example.com/c.json"):
             with self.subTest(url), self.assertRaises(ValueError):
                 catalog._get(url, 1, 100)
 
-    def test_fetch_drops_bad_ids(self):
-        path = os.path.join(self.tmp, "catalog.json")
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump({"games": {"ok-game": {"name": "A"}, "../..": {"name": "B"}, "x": "не слоўнік"}}, f)
-        self.assertEqual(list(catalog.fetch(path)["games"]), ["ok-game"])
+    def test_safe_url(self):
+        for url in ("https://github.com/stopthatnoise/belloc/releases/tag/x-v1.0",
+                    "https://store.steampowered.com/app/7/",
+                    "https://release-assets.githubusercontent.com/a/b.zip?x=1"):
+            self.assertEqual(catalog.safe_url(url), url)
+        for url in ("http://github.com/x", "file:///C:/Windows/notepad.exe", "\\\\srv\\share\\x.exe",
+                    "ms-settings:privacy", "https://evil.example/x", "https://github.com.evil.example/x",
+                    "https://user@github.com/x", "https://github.com:8443/x", "https://github.com/a b",
+                    "https://github.com/x\n", "https://github.com\\x", None, 7, ["https://github.com/"]):
+            with self.subTest(url):
+                self.assertIsNone(catalog.safe_url(url))
+
+    def test_fetch_drops_bad_entries(self):
+        old, catalog.PUBLIC_KEY = catalog.PUBLIC_KEY, PUB
+        try:
+            path = os.path.join(self.tmp, "catalog.json")
+            ok = {"name": "A", "stores": {"steam": 7}, "page": "https://github.com/x",
+                  "package": {"url": "https://github.com/x/a.zip"}}
+            games = {"ok-game": ok, "../..": ok, "x": "не слоўнік",
+                     "str-steam": {**ok, "stores": {"steam": "7"}},
+                     "bool-steam": {**ok, "stores": {"steam": True}},
+                     "evil-pkg": {**ok, "package": {"url": "https://evil.example/a.zip"}},
+                     "local-pkg": {**ok, "package": {"url": "C:/pkg.zip"}},
+                     "no-pkg": {"name": "B"},
+                     "evil-page": {**ok, "page": "file:///C:/Windows/notepad.exe"}}
+            write_catalog_file(path, {"games": games})
+            got = catalog.fetch(path)["games"]
+            # лакальны каталог можа паказваць на лакальны пакет; па сетцы — не (safe_url)
+            self.assertEqual(sorted(got), ["evil-page", "local-pkg", "ok-game"])
+            self.assertIsNone(got["evil-page"]["page"])
+            self.assertEqual(got["ok-game"]["page"], "https://github.com/x")
+            self.assertFalse(catalog._entry_ok({**ok, "package": {"url": "C:/pkg.zip"}}, local=False))
+        finally:
+            catalog.PUBLIC_KEY = old
 
     def test_payload_asset(self):
         p = {"assets_root": os.path.join(self.tmp, "assets"), "from_package": True}

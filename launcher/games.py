@@ -109,7 +109,8 @@ def others(cat: dict, rows: list[dict]) -> list[dict]:
 
 
 def store_url(appid) -> str | None:
-    return f"https://store.steampowered.com/app/{appid}/" if appid else None
+    """Старонка гульні ў Steam; appid — толькі лік (каталог правярае тое ж)."""
+    return f"https://store.steampowered.com/app/{appid}/" if type(appid) is int and appid > 0 else None
 
 
 def refresh(row: dict) -> dict:

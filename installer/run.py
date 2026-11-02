@@ -56,7 +56,7 @@ def remind(payload: dict, src: str = catalog.CATALOG_URL):
         print(f"Ёсць новая версія перакладу: {e['version']} (ад {catalog.show_date(e.get('date'))}).")
         if e.get("changes"):
             print(f"  {e['changes']}")
-        print(f"  Спампаваць: {e.get('page')}\n")
+        print(f"  Спампаваць: {e.get('page') or catalog.RELEASES}\n")
 
 
 def main(argv=None, payload_path: str | None = None, catalog_src: str = catalog.CATALOG_URL) -> int:

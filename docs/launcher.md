@@ -16,7 +16,7 @@ python launcher/main.py list                      # кансоль
 Пакуль толькі Steam; іншыя крамы (GOG, Epic) — праз поле `stores`.
 
 ```
-catalog.json (публічна) ──► лаўнчар / exe: ці ёсць пераклад і якая версія навейшая
+catalog.json + .sig (публічна) ──► лаўнчар / exe: ці ёсць пераклад і якая версія навейшая
 пакет <гульня>-<версія>.zip ──► лаўнчар: payload.json + assets/ → engine.apply
 <каталог гульні>/belloc.json ◄── хто паставіў, якую версію, пад які buildid
 ```
@@ -29,12 +29,21 @@ catalog.json (публічна) ──► лаўнчар / exe: ці ёсць п
 `sha256`, `size`) і `probe` — payload без тэксту, каб спытаць `engine.installed()`
 да спампоўкі. Поўны прыклад — у docstring `catalog.py`.
 
-**Дзе ляжыць.** Пакуль belloc закрыты, лаўнчар тэстуецца на часовым публічным
-рэпазіторыі [stopthatnoise/belloc-catalog](https://github.com/stopthatnoise/belloc-catalog):
-`catalog.json` у `main`, пакеты — у Releases (тэг `<гульня>-v<версія>`). Калі belloc
-адкрыецца, `CATALOG_URL` і `RELEASES` у `catalog.py` пераключаюцца на яго, а
-belloc-catalog выдаляецца. exe, сабраныя да гэтага, проста перастануць нагадваць пра
-новыя версіі (без сеткі і без каталога ўсталёўшчык працуе як звычайна).
+**Дзе ляжыць.** `catalog/catalog.json` у `main` гэтага рэпазіторыя (`CATALOG_URL` — праз
+raw.githubusercontent.com), пакеты і exe — у Releases (тэг `<гульня>-v<версія>`).
+
+**Подпіс.** Побач — `catalog/catalog.json.sig`: подпіс Ed25519 байтаў каталога (base64).
+Лаўнчар і exe спампоўваюць абодва файлы і без сапраўднага подпісу ключом `PUBLIC_KEY`
+(`catalog.py`) лічаць, што каталога няма, — таму падмена файла на GitHub, у PR ці ў
+дарозе гульцу нічога не дае. Сакрэтны ключ — толькі ў мейнтейнера:
+`local/keys/catalog-ed25519.pem` (або `BELLOC_CATALOG_KEY`), па-за git; копія — у
+надзейным месцы па-за гэтым камп'ютарам. Без яго новую версію не выпусціць: страціўшы
+ключ, давядзецца выпускаць новы лаўнчар з новым `PUBLIC_KEY`.
+
+**Што з каталога не прымаецца.** Запіс адкідаецца, калі id гульні дзіўны, `stores.steam`
+— не лік або пакет не па `https` на хасты з `HOSTS` (GitHub і яго CDN); `page`, якая не
+праходзіць `safe_url`, становіцца `null` — сістэма адкрывае толькі такія спасылкі
+(ніякіх `file://`, `\\server\…`, `ms-…:`).
 
 **Сумяшчальнасць.** `payload_schema` большы, чым `payload.SCHEMA` у лаўнчары, або
 невядомы рухавік → «патрэбна новая версія лаўнчара»: стары код не ламае гульню
@@ -93,14 +102,24 @@ belloc-catalog выдаляецца. exe, сабраныя да гэтага, п
 
 ```bash
 python -X utf8 -m belloc package <гульня>      # exe + ЧЫТАЙ.txt
-python -X utf8 -m belloc catalog <гульня>      # пакет + запіс у local/catalog/catalog.json
+python -X utf8 -m belloc catalog <гульня>      # пакет + запіс у catalog/catalog.json + подпіс
 ```
 
-`local/catalog/` — лакальная копія belloc-catalog (`git clone`). Далей:
-`gh release create <гульня>-v<версія> <пакет> <exe-zip> --repo stopthatnoise/belloc-catalog`,
-закамітаць і запушыць `catalog.json`. Версія — `release.version` у game.json,
-што змянілася — `release.changes` (кароткі радок) і `CHANGELOG.md` гульні.
-Пазней гэта зробіць CI па тэгу.
+Далей: `gh release create <гульня>-v<версія> <пакет> <exe-zip> --repo stopthatnoise/belloc`,
+закамітаць і запушыць `catalog/catalog.json` разам з `.sig`. Каталог правілі рукамі —
+`belloc catalog-sign`. Версія — `release.version` у game.json, што змянілася —
+`release.changes` (кароткі радок) і `CHANGELOG.md` гульні.
+
+**Залежнасці зборкі — толькі з `requirements-release.txt`** (версіі і sha256 усіх файлаў,
+`installer/lock.py` збірае яго з праверанага venv). `package` і `launcher/build.py`
+спыняюцца, калі ўсталяванае не супадае (`BELLOC_ALLOW_UNLOCKED=1` — проба, не для
+выкладкі). Чысты venv для рэліза:
+
+```bash
+python -m venv local/venv-release
+local/venv-release/Scripts/python -m pip install --require-hashes -r requirements-release.txt
+local/venv-release/Scripts/python -m pip install --no-deps <наша кола pyooz>   # core/belloc/oodle.py
+```
 
 ## Зборка лаўнчара
 
@@ -124,6 +143,6 @@ python launcher/build.py      # → local/launcher/belloc-launcher_<версія
 
 ## Далей
 
-- самаабнаўленне лаўнчара праз `launcher` у каталогу; подпіс exe (SmartScreen);
-- GOG і Epic: пошук гульняў (рэестр GOG, маніфесты Epic) і ключы ў `stores`;
-- подпіс каталога (ed25519), каб падмена файла на серверы нічога не давала.
+- самаабнаўленне лаўнчара праз `launcher` у каталогу; подпіс exe (SmartScreen) — пакуль
+  не робім;
+- GOG і Epic: пошук гульняў (рэестр GOG, маніфесты Epic) і ключы ў `stores`.

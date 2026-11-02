@@ -20,6 +20,10 @@
 /launcher/                      @stopthatnoise
 /tests/                         @stopthatnoise
 /pyproject.toml                 @stopthatnoise
+/requirements-release.txt       @stopthatnoise
+
+# каталог перакладаў: што лаўнчар ставіць гульцам (падпісаны ключом уладальніка)
+/catalog/                       @stopthatnoise
 
 # канфігі гульняў: шляхі, рэгуляркі, assets — трапляюць у payload і ў гульню гульца
 /games/*/game.json              @stopthatnoise

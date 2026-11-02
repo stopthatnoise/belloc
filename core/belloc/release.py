@@ -35,6 +35,7 @@ from __future__ import annotations
 import datetime
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -241,9 +242,32 @@ def check_exe(exe: str, modules: list[str]):
         raise SystemExit(f"у exe няма модуляў рухавіка: {', '.join(missing)}")
 
 
+LOCK = os.path.join(ROOT, "requirements-release.txt")
+
+
+def check_lock():
+    """Зборка — толькі з залежнасцямі з requirements-release.txt (installer/lock.py): тыя ж
+    версіі, што праверылі, і з хэшамі. BELLOC_ALLOW_UNLOCKED=1 — проба, не для выкладкі."""
+    from importlib import metadata
+    with open(LOCK, encoding="utf-8") as f:
+        pins = re.findall(r"^([A-Za-z0-9._-]+)==(\S+)", f.read(), re.M)
+    wrong = []
+    for name, version in pins:
+        try:
+            have = metadata.version(name)
+        except metadata.PackageNotFoundError:
+            have = None
+        if have != version:
+            wrong.append(f"{name} {have or '—'} (трэба {version})")
+    if wrong and os.environ.get("BELLOC_ALLOW_UNLOCKED") != "1":
+        raise SystemExit("залежнасці не з requirements-release.txt: " + ", ".join(wrong) +
+                         "\nчысты venv: pip install --require-hashes -r requirements-release.txt")
+
+
 def build(loc: Loc) -> str:
     rel = loc.section("release")
     engine = engines.get(loc.engine)
+    check_lock()
     if "ooz" in getattr(engine, "PYINSTALLER", []):
         oodle.check()                    # у exe — толькі наша зборка pyooz (GPL: зыходнікі побач)
     work = os.path.join(loc.build, "package")

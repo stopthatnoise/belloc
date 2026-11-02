@@ -641,7 +641,7 @@ def selftest(out: str, catalog_src: str) -> int:
         except Exception as e:
             lines.append(f"{name}: ПАМЫЛКА {type(e).__name__}: {e}")
     # бібліятэкі, якія рухавікі грузяць толькі падчас усталёўкі
-    for lib in ("UnityPy", "cv2", "ooz", "Crypto.Cipher.AES", "lz4.block", "numpy", "PIL.Image",
+    for lib in ("UnityPy", "cv2", "ooz", "Crypto.Cipher.AES", "Crypto.Signature.eddsa", "lz4.block", "numpy", "PIL.Image",
                 "fontTools.ttLib", "etcpak", "texture2ddecoder"):
         try:
             importlib.import_module(lib)
@@ -658,9 +658,17 @@ def selftest(out: str, catalog_src: str) -> int:
     except queue.Empty:
         lines.append("працэс усталёўкі: ПАМЫЛКА — не адказаў")
     proc.join(10)
+    # каталог па кроках: fetch памылкі глытае, а тут трэба ведаць, чаму не загрузіўся
+    try:
+        data = catalog._get(catalog_src, 10, catalog.MAX_CATALOG)
+        sig = catalog._get(catalog_src + catalog.SIG, 10, catalog.MAX_SIG)
+        lines.append("подпіс каталога: " + ("ok" if catalog.verify(data, sig) else "ПАМЫЛКА — не сапраўдны"))
+    except Exception as e:
+        lines.append(f"подпіс каталога: ПАМЫЛКА {type(e).__name__}: {e}")
     app = QApplication.instance() or QApplication(sys.argv[:1])
     app.setStyle("Fusion")
     w = Window(catalog_src, {})
+    w.show_error = lambda text, busy=False: w.log(text)     # без мадальных акон: самаправерка не чакае клікаў
     w.resize(860, 640)
     w.show()
     w.load()

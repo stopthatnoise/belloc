@@ -3,6 +3,7 @@
 
     python -X utf8 -m unittest discover -s tests
 """
+import atexit
 import io
 import json
 import os
@@ -29,6 +30,20 @@ REL = {"title": "Беларускі пераклад Demo", "version": "1.0", "e
        "language_name": "Беларуская", "replaces": "Русский", "menu": "Налады",
        "contents": "{strings} радкоў.", "how": "Дадае папку."}
 
+# ключ подпісу каталога — толькі для тэстаў; Fixture падстаўляе яго замест PUBLIC_KEY
+KEYS = tempfile.mkdtemp()
+atexit.register(shutil.rmtree, KEYS, True)
+KEY = os.path.join(KEYS, "test-key.pem")
+PUB = catalog.keygen(KEY)
+
+
+def write_catalog_file(path: str, cat: dict, sign: bool = True):
+    """catalog.json + подпіс тэставым ключом (лаўнчар правярае яго, як сапраўдны)."""
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(cat, f, ensure_ascii=False)
+    if sign:
+        catalog.sign_file(path, KEY)
+
 
 class VersionTest(unittest.TestCase):
     def test_newer(self):
@@ -47,6 +62,7 @@ class Fixture(unittest.TestCase):
     """Выдуманая гульня paradox, яе пакет і лакальны каталог (без тэстаў — для LauncherTest і AppTest)."""
 
     def setUp(self):
+        self.real_key, catalog.PUBLIC_KEY = catalog.PUBLIC_KEY, PUB
         self.tmp = tempfile.mkdtemp()
         g = os.path.join(self.tmp, "game")
         yml = os.path.join(g, "game", "localization", "english", "menu_l_english.yml")
@@ -82,12 +98,12 @@ class Fixture(unittest.TestCase):
         os.environ["LOCALAPPDATA"] = os.path.join(self.tmp, "appdata")
 
     def tearDown(self):
+        catalog.PUBLIC_KEY = self.real_key
         os.environ.pop("BELLOC_LOCAL", None)
         shutil.rmtree(self.tmp, ignore_errors=True)
 
-    def write_catalog(self, e):
-        with open(self.cat, "w", encoding="utf-8") as f:
-            json.dump({"schema": 1, "games": {"demo": e}}, f, ensure_ascii=False)
+    def write_catalog(self, e, sign: bool = True):
+        write_catalog_file(self.cat, {"schema": 1, "games": {"demo": e}}, sign)
 
     def entry(self):
         with open(self.cat, encoding="utf-8") as f:
@@ -181,6 +197,21 @@ class LauncherTest(Fixture):
 
     def test_no_network(self):
         self.assertIsNone(catalog.fetch(os.path.join(self.tmp, "missing.json")))
+
+    def test_signature(self):
+        e = self.entry()
+        self.assertIn("demo", catalog.fetch(self.cat)["games"])
+        self.write_catalog({**e, "version": "9.9"}, sign=False)        # стары подпіс, новы файл
+        self.assertIsNone(catalog.fetch(self.cat))
+        os.remove(self.cat + catalog.SIG)                                # подпісу няма
+        self.assertIsNone(catalog.fetch(self.cat))
+        self.write_catalog(e)
+        catalog.PUBLIC_KEY = self.real_key                               # падпісаны не нашым ключом
+        self.assertIsNone(catalog.fetch(self.cat))
+        catalog.PUBLIC_KEY = PUB
+        with open(self.cat + catalog.SIG, "wb") as f:
+            f.write(b"not base64!")
+        self.assertIsNone(catalog.fetch(self.cat))
 
 
 if __name__ == "__main__":

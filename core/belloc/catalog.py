@@ -1,9 +1,7 @@
 """Каталог перакладаў: які пераклад якой гульні ёсць і якой версіі (для лаўнчара і exe).
 
-Каталог — адзін публічны catalog.json (CATALOG_URL). Пакуль belloc закрыты, лаўнчар
-тэстуецца на часовым публічным рэпазіторыі belloc-catalog: catalog.json у main, пакеты
-перакладаў — у яго Releases (тэг <game_id>-v<версія>). Калі belloc адкрыецца,
-CATALOG_URL і RELEASES глядзяць на яго, а belloc-catalog выдаляецца.
+Каталог — адзін публічны catalog/catalog.json у main рэпазіторыя belloc (CATALOG_URL),
+пакеты перакладаў — у яго Releases (тэг <game_id>-v<версія>).
 
   {"schema": 1, "updated": "2026-10-31", "launcher": null,
    "games": {"pony-island": {
@@ -22,15 +20,25 @@ CATALOG_URL і RELEASES глядзяць на яго, а belloc-catalog выда
 апісанне рэліза) і assets/ — тое ж, што ўсярэдзіне exe. Кода ў ім няма: рухавікі —
 у лаўнчары. payload_schema большы за payload.SCHEMA лаўнчара → «абнавіце лаўнчар».
 
-Каталог і пакет — даныя з сеткі, ім не давяраем: толькі https (і пасля
-перанакіраванняў), абмежаваныя памеры, пакет — па sha256 з каталога да распакоўкі,
-у zip — толькі payload.json і assets/, id гульні — толькі [a-z0-9._-] (ідзе ў шляхі),
-шляхі payload — толькі ўнутры папкі гульні (install/paths.py).
+Каталог і пакет — даныя з сеткі, ім не давяраем:
+- побач з catalog.json ляжыць catalog.json.sig — подпіс Ed25519 яго байтаў (base64);
+  без сапраўднага подпісу ключом PUBLIC_KEY каталог лічыцца адсутным, таму падмена
+  файла на серверы ці ў дарозе нічога не дае. Сакрэтны ключ — толькі ў мейнтейнера
+  (key_path(), па-за git);
+- сетка — толькі https на хасты HOSTS (і пасля перанакіраванняў), памеры абмежаваныя;
+  спасылкі, якія адкрывае сістэма (page), — тое ж (safe_url), steam — толькі лік;
+- пакет — па sha256 з каталога да распакоўкі, у zip — толькі payload.json і assets/,
+  id гульні — толькі [a-z0-9._-] (ідзе ў шляхі), шляхі payload — толькі ўнутры папкі
+  гульні (install/paths.py).
 
     python -m belloc catalog <гульня> [--catalog ФАЙЛ] → пакет у build/release/ + запіс у каталог
+    python -m belloc catalog-key                       → новы ключ подпісу (раз)
+    python -m belloc catalog-sign [ФАЙЛ]               → падпісаць каталог нанова (пасля праўкі рукамі)
 """
 from __future__ import annotations
 
+import base64
+import binascii
 import datetime
 import hashlib
 import json
@@ -38,17 +46,24 @@ import os
 import shutil
 import tempfile
 import urllib.error
+import urllib.parse
 import urllib.request
 import zipfile
 
 from . import engines, payload as payload_mod
-from .config import Loc
+from .config import ROOT, Loc, local_root
 from .install import paths
 
-CATALOG_URL = "https://raw.githubusercontent.com/stopthatnoise/belloc-catalog/main/catalog.json"
-RELEASES = "https://github.com/stopthatnoise/belloc-catalog/releases"
+CATALOG_URL = "https://raw.githubusercontent.com/stopthatnoise/belloc/main/catalog/catalog.json"
+RELEASES = "https://github.com/stopthatnoise/belloc/releases"
+CATALOG_FILE = os.path.join(ROOT, "catalog", "catalog.json")       # копія ў рэпазіторыі
+PUBLIC_KEY = "1d33b5d384a5588a3d497f6f9724ee3f587d6990b261128db38b1424e647d5ac"                                        # Ed25519, сыры ключ у hex
+SIG = ".sig"                                                        # catalog.json + SIG — подпіс
+HOSTS = {"github.com", "objects.githubusercontent.com", "release-assets.githubusercontent.com",
+         "raw.githubusercontent.com", "store.steampowered.com"}
 SCHEMA = 1
 MAX_CATALOG = 8 << 20               # catalog.json, байтаў
+MAX_SIG = 1024
 MAX_PACKAGE = 256 << 20             # пакет: спампаваны zip і ўсё, што ў ім, разам
 MAX_FILES = 10000                   # файлаў у пакеце
 
@@ -74,13 +89,79 @@ def show_date(iso: str | None) -> str:
         return iso or ""
 
 
+# ---------------------------------------------------------------- подпіс
+
+def key_path() -> str:
+    """Сакрэтны ключ подпісу: BELLOC_CATALOG_KEY або local/keys/ (па-за git)."""
+    return os.environ.get("BELLOC_CATALOG_KEY") or os.path.join(local_root(), "keys", "catalog-ed25519.pem")
+
+
+def keygen(path: str | None = None) -> str:
+    """Новы ключ у path (існы не перазапісваецца); вяртае публічны ключ для PUBLIC_KEY."""
+    from Crypto.PublicKey import ECC
+    path = path or key_path()
+    if os.path.exists(path):
+        raise SystemExit(f"ключ ужо ёсць: {path}")
+    key = ECC.generate(curve="ed25519")
+    os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
+    with open(path, "w", encoding="ascii", newline="\n") as f:
+        f.write(key.export_key(format="PEM"))
+    return key.public_key().export_key(format="raw").hex()
+
+
+def sign(data: bytes, path: str | None = None) -> bytes:
+    """Подпіс байтаў каталога (base64) сакрэтным ключом."""
+    from Crypto.PublicKey import ECC
+    from Crypto.Signature import eddsa
+    with open(path or key_path(), encoding="ascii") as f:
+        key = ECC.import_key(f.read())
+    return base64.b64encode(eddsa.new(key, "rfc8032").sign(data)) + b"\n"
+
+
+def verify(data: bytes, sig: bytes, public_key: str | None = None) -> bool:
+    """Ці sig — сапраўдны подпіс data ключом PUBLIC_KEY."""
+    from Crypto.Signature import eddsa
+    # eddsa грузіць іх па імені — без яўнага імпарту PyInstaller іх у exe не кладзе
+    from Crypto.Math import _IntegerNat  # noqa: F401
+    from Crypto.PublicKey import _edwards, _ec_lib  # noqa: F401
+    try:
+        key = eddsa.import_public_key(bytes.fromhex(public_key or PUBLIC_KEY))
+        eddsa.new(key, "rfc8032").verify(data, base64.b64decode(sig.strip(), validate=True))
+        return True
+    except (ValueError, binascii.Error):
+        return False
+
+
+def sign_file(catalog_path: str, key: str | None = None):
+    """catalog.json → catalog.json.sig."""
+    with open(catalog_path, "rb") as f:
+        data = f.read()
+    with open(catalog_path + SIG, "wb") as f:
+        f.write(sign(data, key))
+
+
 # ---------------------------------------------------------------- кліент
 
+def safe_url(u) -> str | None:
+    """Спасылка, якую можна адкрыць або спампаваць: https на хост з HOSTS, без
+    карыстальніка, партоў і прабелаў; інакш None (file://, \\\\server, ms-…: — ніколі)."""
+    if not isinstance(u, str) or any(c.isspace() or ord(c) < 32 or c == "\\" for c in u):
+        return None
+    try:
+        p = urllib.parse.urlsplit(u)
+        port = p.port
+    except ValueError:
+        return None
+    if p.scheme != "https" or p.hostname not in HOSTS or p.username or p.password or port not in (None, 443):
+        return None
+    return u
+
+
 class _HttpsOnly(urllib.request.HTTPRedirectHandler):
-    """Перанакіраванні — толькі на https (GitHub Releases вядзе на свой CDN)."""
+    """Перанакіраванні — толькі па safe_url (GitHub Releases вядзе на свой CDN)."""
     def redirect_request(self, req, fp, code, msg, headers, newurl):
-        if not newurl.lower().startswith("https://"):
-            raise urllib.error.URLError(f"перанакіраванне не на https: {newurl}")
+        if not safe_url(newurl):
+            raise urllib.error.URLError(f"перанакіраванне не туды: {newurl}")
         return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 
@@ -92,8 +173,8 @@ def _get(src: str, timeout: float, limit: int) -> bytes:
     if "://" not in src:
         with open(src, "rb") as f:
             data = f.read(limit + 1)
-    elif not src.lower().startswith("https://"):
-        raise ValueError(f"толькі https: {src}")
+    elif not safe_url(src):
+        raise ValueError(f"толькі https на {', '.join(sorted(HOSTS))}: {src}")
     else:
         req = urllib.request.Request(src, headers={"User-Agent": "belloc"})
         with _opener.open(req, timeout=timeout) as r:
@@ -103,17 +184,36 @@ def _get(src: str, timeout: float, limit: int) -> bytes:
     return data
 
 
+def _entry_ok(e, local: bool) -> bool:
+    """Запіс каталога, з якім можна працаваць: steam — лік, пакет — па safe_url
+    (у лакальным каталогу — і лакальны файл), page — па safe_url або None."""
+    if not isinstance(e, dict) or not isinstance(e.get("stores", {}), dict):
+        return False
+    steam = e.get("stores", {}).get("steam")
+    if steam is not None and (type(steam) is not int or steam <= 0):
+        return False
+    url = e["package"].get("url") if isinstance(e.get("package"), dict) else None
+    if not (safe_url(url) or (local and isinstance(url, str) and "://" not in url)):
+        return False
+    e["page"] = safe_url(e.get("page"))
+    return True
+
+
 def fetch(src: str = CATALOG_URL, timeout: float = 5) -> dict | None:
-    """Каталог або None (няма сеткі, бітая адказ): без каталога ўсё працуе далей."""
+    """Каталог або None (няма сеткі, бітая адказ, няма подпісу): без каталога ўсё працуе далей."""
     try:
-        cat = json.loads(_get(src, timeout, MAX_CATALOG))
+        data = _get(src, timeout, MAX_CATALOG)
+        if not verify(data, _get(src + SIG, timeout, MAX_SIG)):
+            return None
+        cat = json.loads(data)
         if not isinstance(cat.get("games"), dict):
             return None
     except Exception:
         return None
-    # запіс з дзіўным id або не слоўнікам — не наш: адкідаем, астатнія працуюць
+    # запіс з дзіўным id або палямі — не наш: адкідаем, астатнія працуюць
+    local = "://" not in src
     cat["games"] = {gid: e for gid, e in cat["games"].items()
-                    if isinstance(e, dict) and paths.GAME_ID.fullmatch(gid) and ".." not in gid}
+                    if paths.GAME_ID.fullmatch(gid) and ".." not in gid and _entry_ok(e, local)}
     return cat
 
 
@@ -214,7 +314,7 @@ def publish(loc: Loc, catalog_path: str | None = None) -> tuple[str, dict]:
     pkg = os.path.join(out_dir, name)
     build_package(p, pkg)
     e = entry(loc, p, pkg, f"{RELEASES}/download/{loc.id}-v{version}/{name}")
-    catalog_path = catalog_path or os.path.join(os.path.dirname(loc.local), "catalog", "catalog.json")
+    catalog_path = catalog_path or CATALOG_FILE
     cat = {"schema": SCHEMA, "launcher": None, "games": {}}
     if os.path.exists(catalog_path):
         with open(catalog_path, encoding="utf-8") as f:
@@ -225,10 +325,15 @@ def publish(loc: Loc, catalog_path: str | None = None) -> tuple[str, dict]:
     os.makedirs(os.path.dirname(os.path.abspath(catalog_path)), exist_ok=True)
     with open(catalog_path, "w", encoding="utf-8", newline="\n") as f:
         json.dump(cat, f, ensure_ascii=False, indent=1)
+    if os.path.exists(key_path()):
+        sign_file(catalog_path)
+        signed = "падпісаны"
+    else:
+        signed = f"НЕ падпісаны (няма ключа {key_path()}) — лаўнчар яго не прыме"
     print(f"пакет: {pkg} ({e['package']['size'] // 1024} КБ)")
-    print(f"каталог: {catalog_path} — {loc.id} {version}")
-    print(f"выкласці: gh release create {loc.id}-v{version} \"{pkg}\" --repo stopthatnoise/belloc-catalog"
-          f" --title \"{p['release']['title']} {version}\"  і закамітаць catalog.json")
+    print(f"каталог: {catalog_path} — {loc.id} {version}, {signed}")
+    print(f"выкласці: gh release create {loc.id}-v{version} \"{pkg}\" --repo stopthatnoise/belloc"
+          f" --title \"{p['release']['title']} {version}\"  і закамітаць catalog.json з .sig")
     return pkg, e
 
 
