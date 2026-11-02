@@ -22,6 +22,10 @@ game.json:
      "source_lang": "en", "hint_lang": "ru", "<секцыя рухавіка>": {…}}
 
 Каталог гульні: game_dir з local.json, інакш — бібліятэкі Steam па steam_appid.
+
+Гульня, якую яшчэ не выкладваем, жыве ў local/private/games/<гульня>/ (свой прыватны
+git, па-за гэтым рэпазіторыем) — тая ж структура, што ў games/; да рэліза яе папка
+пераносіцца ў games/ звычайным камітам.
 """
 from __future__ import annotations
 
@@ -40,6 +44,16 @@ GAMES = os.path.join(ROOT, "games")
 
 def local_root() -> str:
     return os.environ.get("BELLOC_LOCAL") or os.path.join(ROOT, "local")
+
+
+def game_roots() -> list[str]:
+    """Дзе шукаць гульні па імені: games/ рэпазіторыя, потым прыватныя local/private/games/."""
+    return [GAMES, os.path.join(local_root(), "private", "games")]
+
+
+def known_games() -> list[str]:
+    return sorted({n for r in game_roots() if os.path.isdir(r) for n in os.listdir(r)
+                   if os.path.isfile(os.path.join(r, n, "game.json"))})
 
 
 @dataclass
@@ -125,14 +139,14 @@ class Loc:
 
 
 def resolve(name_or_path: str) -> str:
-    """'silver-pines' → games/silver-pines; папка з game.json — як ёсць."""
+    """'silver-pines' → games/silver-pines (або local/private/games/…); папка з game.json — як ёсць."""
     if os.path.isfile(os.path.join(name_or_path, "game.json")):
         return os.path.abspath(name_or_path)
-    cand = os.path.join(GAMES, name_or_path)
-    if os.path.isfile(os.path.join(cand, "game.json")):
-        return cand
-    known = sorted(os.listdir(GAMES)) if os.path.isdir(GAMES) else []
-    raise SystemExit(f"гульня «{name_or_path}» не знойдзена; ёсць: {', '.join(known) or '—'}")
+    for root in game_roots():
+        cand = os.path.join(root, name_or_path)
+        if os.path.isfile(os.path.join(cand, "game.json")):
+            return cand
+    raise SystemExit(f"гульня «{name_or_path}» не знойдзена; ёсць: {', '.join(known_games()) or '—'}")
 
 
 def _json(path: str) -> dict:

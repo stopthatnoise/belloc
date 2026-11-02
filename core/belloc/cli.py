@@ -23,7 +23,7 @@
   fonts      якія літары ёсць у шрыфтах гульні (--text: ці хапае для перакладу)
   textures   прэв'ю надпісаў textures.json (да / пасля) → build/textures/ (--out ПАПКА)
   package    рэліз: усталёўшчык .exe + ЧЫТАЙ.txt → build/release/ (release.py)
-  catalog    пакет перакладу для лаўнчара + запіс у каталог (catalog.py; --catalog ФАЙЛ)
+  catalog    пакет перакладу для лаўнчара + запіс у catalog/catalog.json і подпіс (catalog.py)
 
 Без гульні:
   list                  спіс гульняў
@@ -31,6 +31,8 @@
   antykalka СЛОВЫ… [--exact|--reverse]  рус.→бел. слоўнік без калек
   fantasy СЛОВЫ… [--exact|--reverse|--all]  англ.→бел. тэрміны фэнтэзі і D&D
   ttf-glyphs ПАПКА [--apply]  дапісаць І/і ў cmap TTF/OTF (fonts/ttf_glyphs.py)
+  catalog-key           новы ключ подпісу каталога (local/keys/, раз)
+  catalog-sign [ФАЙЛ]   падпісаць каталог нанова (пасля праўкі рукамі)
 """
 from __future__ import annotations
 
@@ -108,6 +110,9 @@ def main(argv=None):
     p = sub.add_parser("ttf-glyphs", help="дапісаць І/і ў TTF")
     p.add_argument("dir")
     p.add_argument("--apply", action="store_true")
+    sub.add_parser("catalog-key", help="новы ключ подпісу каталога")
+    p = sub.add_parser("catalog-sign", help="падпісаць каталог нанова")
+    p.add_argument("file", nargs="?", help="файл каталога (па змаўчанні catalog/catalog.json)")
 
     with_loc("sync", "абнавіць CSV")
     with_loc("stats", "прагрэс")
@@ -133,7 +138,7 @@ def main(argv=None):
     p.add_argument("--text", action="store_true", help="ці пакрываюць шрыфты ўсе літары перакладу")
     with_loc("package", "рэліз: усталёўшчык .exe")
     p = with_loc("catalog", "пакет перакладу і запіс у каталог")
-    p.add_argument("--catalog", help="файл каталога (па змаўчанні local/catalog/catalog.json)")
+    p.add_argument("--catalog", help="файл каталога (па змаўчанні catalog/catalog.json)")
     p = with_loc("textures", "прэв'ю надпісаў на тэкстурах")
     p.add_argument("--out", help="іншая папка")
     p = sub.add_parser("batch", help="пачкі для паралельнай працы")
@@ -149,11 +154,10 @@ def main(argv=None):
         ap.error(f"невядомыя аргументы: {' '.join(extra)}")
 
     if args.cmd == "list":
-        if os.path.isdir(config.GAMES):
-            for name in sorted(os.listdir(config.GAMES)):
-                if os.path.exists(os.path.join(config.GAMES, name, "game.json")):
-                    loc = config.load(name)
-                    print(f"  {name:20} {loc.name} ({loc.engine})")
+        for name in config.known_games():
+            loc = config.load(name)
+            private = "" if loc.dir.startswith(config.GAMES + os.sep) else "  [прыватная]"
+            print(f"  {name:20} {loc.name} ({loc.engine}){private}")
         return 0
     if args.cmd == "dicts":
         dicts.fetch(args.force, args.names)
@@ -169,6 +173,14 @@ def main(argv=None):
     if args.cmd == "ttf-glyphs":
         from .fonts import ttf_glyphs
         return ttf_glyphs.run(args.dir, args.apply)
+    if args.cmd == "catalog-key":
+        from . import catalog
+        print(f"ключ: {catalog.key_path()}\nPUBLIC_KEY = \"{catalog.keygen()}\"  — у core/belloc/catalog.py")
+        return 0
+    if args.cmd == "catalog-sign":
+        from . import catalog
+        catalog.sign_file(args.file or catalog.CATALOG_FILE)
+        return 0
 
     loc = config.load(args.loc)
     if args.cmd == "sync":
