@@ -1,0 +1,130 @@
+<!doctype html>
+<!--
+  Зыходнік схемы «Як гэта працуе» з README. Пасля праўкі перазняць PNG:
+    msedge --headless=new --hide-scrollbars --force-device-scale-factor=2 --window-size=960,540
+           --screenshot=how-it-works.png file:///…/docs/img/how-it-works.html
+-->
+<html lang="be">
+<head>
+<meta charset="utf-8">
+<title>Як гэта працуе</title>
+<style>
+  :root {
+    --bg: #ffffff; --card: #ffffff; --text: #1f2328; --muted: #59636e; --line: #d1d9e0;
+    --arrow: #818b98; --chip: #f6f8fa;
+    --blue: #3557b7; --blue-soft: #e8eefc;
+    --green: #2e7d32; --green-soft: #e6f4e8;
+    --amber: #a86b00; --amber-soft: #fff4d6;
+    --red: #b42318; --red-soft: #fdecea;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 960px; height: 540px; background: var(--bg); overflow: hidden; }
+  body { font-family: "Segoe UI", system-ui, sans-serif; color: var(--text); position: relative; }
+
+  .card {
+    position: absolute; width: 260px; height: 172px; padding: 16px 18px 14px;
+    background: var(--card); border: 1.5px solid var(--line); border-radius: 14px;
+    border-top: 5px solid var(--accent);
+    display: flex; flex-direction: column; gap: 7px;
+  }
+  .head { display: flex; align-items: center; gap: 10px; }
+  .num {
+    flex: none; width: 28px; height: 28px; border-radius: 50%;
+    background: var(--accent-soft); color: var(--accent);
+    font-weight: 700; font-size: 15px; display: grid; place-items: center;
+  }
+  .title { font-weight: 700; font-size: 16.5px; line-height: 1.2; }
+  .desc { color: var(--muted); font-size: 13.5px; line-height: 1.35; }
+  .foot { margin-top: auto; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  code {
+    font-family: "Cascadia Mono", Consolas, monospace; font-size: 12px;
+    background: var(--chip); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px;
+  }
+  .where {
+    font-size: 11.5px; font-weight: 600; border-radius: 99px; padding: 2px 9px;
+    background: var(--w-soft); color: var(--w);
+  }
+  .local { --w: var(--red); --w-soft: var(--red-soft); }
+  .git { --w: var(--green); --w-soft: var(--green-soft); }
+  .out { --w: var(--amber); --w-soft: var(--amber-soft); }
+  .game { --w: var(--blue); --w-soft: var(--blue-soft); }
+
+  .blue { --accent: var(--blue); --accent-soft: var(--blue-soft); }
+  .green { --accent: var(--green); --accent-soft: var(--green-soft); }
+  .amber { --accent: var(--amber); --accent-soft: var(--amber-soft); }
+
+  svg { position: absolute; inset: 0; pointer-events: none; }
+  .lbl { font-size: 12.5px; fill: var(--muted); font-family: "Segoe UI", sans-serif; }
+  .lbl-bg { fill: var(--bg); }
+</style>
+</head>
+<body>
+
+<!-- рад 1: y 70…242 · рад 2: y 330…502 · слупкі: x 30, 350, 670 -->
+<div class="card blue" style="left:30px; top:70px">
+  <div class="head"><div class="num">1</div><div class="title">Дастаём тэкст з&nbsp;гульні</div></div>
+  <div class="desc">З вашай купленай копіі: арыгінал і афіцыйны рускі пераклад.</div>
+  <div class="foot"><code>extract</code><code>sync</code><span class="where local">толькі ў вас</span></div>
+</div>
+
+<div class="card green" style="left:350px; top:70px">
+  <div class="head"><div class="num">2</div><div class="title">Дамаўляемся пра назвы і&nbsp;тон</div></div>
+  <div class="desc">Імёны, месцы, тэрміны. Ты ці вы, як гаворыць кожны персанаж.</div>
+  <div class="foot"><code>glossary.json</code><code>STYLE.md</code><span class="where git">у git</span></div>
+</div>
+
+<div class="card blue" style="left:670px; top:70px">
+  <div class="head"><div class="num">3</div><div class="title">Перакладаем</div></div>
+  <div class="desc">Некалькі агентаў адначасова, кожны — свой кавалак тэксту.</div>
+  <div class="foot"><code>batch export</code><code>batch apply</code><span class="where git">у git</span></div>
+</div>
+
+<div class="card blue" style="left:30px; top:330px">
+  <div class="head"><div class="num">4</div><div class="title">Правяраем</div></div>
+  <div class="desc">Лінтэр ловіць русізмы і згубленыя тэгі, потым чытае чалавек.</div>
+  <div class="foot"><code>lint</code><span class="where local">справаздача ў вас</span></div>
+</div>
+
+<div class="card blue" style="left:350px; top:330px">
+  <div class="head"><div class="num">5</div><div class="title">Глядзім у&nbsp;гульні</div></div>
+  <div class="desc">Ці ўлазяць словы ў кнопкі, ці ёсць беларускія літары ў шрыфце.</div>
+  <div class="foot"><code>patch</code><span class="where game">ваша гульня</span></div>
+</div>
+
+<div class="card amber" style="left:670px; top:330px">
+  <div class="head"><div class="num">6</div><div class="title">Аддаём гульцам</div></div>
+  <div class="desc">Усталёўшчык .exe у GitHub Releases і лаўнчар.</div>
+  <div class="foot"><code>package</code><span class="where out">усім</span></div>
+</div>
+
+<svg width="960" height="540" viewBox="0 0 960 540">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="var(--arrow)"/>
+    </marker>
+  </defs>
+  <g stroke="var(--arrow)" stroke-width="2" fill="none">
+    <!-- 1 → 2 → 3 -->
+    <path d="M292,156 L346,156" marker-end="url(#a)"/>
+    <path d="M612,156 L666,156" marker-end="url(#a)"/>
+    <!-- 3 → 4: уніз, налева, уніз -->
+    <path d="M800,244 L800,286 L160,286 L160,326" marker-end="url(#a)"/>
+    <!-- 4 → 5 → 6 -->
+    <path d="M292,416 L346,416" marker-end="url(#a)"/>
+    <path d="M612,416 L666,416" marker-end="url(#a)"/>
+  </g>
+  <g stroke="var(--arrow)" stroke-width="1.6" fill="none" stroke-dasharray="5 4">
+    <!-- 3 ⇢ 2: новая назва — у гласарый -->
+    <path d="M760,68 C760,22 520,22 520,64" marker-end="url(#a)"/>
+    <!-- 4 ⇢ 3 і 5 ⇢ 3: назад да перакладу (справа, па-за картамі) -->
+    <path d="M160,504 L160,524 L944,524 L944,156 L934,156" marker-end="url(#a)"/>
+    <path d="M480,504 L480,524"/>
+  </g>
+  <rect class="lbl-bg" x="565" y="20" width="150" height="20" rx="4"/>
+  <text class="lbl" x="640" y="35" text-anchor="middle">новая назва → у гласарый</text>
+  <rect class="lbl-bg" x="510" y="514" width="310" height="20" rx="4"/>
+  <text class="lbl" x="665" y="529" text-anchor="middle">памылка ці не ўлазіць → назад да перакладу</text>
+</svg>
+
+</body>
+</html>
