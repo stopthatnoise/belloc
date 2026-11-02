@@ -118,6 +118,7 @@
  "release": {
   "title": "Беларускі пераклад 007 First Light",
   "version": "1.1",
+  "changes": "Выпраўлены выбар Бонда ў прыёмнай М: «Хто такі М?».",
   "exe": "007FirstLight.exe",
   "file": "007FirstLight_BE",
   "language_name": "Беларуская",

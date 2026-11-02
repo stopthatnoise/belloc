@@ -1,0 +1,207 @@
+{
+ "schema": 1,
+ "launcher": null,
+ "games": {
+  "007-first-light": {
+   "name": "007 First Light",
+   "stores": {
+    "steam": 3768760
+   },
+   "engine": "glacier",
+   "payload_schema": 1,
+   "version": "1.1",
+   "date": "2026-11-02",
+   "changes": "Выпраўлены выбар Бонда ў прыёмнай М: «Хто такі М?».",
+   "contents": "Перакладзены інтэрфейс і ўсе субтытры (36911 радкоў). Агучка і юрыдычныя тэксты застаюцца англійскімі.",
+   "steam_buildid": null,
+   "exe": "007FirstLight.exe",
+   "language_name": "Беларуская",
+   "replaces": "Русский",
+   "page": "https://github.com/stopthatnoise/belloc/releases/tag/007-first-light-v1.1",
+   "package": {
+    "url": "https://github.com/stopthatnoise/belloc/releases/download/007-first-light-v1.1/007-first-light-1.1.zip",
+    "sha256": "a134fd90842d496cbfe20ee5166daa8c1a15c645f80467e11febf77bbd9205b1",
+    "size": 991975
+   },
+   "probe": {
+    "schema": 1,
+    "engine": "glacier",
+    "game_id": "007-first-light",
+    "game": "007 First Light",
+    "steam_appid": 3768760,
+    "steam_buildid": null,
+    "version": "1.1",
+    "from_original": "(?s)\\A(?:\\[\\]|.{1000,})\\Z",
+    "glacier": {
+     "runtime": "Runtime",
+     "target": "ru",
+     "keys": {
+      "text": "68AC3361 562B4AA0 B9F2771F 28EB3CE7",
+      "packagedefinition": "71482CF0 5FDC4B9F 86CE569D 0509FC1E"
+     }
+    },
+    "source_lang": "en"
+   }
+  },
+  "pony-island": {
+   "name": "Pony Island",
+   "stores": {
+    "steam": 405640
+   },
+   "engine": "unity-textasset-csv",
+   "payload_schema": 1,
+   "version": "1.0",
+   "date": "2026-11-02",
+   "changes": "",
+   "contents": "Перакладзены ўвесь тэкст з моўнай табліцы гульні (дыялогі, меню, загадкі, дасягненні) і надпісы ў сцэнах — код у галаваломках, вокны, кнопкі (усяго радкоў: 1232). Карцінкі з тэкстам і тытры застаюцца англійскімі. Калі гульня просіць нешта напісаць, пішыце па-беларуску (часцей за ўсё падыходзіць і руская раскладка).",
+   "steam_buildid": "25928685",
+   "exe": "PonyIsland.exe",
+   "language_name": "Беларуская",
+   "replaces": "Русский",
+   "page": "https://github.com/stopthatnoise/belloc/releases/tag/pony-island-v1.0",
+   "package": {
+    "url": "https://github.com/stopthatnoise/belloc/releases/download/pony-island-v1.0/pony-island-1.0.zip",
+    "sha256": "1b7a62c25a2d429af8c7af046abce41942a3cb249f5120c62ce8d7ed606e1adb",
+    "size": 35251
+   },
+   "probe": {
+    "schema": 1,
+    "engine": "unity-textasset-csv",
+    "game_id": "pony-island",
+    "game": "Pony Island",
+    "steam_appid": 405640,
+    "steam_buildid": "25928685",
+    "version": "1.0",
+    "textasset_csv": {
+     "data_dir": "PonyIsland_Data",
+     "assets": "resources.assets",
+     "textasset": "localization",
+     "header_row": 1,
+     "id_column": "STRING ID",
+     "note_column": 0,
+     "langs": {
+      "en": "ENGLISH",
+      "ru": "RUSSIAN"
+     },
+     "target": "ru",
+     "sections": {
+      "MAIN MENU": "01-menu",
+      "INTRO": "02-intro",
+      "ACT I": "03-act1",
+      "ACT I (BOSS)": "04-act1-boss",
+      "ACT II": "05-act2",
+      "ACT II (World Map)": "06-act2-map",
+      "ACT II (Broken World)": "07-act2-broken",
+      "ACT II (Boss)": "08-act2-boss",
+      "ACT III": "09-act3",
+      "ACT III (Desktop)": "10-act3-desktop",
+      "ACT III (Boss)": "11-act3-boss",
+      "Finale": "12-finale",
+      "Secret Scenes": "13-secret",
+      "Super Secret Scenes": "14-super-secret",
+      "Code Puzzle Language": "15-code",
+      "Marketing Material (Steam Store Page)": "16-store",
+      "Steam Achievement Names and Decriptions": "17-achievements",
+      "Misc. Missing Lines": "18-misc"
+     },
+     "patch": {
+      "files": [
+       "level0",
+       "level3",
+       "level4",
+       "level5",
+       "level6",
+       "level7",
+       "level8",
+       "level10",
+       "level11",
+       "level12",
+       "level13"
+      ],
+      "fonts": [
+       "Crumbled-Pixels",
+       "04B_30__",
+       "dpcomic"
+      ],
+      "ui_text": {
+       "Pусский": "Беларуская"
+      }
+     },
+     "scenes": {
+      "_about": "Надпісы TextMesh у сцэнах па-за CSV → табліца 19-scenes (belloc/unity/scene_text.py). ignore — плэйсхолдары, якія гульня перапісвае, імёны, нікі, назвы файлаў лацінкай і пасхалкі",
+      "ignore": [
+       "text",
+       "text text text",
+       "PI TEXT MESH",
+       "PI MENU ITEM",
+       "<name>",
+       "FILE.EXE",
+       "MACK",
+       "DANIEL MULLINS",
+       "<h0peles$0uL>",
+       "\n<h0peles\n$0uL>",
+       "<1U©iF#r>",
+       "missingno",
+       "Pony_Galaxy",
+       "PONY \nGALAXY",
+       "PONY_ISLAND.EXE",
+       "PONY_ISLAND.E..",
+       "PONY_ISLAN...",
+       "                 TECH\nINCORPORATED",
+       "CLOWNWARD\nOLWAYS\nWINS",
+       "CLOWNWAR     \n LWAY \n"
+      ],
+      "ignore_re": [
+       "^[0-9A-Z]{5}-[0-9A-Z]{5}-",
+       "^<color=#909090FF>u just said",
+       "^<color=#509BB9FF>tasha"
+      ]
+     }
+    },
+    "source_lang": "en"
+   }
+  },
+  "silver-pines": {
+   "name": "Silver Pines",
+   "stores": {
+    "steam": 2333000
+   },
+   "engine": "unity-localization",
+   "payload_schema": 1,
+   "version": "1.1",
+   "date": "2026-11-02",
+   "changes": "Рэдактура дыялогаў; літары І і Ў на экранах вынікаў і «Новай гульні+».",
+   "contents": "Перакладзена ўсё, што ёсць у моўных табліцах гульні: дыялогі, нататкі, прадметы, меню, падказкі (усяго радкоў: 3462). Надпісы, намаляваныя на тэкстурах (шыльды, коміксы), застаюцца англійскімі.",
+   "steam_buildid": "25964535",
+   "exe": "Carpenter.exe",
+   "language_name": "Беларуская",
+   "replaces": "Русский",
+   "page": "https://github.com/stopthatnoise/belloc/releases/tag/silver-pines-v1.1",
+   "package": {
+    "url": "https://github.com/stopthatnoise/belloc/releases/download/silver-pines-v1.1/silver-pines-1.1.zip",
+    "sha256": "4f2c5982d5eaf909e18e377ca5d03972af1af1f2ece031ba1f308f005c6a4f99",
+    "size": 98820
+   },
+   "probe": {
+    "schema": 1,
+    "engine": "unity-localization",
+    "game_id": "silver-pines",
+    "game": "Silver Pines",
+    "steam_appid": 2333000,
+    "steam_buildid": "25964535",
+    "version": "1.1",
+    "bundles_dir": "Carpenter_Data/StreamingAssets/aa/StandaloneWindows64",
+    "locale": "ru",
+    "font_bundles": [
+     "localization-assets-russian(ru)_assets_all.bundle",
+     "fonts-russian_assets_all.bundle"
+    ],
+    "data_dir": "Carpenter_Data",
+    "font_assets": [
+     "resources.assets"
+    ]
+   }
+  }
+ },
+ "updated": "2026-11-02"
+}

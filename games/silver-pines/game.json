@@ -24,6 +24,7 @@
  "release": {
   "title": "Беларускі пераклад Silver Pines",
   "version": "1.1",
+  "changes": "Рэдактура дыялогаў; літары І і Ў на экранах вынікаў і «Новай гульні+».",
   "exe": "Carpenter.exe",
   "file": "SilverPines_BE",
   "language_name": "Беларуская",
