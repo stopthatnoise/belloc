@@ -14,17 +14,20 @@
 
 ## Пагуляць па-беларуску
 
-| гульня | версія перакладу |
-|---|---|
-| Silver Pines | 1.1 |
-| Pony Island | 1.0 |
-| 007 First Light | 1.1 |
+**[Спампаваць лаўнчар → Releases](https://github.com/stopthatnoise/belloc/releases/latest)**
 
-Прасцей за ўсё — **лаўнчар** (апошні `launcher-v…` у
-[Releases](https://github.com/stopthatnoise/belloc/releases)): ён сам знойдзе гульні Steam
-з перакладам, паставіць і абновіць яго. Або асобны ўсталёўшчык гульні — у рэлізе
-`<гульня>-v<версія>`. Windows можа папярэдзіць пра невядомага выдаўца (exe не
-падпісаны): «Падрабязней» → «Усё роўна запусціць».
+Прасцей за ўсё — лаўнчар: ён сам знойдзе гульні Steam з перакладам, паставіць і
+абновіць яго. Або асобны ўсталёўшчык гульні — па спасылцы ў табліцы.
+
+| гульня | пераклад |
+|---|---|
+| Silver Pines | **[1.1](https://github.com/stopthatnoise/belloc/releases/tag/silver-pines-v1.1)** |
+| Pony Island | **[1.0](https://github.com/stopthatnoise/belloc/releases/tag/pony-island-v1.0)** |
+| 007 First Light | **[1.1](https://github.com/stopthatnoise/belloc/releases/tag/007-first-light-v1.1)** |
+
+Усе выпускі — у [Releases](https://github.com/stopthatnoise/belloc/releases). Windows можа
+папярэдзіць пра невядомага выдаўца (exe не падпісаны): «Падрабязней» → «Усё роўна
+запусціць».
 
 ## Што тут ляжыць
 
