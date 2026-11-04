@@ -130,6 +130,16 @@ class LinesTest(unittest.TestCase):
         self.assertEqual(out[0][2], "[name:Вартавы][p-5]Стой!")
         self.assertEqual(out[1][2], "[name:Страж]Иди.")         # неперакладзенае — як было
 
+    def test_from_original(self):
+        from belloc import tables
+        pat = tables.from_original(r"(?s)\A.+\Z")
+        en = {"#a": "[name:Guard]Halt!", "#b": "TEMP text"}
+        items = [(1, "#a", "[name:Страж]Halt!"), (2, "#b", "TEMP")]
+        out, _ = build_lang(items, en, {"vo/x": {"#a": "[]", "#b": "[]"}, NAMES: {}}, {}, pat)
+        self.assertEqual([t for _, _, t in out], ["[name:Страж]Halt!", "TEMP text"])
+        self.assertEqual(tables.collapse("Halt!", "Halt!", pat), "[]")
+        self.assertEqual(tables.collapse("Стой!", "Halt!", pat), "Стой!")
+
 
 if __name__ == "__main__":
     unittest.main()

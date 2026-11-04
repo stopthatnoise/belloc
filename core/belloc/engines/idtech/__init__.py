@@ -31,10 +31,16 @@ apply: lang/strings мовы target ← bel (неперакладзенае за
 пералічваюцца (resources.py). Кантэйнер — <файл>.orig + .bel (install/target.py):
 калі Steam абнавіў файл, за аснову бярэцца новы. З out — кантэйнер у папку, гульня
 не чапаецца.
+
+Кавалкі арыгінала (`"from_original"` у game.json, гл. tables.py): заглушка `[]` у bel ←
+тэкст арыгінала без пачатку рэплікі. Great Circle: `(?s)\\A.+\\Z` — радок, які пераклад
+пакідае як у арыгінале (нарыхтоўкі, коды, нямецкія рэплікі), у рэпазіторыі — `[]`.
 """
 from .common import NAME, SECTION  # noqa: F401
 from .extract import extract  # noqa: F401
 from .apply import payload, check_path, apply, restore, installed  # noqa: F401
+
+FROM_ORIGINAL = True
 
 # усталёўшчык (release.py): Oodle — модуль ooz (пакет pyooz)
 PYINSTALLER = ["--collect-all", "ooz",

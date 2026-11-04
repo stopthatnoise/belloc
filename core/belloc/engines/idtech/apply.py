@@ -4,6 +4,7 @@ from __future__ import annotations
 import os
 from collections import Counter
 
+from ... import tables
 from ...config import Loc
 from ...install.paths import inside
 from ...install.target import Target, write_to
@@ -12,9 +13,11 @@ from .common import NAME_TAG, NAMES, containers, find_lang, read_lang, sec, spli
 
 
 def build_lang(items, en: dict[str, str], strings: dict[str, dict[str, str]],
-               rename: dict[str, str]) -> tuple[list, int]:
+               rename: dict[str, str], pat=None) -> tuple[list, int]:
     """Радкі мовы target з нашым перакладам. Пачатак рэплікі ([name:…], [p-5]…) —
-    з арыгінала; імёны — з NAMES, а дзе іх няма — як былі ў мове target."""
+    з арыгінала; імёны — з NAMES, а дзе іх няма — як былі ў мове target.
+    pat — рэгулярка кавалкаў арыгінала (tables.from_original): заглушкі `[]` у bel ←
+    тэкст арыгінала без пачатку рэплікі (у рэпазіторыі — `[]` замест bel == en)."""
     cur = {k: t for _, k, t in items}
     names = {k: v for k, v in strings.get(NAMES, {}).items() if v}
     seen: dict[str, Counter] = {}                 # імя ў арыгінале → як яно ў target
@@ -33,7 +36,11 @@ def build_lang(items, en: dict[str, str], strings: dict[str, dict[str, str]],
         if k in rename:
             t = rename[k]
         elif k in bel:
-            t = NAME_TAG.sub(name, split_prefix(en.get(k, ""))[0]) + split_prefix(bel[k])[1]
+            pre, src = split_prefix(en.get(k, ""))
+            b = split_prefix(bel[k])[1]
+            if pat and tables.PLACEHOLDER in b:
+                b = tables.expand(b, src, pat)
+            t = NAME_TAG.sub(name, pre) + b
             n += 1
         out.append((h, k, t))
     return out, n
@@ -58,7 +65,8 @@ def apply(game_dir: str, payload: dict, out: str | None = None, log=print) -> di
         nonlocal n_done
         r = next(r for r in resources.read_table(src)
                  if r.type == "lang" and r.name == "strings" and r.variation == langs[target])
-        items, n_done = build_lang(lang.parse(resources.read_data(src, r)), en, payload["strings"], rename)
+        items, n_done = build_lang(lang.parse(resources.read_data(src, r)), en, payload["strings"], rename,
+                                   tables.from_original(payload.get("from_original")))
         with open(src, "rb") as f:
             data = resources.replace(f.read(), r.index, lang.build(items))
         with open(dst, "wb") as f:
