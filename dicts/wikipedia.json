@@ -1,0 +1,570 @@
+{
+ "_about": "Назвы артыкулаў Вікіпедыі: мова арыгінала → be/ru (інтэрвікі). Назвы і desc — з Вікіпедыі, CC BY-SA 4.0; note — нашы заўвагі. Папаўняецца: python -m belloc wiki <назва>",
+ "entries": {
+  "en:Adolf Hitler": {
+   "be": "Адольф Гітлер",
+   "ru": "Гитлер, Адольф",
+   "desc": "Dictator of Germany from 1933 to 1945",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Ahnenerbe": {
+   "be": "Анэнэрбэ",
+   "ru": "Аненербе",
+   "desc": "Nazi German pseudoscientific organization",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Antarctica": {
+   "be": "Антарктыда",
+   "ru": "Антарктида",
+   "desc": "Earth's southernmost continent",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Apostolic Palace": {
+   "be": "Апостальскі палац",
+   "ru": "Апостольский дворец",
+   "desc": "Official residence of the Pope in Vatican City",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Asháninka": {
+   "be": null,
+   "ru": "Ашанинка",
+   "desc": "Ethnic group",
+   "note": "у Indiana Jones — ашанінка",
+   "checked": "2026-11-05"
+  },
+  "en:Basra": {
+   "be": "Басра",
+   "ru": "Басра",
+   "desc": "Port city in southern Iraq",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Benito Mussolini": {
+   "be": "Беніта Мусаліні",
+   "ru": "Муссолини, Бенито",
+   "desc": "Dictator of Italy from 1922 to 1943",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Blackshirts": {
+   "be": "Чорнакашульнікі",
+   "ru": "Чернорубашечники",
+   "desc": "Paramilitary of the Italian National Fascist Party",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Borgia Apartments": {
+   "be": null,
+   "ru": "Апартаменты Борджиа",
+   "desc": "Suite of rooms in the Apostolic Palace in Vatican City",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Casina Pio IV": {
+   "be": null,
+   "ru": "Вилла Пия",
+   "desc": "Patrician villa in Vatican City; seat of the Pontificial Academy of Sciences",
+   "note": "у Indiana Jones — Казіна Пія IV",
+   "checked": "2026-11-05"
+  },
+  "en:Castel Sant'Angelo": {
+   "be": "Замак Святога Анёла",
+   "ru": "Замок Святого Ангела",
+   "desc": "Historic building in Rome, Italy",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Cesare Borgia": {
+   "be": "Чэзарэ Борджыя",
+   "ru": "Борджиа, Чезаре",
+   "desc": "Italian-Spanish cardinal deacon and condottiero (1475–1507)",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Chachapoya culture": {
+   "be": null,
+   "ru": "Чачапойя",
+   "desc": "Pre-Inca Andean culture",
+   "note": "чачапоя, прым. чачапойскі (рус. Чачапойя; па-беларуску «йя» не пішам)",
+   "checked": "2026-11-05"
+  },
+  "en:Chachapoyas, Peru": {
+   "be": null,
+   "ru": "Чачапояс",
+   "desc": "City in Amazonas, Peru",
+   "note": "горад і правінцыя — Чачапояс (Indiana Jones)",
+   "checked": "2026-11-05"
+  },
+  "en:Cloaca Maxima": {
+   "be": "Вялікая Клаака",
+   "ru": "Большая Клоака",
+   "desc": "Main sewage system of Ancient Rome",
+   "note": "калі ў арыгінале па-лацінску — «Клаака Максіма» (Indiana Jones)",
+   "checked": "2026-11-05"
+  },
+  "en:Colosseum": {
+   "be": "Калізей",
+   "ru": "Колизей",
+   "desc": "Ancient Roman amphitheater in Rome",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Connecticut": {
+   "be": "Канектыкут",
+   "ru": "Коннектикут",
+   "desc": "U.S. state",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Cortile del Belvedere": {
+   "be": null,
+   "ru": "Апостольский дворец#Бельведерский дворец",
+   "desc": "Architectural work at the Vatican Palace in Rome",
+   "note": "у Indiana Jones — Бельведэрскі двор",
+   "checked": "2026-11-05"
+  },
+  "en:Cuneiform": {
+   "be": "Клінапіс",
+   "ru": "Клинопись",
+   "desc": "Writing system of the ancient Near East",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Egypt": {
+   "be": "Егіпет",
+   "ru": "Египет",
+   "desc": "Country in North Africa",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Egyptian pound": {
+   "be": "Егіпецкі фунт",
+   "ru": "Египетский фунт",
+   "desc": "Currency of Egypt",
+   "note": "у Indiana Jones — піястры",
+   "checked": "2026-11-05"
+  },
+  "en:Fallen angel": {
+   "be": null,
+   "ru": "Падшие ангелы",
+   "desc": "Angel expelled from heaven in Abrahamic religions",
+   "note": "у Indiana Jones — заняпалыя анёлы",
+   "checked": "2026-11-05"
+  },
+  "en:Führer": {
+   "be": "Фюрар",
+   "ru": "Фюрер",
+   "desc": "German word meaning 'leader' or 'guide'",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Gardens of Vatican City": {
+   "be": "Ватыканскія сады",
+   "ru": "Ватиканские сады",
+   "desc": "Park in Vatican City",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Giza": {
+   "be": "Гіза",
+   "ru": "Эль-Гиза",
+   "desc": "City in Greater Cairo, Egypt",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Great Pyramid of Giza": {
+   "be": "Піраміда Хеопса",
+   "ru": "Пирамида Хеопса",
+   "desc": "Largest pyramid in the Giza Necropolis, Egypt",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Great Sphinx of Giza": {
+   "be": "Вялікі Сфінкс",
+   "ru": "Большой сфинкс",
+   "desc": "Limestone statue of a resting sphinx",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Himalayas": {
+   "be": "Гімалаі",
+   "ru": "Гималаи",
+   "desc": "Mountain range in Asia",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Holy See": {
+   "be": "Святы Прастол",
+   "ru": "Святой Престол",
+   "desc": "Jurisdiction of the Catholic Church and Vatican City",
+   "note": "у нас — Святы Пасад: так у беларускіх каталікоў (catholicnews.by/svyaty-prastol-tsi-svyaty-pasad)",
+   "checked": "2026-11-05"
+  },
+  "en:Inca Empire": {
+   "be": "Імперыя Інкаў",
+   "ru": "Империя инков",
+   "desc": "1438–1533 empire in South America",
+   "note": "прым. — інкскі",
+   "checked": "2026-11-05"
+  },
+  "en:Indiana Jones (character)": {
+   "be": "Індыяна Джонс",
+   "ru": "Индиана Джонс",
+   "desc": "Title character of the Indiana Jones franchise",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Indiana Jones and the Last Crusade": {
+   "be": "Індыяна Джонс і апошні крыжовы паход",
+   "ru": "Индиана Джонс и последний крестовый поход",
+   "desc": "1989 film by Steven Spielberg",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Indiana Jones and the Temple of Doom": {
+   "be": "Індыяна Джонс і храм лёсу",
+   "ru": "Индиана Джонс и храм судьбы",
+   "desc": "1984 film by Steven Spielberg",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Iraq": {
+   "be": "Ірак",
+   "ru": "Ирак",
+   "desc": "Country in West Asia",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Italian lira": {
+   "be": null,
+   "ru": "Итальянская лира",
+   "desc": "Currency of Italy from 1861 to 2002",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Khafre": {
+   "be": "Хефрэн",
+   "ru": "Хафра",
+   "desc": "Ancient Egyptian pharaoh of 4th dynasty",
+   "note": "у Indiana Jones — Хафра: гульня ўжывае егіпецкія імёны, не грэчаскія",
+   "checked": "2026-11-05"
+  },
+  "en:Khentkaus I": {
+   "be": null,
+   "ru": "Хенткаус I",
+   "desc": "Queen of Ancient Egypt during the 4th dynasty",
+   "note": "у Indiana Jones — Хенткаўэс",
+   "checked": "2026-11-05"
+  },
+  "en:Khufu": {
+   "be": "Хеопс",
+   "ru": "Хеопс",
+   "desc": "Fourth Dynasty ancient Egyptian pharaoh",
+   "note": "у Indiana Jones — Хуфу (егіпецкае імя; Хеопс — грэчаскае)",
+   "checked": "2026-11-05"
+  },
+  "en:Kriegsmarine": {
+   "be": "Крыгсмарынэ",
+   "ru": "Кригсмарине",
+   "desc": "Navy of Nazi Germany (1935–1945)",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Lake Hammar": {
+   "be": null,
+   "ru": "Эль-Хаммар",
+   "desc": "Saline lake in Iraq",
+   "note": "у Indiana Jones — возера Хамар",
+   "checked": "2026-11-05"
+  },
+  "en:Machu Picchu": {
+   "be": "Мачу-Пікчу",
+   "ru": "Мачу-Пикчу",
+   "desc": "15th-century Inca citadel in Peru",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Major Arcana": {
+   "be": "Старэйшыя арканы",
+   "ru": null,
+   "desc": "Trump cards of tarot decks",
+   "note": "у Indiana Jones — «старэйшы аркан», таро — з малой",
+   "checked": "2026-11-05"
+  },
+  "en:Menkaure": {
+   "be": "Мікерын",
+   "ru": "Микерин",
+   "desc": "Egyptian pharaoh of the 4th dynasty",
+   "note": "у Indiana Jones — Менкаўра (егіпецкае імя; Мікерын — грэчаскае)",
+   "checked": "2026-11-05"
+  },
+  "en:Mesopotamian Marshes": {
+   "be": null,
+   "ru": "Эль-Ахвар",
+   "desc": "Wetlands in Iraq, Iran and Kuwait",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Metatron": {
+   "be": null,
+   "ru": "Метатрон",
+   "desc": "Angel in Jewish and Islamic mythology",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Mithraeum": {
+   "be": null,
+   "ru": "Митреум",
+   "desc": "Mithraic temple in classical antiquity",
+   "note": "у Indiana Jones — мітрэум",
+   "checked": "2026-11-05"
+  },
+  "en:Nephilim": {
+   "be": null,
+   "ru": "Нефилимы",
+   "desc": "Biblical figures feared for their strength before the Flood",
+   "note": "у Indiana Jones — нефілімы",
+   "checked": "2026-11-05"
+  },
+  "en:Nineveh": {
+   "be": "Ніневія",
+   "ru": "Ниневия",
+   "desc": "Ancient Assyrian city",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Passetto di Borgo": {
+   "be": "Пасета",
+   "ru": "Пассетто",
+   "desc": "Papal bridge in Rome",
+   "note": "у нас — Пасэта-дзі-Борга: пасля с у запазычаннях — э",
+   "checked": "2026-11-05"
+  },
+  "en:Peru": {
+   "be": "Перу",
+   "ru": "Перу",
+   "desc": "Country in South America",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Pope Pius XI": {
+   "be": "Пій XI",
+   "ru": "Пий XI",
+   "desc": "Head of the Catholic Church from 1922 to 1939",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Raiders of the Lost Ark": {
+   "be": "Шукальнікі страчанага каўчэга",
+   "ru": "Индиана Джонс: В поисках утраченного ковчега",
+   "desc": "1981 adventure film by Steven Spielberg",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Rome": {
+   "be": "Рым",
+   "ru": "Рим",
+   "desc": "Capital and largest city of Italy",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Royal Italian Army": {
+   "be": null,
+   "ru": "Королевская итальянская армия",
+   "desc": "Army of the Kingdom of Italy from 1861 to 1946",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Saint Peter": {
+   "be": "Пётр (апостал)",
+   "ru": "Апостол Пётр",
+   "desc": "Apostle of Jesus",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Schutzstaffel": {
+   "be": "СС",
+   "ru": "СС",
+   "desc": "German Nazi paramilitary organisation (1925–1945)",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Shanghai": {
+   "be": "Шанхай",
+   "ru": "Шанхай",
+   "desc": "Municipality and largest city in China",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Sistine Chapel": {
+   "be": "Сіксцінская капэла",
+   "ru": "Сикстинская капелла",
+   "desc": "Chapel in the Apostolic Palace, Vatican City",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:St. Peter's Basilica": {
+   "be": "Сабор Святога Пятра",
+   "ru": "Собор Святого Петра",
+   "desc": "Roman Catholic basilica and landmark in Vatican City",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Stele": {
+   "be": "Стэла",
+   "ru": "Стела",
+   "desc": "Stone or wooden slab erected as a monument",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Sturmbannführer": {
+   "be": "Штурмбанфюрар",
+   "ru": "Штурмбаннфюрер",
+   "desc": "Paramilitary officer's rank in Nazi Germany",
+   "note": "-фюрар: ненаціскное э ў запазычаннях — а (лідар)",
+   "checked": "2026-11-05"
+  },
+  "en:Sukhothai Historical Park": {
+   "be": "Гістарычны горад Сукатаі",
+   "ru": "Сукотаи (исторический город)",
+   "desc": "UNESCO World Heritage Site in Sukhothai province Thailand",
+   "note": "у Indiana Jones — Сукхатай (тайскае kh — кх, канчатак -ай)",
+   "checked": "2026-11-05"
+  },
+  "en:Sukhothai Kingdom": {
+   "be": null,
+   "ru": "Сукхотаи (царство)",
+   "desc": "Post-classical Thai kingdom in north-central Thailand",
+   "note": "у Indiana Jones — Сукхатай",
+   "checked": "2026-11-05"
+  },
+  "en:Sumerian language": {
+   "be": "Шумерская мова",
+   "ru": "Шумерский язык",
+   "desc": "Language of ancient Sumer and Babylon",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Swiss Guard": {
+   "be": "Папская швейцарская гвардыя",
+   "ru": "Швейцарская гвардия",
+   "desc": "Vatican City military force and papal bodyguard",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Tausret": {
+   "be": null,
+   "ru": "Таусерт",
+   "desc": "Pharaoh of Egypt from 1191 to 1188 BC",
+   "note": "у Indiana Jones — Таўсерт",
+   "checked": "2026-11-05"
+  },
+  "en:Thai baht": {
+   "be": null,
+   "ru": "Тайский бат",
+   "desc": "Currency of Thailand",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Tiber": {
+   "be": "Тыбр",
+   "ru": "Тибр",
+   "desc": "Major river in central Italy",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Ur": {
+   "be": "Ур",
+   "ru": "Ур",
+   "desc": "Ancient Mesopotamian city-state",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Vatican City": {
+   "be": "Ватыкан",
+   "ru": "Ватикан",
+   "desc": "Enclaved Holy See's independent city-state",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Vatican Library": {
+   "be": "Ватыканская апостальская бібліятэка",
+   "ru": "Ватиканская апостольская библиотека",
+   "desc": "Library of the Holy See in Vatican City",
+   "note": "у гульні «Apostolic Library» — Апостальская бібліятэка",
+   "checked": "2026-11-05"
+  },
+  "en:Vatican Museums": {
+   "be": "Музеі Ватыкана",
+   "ru": "Музеи Ватикана",
+   "desc": "Museums of the Vatican City",
+   "note": "у тэксце і «Ватыканскія музеі»",
+   "checked": "2026-11-05"
+  },
+  "en:Via Giulia": {
+   "be": null,
+   "ru": "Виа Джулия",
+   "desc": "Thoroughfare in Rome, Italy",
+   "note": "у Indiana Jones — віа Джулія",
+   "checked": "2026-11-05"
+  },
+  "en:Wehrmacht": {
+   "be": "Вермахт",
+   "ru": "Вермахт",
+   "desc": "Unified armed forces of Nazi Germany from 1935 to 1945",
+   "note": "",
+   "checked": "2026-11-05"
+  },
+  "en:Ziggurat of Ur": {
+   "be": "Зікурат ва Уры",
+   "ru": "Зиккурат в Уре",
+   "desc": "Early Bronze Age ziggurat in present-day Iraq",
+   "note": "у тэксце — «зікурат Ура»",
+   "checked": "2026-11-05"
+  }
+ },
+ "aliases": {
+  "en:apostolic library": "en:Vatican Library",
+  "en:ashaninka": "en:Asháninka",
+  "en:asháninka people": "en:Asháninka",
+  "en:baht": "en:Thai baht",
+  "en:belvedere courtyard": "en:Cortile del Belvedere",
+  "en:blackshirt": "en:Blackshirts",
+  "en:camicie nere": "en:Blackshirts",
+  "en:casina di pio iv": "en:Casina Pio IV",
+  "en:chachapoya": "en:Chachapoya culture",
+  "en:chachapoyan": "en:Chachapoya culture",
+  "en:chachapoyas": "en:Chachapoyas, Peru",
+  "en:fallen angels": "en:Fallen angel",
+  "en:gizeh": "en:Giza",
+  "en:great pyramid": "en:Great Pyramid of Giza",
+  "en:great sphinx": "en:Great Sphinx of Giza",
+  "en:hitler": "en:Adolf Hitler",
+  "en:inca": "en:Inca Empire",
+  "en:indiana jones": "en:Indiana Jones (character)",
+  "en:khentkawes": "en:Khentkaus I",
+  "en:lira": "en:Italian lira",
+  "en:lire": "en:Italian lira",
+  "en:mussolini": "en:Benito Mussolini",
+  "en:mvsn": "en:Blackshirts",
+  "en:piastre": "en:Egyptian pound",
+  "en:piastres": "en:Egyptian pound",
+  "en:pius xi": "en:Pope Pius XI",
+  "en:pontifical swiss guard": "en:Swiss Guard",
+  "en:ss": "en:Schutzstaffel",
+  "en:sumerian": "en:Sumerian language",
+  "en:the himalayas": "en:Himalayas",
+  "en:the holy see": "en:Holy See",
+  "en:the tiber river": "en:Tiber",
+  "en:tiber river": "en:Tiber",
+  "en:twosret": "en:Tausret",
+  "en:vatican": "en:Vatican City",
+  "en:vatican apostolic library": "en:Vatican Library",
+  "en:vatican gardens": "en:Gardens of Vatican City",
+  "en:voluntary militia for national security": "en:Blackshirts"
+ }
+}

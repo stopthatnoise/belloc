@@ -30,6 +30,8 @@
   dicts [--force] [імёны…]  спампаваць слоўнікі ў local/dicts/
   antykalka СЛОВЫ… [--exact|--reverse]  рус.→бел. слоўнік без калек
   fantasy СЛОВЫ… [--exact|--reverse|--all]  англ.→бел. тэрміны фэнтэзі і D&D
+  wiki НАЗВЫ… [--from en|--reverse|--refresh|--note|--alias]  рэальныя назвы: артыкул
+                        Вікіпедыі → беларускі (dicts/wikipedia.json, чаго няма — з Вікіпедыі)
   ttf-glyphs ПАПКА [--apply]  дапісаць І/і ў cmap TTF/OTF (fonts/ttf_glyphs.py)
   catalog-key           новы ключ подпісу каталога (local/keys/, раз)
   catalog-sign [ФАЙЛ]   падпісаць каталог нанова (пасля праўкі рукамі)
@@ -107,6 +109,16 @@ def main(argv=None):
     g.add_argument("--reverse", action="store_true", help="шукаць сярод беларускіх адпаведнікаў")
     p.add_argument("--all", action="store_true", help="паказаць усе мовы слоўніка")
     p.add_argument("--limit", type=int, default=30)
+    p = sub.add_parser("wiki", help="назвы з Вікіпедыі: артыкул арыгінала → беларускі")
+    p.add_argument("words", nargs="*", help="загаловак артыкула (або псеўданім), з --reverse — беларуская/руская назва")
+    p.add_argument("--from", dest="src", default="en", help="мова Вікіпедыі арыгінала (en, it, de…)")
+    g = p.add_mutually_exclusive_group()
+    g.add_argument("--reverse", action="store_true", help="шукаць па be/ru назвах у слоўніку")
+    g.add_argument("--list", action="store_true", help="увесь слоўнік")
+    g.add_argument("--refresh", action="store_true", help="спытаць Вікіпедыю нанова")
+    g.add_argument("--offline", action="store_true", help="толькі слоўнік, без сеткі")
+    p.add_argument("--note", help="наша заўвага да запісу (рашэнне, калі пішам інакш)")
+    p.add_argument("--alias", action="append", default=[], help="іншае напісанне → гэты артыкул (можна некалькі)")
     p = sub.add_parser("ttf-glyphs", help="дапісаць І/і ў TTF")
     p.add_argument("dir")
     p.add_argument("--apply", action="store_true")
@@ -170,6 +182,12 @@ def main(argv=None):
         from . import fantasy
         fantasy.search(args.words, args.exact, args.reverse, args.all, args.limit)
         return 0
+    if args.cmd == "wiki":
+        from . import wiki
+        if not args.words and not args.list:
+            ap.error("wiki: дайце назву (або --list)")
+        return wiki.run(args.words, args.src, args.refresh, args.offline, args.note, args.alias,
+                        args.reverse, args.list)
     if args.cmd == "ttf-glyphs":
         from .fonts import ttf_glyphs
         return ttf_glyphs.run(args.dir, args.apply)
