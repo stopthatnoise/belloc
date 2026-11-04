@@ -12,9 +12,9 @@ key,src_hash,bel,note
 #str_hud_bread_full,3346d91f0e457060,Больш хлеба не ўзяць,
 #str_hud_checkpoint,6427c9099e4dc8d1,ДАСЯГНУТЫ КАНТРОЛЬНЫ ПУНКТ,
 #str_hud_door_exit_to_vatican,a221ba37e10eaf2d,Выхад у Ватыканскія сады,
-#str_hud_door_requires_adventurer,02c74e9563c7ddac,Патрэбны касцюм шукальніка прыгод,"?: Adventurer Outfit — мусіць, касцюм Індзі"
+#str_hud_door_requires_adventurer,02c74e9563c7ddac,Патрэбны касцюм шукальніка прыгод,"?: Adventurer Outfit — мусіць, касцюм Інды"
 #str_hud_door_requires_clerical,5279527067427545,Патрэбна адзенне святара,
-#str_hud_door_requires_soldier,eaa13e25e80e58fe,Патрэбна форма чарнакашулечнікаў,
+#str_hud_door_requires_soldier,eaa13e25e80e58fe,Патрэбна форма чорнакашульнікаў,
 #str_hud_door_requires_soldier_royal,7a4d1257ce636e5f,Патрэбна форма Каралеўскай арміі,
 #str_hud_door_requires_soldier_wehrmacht,124322830c6faea1,Патрэбна форма вермахта,
 #str_hud_door_requires_worker,f89b0950dee41217,Патрэбна адзенне землякопа,

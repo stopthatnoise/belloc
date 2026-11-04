@@ -9,7 +9,7 @@ key,src_hash,bel,note
 #str_achievements_complete_all_achievements_desc_ps5,7c8942a1e640a84e,Атрымаць усе трафеі.,
 #str_achievements_complete_all_achievements_desc_unlocked,8c097c99a97918ca,Атрыманы ўсе дасягненні.,
 #str_achievements_complete_all_achievements_desc_unlocked_ps5,7c8942a1e640a84e,Атрыманы ўсе трафеі.,"EN тут — як у _desc_ps5 (памылка ў гульні); у _unlocked — мінулы час, як у астатніх"
-#str_achievements_complete_all_achievements_name,af0703b5370a4463,Справа ў прабегу,"цытата Індзі «It's not the years, honey, it's the mileage» → «Справа не ў гадах, а ў прабегу»"
+#str_achievements_complete_all_achievements_name,af0703b5370a4463,Справа ў прабегу,"цытата Інды «It's not the years, honey, it's the mileage» → «Справа не ў гадах, а ў прабегу»"
 #str_achievements_complete_ch0_peru_desc,83d45ae7f105e655,Прайсці раздзел «Залаты ідал».,
 #str_achievements_complete_ch0_peru_desc_unlocked,b2c408a7283f896b,Пройдзены раздзел «Залаты ідал».,
 #str_achievements_complete_ch0_peru_name,2f9441a4a10b7bea,Залаты ідал ,
@@ -33,7 +33,7 @@ key,src_hash,bel,note
 #str_achievements_complete_ch2_vatican_name,22de41edf46da7e7,Скрадзеная мумія кошкі,
 #str_achievements_complete_ch3_gizeh_artifacts_desc,17ec21707a992c96,Сабраць усе зніклыя стэлы.,
 #str_achievements_complete_ch3_gizeh_artifacts_desc_unlocked,65ab23042e1c7768,Сабраны ўсе зніклыя стэлы.,
-#str_achievements_complete_ch3_gizeh_artifacts_name,1c1b31d5104264d7,Гэтаму месца ў музеі!,фірмовая фраза Індзі — заўсёды «Гэтаму месца ў музеі!»
+#str_achievements_complete_ch3_gizeh_artifacts_name,1c1b31d5104264d7,Гэтаму месца ў музеі!,фірмовая фраза Інды — заўсёды «Гэтаму месца ў музеі!»
 #str_achievements_complete_ch3_gizeh_desc,7635e10e71f463ea,Прайсці раздзел «Ідал Ра».,
 #str_achievements_complete_ch3_gizeh_desc_unlocked,6396589a433392d6,Пройдзены раздзел «Ідал Ра».,
 #str_achievements_complete_ch3_gizeh_la1_desc,eb2e4ad23c7923ab,Выканаць палявую працу «Таямніца царыцы-маці».,

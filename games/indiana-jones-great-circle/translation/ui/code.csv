@@ -356,7 +356,7 @@ key,src_hash,bel,note
 #str_code_settings_game_action_difficulty_2_title,9e73f8fa9cb76c44,Высокая,
 #str_code_settings_game_action_difficulty_3_desc,4f60e13cf75aa878,"Для самых адважных шукальнікаў прыгод, якім патрэбныя вельмі складаныя выпрабаванні ў скрытнасці і баях.
 
-Ворагі наносяць разбуральныя ўдары і нападаюць пераважнымі сіламі.",
+Ворагі наносяць сакрушальныя ўдары і нападаюць цэлымі атрадамі.",
 #str_code_settings_game_action_difficulty_3_title,8bc3ea27592824ab,Вельмі высокая,
 #str_code_settings_game_action_difficulty_title,2e4f1fc3bb056c6b,Агульная складанасць баёў,
 #str_code_settings_game_action_difficulty_very_easy_desc,80cc5302cd96c05f,"Для шукальнікаў прыгод, якія хочуць лёгкай скрытнасці і лёгкіх баёў.
@@ -476,7 +476,7 @@ key,src_hash,bel,note
 #str_code_settings_hud_stealth_through_walls_desc,d1641fa0b5e52e9d,Індыкатары пільнасці ворагаў бачныя праз прадметы і сцены.,
 #str_code_settings_hud_stealth_through_walls_title,e2142c008e936fb8,Бачнасць індыкатараў пільнасці,
 #str_code_settings_hud_stealth_title,afa75e652b4acaab,Індыкатар пільнасці,
-#str_code_settings_hud_stealth_vignette_desc,ac7ed8fea545ac84,"Уключыце зацямненне па краях экрана, калі Індзі крадзецца прыгнуўшыся.",
+#str_code_settings_hud_stealth_vignette_desc,ac7ed8fea545ac84,"Уключыце зацямненне па краях экрана, калі Інды крадзецца прыгнуўшыся.",
 #str_code_settings_hud_stealth_vignette_title,8d04e1b4b0911c6c,Віньетка скрытнасці,
 #str_code_settings_hud_subtitle_background_desc,1623e92f6ac3e8ac,Уключыце чорны фон пад субтытрамі для большай кантраснасці.,
 #str_code_settings_hud_subtitle_background_title,aafdf77fee89040b,Фон субтытраў,
@@ -665,8 +665,8 @@ key,src_hash,bel,note
 #str_code_settings_video_high_contrast_class_pickup_title,fb8e7a1a3cb7b25d,Прадметы,
 #str_code_settings_video_high_contrast_class_pickupactive_desc,0f6bafa4272d3beb,"Выберыце кантрасны колер для прадметаў, да якіх вы досыць блізка, каб узаемадзейнічаць.",
 #str_code_settings_video_high_contrast_class_pickupactive_title,50ea57ba9bdf79dc,Прадметы (у фокусе),
-#str_code_settings_video_high_contrast_class_pov_desc,6414583070f8693b,Выберыце кантрасны колер для Індзі.,
-#str_code_settings_video_high_contrast_class_pov_title,2642ebd37fafc1c2,Індзі,
+#str_code_settings_video_high_contrast_class_pov_desc,6414583070f8693b,Выберыце кантрасны колер для Інды.,
+#str_code_settings_video_high_contrast_class_pov_title,2642ebd37fafc1c2,Інды,
 #str_code_settings_video_high_contrast_class_weapon_desc,643526a30b89889e,Выберыце кантрасны колер для бліжэйшай зброі.,
 #str_code_settings_video_high_contrast_class_weapon_title,aafc7b0e9b9e48bd,Зброя,
 #str_code_settings_video_high_contrast_class_weaponactive_desc,18d25622c3b0c427,"Выберыце кантрасны колер для зброі ў фокусе, якую можна ўзяць.",

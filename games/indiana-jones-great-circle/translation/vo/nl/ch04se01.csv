@@ -1,5 +1,5 @@
 key,src_hash,bel,note
-#str_vo_nl_indy_ch04se01_001_travelling_himalayas_ne_01,49cfeb63f7524383,Сонцапал... Сонцапал... Хм... Sheram... Sheram... Імя... Otz... Otzam?,"Сонцапал — як u09 journal_spread_stonenotes (Індзі чытае гэтую нататку); u11 gizehstone_desc — «Распальшчык сонца», разыходжанне"
+#str_vo_nl_indy_ch04se01_001_travelling_himalayas_ne_01,49cfeb63f7524383,Сонцапал... Сонцапал... Хм... Sheram... Sheram... Імя... Otz... Otzam?,"Сонцапал — як u09 journal_spread_stonenotes (Інды чытае гэтую нататку); u11 gizehstone_desc — «Распальшчык сонца», разыходжанне"
 #str_vo_nl_indy_ch04se01_001_travelling_himalayas_qu_01,7be0c52c0c1fbb9f,Сонцапал... Сонцапал... Хм...[4.45][5.2]^ISheram^I... ^ISheram^I...[10.19]Імя.[11.8][13.7]^IOtz... Otzam^I?[16.1],Сонцапал — як u09 journal_spread_stonenotes
 #str_vo_nl_nawal_ch04se01_002_travelling_himalayas_ne_01,df3eaccbe4570b2c,"[1.8]Што вы там знайшлі, Індыяна?[3.8]",
 #str_vo_nl_indy_ch04se01_003_travelling_himalayas_ne_01,54e3a376f8e7683e,"Ну, падобна, гэта фотаздымак Лаўры Ламбардзі і...[5.175]вас.[6.5]",
@@ -52,7 +52,7 @@ key,src_hash,bel,note
 #str_vo_nl_gina_ch04se01_042_handshake_ne_01,0f77a7f671f2c10f,"[28.5]Хочаш сказаць, яны выпусцілі ўсё з рук?","жарт: EN каламбуры на hand (handwheel/handle/hand over/handy) → «выпусціць з рук», «з рук у рукі», «ручацца»"
 #str_vo_nl_indy_ch04se01_043_handshake_ne_01,1993ca9fa2f72d24,"Давай сюды, з рук у рукі.",жарт: працяг каламбура на hand
 #str_vo_nl_gina_ch04se01_044_handshake_ne_01,3cdb18a150e9aaf0,"Ручаешся, што спатрэбіцца?[2.0]",жарт: handy → ручаешся (ад «рука»)
-#str_vo_nl_indy_ch04se01_045_handshake_ne_01,d2a3b81ff18a8c55,[0.6]Годзе ўжо.[2.5],жарт: Індзі спыняе каламбуры
+#str_vo_nl_indy_ch04se01_045_handshake_ne_01,d2a3b81ff18a8c55,[0.6]Годзе ўжо.[2.5],жарт: Інды спыняе каламбуры
 #str_vo_nl_gina_ch04se01_046_after_handshake_ne_01,11ca43399035e9b3,Што магло закінуць карабель на вяршыню гары?,
 #str_vo_nl_indy_ch04se01_047_after_handshake_ne_01,a06ee9b6d39140e4,Ды яшчэ аж з Перу...?,
 #str_vo_nl_indy_ch04se01_049_blocked_vent_ne_01,de724fd958132b82,[1.67]Завалена.[3.2]Дапаможаш?,
@@ -561,7 +561,7 @@ key,src_hash,bel,note
 #str_vo_nl_gina_ch04se01_587_upper_decks_ne_01,211d39c377590a2d,Ён вось тут.,
 #str_vo_nl_gina_ch04se01_588_mp_statue_ne_01,a4c21ba01880dc26,І ўсё гэта дзеля каменя...,
 #str_vo_nl_indy_ch04se01_589_mayan_statue_qu_01,d585d14ad130d31d,"[0.4]Гэта майя, а не інкі.[2.23]Трэба будзе вывучыць яе грунтоўней, калі вярнуся ў каледж.",
-#str_vo_nl_officerjurgen_ch04se01_590_we_have_company_lo_01,6f446c6811212263,Стаяць!,"?: EN Stop! да Індзі і Джыны; ru «Стойте» — «Стаяць!», як 418"
+#str_vo_nl_officerjurgen_ch04se01_590_we_have_company_lo_01,6f446c6811212263,Стаяць!,"?: EN Stop! да Інды і Джыны; ru «Стойте» — «Стаяць!», як 418"
 #str_vo_nl_indy_ch04se01_591_upper_decks_lo_01,c437e8c65551d1ff,Асцярожна!,
 #str_vo_nl_indy_ch04se01_592_upper_decks_lo_01,90a46bb123d58f44,Ты цэлая?,
 #str_vo_nl_indy_ch04se01_592_upper_decks_ne_01,90a46bb123d58f44,Ты цэлая?,

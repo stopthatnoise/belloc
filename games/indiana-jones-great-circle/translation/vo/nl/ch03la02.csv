@@ -6,7 +6,7 @@ key,src_hash,bel,note
 #str_vo_nl_voss_ch03la02_006_gina_asks_assistance_ne_01,75a36289017e4937,"^IДаклад, Майер? Прыём.^I",
 #str_vo_nl_officergernot_ch03la02_007_gina_asks_assistance_ne_01,85f788c59243f66f,"^IМы ўвесь дзень працавалі на раскопках Сфінкса, але людзі стаміліся. Прыём.^I",
 #str_vo_nl_voss_ch03la02_008_gina_asks_assistance_ne_01,732398ed1be287e1,^IВы ўжо знайшлі Свяцілішча вартаўнікоў?^I,
-#str_vo_nl_officergernot_ch03la02_009_gina_asks_assistance_ne_01,ceeb5f62bb03aa73,"^IНе, гер штурмбанфюрэр, але, здаецца, мы знайшлі ўваход. Прыём.^I",
+#str_vo_nl_officergernot_ch03la02_009_gina_asks_assistance_ne_01,ceeb5f62bb03aa73,"^IНе, гер штурмбанфюрар, але, здаецца, мы знайшлі ўваход. Прыём.^I",
 #str_vo_nl_voss_ch03la02_010_gina_asks_assistance_ne_01,5527f1e1ebdbfe0a,"[0.6]^IВыдатна, Майер. Вяртайцеся на базу. [3.8]Неўзабаве я сам узначалю раскопкі. [5.7]На наступным этапе патрэбна дасведчаная рука.^I",
 #str_vo_nl_gina_ch03la02_011_gina_asks_assistance_ne_01,436b6bfd14482f59,"[2.1]Здаецца, Фос вельмі заклапочаны гэтымі раскопкамі.[5.4]Што ён шукае?",
 #str_vo_nl_indy_ch03la02_012_gina_asks_assistance_ne_01,acde55664ca85fff,Ён сказаў — Свяцілішча вартаўнікоў.[3.0],
@@ -50,7 +50,7 @@ key,src_hash,bel,note
 #str_vo_nl_gina_ch03la02_082_leaving_cave_ne_01,07f5f11626065fba,"Ты зразумеў, пра што я.[2.0][4.1]Цяпер я разумею, чаму ты так любіш паляваць на скарбы мінулага.[7.8]",
 #str_vo_nl_indy_ch03la02_086_leaving_cave_ne_01,a9c936ff696fec17,"[0.7]Ведаеш што?[2.7][4.1]Аднясі гэта Наваль.[6.1][7.3]Скажы, хай пакладзе ў свой музей.",
 #str_vo_nl_gina_ch03la02_087_leaving_cave_ne_01,63a9d5e7d6dfcd4f,"Ты ведаеш сваю справу, доктар Джонс.",
-#str_vo_nl_indy_ch03la02_088_leaving_cave_ne_01,092b143666d1b27d,[2.4]...гэта ты мяне ўзяла з сабой?,"?: адказ на ch03la02_121 (Джына) — Індзі пераспытвае, хто каго ўзяў з сабой"
+#str_vo_nl_indy_ch03la02_088_leaving_cave_ne_01,092b143666d1b27d,[2.4]...гэта ты мяне ўзяла з сабой?,"?: адказ на ch03la02_121 (Джына) — Інды пераспытвае, хто каго ўзяў з сабой"
 #str_vo_nl_indy_ch03la02_089_leaving_cave_ne_01,670d4b194d3c5053,Ай![2.0],
 #str_vo_nl_officergernot_ch03la02_090_gina_asks_assistance_ne_01,9b213c67ce8f361b,"^IСлухаюся, гер...^I",
 #str_vo_nl_officerjurgen_ch03la02_092_nazis_break_ne_01,7a71ab037ad062c2,"Майер хоча, каб мы працавалі, пакуль ён рэжацца ў скат у намёце каменданта?",
@@ -116,7 +116,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch03la02_161_general_banter_ne_01,feba6f8472295e17,"Ды ну?[1.55]Ну дык давай заскочым у цырульню тут, на гэтых[4.77]сакрэтных нацысцкіх раскопках.[7]Што, гэта раздражняе тваю тонкую натуру?",
 #str_vo_nl_gina_ch03la02_162_general_banter_ne_01,ba2cb7938fbe2b9f,"Не-не, наадварот...[1.45]Табе пасуе.",
 #str_vo_nl_gina_ch03la02_163_general_banter_ne_01,f15f7548c367d3cc,Хм.[1.28]Мне было б вельмі няёмка забіраць прыгожыя рэчы з магіл і пакідаць іх сабе.,
-#str_vo_nl_indy_ch03la02_164_general_banter_ne_01,4fa706a0dc32e319,"Слухай, я ж не рабаўнік...[2.33][3.3]Гісторыю трэба выкопваць і паказваць усім.[6.7]Мінулае можа шмат чаму навучыць.",Індзі абрывае «grave [robber]» — «рабаўнік [магіл]»
+#str_vo_nl_indy_ch03la02_164_general_banter_ne_01,4fa706a0dc32e319,"Слухай, я ж не рабаўнік...[2.33][3.3]Гісторыю трэба выкопваць і паказваць усім.[6.7]Мінулае можа шмат чаму навучыць.",Інды абрывае «grave [robber]» — «рабаўнік [магіл]»
 #str_vo_nl_gina_ch03la02_165_general_banter_ne_01,a8d964e2e4d9443e,"Ой. Здаецца, я зачапіла за жывое, га?",
 #str_vo_nl_indy_ch03la02_166_trapped_lever_lo_01,e04ec10c655d946d,Ох![2.0],
 #str_vo_nl_gina_ch03la02_167_trapped_lever_lo_01,37df39729af7d600,[4.7]Трымаю цябе![5.85],

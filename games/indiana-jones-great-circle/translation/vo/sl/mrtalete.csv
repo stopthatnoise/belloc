@@ -125,7 +125,7 @@ key,src_hash,bel,note
 #str_vo_sl_mrtalete_general_interact_indy_generic_ne_02,19bb2df5f2e33bae,"Хм, дайце адгадаю... Вы працуеце з дзікімі звярамі?",
 #str_vo_sl_mrtalete_general_interact_indyblackshirt_ch02se02_done_ne_01,94554f69e0f744c3,Вы маеце нейкае дачыненне да дырыжабля?,
 #str_vo_sl_mrtalete_general_interact_indyblackshirt_ch02se02_done_ne_02,8d0e0bc49c75c7c7,Хачу больш даведацца пра дырыжабль. Навошта ён тут?,
-#str_vo_sl_mrtalete_general_interact_indyblackshirt_generic_ne_01,05f55de43d062f1a,"Я б таксама пайшоў у войска, ды... сёй-той не пускае.","the force — войска (міліцыя чарнакашулечнікаў), як ru"
+#str_vo_sl_mrtalete_general_interact_indyblackshirt_generic_ne_01,05f55de43d062f1a,"Я б таксама пайшоў у войска, ды... сёй-той не пускае.","the force — войска (міліцыя чорнакашульнікаў), як ru"
 #str_vo_sl_mrtalete_general_interact_indyblackshirt_generic_ne_02,623b1a51908c9d4d,"У войску ж адны прыгоды і весялосць. Праўда, салдат?",
 #str_vo_sl_mrtalete_general_interact_indypriest_ch02se02_done_ne_01,ee1a83286f8dfdbb,"Ойча, вы не чулі, навошта тут гэты дырыжабль?",
 #str_vo_sl_mrtalete_general_interact_indypriest_ch02se02_done_ne_02,036e112c6a6c3867,"Я ўсё спрабую даведацца, навошта тут дырыжабль. Вы не ведаеце, ойча?",
@@ -148,6 +148,6 @@ key,src_hash,bel,note
 #str_vo_sl_mrtalete_relaxed_use_zipline_indy_startled_ne_01,1e21e429e8a9c5c3,Нічога сабе!,
 #str_vo_sl_mrtalete_relaxed_use_zipline_indy_startled_ne_02,3c50e6a9a43cfa3f,Ну і ну!,
 #str_vo_sl_mrtalete_relaxed_use_zipline_indyblackshirt_startled_ne_01,d55da8c0f3ada8b1,"Ха-ха-ха, дык вось яна, сучасная пяхота?",
-#str_vo_sl_mrtalete_relaxed_use_zipline_indyblackshirt_startled_ne_02,5e0a7e6e3eedd6cf,Га? Лятучыя чарнакашулечнікі?,
+#str_vo_sl_mrtalete_relaxed_use_zipline_indyblackshirt_startled_ne_02,5e0a7e6e3eedd6cf,Га? Лятучыя чорнакашульнікі?,
 #str_vo_sl_mrtalete_relaxed_use_zipline_indypriest_startled_ne_01,4d283e4aaffaf40b,Якога чорта?,
 #str_vo_sl_mrtalete_relaxed_use_zipline_indypriest_startled_ne_02,18a27751d4764c43,Што за ліха?,

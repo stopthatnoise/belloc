@@ -10,11 +10,11 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch02la03_006_missing_nun_qu_01,6788e96a340db693,Няважна. У цябе ёсць звесткі на абмен?,
 #str_vo_nl_gina_ch02la03_009_missing_nun_qu_01,230ef55e69a9615e,Магчымая зачэпка наконт тваёй муміі кошкі.,
 #str_vo_nl_indy_ch02la03_010_missing_nun_qu_01,df033aa56e248523,Слухаю.,
-#str_vo_nl_gina_ch02la03_011_missing_nun_qu_01,4d0cbcd1ced6c277,"Мая знаёмая ў Ватыкане, Джуліяна, —[2.65]я папрасіла яе даведацца, ці ёсць у Ватыкане звесткі пра цябе і твой каледж.[7.3][9.0]Мы з ёй маем сустрэцца ў музеі.","Індзі і Джына — «ты» (STYLE, u22), хоць ru тут на «вы»"
+#str_vo_nl_gina_ch02la03_011_missing_nun_qu_01,4d0cbcd1ced6c277,"Мая знаёмая ў Ватыкане, Джуліяна, —[2.65]я папрасіла яе даведацца, ці ёсць у Ватыкане звесткі пра цябе і твой каледж.[7.3][9.0]Мы з ёй маем сустрэцца ў музеі.","Інды і Джына — «ты» (STYLE, u22), хоць ru тут на «вы»"
 #str_vo_nl_indy_ch02la03_012_missing_nun_qu_01,c45f85b475da8fe7,[0.5]Дык чаго ж мы чакаем?[2.4],
 #str_vo_nl_gina_ch02la03_013_missing_nun_qu_01,d323b10cfae7ae82,"Але, відаць, нешта здарылася: музей цяпер зачынілі.[4.8]",
 #str_vo_nl_indy_ch02la03_014_missing_nun_qu_01,acea3d584c7de371,"Значыць, я магу стаць тваім пропускам.[2.4]",
-#str_vo_nl_gina_ch02la03_015_missing_nun_qu_01,ecbfaf984729c787,"Ну... Чалавека ў форме чарнакашулечніка ж не спыняць, праўда?",
+#str_vo_nl_gina_ch02la03_015_missing_nun_qu_01,ecbfaf984729c787,"Ну... Чалавека ў форме чорнакашульніка ж не спыняць, праўда?",
 #str_vo_nl_indy_ch02la03_018_exiting_chapel_ne_01,d87a93bdbefce8ff,"Хто яна, гэтая твая знаёмая?",
 #str_vo_nl_gina_ch02la03_019_exiting_chapel_ne_01,d7867c79f0006b33,"Мы з Джуліянай пазнаёміліся на Абісінскай вайне, калі я была там карэспандэнткай,[3.55]яшчэ да таго, як яна знайшла сваё месца сярод ватыканскіх сясцёр.",
 #str_vo_nl_officerezio_ch02la03_022_confession_ne_01,d417b9e4d11430e5,"Дык вы і ёсць той амерыканскі святар, пра якога казаў падрэ Вентура.",
@@ -27,7 +27,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch02la03_029_confession_ne_01,e67db23553db24b0,"Нічога. Проста прачытай тры разы «Радуйся, Марыя».",
 #str_vo_nl_officerezio_ch02la03_030_confession_ne_01,e0683e9f551f29ac,"Не, ойча, вы не разумееце.[2.5]Мая жонка чакае дзіця, і я баюся, што —[5.3]",
 #str_vo_nl_gina_ch02la03_038_to_museums_ne_01,6395fe209952c35c,"У такім адзенні ў музей не пусцяць, ойча.",
-#str_vo_nl_gina_ch02la03_039_to_museums_ne_01,4c0cf17b57f4e337,У музей пускаюць толькі чарнакашулечнікаў. А ты не ў форме.,
+#str_vo_nl_gina_ch02la03_039_to_museums_ne_01,4c0cf17b57f4e337,У музей пускаюць толькі чорнакашульнікаў. А ты не ў форме.,
 #str_vo_nl_gina_ch02la03_040_to_museums_ne_01,7fabc94bfe99b5ec,"Я нешта зрабіла не так, пане афіцэр?",
 #str_vo_nl_indy_ch02la03_041_to_museums_qu_01,d62ea01d1af26bad,Табе гэта яўна падабаецца.,
 #str_vo_nl_indy_ch02la03_042_entering_museum_ne_01,88eec82811ba6a8a,Яна са мной.,
@@ -78,12 +78,12 @@ key,src_hash,bel,note
 #str_vo_nl_juliana_ch02la03_089_freeing_juliana_ne_01,197272a70ca75476,"Ватыкан сочыць за вамі з таго часу, як вы капалі ў Сіве.[3.2][5.1]Гэта ідзе з самага верху, доктар Джонс.[7.5]Мусіць, вы натрапілі на нешта вельмі каштоўнае для іх.",
 #str_vo_nl_juliana_ch02la03_093_freeing_juliana_ne_01,85dca4dd91d03311,"Я знайшла дакумент Таемнай службы Ватыкана, [4.2]які дазваляе сачыць за вамі. [6.9]А гэты ключ адчыніць замкнёныя дзверы ў вежы.[11.4][13.0]Можа, ваша кошка там, наверсе, га?[15.3]",
 #str_vo_nl_indy_ch02la03_094_freeing_juliana_ne_01,78f58c102d44543b,Добра. Ты мне дапамагла. Што я магу зрабіць для цябе?[2.4],
-#str_vo_nl_gina_ch02la03_095_freeing_juliana_ne_01,2430393f9d3839b5,Спачатку мне трэба дамовіцца пра сустрэчу з адным добра дасведчаным чалавекам.[4.0]Я пакіну табе запіску з інструкцыямі ў Сікстынскай капэле.,"?: ключ gina, але сэнсам гэта можа быць і Джуліяна; Індзі ў 094 пытае таго, хто яму дапамог — пакінуў Джыну на «ты»"
+#str_vo_nl_gina_ch02la03_095_freeing_juliana_ne_01,2430393f9d3839b5,Спачатку мне трэба дамовіцца пра сустрэчу з адным добра дасведчаным чалавекам.[4.0]Я пакіну табе запіску з інструкцыямі ў Сіксцінскай капэле.,"?: ключ gina, але сэнсам гэта можа быць і Джуліяна; Інды ў 094 пытае таго, хто яму дапамог — пакінуў Джыну на «ты»"
 #str_vo_nl_indy_ch02la03_096_freeing_juliana_ne_01,1945502c71d8249f,"З гэтай дамы кожнае слова — як клешчамі цягнуць...[2.0][6.0]Зразумела ж, пра што я.","жарт: pulling teeth → «як клешчамі цягнуць»; «you know what I mean» — без займенніка, бо незразумела, да каго (ru — «ты»)"
 #str_vo_nl_indy_ch02la03_097_confession_ne_01,a4949e2c96de2668,Што?,
 #str_vo_nl_officerezio_ch02la03_098_confession_ne_01,4c00d789ea778420,"Ага... можна, я дагавару?[3.7]Я баюся, што... мая...[6.1]цешча таксама чакае дзіця.[9.2]",
 #str_vo_nl_indy_ch02la03_099_confession_ne_01,2ae980763c5999e4,"А, к чорту.[2.0]",
-#str_vo_nl_gina_ch02la03_100_to_museums_ne_01,42c4b2304253d438,Апрані форму чарнакашулечніка. Толькі так нас пусцяць унутр.,
+#str_vo_nl_gina_ch02la03_100_to_museums_ne_01,42c4b2304253d438,Апрані форму чорнакашульніка. Толькі так нас пусцяць унутр.,
 #str_vo_nl_gina_ch02la03_101_to_museums_ne_01,0ffd721ea9996e26,Заходзім.,
 #str_vo_nl_gina_ch02la03_102_finding_juliana_ne_01,76bde6836a933829,Доктар Джонс.[2.0],
 #str_vo_nl_indy_ch02la03_103_finding_juliana_ne_01,88bebdb7c0819e1f,Я з ім разбяруся.[2.0],
@@ -94,7 +94,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch02la03_110_confession_ne_01,89b8d12783f068c1,"Прабач, дружа, але ты, можна сказаць, заслужыў.",
 #str_vo_nl_indy_ch02la03_111_to_museums_qu_01,c24ecaa319512b03,Табе гэта яўна падабаецца.,
 #str_vo_nl_indy_ch02la03_111_to_museums_qu_02,c24ecaa319512b03,Табе гэта яўна падабаецца.,
-#str_vo_nl_indy_ch02la03_112_confession_ne_01,ca62fe9c537b5c69,Ідзі першы.[2.0],Індзі-«святар» да Эцыа — «ты»
+#str_vo_nl_indy_ch02la03_112_confession_ne_01,ca62fe9c537b5c69,Ідзі першы.[2.0],Інды-«святар» да Эцыа — «ты»
 #str_vo_nl_officerezio_ch02la03_113_confession_ne_01,d4bfe0170866d935,"Я люблю Амерыку![1.8]Калі ласка, прыміце маю споведзь...[4.3][6.7]Хадзіце са мной, мне трэба выспаведацца. Сядайце, калі ласка.",
 #str_vo_nl_gina_ch02la03_114_freeing_juliana_ne_01,b467f5f7ea13c592,Дарагая мая.[1.0],
 #str_vo_nl_indy_ch02la03_115_following_gina_ne_01,3fda02a16f1c4957,Так. Куды падзелася тая дама... Музей. Мы сустракаемся ў музеі.,
@@ -144,7 +144,7 @@ key,src_hash,bel,note
 #str_vo_nl_officerdante_ch02la03_161_to_museums_ne_01,15f7b9c3e8ab62c6,"Не. Апошні раз я бачыў яго, калі ён ішоў у музей. А цяпер там усё зачынілі.",
 #str_vo_nl_officerfiore_ch02la03_162_to_museums_ne_01,d5525262b810aa9c,"Той ёлупень, мусіць, нешта разбіў. Трэба пайсці знайсці яго, выцягнуць з бяды.",
 #str_vo_nl_officerdante_ch02la03_163_to_museums_ne_01,f287632793e12cf0,Трапіць туды можна толькі праз вайсковы лагер на плошчы. Але не спяшайся — пара ўдараў бізуном яму не зашкодзіць.,
-#str_vo_nl_indy_ch02la03_164_inside_museum_ne_01,628fb913cd6564b7,Што за ліха.,"What on Earth — «Што за ліха»: Індзі не лаецца моцна, тут толькі здзіўленне"
+#str_vo_nl_indy_ch02la03_164_inside_museum_ne_01,628fb913cd6564b7,Што за ліха.,"What on Earth — «Што за ліха»: Інды не лаецца моцна, тут толькі здзіўленне"
 #str_vo_nl_indy_ch02la03_164_inside_museum_qu_01,f7ec43c767aeb87d,Што за ліха...,
 #str_vo_nl_indy_ch02la03_165_should_follow_qu_01,09bac77b5cc01318,Чорт. Трэба выбірацца адсюль.,
 #str_vo_nl_indy_ch02la03_166_blackshirts_ne_01,8150196e1d439114,Яна ў вежы Борджыя.,
@@ -166,7 +166,7 @@ key,src_hash,bel,note
 #str_vo_nl_officerezio_ch02la03_180_additional_fascist_ne_01,0d02ee222f5bc85d,З ёй зараз Алесандра.,
 #str_vo_nl_officerluigi_ch02la03_181_additional_fascist_ne_01,9212ecd36c7194ff,Столькі аховы дзеля адной манашкі.,
 #str_vo_nl_officerezio_ch02la03_182_additional_fascist_ne_01,64c687b9d2bd2a5d,"Вентура не хоча, каб у вежы былі староннія, — раптам давядзецца прывесці на допыт яшчэ каго-небудзь з бузацёраў.",
-#str_vo_nl_indy_ch02la03_183_photo_two_qu_01,20291b9866a52c58,"Відаць, рамонт спынілі праз чарнакашулечнікаў.",
+#str_vo_nl_indy_ch02la03_183_photo_two_qu_01,20291b9866a52c58,"Відаць, рамонт спынілі праз чорнакашульнікаў.",
 #str_vo_nl_indy_ch02la03_185_blackshirt_letter_qu_01,766732b567ab7971,"Ого, ну і ўліп жа хлопец.",
 #str_vo_nl_gina_ch02la03_187_gina_note_ne_01,9712ba0f62f345b5,"Гэта запіска, якую я ёй дала.",
 #str_vo_nl_indy_ch02la03_188_gina_note_ne_01,b3644dcbfd0a0683,"Цікава, чаму яна яе выпусціла?",
@@ -182,7 +182,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch02la03_203_inside_museum_ne_01,e33108adfb52f6e9,"І ніякіх яе слядоў, так?",
 #str_vo_nl_gina_ch02la03_204_inside_museum_ne_01,51413d69ba7ecd5f,Пакуль нічога. Давай агледзімся.,
 #str_vo_nl_gina_ch02la03_205_inside_museum_qu_01,43cdc18e8c392e07,Нехта ідзе.,
-#str_vo_nl_gina_ch02la03_206_inside_museum_qu_01,8927142d798b29d6,Чарнакашулечнікі. Асцярожна.,
+#str_vo_nl_gina_ch02la03_206_inside_museum_qu_01,8927142d798b29d6,Чорнакашульнікі. Асцярожна.,
 #str_vo_nl_indy_ch02la03_207_inside_museum_qu_01,7e23f6476583e882,Можа дайсці да бойкі...,
 #str_vo_nl_gina_ch02la03_208_inside_museum_qu_01,ed78af89900a6b4b,Я гатовая.,
 #str_vo_nl_gina_ch02la03_209_inside_museum_qu_01,f35289007c369035,Я разбяруся з гэтым тыпам.,
@@ -214,7 +214,7 @@ key,src_hash,bel,note
 #str_vo_nl_gina_ch02la03_235_borgia_tower_ne_01,ad3bec03f45a85d8,"Можа, гэта ахвяры Борджыя.",
 #str_vo_nl_gina_ch02la03_240_borgia_tower_ne_01,473af8d1f1853fea,Асцярожна. Салдаты.,
 #str_vo_nl_gina_ch02la03_241_borgia_tower_ne_01,9ed88cb081ffd849,Сцеражыся вартавых.,
-#str_vo_nl_gina_ch02la03_242_exiting_chapel_ne_01,3e24345a2579998e,"Нам сюды, ойча.","Джына ў ролі манашкі пры людзях — «ойча», без займенніка; Father Gallagher — псеўданім Індзі, «айцец Галахер»"
+#str_vo_nl_gina_ch02la03_242_exiting_chapel_ne_01,3e24345a2579998e,"Нам сюды, ойча.","Джына ў ролі манашкі пры людзях — «ойча», без займенніка; Father Gallagher — псеўданім Інды, «айцец Галахер»"
 #str_vo_nl_gina_ch02la03_243_exiting_chapel_ne_01,dda69c4e9fbd475a,"Ідзём, айцец Галахер?",
 #str_vo_nl_gina_ch02la03_244_exiting_chapel_ne_01,70eefc9a5d8b95b9,Музей — у той бок.,
 #str_vo_nl_indy_ch02la03_245_pickup_letter_qu_01,d5d20aea3d6cfb9f,"Мусіць, выпала ў салдата з кішэні.",

@@ -89,7 +89,7 @@ key,src_hash,bel,note
 #str_vo_nl_gina_ch05se03_082_clearing_ne_01,c891c27cc6702c09,Мяне ад вас нудзіць![2.0],
 #str_vo_nl_voss_ch05se03_083_clearing_lo_01,9a5de8dab1a5ac14,"[0.7]А можа, каб зламаць яе волю,[3.6]мне дастаткова было пагражаць таму, што ёй вельмі дорага?[6.2]Напрыклад, сям’і![8.6]«Сям’я — гэта ўсё! Усё!»[14.5]",EN — экранаваныя двукоссі; у bel «ёлачкі» (ru таксама без іх)
 #str_vo_nl_voss_ch05se03_085_clearing_lo_01,e367d3f26be95ff5,Знайсці Джонса! Жыва!,
-#str_vo_nl_officerhans_ch05se03_086_escaping_water_ne_01,a08d6472b5aaada5,"Доктара Джонса нідзе няма, ^Iгер штурмбанфюрэр^I.",^IHerr Sturmbannführer^I → ^Iгер штурмбанфюрэр^I па AGENT_BRIEF (s18–s20 пакідалі лацінкай — звесці)
+#str_vo_nl_officerhans_ch05se03_086_escaping_water_ne_01,a08d6472b5aaada5,"Доктара Джонса нідзе няма, ^Iгер штурмбанфюрар^I.",^IHerr Sturmbannführer^I → ^Iгер штурмбанфюрар^I па AGENT_BRIEF (s18–s20 пакідалі лацінкай — звесці)
 #str_vo_nl_voss_ch05se03_087_escaping_water_ne_01,354851b97932b922,Вядзі жанчыну. Ён сам да нас прыйдзе.,
 #str_vo_nl_officerhans_ch05se03_088_escaping_water_ne_01,fdd70c2c480e1f0b,А як ён нас знойдзе?,
 #str_vo_nl_voss_ch05se03_089_escaping_water_ne_01,a03d77ad1662c374,"Ён ведае, куды мы едзем. Але... не ведае, што там.",
@@ -189,7 +189,7 @@ key,src_hash,bel,note
 #str_vo_nl_locus_ch05se03_175_protection_lo_01,3e8f5a7487ba0ffc,Праходзь!,
 #str_vo_nl_indy_ch05se03_176_open_temple_entrance_ne_01,38418e61380561a3,"Проста рабіце, як я скажу.",
 #str_vo_nl_gina_ch05se03_177_puzzle_ambient_one_ne_01,a378c0668eb76e88,Мы апярэдзім Фоса і дабудзем камень. Я ўпэўнена.,
-#str_vo_nl_indy_ch05se03_178_puzzle_ambient_one_ne_01,7c244e7c01d4927f,Куранят увосень лічаць.,жарт: прымаўка Don't count your chickens… → «Куранят увосень лічаць»; далей Джына і Індзі абыгрываюць «куранят»
+#str_vo_nl_indy_ch05se03_178_puzzle_ambient_one_ne_01,7c244e7c01d4927f,Куранят увосень лічаць.,жарт: прымаўка Don't count your chickens… → «Куранят увосень лічаць»; далей Джына і Інды абыгрываюць «куранят»
 #str_vo_nl_gina_ch05se03_179_puzzle_ambient_one_ne_01,a0fd8ae729421ae8,Га? Куранят?,
 #str_vo_nl_indy_ch05se03_180_puzzle_ambient_one_ne_01,063832603f89c539,"Ага. Куранят.[1]Пёркі, дзюбкі? Смачныя такія?",жарт: гл. _178 (куранят увосень лічаць)
 #str_vo_nl_gina_ch05se03_181_puzzle_ambient_one_ne_01,bded53685f4f07e1,"Я ведаю, што такое кураня, Джонс. Праехалі.",

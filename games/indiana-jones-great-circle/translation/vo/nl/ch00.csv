@@ -190,7 +190,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch00_125_satipo_dead_ne_01,57752a525cf8dab0,(ахае),
 #str_vo_nl_indy_ch00_126_boulder_chase_ne_01,0602174641933a41,"^IAdios^I, Саціпа.",
 #str_vo_nl_indy_ch00_126_crossing_chasm_two_ne_01,f5a0f303a9037e0f,"Adios, Саціпа.","Adios без ^I — лацінкай, як і ў 136: цытата"
-#str_vo_nl_marion_ch00_127_boulder_chase_ne_01,e19294a2bf5a6838,"Ты апантаны сваімі рэліквіямі, Індзі.",
+#str_vo_nl_marion_ch00_127_boulder_chase_ne_01,e19294a2bf5a6838,"Ты апантаны сваімі рэліквіямі, Інды.",
 #str_vo_nl_brody_ch00_128_chased_by_boulder_ne_01,763775091ecdaa63,Індыяна...[2.0],
 #str_vo_nl_brody_ch00_128_chased_by_boulder_ne_01_01.rts,6fac2ff318d278dc,Індыяна...,
 #str_vo_nl_marion_ch00_130_chased_by_boulder_ne_01,3392242f7c4ef051,Калі ўжо наша будучыня стане для цябе важнейшай за чужое мінулае?,
@@ -199,7 +199,7 @@ key,src_hash,bel,note
 #str_vo_nl_marion_ch00_132_end_of_tunnel_ne_01,02b6cde39e4eae5b,"Калі зноў паедзеш, мяне тут ужо не будзе...",
 #str_vo_nl_indy_ch00_133_death_lo_01,ea8892963c426f4a,\(панічна хапае паветра\),
 #str_vo_nl_indy_ch00_134_chased_by_boulder_ne_01,f85b2d6f6d63e571,Маракеш. Ён можа прадаць яго ў Маракешы.,Marrakesh — Маракеш (скл. у Маракешы)
-#str_vo_nl_marion_ch00_135_chased_by_boulder_ne_01,623a88e627349f88,"Толькі не зноў, Індзі.[3.0]",
+#str_vo_nl_marion_ch00_135_chased_by_boulder_ne_01,623a88e627349f88,"Толькі не зноў, Інды.[3.0]",
 #str_vo_nl_satipo_ch00_136_into_temple_lo_01,2888da0b6870bef2,А-а-а! Кажаны.,
 #str_vo_nl_satipo_ch00_137_spider_event_vq_01,b2bbbe457835682e,Здыміце іх з мяне!,
 #str_vo_nl_satipo_ch00_137_spider_event_vq_03,b2bbbe457835682e,Здыміце іх з мяне!,

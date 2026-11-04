@@ -30,7 +30,7 @@ key,src_hash,bel,note
 #str_vo_nl_gina_ch05se02_020_gate_parts_ne_01,4539024506a5f9ea,[0.5]Ой. Не варушыся.[3],
 #str_vo_nl_indy_ch05se02_021_gate_parts_ne_01,a6e3bc7942486ac7,Я і не варушуся!,
 #str_vo_nl_indy_ch05se02_022_gate_parts_ne_01,5222d787c66c1a30,Ну і вялікая была...[1.13],
-#str_vo_nl_gina_ch05se02_023_gate_parts_ne_01,37241cda4b5d7648,...змяя.[2.0],"Індзі пачынае, Джына канчае — род «вялікая» па «змяя»"
+#str_vo_nl_gina_ch05se02_023_gate_parts_ne_01,37241cda4b5d7648,...змяя.[2.0],"Інды пачынае, Джына канчае — род «вялікая» па «змяя»"
 #str_vo_nl_gina_ch05se02_024_gate_parts_ne_01,9b2fcfcf678fe90b,Джонс...[1.0],
 #str_vo_nl_gina_ch05se02_027_gate_parts_ne_01,d61259269b75dec9,А што гэта?,
 #str_vo_nl_indy_ch05se02_028_gate_parts_ne_01,5ef5dbc144280b8e,Ад гэтага месца ў мяне мурашкі па скуры.,"жарт: heebie-jeebies → «мурашкі па скуры»; Джына перапытвае «па чым?», а ў 096 блытае — «скура па мурашках» (jeebie-heebies)"
@@ -143,7 +143,7 @@ key,src_hash,bel,note
 #str_vo_nl_gina_ch05se02_121_back_to_boat_ne_01,facd7f64831ddb93,Ты спытаў Сунана?,
 #str_vo_nl_indy_ch05se02_122_back_to_boat_lo_01,f1c6a2c0624a86e0,"Спытаў — і, здаецца, камень у Ват Махатхаце.",
 #str_vo_nl_indy_ch05se02_122_back_to_boat_ne_01,f1c6a2c0624a86e0,"Спытаў — і, здаецца, камень у Ват Махатхаце.",
-#str_vo_nl_gina_ch05se02_123_back_to_boat_lo_01,fbf1fd609a9e1e8a,Ват... што?[0.4],"жарт: Wat / What — Джына перапытвае «Ват... што?», Індзі даканчвае назву"
+#str_vo_nl_gina_ch05se02_123_back_to_boat_lo_01,fbf1fd609a9e1e8a,Ват... што?[0.4],"жарт: Wat / What — Джына перапытвае «Ват... што?», Інды даканчвае назву"
 #str_vo_nl_gina_ch05se02_123_back_to_boat_ne_01,fbf1fd609a9e1e8a,Ват... што?[0.4],
 #str_vo_nl_indy_ch05se02_124_back_to_boat_lo_01,20db77f6fed4f9fb,"Махатхат, правільна.",жарт: гл. gina_…_123_back_to_boat (Ват... што?)
 #str_vo_nl_indy_ch05se02_124_back_to_boat_ne_01,20db77f6fed4f9fb,"Махатхат, правільна.",
@@ -187,8 +187,8 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch05se02_152_approach_pocket_two_ne_01,aab037fb1f04bcf0,[3.4]Гэта ж баявыя сланы...[5.6][6.5]Тут была бітва...,
 #str_vo_nl_indy_ch05se02_153_approach_pocket_three_ne_01,92f47ea35451b564,Госпадзе.[2.55]Ледзь пранесла...,
 #str_vo_nl_indy_ch05se02_154_climb_archive_ne_01,9d36ea58bc676f88,Ледзь-ледзь...,
-#str_vo_nl_indy_ch05se02_155_climb_archive_ne_01,b5a2d575dc9f1c69,"Ты зможаш, Індзі.",
-#str_vo_nl_indy_ch05se02_155_climb_archive_qu_01,ca5fa5f22c5df94c,"Ну давай. Ты зможаш, Індзі.",
+#str_vo_nl_indy_ch05se02_155_climb_archive_ne_01,b5a2d575dc9f1c69,"Ты зможаш, Інды.",
+#str_vo_nl_indy_ch05se02_155_climb_archive_qu_01,ca5fa5f22c5df94c,"Ну давай. Ты зможаш, Інды.",
 #str_vo_nl_indy_ch05se02_156_climb_archive_ne_01,9809cef5298690d5,Яшчэ крыху.,
 #str_vo_nl_indy_ch05se02_156_climb_archive_qu_01,9809cef5298690d5,Яшчэ крыху.,
 #str_vo_nl_indy_ch05se02_157_climb_archive_ne_01,7307c8d68d56ec8d,Гэта проста страшны сон. Інакш і быць не можа.,

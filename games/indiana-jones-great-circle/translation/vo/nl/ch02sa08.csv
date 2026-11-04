@@ -1,6 +1,6 @@
 key,src_hash,bel,note
 #str_vo_nl_indy_ch02sa08_001_gina_greets_indy_ne_01,f51bdf27595cdcce,Джына?,
-#str_vo_nl_gina_ch02sa08_002_gina_greets_indy_ne_01,8b7c37f784696d52,Заходзь!,"Індзі ↔ Джына — ты (STYLE), хоць ru на «вы»"
+#str_vo_nl_gina_ch02sa08_002_gina_greets_indy_ne_01,8b7c37f784696d52,Заходзь!,"Інды ↔ Джына — ты (STYLE), хоць ru на «вы»"
 #str_vo_nl_indy_ch02sa08_003_crime_scene_ne_01,3f36ab840ebfdc44,"Небяспечны вы народ, манашкі.",
 #str_vo_nl_gina_ch02sa08_004_crime_scene_ne_01,b7b96c027cbde64f,"Не хвалюйся, я яго не забівала. Я спрабавала спыніць кроў, але было ўжо позна.",
 #str_vo_nl_indy_ch02sa08_005_crime_scene_ne_01,7607f4a19b596167,Хто ён?,ru: радок выразаны з гульні — перакладзена па EN
@@ -14,7 +14,7 @@ key,src_hash,bel,note
 #str_vo_nl_gina_ch02sa08_012_crime_scene_ne_01,77248b224098d488,"Каб зрабіць тое, што ён зрабіў, трэба быць смелым чалавекам.",
 #str_vo_nl_officerfritz_ch02sa08_015_nazis_bang_door_ne_01,22979797c3c7ca23,Далёка ён уцячы не мог.,?: у ru — пазнака «выразана з гульні»; перакладзена ўсё роўна
 #str_vo_nl_gina_ch02sa08_016_taking_key_qu_01,ff1a631435a349dc,Запіхні яму ногі. Хутчэй.,рэмарка (whispers) выкінута
-#str_vo_nl_gina_ch02sa08_017_taking_key_qu_01,c6f6c535b84604e6,Такая маскіроўка спрацуе. Ты гатовы?,"рэмарка выкінута; Джына → Індзі на «ты» (STYLE), ru на «вы»"
+#str_vo_nl_gina_ch02sa08_017_taking_key_qu_01,c6f6c535b84604e6,Такая маскіроўка спрацуе. Ты гатовы?,"рэмарка выкінута; Джына → Інды на «ты» (STYLE), ru на «вы»"
 #str_vo_nl_gina_ch02sa08_018_taking_key_qu_01,acd01095709335a8,"Табе нельга паказвацца ім у гэтым адзенні. Хавайся, хутчэй.",
 #str_vo_nl_gina_ch02sa08_019_taking_key_qu_01,83adfb78cc1b35db,Хавайся. Пакуль яны не ўвайшлі.,
 #str_vo_nl_officerhans_ch02sa08_020_opening_door_priest_ne_01,00ecec651383ac05,"О... Э-э-э... Мы шукаем здрадніка, які ўцёк... Нейкага афіцэра Бёма.",

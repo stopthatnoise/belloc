@@ -118,7 +118,7 @@ key,src_hash,bel,note
 #str_vo_sl_sisterviolante_general_interact_indy_ch02se02_done_ne_02,64eead790fb6be0b,"Айцец Вентура сам не свой з таго часу, як прыехалі немцы.[3.55]Быццам ён чагосьці баіцца.",
 #str_vo_sl_sisterviolante_general_interact_indy_ch02se02_done_ne_03,3f57e6746a1a4557,"Вы адчулі, як нядаўна ўсё гуло і трэслася? Я ледзь не памерла са страху.",
 #str_vo_sl_sisterviolante_general_interact_indy_generic_ne_01,78be28350c060e98,"Мне падабаецца, як вы апранаецеся, спадару. Вельмі незвычайна.",
-#str_vo_sl_sisterviolante_general_interact_indy_generic_ne_02,dde1ac6912c0c2bb,"Не разумею, як сюды пусцілі чарнакашулечнікаў. Што яны задумалі?",
+#str_vo_sl_sisterviolante_general_interact_indy_generic_ne_02,dde1ac6912c0c2bb,"Не разумею, як сюды пусцілі чорнакашульнікаў. Што яны задумалі?",
 #str_vo_sl_sisterviolante_general_interact_indyblackshirt_ch02se02_done_ne_01,74efc31d15e12f63,"Той неверагодны дырыжабль, калі не памыляюся, нямецкі.",
 #str_vo_sl_sisterviolante_general_interact_indyblackshirt_ch02se02_done_ne_02,9bd662479ed5dbf0,"Салдат, гэты дырыжабль — сапраўдны цуд тэхнікі.",
 #str_vo_sl_sisterviolante_general_interact_indyblackshirt_generic_ne_01,b15da96078cd5743,"Мне няма чаго вам сказаць, салдат.",
@@ -126,7 +126,7 @@ key,src_hash,bel,note
 #str_vo_sl_sisterviolante_general_interact_indypriest_ch02se02_done_ne_01,64633bf923257577,Ойча. Тварэнне Божае сапраўды разнастайнае і дзіўнае. Гэты дырыжабль проста неверагодны.,
 #str_vo_sl_sisterviolante_general_interact_indypriest_ch02se02_done_ne_02,a0e647d80926bb64,"Ойча. Дзіву даешся, як далёка зайшлі чалавечыя вынаходствы.",
 #str_vo_sl_sisterviolante_general_interact_indypriest_generic_ne_01,8b6b00ed76ce399a,"Ах, ойча. Мяне аж злосць бярэ, калі чую, як салдацкія боты тупаюць па Святым горадзе.",
-#str_vo_sl_sisterviolante_general_interact_indypriest_generic_ne_02,071b8310c1d5455c,"Мне вельмі трывожна бачыць усіх гэтых чарнакашулечнікаў у Ватыкане, ойча.[3.91]Хоць бы яны ўсе проста пайшлі адсюль.",
+#str_vo_sl_sisterviolante_general_interact_indypriest_generic_ne_02,071b8310c1d5455c,"Мне вельмі трывожна бачыць усіх гэтых чорнакашульнікаў у Ватыкане, ойча.[3.91]Хоць бы яны ўсе проста пайшлі адсюль.",
 #str_vo_sl_sisterviolante_general_praying_sit_four_qu_01,b370aab7aff0bfa3,"
 Вось раба Гасподняя; хай станецца мне паводле слова твайго.",
 #str_vo_sl_sisterviolante_general_praying_sit_one_qu_01,1abfca06643fb9ef,"

@@ -15,12 +15,12 @@ key,src_hash,bel,note
 #str_vo_nl_satipo_ch00se01_151_satipo_waiting_floortrap_additional_ne_01,a64b297564d666f7,"Можа, забераце яго назад?",
 #str_vo_nl_indy_ch00se01_152_archaeology_book_qu_01,dba1417d153fd1b1,Любімая кніга Форэстала.,
 #str_vo_nl_indy_ch00se01_152_old_campsite_qu_01,9d05874ce7ef2bcb,Любімая кніга Форэстала. Ніколі з ёй не расставаўся.,
-#str_vo_nl_indy_ch00se01_153_chachapoyan_container_qu_01,44e880d3fdc49af8,"Грубы, карычневы, просты. Чачапояская работа.",Chachapoyan — «чачапояскі» (u09)
-#str_vo_nl_indy_ch00se01_153_old_campsite_qu_01,44e880d3fdc49af8,"Грубы, карычневы, просты. Чачапояская работа.",
+#str_vo_nl_indy_ch00se01_153_chachapoyan_container_qu_01,44e880d3fdc49af8,"Грубы, карычневы, просты. Чачапойская работа.",Chachapoyan — «чачапойскі» (u09)
+#str_vo_nl_indy_ch00se01_153_old_campsite_qu_01,44e880d3fdc49af8,"Грубы, карычневы, просты. Чачапойская работа.",
 #str_vo_nl_indy_ch00se01_154_old_campsite_qu_01,189d6818759b2071,"Рэшткі вартавой заставы.[2.34][3.14]Храм, мусіць, недзе побач.",
 #str_vo_nl_indy_ch00se01_155_cave_snake_ne_01,2ce7a338bcc5c9fc,"А, тут проста змяя.[3.8]Пара ісці далей.",
 #str_vo_nl_indy_ch00se01_156_cave_snake_ne_01,1b60e11291e4bd54,"[2.09]Так, усяго толькі змяя...[5.19]Нічога цікавага.",
-#str_vo_nl_indy_ch00se01_157_cave_snake_ne_01,b5a90bcf6c61d291,[2.24]Спакойна. Проста змяя —[3.88][4.45]і ўсё.,Індзі супакойвае сябе: змей ён не любіць
+#str_vo_nl_indy_ch00se01_157_cave_snake_ne_01,b5a90bcf6c61d291,[2.24]Спакойна. Проста змяя —[3.88][4.45]і ўсё.,Інды супакойвае сябе: змей ён не любіць
 #str_vo_nl_indy_ch00se01_158_chachapoyan_vase_qu_01,db2f98d22cde405b,За вадаспад заўсёды варта зазірнуць.,
 #str_vo_nl_indy_ch00se01_159_mace_head_qu_01,219d6849eb64a851,Тут была бітва.,
 #str_vo_nl_barranca_ch00se01_160_old_campsite_qu_01,b8bae58606cab61b,Тс-с-с....,
@@ -53,7 +53,7 @@ key,src_hash,bel,note
 #str_vo_nl_satipo_ch00se01_190_satipo_activate_ne_01,d35083c931ac17bc,Хадземце.,
 #str_vo_nl_satipo_ch00se01_191_satipo_activate_ne_01,6a629fe795ac84d7,Што цяпер?,
 #str_vo_nl_satipo_ch00se01_192_satipo_activate_ne_01,a7186ae16dd18240,Сеньёр?,
-#str_vo_nl_indy_ch00se01_193_chachapoyan_vase_qu_01,9c0dd9b6f612b36d,"Ці то ваза, ці то збан. Відавочна, чачапояскі.",
+#str_vo_nl_indy_ch00se01_193_chachapoyan_vase_qu_01,9c0dd9b6f612b36d,"Ці то ваза, ці то збан. Відавочна, чачапойскі.",
 #str_vo_nl_marion_ch00se01_194_end_of_tunnel_ne_01,2c81dbc8207006d6,"[0.2]Ты ўжо не той, каго я ведала дзесяць гадоў таму.[2.2]",
 #str_vo_nl_marion_ch00se01_195_end_of_tunnel_ne_01,a33255800c1bd6c9,"[0.5]Ты хоць ведаеш, што ты зрабіў са мной, з маім жыццём?[2.5]",
 #str_vo_nl_marion_ch00se01_196_end_of_tunnel_ne_01,fee6133f4b226739,[0.7]За гэтыя дзесяць гадоў я навучылася цябе ненавідзець![2.7],

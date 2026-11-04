@@ -1,5 +1,5 @@
 key,src_hash,bel,note
-#str_vo_nl_indy_ch03se03_001_learning_adamic_ne_01,5a840c66ab8de1c0,"Ну што ж, доктар Ламбардзі. Можа, хоць вы праліце на гэта святло.[4.3]Калі гэтая мова сапраўды аснова ўсіх іншых моў,[9.2]то выходзіць...[11.4][15.9]што гэта...[18.0]","Індзі звяртаецца да Лаўры праз яе дзённік — «вы», як s06"
+#str_vo_nl_indy_ch03se03_001_learning_adamic_ne_01,5a840c66ab8de1c0,"Ну што ж, доктар Ламбардзі. Можа, хоць вы праліце на гэта святло.[4.3]Калі гэтая мова сапраўды аснова ўсіх іншых моў,[9.2]то выходзіць...[11.4][15.9]што гэта...[18.0]","Інды звяртаецца да Лаўры праз яе дзённік — «вы», як s06"
 #str_vo_nl_locus_ch03se03_002_learning_adamic_qu_01,a308575e8b5c25ca,[],
 #str_vo_nl_indy_ch03se03_003_learning_adamic_qu_01,aaee9f413f3f1784,«^IAthon^I»...,
 #str_vo_nl_indy_ch03se03_004_learning_adamic_qu_01,e7409043c9132f98,Гасподзь...[2.0][2.8]э-э...[4.8],Athon = «Гасподзь»
@@ -66,11 +66,11 @@ key,src_hash,bel,note
 #str_vo_nl_voss_ch03se03_058_buried_in_sand_ne_01,1b83a6fb40d03ae6,[],нямецкая лаянка ў ^I — лацінкай (STYLE)
 #str_vo_nl_voss_ch03se03_060_buried_in_sand_ne_01,94bb288a8b1be1b9,"Ох, доктар Джонс. У вас на ўсё адзін адказ — гвалт, так?",
 #str_vo_nl_voss_ch03se03_062_farewell_gift_ne_01,ad9f000be694d1d2,Дзе яны?,
-#str_vo_nl_officerhans_ch03se03_063_farewell_gift_ne_01,0fd8b41dc70244f9,"У Гімалаях, ^Iгер штурмбанфюрэр^I.","^IHerr Sturmbannführer^I — нямецкае ў ^I лацінкай, як ^IOberst^I (s11)"
+#str_vo_nl_officerhans_ch03se03_063_farewell_gift_ne_01,0fd8b41dc70244f9,"У Гімалаях, ^Iгер штурмбанфюрар^I.","^IHerr Sturmbannführer^I — нямецкае ў ^I лацінкай, як ^IOberst^I (s11)"
 #str_vo_nl_voss_ch03se03_064_farewell_gift_ne_01,3c15f8f7aac043d5,У Гімалаях? У гэтую пару года там цяжкае ўзыходжанне.,
-#str_vo_nl_gantz_ch03se03_065_farewell_gift_ne_01,af0f516ec3b78b56,"Дазвольце мне пайсці добраахвотнікам, ^Iгер штурмбанфюрэр^I.",?: у EN абдрукоўка «Stummbannführer» — выпраўлена на Sturmbannführer
+#str_vo_nl_gantz_ch03se03_065_farewell_gift_ne_01,af0f516ec3b78b56,"Дазвольце мне пайсці добраахвотнікам, ^Iгер штурмбанфюрар^I.",?: у EN абдрукоўка «Stummbannführer» — выпраўлена на Sturmbannführer
 #str_vo_nl_voss_ch03se03_066_farewell_gift_ne_01,f38792ee19762fd5,"Божа барані, ^Iоберст^I, што вы... Я не стану рызыкаваць сваім самым каштоўным чалавекам у такой небяспечнай місіі.[5.4]",Фос да Ганца — з іроніяй (жадае пазбавіцца)
-#str_vo_nl_gantz_ch03se03_067_farewell_gift_ne_01,b4319f7ceaec3949,"Для мяне будзе гонарам здабыць яшчэ адну слаўную перамогу для Айчыны, ^Iгер штурмбанфюрэр^I.",
+#str_vo_nl_gantz_ch03se03_067_farewell_gift_ne_01,b4319f7ceaec3949,"Для мяне будзе гонарам здабыць яшчэ адну слаўную перамогу для Айчыны, ^Iгер штурмбанфюрар^I.",
 #str_vo_nl_voss_ch03se03_069_farewell_gift_ne_01,7023c70c8f8ba0fc,"Нам жа не трэба, каб вы абгарэлі на сонцы. Праўда, доктар Джонс?",
 #str_vo_nl_indy_ch03se03_074_farewell_gift_ne_01,b7f171afa1a90926,О не...,
 #str_vo_nl_gina_ch03se03_075_nawal_and_gina_rescue_lo_01,40af653e14fdb7b7,[2.0]Доктар Джонс! [2.8],
@@ -99,13 +99,13 @@ key,src_hash,bel,note
 #str_vo_nl_nawal_ch03se03_094_out_sand_grave_ne_01,2861d232f5cf4ee2,"[0.2]Сябры мае, а ці не прапанаваць вам імклівае падарожжа на «Пунсовай страле»? [5.9]",The Scarlet Arrow — «Пунсовая страла» (u08)
 #str_vo_nl_nazischorus_ch03se03_096_buried_in_sand_ne_01,7ceab6814a10e380,\(смяюцца\),
 #str_vo_nl_voss_ch03se03_097_buried_in_sand_qu_01,9926e79a5dbda68c,Я гуляў з вамі.,"працяг s19 voss_054 («пакуль вы гулялі ў сваю гульню…») — «гуляць з кім» = забаўляцца, як кот з мышшу"
-#str_vo_nl_voss_ch03se03_098_farewell_gift_ne_01,bd18c59cec3ab359,"Што ж, калі вы настойваеце... Але памятайце, ^Iоберст^I: вашым поспехам будзе захапляцца не толькі я, але і сам ^Iфюрэр^I.",
+#str_vo_nl_voss_ch03se03_098_farewell_gift_ne_01,bd18c59cec3ab359,"Што ж, калі вы настойваеце... Але памятайце, ^Iоберст^I: вашым поспехам будзе захапляцца не толькі я, але і сам ^Iфюрар^I.",
 #str_vo_nl_gantz_ch03se03_099_farewell_gift_lo_01,1130bdad4f6805e4,Ёсць. ^IHeil Hitler^I!,
 #str_vo_nl_gantz_ch03se03_099_farewell_gift_ne_01,e2f472b28ced7cb6,Ёсць. Heil Hitler!,
 #str_vo_nl_voss_ch03se03_100_farewell_gift_ne_01,fd0599de5eca90c1,"Ты ўважліва сочыш, Бергман? Трохі спрэчкі, трохі пахвалы — і няўпэўнены ў сабе мужчына сам прысягне табе ў вечнай вернасці.[11.8]",
 #str_vo_nl_voss_ch03se03_101_buried_in_sand_ne_01,76c921b8011351e0,Грэецеся на сонейку?[2.0],
 #str_vo_nl_nawal_ch03se03_102_out_sand_grave_ne_01,dd11e205c4119598,[0.3]Амар прынёс мне вось гэта.[2.3],
-#str_vo_nl_indy_ch03se03_103_last_words_ne_01,6bec136cb1d603bb,Ты ішоў за мной аж сюды.[2.15]Навошта?,"?: здаецца, Індзі — да волата (ru «пришёл» — м. р.)"
+#str_vo_nl_indy_ch03se03_103_last_words_ne_01,6bec136cb1d603bb,Ты ішоў за мной аж сюды.[2.15]Навошта?,"?: здаецца, Інды — да волата (ru «пришёл» — м. р.)"
 #str_vo_nl_indy_ch03se03_105_out_sand_grave_ne_01,e0a7158262fb2246,[1.3]Каб перакласці адамаў надпіс на камені.[3.8],
 #str_vo_nl_indy_ch03se03_106_out_sand_grave_ne_01,c8344a7c8e3bcffc,"[0.2]Туды, куды Фос пасылае ўсіх сваіх людзей.",
 #str_vo_nl_gina_ch03se03_107_out_sand_grave_ne_01,aa95f98895f78145,І я запісала дакладныя каардынаты.,
@@ -293,7 +293,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch03se03_263_sandfall_gameplay_ne_01,0406d998b9b8fe94,Дзе выхад?,
 #str_vo_nl_indy_ch03se03_264_sandfall_gameplay_lo_01,478235c83af922ff,Люк!,
 #str_vo_nl_indy_ch03se03_265_sandfall_gameplay_lo_01,b8c16522f68ad97e,Нарэшце!,
-#str_vo_nl_officerhans_ch03se03_266_farewell_gift_ne_01,32d3791f91bdd204,"^Iгер штурмбанфюрэр^I, нарэшце злавілі сігнал бяды ад зніклага экіпажа.",
+#str_vo_nl_officerhans_ch03se03_266_farewell_gift_ne_01,32d3791f91bdd204,"^Iгер штурмбанфюрар^I, нарэшце злавілі сігнал бяды ад зніклага экіпажа.",
 #str_vo_nl_indy_ch03se03_267_dream_stele_qu_01,81cb5a93b6fe2ec4,Стэла сну... Быццам зазіраеш у мінулае.,
 #str_vo_nl_indy_ch03se03_268_decrypt_stele_qu_01,847788d32f027530,Нейкім чынам татуіроўка таго волата — ключ да Стэлы сну...,
 #str_vo_nl_indy_ch03se03_269_decrypt_stele_qu_01,18ecf448a029e12a,Вось. Сімвал з татуіроўкі...[2.7]Што тут яшчэ?,

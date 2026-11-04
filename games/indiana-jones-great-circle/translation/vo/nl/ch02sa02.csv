@@ -1,6 +1,6 @@
 key,src_hash,bel,note
-#str_vo_nl_antonio_ch02sa02_001_antonios_office_ne_01,06b996f3b0118046,"Індзі, можа, у бібліятэцы знойдуцца кнігі пра гэтых «заняпалых анёлаў». Вось, вазьмі каталожную картку.",
-#str_vo_nl_antonio_ch02sa02_002_antonios_office_ne_01,391922fec5d0cc4b,"Паглядзі на картку, Індзі. Думаю, яна табе спатрэбіцца.",
+#str_vo_nl_antonio_ch02sa02_001_antonios_office_ne_01,06b996f3b0118046,"Інды, можа, у бібліятэцы знойдуцца кнігі пра гэтых «заняпалых анёлаў». Вось, вазьмі каталожную картку.",
+#str_vo_nl_antonio_ch02sa02_002_antonios_office_ne_01,391922fec5d0cc4b,"Паглядзі на картку, Інды. Думаю, яна табе спатрэбіцца.",
 #str_vo_nl_antonio_ch02sa02_003_antonios_office_ne_01,2eb37dc8bcc78289,"Ну ж, мой сябар. Бяры.",
 #str_vo_nl_indy_ch02sa02_004_researching_books_qu_01,cb78ec1075f5f641,"«...іншыя сцвярджаюць, што Вялікае вяртанне было справай, якую Святы Пасад даручыў заняпалым анёлам, і тыя шукалі святыя пасудзіны па ўсім свеце...»?",«?» пасля цытаты — як у EN
 #str_vo_nl_indy_ch02sa02_005_researching_books_qu_01,ec16e6697ff4b8d3,"«...і Вялікае вяртанне шукала тое, што паходзіла ад Божага пісара...»",
@@ -17,7 +17,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch02sa02_016_finding_door_ne_01,fdc0cb99cf0cad4d,Раз...,
 #str_vo_nl_indy_ch02sa02_017_finding_door_ne_01,093fd7b3437d6e67,Два...,
 #str_vo_nl_indy_ch02sa02_018_finding_door_ne_01,23d0e296fcf0a2f0,Тры...,
-#str_vo_nl_antonio_ch02sa02_019_returning_office_ne_01,16c2cb187dc9f4e2,"Ну што, знайшоў тую зніклую кнігу, Індзі?",
+#str_vo_nl_antonio_ch02sa02_019_returning_office_ne_01,16c2cb187dc9f4e2,"Ну што, знайшоў тую зніклую кнігу, Інды?",
 #str_vo_nl_indy_ch02sa02_020_returning_office_ne_01,3efc87601a9f16f9,Яе проста забыліся вярнуць.,
 #str_vo_nl_antonio_ch02sa02_021_returning_office_ne_01,0897145c2b95bd12,"Такое бывае ўвесь час, нават у Ватыкане.",
 #str_vo_nl_indy_ch02sa02_022_antonios_office_ne_01,458172c3e201cab7,"Кнігі пра заняпалых анёлаў, значыць?",

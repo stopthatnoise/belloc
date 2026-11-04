@@ -8,11 +8,11 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ga_063_draining_supply_ne_01,b4e153a7d8cfa5db,[2.0]У вас усё ў парадку?,
 #str_vo_nl_valeria_ga_064_draining_supply_ne_01,0f80feb3ee4b577b,Усё ў парадку?[1.3]А вы самі не хочаце паспрабаваць трымаць аптэку без лекаў?,
 #str_vo_nl_indy_ga_065_draining_supply_ne_01,bda7c73ad2355dd2,"Я, бадай, адмоўлюся.",
-#str_vo_nl_valeria_ga_066_draining_supply_ne_01,82a1dc8126e60315,"Дык вось, не ўсё ў парадку.[2.4]Калі ў вас інфекцыя, ідзіце да чарнакашулечнікаў.[4.9]Чалавек у чорным аддаў ім увесь наш запас лекаў.[8.0]Паскуднік.",
+#str_vo_nl_valeria_ga_066_draining_supply_ne_01,82a1dc8126e60315,"Дык вось, не ўсё ў парадку.[2.4]Калі ў вас інфекцыя, ідзіце да чорнакашульнікаў.[4.9]Чалавек у чорным аддаў ім увесь наш запас лекаў.[8.0]Паскуднік.",
 #str_vo_nl_indy_ga_067_draining_supply_ne_01,7316dfc7caedc153,"Вентура, значыць?[1.8]У гэтага чалавека тут, відаць, кепская слава.[4.6]",
 #str_vo_nl_valeria_ga_068_draining_supply_ne_01,24a808f793b75f61,"А чаго вы хочаце, калі ён так глыбока залез Мусаліні ў...",абарваны намёк (…up Mussolini's) — «залез Мусаліні ў…»
 #str_vo_nl_valeria_ga_070_draining_supply_ne_01,cde846baa57f7146,Кыш! Пайшоў адсюль. Чортаў кот.,
-#str_vo_nl_valeria_ga_071_draining_supply_ne_01,3613efb4984fb9f4,"Калі вам...[2.0][4.4]трапяцца нейкія лекі, нясіце іх сюды.[7.7]Чарнакашулечнікі і не заўважаць, што знікла пара флаконаў.",
+#str_vo_nl_valeria_ga_071_draining_supply_ne_01,3613efb4984fb9f4,"Калі вам...[2.0][4.4]трапяцца нейкія лекі, нясіце іх сюды.[7.7]Чорнакашульнікі і не заўважаць, што знікла пара флаконаў.",
 #str_vo_nl_indy_ga_072_giving_valeria_ne_01,4caa1a57797e4dc5,"Ну, так склалася, што ў мяне якраз ёсць.",
 #str_vo_nl_valeria_ga_073_giving_valeria_ne_01,2ecf8dc23977d089,Хм. Добра.[2.03]Знойдзеце яшчэ — прыходзьце.,
 #str_vo_nl_indy_ga_074_giving_valeria_ne_01,8960b205b0469d88,[],
@@ -46,8 +46,8 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ga_102_photo_ops_qu_01,bb2e45a63c58a7e8,А ў мяне ўсё лепей атрымліваецца з гэтым фатаграфаваннем.,
 #str_vo_nl_indy_ga_103_photo_ops_qu_01,00725ef7f2280090,Я гэта памятаю.,
 #str_vo_nl_indy_ga_104_photo_ops_qu_01,c94585881a27abc9,Прыгожы малюнак.,
-#str_vo_nl_antonio_ga_105_memories_ne_01,4cdb51869f315d46,"Я і забыўся пра гэты здымак. Пакінь яго сабе, Індзі. Раптам Вентура зноў прыйдзе з праверкай.",
-#str_vo_nl_antonio_ga_105_memories_qu_01,a020272fed8b309f,"Я і забыўся пра гэты здымак.[1.98]Пакінь яго сабе, Індзі. Раптам Вентура зноў прыйдзе з праверкай.",
+#str_vo_nl_antonio_ga_105_memories_ne_01,4cdb51869f315d46,"Я і забыўся пра гэты здымак. Пакінь яго сабе, Інды. Раптам Вентура зноў прыйдзе з праверкай.",
+#str_vo_nl_antonio_ga_105_memories_qu_01,a020272fed8b309f,"Я і забыўся пра гэты здымак.[1.98]Пакінь яго сабе, Інды. Раптам Вентура зноў прыйдзе з праверкай.",
 #str_vo_nl_indy_ga_106_memories_ne_01,d287e9467391613f,"Дамовіліся, Антоніа.",
 #str_vo_nl_indy_ga_106_memories_qu_01,d287e9467391613f,"Дамовіліся, Антоніа.",
 #str_vo_nl_kafour_ga_112_kafour_greets_ne_01,8c6212be230a9f70,"Медычная палатка — толькі для рабочых з раскопак, сэр.[3.65]Для турыстаў у горадзе ёсць лепшыя лякарні.",
@@ -293,7 +293,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ga_319_gina_cat_ne_01,c99521d683a59999,"Ну, яны не сабакі, але характар у іх мне падабаецца.",
 #str_vo_nl_gina_ga_320_gina_cat_lo_01,b702b674fc5bcbac,"Ага, перад Ватыканам я пакінула свайго ката ў сяброўкі Элаізы.[3.8][4.8]Не ведаю, ці пабачу яго яшчэ.",Eloisa — Элаіза (s13)
 #str_vo_nl_gina_ga_320_gina_cat_ne_01,b702b674fc5bcbac,"Ага, перад Ватыканам я пакінула свайго ката ў сяброўкі Элаізы.[3.8][4.8]Не ведаю, ці пабачу яго яшчэ.",
-#str_vo_nl_indy_ga_321_gina_cat_lo_01,b7d45a53a068a7c9,Прарвёмся. У гэтага панурага ката яшчэ засталося некалькі жыццяў.,?: sour cat — хутчэй Індзі пра сябе (ru — пра ката Джыны); пакінута двухсэнсоўна
+#str_vo_nl_indy_ga_321_gina_cat_lo_01,b7d45a53a068a7c9,Прарвёмся. У гэтага панурага ката яшчэ засталося некалькі жыццяў.,?: sour cat — хутчэй Інды пра сябе (ru — пра ката Джыны); пакінута двухсэнсоўна
 #str_vo_nl_indy_ga_321_gina_cat_ne_01,b7d45a53a068a7c9,Прарвёмся. У гэтага панурага ката яшчэ засталося некалькі жыццяў.,
 #str_vo_nl_gina_ga_322_snake_lo_01,6c3888c8b40af9e2,"Я не ведала, што змеі бываюць такія вялізныя. А ты?",
 #str_vo_nl_gina_ga_322_snake_ne_01,6c3888c8b40af9e2,"Я не ведала, што змеі бываюць такія вялізныя. А ты?",
@@ -409,8 +409,8 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ga_384_pu_antibiotics_vatican_qu_01,738f82fb44a9baf1,Валерыі гэта спатрэбіцца.,
 #str_vo_nl_indy_ga_385_pu_antibiotics_vatican_ne_01,78416be57a069657,Яшчэ антыбіётыкі для Валерыі.,"antibiotics — антыбіётыкі, medicine — лекі (EN адрознівае, ru не)"
 #str_vo_nl_indy_ga_385_pu_antibiotics_vatican_qu_01,6da7b04a6372e650,Яшчэ лекі для Валерыі.,
-#str_vo_nl_indy_ga_386_pu_antibiotics_vatican_ne_01,6d1a6a7a4f4391a9,"Вентура аддаў гэта чарнакашулечнікам. Ні сораму, ні сумлення.",
-#str_vo_nl_indy_ga_386_pu_antibiotics_vatican_qu_01,b5f2bc51453bb964,"Вентура аддаў гэта чарнакашулечнікам.[2.7]Ні сораму, ні сумлення.",
+#str_vo_nl_indy_ga_386_pu_antibiotics_vatican_ne_01,6d1a6a7a4f4391a9,"Вентура аддаў гэта чорнакашульнікам. Ні сораму, ні сумлення.",
+#str_vo_nl_indy_ga_386_pu_antibiotics_vatican_qu_01,b5f2bc51453bb964,"Вентура аддаў гэта чорнакашульнікам.[2.7]Ні сораму, ні сумлення.",
 #str_vo_nl_indy_ga_387_pu_antibiotics_vatican_ne_01,a4b3bcaa06bac642,Адным флаконам менш для слаўных хлопцаў Мусаліні.,
 #str_vo_nl_indy_ga_387_pu_antibiotics_vatican_qu_01,a4b3bcaa06bac642,Адным флаконам менш для слаўных хлопцаў Мусаліні.,
 #str_vo_nl_indy_ga_388_pu_antibiotics_vatican_ne_01,47a77ebd33b109db,Валерыя ўзрадуецца.,
@@ -490,15 +490,15 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ga_425_zeppelin_vatican_qu_01,e4722e85adfb609b,"Не сказаць, каб непрыкметна.",
 #str_vo_nl_indy_ga_426_fascist_propaganda_ne_01,697aa4da58cf7319,Прапаганда ў Ватыкане. Што сказаў бы папа Рыгор XV?,Gregory — Рыгор
 #str_vo_nl_indy_ga_426_fascist_propaganda_qu_01,6348628c034d05ec,[0.65]Прапаганда ў Ватыкане.[3.48]Што сказаў бы папа Рыгор XV?,
-#str_vo_nl_indy_ga_427_belvedere_above_ne_01,17e519ef096c09a6,Бельведэрскі двор. Адсюль чарнакашулечнікі зусім малюсенькія.,
-#str_vo_nl_indy_ga_427_belvedere_above_qu_01,8988c3b024625280,Адсюль чарнакашулечнікі зусім малюсенькія.,
+#str_vo_nl_indy_ga_427_belvedere_above_ne_01,17e519ef096c09a6,Бельведэрскі двор. Адсюль чорнакашульнікі зусім малюсенькія.,
+#str_vo_nl_indy_ga_427_belvedere_above_qu_01,8988c3b024625280,Адсюль чорнакашульнікі зусім малюсенькія.,
 #str_vo_nl_indy_ga_428_inside_borgia_ne_01,831064295c79b1aa,Колькі ж тут прыступак.,
 #str_vo_nl_indy_ga_428_inside_borgia_qu_01,831064295c79b1aa,Колькі ж тут прыступак.,
 #str_vo_nl_indy_ga_429_fountain_confession_ne_01,8ffba0d749cf18cd,Таямнічы Фантан Пакаяння.,
 #str_vo_nl_indy_ga_429_fountain_confession_qu_01,f51668291f2f3fb9,[0.45]Таямнічы Фантан Пакаяння.,
-#str_vo_nl_indy_ga_430_dig_above_ne_01,1bf4b6b499007e0b,"Дык чарнакашулечнікі думаюць, што могуць рабіць маю працу?",
-#str_vo_nl_indy_ga_430_dig_site_qu_01,1bf4b6b499007e0b,"Дык чарнакашулечнікі думаюць, што могуць рабіць маю працу?",
-#str_vo_nl_indy_ga_430_photo_three_qu_01,1bf4b6b499007e0b,"Дык чарнакашулечнікі думаюць, што могуць рабіць маю працу?",
+#str_vo_nl_indy_ga_430_dig_above_ne_01,1bf4b6b499007e0b,"Дык чорнакашульнікі думаюць, што могуць рабіць маю працу?",
+#str_vo_nl_indy_ga_430_dig_site_qu_01,1bf4b6b499007e0b,"Дык чорнакашульнікі думаюць, што могуць рабіць маю працу?",
+#str_vo_nl_indy_ga_430_photo_three_qu_01,1bf4b6b499007e0b,"Дык чорнакашульнікі думаюць, што могуць рабіць маю працу?",
 #str_vo_nl_indy_ga_431_bulldozer_crash_ne_01,a71e8aa49eaf8351,"Спадзяюся, з кіроўцам усё добра. У яго быў добры твар.",
 #str_vo_nl_indy_ga_431_bulldozer_crash_qu_01,e7d6dc904aaa8e93,"Спадзяюся, з кіроўцам усё добра.[2.12]У яго быў добры твар.",
 #str_vo_nl_indy_ga_432_chapel_fresco_qu_01,2ecfed27831f4e64,Найвялікшы твор Мікеланджэла.,
@@ -520,8 +520,8 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ga_439_ernesto_qu_01,4354c3a643f74a50,Адзін з «сяброў» Антоніа.,
 #str_vo_nl_indy_ga_440_fight_club_ne_01,826794d64b6d6155,Нейкія маленькія злыя чалавечкі.,
 #str_vo_nl_indy_ga_440_fight_club_qu_01,2a7c505b280c0e18,Проста купка маленькіх злых чалавечкаў.,
-#str_vo_nl_indy_ga_441_casina_ne_01,595677e04b5db146,Казіна Пія IV. Кішыць чарнакашулечнікамі.,
-#str_vo_nl_indy_ga_441_casina_qu_01,05be0c07aafce1a2,Казіна Пія IV... кішыць чарнакашулечнікамі.,
+#str_vo_nl_indy_ga_441_casina_ne_01,595677e04b5db146,Казіна Пія IV. Кішыць чорнакашульнікамі.,
+#str_vo_nl_indy_ga_441_casina_qu_01,05be0c07aafce1a2,Казіна Пія IV... кішыць чорнакашульнікамі.,
 #str_vo_nl_indy_ga_442_reveal_shot_ne_01,61c512c6544bc553,Мне ніколі не надакучыць на іх глядзець.,
 #str_vo_nl_indy_ga_442_reveal_shot_qu_01,61c512c6544bc553,Мне ніколі не надакучыць на іх глядзець.,
 #str_vo_nl_indy_ga_443_nawal_snake_ne_01,dfb7b95842c0c0d0,Асірыс. Уладар мёртвых. Чароўна.,Osiris — змей Наваль (s17: Асірыс)
@@ -532,7 +532,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ga_445_sphinx_qu_01,45e2ba0b2ceb71a6,Якія загадкі ты хаваеш?,
 #str_vo_nl_indy_ga_446_khentkawes_ruins_ne_01,2d9d81d42ba21351,Фос пераварочвае тут кожны камень.,
 #str_vo_nl_indy_ga_446_khentkawes_ruins_qu_01,2d9d81d42ba21351,Фос пераварочвае тут кожны камень.,
-#str_vo_nl_indy_ga_447_omar_ne_01,746472bf6ebc70f0,"Прафесар Амар. А я думаў, вы да свайго стала прыкаваныя.",Індзі ↔ Амар — «вы» (s10)
+#str_vo_nl_indy_ga_447_omar_ne_01,746472bf6ebc70f0,"Прафесар Амар. А я думаў, вы да свайго стала прыкаваныя.",Інды ↔ Амар — «вы» (s10)
 #str_vo_nl_indy_ga_447_omar_qu_01,1ee4435c63c0efca,"Прафесар Амар.[1.67]А я думаў, вы да свайго стала прыкаваныя.",
 #str_vo_nl_indy_ga_448_khentkawes_pyramids_ne_01,c04224f04d234d03,"Цудоўны від, які сапсавалі нацысты.",
 #str_vo_nl_indy_ga_448_khentkawes_pyramids_qu_01,0f7722a451942788,"Цудоўны від, сапсаваны нацыстамі.",
@@ -872,7 +872,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ga_686_rid_of_fascists_ne_01,d8edaaa7842849b8,"Бо я ведаю, як думаюць такія, як ён.",
 #str_vo_nl_indy_ga_687_jerky_lo_01,c12a0b6b5a07806e,Дзякуй. Сам рабіў.,
 #str_vo_nl_indy_ga_687_jerky_ne_01,c12a0b6b5a07806e,Дзякуй. Сам рабіў.,
-#str_vo_nl_gina_ga_688_jerky_lo_01,ef6675068f533409,"О. Ты любіш гатаваць, прафесар?",Індзі ↔ Джына на «ты»; «прафесар» — зварот
+#str_vo_nl_gina_ga_688_jerky_lo_01,ef6675068f533409,"О. Ты любіш гатаваць, прафесар?",Інды ↔ Джына на «ты»; «прафесар» — зварот
 #str_vo_nl_gina_ga_688_jerky_ne_01,ef6675068f533409,"О. Ты любіш гатаваць, прафесар?",
 #str_vo_nl_indy_ga_689_jerky_lo_01,bab9beb69d487e0d,"Паесці люблю, а вось гатаваць няма калі.",
 #str_vo_nl_indy_ga_689_jerky_ne_01,64930c4706f3bc6e,Паесці я люблю. А вось гатаваць няма калі.,
@@ -884,7 +884,7 @@ key,src_hash,bel,note
 #str_vo_nl_gina_ga_692_many_stones_ne_01,8c470e5c8ee2deab,Гэта добра.,
 #str_vo_nl_gina_ga_693_boat_driving_lo_01,cd80ebf99fa42cf0,"А, зразумела.",
 #str_vo_nl_gina_ga_693_boat_driving_ne_01,cd80ebf99fa42cf0,"А, зразумела.",
-#str_vo_nl_gina_ga_694_gina_cat_lo_01,ed65874986ebb75d,"Ну так, гэта відаць.[1.4]Упартыя, любяць блукаць, незалежныя,[4.18]а часам вельмі буркатлівыя.","Джына пра катоў (і з намёкам на Індзі); sour — «буркатлівыя», каб падыходзіла і да чалавека; ?: s36 ga_321 «sour cat» — звесці"
+#str_vo_nl_gina_ga_694_gina_cat_lo_01,ed65874986ebb75d,"Ну так, гэта відаць.[1.4]Упартыя, любяць блукаць, незалежныя,[4.18]а часам вельмі буркатлівыя.","Джына пра катоў (і з намёкам на Інды); sour — «буркатлівыя», каб падыходзіла і да чалавека; ?: s36 ga_321 «sour cat» — звесці"
 #str_vo_nl_gina_ga_694_gina_cat_ne_01,ed65874986ebb75d,"Ну так, гэта відаць.[1.4]Упартыя, любяць блукаць, незалежныя,[4.18]а часам вельмі буркатлівыя.",
 #str_vo_nl_indy_ga_695_gina_cat_lo_01,0e1db422d1604bbe,"Падобна, ты сёе-тое ведаеш пра катоў.",
 #str_vo_nl_indy_ga_695_gina_cat_ne_01,3d0eed570c2b0e0e,"Падобна, ты добра ведаеш катоў.",
@@ -964,7 +964,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ga_762_general_one_liners_qu_01,ead061b528fed1ca,"Ну, гэты салдат не надта любіць Мусаліні.",
 #str_vo_nl_indy_ga_763_general_one_liners_qu_01,46fada9edd7f3079,Ён з крэменю... [2.32]На такой жа пародзе стаіць Мачу-Пікчу.,chert — крэмень (u11)
 #str_vo_nl_indy_ga_764_general_one_liners_qu_01,59d83fd5a90f84f5,"Кожны камень непаўторны...[2.23]Высечаны з парод, што ёсць на Вялікім коле.",
-#str_vo_nl_gina_ga_765_thanks_gizeh_ne_01,9bfbc65fb78f132e,"Я адзначыла яшчэ адно месца на тваёй карце.[2.12]Можа, варта туды зазірнуць.[3.82]Як скончыш, вяртайся да мяне.",Індзі ↔ Джына на «ты» (ru тут на «вы»)
+#str_vo_nl_gina_ga_765_thanks_gizeh_ne_01,9bfbc65fb78f132e,"Я адзначыла яшчэ адно месца на тваёй карце.[2.12]Можа, варта туды зазірнуць.[3.82]Як скончыш, вяртайся да мяне.",Інды ↔ Джына на «ты» (ru тут на «вы»)
 #str_vo_nl_gina_ga_766_thanks_gizeh_ne_01,c976993e473dc787,"Гэй. Я напісала чарнавік артыкула.[2.79]Вось — хачу, каб ты прачытаў.",
 #str_vo_nl_indy_ga_767_thanks_gizeh_ne_01,d38ad33cfa1cc572,"Я ў гэтым не знаўца, але пішаш ты, чорт вазьмі, выдатна.",
 #str_vo_nl_gina_ga_768_thanks_gizeh_ne_01,9866796da79c21e1,"Дзякуй, доктар Джонс.",

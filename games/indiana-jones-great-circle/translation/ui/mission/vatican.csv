@@ -8,7 +8,7 @@ key,src_hash,bel,note
 
 -Марыа",
 #str_mission_vatican_activitynote_intro_captainskeyletter_title,dcae09ec97bda817,Запіска Марыа,
-#str_mission_vatican_activitynote_intro_fascistletter_desc,e1ec6f840cf3d386,Ліст па-італьянску пра напружанасць паміж святарамі і чарнакашулечнікамі.,
+#str_mission_vatican_activitynote_intro_fascistletter_desc,e1ec6f840cf3d386,Ліст па-італьянску пра напружанасць паміж святарамі і чорнакашульнікамі.,
 #str_mission_vatican_activitynote_intro_fascistletter_inspect,75d905a601c45c9a,"Дантэ,
 
 Святарам загадана быць паслухмянымі, так што трымай пісталет у кабуры і паводзь сябе прыстойна. Калі яны будуць ствараць праблемы, звяртайся да айца Вентуры. Ён на нашым баку.
@@ -42,7 +42,7 @@ key,src_hash,bel,note
 #str_mission_vatican_activitynote_intro_priestletter_desc,43d8c0a04e280b5e,"Ліст па-італьянску, дзе згадваецца «Чалавек у чорным».",
 #str_mission_vatican_activitynote_intro_priestletter_inspect,408fb37dce1e3dcf,"Айцец Крэмаскі!
 
-Чалавек у чорным загадаў нам упусціць чарнакашулечнікаў у замак Святога Анёла. Пакуль раю вам вярнуцца ў Ватыкан. У мяне звязаныя рукі — прынамсі, пакуль не вернецца Папа. Падазраю, усё гэта яго страшэнна засмуціла б...
+Чалавек у чорным загадаў нам упусціць чорнакашульнікаў у замак Святога Анёла. Пакуль раю вам вярнуцца ў Ватыкан. У мяне звязаныя рукі — прынамсі, пакуль не вернецца Папа. Падазраю, усё гэта яго страшэнна засмуціла б...
 
 Хай блаславіць вас Бог,
 
@@ -70,7 +70,7 @@ key,src_hash,bel,note
 
 Айцец Руса",
 #str_mission_vatican_activitynote_intro_secretpassage_title,f270ad2c12f1be67,Запіска Русы,
-#str_mission_vatican_activitynote_la01_address_desc,b20aeca5765b49cd,"Фашысцкі дакумент пра кнігі, канфіскаваныя чарнакашулечнікамі.",
+#str_mission_vatican_activitynote_la01_address_desc,b20aeca5765b49cd,"Фашысцкі дакумент пра кнігі, канфіскаваныя чорнакашульнікамі.",
 #str_mission_vatican_activitynote_la01_address_inspect,1df5c9e8366e8842,"Падазрэнне на камуністычную прапаганду. Не адкрываць без дазволу айца Вентуры. 
 
 Даставіць у пакой для кантрабанды ў Апостальскім палацы. 
@@ -94,7 +94,7 @@ VIII. «Шлях пілігрыма»",
 #str_mission_vatican_activitynote_la01_antonioletter_desc,fd52a8543e6fbf8a,Ліст па-італьянску пра канфіскацыю кніг.,
 #str_mission_vatican_activitynote_la01_antonioletter_inspect,51a2e30e9bce25f2,"Антоніа! 
 
-Гэтыя чарнакашулечнікі дзейнічаюць з маёй санкцыі, і вы не будзеце замінаць ім збіраць на праверку кнігі, якія падазраюцца ў кантрабандзе. Калі вы яшчэ раз прыгрозіце «адлупцаваць іх распяццем па галаве», будзеце адказваць перада мной. 
+Гэтыя чорнакашульнікі дзейнічаюць з маёй санкцыі, і вы не будзеце замінаць ім збіраць на праверку кнігі, якія падазраюцца ў кантрабандзе. Калі вы яшчэ раз прыгрозіце «адлупцаваць іх распяццем па галаве», будзеце адказваць перада мной. 
 
 Хай Гасподзь змілуецца над вашай душой,
 
@@ -133,15 +133,15 @@ VIII. «Шлях пілігрыма»",
 #str_mission_vatican_activitynote_la01_photo_3_title,fbf1ae54da1096e1,Раскопкі ў палацы,
 #str_mission_vatican_activitynote_la01_photo_3_title_ingame,fbf1ae54da1096e1,Раскопкі ў палацы,
 #str_mission_vatican_activitynote_la01_photo_5_desc,fcaccb85da65723e,"Шэдэўр Мікеланджэла, заказаны Папам Юліем II у 1508 годзе.",
-#str_mission_vatican_activitynote_la01_photo_5_title,ea6856931c9c9c56,Фрэскі Сікстынскай капэлы,
-#str_mission_vatican_activitynote_la01_photo_5_title_ingame,ea6856931c9c9c56,Фрэскі Сікстынскай капэлы,
+#str_mission_vatican_activitynote_la01_photo_5_title,ea6856931c9c9c56,Фрэскі Сіксцінскай капэлы,
+#str_mission_vatican_activitynote_la01_photo_5_title_ingame,ea6856931c9c9c56,Фрэскі Сіксцінскай капэлы,
 #str_mission_vatican_activitynote_la01_postcard_desc,e2b9bca9b88a0ed6,Чыстая паштоўка з выявай Папскай швейцарскай гвардыі.,
 #str_mission_vatican_activitynote_la01_postcard_inspect,ef63ae4f762edcf4,Рым — плошча Святога Пятра,
 #str_mission_vatican_activitynote_la01_postcard_title,c1d089ddd1d43495,Паштоўка са швейцарскай гвардыяй,
 #str_mission_vatican_activitynote_la01_researchnotes_desc,9086d53128f6858f,Ліст Антоніа пра шалёнага святара Крэшэнца.,
 #str_mission_vatican_activitynote_la01_researchnotes_inspect,29a0d6e59896a89f,"Мой найдаражэйшы Антоніа! 
 
-Дзе той пасыльны, якога вы абяцалі? Я чакаю ў Сікстынскай капэле ўжо больш за гадзіну. Вы ж ведаеце, як мне карціць даведацца больш пра шалёнага святара Крэшэнца. І гэта наводзіць мяне на думку: ці не ўтойваеце вы нешта ад мяне? 
+Дзе той пасыльны, якога вы абяцалі? Я чакаю ў Сіксцінскай капэле ўжо больш за гадзіну. Вы ж ведаеце, як мне карціць даведацца больш пра шалёнага святара Крэшэнца. І гэта наводзіць мяне на думку: ці не ўтойваеце вы нешта ад мяне? 
 
 Я пабуду тут яшчэ крыху, так што, калі толькі пасыльны не спатыкнуўся і не зламаў сабе нагу, я чакаю яго тут неадкладна! 
 
@@ -157,12 +157,12 @@ VIII. «Шлях пілігрыма»",
 #str_mission_vatican_activitynote_la02_addresstag_title,74540e4ade4cda9e,Бірка ад ключа,
 #str_mission_vatican_activitynote_la02_guardlist_desc,81bce1a4986dfe40,Джузэпэ Марэфоскі... на пасту на ўчастку F.,
 #str_mission_vatican_activitynote_la02_guardlist_title,5cdbb44ef8bc6188,Спіс вартавых,
-#str_mission_vatican_activitynote_la02_lettersidney_desc,94e807924cd0bf7f,"Наўрад ці чарнакашулечнікі дазволілі б яму гэта адправіць. Добра, што я выцягнуў хлопца.",
+#str_mission_vatican_activitynote_la02_lettersidney_desc,94e807924cd0bf7f,"Наўрад ці чорнакашульнікі дазволілі б яму гэта адправіць. Добра, што я выцягнуў хлопца.",
 #str_mission_vatican_activitynote_la02_lettersidney_title,ad0011b60d22a5cc,Ліст Сідні,
 #str_mission_vatican_activitynote_la02_postcard_desc,57396458361f5540,Паштоўка з выявай смерці святога Пятра на Ватыканскім узгорку.,
 #str_mission_vatican_activitynote_la02_postcard_inspect_back,4fb45665622427d3,"Хай стану я скалою, на якой можна ўзвесці свяцілішча, хай ушаную я ГОСПАДА ў пакоры сваёй, хай пасу статак свой і прапаведую слова Тваё, каб ачысціліся грахі і малых, і волатаў, і каб атрымаць вянец вечнай славы праз ГОСПАДА.",
 #str_mission_vatican_activitynote_la02_postcard_title,beb247d28b67f2cc,Паштоўка са святым Пятром,
-#str_mission_vatican_activitynote_la02_tarotcard_desc,62cf636f90dfd671,Карта Таро са старшым арканам «Блазан».,
+#str_mission_vatican_activitynote_la02_tarotcard_desc,62cf636f90dfd671,Карта таро са старэйшым арканам «Блазан».,
 #str_mission_vatican_activitynote_la02_tarotcard_title,65343f4876f4083d,Карта «Блазан»,
 #str_mission_vatican_activitynote_se02_diary_page1_desc,f5b710851c3741df,Пергамент па-лацінску пра змову ў Ватыкане.,
 #str_mission_vatican_activitynote_se02_diary_page1_inspect,6d4561e912defbeb,"Лета Гасподняга 1152, 16 ліпеня.
@@ -214,10 +214,10 @@ VIII. «Шлях пілігрыма»",
 #str_mission_vatican_adventurephotos_vatican_hint_desc_valeria,3735a08818f25422,Працавітая манашка з ватыканскай аптэкі.,
 #str_mission_vatican_adventurephotos_vatican_hint_disgite,b9ec2105b4172970,Раскопкі ў Ватыкане,
 #str_mission_vatican_adventurephotos_vatican_hint_fightclub,c227e48caf2e57e9,Баксёрскі рынг,
-#str_mission_vatican_adventurephotos_vatican_hint_fightclub_desc,ecb27b59bd62ef24,"Зборышча чарнакашулечнікаў, дзе ў вольны ад службы час ладзяць баксёрскія паядынкі.",
+#str_mission_vatican_adventurephotos_vatican_hint_fightclub_desc,ecb27b59bd62ef24,"Зборышча чорнакашульнікаў, дзе ў вольны ад службы час ладзяць баксёрскія паядынкі.",
 #str_mission_vatican_adventurephotos_vatican_hint_insidetower_nicholas,c443db42b47a6afe,Вялікая зала вежы,
 #str_mission_vatican_adventurephotos_vatican_hint_library,273d232340897897,Апостальская бібліятэка Ватыкана,
-#str_mission_vatican_adventurephotos_vatican_hint_livingworld_fascist_camp_desc,edd158dfe884e6a8,"Намёт, які чарнакашулечнікі паставілі, каб праць адзенне.",
+#str_mission_vatican_adventurephotos_vatican_hint_livingworld_fascist_camp_desc,edd158dfe884e6a8,"Намёт, які чорнакашульнікі паставілі, каб праць адзенне.",
 #str_mission_vatican_adventurephotos_vatican_hint_livingworld_fascist_camp_title,ad8e99b55844eb4c,Пральны намёт,
 #str_mission_vatican_adventurephotos_vatican_hint_livingworld_lightbulb_desc,4cdf67b3fa9489a0,Рабочы мяняе лямпачку ў насценным свяцільні.,
 #str_mission_vatican_adventurephotos_vatican_hint_livingworld_lightbulb_title,09ee0129c76fec94,Рамонт свяцільняў,
@@ -241,7 +241,7 @@ VIII. «Шлях пілігрыма»",
 #str_mission_vatican_adventurephotos_vatican_hint_secretmonastery_statue_title,b7c1804e9eb54c5f,Статуя Метатрона,
 #str_mission_vatican_adventurephotos_vatican_hint_sewers,69820963ea3847ed,Мост у каналізацыі,
 #str_mission_vatican_adventurephotos_vatican_hint_sewers_desc,af3b222c963aacf3,Старая каналізацыя пад Ватыканам.,
-#str_mission_vatican_adventurephotos_vatican_hint_title_12_fresco,1404c4b82f3fbcbe,Столь Сікстынскай капэлы,
+#str_mission_vatican_adventurephotos_vatican_hint_title_12_fresco,1404c4b82f3fbcbe,Столь Сіксцінскай капэлы,
 #str_mission_vatican_adventurephotos_vatican_hint_treasury_desc,54eaed2027cb021c,Ватыканская калекцыя эзатэрычных артэфактаў.,
 #str_mission_vatican_adventurephotos_vatican_hint_treasury_title,3bd10ab094c650b0,Скарбніца,
 #str_mission_vatican_adventurephotos_vatican_hint_valeria,69a6f8fa8a7d2e73,Валерыя,
@@ -259,12 +259,12 @@ VIII. «Шлях пілігрыма»",
 #str_mission_vatican_fascist_key_desc,e1bdca0b11508398,"Святар аддаў мне ключ, які згубіў адзін з фашысцкіх вартавых. Трэба высветліць, што ён адмыкае.",
 #str_mission_vatican_fascist_key_objective_1,b93230a8cbc697df,"Высветліць, што адмыкае ключ.",
 #str_mission_vatican_fascist_key_objective_1_desc,ebd017a33a3356b8,Пачну шукаць каля вайсковых лагераў...,
-#str_mission_vatican_fascist_key_objective_2,8c02e153f403ebf3,Казармы чарнакашулечнікаў. ,
-#str_mission_vatican_fascist_key_objective_2_desc,1dc66a4fe426bb5e,"Магчыма, ключ адмыкае нешта ў казармах чарнакашулечнікаў. ",
+#str_mission_vatican_fascist_key_objective_2,8c02e153f403ebf3,Казармы чорнакашульнікаў. ,
+#str_mission_vatican_fascist_key_objective_2_desc,1dc66a4fe426bb5e,"Магчыма, ключ адмыкае нешта ў казармах чорнакашульнікаў. ",
 #str_mission_vatican_fascist_key_subtask_1,d4715a59da8f40ef,Бельведэрскі двор,EN-абдрукоўка Beleverde выпраўлена
 #str_mission_vatican_fascist_key_subtask_1_desc,2ed46c1be68671eb,"Варта зазірнуць у Бельведэрскі двор: магчыма, ключ адмыкае нешта там.",
-#str_mission_vatican_fascist_key_subtask_2,8c02e153f403ebf3,Казармы чарнакашулечнікаў. ,
-#str_mission_vatican_fascist_key_subtask_2_desc,1dc66a4fe426bb5e,"Магчыма, ключ адмыкае нешта ў казармах чарнакашулечнікаў. ",
+#str_mission_vatican_fascist_key_subtask_2,8c02e153f403ebf3,Казармы чорнакашульнікаў. ,
+#str_mission_vatican_fascist_key_subtask_2_desc,1dc66a4fe426bb5e,"Магчыма, ключ адмыкае нешта ў казармах чорнакашульнікаў. ",
 #str_mission_vatican_fasttravel_mission_desc,07ed027a03125640,У Ватыкане шмат цудоўных славутасцяў. Варта зрабіць некалькі здымкаў на памяць.,
 #str_mission_vatican_fasttravel_mission_name,3dcf9dc30be85bac,Экскурсія па Ватыкане,
 #str_mission_vatican_fasttravel_objective_location_discovered,e920de17c24d02ed,Месца знойдзена,
@@ -272,7 +272,7 @@ VIII. «Шлях пілігрыма»",
 #str_mission_vatican_fasttravel_objective_point_garden,e38e10e0de2af313,Ватыканскія сады,
 #str_mission_vatican_fasttravel_objective_point_library,da68414bfe2f8b14,Ватыканская бібліятэка,
 #str_mission_vatican_fasttravel_objective_point_museum,68e7c2883028571b,Ватыканскія музеі,
-#str_mission_vatican_fasttravel_objective_point_sistine_chapel,6e18af038b5c009b,Сікстынская капэла,
+#str_mission_vatican_fasttravel_objective_point_sistine_chapel,6e18af038b5c009b,Сіксцінская капэла,
 #str_mission_vatican_fasttravel_objective_point_tower_of_nick_v,aa4f27362c2d2479,Вежа Мікалая V,
 #str_mission_vatican_fasttravel_takepictures,3b7e6d660e7f8ba6,Месцы для фотаздымкаў,
 #str_mission_vatican_fasttravel_takepictures_desc,9b92a015cbc8d260,"Сфатаграфуйце адну са славутасцяў Ватыкана, і туды можна будзе імгненна перамяшчацца.",
@@ -307,7 +307,7 @@ VIII. «Шлях пілігрыма»",
 #str_mission_vatican_intro_story_objective_1_title,42e2835e99f3b07f,Увайсці ў замак Святога Анёла,
 #str_mission_vatican_intro_story_objective_2_desc,f7b04991e807c9e7,"Тут, здаецца, спакойна. Лепш не спяшацца і пашукаць нешта карыснае, перш чым ісці далей.",
 #str_mission_vatican_intro_story_objective_2_title,59d8127c0893f02e,Дабрацца да ўнутранага двара,
-#str_mission_vatican_intro_story_objective_3_desc,e9a107a72a227095,"Адсюль можна ўзабрацца на верх замка, але двор кішыць фашыстамі-чарнакашулечнікамі. Разумней было б трымацца ад іх далей, але, зноў жа, — вырубіць пару фашыстаў не грэх.",
+#str_mission_vatican_intro_story_objective_3_desc,e9a107a72a227095,"Адсюль можна ўзабрацца на верх замка, але двор кішыць фашыстамі-чорнакашульнікамі. Разумней было б трымацца ад іх далей, але, зноў жа, — вырубіць пару фашыстаў не грэх.",
 #str_mission_vatican_intro_story_objective_3_title,047c619751214a2c,Узабрацца на верх замка,
 #str_mission_vatican_intro_story_objective_4_desc,2720d8d53edecc7e,Пасэта-дзі-Борга пачынаецца на захад ад замка і вядзе ад бастыёна Сан-Марка проста ў Ватыкан.,
 #str_mission_vatican_intro_story_objective_4_title,5022c346359c0cb0,Дабрацца да Пасэта-дзі-Борга,
@@ -319,7 +319,7 @@ VIII. «Шлях пілігрыма»",
 #str_mission_vatican_intro_story_objective_7_title,a0b1ce922abac366,Пагаварыць з Антоніа,
 #str_mission_vatican_intro_story_objective_8_desc,2dc8026956ea4d0a,"Антоніа пакажа, як трапіць у Ватыкан праз Пасэта-дзі-Борга.",
 #str_mission_vatican_intro_story_objective_8_title,caaf5596769333e9,Пранікнуць у Ватыкан,
-#str_mission_vatican_intro_story_revisitsummary,73baa3bd430b8944,"Ватыкан. У Святым горадзе наспяваюць палітычныя хваляванні, па вуліцах ходзяць патрулі фашыстаў-чарнакашулечнікаў.",
+#str_mission_vatican_intro_story_revisitsummary,73baa3bd430b8944,"Ватыкан. У Святым горадзе наспяваюць палітычныя хваляванні, па вуліцах ходзяць патрулі фашыстаў-чорнакашульнікаў.",
 #str_mission_vatican_item_clipboard,820feaca0796197b,Планшэт для папер,
 #str_mission_vatican_la3_map_museum_desc,9a449686a80fd4e7,Агульная карта музеяў Ватыкана.,
 #str_mission_vatican_la3_map_museum_title,bdbc78c6083abdd1,Карта Ватыканскіх музеяў,
@@ -328,7 +328,7 @@ VIII. «Шлях пілігрыма»",
 
 Узнагарода: 500 лір",
 #str_mission_vatican_large_activity_1_objective_0_talk_to_catherine,063bd4d0d2701132,Пагаварыць з сястрой Кэтрын,
-#str_mission_vatican_large_activity_1_objective_0_talk_to_catherine_desc,324e59f47bd8003a,"У Сікстынскай капэле нейкая сястра Кэтрын чакае пасыльнага ад Антоніа. Справа тычыцца айца Крэшэнца — шалёнага святара, які склаў карту таемных надпісаў.",
+#str_mission_vatican_large_activity_1_objective_0_talk_to_catherine_desc,324e59f47bd8003a,"У Сіксцінскай капэле нейкая сястра Кэтрын чакае пасыльнага ад Антоніа. Справа тычыцца айца Крэшэнца — шалёнага святара, які склаў карту таемных надпісаў.",
 #str_mission_vatican_large_activity_1_objective_0_talk_to_catherine_descitem_1,857c2c3bfb18382e,Знайсці сястру Кэтрын,
 #str_mission_vatican_large_activity_1_objective_1_talk_to_antonio,a0b1ce922abac366,Пагаварыць з Антоніа,
 #str_mission_vatican_large_activity_1_objective_1_talk_to_antonio_desc,b7c1f016a4234a4e,"Сястра Кэтрын чакае, калі Антоніа перашле ёй дзённік айца Крэшэнца. Можа, у ім ёсць падказкі пра волатаў і надпісы.",
@@ -337,9 +337,9 @@ VIII. «Шлях пілігрыма»",
 #str_mission_vatican_large_activity_1_objective_3_enter_palace,3384d4aee0cb76df,Знайсці ўваход у палац,
 #str_mission_vatican_large_activity_1_objective_3_enter_palace_desc,49cc1055fa19de4a,"Паводле Антоніа, з ватыканскай каналізацыі дзесьці павінен быць ход у Апостальскі палац.",
 #str_mission_vatican_large_activity_1_objective_4_find_diary,27a64d33e0d987d6,Знайсці дзённік Крэшэнца,
-#str_mission_vatican_large_activity_1_objective_4_find_diary_desc,e6ad944b41fc29b3,"Дзённік павінен быць у тым пакоі Апостальскага палаца разам з іншымі рэчамі, якія канфіскавалі чарнакашулечнікі.",
+#str_mission_vatican_large_activity_1_objective_4_find_diary_desc,e6ad944b41fc29b3,"Дзённік павінен быць у тым пакоі Апостальскага палаца разам з іншымі рэчамі, якія канфіскавалі чорнакашульнікі.",
 #str_mission_vatican_large_activity_1_objective_5_return_diary,4cc0c214e2ef0d9e,Аддаць дзённік сястры Кэтрын,
-#str_mission_vatican_large_activity_1_objective_5_return_diary_desc,67ceec2dc45452f5,"Сястра Кэтрын у Сікстынскай капэле чакае, калі ёй прынясуць дзённік Крэшэнца.",
+#str_mission_vatican_large_activity_1_objective_5_return_diary_desc,67ceec2dc45452f5,"Сястра Кэтрын у Сіксцінскай капэле чакае, калі ёй прынясуць дзённік Крэшэнца.",
 #str_mission_vatican_large_activity_1_summary,b181b4cf65a61708,"Дзённік Крэшэнца знайшоўся ў Апостальскім палацы сярод мноства іншых канфіскаваных рэчаў. Якую б таямніцу ні шукаў Крэшэнца ў Ватыкане, яна, відавочна, давяла яго да вар’яцтва, таму цяжка аддзяліць праўду ад выдумкі. Цяпер дзённік у руках сястры Кэтрын.",
 #str_mission_vatican_large_activity_2,4f3a30be6d5ca868,Знаходка Сэвіджа,
 #str_mission_vatican_large_activity_2_footlocker_code,f4d7931031d3ee97,Запіска пра скрыню,
@@ -349,15 +349,15 @@ VIII. «Шлях пілігрыма»",
 Дарэчы, капітан зноў змяніў код: 
 
 ^UЛістапад мінулага года.^U",салдат салдату — «ты»
-#str_mission_vatican_large_activity_2_item_jail_key_name,039cafa59596076d,Ключ ад турмы чарнакашулечнікаў,
+#str_mission_vatican_large_activity_2_item_jail_key_name,039cafa59596076d,Ключ ад турмы чорнакашульнікаў,
 #str_mission_vatican_large_activity_2_item_stone_fragment_desc,00cb30a840c64fa7,"Лацінскі надпіс, які ўдаецца разабраць на гэтым старажытным каменным абломку, у перакладзе гучыць так: «Пётр, пасланец Хрыста. Заступнік заняпалых анёлаў. Абаронца Вялікага кола».","fallen angels — «заняпалыя анёлы» (spell: «падшы» — русізм); ?: u14 — «Падшыя анёлы», звесці"
 #str_mission_vatican_large_activity_2_item_stone_fragment_name,4bd7ec9407dd6066,Каменны абломак,
 #str_mission_vatican_large_activity_2_objective_0_desc,cb9e798ac625947b,"Кажуць, зараз у Ватыкане ідуць вялікія раскопкі пад кіраўніцтвам брытанскага прафесара. Можа, ён знайшоў нешта, звязанае з гэтай таямніцай.",
 #str_mission_vatican_large_activity_2_objective_0_descitem_1,2550097ec4e33809,Знайсці прафесара,
 #str_mission_vatican_large_activity_2_objective_1,935c4d5eb754fa23,Выратаваць Сідні,
-#str_mission_vatican_large_activity_2_objective_1_desc,e3d7899784b8bfe1,"Прафесар Сэвідж, які раней кіраваў раскопкамі ў Ватыкане, знайшоў цікавы каменны абломак. Калі чарнакашулечнікі выгналі іх з раскопак, яго вучань Сідні паспрабаваў забраць абломак, але трапіўся, і цяпер яго трымаюць пад замком у камеры каля Ватыканскіх садоў.",
+#str_mission_vatican_large_activity_2_objective_1_desc,e3d7899784b8bfe1,"Прафесар Сэвідж, які раней кіраваў раскопкамі ў Ватыкане, знайшоў цікавы каменны абломак. Калі чорнакашульнікі выгналі іх з раскопак, яго вучань Сідні паспрабаваў забраць абломак, але трапіўся, і цяпер яго трымаюць пад замком у камеры каля Ватыканскіх садоў.",
 #str_mission_vatican_large_activity_2_objective_2,a54f61d043ffcdde,Дабрацца да раскопак,
-#str_mission_vatican_large_activity_2_objective_2_desc,2c150ab3b6529f06,Каменны абломак забраў у Сідні чарнакашулечнік Джузэпэ. Ён павінен быць дзесьці на раскопках у двары Апостальскага палаца.,
+#str_mission_vatican_large_activity_2_objective_2_desc,2c150ab3b6529f06,Каменны абломак забраў у Сідні чорнакашульнік Джузэпэ. Ён павінен быць дзесьці на раскопках у двары Апостальскага палаца.,
 #str_mission_vatican_large_activity_2_objective_3,e620b8bba9da9782,Знайсці Джузэпэ,
 #str_mission_vatican_large_activity_2_objective_3_desc,13ab1d9c103c2e3d,"Джузэпэ можа быць дзе заўгодна на раскопках у двары. У канторы брыгадзіра можа знайсціся падказка, дзе ён.",
 #str_mission_vatican_large_activity_2_objective_4,4fca855c29b8ac38,Знайсці ўчастак F,
@@ -370,11 +370,11 @@ VIII. «Шлях пілігрыма»",
 #str_mission_vatican_large_activity_2_objective_7_desc,e1c17ed173da2bf3,"Склеп поўны артэфактаў, скрадзеных з раскопак. Каменны абломак прафесара Сэвіджа павінен быць дзесьці тут.",
 #str_mission_vatican_large_activity_2_objective_8,7d003608e3f7383c,Вярнуць каменны абломак,
 #str_mission_vatican_large_activity_2_objective_8_desc,8ef40596949319f3,"Прафесар Сэвідж узрадуецца, калі атрымае абломак назад. Ён павінен чакаць разам з Сідні ў бібліятэцы.",
-#str_mission_vatican_large_activity_2_summary,17814f7b0916004d,"Сідні, вучня прафесара Сэвіджа, вызвалілі з рук чарнакашулечнікаў. Скрадзены каменны абломак вернуты і цяпер у надзейных руках прафесара. Магчыма, камень — частка эпітафіі з грабніцы святога Пятра. У ім згадваліся заняпалыя анёлы і «circuli magni» — Вялікае кола.","fallen angels — «заняпалыя анёлы» (spell: «падшы» — русізм); ?: u14 — «Падшыя анёлы», звесці"
+#str_mission_vatican_large_activity_2_summary,17814f7b0916004d,"Сідні, вучня прафесара Сэвіджа, вызвалілі з рук чорнакашульнікаў. Скрадзены каменны абломак вернуты і цяпер у надзейных руках прафесара. Магчыма, камень — частка эпітафіі з грабніцы святога Пятра. У ім згадваліся заняпалыя анёлы і «circuli magni» — Вялікае кола.","fallen angels — «заняпалыя анёлы» (spell: «падшы» — русізм); ?: u14 — «Падшыя анёлы», звесці"
 #str_mission_vatican_large_activity_3,26bb5c5cdee088e2,Манашка ў небяспецы,
 #str_mission_vatican_large_activity_3_desc,a986a95d6ff564b3,"Трэба дапамагчы Джыне знайсці Джуліяну, яе зніклую сувязную ў Ватыкане. У Джуліяны былі для Джыны звесткі, якія маглі б мне дапамагчы, але на сустрэчу ў Ватыканскім музеі яна так і не прыйшла.",
 #str_mission_vatican_large_activity_3_objective_1,4b5ed95de18295c4,Пайсці следам за Джынай у музей,
-#str_mission_vatican_large_activity_3_objective_1_desc,c0e5f5dfe17cbe41,"Джуліяна, сувязная Джыны, можа ведаць нешта пра зніклую мумію кошкі. Джына мелася сустрэцца з ёю ў музеі, але чарнакашулечнікі яго ачапілі. Там нешта адбываецца.",
+#str_mission_vatican_large_activity_3_objective_1_desc,c0e5f5dfe17cbe41,"Джуліяна, сувязная Джыны, можа ведаць нешта пра зніклую мумію кошкі. Джына мелася сустрэцца з ёю ў музеі, але чорнакашульнікі яго ачапілі. Там нешта адбываецца.",
 #str_mission_vatican_large_activity_3_objective_2,bf63732feccb9b4a,Знайсці зачэпкі · %d/5,
 #str_mission_vatican_large_activity_3_objective_2_desc,c907dd2cb1be91f6,"Калі Джуліяну выкралі з музея, там маглі застацца сляды таго, што здарылася.",
 #str_mission_vatican_large_activity_3_objective_2_notification,a0151b0a1a1d52b6,Знайсці зачэпкі,
@@ -382,7 +382,7 @@ VIII. «Шлях пілігрыма»",
 #str_mission_vatican_large_activity_3_objective_3_desc,a9147f16a361b7e1,"Джына казала, што мелася сустрэцца з Джуліянай у сховішчы музея.",
 #str_mission_vatican_large_activity_3_objective_3_hint_blood_desc,5035274433367d7a,Крывавы адбітак далоні на сцяне сховішча.,
 #str_mission_vatican_large_activity_3_objective_3_hint_blood_title,0e0eace644497789,Адбітак далоні,
-#str_mission_vatican_large_activity_3_objective_3_hint_cloth_desc,0f595dc3086f4ced,"Кавалак тканіны, падобна, адарваны ад формы чарнакашулечніка.",
+#str_mission_vatican_large_activity_3_objective_3_hint_cloth_desc,0f595dc3086f4ced,"Кавалак тканіны, падобна, адарваны ад формы чорнакашульніка.",
 #str_mission_vatican_large_activity_3_objective_3_hint_cloth_title,132f442d81d17133,Кавалак тканіны,
 #str_mission_vatican_large_activity_3_objective_3_hint_footprints_desc,2f1486052d07463c,"Сляды чалавека, які бег.",
 #str_mission_vatican_large_activity_3_objective_3_hint_footprints_title,dfd8348a0cf89571,Сляды,
@@ -390,7 +390,7 @@ VIII. «Шлях пілігрыма»",
 #str_mission_vatican_large_activity_3_objective_3_hint_fountain_title,56420df8f9964e52,Фантан,
 #str_mission_vatican_large_activity_3_objective_3_hint_ring_desc,ae55a1b5a1ad67ef,"Лужына крыві, у якой нешта блішчыць.",
 #str_mission_vatican_large_activity_3_objective_3_hint_ring_title,8a7961ab59837fd7,Кроў,
-#str_mission_vatican_large_activity_3_objective_3_hint_sketch_cloth_desc,0f595dc3086f4ced,"Кавалак тканіны, падобна, адарваны ад формы чарнакашулечніка.",
+#str_mission_vatican_large_activity_3_objective_3_hint_sketch_cloth_desc,0f595dc3086f4ced,"Кавалак тканіны, падобна, адарваны ад формы чорнакашульніка.",
 #str_mission_vatican_large_activity_3_objective_3_hint_sketch_cloth_title,132f442d81d17133,Кавалак тканіны,
 #str_mission_vatican_large_activity_3_objective_3_hint_sketch_ring_desc,914afb9695b7a2ab,"Пярсцёнак Джуліяны, знойдзены ў падвале Ватыканскіх музеяў.",
 #str_mission_vatican_large_activity_3_objective_3_hint_sketch_ring_title,17d4e730714e1fc2,Залаты пярсцёнак,
@@ -402,7 +402,7 @@ VIII. «Шлях пілігрыма»",
 Статус: не вырашана 
 
 Высновы: 
-Аб’ект — археолаг і прафесар Каледжа Маршала ў Бедфардзе, штат Канэктыкут, Амерыка. Мы не лічым, што аб’ект мае хоць якое ўяўленне пра праект «Вяртанне». Ягоная знаходка артэфакта ў Сіве — чыстае супадзенне. 
+Аб’ект — археолаг і прафесар Каледжа Маршала ў Бедфардзе, штат Канектыкут, Амерыка. Мы не лічым, што аб’ект мае хоць якое ўяўленне пра праект «Вяртанне». Ягоная знаходка артэфакта ў Сіве — чыстае супадзенне. 
 
 Рэкамендацыя: працягваць сачэнне. Аб’ект, відаць, любіць соваць нос у чужыя справы. Аперацыя Ордэна ў Амерыцы пакінула сляды, якія прывялі аб’екта ў Ватыкан. Ягоныя намеры пакуль невядомыя; непасрэдна ўмешвацца не варта, каб не прыцягнуць непатрэбнай увагі. 
 
@@ -428,30 +428,30 @@ VIII. «Шлях пілігрыма»",
 #str_mission_vatican_large_activity_3_objective_3_hint_spying_photo_title,56cf4cc1bb814821,Фотаздымак з замка,
 #str_mission_vatican_large_activity_3_objective_3_hint_spying_photowall_01a_title,7adbca6001433283,Таемная служба Ватыкана,як u13; ?: u14 пісала «Сакрэтная служба Ватыкана» — звесці
 #str_mission_vatican_large_activity_3_objective_4,8fc358ef06e3fee4,Дабрацца да вежы Борджыя,
-#str_mission_vatican_large_activity_3_objective_4_desc,a23f60ead41410a9,Чарнакашулечнікі павялі Джуліяну на допыт у вежу Борджыя. Джына ўжо пабегла туды.,
+#str_mission_vatican_large_activity_3_objective_4_desc,a23f60ead41410a9,Чорнакашульнікі павялі Джуліяну на допыт у вежу Борджыя. Джына ўжо пабегла туды.,
 #str_mission_vatican_large_activity_3_objective_5,b0a395f6b97e437c,Сустрэцца з Джынай у вежы Борджыя,
 #str_mission_vatican_large_activity_3_objective_5_desc,8f12bbd9ab8f0bd1,"Джына, мусіць, ужо пайшла ў вежу Борджыя. Уваход павінен быць з Апостальскага палаца.",
 #str_mission_vatican_large_activity_3_objective_6,5a7e5637af590b43,Падняцца на вежу Борджыя,
 #str_mission_vatican_large_activity_3_objective_6_desc,0b80c0f7a6d540d1,"Тут ідзе рамонт, усё перавернута дагары нагамі, але павінен быць спосаб падняцца на вежу і знайсці Джуліяну.",
 #str_mission_vatican_large_activity_3_objective_7,ee59201db706fc1c,Вызваліць Джуліяну,
-#str_mission_vatican_large_activity_3_objective_7_desc,048e43bff7d8ef95,Чарнакашулечнікі трымаюць Джуліяну на допыце ў пакоі на самым версе вежы Борджыя.,
+#str_mission_vatican_large_activity_3_objective_7_desc,048e43bff7d8ef95,Чорнакашульнікі трымаюць Джуліяну на допыце ў пакоі на самым версе вежы Борджыя.,
 #str_mission_vatican_large_activity_3_objective_8_desc,c9f3a0c21fbe297f,"Джуліяна ў бяспецы. Трэба паглядзець, што адмыкае ключ, які яна мне дала.",EN-абдрукоўка Guliana выпраўлена
 #str_mission_vatican_large_activity_3_objective_old_stockroom,b64aef8f6c021b52,Шукаць далей,
 #str_mission_vatican_large_activity_3_objective_old_stockroom_desc,0bae78330a588859,"Тут, унізе, знайшлося шмат зачэпак, але ў наступным пакоі іх можа быць яшчэ больш.",
 #str_mission_vatican_large_activity_3_objective_photo_op_borgiatower,9c22956368fd429c,Вежа Борджыя — там трымаюць Джуліяну.,
-#str_mission_vatican_large_activity_3_summary,0af2eb948f976255,"Джуліяну, ватыканскую сувязную Джыны, удалося вырваць з рук чарнакашулечнікаў. У яе быў дакумент, які сведчыць, што Ватыкан шпіёніў за раскопкамі ў Сіве. Вось адкуль там ведалі пра мумію кошкі.",
+#str_mission_vatican_large_activity_3_summary,0af2eb948f976255,"Джуліяну, ватыканскую сувязную Джыны, удалося вырваць з рук чорнакашульнікаў. У яе быў дакумент, які сведчыць, што Ватыкан шпіёніў за раскопкамі ў Сіве. Вось адкуль там ведалі пра мумію кошкі.",
 #str_mission_vatican_large_activity_3_talk_to_gina,26bb5c5cdee088e2,Манашка ў небяспецы,
 #str_mission_vatican_large_activity_3_talk_to_gina_desc,f8b3f807957d3fb2,"Пасля сустрэчы на балконе Джына, журналістка, якая выдае сябе за манашку, пагадзілася абмяняцца звесткамі, калі гэта дапаможа ёй знайсці зніклую сястру. Размова з ёю можа праліць крыху больш святла на таямніцу скрадзенай муміі кошкі.",
 #str_mission_vatican_large_activity_3_talk_to_gina_descitem,4a2e48735324d288,Пагаварыць з Джынай,
 #str_mission_vatican_large_activity_4_mission_desc,569e96a9f4e7331a,"Айцец Рычы сцвярджае, што рэшткі легендарнага крыжаносца-«волата» схаваныя ў таемнай зале пад Казіна ў садах. Можа, варта праверыць.",ru: NOT IN BASE GAME (нарыхтоўка) — перакладзена па EN
 #str_mission_vatican_large_activity_4_mission_title,3e3677b724322cc0,Безыменны крыжаносец,ru: NOT IN BASE GAME (нарыхтоўка) — перакладзена па EN
-#str_mission_vatican_large_activity_4_objective_1_desc,27a3940ed2f11a61,"Каб агледзець фрэску, спачатку трэба трапіць у сады. Чарнакашулечнікі зрабілі ў Казіна свой штаб, і яго пільна ахоўваюць. ",ru: NOT IN BASE GAME (нарыхтоўка) — перакладзена па EN
+#str_mission_vatican_large_activity_4_objective_1_desc,27a3940ed2f11a61,"Каб агледзець фрэску, спачатку трэба трапіць у сады. Чорнакашульнікі зрабілі ў Казіна свой штаб, і яго пільна ахоўваюць. ",ru: NOT IN BASE GAME (нарыхтоўка) — перакладзена па EN
 #str_mission_vatican_large_activity_4_objective_1_desc_1,3f6a8e49916b7be5,Узабрацца на Вежу вятроў.,ru: NOT IN BASE GAME (нарыхтоўка) — перакладзена па EN
 #str_mission_vatican_large_activity_4_objective_1_desc_2,b54706b745048258,Знайсці ход у сад.,ru: NOT IN BASE GAME (нарыхтоўка) — перакладзена па EN
 #str_mission_vatican_large_activity_4_objective_1_hint_1_desc,afb2aa9aad78afac,"Айцец Рычы казаў, што з яго кабінета ў Вежы вятроў добра відаць сады. Калі ўзабрацца туды, можа, атрымаецца знайсці спосаб пранікнуць непрыкметна.",ru: NOT IN BASE GAME (нарыхтоўка) — перакладзена па EN
 #str_mission_vatican_large_activity_4_objective_1_hint_1_title,9ea817cc1e1f530c,Вежа вятроў,ru: NOT IN BASE GAME (нарыхтоўка) — перакладзена па EN
 #str_mission_vatican_large_activity_4_objective_1_title,b8309cb8aa3bdaf8,Трапіць у сады,ru: NOT IN BASE GAME (нарыхтоўка) — перакладзена па EN
-#str_mission_vatican_large_activity_4_objective_2_desc,372392bc8dda2aae,"Казіна стаіць у цэнтры саду, і там усюды кішаць чарнакашулечнікі. Трэба дзейнічаць асцярожна. А можа, і не.",ru: NOT IN BASE GAME (нарыхтоўка) — перакладзена па EN
+#str_mission_vatican_large_activity_4_objective_2_desc,372392bc8dda2aae,"Казіна стаіць у цэнтры саду, і там усюды кішаць чорнакашульнікі. Трэба дзейнічаць асцярожна. А можа, і не.",ru: NOT IN BASE GAME (нарыхтоўка) — перакладзена па EN
 #str_mission_vatican_large_activity_4_objective_2_desc_1,3dbd519c1eb18e4d,Увайсці ў Казіна.,ru: NOT IN BASE GAME (нарыхтоўка) — перакладзена па EN
 #str_mission_vatican_large_activity_4_objective_2_title,788b8c33fbcf564d,Увайсці ў Казіна,ru: NOT IN BASE GAME (нарыхтоўка) — перакладзена па EN
 #str_mission_vatican_large_activity_4_objective_3_desc,d39f8da9f67191c4,"Фрэска, дзе згадваецца Безыменны крыжаносец, — ключ да гэтай таямніцы. Паводле нататак Рычы, яна павінна быць дзесьці на першым паверсе. Тут лепш быць асцярожным...",ru: NOT IN BASE GAME (нарыхтоўка) — перакладзена па EN
@@ -579,7 +579,7 @@ VIII. «Шлях пілігрыма»",
 ^I[У слупку серады абведзены лічбы для літар C, D, E і I.]^I",
 #str_mission_vatican_mystery_01_code_text,095719230fffaf80,Расшыфроўка кодаў,
 #str_mission_vatican_mystery_01_code_title,8e6f06ec89263217,Табліца кодаў,
-#str_mission_vatican_mystery_01_desc,dfa769c6449d512c,"У адным з намётаў чарнакашулечнікаў стаіць замкнёны грузавы кантэйнер. Можа, удасца пазбавіць яго змесціва?",
+#str_mission_vatican_mystery_01_desc,dfa769c6449d512c,"У адным з намётаў чорнакашульнікаў стаіць замкнёны грузавы кантэйнер. Можа, удасца пазбавіць яго змесціва?",
 #str_mission_vatican_mystery_01_letter_01_desc,2beb357fe6775b7a,Фашысцкі дакумент пра цалкам сакрэтную пастаўку.,
 #str_mission_vatican_mystery_01_letter_01_inspect,1219887d4a518fc2,"ЦЭНТУРЫЁНУ ДЭ ЛУКУ
 6-Я ЦЭНТУРЫЯ CC.NN. «СВЯТАЯ ДЗІДА»
@@ -615,12 +615,12 @@ MVSN
 генерал-лейтэнант, 1-я зона, П’емонт
 
 P. S. Я паклаў у скрыню крыху грошай табе на забавы — распарадзіся імі з розумам.",
-#str_mission_vatican_mystery_01_letter_02_desc,f10e1e01f6adaf4b,Ліст па-італьянску ад бацькі аднаго з чарнакашулечнікаў.,
+#str_mission_vatican_mystery_01_letter_02_desc,f10e1e01f6adaf4b,Ліст па-італьянску ад бацькі аднаго з чорнакашульнікаў.,
 #str_mission_vatican_mystery_01_letter_02_title,5d949f56b01b389e,Ліст Джавані,
 #str_mission_vatican_mystery_01_objective_title,774512efd6d4782f,Адчыніць грузавы кантэйнер,
-#str_mission_vatican_mystery_01_summary,1c07afc1e9c8c16f,"Каб адчыніць замкнёны кантэйнер у намёце чарнакашулечнікаў, давялося пахітраваць. Цяпер яго змесціва знайшло новага гаспадара.",
+#str_mission_vatican_mystery_01_summary,1c07afc1e9c8c16f,"Каб адчыніць замкнёны кантэйнер у намёце чорнакашульнікаў, давялося пахітраваць. Цяпер яго змесціва знайшло новага гаспадара.",
 #str_mission_vatican_mystery_01_title,6a26e1a125930b3e,Памятная дата,
-#str_mission_vatican_mystery_02_desc,ef4a58fc9465bee3,"Чарнакашулечнікі знайшлі нешта, схаванае за фрэскай у музейным садзе.",
+#str_mission_vatican_mystery_02_desc,ef4a58fc9465bee3,"Чорнакашульнікі знайшлі нешта, схаванае за фрэскай у музейным садзе.",
 #str_mission_vatican_mystery_02_hint_mural_photo_desc,5f7988e892599e22,Фрэска XV стагоддзя,
 #str_mission_vatican_mystery_02_hint_mural_photo_title,19c4b0aad71b8ab6,Пашкоджаная фрэска,
 #str_mission_vatican_mystery_02_hint_priest_letter_desc,65c7b89691d1110d,"Як чалавек вучоны і вучань Клавія, я захаваў тут мудрасць свайго часу, ведаючы, што праз 380 гадоў яе знойдуць і адкрыюць. Зірніце ж цяпер на нябёсы — і ўбачыце зацьменне месяца. Гэта я прадбачыў, як прадбачыў і многае з вашага веку. Карыстайцеся гэтымі прароцтвамі мудра і на службе Госпаду нашаму: каўчэг святла будзе адкрыты ўслед за вогненнай калясніцай і кінуты на сцяну цёмнага пакоя; з неба пасыплюцца бочкі, але не будзе ў іх віна; а багач будзе каваць метал з прылад лялек.
@@ -742,7 +742,7 @@ P. S. Я паклаў у скрыню крыху грошай табе на з�
 #str_mission_vatican_mystery_helping_gina_gina_letter_desc,b59359503368ab4c,"Запіска ад Джыны: яна просіць дастаць звесткі, замкнёныя ў сейфе.",
 #str_mission_vatican_mystery_helping_gina_gina_letter_desc_2,8e2e1526ad0ace98,"Страмба! 
 
-Чарнакашулечнікі ідуць па маім следзе. Мне нельга паказвацца. 
+Чорнакашульнікі ідуць па маім следзе. Мне нельга паказвацца. 
 
 Мой інфарматар мусіў схаваць звесткі, якія сабраў для мяне. Яны ў сейфе ў кабінеце брыгадзіра каля раскопак. Можаш іх дастаць? 
 
@@ -750,7 +750,7 @@ P. S. Я паклаў у скрыню крыху грошай табе на з�
 
 Дж. 
 
-1891","Strambo — «Страмба», як u02 (u03 пакінула лацінкай — звесці); Джына да Індзі — «ты» (у ru — «вы»), як u02/u03"
+1891","Strambo — «Страмба», як u02 (u03 пакінула лацінкай — звесці); Джына да Інды — «ты» (у ru — «вы»), як u02/u03"
 #str_mission_vatican_mystery_helping_gina_gina_letter_title,3342238eace9bb5b,Просьба Джыны,
 #str_mission_vatican_nephilimpieces,a9489e59f789af99,Загадкі старажытных,
 #str_mission_vatican_nephilimpieces_beforegizeh,a9489e59f789af99,Загадкі старажытных,
@@ -782,7 +782,7 @@ P. S. Я паклаў у скрыню крыху грошай табе на з�
 #str_mission_vatican_sacredwounds_map_necropolis_part1_title,ac823395a93bd42b,Карта Падземнага свету,
 #str_mission_vatican_sacredwounds_map_necropolis_part2_desc,97f6f9387396b9f3,Карта ніжніх ярусаў старажытнага некропаля.,
 #str_mission_vatican_sacredwounds_map_necropolis_part2_title,65e2c380a726442c,Карта ніжняга некропаля,
-#str_mission_vatican_sacredwounds_showcase_intro,2c2cbce487a3428f,"Сабраўшы доказы гэтых таемных надпісаў, Індзі знаходзіць сляды грабніцы воіна-волата дзесьці пад Ватыканам. Але каб трапіць у падземны свет, патрэбна «кроў пяці святых ран». Узяўшы бутэльку віна з калекцыі Антоніа, Індзі спускаецца ў таемны ход на пошукі гэтага ўваходу...",
+#str_mission_vatican_sacredwounds_showcase_intro,2c2cbce487a3428f,"Сабраўшы доказы гэтых таемных надпісаў, Інды знаходзіць сляды грабніцы воіна-волата дзесьці пад Ватыканам. Але каб трапіць у падземны свет, патрэбна «кроў пяці святых ран». Узяўшы бутэльку віна з калекцыі Антоніа, Інды спускаецца ў таемны ход на пошукі гэтага ўваходу...",
 #str_mission_vatican_savage_sidney,8873e241c9c4c415,Настаўнік і вучань,
 #str_mission_vatican_savage_sidney_desc,f60f0cfd820f0872,Стары настаўнік і яго юны вучань зноў разам.,
 #str_mission_vatican_se01_item_conch,7c7cae1a893c29d7,Ракавіна,
@@ -823,11 +823,11 @@ P. S. Я паклаў у скрыню крыху грошай табе на з�
 #str_mission_vatican_small_activity_03_step1,0768640c629f3fc3,Знайсці маскіроўку,
 #str_mission_vatican_small_activity_03_step10,34acfaa25bf1164b,Забраць прызавыя грошы,
 #str_mission_vatican_small_activity_03_step10_desc,2f0433265a62548d,Усе байцы ў накаўце. Апошняя ўзнагарода чакае на стале арганізатара.,
-#str_mission_vatican_small_activity_03_step1_desc,8890378e4986ebb3,"Тут не надта рады тым, хто не ў форме. Толькі для чарнакашулечнікаў.",
+#str_mission_vatican_small_activity_03_step1_desc,8890378e4986ebb3,"Тут не надта рады тым, хто не ў форме. Толькі для чорнакашульнікаў.",
 #str_mission_vatican_small_activity_03_step1b,032d918f64b474bf,Трапіць на рынг,"Enter Boxing Ring — уваход у клуб (у маскіроўцы); u15 «Enter Boxing Den» — «Увайсці ў клуб», «Enter Ring» — «Выйсці на рынг»"
-#str_mission_vatican_small_activity_03_step1b_desc,c8dcc774208c3f0f,"У баксёрскі клуб пускаюць толькі чарнакашулечнікаў. Б’юся аб заклад, маскіроўку яны не раскусяць.",
+#str_mission_vatican_small_activity_03_step1b_desc,c8dcc774208c3f0f,"У баксёрскі клуб пускаюць толькі чорнакашульнікаў. Б’юся аб заклад, маскіроўку яны не раскусяць.",
 #str_mission_vatican_small_activity_03_step2,518ece15387a5739,Выйсці на рынг,
-#str_mission_vatican_small_activity_03_step2_desc,fc43660d4d83dcce,"Рынг чарнакашулечнікаў. Баі на голых кулаках, пераможцу — грашовы прыз. Нагода пабіць фашыстаў ды яшчэ і зарабіць.",
+#str_mission_vatican_small_activity_03_step2_desc,fc43660d4d83dcce,"Рынг чорнакашульнікаў. Баі на голых кулаках, пераможцу — грашовы прыз. Нагода пабіць фашыстаў ды яшчэ і зарабіць.",
 #str_mission_vatican_small_activity_03_step3,41dca01c25efaf41,Перамагчы байца,
 #str_mission_vatican_small_activity_03_step3_desc,9e4d68d90b6dfe2e,"Першы баец, здаецца, занадта лёгкі для такой справы.",
 #str_mission_vatican_small_activity_03_step4,34acfaa25bf1164b,Забраць прызавыя грошы,
@@ -844,24 +844,24 @@ P. S. Я паклаў у скрыню крыху грошай табе на з�
 #str_mission_vatican_small_activity_03_step9_desc,abf48986fb38daea,"Гэты, відаць, пабываў у многіх бойках.",
 #str_mission_vatican_small_activity_03_summary,fbc9815b55d152bb,Усе байцы на гэтым рынгу пераможаны. За накаўты атрымалася нядрэнная сума прызавых грошай.,
 #str_mission_vatican_small_activity_06,e49be0628d9ecea0,Шлях апосталаў,
-#str_mission_vatican_small_activity_06_desc,fb9645cae72ccb7c,"Два святары гаварылі пра нейкі сакрэт, схаваны каля Сікстынскай капэлы. Трэба разабрацца.",
-#str_mission_vatican_small_activity_06_hint_puzzle_desc,9d4e3c28181bfd2c,"Фотаздымак выяў апосталаў, выразаных на сцяне каля Сікстынскай капэлы. Пасля таго як я націснуў патайны перамыкач, яны, здаецца, самі ператварыліся ў нейкія рычагі. Падобна на кодавы замок, але які код?",
+#str_mission_vatican_small_activity_06_desc,fb9645cae72ccb7c,"Два святары гаварылі пра нейкі сакрэт, схаваны каля Сіксцінскай капэлы. Трэба разабрацца.",
+#str_mission_vatican_small_activity_06_hint_puzzle_desc,9d4e3c28181bfd2c,"Фотаздымак выяў апосталаў, выразаных на сцяне каля Сіксцінскай капэлы. Пасля таго як я націснуў патайны перамыкач, яны, здаецца, самі ператварыліся ў нейкія рычагі. Падобна на кодавы замок, але які код?",
 #str_mission_vatican_small_activity_06_hint_puzzle_name,484438dfec2757ba,Шлях апосталаў,
 #str_mission_vatican_small_activity_06_hint_puzzle_shortname,be8840274e3a657b,[],нарыхтоўка — bel = EN
-#str_mission_vatican_small_activity_06_hint_saint_desc,f19cbaaccfa51386,"Фотаздымак разбітай статуі ў двары. Магчыма, гэта той святы, што «вартуе Сікстынскую капэлу». Трэба высветліць, што ён «бачыць».",
+#str_mission_vatican_small_activity_06_hint_saint_desc,f19cbaaccfa51386,"Фотаздымак разбітай статуі ў двары. Магчыма, гэта той святы, што «вартуе Сіксцінскую капэлу». Трэба высветліць, што ён «бачыць».",
 #str_mission_vatican_small_activity_06_hint_saint_name,b0bb152f794ad7bc,"Святы, які вартуе",
 #str_mission_vatican_small_activity_06_hint_saint_shortname,be8840274e3a657b,[],нарыхтоўка — bel = EN (у ru — PLACEHOLDER TEXT)
-#str_mission_vatican_small_activity_06_hint_symbol_photo_1_desc,fa45b286b77de3e2,"Фотаздымак фасада Сікстынскай капэлы. На камені, здаецца, выразаны сімвал: крыж і два хлябы — сімвал святога Філіпа. Месца пазначана крыжыкам — трэба ісці па шляху.",
+#str_mission_vatican_small_activity_06_hint_symbol_photo_1_desc,fa45b286b77de3e2,"Фотаздымак фасада Сіксцінскай капэлы. На камені, здаецца, выразаны сімвал: крыж і два хлябы — сімвал святога Філіпа. Месца пазначана крыжыкам — трэба ісці па шляху.",
 #str_mission_vatican_small_activity_06_hint_symbol_photo_1_name,4d6e719c46cef337,Сімвал святога Філіпа,
 #str_mission_vatican_small_activity_06_hint_symbol_photo_1_shortname,be8840274e3a657b,[],
 #str_mission_vatican_small_activity_06_hint_symbol_photo_2_desc,7f618161dc8b473a,"Фотаздымак фасада сабора Святога Пятра. На камені, здаецца, выразаны сімвал: крыж і два скрыжаваныя ключы — сімвал святога Пятра. Месца пазначана крыжыкам — трэба ісці па шляху.",
 #str_mission_vatican_small_activity_06_hint_symbol_photo_2_name,25e78f6b1b80091b,Сімвал святога Пятра,
 #str_mission_vatican_small_activity_06_hint_symbol_photo_2_shortname,be8840274e3a657b,[],
-#str_mission_vatican_small_activity_06_hint_symbol_photo_3_desc,dab644ac0bed7625,"Фотаздымак фасада Сікстынскай капэлы. На камені, здаецца, выразаны сімвал: карабель, які плыве па моры, — сімвал святога Юды. Месца пазначана крыжыкам — трэба ісці па шляху.",
+#str_mission_vatican_small_activity_06_hint_symbol_photo_3_desc,dab644ac0bed7625,"Фотаздымак фасада Сіксцінскай капэлы. На камені, здаецца, выразаны сімвал: карабель, які плыве па моры, — сімвал святога Юды. Месца пазначана крыжыкам — трэба ісці па шляху.",
 #str_mission_vatican_small_activity_06_hint_symbol_photo_3_name,7f7b5d0683a1eeac,Сімвал святога Юды,
 #str_mission_vatican_small_activity_06_hint_symbol_photo_3_shortname,be8840274e3a657b,[],
 #str_mission_vatican_small_activity_06_step1,20a1ae56dba102cb,Знайсці святога,
-#str_mission_vatican_small_activity_06_step1_desc,c67db8b97bc8f5ec,"У гэтым пергаменце згадваецца святы, які вартуе Сікстынскую капэлу. Цікава, што ён бачыць. Ён павінен быць недзе побач.",
+#str_mission_vatican_small_activity_06_step1_desc,c67db8b97bc8f5ec,"У гэтым пергаменце згадваецца святы, які вартуе Сіксцінскую капэлу. Цікава, што ён бачыць. Ён павінен быць недзе побач.",
 #str_mission_vatican_small_activity_06_step2,9f51f7fd302d7c24,Прайсці па шляху апосталаў,
 #str_mission_vatican_small_activity_06_step2_desc,e976882de30a718a,"На сцяне будынка, здаецца, выразаны сімвал. Ён можа павесці мяне далей па шляху апосталаў.",
 #str_mission_vatican_small_activity_06_step3,9f51f7fd302d7c24,Прайсці па шляху апосталаў,
@@ -954,9 +954,9 @@ P. S. Я паклаў у скрыню крыху грошай табе на з�
 #str_mission_vatican_story_event_2_objective_7,617261f3e2f9fdd3,Абшукаць грабніцу,
 #str_mission_vatican_story_event_2_objective_7_desc,e5b2fe8242f54841,"Пасярэдзіне грабніцы стаіць вялізны саркафаг, якраз для волата. Надпісы Крэшэнца паказвалі сюды. Што б там ні было пахавана, яно стагоддзямі заставалася таямніцай.",
 #str_mission_vatican_story_event_2_objective_8,880ccb277157d6ea,Знайсці выхад,
-#str_mission_vatican_story_event_2_objective_8_desc,b1d2a15b3ac237e9,"Бульдозер чарнакашулечнікаў абрушыў грабніцу. Дзе цяпер выхад — невядома, але праз гэты лабірынт тунэляў нейкі шлях павінен быць.",
+#str_mission_vatican_story_event_2_objective_8_desc,b1d2a15b3ac237e9,"Бульдозер чорнакашульнікаў абрушыў грабніцу. Дзе цяпер выхад — невядома, але праз гэты лабірынт тунэляў нейкі шлях павінен быць.",
 #str_mission_vatican_story_event_2_objective_9,edf6d5b6dffae91f,Выбрацца з некропаля,
-#str_mission_vatican_story_event_2_objective_9_desc,fccd275c95a4211e,"Чарнакашулечнікі спусціліся сюды на грукат бульдозера, які зваліўся ўніз. Значыць, адсюль павінен быць выхад.",
+#str_mission_vatican_story_event_2_objective_9_desc,fccd275c95a4211e,"Чорнакашульнікі спусціліся сюды на грукат бульдозера, які зваліўся ўніз. Значыць, адсюль павінен быць выхад.",
 #str_mission_vatican_story_event_3,3bd10ab094c650b0,Скарбніца,
 #str_mission_vatican_story_event_3_courtyard_inscription_desc,26f861ae969cdd8b,Надпіс па-лацінску на таблічцы ў вялікай зале пад Фантанам Пакаяння,
 #str_mission_vatican_story_event_3_courtyard_inscription_inspect,4326b7ff1009b640,«Прайдзі выпрабаванні золата і срэбра. Выкуй святыя ключы».,
@@ -1110,7 +1110,7 @@ P. S. Я паклаў у скрыню крыху грошай табе на з�
 Хто б ні знайшоў гэта — карыстайся картай! Знайдзі агідныя надпісы! Што яны прадвяшчаюць? Можа... усё гэта... марна... Чарніліца перасыхае. Ойча Нябесны — ратуй мяне.",
 #str_mission_vatican_story_objective_find_the_symbol_hint_note_title,51fe41d462c788a4,Каракулі вар’ята,
 #str_mission_vatican_story_objective_find_the_symbol_title,c75a4518f1084db8,Шукаць сімвал,
-#str_mission_vatican_story_objective_get_disguise_desc,1ae5b437f58dcc32,"Цяпер, калі па ўсім Ватыкане чарнакашулечнікі, без маскіроўкі не абысціся, каб не прыцягваць лішняй увагі. Антоніа падабраў адзенне святара, якое павінна падысці.",
+#str_mission_vatican_story_objective_get_disguise_desc,1ae5b437f58dcc32,"Цяпер, калі па ўсім Ватыкане чорнакашульнікі, без маскіроўкі не абысціся, каб не прыцягваць лішняй увагі. Антоніа падабраў адзенне святара, якое павінна падысці.",
 #str_mission_vatican_story_objective_get_disguise_title,8248e36c57a548cf,Надзець маскіроўку,
 #str_mission_vatican_story_objective_inscription_title,291e4c7cf1243f43,Дзіўны надпіс,
 #str_mission_vatican_story_objective_investigate_cellar_desc,34619e86af8af913,"Кулон волата адчыніў таемны ход, які вядзе ўніз, у цемру пад рэстаўрацыйнай майстэрняй, — так і просіцца, каб яго даследавалі.",
@@ -1147,7 +1147,7 @@ P. S. Я паклаў у скрыню крыху грошай табе на з�
 #str_mission_vatican_story_objective_take_photos_subtask_hint_desc_2,39e91223b21e160f,Дзесьці на фасадзе музейнага крыла павінен быць надпіс нефілімаў.,
 #str_mission_vatican_story_objective_take_photos_subtask_hint_desc_3,f7cfdbf396f713a6,Дзесьці каля Фантана Пакаяння павінен быць надпіс нефілімаў.,
 #str_mission_vatican_story_objective_take_photos_subtask_hint_desc_4,eb0f8abb4c5f9666,Дзесьці на вялікім фантане ў Бельведэрскім двары павінен быць надпіс нефілімаў.,
-#str_mission_vatican_story_objective_take_photos_subtask_hint_desc_5,75f94a4b290c6098,Дзесьці ў двары з маленькім фантанам каля Сікстынскай капэлы павінен быць надпіс нефілімаў.,
+#str_mission_vatican_story_objective_take_photos_subtask_hint_desc_5,75f94a4b290c6098,Дзесьці ў двары з маленькім фантанам каля Сіксцінскай капэлы павінен быць надпіс нефілімаў.,
 #str_mission_vatican_story_objective_take_photos_subtask_hint_desc_6,97b612ba1539c6cc,"Дзесьці на фасадзе базілікі Святога Пятра, здаецца, каля Каралеўскай залы, павінен быць надпіс нефілімаў.",
 #str_mission_vatican_story_objective_take_photos_subtask_hint_desc_7,20345dcfe0a176e5,Дзесьці ў двары Папугая каля Апостальскага палаца павінен быць надпіс нефілімаў.,
 #str_mission_vatican_story_objective_take_photos_subtask_hint_desc_8,f849c3d112d08497,Дзесьці на фасадзе Апостальскага палаца каля пошты павінен быць надпіс нефілімаў.,

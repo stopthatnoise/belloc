@@ -1,5 +1,5 @@
 key,src_hash,bel,note
-#str_vo_nl_fatherricci_ch02la04_001_father_ricci_ne_01,4e90dc12ed5b080f,"Гэта абуральна. Шкада, што тут няма Папы, Пій.","Pio — папугай Рычы, «Пій» (як u15); Рычы і Індзі — «вы», Рычы да Пія — «ты»"
+#str_vo_nl_fatherricci_ch02la04_001_father_ricci_ne_01,4e90dc12ed5b080f,"Гэта абуральна. Шкада, што тут няма Папы, Пій.","Pio — папугай Рычы, «Пій» (як u15); Рычы і Інды — «вы», Рычы да Пія — «ты»"
 #str_vo_nl_pio_ch02la04_002_father_ricci_lo_01,d1b040b79b708408,Папа! Папа!,
 #str_vo_nl_fatherricci_ch02la04_003_father_ricci_ne_01,4859cd99358129a6,Чаму мяне не пускаюць?,
 #str_vo_nl_pio_ch02la04_004_father_ricci_lo_01,78915c230d079d1c,Пій! Пій!,
@@ -33,7 +33,7 @@ key,src_hash,bel,note
 #str_vo_nl_pio_ch02la04_033_accepting_mission_lo_01,9fde9af6fa9c8fcd,[],
 #str_vo_nl_fatherricci_ch02la04_038_accepting_mission_ne_01,126ed0b75707db29,"Жадаем вам вялікага поспеху, мой сябар. Вы вельмі смелы святар.",
 #str_vo_nl_pio_ch02la04_039_accepting_mission_lo_01,2696e753632c5e8d,[],
-#str_vo_nl_fatherricci_ch02la04_040_accepting_mission_ne_01,8241878c4c5522d3,"Асцярожна, ойча. Чарнакашулечнікі бязлітасныя, праўда, Пій?",
+#str_vo_nl_fatherricci_ch02la04_040_accepting_mission_ne_01,8241878c4c5522d3,"Асцярожна, ойча. Чорнакашульнікі бязлітасныя, праўда, Пій?",
 #str_vo_nl_pio_ch02la04_041_accepting_mission_lo_01,78915c230d079d1c,Пій! Пій!,
 #str_vo_nl_fatherricci_ch02la04_042_accepting_mission_ne_01,7ff2403005b90063,"Калі нешта знойдзеце, дайце мне ведаць, d’accordo?",
 #str_vo_nl_pio_ch02la04_043_accepting_mission_lo_01,63f4cf52f1820c6d,(шчабеча),
@@ -61,7 +61,7 @@ key,src_hash,bel,note
 #str_vo_nl_pio_ch02la04_065_ricci_and_pio_lo_01,07eceeb1b83312e0,Добры! Добры!,
 #str_vo_nl_fatherricci_ch02la04_066_ricci_and_pio_ne_01,a8bd6460fc55ee5a,"Я ведаў, што маю рацыю. Ты ж таксама ведаў, Пій?",
 #str_vo_nl_pio_ch02la04_067_ricci_and_pio_lo_01,5aa0a2dedc78d117,Так! Так!,
-#str_vo_nl_fatherricci_ch02la04_068_ricci_and_pio_ne_01,e28f898fffcb4904,"Гэй, Пій. Як толькі чарнакашулечнікі сыдуць, мы з табой спусцімся туды і паглядзім.",
+#str_vo_nl_fatherricci_ch02la04_068_ricci_and_pio_ne_01,e28f898fffcb4904,"Гэй, Пій. Як толькі чорнакашульнікі сыдуць, мы з табой спусцімся туды і паглядзім.",
 #str_vo_nl_pio_ch02la04_069_ricci_and_pio_lo_01,23834f0c19491ec8,(радасна шчабеча),
 #str_vo_nl_fatherricci_ch02la04_070_talking_ricci_ne_01,6d01f6b9ece99e85,"Але мне не даюць праверыць мае знаходкі! Я хачу толькі пацвярджэння, што таемная зала сапраўды існуе. Я павінен ведаць, ці праўда ўсё гэта!",
 #str_vo_nl_indy_ch02la04_071_accepting_mission_ne_01,752491a8c312c3f5,"Калі я яго ўбачу, пакіну шлем роўна там, дзе знайшоў.",

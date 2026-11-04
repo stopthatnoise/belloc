@@ -444,7 +444,7 @@ key,src_hash,bel,note
 #str_vo_sl_officerfritz_relaxed_interact_indynazi_ne_03,bb22802dc0291367,"Магу чым дапамагчы, дружа?",
 #str_vo_sl_officerfritz_relaxed_interact_indynazi_ne_04,16273d39e56a6531,"Ты нешта хацеў, салдат?",
 #str_vo_sl_officerfritz_relaxed_interact_indynazi_ne_05,137b28221097d71f,"Яшчэ адзін выдатны дзень для Айчыны, праўда?",
-#str_vo_sl_officerfritz_relaxed_interact_indynazi_ne_06,7c1160e38837c59e,"Праца цяжкая, але дзеля фюрэра я на ўсё гатовы, а ты?",
+#str_vo_sl_officerfritz_relaxed_interact_indynazi_ne_06,7c1160e38837c59e,"Праца цяжкая, але дзеля фюрара я на ўсё гатовы, а ты?",
 #str_vo_sl_officerfritz_relaxed_interact_indynazi_second_ne_01,f46340a43168ac41,Нешта я цябе не пазнаю...,
 #str_vo_sl_officerfritz_relaxed_interact_indynazi_second_ne_02,5c5054a67d65c97b,Твой твар мне незнаёмы...,
 #str_vo_sl_officerfritz_relaxed_interact_indynazi_second_ne_03,6cc024ab5b68d904,"Пачакай, а ты хто такі?",
@@ -654,7 +654,7 @@ key,src_hash,bel,note
 #str_vo_sl_officerfritz_relaxed_warn_attackwhip_first_ne_04,6ebf8da05dd68a87,"А ну кінь, зараз жа!",
 #str_vo_sl_officerfritz_relaxed_warn_attackwhip_first_ne_05,1334d89a7fb851d4,"Гэй, кінь! Вока каму-небудзь выб’еш!",
 #str_vo_sl_officerfritz_relaxed_warn_attackwhip_first_ne_06,03b6d5499e57302e,Гэй-гэй-гэй! Кідай гэта!,
-#str_vo_sl_officerfritz_relaxed_warn_changedisguise_first_ne_01,1b4c80c4687d2384,Гэй! Штаны не скідай.,жарт: Індзі пераапранаецца на вачах — «штаны не скідай»
+#str_vo_sl_officerfritz_relaxed_warn_changedisguise_first_ne_01,1b4c80c4687d2384,Гэй! Штаны не скідай.,жарт: Інды пераапранаецца на вачах — «штаны не скідай»
 #str_vo_sl_officerfritz_relaxed_warn_changedisguise_first_ne_02,5abff00c28a3f309,Ты што робіш?,
 #str_vo_sl_officerfritz_relaxed_warn_changedisguise_first_ne_03,9dde8491a870fa12,Гэта непрыстойна!,
 #str_vo_sl_officerfritz_relaxed_warn_changedisguise_first_ne_04,caa8a5e384b1ed18,Ты з глузду з’ехаў!,

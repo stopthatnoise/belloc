@@ -1,5 +1,5 @@
 key,src_hash,bel,note
-#str_vo_nl_professorsavage_ch02la02_001_angry_savage_ne_01,915c1947860a2c72,"Каб іх, гэтых чортавых чарнакашулечнікаў...",
+#str_vo_nl_professorsavage_ch02la02_001_angry_savage_ne_01,915c1947860a2c72,"Каб іх, гэтых чортавых чорнакашульнікаў...",
 #str_vo_nl_professorsavage_ch02la02_002_angry_savage_ne_01,fdfddf3540dc243c,Затрымаць безабароннага юнака пад прыцэлам...,
 #str_vo_nl_professorsavage_ch02la02_003_angry_savage_ne_01,c44aa95b76e8a43a,"І пра што я думаў, калі ехаў сюды ў такі час?",
 #str_vo_nl_professorsavage_ch02la02_004_angry_savage_ne_01,ff2961521acfa556,Як толькі айцец Вентура мог ім такое дазволіць?,
@@ -16,7 +16,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch02la02_015_talking_savage_ne_01,37d0ee6428233607,[],
 #str_vo_nl_professorsavage_ch02la02_016_talking_savage_ne_01,08135e1c5514f908,«Заняпалыя анёлы»... ну вядома![5.4]Як я сам не здагадаўся?,
 #str_vo_nl_indy_ch02la02_017_talking_savage_ne_01,7d56c95e42901378,"Слухайце, а дзе цяпер гэты каменны абломак? Я хацеў бы на яго зірнуць.",
-#str_vo_nl_professorsavage_ch02la02_018_talking_savage_ne_01,77f320278e8485f3,"Не ведаю.[2.1]Мой вучань, Сідні,[5.0]паспрабаваў, так бы мовіць, вярнуць яго ў чарнакашулечнікаў, і вось — [9.6]яны замкнулі яго ў сваёй камеры.[12.2]Ён, можа, ведае, дзе абломак цяпер, але мяне да яго не пускаюць!",
+#str_vo_nl_professorsavage_ch02la02_018_talking_savage_ne_01,77f320278e8485f3,"Не ведаю.[2.1]Мой вучань, Сідні,[5.0]паспрабаваў, так бы мовіць, вярнуць яго ў чорнакашульнікаў, і вось — [9.6]яны замкнулі яго ў сваёй камеры.[12.2]Ён, можа, ведае, дзе абломак цяпер, але мяне да яго не пускаюць!",
 #str_vo_nl_indy_ch02la02_019_talking_savage_ne_01,5602c5a9079c361c,"Добра... добра, добра. Дайце я...[3.9]дайце я паспрабую вярнуць яго вам, га?[6.1]",
 #str_vo_nl_professorsavage_ch02la02_020_talking_savage_ne_01,a37bfd34b6fd2d50,"Ох, дзякуй вам, ойча.",
 #str_vo_nl_professorsavage_ch02la02_021_talking_savage_gameplay_ne_01,a5b7ba3a5eb97670,Вы мне страшэнна кагосьці нагадваеце...,
@@ -26,7 +26,7 @@ key,src_hash,bel,note
 #str_vo_nl_professorsavage_ch02la02_025_talking_savage_gameplay_ne_01,4260f59d0de6c956,[2.99]Не хацелася б пісаць ліст яго маці...,
 #str_vo_nl_indy_ch02la02_026_entering_cell_ne_01,e258d5f80d5bd541,[5.4]Сідні?[7.1]Ай![8.1][9.4]\(гукі бойкі\)[13.7],
 #str_vo_nl_indy_ch02la02_027_entering_cell_ne_01,e23fb7066db47392,Ну і балюча ж![2.0][3.0]Ц-с![5.0],
-#str_vo_nl_sidney_ch02la02_028_entering_cell_ne_01,3f216e3ae0e84632,"[10.3]Ой, сэр, я не хацеў, калі ласка... [12.3]Стойце, стойце, стойце, вы ж не з гэтых чарнакашулечнікаў.",
+#str_vo_nl_sidney_ch02la02_028_entering_cell_ne_01,3f216e3ae0e84632,"[10.3]Ой, сэр, я не хацеў, калі ласка... [12.3]Стойце, стойце, стойце, вы ж не з гэтых чорнакашульнікаў.",
 #str_vo_nl_indy_ch02la02_029_entering_cell_ne_01,15cb5f1b302458a1,"Мяне паслаў Сэвідж — я прыйшоў табе дапамагчы, чорт вазьмі.[2]",
 #str_vo_nl_sidney_ch02la02_030_entering_cell_ne_01,cdee6945ab65f7d2,"Ох ты ж чорт, а я думаў, вас паслалі забіць —[1.85]",
 #str_vo_nl_indy_ch02la02_031_entering_cell_ne_01,0b513b1a844a4585,"Цішэй, малы, — нас могуць пачуць.[3.3]",
@@ -56,7 +56,7 @@ key,src_hash,bel,note
 #str_vo_nl_officerdante_ch02la02_055_interrogating_guiseppe_ne_01,a8509d8c5fa05882,\(крэкча\)[2.0],
 #str_vo_nl_indy_ch02la02_056_inspecting_key_ne_01,8d094bc0abb08268,"Мусіць, адрас. «Віа дэль Пелегрына, тры».","рэмарка для акцёра апушчана, як у ru"
 #str_vo_nl_indy_ch02la02_056_inspecting_key_qu_01,2086ebddd10a9a4f,"Мусіць, адрас.[1.9]«Віа дэль Пелегрына, тры».",
-#str_vo_nl_indy_ch02la02_057_reading_fragment_ne_01,be1d7cd3c1483ead,"«Petrus?» Можа, маецца на ўвазе святы Пётр. «Nunti Christi...» Пасланец Хрыста, заступнік заняпалых анёлаў, абаронца... «Circuli Magna».","рэмарка апушчана, як у ru; EN-абдрукоўка Nuti → Nunti (як ru); Circuli Magna — як вымаўляе Індзі"
+#str_vo_nl_indy_ch02la02_057_reading_fragment_ne_01,be1d7cd3c1483ead,"«Petrus?» Можа, маецца на ўвазе святы Пётр. «Nunti Christi...» Пасланец Хрыста, заступнік заняпалых анёлаў, абаронца... «Circuli Magna».","рэмарка апушчана, як у ru; EN-абдрукоўка Nuti → Nunti (як ru); Circuli Magna — як вымаўляе Інды"
 #str_vo_nl_indy_ch02la02_057_reading_fragment_qu_01,79dc5cf71cc6841b,"[0.9]«^IPetrus?^I» Можа, маецца на ўвазе святы Пётр.[5.5]«^INunti Christi^I...» Пасланец Хрыста,[9.9]заступнік заняпалых анёлаў,[13.5]абаронца... «^ICirculi Magna^I».",EN-абдрукоўка Nuti → Nunti (як ru)
 #str_vo_nl_indy_ch02la02_058_reading_fragment_ne_01,368258220a1f22d8,Вялікага кола.,"працяг папярэдняй рэплікі — родны склон, як у ru"
 #str_vo_nl_indy_ch02la02_058_reading_fragment_qu_01,208e618467b66e01,Вялікага кола.[2.0],
@@ -67,7 +67,7 @@ key,src_hash,bel,note
 #str_vo_nl_sidney_ch02la02_063_returning_fragment_ne_01,fc123e51e87571e1,"І што вы пра яго скажаце, сэр?[2.0]",
 #str_vo_nl_indy_ch02la02_064_returning_fragment_ne_01,1ac86481da5955ae,"Ну, я б сказаў, што гэта каменны абломак[3.3]эпітафіі з грабніцы святога Пятра.[5.8]",
 #str_vo_nl_professorsavage_ch02la02_065_returning_fragment_ne_01,3b2edb1b6d9b3337,"О?[2.0][3.3]Вам трэба было стаць археолагам, ойча.[6.6][11.1]\(радасна смяецца\)",
-#str_vo_nl_indy_ch02la02_066_returning_fragment_ne_01,ae052e07b1c29594,"Ну, мяне ніколі не цягнула да прыгод.",жарт: Індзі пад выглядам святара
+#str_vo_nl_indy_ch02la02_066_returning_fragment_ne_01,ae052e07b1c29594,"Ну, мяне ніколі не цягнула да прыгод.",жарт: Інды пад выглядам святара
 #str_vo_nl_sidney_ch02la02_067_sidney_savage_talking_ne_01,f7a3b605b2024f55,"Святога Пятра, прафесар? Аднаго з апосталаў?",
 #str_vo_nl_professorsavage_ch02la02_068_sidney_savage_talking_ne_01,303d2d8b09b99cc4,"Правільна! Заснавальніка каталіцкай царквы. Часам ты мяне здзіўляеш, хлопча.",
 #str_vo_nl_professorsavage_ch02la02_069_sidney_savage_talking_ne_01,989c27abc8b1e96d,"Цікава, што азначае гэта «Вялікае кола»...",
@@ -87,7 +87,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch02la02_079_inspecting_fragment_ne_01,c1455c7cfdf27133,Што тут у нас?,"рэмарка апушчана, як у ru"
 #str_vo_nl_indy_ch02la02_079_inspecting_fragment_qu_01,27fa58cedde48871,Што тут у нас?,
 #str_vo_nl_indy_ch02la02_080_after_fight_ne_01,567c6a19c0cdb426,Гэта табе за вазу.,
-#str_vo_nl_indy_ch02la02_081_inspecting_guards_list_qu_01,dba37a348211f4e0,Што шукаюць чарнакашулечнікі?,
+#str_vo_nl_indy_ch02la02_081_inspecting_guards_list_qu_01,dba37a348211f4e0,Што шукаюць чорнакашульнікі?,
 #str_vo_nl_indy_ch02la02_082_inspecting_key_qu_01,6b304f4010026166,"Можа, там яны і трымаюць каменны абломак.",
 #str_vo_nl_indy_ch02la02_083_finding_fragment_ne_01,89e8291bb9f47c35,Так. Ну і дзе ж той каменны абломак...,
 #str_vo_nl_indy_ch02la02_083_finding_fragment_qu_01,cfcc8a9453885021,Так.[1.45]Ну і дзе ж той каменны абломак...,
@@ -100,7 +100,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch02la02_087_finding_fragment_ne_01,46107ec3a790634f,Не гэты. Ён павінен быць дзесьці тут...,
 #str_vo_nl_indy_ch02la02_087_finding_fragment_qu_01,3a7aa5827ed2a55e,Не гэты.[1.79]Ён павінен быць дзесьці тут...,
 #str_vo_nl_indy_ch02la02_088_talking_savage_ne_01,dfff7b72c3b81942,А. Вельмі прыемна.,
-#str_vo_nl_professorsavage_ch02la02_089_talking_savage_ne_01,004908a80eb35ce7,"Гэты чортаў Вентура са сваімі чарнакашулечнікамі...[3.3][4.8]Яны выкралі майго дарагога вучня Сідні![9.0]І сарвалі мне раскопкі ў Апостальскім палацы![12.9]Цяпер увесь праект давялося прыпыніць.[16.1]А мы ж былі на парозе адкрыцця, калі...",
+#str_vo_nl_professorsavage_ch02la02_089_talking_savage_ne_01,004908a80eb35ce7,"Гэты чортаў Вентура са сваімі чорнакашульнікамі...[3.3][4.8]Яны выкралі майго дарагога вучня Сідні![9.0]І сарвалі мне раскопкі ў Апостальскім палацы![12.9]Цяпер увесь праект давялося прыпыніць.[16.1]А мы ж былі на парозе адкрыцця, калі...",
 #str_vo_nl_indy_ch02la02_090_talking_savage_ne_01,3551458a031306c2,"А, э-э, што гэта былі за літары?",
 #str_vo_nl_professorsavage_ch02la02_091_talking_savage_ne_01,1311c8604d5ac12e,L a p s o... a n g e ... Далей я не разабраў...,
 #str_vo_nl_indy_ch02la02_092_talking_savage_ne_01,4cfd298266db323e,Няма за што.,

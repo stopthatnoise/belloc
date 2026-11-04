@@ -145,7 +145,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch01se02_133_cat_mummy_clue_ne_01,88dd6cac8e4dbc7b,"Не, трэба паспрабаваць нешта іншае.",
 #str_vo_nl_brody_ch01se02_134_cat_mummy_clue_ne_01,5df86b71db2a42c3,"Цікава, што?",
 #str_vo_nl_brody_ch01se02_135_relic_correct_ne_01,b0550a85c26a71ae,Выдатна.,
-#str_vo_nl_brody_ch01se02_136_relic_correct_ne_01,30836e28033dcdad,"Падобна, правільна, Індзі.",
+#str_vo_nl_brody_ch01se02_136_relic_correct_ne_01,30836e28033dcdad,"Падобна, правільна, Інды.",
 #str_vo_nl_brody_ch01se02_137_relic_correct_ne_01,65c1f9293df813a9,Брава.,
 #str_vo_nl_brody_ch01se02_138_relic_correct_ne_01,68a6919b8c7ee902,Дык вось дзе было месца рэльефу.,
 #str_vo_nl_indy_ch01se02_139_apple_qu_01,09475afc019855e7,Ох ужо гэты хлапчук са сваімі яблыкамі...,
@@ -158,7 +158,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch01se02_147_packing_ne_01,bfa78c3c1a272f18,"Вядома, нехта павінен будзе ўзяць мае заняткі.",
 #str_vo_nl_brody_ch01se02_148_packing_ne_01,6fac2ff318d278dc,Індыяна...,
 #str_vo_nl_indy_ch01se02_149_packing_ne_01,5049086cf9114830,"Найлепш, мусіць, Доўсан. Ці Кітрыдж.[4.4]","Dawson, Kittridge — Доўсан, Кітрыдж (калегі ў каледжы)"
-#str_vo_nl_brody_ch01se02_150_cat_mummy_pesters_ne_01,2e4bdc28702e6864,Ну і разгардзіяш. Экспанаты па ўсёй падлозе!,
+#str_vo_nl_brody_ch01se02_150_cat_mummy_pesters_ne_01,2e4bdc28702e6864,Ну і вэрхал. Экспанаты па ўсёй падлозе!,
 #str_vo_nl_brody_ch01se02_151_cat_mummy_pesters_ne_01,d7c71ac7626d320d,"Давай прыбяром. Тады і высветлім, чаго не хапае.",
 #str_vo_nl_brody_ch01se02_152_pendant_pesters_ne_01,7c1a1b93e1011555,Нешта блішчыць у акне.,
 #str_vo_nl_brody_ch01se02_153_pendant_pesters_ne_01,1e7eab69f4b83895,Там у акне нешта зачапілася?,
@@ -188,7 +188,7 @@ key,src_hash,bel,note
 #str_vo_nl_brody_ch01se02_177_indy_office_ne_01,ccf3c8e152314e30,"Ох, у мяне галава раскалваецца пасля ўчарашніх начных пасядзелак.",
 #str_vo_nl_indy_ch01se02_178_indy_office_ne_01,5e4b456b059ccac5,"Я ж казаў, табе не трэба было заставацца.",
 #str_vo_nl_brody_ch01se02_179_indy_office_ne_01,a393f536acf994a8,Глупства. Я не кіну сябра ў бядзе.,
-#str_vo_nl_brody_ch01se02_180_janitor_room_ne_01,764d9b8965d14915,"Шкада таго, каму давядзецца прыбіраць увесь гэты разгардзіяш да панядзелка.",
+#str_vo_nl_brody_ch01se02_180_janitor_room_ne_01,764d9b8965d14915,"Шкада таго, каму давядзецца прыбіраць увесь гэты вэрхал да панядзелка.",
 #str_vo_nl_indy_ch01se02_181_janitor_room_ne_01,695324e9f74efc50,"Памятаеш, як аспіранты цішком запусцілі свіней у кабінет Доўсана?",
 #str_vo_nl_brody_ch01se02_182_janitor_room_ne_01,190a26b8be1b68a3,"А, так. Што ж, магло быць і горш.",
 #str_vo_nl_brody_ch01se02_183_other_wing_ne_01,cc512ba1262a01f8,Колькі з гэтых экспанатаў прывёз ты?,
@@ -220,7 +220,7 @@ key,src_hash,bel,note
 #str_vo_nl_brody_ch01se02_209_rto_pesters_ne_01,94cea673d52af48d,"Тут ёсць над чым падумаць. Можа, вернемся ў твой кабінет?",
 #str_vo_nl_indy_ch01se02_210_activity_notes_qu_01,d23f458ca8a3b4c1,Вось куды я падзеў тыя нататкі.,
 #str_vo_nl_indy_ch01se02_211_activity_notes_qu_01,f4fdb39f2923fbc7,Чорт...[1.14]забыўся пра хімчыстку.,
-#str_vo_nl_indy_ch01se02_212_activity_notes_qu_01,9369485ac665de7d,"Чарнакашулечнікі — бандзюкі, якія цкуюць нявінных людзей.",Blackshirts — чарнакашулечнікі (гласарый)
+#str_vo_nl_indy_ch01se02_212_activity_notes_qu_01,9369485ac665de7d,"Чорнакашульнікі — бандзюкі, якія цкуюць нявінных людзей.",Blackshirts — чорнакашульнікі (гласарый)
 #str_vo_nl_indy_ch01se02_213_activity_notes_ne_01,b3b339103fc3e95b,А я гэта шукаў.,
 #str_vo_nl_indy_ch01se02_213_activity_notes_qu_01,b3b339103fc3e95b,А я гэта шукаў.,
 #str_vo_nl_indy_ch01se02_214_activity_notes_qu_01,bdcf9e2811f72c8a,Я цябе вярну.,
@@ -232,7 +232,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch01se02_218_vase_qu_01,a6339afafb420a50,"[0.9]З Перу.[2.18][2.77]Не тая рэч, дзеля якой варта было рызыкаваць жыццём.",
 #str_vo_nl_indy_ch01se02_219_clay_container_ne_01,2bdf3e16e365048f,Маленькі напамінак пра Перу. Быццам я магу забыць...,
 #str_vo_nl_indy_ch01se02_219_clay_container_qu_01,4f7a38e7ad2d67c8,Маленькі напамінак пра Перу.[2.39]Быццам я магу забыць...,
-#str_vo_nl_indy_ch01se02_220_mace_head_ne_01,5f2635ccbeeb3851,"Навершша інкскай булавы, знойдзенае на зямлі чачапояс.",Chachapoyan land — «зямля чачапояс» (u17: «культура чачапояс»)
-#str_vo_nl_indy_ch01se02_220_mace_head_qu_01,5f2635ccbeeb3851,"Навершша інкскай булавы, знойдзенае на зямлі чачапояс.",
+#str_vo_nl_indy_ch01se02_220_mace_head_ne_01,5f2635ccbeeb3851,"Навершша інкскай булавы, знойдзенае на зямлі чачапоя.",Chachapoyan land — «зямля чачапоя» (u17: «культура чачапоя»)
+#str_vo_nl_indy_ch01se02_220_mace_head_qu_01,5f2635ccbeeb3851,"Навершша інкскай булавы, знойдзенае на зямлі чачапоя.",
 #str_vo_nl_indy_ch01se02_221_packing_ingame_qu_01,67d6a52dc8fe535c,Будзе добры падарунак.,
 #str_vo_nl_indy_ch01se02_222_activity_notes_qu_01,559cc952f5148ce0,Хоць пра гэтых можна не турбавацца.,

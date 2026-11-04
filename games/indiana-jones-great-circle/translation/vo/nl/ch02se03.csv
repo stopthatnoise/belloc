@@ -103,7 +103,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch02se03_095_treasure_chamber_ne_01,16fcce77b7d160a5,Вось яно.,"агульны тэкст — нейтральна, без роду"
 #str_vo_nl_gina_ch02se03_096_treasure_chamber_ne_01,04d037da024a76ad,"Ну, на шчасце, вока ў мяне трэніраванае.",
 #str_vo_nl_indy_ch02se03_097_treasure_chamber_ne_01,996fc4ba1025d644,"Можаш больш не шукаць, Джына. Я яе знайшоў.",
-#str_vo_nl_indy_ch02se03_098_locus_appears_ne_01,cc2e20c344b0ae1c,"[2.8]Вось ты дзе, дружа.[5.0]",Індзі — да муміі кошкі
+#str_vo_nl_indy_ch02se03_098_locus_appears_ne_01,cc2e20c344b0ae1c,"[2.8]Вось ты дзе, дружа.[5.0]",Інды — да муміі кошкі
 #str_vo_nl_locus_ch02se03_099_locus_appears_ne_01,83d05d9d4866c4db,\(па-лацінску\) Гэтае месца забароненае.[3.9],
 #str_vo_nl_gina_ch02se03_100_locus_appears_ne_01,6afe2eb81cf498fd,[0.9]\(спалохана ахае\)[2.5],
 #str_vo_nl_gina_ch02se03_101_locus_appears_ne_01,f5b15bc742d3c496,"[6.5]Гэта... гэта ж сапраўдны волат, доктар Джонс!",
@@ -138,7 +138,7 @@ key,src_hash,bel,note
 #str_vo_nl_fatherventura_ch02se03_129_unexpected_visitors_ne_01,31207972bc3ba82e,"Наколькі я разумею, Царква стагоддзямі збірала гэтыя трынаццаць рэліквій Вялікага кола — [8.9][10.9]і знайшліся яшчэ не ўсе.",
 #str_vo_nl_voss_ch02se03_130_unexpected_visitors_ne_01,70037c4908d8a731,"О, не турбуйцеся, ойча.[2.4]Па свеце засталося толькі чатыры,[5.5]а нямецкая археалогія з яе метадычнай руплівасцю[9.5]адкапае іх за некалькі тыдняў.",
 #str_vo_nl_fatherventura_ch02se03_131_unexpected_visitors_ne_01,622e8e141655273c,"Мушу вас папярэдзіць, гер Фос. Я чуў, што гэтыя рэліквіі вельмі небяспечныя.[5.2]Што ў іх хаваюцца сілы... не з гэтага свету.[11.5]",
-#str_vo_nl_voss_ch02se03_132_unexpected_visitors_ne_01,f5aa140b63d4363e,Таму яны і патрэбныя ^Iфюрэру^I.,
+#str_vo_nl_voss_ch02se03_132_unexpected_visitors_ne_01,f5aa140b63d4363e,Таму яны і патрэбныя ^Iфюрару^I.,
 #str_vo_nl_mussolini_ch02se03_133_unexpected_visitors_ne_01,d06fc484fa95b2a7,"Я разлічваю, што і Італія атрымае ад гэтай справы карысць, гер Фос.[8.0]",
 #str_vo_nl_voss_ch02se03_134_unexpected_visitors_ne_01,e3f04f90ea350c23,"Даверцеся мне, ваша правасхадзіцельства.[3.3]Як толькі ў нас будуць усе рэліквіі, абодва нашы народы стануць... [8.5]непераможнай сілай.",
 #str_vo_nl_mussolini_ch02se03_135_unexpected_visitors_ne_01,7cd7f0b44da7a3b0,"Ну вось! Рады, што мы дамовіліся па-сяброўску.",
@@ -162,7 +162,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch02se03_153_going_after_visitors_ne_01,767443519b2ea06a,"Не, чакай![2.0]",
 #str_vo_nl_voss_ch02se03_154_confronting_ventura_ne_01,4caf33fb1b9ef035,"Хутчэй, байцы! Вы затрымліваеце наш вылет.",
 #str_vo_nl_fatherventura_ch02se03_155_confronting_ventura_ne_01,7ac31928b1530992,Айцец Галахер?,
-#str_vo_nl_indy_ch02se03_156_confronting_ventura_ne_01,a0e9be1eb6982921,[7.7]О. Дзень добры.,Індзі да Вентуры — вы
+#str_vo_nl_indy_ch02se03_156_confronting_ventura_ne_01,a0e9be1eb6982921,[7.7]О. Дзень добры.,Інды да Вентуры — вы
 #str_vo_nl_fatherventura_ch02se03_157_confronting_ventura_ne_01,5e68a86bee40615a,Чаму вы не ў сутане?[2.2]І чаму не ў бібліятэцы з айцом Антоніа?,
 #str_vo_nl_indy_ch02se03_158_confronting_ventura_ne_01,f4c32f5100f838ca,"[0.73]Захацелася палюбавацца краявідам.[3.0]Вы ж ведаеце нас, амерыканцаў. Вечна сунем нос куды не трэба.",
 #str_vo_nl_fatherventura_ch02se03_159_confronting_ventura_ne_01,0a9e00f66358eaae,Са зброяй і бізуном?[2.1],
@@ -495,7 +495,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch02se03_416_gold_trial_ne_01,0cb48857246f3063,Звычайны працоўны дзень.[2]Паспрабуем нешта іншае.,
 #str_vo_nl_gina_ch02se03_417_gold_trial_lo_01,efd1b2af5700887c,"Мне здаецца, гэтыя статуі мяне асуджаюць.",
 #str_vo_nl_gina_ch02se03_417_gold_trial_ne_01,efd1b2af5700887c,"Мне здаецца, гэтыя статуі мяне асуджаюць.",
-#str_vo_nl_locus_ch02se03_418_fight_taunts_lo_01,68e241fe2aeb7e0a,\(па-лацінску\) Навошта вы пайшлі за мной?,"Локус — «вы» ў 316 і 320 (да Індзі і Джыны разам, як ru), астатняе — «ты» да Індзі"
+#str_vo_nl_locus_ch02se03_418_fight_taunts_lo_01,68e241fe2aeb7e0a,\(па-лацінску\) Навошта вы пайшлі за мной?,"Локус — «вы» ў 316 і 320 (да Інды і Джыны разам, як ru), астатняе — «ты» да Інды"
 #str_vo_nl_locus_ch02se03_419_fight_taunts_lo_01,baba42bef240219b,\(па-лацінску\) Гэта святое месца.,
 #str_vo_nl_locus_ch02se03_420_fight_taunts_lo_01,4258eb722408c901,\(па-лацінску\) Не жартуй з гэтай сілай.,
 #str_vo_nl_locus_ch02se03_421_fight_taunts_lo_01,c2056529ea54b3d1,"\(па-лацінску\) Ты як дзіця, што гуляе з агнём.",

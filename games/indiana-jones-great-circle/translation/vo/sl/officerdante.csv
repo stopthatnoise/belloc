@@ -235,7 +235,7 @@ key,src_hash,bel,note
 #str_vo_sl_officerdante_combat_melee_attack_lo_11,805abf05eab01bac,Час выйшаў!,
 #str_vo_sl_officerdante_combat_melee_attack_lo_12,4148af4b270ce0bc,Будзе балюча!,
 #str_vo_sl_officerdante_combat_melee_attack_parried_lo_01,55c3e5daec20a64d,Га?,
-#str_vo_sl_officerdante_combat_melee_attack_parried_lo_02,4907ee25d9f6991a,Ды ну!,Come on! тут — прыкрасць пасля парыравання; у b00 (Індзі) — «Давай!»
+#str_vo_sl_officerdante_combat_melee_attack_parried_lo_02,4907ee25d9f6991a,Ды ну!,Come on! тут — прыкрасць пасля парыравання; у b00 (Інды) — «Давай!»
 #str_vo_sl_officerdante_combat_melee_attack_parried_lo_03,5a74a9556213ace1,Што? Халера!,
 #str_vo_sl_officerdante_combat_melee_attack_parried_lo_04,4e56af1b8bdf4ac2,Каб цябе!,
 #str_vo_sl_officerdante_combat_melee_attack_parried_lo_05,12c31896eb20fce8,Чорт!,
@@ -756,8 +756,8 @@ key,src_hash,bel,note
 #str_vo_sl_officerdante_relaxed_approach_arearestricted_welcome_ne_03,ca0e50876afe7291,Праходзь.,
 #str_vo_sl_officerdante_relaxed_approach_arearestricted_welcome_ne_04,6b9ca07bccf0c37d,Добра. Ідзі далей.,
 #str_vo_sl_officerdante_relaxed_approach_arearestricted_welcome_ne_05,c29d8eacf5a9bb17,"Ну, давай! Можна!",
-#str_vo_sl_officerdante_relaxed_approach_indy_ne_01,ff90d96a1f8b2414,"Праходзьце, грамадзянін!","да Індзі без маскіроўкі — «вы» (EN sir/citizen, ru «вы»)"
-#str_vo_sl_officerdante_relaxed_approach_indy_ne_02,af639762ae4d495a,"Адыдзіце, спадару.",да Індзі без маскіроўкі — «вы»
+#str_vo_sl_officerdante_relaxed_approach_indy_ne_01,ff90d96a1f8b2414,"Праходзьце, грамадзянін!","да Інды без маскіроўкі — «вы» (EN sir/citizen, ru «вы»)"
+#str_vo_sl_officerdante_relaxed_approach_indy_ne_02,af639762ae4d495a,"Адыдзіце, спадару.",да Інды без маскіроўкі — «вы»
 #str_vo_sl_officerdante_relaxed_approach_indy_ne_03,05dedd74f609b2cc,"Будзьце ласкавы, трымайцеся далей.",
 #str_vo_sl_officerdante_relaxed_approach_indy_ne_04,2409bae936c262b7,"Адыходзьце, спадару.",
 #str_vo_sl_officerdante_relaxed_approach_indy_ne_05,d2f8fd08e5a274b1,"Назад, спадару.",

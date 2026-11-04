@@ -33,7 +33,7 @@ key,src_hash,bel,note
 #str_vo_sl_workerzeeko_general_greet_indyworkergizeh_response_ne_02,fc9e03a9c3567dae,"А, прывітанне.",
 #str_vo_sl_workerzeeko_general_greet_indyworkergizeh_response_ne_03,38b8108e35a0f0ef,"Так, добры дзень.",
 #str_vo_sl_workerzeeko_general_greet_indyworkergizeh_response_ne_04,2d8bd7d9bb5f85ba,Прывітанне.,
-#str_vo_sl_workerzeeko_general_greet_indyworkergizeh_response_ne_05,120992a297741bbc,Мір табе.,"«Мір табе» — Індзі ў маскіроўцы рабочага, паміж рабочымі «ты» (TERMS s12/s16)"
+#str_vo_sl_workerzeeko_general_greet_indyworkergizeh_response_ne_05,120992a297741bbc,Мір табе.,"«Мір табе» — Інды ў маскіроўцы рабочага, паміж рабочымі «ты» (TERMS s12/s16)"
 #str_vo_sl_workerzeeko_general_greet_nazi_ne_01,1bf3bd71da895df1,"Як маецеся, спадару?",
 #str_vo_sl_workerzeeko_general_greet_nazi_ne_02,a7ccb8dc24e7efc5,"Добрага вам дня, спадару.",
 #str_vo_sl_workerzeeko_general_greet_nazi_ne_03,7b78bf4f1945db5c,"Вітаю вас, спадару.",
@@ -94,7 +94,7 @@ key,src_hash,bel,note
 #str_vo_sl_workerzeeko_general_interact_indynazi_generic_ne_03,beedcaa607fd4c91,"Што мне, па-вашаму, рабіць?",
 #str_vo_sl_workerzeeko_general_interact_indynazi_generic_ne_04,f1ec88079e69796b,Я тут раблю сваю работу.,
 #str_vo_sl_workerzeeko_general_interact_indynazi_generic_ne_05,5163c9584fa36416,"Так, я працую.",
-#str_vo_sl_workerzeeko_general_interact_indyworkergizeh_generic_ne_01,69bf7dce17c582ba,"Няма калі балбатаць, працуй.",?: ru да Індзі-рабочага на «вы»; паводле правіла «паміж рабочымі — ты» — «ты»
+#str_vo_sl_workerzeeko_general_interact_indyworkergizeh_generic_ne_01,69bf7dce17c582ba,"Няма калі балбатаць, працуй.",?: ru да Інды-рабочага на «вы»; паводле правіла «паміж рабочымі — ты» — «ты»
 #str_vo_sl_workerzeeko_general_interact_indyworkergizeh_generic_ne_02,dc35c733a26a6837,Калі трэба памагчы з работай — толькі скажы.,
 #str_vo_sl_workerzeeko_general_interact_indyworkergizeh_generic_ne_03,202ab9cf354e11b1,На раскопках мы трымаемся адзін за аднаго.,
 #str_vo_sl_workerzeeko_general_interact_indyworkergizeh_generic_ne_04,8cdcf67ee9b0b967,"Салдаты хочуць, каб мы капалі хутчэй, чым чалавеку пад сілу.",

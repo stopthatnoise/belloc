@@ -272,7 +272,7 @@ key,src_hash,bel,note
 #str_vo_nl_mslisia_ch02lw00_937_interactive_paintbrush_qu_01,dd38a7be12889840,Дзе ж ён...?,
 #str_vo_nl_mslisia_ch02lw00_938_interactive_paintbrush_ne_01,69b78aa9be08d363,"Вы знайшлі мой пэндзаль! Дзякуй, добры спадару. Нарэшце можна вярнуцца да працы.",
 #str_vo_nl_fathermassi_ch02lw00_939_interactive_fresco_ne_01,79ecb52032a8eb85,Што здарылася?,італьянскі паралельны тэкст у неэкранаваных дужках выкінуты
-#str_vo_nl_fatherbutera_ch02lw00_940_interactive_fresco_ne_01,d762f5dcdddc2800,"Я абяцаў маме паслаць фота фрэскі ў Сікстынскай капэле,[4.02]але нідзе не магу знайсці фотаапарат.",
+#str_vo_nl_fatherbutera_ch02lw00_940_interactive_fresco_ne_01,d762f5dcdddc2800,"Я абяцаў маме паслаць фота фрэскі ў Сіксцінскай капэле,[4.02]але нідзе не магу знайсці фотаапарат.",
 #str_vo_nl_fathermassi_ch02lw00_941_interactive_fresco_ne_01,ce93d9ebca919d13,"А... Здаецца, у Эрнэста ёсць на продаж.","італьянскі паралельны тэкст у неэкранаваных дужках выкінуты; святары адзін да аднаго — «вы» (s03), займенніка ўнікаем"
 #str_vo_nl_fatherbutera_ch02lw00_942_interactive_fresco_ne_01,1014183df6bc5965,"Так, але ў мяне няма на яго грошай.",
 #str_vo_nl_fatherbutera_ch02lw00_943_interactive_fresco_ne_01,9e4a46f2a457c7cc,"Гэта мне? Не ведаю, як вам дзякаваць. Божа мой...",
@@ -348,7 +348,7 @@ key,src_hash,bel,note
 #str_vo_nl_officerluigi_ch02lw00_1018_patrol_courtyard_ne_01,6a17e465d2c9f29d,Глянь на мазаіку. Як тонка зроблена.,
 #str_vo_nl_officerdante_ch02lw00_1019_patrol_courtyard_ne_01,13cc55760c597b2d,"Ага. Мне аж здаецца, што мне тут і патруляваць нельга.",
 #str_vo_nl_officerluigi_ch02lw00_1020_patrol_courtyard_ne_01,285ce9e0cf504c94,"Гэй, гаспадары тут мы, а не святары.",
-#str_vo_nl_officerdante_ch02lw00_1021_patrol_courtyard_ne_01,cb9f80da1bbd0fb6,Вядома. Ты ўжо быў у Сікстынскай капэле?,
+#str_vo_nl_officerdante_ch02lw00_1021_patrol_courtyard_ne_01,cb9f80da1bbd0fb6,Вядома. Ты ўжо быў у Сіксцінскай капэле?,
 #str_vo_nl_officerluigi_ch02lw00_1022_patrol_courtyard_ne_01,684a91411ae2e29d,Не. Варта схадзіць?,
 #str_vo_nl_officerdante_ch02lw00_1023_patrol_courtyard_ne_01,f08a03eb4d5afb62,Абавязкова паглядзі. Фрэска Мікеланджэла — гэта... неверагодна.,
 #str_vo_nl_officerluigi_ch02lw00_1024_patrol_courtyard_ne_01,d195b37f8cc0c20d,"Не ведаў, што ты цікавішся культурай.",

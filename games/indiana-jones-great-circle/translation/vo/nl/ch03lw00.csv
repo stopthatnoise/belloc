@@ -155,7 +155,7 @@ key,src_hash,bel,note
 #str_vo_nl_officergernot_ch03lw00_251_comic_books_ne_01,77bf8894ebcf4001,Вось і добра! Мо хоць выспішся.,
 #str_vo_nl_officerstefan_ch03lw00_264_shipments_ne_01,c0fb95bb87a68685,Новую партыю артэфактаў ужо адправілі ў Германію?,
 #str_vo_nl_officerjurgen_ch03lw00_265_shipments_ne_01,85d887c11169f255,"Так! Здаецца, карабель ужо адплыў у Еўропу.",
-#str_vo_nl_officerstefan_ch03lw00_266_shipments_ne_01,62517467784ba9a0,"Там ёсць што-небудзь, што можа зацікавіць ^Iфюрэра^I?",
+#str_vo_nl_officerstefan_ch03lw00_266_shipments_ne_01,62517467784ba9a0,"Там ёсць што-небудзь, што можа зацікавіць ^Iфюрара^I?",
 #str_vo_nl_officerjurgen_ch03lw00_267_shipments_ne_01,58e53feebccc1ef0,"Не. Усё незвычайнае адклалі, каб агледзеў Фос.",
 #str_vo_nl_officerstefan_ch03lw00_268_shipments_ne_01,cae82a491a4d3e1c,"Не разумею, навошта мы шукаем старажытныя артэфакты.[2.8]Хіба моцы нямецкай сталі не хопіць, каб перамагчы?",
 #str_vo_nl_officerjurgen_ch03lw00_269_shipments_ne_01,4237873c135082d5,"Ёсць рэчы старэйшыя за сталь і мацнейшыя за нас, дружа.",
@@ -283,7 +283,7 @@ key,src_hash,bel,note
 #str_vo_nl_officerfritz_ch03lw00_451_sand_everywhere_ne_01,5d8a995a6fa7cf7c,Чаму?,
 #str_vo_nl_officergernot_ch03lw00_452_sand_everywhere_ne_01,fb2ffab0ef67ebc8,"Кажуць, Гітлер асабіста зацікаўлены ў гэтай аперацыі.[3.87]Ты, дружа, адзін з нямногіх выбраных, каму даверана гэтая важная служба Вялікаму Правадыру.",
 #str_vo_nl_officerfritz_ch03lw00_453_sand_everywhere_ne_01,d8a542ffc268dd60,"Ого... Я, вядома, ведаў, што гэта важна, але... сам Гітлер?",
-#str_vo_nl_officergernot_ch03lw00_454_sand_everywhere_ne_01,867e772ffe4cb598,Так. Таму Фос увесь час і ганяе нас.[3.13]Яму трэба паказаць ^Iфюрэру^I нейкія вынікі.,
+#str_vo_nl_officergernot_ch03lw00_454_sand_everywhere_ne_01,867e772ffe4cb598,Так. Таму Фос увесь час і ганяе нас.[3.13]Яму трэба паказаць ^Iфюрару^I нейкія вынікі.,
 #str_vo_nl_officerfritz_ch03lw00_455_sand_everywhere_ne_01,b46895670c419b58,"Зразумела. Ну, тады, мусіць, не варта скардзіцца на нейкі пясок у штанах.",
 #str_vo_nl_officerhans_ch03lw00_465_giant_ne_01,8e456576ab580fec,"Чуў, што Ганц учора схапіў дзіўнага тыпа, які таемна швэндаўся па пустыні?",
 #str_vo_nl_officerjurgen_ch03lw00_466_giant_ne_01,7a1b6b54e87e05a3,Таго высокага сляпога? Яго прывезлі ў штаб на допыт.,
@@ -351,7 +351,7 @@ key,src_hash,bel,note
 #str_vo_nl_officerjurgen_ch03lw00_535_mention_hq_ne_01,e44bd9f508b7b717,"Віншую. Кажуць, там хоць кормяць па-людску.",
 #str_vo_nl_officergernot_ch03lw00_536_mention_hq_ne_01,b7c9078da8c5e377,"Ведаеш, ахову штаба ўзмацняюць — Фос жа сюды едзе.[4.06]Можа, наступны — ты.",
 #str_vo_nl_officerjurgen_ch03lw00_537_mention_hq_ne_01,acd34413edef295c,"Узмацняюць ахову? Я думаў, Ганц Фоса цярпець не можа.",
-#str_vo_nl_officergernot_ch03lw00_538_mention_hq_ne_01,f56aeeae2fe3e282,"Так, але Фос важны для ^Iфюрэра^I, вось Ганцу і даводзіцца падскокваць перад ім, як перад каралём...",
+#str_vo_nl_officergernot_ch03lw00_538_mention_hq_ne_01,f56aeeae2fe3e282,"Так, але Фос важны для ^Iфюрара^I, вось Ганцу і даводзіцца падскокваць перад ім, як перад каралём...",
 #str_vo_nl_officerjurgen_ch03lw00_539_mention_hq_ne_01,569d9164af7cb942,"Цікава, чым ён такі важны...?",
 #str_vo_nl_officerstefan_ch03lw00_540_about_village_ne_01,c85fe33fdf3347ca,Учора купіў у аднаго гандляра ў вёсцы сапраўдную знаходку.,
 #str_vo_nl_officerhans_ch03lw00_541_about_village_ne_01,7d43a5e1fe833958,Ды ну? І што гэта?,
@@ -1362,7 +1362,7 @@ key,src_hash,bel,note
 #str_vo_nl_villageremat_ch03lw00_1577_audience_reactions_ne_01,0dfdd6456fe45e2d,А што было далей?,
 #str_vo_nl_villageremat_ch03lw00_1578_audience_reactions_ne_01,c060420940cfad29,"Мне трэба ведаць, чым гэта скончыцца.",
 #str_vo_nl_villageremat_ch03lw00_1579_audience_reactions_ne_01,f4b269deb661ba3c,Як сумна...,
-#str_vo_nl_villageremat_ch03lw00_1580_green_shirts_ne_01,05a6d1bb07f5d600,"Чуў, што ўчора зеленакашулечнікі ўчынілі ў Каіры вулічную бойку?",Green Shirts — зеленакашулечнікі (па ўзоры Blackshirt — чарнакашулечнік); ru замяняе на «Молодой Египет»
+#str_vo_nl_villageremat_ch03lw00_1580_green_shirts_ne_01,05a6d1bb07f5d600,"Чуў, што ўчора зеленакашульнікі ўчынілі ў Каіры вулічную бойку?",Green Shirts — зеленакашульнікі (па ўзоры Blackshirt — чорнакашульнік); ru замяняе на «Молодой Египет»
 #str_vo_nl_villageremat_ch03lw00_1582_green_shirts_ne_01,af23c047337b1688,"Не ведаю. Па-мойму, яны ўздымаюць важныя пытанні.",
 #str_vo_nl_villageremat_ch03lw00_1584_green_shirts_ne_01,26ff2a2f6a3a704c,"Недастаткова. Занадта ўжо яны паддаюцца англічанам.[3.72]Мы самі павінны распараджацца сваім лёсам, а не поўзаць перад іншымі.",?: папярэдняй рэплікі суразмоўцы ў пачцы няма (1583) — «Not hard enough» перададзена як «Недастаткова»
 #str_vo_nl_villageremat_ch03lw00_1586_green_shirts_ne_01,8a1b8612ca1c5c6c,"Ды не, вядома. Проста некаторыя ў іх крыху гарачыя, вось і ўсё.",?: папярэдняй рэплікі няма (1585) — «Of course not» як адказ на пытанне пра гвалт
@@ -1441,7 +1441,7 @@ key,src_hash,bel,note
 #str_vo_nl_workerabdel_ch03lw00_1659_random_shorts_ne_01,63314b385462364c,А што яны шукаюць?,
 #str_vo_nl_workershoukry_ch03lw00_1660_random_shorts_ne_01,ec0f9c81a84381e3,"Скарбы, вядома. Што ж яшчэ яны могуць шукаць?",
 #str_vo_nl_workerzeeko_ch03lw00_1661_random_shorts_ne_01,996976f35bfbd26c,Чуў якія навіны з Каіра?,
-#str_vo_nl_workerabdel_ch03lw00_1662_random_shorts_ne_01,8cedc2a9f6c7a408,На вуліцах была бойка паміж студэнтамі і зеленакашулечнікамі.,Green Shirts — зеленакашулечнікі (гл. 1580)
+#str_vo_nl_workerabdel_ch03lw00_1662_random_shorts_ne_01,8cedc2a9f6c7a408,На вуліцах была бойка паміж студэнтамі і зеленакашульнікамі.,Green Shirts — зеленакашульнікі (гл. 1580)
 #str_vo_nl_workerzeeko_ch03lw00_1663_random_shorts_ne_01,7273b2293c079463,"Ох, зноў? Спадзяюся, мой стрыечны брат на гэты раз не ўвязаўся.",
 #str_vo_nl_workeramena_ch03lw00_1664_random_shorts_ne_01,647443cc8a3d27c5,Я б зараз памылася.,
 #str_vo_nl_workernour_ch03lw00_1665_random_shorts_ne_01,aa354d3ed7b715ab,"Ага, я таксама...",
@@ -1848,7 +1848,7 @@ key,src_hash,bel,note
 #str_vo_nl_workeryousra_ch03lw00_2081_general_work_lo_01,7a3e59470fcd1950,"А ну, наваліліся!",
 #str_vo_nl_workeryousra_ch03lw00_2082_general_work_lo_01,555bab08b9923ab7,Трымай! Трымай! Цяпер!,
 #str_vo_nl_villagerassia_ch03lw00_2083_storyteller_three_ne_01,f22af8ce5717336c,"Так, раскажы нам, калі ласка.",
-#str_vo_nl_villagerfaten_ch03lw00_2084_green_shirts_ne_01,81b1828379e00e5d,"Сапраўды? Як па мне, ад гэтай шпаны адны непрыемнасці.",hoodlums (Зялёныя кашулі) — шпана; назва ў s15 — «зеленакашулечнікі»
+#str_vo_nl_villagerfaten_ch03lw00_2084_green_shirts_ne_01,81b1828379e00e5d,"Сапраўды? Як па мне, ад гэтай шпаны адны непрыемнасці.",hoodlums (Зялёныя кашулі) — шпана; назва ў s15 — «зеленакашульнікі»
 #str_vo_nl_villagerfaten_ch03lw00_2085_green_shirts_ne_01,0acdd0bc5df8c3a7,"Напрыклад? Табе ўжо і партыя Вафд не даспадобы?[3.36]Яны ж змагаюцца за нашу незалежнасць, хіба не?",Wafd Party — партыя Вафд
 #str_vo_nl_villagerfaten_ch03lw00_2086_green_shirts_ne_01,1707a44b703e79d8,Але ці правільна змагацца за гэта ў вулічных бойках?,
 #str_vo_nl_workerzeeko_ch03lw00_2087_missing_hammer_ne_01,7643f66645fc47ac,"Божа, я ўпусціў малаток... І адсюль мне яго не дастаць.",
