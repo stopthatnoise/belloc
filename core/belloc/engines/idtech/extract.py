@@ -39,9 +39,10 @@ def extract(loc: Loc, out: str | None = None):
     context: dict[str, dict[str, str]] = {}
     names: dict[str, dict[str, Counter]] = {c: {} for c in langs}
     skipped = 0
+    original = set(s.get("original", []))
     for key in sorted(src, key=lambda k: (table_of(k), order(k))):
         pre, text = split_prefix(src[key])
-        if EMPTY.match(text):
+        if EMPTY.match(text) or key in original:
             skipped += 1
             continue
         table = table_of(key)

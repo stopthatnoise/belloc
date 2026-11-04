@@ -42,13 +42,14 @@ def build_lang(items, en: dict[str, str], strings: dict[str, dict[str, str]],
 def _args(game_dir: str, payload: dict):
     g = payload["idtech"]
     return (inside(game_dir, g.get("base", "base")), {c: int(v) for c, v in g["langs"].items()},
-            g.get("target", "ru"), payload["source_lang"], g.get("rename", {}))
+            g.get("target", "ru"), payload["source_lang"], g.get("rename", {}), g.get("original", []))
 
 
 def apply(game_dir: str, payload: dict, out: str | None = None, log=print) -> dict:
-    base, langs, target, source_lang, rename = _args(game_dir, payload)
+    base, langs, target, source_lang, rename, original = _args(game_dir, payload)
     log("Чытаю тэкст гульні…")
     en = read_lang(base, langs[source_lang])
+    rename = {**{k: en[k] for k in original if k in en}, **rename}
     src_path, _ = find_lang(base, langs[target])
     game_path = src_path.removesuffix(".orig")
     n_done = 0
@@ -74,7 +75,7 @@ def payload(loc: Loc) -> dict:
     target = s.get("target", "ru")
     return {"idtech": {"base": s.get("base", "base"), "target": target,
                        "langs": {c: int(s["langs"][c]) for c in (loc.source_lang, target)},
-                       "rename": s.get("rename", {})},
+                       "rename": s.get("rename", {}), "original": s.get("original", [])},
             "source_lang": loc.source_lang}
 
 
