@@ -88,7 +88,8 @@ def payload(loc: Loc) -> dict:
 
 
 def check_path(payload: dict) -> str:
-    return payload["idtech"].get("base", "base") + "/packagemapspec_pc.json"
+    """Папка, па якой пазнаецца каталог гульні (усталёўшчык і лаўнчар правяраюць isdir)."""
+    return payload["idtech"].get("base", "base")
 
 
 def _targets(base: str) -> list[Target]:

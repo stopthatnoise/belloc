@@ -1,0 +1,7 @@
+key,src_hash,bel,note
+#str_door_blockedfromotherside,c7a196641b389037,Заблакавана з другога боку,
+#str_door_combatlocked,753ee16c76fa05b6,Зачынена падчас бою,
+#str_door_la03_locked,e68beb236a195e06,Зачынена мінулым,
+#str_door_la03_opensbymemory,e62db266fe82a6c4,Адчыняецца памяццю,
+#str_door_la03_opensbysomeoneelse,dea501ff42635f4c,Адчыняе нехта іншы,
+#str_door_la03_opensinthefuture,c0e1d6d10936ef66,Адчыніцца ў будучыні,

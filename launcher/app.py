@@ -30,7 +30,7 @@ from belloc import catalog, steam
 import games
 
 TITLE = "Беларускія пераклады гульняў"
-VERSION = "0.1"                         # версія лаўнчара (у загалоўку акна; каталог: "launcher")
+VERSION = "0.2"                         # версія лаўнчара (у загалоўку акна; каталог: "launcher")
 COVER_W, COVER_H = 230, 107             # прапорцыі header.jpg Steam (460×215)
 
 # цёмная тэма ў духу Steam; акцэнт брэнда — чырвоны квадрат у назве

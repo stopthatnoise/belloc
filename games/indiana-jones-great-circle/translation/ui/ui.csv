@@ -1,0 +1,9 @@
+key,src_hash,bel,note
+#str_ui_photo_blocked_in_combat,1b0ab573904058d5,Ідзе бой,
+#str_ui_photo_blocked_no_light,279ab2ffe597f4b8,Няма святла,
+#str_ui_photo_blocked_zoom_in,5a982cf9dc11b4ec,Наблізіць,
+#str_ui_photo_blocked_zoom_out,bc7b631a689b45ca,Аддаліць,
+#str_ui_photo_prompt_take_photo_hint,6c31b4b7ead03fd4,_attack1 Сфатаграфаваць падказку,
+#str_ui_photo_prompt_take_photo_hint_repeat,cca2332ef7ae91c9,_attack1 Паўтарыць падказку,
+#str_ui_photo_prompt_take_photo_opportunity,ae22f932b9a6df00,_attack1 Зрабіць здымак,
+#str_ui_photo_viewfinder_hint_text,56b703ee9b1abf11,Ёсць падказка,

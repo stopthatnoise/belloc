@@ -1,0 +1,22 @@
+key,src_hash,bel,note
+#str_vo_sl_radiohqnazi_combat_useradio_abort_ne_01,d093be265f8f8887,"Я вас не пачуў, салдат. Паўтарыце запыт...",
+#str_vo_sl_radiohqnazi_combat_useradio_abort_ne_02,32410a3b67a3f4a7,"Прыём? Паўтарыце запыт, салдат. Салдат?",
+#str_vo_sl_radiohqnazi_combat_useradio_abort_ne_03,3ee8709c02f87779,"Што-што? Сувязь кепская — паўтарыце паведамленне, салдат...",
+#str_vo_sl_radiohqnazi_combat_useradio_abort_ne_04,045a6a0841ced079,Не чую вас! Паўтарыце! Прыём? Салдат?,
+#str_vo_sl_radiohqnazi_combat_useradio_abort_ne_05,52b9a8a94d2dffab,"Паўтарыце паведамленне, салдат. Прыём? Ёсць хто на сувязі?",
+#str_vo_sl_radiohqnazi_combat_useradio_abort_ne_06,e21e9d4565ad36e8,"Паўтарыце гэтае паведамленне, салдат. Прыём? Хто-небудзь ёсць?",
+#str_vo_sl_radiohqnazi_combat_useradio_abort_ne_07,283392945456f69d,"Паведамленне не прынята, салдат! Паўтарыце! Прыём? Прыём?",
+#str_vo_sl_radiohqnazi_combat_useradio_abort_ne_08,68e8b0a6c71dad0b,"Паўтарыце запыт, салдат... Салдат?",у EN абдрукоўка solider (soldier); пераклад — як vo/sl/radiohqblackshirt abort_ne_01
+#str_vo_sl_radiohqnazi_combat_useradio_abort_ne_09,c250d5e9d516a5d4,Што там — не пачуў вас? Прыём?,
+#str_vo_sl_radiohqnazi_combat_useradio_done_ne_01,899c49e8ac4a9e26,Паведамленне прынята! Падмацаванне ўжо ў дарозе!,
+#str_vo_sl_radiohqnazi_combat_useradio_done_ne_02,8bd83560c57cf25b,Так точна! Людзі ўжо ідуць!,
+#str_vo_sl_radiohqnazi_combat_useradio_done_ne_03,0167f90e95dcad6a,"Чую вас, салдат! Высылаю людзей!",
+#str_vo_sl_radiohqnazi_combat_useradio_done_ne_04,959e057970ced502,Паведамленне прынята! Высылаю да вас людзей!,
+#str_vo_sl_radiohqnazi_combat_useradio_done_ne_05,a858822560d08de1,Чую вас! Неадкладна высылаю падмацаванне!,
+#str_vo_sl_radiohqnazi_combat_useradio_done_ne_06,3b60f6123a83c996,"Так точна, салдат! Высылаю людзей!",
+#str_vo_sl_radiohqnazi_combat_useradio_done_ne_07,d649753cb75ffcba,"Трымайцеся, салдат! Падмацаванне ўжо ў дарозе!",
+#str_vo_sl_radiohqnazi_combat_useradio_done_ne_08,bc095d326bf5c4fc,"Чую вас, салдат! Шлю да вас людзей!",
+#str_vo_sl_radiohqnazi_combat_useradio_done_ne_09,a5ef2561a7c97ffa,"Так точна, салдат! Падмацаванне ўжо выйшла!",у EN абдрукоўка Affirmitie (Affirmative)
+#str_vo_sl_radiohqnazi_combat_useradio_done_ne_10,844fc6444acc55af,Паведамленне прынята! Людзі ўжо ў дарозе!,
+#str_vo_sl_radiohqnazi_combat_useradio_done_ne_11,287c5e4c12beb8ac,"Трымайце пазіцыю, салдат! Неадкладна высылаю падмацаванне!",
+#str_vo_sl_radiohqnazi_combat_useradio_done_ne_12,fddbdce301742b39,Ваша паведамленне прынята! Падмацаванне ў дарозе!,

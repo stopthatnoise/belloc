@@ -1,0 +1,113 @@
+key,src_hash,bel,note
+#str_journal_abilities_study_desc,f416a8bf05e31040,"Пашырайце свае веды, збіраючы кнігі прыгод. Зарабляйце ачкі прыгод _ui_currency_ap, каб засвойваць з кніг новыя ўменні. 
+
+Можна таксама збіраць путэвадзіцелі — яны ў катэгорыі «Даследаванне». Яны адкрываюць важныя звесткі пра месцы, якія вы наведваеце.",
+#str_journal_abilities_study_firsttime_desc,f0a5cde4bf3ae4d8,"Цяпер вы можаце вывучыць кнігу прыгод і засвоіць новае ўменне. Кнігі прыгод дзеляцца на чатыры катэгорыі паводле таго, якое ўменне з іх можна засвоіць. Зарабляйце ачкі прыгод _ui_currency_ap, каб засвоіць новае ўменне.",
+#str_journal_abilities_study_title,c022e98ff6f1422c,ВЫВУЧЭННЕ,
+#str_journal_abilities_title,c2ec04ab925ca0c1,КНІГІ,
+#str_journal_activities_title,4d0076e6b4c71059,Заняткі,
+#str_journal_adventure_title,9a3c16424750cbde,Прыгода,
+#str_journal_back_to_map,070fc84e6322cbe5,Да карты,
+#str_journal_category_college,9c7db77d8b710acd,Каледж Маршала,
+#str_journal_category_dlc,d0d22019186582c6,Рым,
+#str_journal_category_gizeh,0194d9c18a02ff5a,Гіза,
+#str_journal_category_iraq,de5008d194a73211,Ірак,
+#str_journal_category_nepal,b373e0da28218ca9,Гімалаі,
+#str_journal_category_shanghai,303b1fa993cf8945,Шанхай,
+#str_journal_category_sukhothai,841af0bcc5b687f4,Сукхатай,
+#str_journal_category_vatican,ef428fa2750ed260,Ватыкан,
+#str_journal_chapters_title,40c767b79be56216,ПАДАРОЖЖЫ,
+#str_journal_completed,7e10a6053e543656,Выканана:,
+#str_journal_continue_story,7252e71036dea526,Працягнуць сюжэт,
+#str_journal_currency,194b624b3b06bb31,[],
+#str_journal_currency_collected,faadd3f3f5ce61a7,[],
+#str_journal_currency_gizeh_collected,59c0a135edddc3ef,[],
+#str_journal_currency_sukhothai_collected,2ba0ce2965a30772,[],
+#str_journal_currency_vatican_collected,7252d07a6e2d41e8,[],
+#str_journal_discoveries_title,d9e7a330e2192ae0,ЗНАХОДКІ,
+#str_journal_guide_title,4cf644d78bfc298f,КАРТА,
+#str_journal_inspect,e0723a86a5b9408a,Агледзець,
+#str_journal_inspect_vatican_intro_mystery_ancientmap_desc,43ee657782f9a3dd,Карта двара Анёла з пазнакамі.,
+#str_journal_inspect_vatican_intro_mystery_ancientmap_inspect,3e984f3cb5923d94,"Што хаваюць святары?
+
+Можа, за гэтай сцяной нешта ёсць?
+
+Карта з быкамі знойдзена каля каміна.
+
+^I[Адна з нататак паказвае на абведзенае месца на карце.]^I",
+#str_journal_inspect_vatican_intro_mystery_ancientmap_title,429dcbd587ce9910,Карта двара Анёла,
+#str_journal_inspect_vatican_intro_mystery_borgialetter_desc,398b3e279b106837,Ліст па-італьянску ад пазашлюбнага сына папы Аляксандра VI.,
+#str_journal_inspect_vatican_intro_mystery_borgialetter_inspect,09dc7d18d7bf0a60,"10 чэрвеня 1502 г. 
+
+Ваша Святасць!
+
+Паведамляю пра апошнія падзеі ў нашых планах захапіць Камерына.
+
+Герцаг слабее, а яго войска дрэнна падрыхтавана да нападу, — аднак гарадскі мур будзе цяжка прабіць. Таму я ўзяў Леанарда да Вінчы вайсковым архітэктарам і інжынерам. Без сумневу, яго дапамога будзе неацэннай, каб зламаць абарону горада. Я не супакоюся, пакуль наша ўлада не стане абсалютнай.
+
+Aut Caesar, aut nihil.
+
+Ваш верны слуга,
+Чэзарэ Борджыя",
+#str_journal_inspect_vatican_intro_mystery_borgialetter_title,68458f8fab9ee741,Ліст Чэзарэ Борджыі,
+#str_journal_large_activity_title,080892fe473b5618,ПАЛЯВАЯ ПРАЦА,
+#str_journal_learn,3ff5620b029427a0,Вывучыць,
+#str_journal_locations_title,95c61170318a2851,Мясцовасці,
+#str_journal_lower,8dd65d0952ed144c,Путэвадзіцель,
+#str_journal_map_title,be176b0015c424b7,Карта,
+#str_journal_maps_title,119e66d117ae8f0c,Карты,
+#str_journal_navigate,5ea5fbe811dbe99a,Гартаць,
+#str_journal_notes_collected,eb04a31b55c782f0,Нататкі: %d/%d,
+#str_journal_notes_title,8a7525b1492fb848,Нататкі,
+#str_journal_objective_title_row,d4b1ea5708dd5329,Агляд,
+#str_journal_objectives_title,eba92953899468e3,Задачы,
+#str_journal_raise,9b9a8d05a7ec353b,Чытаць,
+#str_journal_revisit,81033ad744f4b7d4,Вярнуцца,
+#str_journal_reward_title,b64f8fabf516c7e5,Узнагарода:,
+#str_journal_select,2a78025de6aae5e7,Выбраць,
+#str_journal_small_activity_title,a4b5efca73e31e4a,ТАЯМНІЦЫ,
+#str_journal_spread_antarctica,a396516fd580eb56,"18-е месца... 
+
+Антарктыда??",
+#str_journal_spread_coordinates,2206135ba8936fb1,"27° 51′ 54″ пн. ш., 92° 31′ 57″ у. д. 
+Месца каменя?",
+#str_journal_spread_coordinates_desc,c6dba1ebff728b7d,Запіска з каардынатамі,у EN _desc і _title памяняныя месцамі — перакладзена па тэксце | у EN _desc і _title памяняныя месцамі — перакладзена па тэксце
+#str_journal_spread_coordinates_title,9152178314613090,"Запіска ад Джыны, якая паказвае на месца ў Гімалаях.",
+#str_journal_spread_date_gizeh,422e191d250d1736,"Гіза
+25 кастрычніка 1937 г.",
+#str_journal_spread_date_iraq,8bb1ef17e907f9ff,"Зікурат Ура
+15 лістапада 1937 г.",
+#str_journal_spread_date_nepal,5f728e1e5c4a9b7a,"Гімалаі
+1 лістапада 1937 г.",
+#str_journal_spread_date_shanghai,44506c893079c2f7,"Шанхай
+1 лістапада 1937 г.",
+#str_journal_spread_date_sukhothai,349167273aa0a05e,"Сукхатай
+6 лістапада 1937 г.",
+#str_journal_spread_date_vatican,d18c8019c43acdba,"Ватыкан
+23 кастрычніка 1937 г.",
+#str_journal_spread_mc_1,f6793e0e4f6fed49,"Каледж Маршала
+21 кастрычніка 1937 г.",
+#str_journal_spread_ss_2_1_sketchleft,c3a8f4a03eff2349,Рашэнне галаваломкі з шасцярнямі злева,
+#str_journal_spread_ss_2_1_sketchright,7be61c3fbebab81f,Рашэнне галаваломкі з шасцярнямі справа,
+#str_journal_spread_ss_2_2_photoleft,b8981c60835e5380,Разьба нефілімаў,
+#str_journal_spread_ss_2_2_photoright,5d457c2f005254f8,Галаваломка нефілімаў?,
+#str_journal_spread_ss_2_2_solution_1,f90a051ed827dbaf,1. Адчыняе люк з новымі фігурамі,
+#str_journal_spread_ss_2_2_solution_2,6bc54f13bea593dc,[],
+#str_journal_spread_stonenotes,e17fc64a8db87d99,"Zohav-nitzeem = Сонцапал? 
+Sheram = імя 
+Otzam = зямля?",?: Sunsparker — «Сонцапал»; словы адамавай мовы — лацінкай (як u00) | ?: Sunsparker — «Сонцапал»; словы адамавай мовы — лацінкай (як u00)
+#str_journal_spread_vs_3_1,2f4c6c6f4f7dbaf0,Фантан Пакаяння,
+#str_journal_story_prefix,076b6db370163b3e,ГАЛОЎНАЕ: ,
+#str_journal_story_title,549f2b17195c6477,ПРЫГОДА,
+#str_journal_summary_adventure,9a3c16424750cbde,Прыгода,
+#str_journal_summary_chapter_notes,51adca1fc7bec87b,Нататкі да раздзела,
+#str_journal_summary_discoveries,aae954e161070b0f,Знаходкі,
+#str_journal_summary_fieldwork,84f596d8b407478c,Палявая праца,
+#str_journal_summary_game,75cf1f56e88f80c0,Вялікае кола,
+#str_journal_summary_mysteries,327148a7ac64c4be,Таямніцы,
+#str_journal_summary_title,8e76a94ac8320d51,Зводка,
+#str_journal_switch_maps,4a0299af9b3f85c6,Змяніць карту,
+#str_journal_title,e4bc3b1d551f37e2,ДЗЁННІК,
+#str_journal_track,051f01f095a28b04,Адсочваць,
+#str_journal_travelpoints_title,a43f860ba6af2b3e,Пункты перамяшчэння,
+#str_journal_zoom,509c517ede79fef0,Маштаб,

@@ -1,0 +1,226 @@
+key,src_hash,bel,note
+#str_mission_dlc_adventurephotos_mithraeum_statue_desc,df77ac8e91d6cfd7,"Статуя бога Мітры, які нараджаецца са скалы. У руках у яго нож і факел.",
+#str_mission_dlc_adventurephotos_mithraeum_statue_title,63f13f2ef972ab7e,"Мітра, народжаны са скалы",
+#str_mission_dlc_adventurephotos_shrine_of_crete_fountain_statue_desc,25c2d579a4ac8c8e,З рота статуі льецца вада. Пад фантанам зеўрае дзірка.,
+#str_mission_dlc_adventurephotos_shrine_of_crete_fountain_statue_title,1a758dd134d88e66,Статуя-фантан,
+#str_mission_dlc_adventurephotos_shrine_of_crete_minotaur_desc,6d80b742916637f9,"Статуя гладыятара-волата. Цяжка сказаць, як ён выглядаў: галавы няма.",
+#str_mission_dlc_adventurephotos_shrine_of_crete_minotaur_title,d8a2a5bd616d48e0,Безгаловы гладыятар,
+#str_mission_dlc_adventurephotos_shrine_of_crete_mural_1_dec,b509b507cdbb1245,Магутны гладыятар. У руках у яго шчыт з выявай льва.,
+#str_mission_dlc_adventurephotos_shrine_of_crete_mural_1_title,6b408a7f400478dd,Гладыятар з ільвом,
+#str_mission_dlc_adventurephotos_shrine_of_crete_mural_2_desc,8d472407a5938f0c,Шчыт гэтага гладыятара аздоблены грубаватай выявай дзіка.,
+#str_mission_dlc_adventurephotos_shrine_of_crete_mural_2_title,bb36cdded8c9220e,Гладыятар з дзіком,
+#str_mission_dlc_adventurephotos_shrine_of_crete_mural_3_desc,ee349ce46545ae3d,На шчыце гэтага гладыятара намаляваны тыгры.,
+#str_mission_dlc_adventurephotos_shrine_of_crete_mural_3_title,63a3eb242f0d378e,Гладыятар з тыграмі,
+#str_mission_dlc_adventurephotos_shrine_of_crete_mural_4_desc,e3b3808144900072,Шчыт гэтага гладыятара аздоблены выявамі мядзведзяў.,
+#str_mission_dlc_adventurephotos_shrine_of_crete_mural_4_title,9fe34257c25823ee,Гладыятар з мядзведзямі,
+#str_mission_dlc_adventurephotos_shrine_of_crete_nero_desc,1f581cae0a484bba,"Статуя імператара Нерона, які трымае адну з частак цыліндра.",
+#str_mission_dlc_adventurephotos_shrine_of_crete_nero_title,26a4e1db99ec031e,Імператар Нерон,
+#str_mission_dlc_constellation_mystery_desc,db3310e65b5ce4c5,"Пакой, схаваны за рэльефам з разяўленым ротам. Тут некалькі слупоў з выявамі зорак, а на падлозе — гіры.",
+#str_mission_dlc_constellation_mystery_summary,cab9651cf470f18a,"Калі павярнуць слупы так, каб зоркі склалі сузор’е Цяльца, адкрыўся цікавы артэфакт.",
+#str_mission_dlc_constellation_mystery_title,c83cce16ebd84869,Нябесны бык,
+#str_mission_dlc_desc,eb0a8164d257ee8f,[],
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_bonfire,4833404476273be4,Кальцо са знакамі,
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_bonfire_desc,cdf2a50ebc1b0b2d,"Вялікае кальцо, выкаванае з жалеза. Па ўсім крузе на ім — сімвалы.",
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_hellfire_hands,c0ea322474f9d4a0,Рукі веры,
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_hellfire_hands_desc,e98d336eefe4f60e,"Высокі крыж, высечаны з каменю. Пад ім — тры рукі.",
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_mural_a,76b6816b88ae7402,Фрэска з крыжам крыжаносцаў,
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_mural_a_2,76b6816b88ae7402,Фрэска з крыжам крыжаносцаў,
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_mural_a_desc,9747bfa7cdee6ad7,Фрэска з надпісам па-лацінску: першая частка гісторыі Безыменнага крыжаносца.,
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_mural_a_easy_inspect,a8c07f26825c99e1,"Тут апісаны подзвігі і лёс Безыменнага крыжаносца. Магутны воін. Чысты сэрцам, абраны Богам, верны Святой Тройцы і любімы пантыфікамі.
+
+Безыменны крыжаносец адплыў на «Галігасце» ў далёкія землі
+^UКарабель^U стаў на якар, і ён глядзеў на ^Uранішняе святло^U (усход)
+
+Ён дасягнуў ^UЭтаполіса^U і ўкленчыў там ^Uтварам на захад^U (захад)
+І прашаптаў нябёсам: «Госпадзе, дай мне сілы павесці маіх людзей да перамогі»","Halygast — карабель, «Галігаст»; Aethopolis — Этаполіс; у падказках дзённіка (puzzle_journal_hint) — лацінкай, як на карце"
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_mural_a_inspect,2116177079a9b87e,"Тут апісаны подзвігі і лёс Безыменнага крыжаносца. Магутны воін. Чысты сэрцам, абраны Богам, верны Святой Тройцы і любімы пантыфікамі.
+
+Безыменны крыжаносец адплыў на «Галігасце» ў далёкія землі
+^UКарабель^U стаў на якар, і ён глядзеў на ^Uранішняе святло^U
+
+Ён дасягнуў ^UЭтаполіса^U і ўкленчыў там ^Uтварам на захад^U
+І прашаптаў нябёсам: «Госпадзе, дай мне сілы павесці маіх людзей да перамогі»",
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_mural_b,4fe2cc0be22cec2f,Фрэска са шчытом,
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_mural_b_desc,7b857130e7be090c,Фрэска з надпісам па-лацінску. На ёй — другая частка гісторыі Безыменнага крыжаносца.,
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_mural_b_easy_inspect,7c51ffd5928ab8c9,"Праз два тыдні воіны Безыменнага крыжаносца захапілі скарбы ^UНахлы^U
+Разбіўшыся аб іх шчыты, вораг адступіў да ^Uблізкіх руін^U (поўдзень).
+
+У ^Uзамку Гора^U ім адвярнулася ўдача
+Крыжаносец паслаў вестку ва ^Uўсходні форт^U (усход)
+І вось, калі надзея ўжо гасла, ім на дапамогу прыйшлі салдаты","EN «Nameless Crusade's men» — абдрукоўка, перакладзена як «воіны Безыменнага крыжаносца»"
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_mural_b_inspect,bb58f1a86400bb13,"Праз два тыдні воіны Безыменнага крыжаносца захапілі скарбы ^UНахлы^U
+Разбіўшыся аб іх шчыты, вораг адступіў да ^Uблізкіх руін^U.
+
+У ^Uзамку Гора^U ім адвярнулася ўдача
+Крыжаносец паслаў вестку ва ^Uўсходні форт^U
+І вось, калі надзея ўжо гасла, ім на дапамогу прыйшлі салдаты",
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_mural_c,c1fdfb8821b3efd5,Фрэска з Тройцай,
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_mural_c_desc,0796892023c5ccee,Трэцяя частка сумнай гісторыі Безыменнага крыжаносца. Яна напісана на фрэсцы па-лацінску.,
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_mural_c_easy_inspect,00a8031f48a5a6f6,"У ^Uзамку Малум^U Безыменны крыжаносец сустрэў сваё каханне
+Побач з Мары ён глядзеў на ^Uцытадэль^U (поўдзень)
+
+Праз месяц узняліся крыкі: «Замак гарыць!»
+З ^Uшпіля вартаўніка^U ён кінуўся да ^Uлютага полымя^U (усход)
+Але было позна
+
+Страціўшы надзею, ён шукаў ^UБожага выратавання^U на поўначы
+За полымем ён яшчэ раз ^Uпаглядзеў у твар каханай^U (поўдзень)
+Цяпер яна — попел, як і яго сэрца",Marie — Мары (як u01); guardian spire — шпіль вартаўніка
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_mural_c_inspect,f81e921ff09b2e69,"У ^Uзамку Малум^U Безыменны крыжаносец сустрэў сваё каханне
+Побач з Мары ён глядзеў на ^Uцытадэль^U
+
+Праз месяц узняліся крыкі: «Замак гарыць!»
+З ^Uшпіля вартаўніка^U ён кінуўся да ^Uлютага полымя^U
+Але было позна
+
+Страціўшы надзею, ён шукаў ^UБожага выратавання^U на поўначы
+За полымем ён яшчэ раз ^Uпаглядзеў у твар каханай^U
+Цяпер яна — попел, як і яго сэрца",
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_mural_d,186eb4a40f175f22,Фрэска з мячом,
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_mural_d_desc,3eb7384fc79a2e59,Гэтая фрэска расказвае пра трагічны канец гісторыі Безыменнага крыжаносца. Словы напісаны на фрэсцы па-лацінску.,
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_mural_d_easy_inspect,cca3e4f08ff3ece8,"У ^Uлагеры Аль-Мансур^U, страціўшы ўсякую надзею,
+Безыменны крыжаносец глядзеў, як далёка на рацэ
+^Uпраплывае карабель^U (захад), і шаптаў крыжу, можа быць, сваю апошнюю малітву
+
+У ^Uруінах на поўдні^U на іх напалі з ^Uусходу^U
+Марна яны выхапілі мячы
+
+На ^Uполі бітвы^U, дзе расходзяцца рэкі, ён змагаўся і загінуў
+І ў сваю апошнюю ноч крыжаносец ^Uпаглядзеў у твар самому сабе^U (поўнач)
+
+У славе — праўда крыжаносца
+Вера, што яго несла, каханне, што згарэла
+Безыменным ён застаецца — прыкладам для ўсіх Божых воінаў",
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_mural_d_inspect,e4b1088901c3f67c,"У ^Uлагеры Аль-Мансур^U, страціўшы ўсякую надзею,
+Безыменны крыжаносец глядзеў, як далёка на рацэ
+^Uпраплывае карабель^U, і шаптаў крыжу, можа быць, сваю апошнюю малітву
+
+У ^Uруінах на поўдні^U на іх напалі з ^Uусходу^U
+Марна яны выхапілі мячы
+
+На ^Uполі бітвы^U, дзе расходзяцца рэкі, ён змагаўся і загінуў
+І ў сваю апошнюю ноч крыжаносец ^Uпаглядзеў у твар самому сабе^U
+
+У славе — праўда крыжаносца
+Вера, што яго несла, каханне, што згарэла
+Безыменным ён застаецца — прыкладам для ўсіх Божых воінаў",
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_statue,3e3677b724322cc0,Безыменны крыжаносец,
+#str_mission_dlc_gibborim_adventurephotos_gibborim_hint_puzzle_statue_desc,6d1c8f9470394a72,"Статуя нешта трымае ў руцэ. Мусіць, яшчэ адна частка цыліндра-скрутка.",
+#str_mission_dlc_gibborim_puzzle_hint_1_desc,b0400acd3105da41,"Трэба пашукаць, з чаго пачынаецца галаваломка.",
+#str_mission_dlc_gibborim_puzzle_hint_2_desc,45ee6821fd93d7d3,"Пад чатырма фрэскамі на сценах вакол грабніцы ёсць гнёзды. Трэба знайсці, што ў іх уставіць.",
+#str_mission_dlc_gibborim_puzzle_hint_3_desc,d4ccd024c81a572e,На фрэсках — надпісы па-лацінску. Трэба сфатаграфаваць іх і перакласці тэкст.,
+#str_mission_dlc_gibborim_puzzle_hint_4_desc,bb03a537f2a1a462,"Здаецца, гісторыя на фрэсках згадвае месцы на вялікай карце.",
+#str_mission_dlc_gibborim_puzzle_hint_5_desc,7a279662ed82eb47,Трэба пашукаць яшчэ скіпетры.,
+#str_mission_dlc_gibborim_puzzle_hint_6_desc,a05519b164f48ad1,Скіпетры трэба шукаць у бакавых залах.,
+#str_mission_dlc_gibborim_puzzle_journal_hint_1a,5712c70d45d3db7c,Halygast — усход,"назвы — лацінкай, як у EN (подпісы на карце ў гульні); ru перакладае — ?: праверыць у гульні, што на карце лацінка"
+#str_mission_dlc_gibborim_puzzle_journal_hint_1b,dadcf5ab734162cc,Aethopolis — захад,"лацінкай, як у EN (подпіс на карце)"
+#str_mission_dlc_gibborim_puzzle_journal_hint_2a,36bfa85b3118dd2b,Nakhla Pagus — поўдзень,"лацінкай, як у EN (подпіс на карце)"
+#str_mission_dlc_gibborim_puzzle_journal_hint_2b,f715e1d3b6bca214,Hori Castrum — усход,"лацінкай, як у EN (подпіс на карце)"
+#str_mission_dlc_gibborim_puzzle_journal_hint_3a,20be1ab1b338396e,Malum Castrum — поўнач,"лацінкай, як у EN (подпіс на карце)"
+#str_mission_dlc_gibborim_puzzle_journal_hint_3b,762f56d1bbe6dfde,Custodis Fastigium — усход,"лацінкай, як у EN (подпіс на карце)"
+#str_mission_dlc_gibborim_puzzle_journal_hint_3c,4cf4c6855a1e2435,Sancti Luciani Ecclesia — поўдзень,"лацінкай, як у EN (подпіс на карце)"
+#str_mission_dlc_gibborim_puzzle_journal_hint_4a,c5f00e7f1c2f4b02,Al-Mansur Castra — захад,"лацінкай, як у EN (подпіс на карце)"
+#str_mission_dlc_gibborim_puzzle_journal_hint_4b,6d60ace61c453798,Rudera — усход,"лацінкай, як у EN (подпіс на карце)"
+#str_mission_dlc_gibborim_puzzle_journal_hint_4c,e7d3fb9a4ff71184,Pugna — поўнач,"лацінкай, як у EN (подпіс на карце)"
+#str_mission_dlc_gibborim_puzzle_solution_sketch_desc,de98c64c0e150568,Вось як трэба павярнуць гнёзды на карце.,
+#str_mission_dlc_gibborim_puzzle_solution_sketch_title,43695398ded2d03b,Разгадка галаваломкі ў грабніцы Гіборыма,
+#str_mission_dlc_meetingroom_mystery_desc,cd89779e6a2fba7a,Адзін святар прымушае калегу выкрасці сакрэтны дакумент. Варта ў гэтым разабрацца.,
+#str_mission_dlc_meetingroom_mystery_objective_desc,160d8477049a82dd,Знайсці сакрэтны дакумент,
+#str_mission_dlc_meetingroom_mystery_summary,656786682cbe5e4e,"У сейфе ў зале пасяджэнняў ляжаў сакрэтны дакумент, які святар Федэрыка прасіў Алесандра здабыць для яго.",
+#str_mission_dlc_meetingroom_mystery_title,9fbcf439d05afd9e,Таямніца залы пасяджэнняў,
+#str_mission_dlc_mural_puzzle_hint_1_desc,6a016aac013e5a1d,"Трэба знайсці фрагменты фрэскі, якіх не хапае.",
+#str_mission_dlc_mural_puzzle_hint_2_desc,fb95249155118e76,"Частку цыліндра можна выкарыстаць, каб паварочваць цэнтральны пастамент.",
+#str_mission_dlc_mural_puzzle_hint_3_desc,498cc89982ba97cb,Кожнай жывёле на фрэсцы адпавядае свой сімвал.,
+#str_mission_dlc_mural_puzzle_hint_4_desc,cdb1179ab7534dae,"Кола на цэнтральным пастаменце — ключ да таго, каб падабраць сімвал да кожнай жывёлы.",
+#str_mission_dlc_mural_puzzle_hint_5_desc,c4b0de07068f103a,"Слупы трэба павярнуць так, каб жывёлы стаялі насупраць правільных сімвалаў.",
+#str_mission_dlc_mural_puzzle_hint_6_desc,e47586a6b30be159,Вось правільная адпаведнасць жывёл і сімвалаў.,
+#str_mission_dlc_mural_puzzle_hint_6_title,5f3c1d5a0425b5cc,Разгадка Брамы пачвары,
+#str_mission_dlc_serpent_puzzle_hint_1_desc,1712486d50721d7c,Трэба перанакіраваць плынь вады праз круглыя засаўкі лабірынта.,
+#str_mission_dlc_serpent_puzzle_hint_2_desc,0031c5f2c3cc08bb,Без інструмента засаўкі не павярнуць. Трэба яго знайсці.,
+#str_mission_dlc_serpent_puzzle_hint_3_desc,2a5407d21adf5c6e,Вада павінна трапляць у пашчу змяі на кожнай платформе.,
+#str_mission_dlc_serpent_puzzle_hint_4_desc,8104a219b95a7eb7,"Здаецца, пад’ёмнік заклініла. Трэба яго вызваліць.",
+#str_mission_dlc_serpent_puzzle_hint_5_desc,aa3b2ee28b1185f9,"Тое, што блакуе пад’ёмнік, відаць, знаходзіцца над платформай.",
+#str_mission_dlc_serpent_puzzle_hint_6_desc,828b5cd077dcc4c3,"Здаецца, сцёкі ў лабірынце — частка разгадкі.",
+#str_mission_dlc_serpent_puzzle_hint_7_desc,015d02eddf797250,Вада павінна трапіць у пяць сцёкаў.,
+#str_mission_dlc_serpent_puzzle_hint_8_desc,4516b111abb034de,"Плынь вады трэба накіраваць у чатыры сцёкі ля вуглоў і ў той, што побач з выхадам. Гэта павінна спрацаваць.",
+#str_mission_dlc_serpent_puzzle_hint_sketch,7e1e29202dad5062,Плынь вады трэба накіраваць у сцёкі вось так.,
+#str_mission_dlc_serpent_puzzle_solution_sketch_desc,132171ff12c3097d,Вось як правільна павярнуць круглыя засаўкі.,
+#str_mission_dlc_serpent_puzzle_solution_sketch_title,2bc92dd491316fce,Разгадка вадзянога змея,
+#str_mission_dlc_sewer_adventurephotos_canals_castello,7eef171a37578944,Замак Святога Анёла,
+#str_mission_dlc_sewer_adventurephotos_canals_castello_desc,a90bef6d890b90c4,"Уваход у Ватыкан. Фашыстаў тут і раней хапала, а з учорашняга дня іх, пэўна, стала яшчэ больш.",
+#str_mission_dlc_sewer_adventurephotos_canals_cloaca_entrance_desc,ccc4cbca15942133,Уваход у славутую Клааку Максіма.,
+#str_mission_dlc_sewer_adventurephotos_canals_cloaca_entrance_title,0de0e6c8de6658e4,Уваход у каналізацыю,
+#str_mission_dlc_sewer_adventurephotos_cloaca_maxima_cat,90f1133d38137032,Кот у каналізацыі,
+#str_mission_dlc_sewer_adventurephotos_cloaca_maxima_cat_desc,8bbcd9063cf1b93c,Кот у каналізацыі? Што ён тут робіць?,
+#str_mission_dlc_sewer_adventurephotos_cloaca_maxima_cult_graffiti_01_desc,e95145734349ec75,Нехта напісаў на гэтай сцяне па-лацінску: «Старажытнае полымя гарыць зноў».,
+#str_mission_dlc_sewer_adventurephotos_cloaca_maxima_cult_graffiti_01_title,551c5e0375546539,Графіці пра старажытнае полымя,
+#str_mission_dlc_sewer_adventurephotos_cloaca_maxima_cult_graffiti_02_desc,3ca76736099f5d17,На сцяне нешта накрэмзана па-лацінску: «Бык падае — мы паўстаём».,
+#str_mission_dlc_sewer_adventurephotos_cloaca_maxima_cult_graffiti_02_title,21294781ba65def1,Графіці пра быка,
+#str_mission_dlc_sewer_adventurephotos_cloaca_maxima_cult_graffiti_03_desc,79044425668856bb,Надпіс па-лацінску: «Узыходзь праз таямніцу».,
+#str_mission_dlc_sewer_adventurephotos_cloaca_maxima_cult_graffiti_03_title,d85100065618e031,Графіці пра таямніцу,
+#str_mission_dlc_sewer_adventurephotos_cloaca_maxima_hub_2,8b70cb0744b48b19,Цікавая архітэктура,
+#str_mission_dlc_sewer_adventurephotos_cloaca_maxima_hub_2_desc,fe355acf9d9a7b45,"Якая прыгожая архітэктура! Дзіва, што яна дагэтуль стаіць.",
+#str_mission_dlc_sewer_adventurephotos_cloaca_maxima_pumproom_hole_desc,f98f7bd4438bddda,Хтосьці можа туды зваліцца і пакалечыцца.,
+#str_mission_dlc_sewer_adventurephotos_cloaca_maxima_pumproom_hole_title,688e5f3e73e1eba1,Небяспечная яма,
+#str_mission_dlc_sewer_adventurephotos_cloaca_maxima_slaying_the_bull,866b31d192cfe4ae,Малюнак быка,
+#str_mission_dlc_sewer_adventurephotos_cloaca_maxima_slaying_the_bull_desc,be0700aa21749115,"Роспіс, на якім забіваюць быка. Гэта мусіць нешта значыць.",
+#str_mission_dlc_sewer_adventurephotos_cloaca_maxima_tree,3f4bf5d28c06023d,Дрэва,
+#str_mission_dlc_sewer_adventurephotos_cloaca_maxima_tree_desc,f89bbaa58423be9c,"Велічнае дрэва, якое расце пад зямлёй. І як яно толькі выжыла тут, унізе?",
+#str_mission_dlc_sewer_adventurephotos_giulia_palazzo_entrance_desc,b6f768751de3ca43,Чорны ход у палац Рычы.,
+#str_mission_dlc_sewer_adventurephotos_giulia_palazzo_entrance_title,2ce9545d57868e47,Чорны ход палаца Рычы,
+#str_mission_dlc_shrine_of_crete_adventurephotos_shrine_hint_1_desc,cd99449a86740360,"Трэба знайсці клінок, якога не хапае на рукаяці ў руцэ статуі.",
+#str_mission_dlc_shrine_of_crete_adventurephotos_shrine_hint_2_desc,fccb557d3209c215,"Клінок трэба ўставіць у рукаяць, якую трымае статуя.",
+#str_mission_dlc_shrine_of_crete_adventurephotos_shrine_hint_3_desc,528717ad59eb7698,Зніклы клінок можа быць у верхніх нішах. Трэба знайсці яго і ўставіць у рукаяць.,
+#str_mission_dlc_shrine_of_crete_adventurephotos_shrine_hint_4_desc,63cd52ba40b850c5,"Калі рвануць бізуном руку з мячом, нешта павінна спрацаваць.",
+#str_mission_dlc_shrine_of_crete_adventurephotos_shrine_hint_5_desc,63b79808473b4b9c,"Злучальных дэталей не хапае, каб пракласці шлях праз увесь лабірынт. Трэба перастаўляць іх, пакуль праз яго коціцца шар.",
+#str_mission_dlc_shrine_of_crete_adventurephotos_shrine_hint_6_desc,4d15f22edf6ea02e,"Фрэскі ў верхніх нішах падказваюць, у якім парадку шар мусіць ударыць па статуях.",
+#str_mission_dlc_shrine_of_crete_adventurephotos_shrine_hint_7_desc,3acc52b81667fd6a,"Спачатку шчыт з ільвом, потым шчыт з дзіком, за ім шчыт з тыграмі і нарэшце шчыт з мядзведзямі. Вось такі парадак.","Warthog у EN — тое ж, што Boar Gladiator на фрэсцы (u14), таму «дзік», як у ru; ?: калі ў u14 іначай — звесці"
+#str_mission_dlc_shrine_of_crete_adventurephotos_shrine_hint_easy_desc,baee2d5e1a6e3032,"Злучальныя дэталі трэба перастаўляць, пакуль коціцца шар, каб правесці яго праз лабірынт да ўсіх чатырох статуй.",
+#str_mission_dlc_shrine_of_crete_adventurephotos_shrine_hint_solution_desc,19dd8e05b57a77f9,Вось як правільна разгадаць галаваломку.,
+#str_mission_dlc_shrine_of_crete_adventurephotos_shrine_hint_solution_title,4d19323110f474af,Разгадка свяцілішча гладыятараў,
+#str_mission_dlc_summary,04dbba175e15f30a,"Пошукі шлема Безыменнага крыжаносца раскрылі, адкуль пайшоў Ордэн нефілімаў, і вывелі на трох волатаў — Юнію, Гіборыма і Абгаля. Айцец Рычы, які спачатку дапамагаў у пошуках, аказаўся кіраўніком небяспечнага культу Мітры. Рычы хацеў дасягнуць прасвятлення, забіўшы Залатым кінжалам Мітры Абгаля-Мінатаўра. Але скончылася гэта блага.",
+#str_mission_dlc_title,188695ef7e224297,Ордэн волатаў,
+#str_mission_dlc_vatican_desc,eb0a8164d257ee8f,[],
+#str_mission_dlc_vatican_title,ff297a49a167491f,Пачатак таямніцы,як u05 (dlg_dlc_awaits_desc)
+#str_mission_dlc_via_giulia_palazzo_birdcage_photo_op_desc,b3aaf1a8edf3dba3,Вельмі кемлівы папугай айца Рычы.,
+#str_mission_dlc_via_giulia_palazzo_birdcage_photo_op_title,e53717e462a1a7d7,Папугай Пій,
+#str_mission_dlc_via_giulia_palazzo_courtyard_photo_op_desc,70a8a0429ad9120c,Двор палаца айца Рычы сапраўды ўражвае.,
+#str_mission_dlc_via_giulia_palazzo_courtyard_photo_op_title,f66a8018002c2736,Двор палаца Рычы,
+#str_mission_dlc_via_giulia_palazzo_library_photo_op_desc,8829f79a93b67b2c,Бібліятэку перавярнулі ўверх дном чарнакашулечнікі.,
+#str_mission_dlc_via_giulia_palazzo_library_photo_op_title,b3b7196030a42a9f,Бібліятэка айца Рычы,
+#str_mission_dlc_via_giulia_palazzo_nero_photo_op_desc,b1e0041d9b8fd622,"Мармуровы бюст імператара Нерона. Дзіўны выбар, каб трымаць на віду ў сябе дома.",
+#str_mission_dlc_via_giulia_palazzo_nero_photo_op_title,dae9590f7a964a24,Бюст Нерона,
+#str_mission_dlc_via_giulia_palazzo_ricci_photo_op_desc,725a0ac06dc1960a,"Дом айца Рычы. Ён замкнёны, і яго ахоўваюць чарнакашулечнікі.",
+#str_mission_dlc_via_giulia_palazzo_ricci_photo_op_title,4ea93d399c68419b,Палац Рычы,
+#str_mission_dlc_villa_pia_adventurephotos_basilica_desc,e3f196ec4c06e64d,Сабор сапраўды ўражвае.,
+#str_mission_dlc_villa_pia_adventurephotos_basilica_title,6e2c525cc1b8bf77,Сабор Святога Пятра,
+#str_mission_dlc_villa_pia_adventurephotos_casina_desc,ca9e320562bc230c,Казіна Пія IV. Віла Пія.,
+#str_mission_dlc_villa_pia_adventurephotos_casina_title,182828be9569faf4,Казіна Пія IV,
+#str_mission_dlc_villa_pia_adventurephotos_map_puzzle_photo_op_antioch_desc,39c42e8498f2c9f8,"Горад Антыёхія, куды паслалі волата.",
+#str_mission_dlc_villa_pia_adventurephotos_map_puzzle_photo_op_antioch_title,44899c9dc6cfe86a,Горад Антыёхія,
+#str_mission_dlc_villa_pia_adventurephotos_map_puzzle_photo_op_desc,03be91966e60ffd8,Фрэска з картай Міжземнамор’я: Рым у цэнтры і пазначаны яшчэ некалькі гарадоў. На фрэсцы ёсць надпіс.,
+#str_mission_dlc_villa_pia_adventurephotos_map_puzzle_photo_op_inscription_desc,20ce3f5c62672f3a,"Надпіс пра тое, як Святы Пасад паслаў Безыменнага крыжаносца ў паход.",
+#str_mission_dlc_villa_pia_adventurephotos_map_puzzle_photo_op_inscription_inspect,f547bb62ac85fffc,"Гэта ўзведзена Піем IV у памяць пра крыжаносцаў
+Урбан, Інакенцій і іншыя пантыфікі прапаведавалі гэтыя паходы,
+каб адваяваць у сарацынаў Гроб Гасподні
+
+Безыменны крыжаносец быў дарагі іх сэрцам
+Ён здабыў таямніцу Антыёхіі
+Яна застанецца пад свяшчэннай апекай Святога Пасаду
+
+Так хоча Бог
+","God wills it (Deus vult) — «Так хоча Бог»; без канцавых знакаў, як у EN"
+#str_mission_dlc_villa_pia_adventurephotos_map_puzzle_photo_op_inscription_title,d619baee19958b3d,Святыя паходы,
+#str_mission_dlc_villa_pia_adventurephotos_map_puzzle_photo_op_title,29349219146a4aaa,Фрэска з картай Міжземнамор’я,
+#str_mission_dlc_villa_pia_adventurephotos_mithra_relif_photo_op_desc,af523907805493a2,Старажытнарымскі рэльеф: бог Мітра забівае свяшчэннага быка.,
+#str_mission_dlc_villa_pia_adventurephotos_mithra_relif_photo_op_title,077836cda16a0736,Мітра забівае быка,
+#str_mission_dlc_villa_pia_adventurephotos_mural_puzzle_photo_op_desc,da2f128be3066a21,"Вялікая, велічная фрэска. Гэта, мусіць, і ёсць Брама пачвары.",
+#str_mission_dlc_villa_pia_adventurephotos_mural_puzzle_photo_op_title,ce2287d6a189e36a,Брама пачвары,
+#str_mission_dlc_villa_pia_adventurephotos_secret_door_desc,0a48d105fd086d71,Дзіўная на выгляд сцяна ў таемным пакоі Папы. У яе цэнтры — невялікая адтуліна.,
+#str_mission_dlc_villa_pia_adventurephotos_secret_door_title,0461b02756ba95db,Незвычайная сцяна,
+#str_mission_dlc_villa_pia_adventurephotos_secret_study_photo_op_desc,17cbb2be307046fb,Даспехі на вельмі буйнога чалавека.,
+#str_mission_dlc_villa_pia_adventurephotos_secret_study_photo_op_title,2bec7b0d4be426c8,Даспехі крыжаносца,
+#str_mission_dlc_villa_pia_adventurephotos_tomb_of_junia_photo_op_desc,7be2dbaca7be2610,"Уражлівая статуя. Гэта, мусіць, Юнія, адна з волатаў.",
+#str_mission_dlc_villa_pia_adventurephotos_tomb_of_junia_photo_op_title,9ed446248dc3476d,Статуя Юніі,
+#str_mission_dlc_villa_pia_adventurephotos_water_serpent_photo_op_desc,e8ff5925343f323b,"Вялікая статуя вадзянога змея. З пашчы змея ўніз цячэ вада, у нейкі водны лабірынт.",
+#str_mission_dlc_villa_pia_adventurephotos_water_serpent_photo_op_title,7ccc98be52691a8e,Фантан з вадзяным змеем,

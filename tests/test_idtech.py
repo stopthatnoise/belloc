@@ -141,5 +141,17 @@ class LinesTest(unittest.TestCase):
         self.assertEqual(tables.collapse("Стой!", "Halt!", pat), "Стой!")
 
 
+class CheckPathTest(unittest.TestCase):
+    def test_check_path_is_dir(self):
+        """Усталёўшчык і лаўнчар пазнаюць гульню праз isdir(check_path) — гэта папка, не файл."""
+        import tempfile
+        from belloc.engines.idtech.apply import check_path
+        p = {"idtech": {"base": "base"}}
+        with tempfile.TemporaryDirectory() as d:
+            os.makedirs(os.path.join(d, "base"))
+            open(os.path.join(d, "base", "packagemapspec_pc.json"), "w").close()
+            self.assertTrue(os.path.isdir(os.path.join(d, check_path(p))))
+
+
 if __name__ == "__main__":
     unittest.main()

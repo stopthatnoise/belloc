@@ -1,0 +1,30 @@
+key,src_hash,bel,note
+#str_vo_nl_brothergiovanni_ch02sa07_001_desperate_monk_lo_01,64ce03ca0ec2beea,"Смушкі! Навошта ты палез у калодзеж? Кажуць жа, там прывіды, хіба ты не ведаеш? Дурны кот... Ён жа памрэ ад страху, як убачыць прывід...","рэмарка (in Italian, to himself) выкінута, тэкст пасля яе — застаўся"
+#str_vo_nl_brothergiovanni_ch02sa07_002_desperate_monk_lo_01,aa06b05039989d10,Смушкі! Дзе ты там схаваўся?,
+#str_vo_nl_brothergiovanni_ch02sa07_003_desperate_monk_lo_01,716e4a730341df73,Смушкі! Вылазь адтуль!,
+#str_vo_nl_brothergiovanni_ch02sa07_004_desperate_monk_lo_01,483ac42ceeff3a2f,Смушкі! Ну навошта ты туды палез?,
+#str_vo_nl_brothergiovanni_ch02sa07_005_desperate_monk_lo_01,cb4b7c84cfef5a9d,"Бачыш там прывідаў? Госпадзе, змілуйся над бедным звярком, бо не ведае, што робіць...",рэмарка (to himself) выкінута; намёк на Лк 23:34
+#str_vo_nl_brothergiovanni_ch02sa07_006_desperate_monk_lo_01,7013ab179625ddce,Смушкі! Вылазь з калодзежа — зараз жа!,
+#str_vo_nl_brothergiovanni_ch02sa07_007_desperate_monk_lo_01,7a071c6baab56180,Як ты там увогуле застрэў?,
+#str_vo_nl_brothergiovanni_ch02sa07_008_desperate_monk_lo_01,a14292a3859a49ee,"Сам вінаваты, Смушкі. Я не магу цябе адтуль дастаць. Выбірайся сам як ведаеш. Няўжо мне лезці за ім...?","рэмарка (in Italian, to himself) выкінута"
+#str_vo_nl_indy_ch02sa07_009_approaching_well_ne_01,e756af6ad426df89,"Ніколі не ведаеш, што знойдзеш на дне старога калодзежа...",
+#str_vo_nl_indy_ch02sa07_010_approaching_well_ne_01,e756af6ad426df89,"Ніколі не ведаеш, што знойдзеш на дне старога калодзежа...",
+#str_vo_nl_indy_ch02sa07_013_scared_cat_lo_01,b4ecd3c5f1bfe8b6,Ай! Сукін с...!,
+#str_vo_nl_brothergiovanni_ch02sa07_014_entering_tunnel_lo_01,fb366e349d2ab41e,"Смушкі! Ідзі сюды, маленькі!",ru: радок выразаны з гульні — перакладзена па EN
+#str_vo_nl_indy_ch02sa07_015_entering_tunnel_ne_01,27d71ebb4b77868c,Ну і здаравяк...,
+#str_vo_nl_indy_ch02sa07_016_investigating_symbols_ne_01,9caedcee5732110d,Гэтыя знакі... Што гэта за мова?,
+#str_vo_nl_indy_ch02sa07_017_taking_book_ne_01,939d43de38914a29,Божа...,
+#str_vo_nl_indy_ch02sa07_018_taking_book_ne_01,3b5999b100534ec4,"Ну аддай, а?",
+#str_vo_nl_brothergiovanni_ch02sa07_019_giovanni_meets_ventura_ne_01,d5f8a004a05e4335,Ойча Вентура! Я вас не заўважыў.,ru: радок выразаны з гульні — перакладзена па EN
+#str_vo_nl_fatherventura_ch02sa07_020_giovanni_meets_ventura_ne_01,c3df4bb18fc54c92,Дурное стварэнне...,жарт: «стварэнне» — каб «Я не пра ката» паказвала на самога Джавані; ru: радок выразаны з гульні — перакладзена па EN
+#str_vo_nl_brothergiovanni_ch02sa07_021_giovanni_meets_ventura_ne_01,54ae78a58728700d,"Калі ласка, не кажыце так пра Смушкі! Ён мне вельмі дарагі.",ru: радок выразаны з гульні — перакладзена па EN
+#str_vo_nl_fatherventura_ch02sa07_022_giovanni_meets_ventura_ne_01,5b85a51a8552905f,Я не пра ката.,ru: радок выразаны з гульні — перакладзена па EN
+#str_vo_nl_brothergiovanni_ch02sa07_023_grateful_monk_ne_01,5394f91c710a5803,"Каб больш так не рабіў, а то я на цябе вельмі раззлуюся. Ай, каго я падманваю? Я не магу на цябе злавацца.","рэмарка (to the cat, in Italian) выкінута"
+#str_vo_nl_brothergiovanni_ch02sa07_024_grateful_monk_ne_01,3f7f0fc398b29021,Ну што ж...,
+#str_vo_nl_indy_ch02sa07_025_entering_well_ne_01,3cfe5e5b620ef0ac,"Мілая, спакойная паездка ў Італію...",
+#str_vo_nl_indy_ch02sa07_026_entering_well_ne_01,1642795bd457a96f,Га... што там такое...,
+#str_vo_nl_indy_ch02sa07_027_entering_tunnel_ne_01,6dc220229724c4e8,"Так. Паглядзім, што тут у нас.",
+#str_vo_nl_indy_ch02sa07_028_approaching_cat_ne_01,d7d6c5aeeb78222e,Кіс-кіс-кіс...,
+#str_vo_nl_indy_ch02sa07_029_approaching_cat_ne_01,4a25bcecfdaf769b,"Ідзі сюды, коцік.",
+#str_vo_nl_indy_ch02sa07_030_approaching_cat_ne_01,e727b665b9c2802b,Вось і добры коцік.,
+#str_vo_nl_indy_ch02sa07_031_approaching_cat_ne_01,03947929b5be09ff,Ну і добра. Я і не хацеў цябе гладзіць.,

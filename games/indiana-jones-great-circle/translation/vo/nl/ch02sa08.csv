@@ -1,0 +1,46 @@
+key,src_hash,bel,note
+#str_vo_nl_indy_ch02sa08_001_gina_greets_indy_ne_01,f51bdf27595cdcce,Джына?,
+#str_vo_nl_gina_ch02sa08_002_gina_greets_indy_ne_01,8b7c37f784696d52,Заходзь!,"Індзі ↔ Джына — ты (STYLE), хоць ru на «вы»"
+#str_vo_nl_indy_ch02sa08_003_crime_scene_ne_01,3f36ab840ebfdc44,"Небяспечны вы народ, манашкі.",
+#str_vo_nl_gina_ch02sa08_004_crime_scene_ne_01,b7b96c027cbde64f,"Не хвалюйся, я яго не забівала. Я спрабавала спыніць кроў, але было ўжо позна.",
+#str_vo_nl_indy_ch02sa08_005_crime_scene_ne_01,7607f4a19b596167,Хто ён?,ru: радок выразаны з гульні — перакладзена па EN
+#str_vo_nl_indy_ch02sa08_005_crime_scene_ne_02,7607f4a19b596167,Хто ён?,
+#str_vo_nl_gina_ch02sa08_006_crime_scene_ne_01,cb7937c7a75f84b4,Афіцэр Альфрэд Бём. Інфарматар у атачэнні Фоса. Яго вось-вось пачнуць шукаць. Дапамажы мне тут прыбраць.,
+#str_vo_nl_indy_ch02sa08_007_crime_scene_ne_01,c4dc542b511fd74f,Што здарылася?,ru: радок выразаны з гульні — перакладзена па EN
+#str_vo_nl_gina_ch02sa08_008_crime_scene_ne_01,1e21f7fa763651f5,"Я хацела, каб мы ўсе сустрэліся тут і ён расказаў, што ведае. Фос здагадаўся, што той збіраецца перадаць звесткі, і падстрэліў яго. Неяк ён усё ж здолеў уцячы і дабрацца да месца сустрэчы, але выратаваць яго я не змагла.",
+#str_vo_nl_indy_ch02sa08_009_crime_scene_ne_01,b96555453ee05909,Што ён табе сказаў?,ru: радок выразаны з гульні — перакладзена па EN
+#str_vo_nl_gina_ch02sa08_010_crime_scene_ne_01,8dd6eaaa0702700a,"Ён аддаў мне запісы і фатаграфіі з экспедыцыі ў Мачу-Пікчу, у Перу. Сказаў, што мая сястра была там з Фосам і нешта раскопвала. Потым ён страціў прытомнасць і... Яго больш няма.",
+#str_vo_nl_indy_ch02sa08_011_crime_scene_ne_01,b5694a562f53d84a,Мне шкада.,ru: радок выразаны з гульні — перакладзена па EN
+#str_vo_nl_gina_ch02sa08_012_crime_scene_ne_01,77248b224098d488,"Каб зрабіць тое, што ён зрабіў, трэба быць смелым чалавекам.",
+#str_vo_nl_officerfritz_ch02sa08_015_nazis_bang_door_ne_01,22979797c3c7ca23,Далёка ён уцячы не мог.,?: у ru — пазнака «выразана з гульні»; перакладзена ўсё роўна
+#str_vo_nl_gina_ch02sa08_016_taking_key_qu_01,ff1a631435a349dc,Запіхні яму ногі. Хутчэй.,рэмарка (whispers) выкінута
+#str_vo_nl_gina_ch02sa08_017_taking_key_qu_01,c6f6c535b84604e6,Такая маскіроўка спрацуе. Ты гатовы?,"рэмарка выкінута; Джына → Індзі на «ты» (STYLE), ru на «вы»"
+#str_vo_nl_gina_ch02sa08_018_taking_key_qu_01,acd01095709335a8,"Табе нельга паказвацца ім у гэтым адзенні. Хавайся, хутчэй.",
+#str_vo_nl_gina_ch02sa08_019_taking_key_qu_01,83adfb78cc1b35db,Хавайся. Пакуль яны не ўвайшлі.,
+#str_vo_nl_officerhans_ch02sa08_020_opening_door_priest_ne_01,00ecec651383ac05,"О... Э-э-э... Мы шукаем здрадніка, які ўцёк... Нейкага афіцэра Бёма.",
+#str_vo_nl_gina_ch02sa08_021_opening_door_priest_ne_01,b2d09ada9a489dd7,Вы перашкаджаеце айцу Каломба маліцца.,"Colombo — Каломба, нескл. (аканне, як Антоніа)"
+#str_vo_nl_officerhans_ch02sa08_022_opening_door_priest_ne_01,4602320416efa8a9,"Прабачце, ойча. Больш мы вас не патурбуем.",
+#str_vo_nl_indy_ch02sa08_023_opening_door_priest_ne_01,934dae5656aa4a24,Блаславі вас Бог.,
+#str_vo_nl_officerhans_ch02sa08_024_opening_door_blackshirt_ne_01,00ecec651383ac05,"О... Э-э-э... Мы шукаем здрадніка, які ўцёк... Нейкага афіцэра Бёма.",
+#str_vo_nl_gina_ch02sa08_025_opening_door_blackshirt_ne_01,baae1133222e276a,Тут толькі адзін з хлопцаў Мусаліні — ён вам патрэбны?,
+#str_vo_nl_officerhans_ch02sa08_026_opening_door_blackshirt_ne_01,9ab55be96d037e88,"Прабачце за турботу, пане афіцэр.",
+#str_vo_nl_gina_ch02sa08_027_nazis_barge_in_ne_01,87feb64d833f0cdc,"Якая няветлівасць — будзіць сястру, калі яна спіць.",
+#str_vo_nl_officerhans_ch02sa08_028_nazis_barge_in_ne_01,0107eb5f72687f6a,"Прабачце, сястра. Мы шукаем здрадніка, які ўцёк... Нейкага афіцэра Бёма.",
+#str_vo_nl_gina_ch02sa08_029_nazis_barge_in_ne_01,e539703828313976,Я не размаўляю па-нямецку.,
+#str_vo_nl_officerhans_ch02sa08_030_nazis_barge_in_ne_01,85a0907a06b8f309,"Пайшлі, Фрыц. Тут яго няма.",рэмарка (mutters) выкінута
+#str_vo_nl_officerhans_ch02sa08_031_nazis_barge_in_ne_01,19917a99080b8ef6,Тут нешта не так. Давай агледзімся.,
+#str_vo_nl_gina_ch02sa08_033_gina_closes_door_ne_01,7b94060621485144,"Вы заплаціце за тое, што з ім зрабілі!",
+#str_vo_nl_officerhans_ch02sa08_034_nazis_leave_ne_01,9e88f98d4708f1b1,"Пайшлі, Фрыц. Тут няма на што глядзець.",
+#str_vo_nl_officerhans_ch02sa08_035_nazis_leave_ne_01,9360452190784843,"Да пабачэння, сястра.",
+#str_vo_nl_gina_ch02sa08_036_gina_presents_photo_ne_01,750a13e77eb77e1b,"Бём прынёс сёе-тое з асабістай калекцыі Фоса — табе гэта можа быць цікава, доктар Джонс. Паглядзі.",
+#str_vo_nl_gina_ch02sa08_037_gina_presents_photo_ne_01,07b16d8795a07b42,Вось. Трымай.,
+#str_vo_nl_gina_ch02sa08_038_gina_presents_photo_ne_01,fb697cc734db2448,"Ну, бяры ж.",
+#str_vo_nl_indy_ch02sa08_039_gina_presents_photo_ne_01,f698655b306acc87,Выява муміі кошкі! Як такое можа быць? Чаму ранняя егіпецкая мумія кошкі выбіта на старажытным перуанскім петрогліфе на іншым кантыненце?,?: у ru — пазнака «выразана з гульні»; перакладзена ўсё роўна
+#str_vo_nl_gina_ch02sa08_040_gina_presents_photo_ne_01,2747e88bdffe7292,"Гэта ты мне скажы, прафесар. Але б’юся аб заклад, Фос таксама шукае тваю мумію кошкі.",
+#str_vo_nl_gina_ch02sa08_041_gina_presents_photo_ne_01,33b9f11764679184,А цяпер ідзі — з астатнім я разбяруся.,
+#str_vo_nl_gina_ch02sa08_042_getting_rid_evidence_qu_01,5f40c44435671885,"Дапамажы мне, доктар Джонс, — не магу запхнуць яму ногі.",рэмарка выкінута
+#str_vo_nl_gina_ch02sa08_043_getting_rid_evidence_qu_01,0b3ac49769bec8c1,Мне тут патрэбна дапамога!,рэмарка выкінута
+#str_vo_nl_gina_ch02sa08_044_getting_rid_evidence_qu_01,8ebb28ae9c29a4e8,Доктар Джонс. Дапаможаш?,рэмарка выкінута
+#str_vo_nl_indy_ch02sa08_045_taking_key_qu_01,374a68684837b033,Гатовы.,рэмарка выкінута; ?: у ru — пазнака «выразана з гульні»
+#str_vo_nl_gina_ch02sa08_046_taking_key_qu_01,bc316883a7e4fc90,Доктар Джонс. Хавайся.,
+#str_vo_nl_indy_ch02sa08_047_opening_door_blackshirt_ne_01,5304cd5c7f36004e,Не перажывай.,

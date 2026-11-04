@@ -1,0 +1,39 @@
+key,src_hash,bel,note
+#str_purchase_item_acquire,d9af1a8284a08c97,КУПІЦЬ,
+#str_purchase_item_available_funds,72074a8a68367e12,Ёсць:,
+#str_purchase_item_books,5c12cfa191bf53dd,Дадаць у кнігі,
+#str_purchase_item_complete,3835f39c584b9e55,НАБЫТА,
+#str_purchase_item_concat,2537e8c094a34d3c,[],"?: у ru фармат «%1$s: %2$d» — пакінуты фармат EN, бо парадак аргументаў невядомы"
+#str_purchase_item_cost,c8f6612578a4c62e,[],
+#str_purchase_item_cost_info,5de693b9430ff261,Патрэбна:,
+#str_purchase_item_funds,c8f6612578a4c62e,[],
+#str_purchase_item_no_funds,fbbeb95312224486,Не хапае ачкоў прыгод,
+#str_purchase_item_no_penic,08d3be65742b4a13,Не хапае флаконаў з лекамі,
+#str_purchase_item_no_prerequisites,1381d45821c8031a,УМОВЫ НЕ ВЫКАНАНЫ,
+#str_purchase_item_store,d2a3e8c8137f0a8a,ЗАБРАЦЬ,
+#str_purchase_item_store_adventure_book,d3fd7f570d96b530,Забраць і прачытаць пазней,
+#str_purchase_mapinfo_book,87dab2a3d5265876,[],"у ru PLACEHOLDER TEXT — нарыхтоўка, bel = арыгінал"
+#str_purchase_mapinfo_book_camera,6061390927254811,Патрэбны фотаапарат,
+#str_purchase_mapinfo_book_lighter,a30ee22b5a66c784,Патрэбна запальнічка,
+#str_purchase_mapinfo_book_rebreather,c4c2338dfb420c05,Патрэбны дыхальны апарат,
+#str_purchase_mapinfo_complete,dc864979a6a6386d,[],"у ru PLACEHOLDER TEXT — нарыхтоўка, bel = арыгінал"
+#str_purchase_mapinfo_unlock,26a7d727e9c40a6c,Атрымаць путэвадзіцель,
+#str_purchase_mapinfo_unlock_notification,aef249b927d146eb,Путэвадзіцель атрыманы,
+#str_purchase_not_allowed_generic,53090c82ac712013,НЕЛЬГА АДКРЫЦЬ,
+#str_purchase_requires_item,143f0330d2de85b9,Патрэбна,
+#str_purchase_requires_item_kafour,fbb9890280b4b215,пагаварыць з Кафурам,"з малой літары — дапісваецца пасля «Патрэбна», як у ru"
+#str_purchase_requires_item_noo,02c9123f219ba5e5,пагаварыць з Ну,"з малой літары — дапісваецца пасля «Патрэбна», як у ru"
+#str_purchase_requires_item_valeria,d6f81bf88167b031,пагаварыць з Валерыяй,"з малой літары — дапісваецца пасля «Патрэбна», як у ru"
+#str_purchase_skill_acquire,ef0e1e57ba7000f6,АДЧЫНЕНА,
+#str_purchase_skill_acquire_book,a56ad75dc53abb27,Засвоіць уменне,
+#str_purchase_skill_available_funds,72074a8a68367e12,Ёсць:,
+#str_purchase_skill_book,bc4099950ffdfa4d,КНІГА ПРЫГОД,
+#str_purchase_skill_complete,4b6fd657161d8bb8,УМЕННЕ ЗАСВОЕНА,
+#str_purchase_skill_cost,a693398613ead591,%d АП,
+#str_purchase_skill_cost_desc,73b67e60fe9398fd,Патрэбна ачкоў прыгод,
+#str_purchase_skill_no_funds,8ed20dc208a1d6e6,Не хапае ,
+#str_purchase_skill_no_prerequisites,1381d45821c8031a,УМОВЫ НЕ ВЫКАНАНЫ,
+#str_purchase_skill_no_prerequisites_hb,91b66c3dcdcc5a71,Патрэбна палепшанае здароўе,
+#str_purchase_skill_no_prerequisites_lh,2b226daa1ffb6d0d,Патрэбны «Шчаслівы капялюш I»,
+#str_purchase_skill_requires_abilities,d4ed7b458ce2bdde,Патрэбныя ўменні:,
+#str_purchase_skill_unlock_desc,c94f9416bf39794d,каб засвоіць,"з малой літары, як у ru (мусіць, ідзе пасля ліку АП)"

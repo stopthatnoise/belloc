@@ -1,0 +1,2108 @@
+{
+ "_about": "Пачкі Indiana Jones and the Great Circle (core/belloc/batch.py), ~3000 унікальных слоў на пачку (паўторы — _repeats; генератар — research/make_batches.py). Хваля 1 (u) — імёны над субтытрамі, імёны персанажаў, інтэрфейс, нататкі (з іх папаўняецца гласарый); 2 (s) — сюжэт па раздзелах (vo/nl/<раздзел>, рэплікі па нумары з ключа) і размовы ў дарозе (vo/tp); 3 (b) — сістэмныя баркі (vo/sl, адзін тэкст на ўсе аднолькавыя галасы) і гукі.",
+ "_repeats": [
+  {
+   "tables": "^(ui/|vo/name$)",
+   "by": [
+    "en",
+    "ru"
+   ]
+  },
+  {
+   "tables": "^vo/sl/",
+   "by": [
+    "en"
+   ],
+   "note": "^ctx: (?:(officer|cultist|sister|father|brother|priest|nun|mrs|mr|ms)|(\\S+))"
+  },
+  {
+   "tables": "^vo/(nl|tp)/|^vo/ef$",
+   "by": [
+    "en"
+   ],
+   "note": "^ctx: (\\S+)"
+  }
+ ],
+ "u00": {
+  "wave": 1,
+  "title": "Інтэрфейс 0 (~3072 слоў)",
+  "rows": [
+   {
+    "table": "vo/_names"
+   },
+   {
+    "table": "vo/name"
+   },
+   {
+    "table": "ui/abilitybook"
+   },
+   {
+    "table": "ui/achievement"
+   },
+   {
+    "table": "ui/achievements"
+   },
+   {
+    "table": "ui/activate"
+   },
+   {
+    "table": "ui/activity"
+   },
+   {
+    "table": "ui/activitynote",
+    "slice": [
+     0,
+     44
+    ]
+   }
+  ]
+ },
+ "u01": {
+  "wave": 1,
+  "title": "Інтэрфейс 1 (~3001 слоў)",
+  "rows": [
+   {
+    "table": "ui/activitynote",
+    "slice": [
+     44,
+     138
+    ]
+   }
+  ]
+ },
+ "u02": {
+  "wave": 1,
+  "title": "Інтэрфейс 2 (~3041 слоў)",
+  "rows": [
+   {
+    "table": "ui/activitynote",
+    "slice": [
+     138,
+     215
+    ]
+   }
+  ]
+ },
+ "u03": {
+  "wave": 1,
+  "title": "Інтэрфейс 3 (~3003 слоў)",
+  "rows": [
+   {
+    "table": "ui/activitynote",
+    "slice": [
+     215,
+     null
+    ]
+   },
+   {
+    "table": "ui/areaname"
+   },
+   {
+    "table": "ui/bind"
+   },
+   {
+    "table": "ui/campaign"
+   },
+   {
+    "table": "ui/cc"
+   },
+   {
+    "table": "ui/ch01"
+   },
+   {
+    "table": "ui/chapter"
+   },
+   {
+    "table": "ui/chapter1"
+   },
+   {
+    "table": "ui/chapter2"
+   },
+   {
+    "table": "ui/chapter3"
+   },
+   {
+    "table": "ui/chapter4"
+   },
+   {
+    "table": "ui/chapter5"
+   },
+   {
+    "table": "ui/chapter6"
+   },
+   {
+    "table": "ui/chapter7"
+   },
+   {
+    "table": "ui/climb"
+   },
+   {
+    "table": "ui/closed"
+   },
+   {
+    "table": "ui/cmd"
+   },
+   {
+    "table": "ui/code",
+    "slice": [
+     0,
+     262
+    ]
+   }
+  ]
+ },
+ "u04": {
+  "wave": 1,
+  "title": "Інтэрфейс 4 (~3000 слоў)",
+  "rows": [
+   {
+    "table": "ui/code",
+    "slice": [
+     262,
+     null
+    ]
+   },
+   {
+    "table": "ui/cost"
+   },
+   {
+    "table": "ui/currency"
+   },
+   {
+    "table": "ui/damage"
+   },
+   {
+    "table": "ui/death"
+   },
+   {
+    "table": "ui/decl",
+    "slice": [
+     0,
+     223
+    ]
+   }
+  ]
+ },
+ "u05": {
+  "wave": 1,
+  "title": "Інтэрфейс 5 (~3010 слоў)",
+  "rows": [
+   {
+    "table": "ui/decl",
+    "slice": [
+     223,
+     null
+    ]
+   },
+   {
+    "table": "ui/dlg"
+   },
+   {
+    "table": "ui/door"
+   },
+   {
+    "table": "ui/fasttravel"
+   },
+   {
+    "table": "ui/gamemanual",
+    "slice": [
+     0,
+     22
+    ]
+   }
+  ]
+ },
+ "u06": {
+  "wave": 1,
+  "title": "Інтэрфейс 6 (~3000 слоў)",
+  "rows": [
+   {
+    "table": "ui/gamemanual",
+    "slice": [
+     22,
+     70
+    ]
+   }
+  ]
+ },
+ "u07": {
+  "wave": 1,
+  "title": "Інтэрфейс 7 (~3037 слоў)",
+  "rows": [
+   {
+    "table": "ui/gamemanual",
+    "slice": [
+     70,
+     122
+    ]
+   }
+  ]
+ },
+ "u08": {
+  "wave": 1,
+  "title": "Інтэрфейс 8 (~3001 слоў)",
+  "rows": [
+   {
+    "table": "ui/gamemanual",
+    "slice": [
+     122,
+     null
+    ]
+   },
+   {
+    "table": "ui/gametype"
+   },
+   {
+    "table": "ui/gripinput"
+   },
+   {
+    "table": "ui/guis"
+   },
+   {
+    "table": "ui/hint"
+   },
+   {
+    "table": "ui/hud"
+   },
+   {
+    "table": "ui/inspect"
+   },
+   {
+    "table": "ui/item"
+   },
+   {
+    "table": "ui/iteminfo"
+   },
+   {
+    "table": "ui/itemname",
+    "slice": [
+     0,
+     67
+    ]
+   }
+  ]
+ },
+ "u09": {
+  "wave": 1,
+  "title": "Інтэрфейс 9 (~3001 слоў)",
+  "rows": [
+   {
+    "table": "ui/itemname",
+    "slice": [
+     67,
+     null
+    ]
+   },
+   {
+    "table": "ui/journal"
+   },
+   {
+    "table": "ui/key"
+   },
+   {
+    "table": "ui/label"
+   },
+   {
+    "table": "ui/locationoverlay"
+   },
+   {
+    "table": "ui/longtest"
+   },
+   {
+    "table": "ui/menu"
+   },
+   {
+    "table": "ui/mission/activitynote",
+    "slice": [
+     0,
+     29
+    ]
+   }
+  ]
+ },
+ "u10": {
+  "wave": 1,
+  "title": "Інтэрфейс 10 (~3106 слоў)",
+  "rows": [
+   {
+    "table": "ui/mission/activitynote",
+    "slice": [
+     29,
+     127
+    ]
+   }
+  ]
+ },
+ "u11": {
+  "wave": 1,
+  "title": "Інтэрфейс 11 (~3154 слоў)",
+  "rows": [
+   {
+    "table": "ui/mission/activitynote",
+    "slice": [
+     127,
+     236
+    ]
+   }
+  ]
+ },
+ "u12": {
+  "wave": 1,
+  "title": "Інтэрфейс 12 (~3034 слоў)",
+  "rows": [
+   {
+    "table": "ui/mission/activitynote",
+    "slice": [
+     236,
+     344
+    ]
+   }
+  ]
+ },
+ "u13": {
+  "wave": 1,
+  "title": "Інтэрфейс 13 (~3073 слоў)",
+  "rows": [
+   {
+    "table": "ui/mission/activitynote",
+    "slice": [
+     344,
+     478
+    ]
+   }
+  ]
+ },
+ "u14": {
+  "wave": 1,
+  "title": "Інтэрфейс 14 (~3006 слоў)",
+  "rows": [
+   {
+    "table": "ui/mission/activitynote",
+    "slice": [
+     478,
+     null
+    ]
+   },
+   {
+    "table": "ui/mission/battleship"
+   },
+   {
+    "table": "ui/mission/chapter"
+   },
+   {
+    "table": "ui/mission/college"
+   },
+   {
+    "table": "ui/mission/dlc",
+    "slice": [
+     0,
+     71
+    ]
+   }
+  ]
+ },
+ "u15": {
+  "wave": 1,
+  "title": "Інтэрфейс 15 (~3001 слоў)",
+  "rows": [
+   {
+    "table": "ui/mission/dlc",
+    "slice": [
+     71,
+     null
+    ]
+   },
+   {
+    "table": "ui/mission/fightclub"
+   },
+   {
+    "table": "ui/mission/gizeh",
+    "slice": [
+     0,
+     272
+    ]
+   }
+  ]
+ },
+ "u16": {
+  "wave": 1,
+  "title": "Інтэрфейс 16 (~3007 слоў)",
+  "rows": [
+   {
+    "table": "ui/mission/gizeh",
+    "slice": [
+     272,
+     486
+    ]
+   }
+  ]
+ },
+ "u17": {
+  "wave": 1,
+  "title": "Інтэрфейс 17 (~3029 слоў)",
+  "rows": [
+   {
+    "table": "ui/mission/gizeh",
+    "slice": [
+     486,
+     null
+    ]
+   },
+   {
+    "table": "ui/mission/global"
+   },
+   {
+    "table": "ui/mission/iraq"
+   },
+   {
+    "table": "ui/mission/marshall"
+   },
+   {
+    "table": "ui/mission/nepal"
+   },
+   {
+    "table": "ui/mission/nephilim"
+   },
+   {
+    "table": "ui/mission/nephilimpiece"
+   },
+   {
+    "table": "ui/mission/notification"
+   },
+   {
+    "table": "ui/mission/peru"
+   },
+   {
+    "table": "ui/mission/placeholder",
+    "slice": [
+     0,
+     1
+    ]
+   }
+  ]
+ },
+ "u18": {
+  "wave": 1,
+  "title": "Інтэрфейс 18 (~3002 слоў)",
+  "rows": [
+   {
+    "table": "ui/mission/placeholder",
+    "slice": [
+     1,
+     null
+    ]
+   },
+   {
+    "table": "ui/mission/radio"
+   },
+   {
+    "table": "ui/mission/shanghai"
+   },
+   {
+    "table": "ui/mission/sukhothai",
+    "slice": [
+     0,
+     350
+    ]
+   }
+  ]
+ },
+ "u19": {
+  "wave": 1,
+  "title": "Інтэрфейс 19 (~3014 слоў)",
+  "rows": [
+   {
+    "table": "ui/mission/sukhothai",
+    "slice": [
+     350,
+     615
+    ]
+   }
+  ]
+ },
+ "u20": {
+  "wave": 1,
+  "title": "Інтэрфейс 20 (~3005 слоў)",
+  "rows": [
+   {
+    "table": "ui/mission/sukhothai",
+    "slice": [
+     615,
+     null
+    ]
+   },
+   {
+    "table": "ui/mission/tb"
+   },
+   {
+    "table": "ui/mission/test"
+   },
+   {
+    "table": "ui/mission/unknown"
+   },
+   {
+    "table": "ui/mission/vatican",
+    "slice": [
+     0,
+     99
+    ]
+   }
+  ]
+ },
+ "u21": {
+  "wave": 1,
+  "title": "Інтэрфейс 21 (~3001 слоў)",
+  "rows": [
+   {
+    "table": "ui/mission/vatican",
+    "slice": [
+     99,
+     405
+    ]
+   }
+  ]
+ },
+ "u22": {
+  "wave": 1,
+  "title": "Інтэрфейс 22 (~3009 слоў)",
+  "rows": [
+   {
+    "table": "ui/mission/vatican",
+    "slice": [
+     405,
+     672
+    ]
+   }
+  ]
+ },
+ "u23": {
+  "wave": 1,
+  "title": "Інтэрфейс 23 (~3007 слоў)",
+  "rows": [
+   {
+    "table": "ui/mission/vatican",
+    "slice": [
+     672,
+     null
+    ]
+   },
+   {
+    "table": "ui/mystery"
+   },
+   {
+    "table": "ui/notification"
+   },
+   {
+    "table": "ui/obj",
+    "slice": [
+     0,
+     45
+    ]
+   }
+  ]
+ },
+ "u24": {
+  "wave": 1,
+  "title": "Інтэрфейс 24 (~3000 слоў)",
+  "rows": [
+   {
+    "table": "ui/obj",
+    "slice": [
+     45,
+     null
+    ]
+   },
+   {
+    "table": "ui/objective"
+   },
+   {
+    "table": "ui/online"
+   },
+   {
+    "table": "ui/pickup"
+   },
+   {
+    "table": "ui/press"
+   },
+   {
+    "table": "ui/purchase"
+   },
+   {
+    "table": "ui/puzzle"
+   },
+   {
+    "table": "ui/reward"
+   },
+   {
+    "table": "ui/save"
+   },
+   {
+    "table": "ui/saves"
+   },
+   {
+    "table": "ui/saveslot"
+   },
+   {
+    "table": "ui/saving"
+   },
+   {
+    "table": "ui/screen"
+   },
+   {
+    "table": "ui/secret"
+   },
+   {
+    "table": "ui/select"
+   },
+   {
+    "table": "ui/settings"
+   },
+   {
+    "table": "ui/showcase"
+   },
+   {
+    "table": "ui/startoffile"
+   },
+   {
+    "table": "ui/swf"
+   },
+   {
+    "table": "ui/tb"
+   },
+   {
+    "table": "ui/temp"
+   },
+   {
+    "table": "ui/time"
+   },
+   {
+    "table": "ui/tutorial",
+    "slice": [
+     0,
+     195
+    ]
+   }
+  ]
+ },
+ "u25": {
+  "wave": 1,
+  "title": "Інтэрфейс 25 (~847 слоў)",
+  "rows": [
+   {
+    "table": "ui/tutorial",
+    "slice": [
+     195,
+     null
+    ]
+   },
+   {
+    "table": "ui/ui"
+   }
+  ]
+ },
+ "s00": {
+  "wave": 2,
+  "title": "Сюжэт 0 (~3017 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch00"
+   },
+   {
+    "table": "vo/nl/ch00se01"
+   },
+   {
+    "table": "vo/nl/ch01se01"
+   },
+   {
+    "table": "vo/nl/ch01se02"
+   },
+   {
+    "table": "vo/nl/ch02al01",
+    "slice": [
+     0,
+     3
+    ]
+   }
+  ]
+ },
+ "s01": {
+  "wave": 2,
+  "title": "Сюжэт 1 (~3005 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch02al01",
+    "slice": [
+     3,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch02la01"
+   },
+   {
+    "table": "vo/nl/ch02la02",
+    "slice": [
+     0,
+     130
+    ]
+   }
+  ]
+ },
+ "s02": {
+  "wave": 2,
+  "title": "Сюжэт 2 (~3056 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch02la02",
+    "slice": [
+     130,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch02la03"
+   },
+   {
+    "table": "vo/nl/ch02la04"
+   },
+   {
+    "table": "vo/nl/ch02la05",
+    "slice": [
+     0,
+     54
+    ]
+   }
+  ]
+ },
+ "s03": {
+  "wave": 2,
+  "title": "Сюжэт 3 (~3035 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch02la05",
+    "slice": [
+     54,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch02lw",
+    "slice": [
+     0,
+     251
+    ]
+   }
+  ]
+ },
+ "s04": {
+  "wave": 2,
+  "title": "Сюжэт 4 (~3012 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch02lw",
+    "slice": [
+     251,
+     560
+    ]
+   }
+  ]
+ },
+ "s05": {
+  "wave": 2,
+  "title": "Сюжэт 5 (~3003 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch02lw",
+    "slice": [
+     560,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch02lw00",
+    "slice": [
+     0,
+     286
+    ]
+   }
+  ]
+ },
+ "s06": {
+  "wave": 2,
+  "title": "Сюжэт 6 (~3044 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch02lw00",
+    "slice": [
+     286,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch02my00"
+   },
+   {
+    "table": "vo/nl/ch02sa01"
+   },
+   {
+    "table": "vo/nl/ch02sa02"
+   },
+   {
+    "table": "vo/nl/ch02sa03"
+   },
+   {
+    "table": "vo/nl/ch02sa04"
+   },
+   {
+    "table": "vo/nl/ch02sa06"
+   },
+   {
+    "table": "vo/nl/ch02sa07"
+   },
+   {
+    "table": "vo/nl/ch02sa08",
+    "slice": [
+     0,
+     13
+    ]
+   }
+  ]
+ },
+ "s07": {
+  "wave": 2,
+  "title": "Сюжэт 7 (~3021 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch02sa08",
+    "slice": [
+     13,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch02se01",
+    "slice": [
+     0,
+     371
+    ]
+   }
+  ]
+ },
+ "s08": {
+  "wave": 2,
+  "title": "Сюжэт 8 (~3251 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch02se01",
+    "slice": [
+     371,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch02se02"
+   },
+   {
+    "table": "vo/nl/ch02se03",
+    "slice": [
+     0,
+     144
+    ]
+   }
+  ]
+ },
+ "s09": {
+  "wave": 2,
+  "title": "Сюжэт 9 (~3246 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch02se03",
+    "slice": [
+     144,
+     642
+    ]
+   }
+  ]
+ },
+ "s10": {
+  "wave": 2,
+  "title": "Сюжэт 10 (~3075 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch02se03",
+    "slice": [
+     642,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch03al01"
+   },
+   {
+    "table": "vo/nl/ch03la01"
+   },
+   {
+    "table": "vo/nl/ch03la02",
+    "slice": [
+     0,
+     14
+    ]
+   }
+  ]
+ },
+ "s11": {
+  "wave": 2,
+  "title": "Сюжэт 11 (~3003 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch03la02",
+    "slice": [
+     14,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch03la03",
+    "slice": [
+     0,
+     55
+    ]
+   }
+  ]
+ },
+ "s12": {
+  "wave": 2,
+  "title": "Сюжэт 12 (~3029 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch03la03",
+    "slice": [
+     55,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch03la04"
+   },
+   {
+    "table": "vo/nl/ch03lw00",
+    "slice": [
+     0,
+     148
+    ]
+   }
+  ]
+ },
+ "s13": {
+  "wave": 2,
+  "title": "Сюжэт 13 (~3130 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch03lw00",
+    "slice": [
+     148,
+     348
+    ]
+   }
+  ]
+ },
+ "s14": {
+  "wave": 2,
+  "title": "Сюжэт 14 (~3054 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch03lw00",
+    "slice": [
+     348,
+     950
+    ]
+   }
+  ]
+ },
+ "s15": {
+  "wave": 2,
+  "title": "Сюжэт 15 (~3047 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch03lw00",
+    "slice": [
+     950,
+     1446
+    ]
+   }
+  ]
+ },
+ "s16": {
+  "wave": 2,
+  "title": "Сюжэт 16 (~3000 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch03lw00",
+    "slice": [
+     1446,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch03my00"
+   },
+   {
+    "table": "vo/nl/ch03sa01",
+    "slice": [
+     0,
+     32
+    ]
+   }
+  ]
+ },
+ "s17": {
+  "wave": 2,
+  "title": "Сюжэт 17 (~3045 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch03sa01",
+    "slice": [
+     32,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch03se01",
+    "slice": [
+     0,
+     262
+    ]
+   }
+  ]
+ },
+ "s18": {
+  "wave": 2,
+  "title": "Сюжэт 18 (~3051 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch03se01",
+    "slice": [
+     262,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch03se02",
+    "slice": [
+     0,
+     154
+    ]
+   }
+  ]
+ },
+ "s19": {
+  "wave": 2,
+  "title": "Сюжэт 19 (~3088 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch03se02",
+    "slice": [
+     154,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch03se03",
+    "slice": [
+     0,
+     98
+    ]
+   }
+  ]
+ },
+ "s20": {
+  "wave": 2,
+  "title": "Сюжэт 20 (~3015 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch03se03",
+    "slice": [
+     98,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch04se01",
+    "slice": [
+     0,
+     149
+    ]
+   }
+  ]
+ },
+ "s21": {
+  "wave": 2,
+  "title": "Сюжэт 21 (~3025 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch04se01",
+    "slice": [
+     149,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch04se02"
+   },
+   {
+    "table": "vo/nl/ch04se03",
+    "slice": [
+     0,
+     81
+    ]
+   }
+  ]
+ },
+ "s22": {
+  "wave": 2,
+  "title": "Сюжэт 22 (~3236 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch04se03",
+    "slice": [
+     81,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch05al01"
+   },
+   {
+    "table": "vo/nl/ch05la01",
+    "slice": [
+     0,
+     261
+    ]
+   }
+  ]
+ },
+ "s23": {
+  "wave": 2,
+  "title": "Сюжэт 23 (~3126 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch05la01",
+    "slice": [
+     261,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch05la02",
+    "slice": [
+     0,
+     324
+    ]
+   }
+  ]
+ },
+ "s24": {
+  "wave": 2,
+  "title": "Сюжэт 24 (~3003 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch05la02",
+    "slice": [
+     324,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch05la03",
+    "slice": [
+     0,
+     190
+    ]
+   }
+  ]
+ },
+ "s25": {
+  "wave": 2,
+  "title": "Сюжэт 25 (~3058 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch05la03",
+    "slice": [
+     190,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch05la04"
+   },
+   {
+    "table": "vo/nl/ch05lw00",
+    "slice": [
+     0,
+     101
+    ]
+   }
+  ]
+ },
+ "s26": {
+  "wave": 2,
+  "title": "Сюжэт 26 (~3004 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch05lw00",
+    "slice": [
+     101,
+     329
+    ]
+   }
+  ]
+ },
+ "s27": {
+  "wave": 2,
+  "title": "Сюжэт 27 (~3066 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch05lw00",
+    "slice": [
+     329,
+     745
+    ]
+   }
+  ]
+ },
+ "s28": {
+  "wave": 2,
+  "title": "Сюжэт 28 (~3093 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch05lw00",
+    "slice": [
+     745,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch05my00"
+   },
+   {
+    "table": "vo/nl/ch05sa01",
+    "slice": [
+     0,
+     46
+    ]
+   }
+  ]
+ },
+ "s29": {
+  "wave": 2,
+  "title": "Сюжэт 29 (~3108 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch05sa01",
+    "slice": [
+     46,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch05se01",
+    "slice": [
+     0,
+     450
+    ]
+   }
+  ]
+ },
+ "s30": {
+  "wave": 2,
+  "title": "Сюжэт 30 (~3010 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch05se01",
+    "slice": [
+     450,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch05se02",
+    "slice": [
+     0,
+     138
+    ]
+   }
+  ]
+ },
+ "s31": {
+  "wave": 2,
+  "title": "Сюжэт 31 (~3052 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch05se02",
+    "slice": [
+     138,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch05se03",
+    "slice": [
+     0,
+     235
+    ]
+   }
+  ]
+ },
+ "s32": {
+  "wave": 2,
+  "title": "Сюжэт 32 (~3099 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch05se03",
+    "slice": [
+     235,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch06la01"
+   },
+   {
+    "table": "vo/nl/ch06se01",
+    "slice": [
+     0,
+     236
+    ]
+   }
+  ]
+ },
+ "s33": {
+  "wave": 2,
+  "title": "Сюжэт 33 (~4806 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch06se01",
+    "slice": [
+     236,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch06se02"
+   },
+   {
+    "table": "vo/nl/ch07la01",
+    "slice": [
+     0,
+     513
+    ]
+   }
+  ]
+ },
+ "s34": {
+  "wave": 2,
+  "title": "Сюжэт 34 (~3017 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ch07la01",
+    "slice": [
+     513,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ch99gd01"
+   },
+   {
+    "table": "vo/nl/chxmys",
+    "slice": [
+     0,
+     100
+    ]
+   }
+  ]
+ },
+ "s35": {
+  "wave": 2,
+  "title": "Сюжэт 35 (~3042 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/chxmys",
+    "slice": [
+     100,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/ga",
+    "slice": [
+     0,
+     240
+    ]
+   }
+  ]
+ },
+ "s36": {
+  "wave": 2,
+  "title": "Сюжэт 36 (~3003 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ga",
+    "slice": [
+     240,
+     741
+    ]
+   }
+  ]
+ },
+ "s37": {
+  "wave": 2,
+  "title": "Сюжэт 37 (~3020 слоў)",
+  "rows": [
+   {
+    "table": "vo/nl/ga",
+    "slice": [
+     741,
+     null
+    ]
+   },
+   {
+    "table": "vo/nl/grazich02lw"
+   },
+   {
+    "table": "vo/tp/antonio"
+   },
+   {
+    "table": "vo/tp/aran"
+   },
+   {
+    "table": "vo/tp/brody"
+   },
+   {
+    "table": "vo/tp/fatherbutera"
+   },
+   {
+    "table": "vo/tp/fathermassi"
+   },
+   {
+    "table": "vo/tp/gina",
+    "slice": [
+     0,
+     138
+    ]
+   }
+  ]
+ },
+ "s38": {
+  "wave": 2,
+  "title": "Сюжэт 38 (~3000 слоў)",
+  "rows": [
+   {
+    "table": "vo/tp/gina",
+    "slice": [
+     138,
+     null
+    ]
+   },
+   {
+    "table": "vo/tp/indy"
+   },
+   {
+    "table": "vo/tp/locus"
+   },
+   {
+    "table": "vo/tp/nawal"
+   },
+   {
+    "table": "vo/tp/officerdante"
+   },
+   {
+    "table": "vo/tp/officerezio"
+   },
+   {
+    "table": "vo/tp/officerfiore",
+    "slice": [
+     0,
+     5
+    ]
+   }
+  ]
+ },
+ "s39": {
+  "wave": 2,
+  "title": "Сюжэт 39 (~504 слоў)",
+  "rows": [
+   {
+    "table": "vo/tp/officerfiore",
+    "slice": [
+     5,
+     null
+    ]
+   },
+   {
+    "table": "vo/tp/officerfritz"
+   },
+   {
+    "table": "vo/tp/officergernot"
+   },
+   {
+    "table": "vo/tp/officerhans"
+   },
+   {
+    "table": "vo/tp/officerjurgen"
+   },
+   {
+    "table": "vo/tp/officerluigi"
+   },
+   {
+    "table": "vo/tp/omar"
+   },
+   {
+    "table": "vo/tp/pailin"
+   },
+   {
+    "table": "vo/tp/rebelatid"
+   },
+   {
+    "table": "vo/tp/sisteralighieri"
+   },
+   {
+    "table": "vo/tp/voss"
+   }
+  ]
+ },
+ "b00": {
+  "wave": 3,
+  "title": "Баркі 0 (~3002 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/indy"
+   },
+   {
+    "table": "vo/sl/gina",
+    "slice": [
+     0,
+     157
+    ]
+   }
+  ]
+ },
+ "b01": {
+  "wave": 3,
+  "title": "Баркі 1 (~3000 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/gina",
+    "slice": [
+     157,
+     965
+    ]
+   }
+  ]
+ },
+ "b02": {
+  "wave": 3,
+  "title": "Баркі 2 (~3000 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/gina",
+    "slice": [
+     965,
+     null
+    ]
+   },
+   {
+    "table": "vo/ef"
+   },
+   {
+    "table": "vo/sl/annika"
+   },
+   {
+    "table": "vo/sl/brody"
+   },
+   {
+    "table": "vo/sl/cultistfour",
+    "slice": [
+     0,
+     118
+    ]
+   }
+  ]
+ },
+ "b03": {
+  "wave": 3,
+  "title": "Баркі 3 (~3000 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/cultistfour",
+    "slice": [
+     118,
+     null
+    ]
+   },
+   {
+    "table": "vo/sl/cultistone"
+   },
+   {
+    "table": "vo/sl/cultistthree"
+   },
+   {
+    "table": "vo/sl/cultisttwo",
+    "slice": [
+     0,
+     176
+    ]
+   }
+  ]
+ },
+ "b04": {
+  "wave": 3,
+  "title": "Баркі 4 (~3002 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/cultisttwo",
+    "slice": [
+     176,
+     null
+    ]
+   },
+   {
+    "table": "vo/sl/fatherbutera"
+   },
+   {
+    "table": "vo/sl/fathermassi"
+   },
+   {
+    "table": "vo/sl/fatherscaletta"
+   },
+   {
+    "table": "vo/sl/mrcanali",
+    "slice": [
+     0,
+     144
+    ]
+   }
+  ]
+ },
+ "b05": {
+  "wave": 3,
+  "title": "Баркі 5 (~3000 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/mrcanali",
+    "slice": [
+     144,
+     null
+    ]
+   },
+   {
+    "table": "vo/sl/mrjilani"
+   },
+   {
+    "table": "vo/sl/mrtalete"
+   },
+   {
+    "table": "vo/sl/msboni"
+   },
+   {
+    "table": "vo/sl/mslisia"
+   },
+   {
+    "table": "vo/sl/mszampa"
+   },
+   {
+    "table": "vo/sl/nawal"
+   },
+   {
+    "table": "vo/sl/officerdante",
+    "slice": [
+     0,
+     66
+    ]
+   }
+  ]
+ },
+ "b06": {
+  "wave": 3,
+  "title": "Баркі 6 (~3000 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/officerdante",
+    "slice": [
+     66,
+     924
+    ]
+   }
+  ]
+ },
+ "b07": {
+  "wave": 3,
+  "title": "Баркі 7 (~3002 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/officerdante",
+    "slice": [
+     924,
+     null
+    ]
+   },
+   {
+    "table": "vo/sl/officerezio",
+    "slice": [
+     0,
+     62
+    ]
+   }
+  ]
+ },
+ "b08": {
+  "wave": 3,
+  "title": "Баркі 8 (~3006 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/officerezio",
+    "slice": [
+     62,
+     975
+    ]
+   }
+  ]
+ },
+ "b09": {
+  "wave": 3,
+  "title": "Баркі 9 (~3003 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/officerezio",
+    "slice": [
+     975,
+     null
+    ]
+   },
+   {
+    "table": "vo/sl/officerfiore",
+    "slice": [
+     0,
+     414
+    ]
+   }
+  ]
+ },
+ "b10": {
+  "wave": 3,
+  "title": "Баркі 10 (~3001 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/officerfiore",
+    "slice": [
+     414,
+     null
+    ]
+   },
+   {
+    "table": "vo/sl/officerfritz",
+    "slice": [
+     0,
+     186
+    ]
+   }
+  ]
+ },
+ "b11": {
+  "wave": 3,
+  "title": "Баркі 11 (~3004 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/officerfritz",
+    "slice": [
+     186,
+     null
+    ]
+   },
+   {
+    "table": "vo/sl/officergernot",
+    "slice": [
+     0,
+     562
+    ]
+   }
+  ]
+ },
+ "b12": {
+  "wave": 3,
+  "title": "Баркі 12 (~3003 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/officergernot",
+    "slice": [
+     562,
+     null
+    ]
+   },
+   {
+    "table": "vo/sl/officerhans"
+   },
+   {
+    "table": "vo/sl/officerhector",
+    "slice": [
+     0,
+     16
+    ]
+   }
+  ]
+ },
+ "b13": {
+  "wave": 3,
+  "title": "Баркі 13 (~3007 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/officerhector",
+    "slice": [
+     16,
+     1239
+    ]
+   }
+  ]
+ },
+ "b14": {
+  "wave": 3,
+  "title": "Баркі 14 (~3000 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/officerhector",
+    "slice": [
+     1239,
+     null
+    ]
+   },
+   {
+    "table": "vo/sl/officerjurgen"
+   },
+   {
+    "table": "vo/sl/officerluigi",
+    "slice": [
+     0,
+     269
+    ]
+   }
+  ]
+ },
+ "b15": {
+  "wave": 3,
+  "title": "Баркі 15 (~3001 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/officerluigi",
+    "slice": [
+     269,
+     null
+    ]
+   },
+   {
+    "table": "vo/sl/officerstefan",
+    "slice": [
+     0,
+     363
+    ]
+   }
+  ]
+ },
+ "b16": {
+  "wave": 3,
+  "title": "Баркі 16 (~3011 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/officerstefan",
+    "slice": [
+     363,
+     null
+    ]
+   },
+   {
+    "table": "vo/sl/pailin"
+   },
+   {
+    "table": "vo/sl/radiohqblackshirt"
+   },
+   {
+    "table": "vo/sl/radiohqnazi"
+   },
+   {
+    "table": "vo/sl/rebelatid"
+   },
+   {
+    "table": "vo/sl/rebeldara"
+   },
+   {
+    "table": "vo/sl/rebelkanya",
+    "slice": [
+     0,
+     53
+    ]
+   }
+  ]
+ },
+ "b17": {
+  "wave": 3,
+  "title": "Баркі 17 (~3006 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/rebelkanya",
+    "slice": [
+     53,
+     null
+    ]
+   },
+   {
+    "table": "vo/sl/rebelmalee"
+   },
+   {
+    "table": "vo/sl/rebelmano"
+   },
+   {
+    "table": "vo/sl/rebelsatja"
+   },
+   {
+    "table": "vo/sl/rebelsunee"
+   },
+   {
+    "table": "vo/sl/rebeltieng"
+   },
+   {
+    "table": "vo/sl/sidney"
+   },
+   {
+    "table": "vo/sl/sisteralighieri"
+   },
+   {
+    "table": "vo/sl/sisteriani"
+   },
+   {
+    "table": "vo/sl/sisterviolante",
+    "slice": [
+     0,
+     122
+    ]
+   }
+  ]
+ },
+ "b18": {
+  "wave": 3,
+  "title": "Баркі 18 (~3002 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/sisterviolante",
+    "slice": [
+     122,
+     null
+    ]
+   },
+   {
+    "table": "vo/sl/villagerahmed"
+   },
+   {
+    "table": "vo/sl/villagerassia"
+   },
+   {
+    "table": "vo/sl/villageratid"
+   },
+   {
+    "table": "vo/sl/villagerdara"
+   },
+   {
+    "table": "vo/sl/villageremat"
+   },
+   {
+    "table": "vo/sl/villagerfaten"
+   },
+   {
+    "table": "vo/sl/villagerkanya"
+   },
+   {
+    "table": "vo/sl/villagermalee"
+   },
+   {
+    "table": "vo/sl/villagermano"
+   },
+   {
+    "table": "vo/sl/villagernermin"
+   },
+   {
+    "table": "vo/sl/villagerrami"
+   },
+   {
+    "table": "vo/sl/villagersaeed",
+    "slice": [
+     0,
+     19
+    ]
+   }
+  ]
+ },
+ "b19": {
+  "wave": 3,
+  "title": "Баркі 19 (~3003 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/villagersaeed",
+    "slice": [
+     19,
+     null
+    ]
+   },
+   {
+    "table": "vo/sl/villagersatja"
+   },
+   {
+    "table": "vo/sl/villagershadia"
+   },
+   {
+    "table": "vo/sl/villagersunee"
+   },
+   {
+    "table": "vo/sl/villagertieng"
+   },
+   {
+    "table": "vo/sl/workerabdel"
+   },
+   {
+    "table": "vo/sl/workeramena"
+   },
+   {
+    "table": "vo/sl/workerhanan"
+   },
+   {
+    "table": "vo/sl/workerleila"
+   },
+   {
+    "table": "vo/sl/workernour"
+   },
+   {
+    "table": "vo/sl/workershoukry"
+   },
+   {
+    "table": "vo/sl/workeryousra"
+   },
+   {
+    "table": "vo/sl/workerzeeko",
+    "slice": [
+     0,
+     7
+    ]
+   }
+  ]
+ },
+ "b20": {
+  "wave": 3,
+  "title": "Баркі 20 (~243 слоў)",
+  "rows": [
+   {
+    "table": "vo/sl/workerzeeko",
+    "slice": [
+     7,
+     null
+    ]
+   }
+  ]
+ }
+}

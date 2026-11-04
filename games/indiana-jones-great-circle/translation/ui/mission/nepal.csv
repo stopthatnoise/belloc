@@ -1,0 +1,132 @@
+key,src_hash,bel,note
+#str_mission_nepal_adventurephotos_nepal_hint_battleship_anchor_chain_desc,82a01c840f91c1fa,Масіўны якарны ланцуг карабля.,
+#str_mission_nepal_adventurephotos_nepal_hint_battleship_anchor_chain_title,aa6df51e51d6054a,Якарны ланцуг,
+#str_mission_nepal_adventurephotos_nepal_hint_battleship_deck_desc,c25bf84b8481756d,"Ратавальная шлюпка, што вісіць за бортам «Кумеца».",
+#str_mission_nepal_adventurephotos_nepal_hint_battleship_deck_title,0328499e37d843d4,Ратавальная шлюпка,
+#str_mission_nepal_adventurephotos_nepal_hint_battleship_desc,982ce8c08f5629c3,Гэты нацысцкі лінкор напаткаў вельмі незвычайны канец.,
+#str_mission_nepal_adventurephotos_nepal_hint_battleship_lounge_desc,d280800210970736,"Пакой больш шыкоўны, чым усе астатнія на караблі.",
+#str_mission_nepal_adventurephotos_nepal_hint_battleship_lounge_title,f33eba1bcd2d8d64,Афіцэрская кают-кампанія,
+#str_mission_nepal_adventurephotos_nepal_hint_battleship_radio_room_desc,1bfb3720cb82c5d3,Галоўная радыёрубка і вузел сувязі карабля.,
+#str_mission_nepal_adventurephotos_nepal_hint_battleship_radio_room_title,f16980cdd5f7e3b6,Радыёрубка,
+#str_mission_nepal_adventurephotos_nepal_hint_battleship_title,fad0a500a5ddc5fa,Лінкор «Кумец»,
+#str_mission_nepal_adventurephotos_nepal_hint_bridge_desc,623f480a796588e1,Хісткі мост праз глыбокую прорву.,
+#str_mission_nepal_adventurephotos_nepal_hint_bridge_title,353f8e1e5cc79db4,Вяровачны мост,
+#str_mission_nepal_hint_enigma_code_table,12d8505c666d8683,Табліца кодаў,
+#str_mission_nepal_hint_enigma_code_table_desc,a1eb74f58e772867,[],нямецкая табліца галаваломкі — як у EN
+#str_mission_nepal_hint_enigma_code_table_desc_2,c6e8460f9432e503,[],нямецкая табліца галаваломкі — як у EN
+#str_mission_nepal_investigation,20da70af8acae799,Знайсці страчаны камень.,
+#str_mission_nepal_investigation_desc,193263dd5644b974,"Знайсці страчаны камень на лінкоры, што засеў у гарах.",
+#str_mission_nepal_investigation_hint_1_unsolved,31df81f4e95f14e7,Расшыфраваны код,
+#str_mission_nepal_investigation_hint_1_unsolved_desc,b8248d747b926cb7,"Падслухана: здаецца, салдаты даведаліся нешта новае з расшыфраванага паведамлення.",
+#str_mission_nepal_investigation_hint_2_unsolved,63bb0319986e4ef2,Сістэма змены ключа,
+#str_mission_nepal_investigation_hint_2_unsolved_desc,5a53a46442e32fa7,"Падслухана: каб зашыфраваныя коды заставаліся ў бяспецы, маракі кожны дзень мянялі ключавую літару.",
+#str_mission_nepal_investigation_hint_captainscode_inspect,71b5c8a53845197b,"^IУсе спалучэнні літар закрэслены, акрамя аднаго: «JÖGM».^I",
+#str_mission_nepal_investigation_hint_captainscode_titel,4936546612b4a357,Код капітана,
+#str_mission_nepal_investigation_hint_captainsletter,4b6a7ac8d786d781,Апошнія словы капітана,
+#str_mission_nepal_investigation_hint_captainsletter_desc,bd4c5a9facbbe24d,Запіс у дзённіку капітана «Кумеца».,
+#str_mission_nepal_investigation_hint_captainsletter_desc_2,4c5fcba8726a6307,"Гэта апошняе паведамленне Конрада Альтрыхтэра, капітана лінкора «Кумец». 
+
+Мы... Бог ведае дзе. Так, адзін толькі Бог і ведае. 
+
+Пасля таго што здарылася, пасля таго як я ўбачыў, як вырвалася на волю невымерная сіла, замкнёная ў тым камені, я пабег за той Ламбардзі і выхапіў у яе камень. Я зразумеў, што ён належыць Айчыне. Яго трэба ахоўваць. Таму я вырашыў замкнуцца з каменем у бяспечным пакоі. Паспрабую паўтарыць тое, што зрабіла тая праклятая жанчына, каб выклікаць здарэнне. Малюся, каб атрымалася. 
+
+А калі не... Гэтае паведамленне — для ратавальнікаў, якія знойдуць запіску. Я запісаў код ад дзвярэй бяспечнага пакоя — вы ведаеце, што з ім рабіць. Калі вы знойдзеце мяне мёртвым, вярніце камень фюрэру і скажыце, што я аддаў жыццё, ахоўваючы яго. 
+
+Хай жыве рэйх! Хай жыве фюрэр!","той жа EN, што u11 captainjournal_inspect — пераклад узяты адтуль"
+#str_mission_nepal_investigation_hint_codebook,f13912c2d1db01e7,Кодавая кніга,
+#str_mission_nepal_investigation_hint_codebook_desc,cd4e766a2e3a37fa,Кожнаму з гэтых слоў адпавядае лік,
+#str_mission_nepal_investigation_hint_codebook_desc_2,3da649811894fcb9,"Achse 31
+Hallo 23
+Danke 44
+Nein 67
+Ja 99
+Lecker 4
+Woche 27
+Heute 65
+Morgen 54
+Gestern 39
+Kurz 5
+Machen 61
+Adler 12
+Gehen 33
+Lachen 9
+Good 98
+Schön 100
+Komisch 15
+Kaffee 70
+Bier 85
+Tee 33
+Linie 22
+Lamm 77
+Fisch 6
+Nett 40
+Sauber 120
+Fein 66
+Lieb 54
+Liebe 8","нямецкія словы — як у EN; прабелы ў «Adler12», «Schön100» дададзены, як у ru"
+#str_mission_nepal_investigation_hint_enigmamachine,6b12b69d6165a5d3,Шыфравальная машына,
+#str_mission_nepal_investigation_hint_enigmamachine_desc,0711f6953f550870,Прылада для шыфравання і расшыфроўкі паведамленняў.,
+#str_mission_nepal_investigation_hint_enigmamachine_hint_1,360200f06918a25b,"Шыфравальная машына патрэбная, каб расшыфроўваць паведамленні. Трэба знайсці паведамленне.",
+#str_mission_nepal_investigation_hint_enigmamachine_hint_2,02d72c29b4892bb0,Трэба ўвесці зашыфраванае слова з запіскі ў шыфравальную машыну.,
+#str_mission_nepal_investigation_hint_enigmamachine_hint_3,2656f918a112a8f5,"Трэба ўвесці зашыфраванае слова з запіскі ў шыфравальную машыну, а потым знайсці расшыфраванае слова ў табліцы кодаў, каб даведацца код.",
+#str_mission_nepal_investigation_hint_enigmamachine_hint_4,eda8e56bd7c2a073,Трэба знайсці ўсе кодавыя дыскі і ўставіць іх у шыфравальную машыну.,
+#str_mission_nepal_investigation_hint_enigmamachine_hint_5,0fa269c3cc363804,Кодавыя дыскі трэба ўставіць у машыну ў правільным парадку.,
+#str_mission_nepal_investigation_hint_enigmamachine_hint_6,5da4028b206b0173,"Кодавыя дыскі павінны стаяць у такім парадку, каб можна было ўвесці зашыфраванае слова.",
+#str_mission_nepal_investigation_hint_enigmamachine_hint_7,b05b467acb33df58,"Калі набраць на шыфравальнай машыне JÖGM, павінны атрымацца літары BLUT. Слова BLUT у адной з табліц кодаў падкажа код ад бяспечнага пакоя.",
+#str_mission_nepal_investigation_hint_find_secretexit,0b1a6492263693e1,Знайсці таемны выхад,
+#str_mission_nepal_investigation_hint_find_secretexit_01,909cb81127c5e194,Кніга,
+#str_mission_nepal_investigation_hint_open_safe,e8c9f19f2115ad05,Адчыніць сейф,
+#str_mission_nepal_investigation_hint_open_safe_desc,92ec471749f5cd25,З расшыфраваным кодам мы зможам адчыніць сховішча. ,
+#str_mission_nepal_investigation_hint_retrieve_thestone,5be374afa074c3ff,Забраць камень,
+#str_mission_nepal_investigation_hint_scramblersbook,bc7607268ad9873c,Кніга расстаноўкі ротараў,
+#str_mission_nepal_investigation_hint_scramblersbook_desc,0eeadb25e98aaddf,Табліца з камбінацыямі лічбаў для розных дзён месяца,
+#str_mission_nepal_investigation_hint_scramblersbook_desc_2,5a4d04759355df46,"22-га: I, II, III, IV, V
+23-га: II, I, III, V, IV
+24-га: IV, II, V, I, III
+25-га: III, II, I, IV, V
+26-га: V, I, II, IV, III
+27-га: I, IV, V, III, II
+28-га: III, IV, V, I, II
+29-га: II, V, III, I, IV
+30-га: вярнуцца да першага.",
+#str_mission_nepal_investigation_hint_stealth,328d53cabac24695,План сярэдняй палубы,
+#str_mission_nepal_investigation_hint_thelasttestamony,67ddca1880899b56,Апошняе сведчанне ,
+#str_mission_nepal_investigation_hint_thelasttestamony_desc,10bf00eb0a3fd2ee,Апошняе сведчанне афіцэраў. Гэты зашыфраваны код выглядае цікава.,
+#str_mission_nepal_investigation_hint_thelasttestamony_desc_2,ed575e7c5b37920a,"Нашым ратавальнікам!
+Пасля няўдачы эксперыменту частка экіпажа ўчыніла здраду. Мы замкнуліся тут і заблакавалі выхады. Пасля аварыі доктар Ламбардзі згубілася на караблі, і мы абвясцілі экіпажу, што яна загінула. Каб хоць неяк выправіць становішча, мы схавалі камень нефілімаў тут, у гэтым сховішчы.
+
+Калі вы свае, адчыніце сейф па стандартнай працэдуры. Будзьце асцярожныя: вы не ўяўляеце, на што здольны гэты камень.
+
+Мы, мусіць, не пратрымаемся да прыходу ратавальнікаў. Забярыце нашых загінулых і памятайце іх імёны.
+
+Слава Германіі, і хай Бог будзе з вамі.
+
+ALKEJ
+PUQLK
+RJLAJ",
+#str_mission_nepal_investigation_hint_thesafe,f239294d4e9de419,Дзверы сховішча,
+#str_mission_nepal_investigation_hint_thesafe_desc,dee9bcf56493d054,Металічныя дзверы з кодавым замком.,
+#str_mission_nepal_investigation_hint_translatedcode,48d450289c56252d,Перакладзены код,
+#str_mission_nepal_investigation_hint_translatedcode_desc,217c89cd2713eb3e,"Мы скарысталіся машынай «Энігма» з правільна выстаўленымі ротарамі і атрымалі перакладзены код.
+DUNKEL KOMISCH KURZ",
+#str_mission_nepal_investigation_hint_use_enigmamachine,608f6c1692176652,Скарыстацца «Энігмай».,
+#str_mission_nepal_investigation_hint_use_enigmamachine_desc,37e5d42f4cb1f850,Разгадаць зашыфраваны код з дапамогай машыны «Энігма».,
+#str_mission_nepal_mountain,65f4ae2a196d7e58,Суровае ўзыходжанне,
+#str_mission_nepal_mountain_objective_1,78fd01b8d5188d00,Дабрацца да месца па каардынатах,
+#str_mission_nepal_mountain_objective_1_desc,dae36f394a619762,"Фос паслаў Ганца і яго людзей у Гімалаі шукаць страчаны камень з Мачу-Пікчу. Як камень трапіў у гэтыя горы — загадка, але цяпер галоўнае, каб нацысты не дабраліся да яго першымі.",
+#str_mission_nepal_mountain_objective_2,1bf3b5c19e4b0dd5,Дабрацца да карабля,
+#str_mission_nepal_mountain_objective_2_desc,be35052756ec7686,Невядома як на вяршыні гары апынуўся вялікі карабель. Ён ледзь трымаецца на краі абрыву.,
+#str_mission_nepal_mountain_objective_3,2f93d0124d6fc1c3,Абшукаць карабель,
+#str_mission_nepal_mountain_objective_3_desc,ea4e8bf669aa2475,"Калі Ганц не дабраўся да яго першым, страчаны камень з Мачу-Пікчу павінен быць дзесьці на гэтым караблі.",
+#str_mission_nepal_mountain_objective_4,bfba5eda91934b2d,Знайсці камень,
+#str_mission_nepal_mountain_objective_4_desc,6b47f948b3a6c396,Пошукі сястры Джыны скончыліся тут жахлівай знаходкай. А цяпер Ганц і яго людзі шукаюць на караблі камень.,
+#str_mission_nepal_mountain_objective_4a,b5f825c747ca3911,Разгадаць шыфр капітана,
+#str_mission_nepal_mountain_objective_4a_camera,fb6b84548b151289,Пашукаць падказкі з фотаапаратам,
+#str_mission_nepal_mountain_objective_4a_desc,fc57b3a18168d97c,"У афіцэрскай кают-кампаніі ёсць замкнёныя дзверы. Можа, з дапамогай шыфравальнай машыны ўдасца знайсці код ад іх?",
+#str_mission_nepal_mountain_objective_5,82efd3ca2719186a,Уцячы з карабля!,
+#str_mission_nepal_mountain_objective_5_desc,3f1dcea436c86318,"Лінкор нясецца ўніз па схіле гары. Калі ён непазбежна разаб’ецца, не выжыве ніхто.",
+#str_mission_nepal_mountain_revisitsummary,ec057f88878fda9a,Гімалаі. Мясцовасць шматуе лютая снежная бура. На вяршыні гары засеў нацысцкі лінкор «Кумец».,
+#str_mission_nepal_ship_ext_story_desc,47e39e4ad9565ad2,"Лінкор спаўзае з гары. Трэба хутчэй нешта прыдумаць, пакуль мы не разбіліся.",
+#str_mission_nepal_ship_ext_story_name,792949457ea4f5b2,Лінкор,
+#str_mission_nepal_ship_ext_story_objective_1_desc,30b95f152e0347e1,"Джына бяжыць да кармы лінкора. Мне трэба дагнаць яе і прыдумаць, як выбрацца з гэтага жывымі.",
+#str_mission_nepal_ship_ext_story_objective_1_name,42e901299a33fbe4,Дагнаць Джыну,

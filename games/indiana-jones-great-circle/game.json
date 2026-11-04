@@ -1,0 +1,40 @@
+{
+ "name": "Indiana Jones and the Great Circle",
+ "engine": "idtech",
+ "_about": "id Tech 7 (Motor). Беларуская — на месцы рускай (ru-RU): толькі ў яе шрыфтах ёсць кірыліца, І/і/Ў/ў — таксама. Ацэнка і тэсты ў гульні — RESEARCH.md.",
+ "steam_appid": 2677660,
+ "source_lang": "en",
+ "hint_lang": "ru",
+ "credits": "Нейрапераклад: мадэль Claude (Anthropic). Кіраўнік праекта: Віталь Аляхновіч.",
+ "lint_args": [
+  "--tag-re",
+  "<[^<>]+>|\\[[\\d.]+\\]|\\[name:[^\\]]*\\]|\\^C\"[^\"]*\"|\\^[A-Z0-9]|\\\\[()]|%\\d?\\$?[0-9.]*[dsf]|(?<!\\w)_[a-z][a-z0-9_]*"
+ ],
+ "_from_original": "радок, які пераклад пакідае як у арыгінале (нарыхтоўкі, коды, нямецкія і шведскія рэплікі), у рэпазіторыі — заглушка []: тэкст гульні не публікуецца; рухавік падстаўляе яго з гульні",
+ "from_original": "(?s)\\A.+\\Z",
+ "idtech": {
+  "base": "base",
+  "langs": {
+   "en": 407,
+   "ru": 426
+  },
+  "target": "ru",
+  "rename": {
+   "#str_code_settings_language_ru_ru": "Беларуская"
+  },
+  "_original": "юрыдычныя тэксты застаюцца англійскімі (як у 007 First Light, рашэнне карыстальніка 2026-10-27)",
+  "original": ["#str_menu_eula_content"]
+ },
+ "release": {
+  "title": "Беларускі пераклад Indiana Jones and the Great Circle",
+  "version": "0.9",
+  "changes": "Першы выпуск: уся гульня і DLC «Ордэн волатаў»; праверка ў гульні працягваецца.",
+  "exe": "TheGreatCircle.exe",
+  "file": "IndianaJonesGreatCircle_BE",
+  "language_name": "Беларуская",
+  "replaces": "Русский",
+  "menu": "Налады → Спецыяльныя магчымасці → Мова тэксту",
+  "contents": "Перакладзены інтэрфейс, дзённік, нататкі і ўсе субтытры ({strings} радкоў),\nразам з DLC «Ордэн волатаў». Агучка і ліцэнзійнае пагадненне застаюцца\nанглійскімі. Версія 0.9: гульня яшчэ правяраецца — пішыце, калі нешта\nне так.",
+  "how": "Ён змяняе адзін файл гульні —\nbase\\gameresources_patch1_pc.resources (дапісвае ў яго беларускі тэкст);\nарыгінал захоўваецца побач як gameresources_patch1_pc.resources.orig."
+ }
+}

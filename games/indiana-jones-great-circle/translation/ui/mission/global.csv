@@ -1,0 +1,55 @@
+key,src_hash,bel,note
+#str_mission_global_activity_activity_books,a8d2e52e468ecb9c,Свет ведаў,
+#str_mission_global_activity_activity_books_desc,5ef2e8749a87de56,"Засвойваць новыя ўменні: збіраць кнігі прыгод і знаходзіць хвілінку, каб іх вывучыць.",
+#str_mission_global_activity_artefacts,314ae71b8c8dc9c9,Артэфакты,
+#str_mission_global_activity_artefacts_desc,ea54cb4062f2ce00,Сабраць артэфакты.,
+#str_mission_global_activity_cogs,397348c4ffce9ab7,Шасцярні,
+#str_mission_global_activity_cogs_desc,519ba07df774c2cc,Сабраць шасцярні.,
+#str_mission_global_activity_gizeh_penicillin_objective_desc,c20e724847db5a0b,Усё гэта знойдзена ў Гізе.,
+#str_mission_global_activity_hiddenkeys,b742cb8d970277a5,Змяіны куфар,
+#str_mission_global_activity_hiddenkeys_desc,e4c599ed37155b3c,"Фос прывёз з Гізы дзіўны куфар, аздоблены змеямі. Адамкнуць яго можна толькі трыма старажытнымі ключамі, схаванымі ў трох розных месцах свету: у Ватыкане, Гізе і Шанхаі.",
+#str_mission_global_activity_hiddenkeys_key_counter,dcab58d94a243ed0,Знайсці старажытныя ключы · %d/3,
+#str_mission_global_activity_hiddenkeys_mysterynote_code_note_desc,237bcd1444a4aeeb,"Старонка, вырваная з нямецкай інструкцыі.",
+#str_mission_global_activity_hiddenkeys_mysterynote_code_note_inspect,1deed432f1089fa8,"Сейф пастаўляецца з загадзя ўсталяваным кодам: 5484
+
+Калі ласка, змяніце гэты код як мага хутчэй!",
+#str_mission_global_activity_hiddenkeys_mysterynote_code_note_title,d664085cb17008fc,Інструкцыя да сейфа,
+#str_mission_global_activity_hiddenkeys_mysterynote_note1_desc,f474a73086e417a8,Ліст Фоса пра вельмі важны куфар.,
+#str_mission_global_activity_hiddenkeys_mysterynote_note1_inspect,e9f03e4a0f26b618,"Мёлер,
+
+Гэты куфар знайшлі на адных з раскопак у Гізе. Я прывёз яго сюды для вывучэння, калі мы знайшлі камень.
+
+Паводле маіх даследаванняў, ён зроблены ў Егіпце, магчыма, у часы Чацвёртай дынастыі. Адчыніць яго можна толькі трыма ключамі, якія, як сцвярджае стары сярэднявечны рукапіс аднаго нямецкага эзатэрыка, былі «рассеяны па Божым тварэнні».
+
+Адзін ключ трапіў на поўнач і ў рэшце рэшт апынуўся ў рымскай грабніцы — магчыма, у некропалі пад Ватыканам.
+
+Другі ключ вандраваў на Далёкі Усход, дзе ім завалодаў багаты шанхайскі купец.
+
+Апошні ключ дагэтуль пахаваны дзесьці ў Гізе.
+
+Пакуль я пішу гэтыя радкі, пошукавыя групы ўжо шукаюць ключы. Ваш загад — ахоўваць куфар цаной уласнага жыцця, пакуль ключы не знойдуць. Я лічу, што ў ім схаваныя таямніцы, якія могуць аказацца жыццёва важнымі для нашай місіі.
+
+Утрымлівайце пазіцыю да далейшых указанняў.
+
+Фос",
+#str_mission_global_activity_hiddenkeys_mysterynote_note1_title,479adc6040770975,Ліст Фоса,
+#str_mission_global_activity_hiddenkeys_objective_1,35d5648e8bac267f,Знайсці старажытныя ключы,
+#str_mission_global_activity_hiddenkeys_objective_1_desc,66e3fa869486362e,Знайсці ключы,
+#str_mission_global_activity_hiddenkeys_objective_1b,73c2fc285e8aaa55,Знайсці ключ у Ватыкане,
+#str_mission_global_activity_hiddenkeys_objective_1c,1d0e266d5f783217,Знайсці ключ у Гізе,
+#str_mission_global_activity_hiddenkeys_objective_1d,43e78d7f87ed1a34,Знайсці ключ у Шанхаі,
+#str_mission_global_activity_hiddenkeys_objective_2,ffe9cd164165df5f,Адамкнуць змяіны куфар,
+#str_mission_global_activity_hiddenkeys_objective_2_desc,2ad2557be02365f7,Адчыніць куфар. ,
+#str_mission_global_activity_hiddenkeys_objective_2_revisit,9d7bc4b3e2ecaaf9,Сабраць усе ключы і адчыніць куфар. ,
+#str_mission_global_activity_hiddenkeys_objective_2_revisit_desc,1dbaa0e6e1709040,"Сабраць ключы ва ўсіх астатніх месцах і вярнуцца ў Сукхатай, каб адчыніць куфар. ",EN Sukothai — па гласарыі «Сукхатай»
+#str_mission_global_activity_hiddenkeys_summary,a43c9a137f804f34,"Дзіўны куфар, які знайшоў Фос, нарэшце адамкнуты, і сам Фос ужо ніколі не даведаецца, што было ўнутры.",
+#str_mission_global_activity_museumartifacts,c3b9d3768483423d,Страчаныя артэфакты,
+#str_mission_global_activity_museumartifacts_desc,a41d8ff74f6fb4e5,Гэтым артэфактам месца ў музеі.,
+#str_mission_global_activity_penicillin,dfde7663c8089a75,Лекі ад усіх хвароб,
+#str_mission_global_activity_penicillin_desc,aeff13904718091e,"Мясцоваму медыку вельмі патрэбныя лекі, і ўсе знойдзеныя флаконы трэба аднесці туды.",
+#str_mission_global_activity_penicillin_objective,659289ed53d6b3d7,Сабраць флаконы з лекамі,
+#str_mission_global_activity_vatican_penicillin_objective_1_desc,6f116e5fc9cc636a,Мясцоваму медыку вельмі патрэбныя лекі. Усе знойдзеныя флаконы з лекамі трэба аднесці туды.,
+#str_mission_global_activity_vatican_penicillin_objective_2_desc,a83f4d674559f993,Знойдзена ў Ватыкане,
+#str_mission_global_fieldnotes_desc,f71938016657cbaa,"Цікавыя нататкі і фотаздымкі, сабраныя падчас палявых даследаванняў.",
+#str_mission_global_fieldnotes_title,b7d6b4ebb5c50555,Палявыя нататкі,
+#str_mission_global_medicine_summary,87960231ef1dc23d,Усе флаконы з лекамі вернуты мясцовым медыкам.,

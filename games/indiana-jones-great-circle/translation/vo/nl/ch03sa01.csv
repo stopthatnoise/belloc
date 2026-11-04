@@ -1,0 +1,107 @@
+key,src_hash,bel,note
+#str_vo_nl_officergernot_ch03sa01_001_not_welcome_ne_01,7ba1dcd08911c685,Чужым сюды нельга!,
+#str_vo_nl_indy_ch03sa01_002_outside_club_ne_01,bd2d9ceff3e9ffff,"Мусіць, толькі для нацыстаў...",
+#str_vo_nl_indy_ch03sa01_002_outside_club_qu_01,bd2d9ceff3e9ffff,"Мусіць, толькі для нацыстаў...",
+#str_vo_nl_indy_ch03sa01_002_outside_fight_club_ne_01,c48fbb1c00055210,[],
+#str_vo_nl_officergernot_ch03sa01_003_outside_club_ne_01,5f64cf072996de11,Зноў ты? Ідзі адсюль!,
+#str_vo_nl_officergernot_ch03sa01_004_outside_club_ne_01,8f39914483731589,Што я табе сказаў? Згінь.,
+#str_vo_nl_officergernot_ch03sa01_005_welcome_ne_01,79a8fe771b978600,"[1.75]О, новенькі![3.9][7.9]Правілы ведаеш, так?[10.1]",
+#str_vo_nl_officergernot_ch03sa01_006_welcome_ne_01,9f9d4aa7ecadd556,"Ну, як скажаш.[1.85]Заходзь. Пазабаўляйся!",
+#str_vo_nl_officergernot_ch03sa01_007_welcome_lo_01,c5b148fdcf3cdd74,Слухайце ўсе![1.54]У нас новы баец!,
+#str_vo_nl_officergernot_ch03sa01_009_fight_club_ne_01,50a3538ba30c3af6,Правілы ты ведаеш. Першы раз прыйшоў — выходзіш біцца! Давай на рынг і зладзь нам відовішча!,"рэмарка (in German) і дужкі вакол тэксту выкінуты, як у _inside_ і ru"
+#str_vo_nl_officergernot_ch03sa01_009_inside_fight_club_ne_01,6eae28090451e07b,Правілы ты ведаеш. Першы раз прыйшоў — выходзіш біцца! Давай на рынг і зладзь нам відовішча!,
+#str_vo_nl_officergernot_ch03sa01_010_fight_club_ne_01,8ca5cd86c3cda077,"Пераможаш — грошы твае. А калі ўжо прайграеш, будзь ласкавы, прайграй прыгожа.",рэмарка (in German) і дужкі выкінуты
+#str_vo_nl_officergernot_ch03sa01_010_inside_fight_club_ne_01,cc9919d05171ba4f,"Пераможаш — грошы твае. А калі ўжо прайграеш, будзь ласкавы, прайграй прыгожа.",
+#str_vo_nl_officerhans_ch03sa01_012_fight_rainer_lo_01,49e9f8e18993d02c,Гатовы стаць пасмешышчам усёй Гізы? Ты ў мяне пры ўсіх здасіся!,
+#str_vo_nl_officerjurgen_ch03sa01_012_fight_rainer_lo_01,0f2d08a52e90cc69,Гатовы стаць пасмешышчам усёй Гізы? Ты ў мяне пры ўсіх здасіся!,рэмарка (in German) і дужкі выкінуты
+#str_vo_nl_officerhans_ch03sa01_013_fight_rainer_lo_01,2e565105090c5fb1,"Давай, падыходзь. Зраблю з цябе дурня! Аглушанага дурня!",
+#str_vo_nl_officerjurgen_ch03sa01_013_fight_rainer_lo_01,b75c3df8a944e760,"Давай, падыходзь. Зраблю з цябе дурня! Аглушанага дурня!",рэмарка (in German) і дужкі выкінуты
+#str_vo_nl_officergernot_ch03sa01_014_fight_club_lo_01,8226e005dafffe59,Пачынаецца бой!,рэмарка (in German) і дужкі выкінуты
+#str_vo_nl_officergernot_ch03sa01_014_inside_fight_club_lo_01,d3a841f087a97a12,Пачынаецца бой!,
+#str_vo_nl_officergernot_ch03sa01_015_fight_club_ne_01,440af6b1dbf94bf0,Гэй! Першы раз прыйшоў — выходзіш біцца! Такія правілы клуба!,рэмарка (in German) і дужкі выкінуты
+#str_vo_nl_officergernot_ch03sa01_015_inside_fight_club_ne_01,44cda6ec0e595b49,Гэй! Першы раз прыйшоў — выходзіш біцца! Такія правілы клуба!,
+#str_vo_nl_officergernot_ch03sa01_016_fight_club_ne_01,d47b67d0e97c103c,"Што такое? Ты ж не спалохаўся, га?",рэмарка (in German) і дужкі выкінуты
+#str_vo_nl_officergernot_ch03sa01_016_inside_fight_club_ne_01,4bc40ba1a722d907,"Што такое? Ты ж не спалохаўся, га?",
+#str_vo_nl_officergernot_ch03sa01_017_fight_club_ne_01,80808a33c4f42b86,"О, а я быў упэўнены, што ты спасуеш!",рэмарка (in German) і дужкі выкінуты
+#str_vo_nl_officergernot_ch03sa01_017_inside_fight_club_ne_01,9e9227ca02bb0350,"О, а я быў упэўнены, што ты спасуеш!",
+#str_vo_nl_officergernot_ch03sa01_018_fight_club_ne_01,022b44786d5af747,Выдатнае відовішча. Ён сам на гэта напрошваўся. Вось твой выйгрыш.,рэмарка (in German) і дужкі выкінуты
+#str_vo_nl_officergernot_ch03sa01_018_inside_fight_club_ne_01,5786019cf80c4c32,Выдатнае відовішча. Ён сам на гэта напрошваўся. Вось твой выйгрыш.,
+#str_vo_nl_officergernot_ch03sa01_019_fight_club_ne_01,d918303c739c6db2,"Добра б’ешся, дружа, — вось твая доля.",рэмарка (in German) і дужкі выкінуты
+#str_vo_nl_officergernot_ch03sa01_019_inside_fight_club_ne_01,8a7358758ad0eb50,"Добра б’ешся, дружа, — вось твая доля.",
+#str_vo_nl_officergernot_ch03sa01_020_fight_club_ne_01,42ac423f3e8b9a57,"Выдатны бой, дружа. Вось твае грошы.",рэмарка (in German) і дужкі выкінуты
+#str_vo_nl_officergernot_ch03sa01_020_inside_fight_club_ne_01,9c109cc402b40f0c,"Выдатны бой, дружа. Вось твае грошы.",
+#str_vo_nl_officergernot_ch03sa01_021_fight_club_ne_01,08aa0a4d4f2343f4,Гэта было цудоўна. Трымай. Твая доля.,рэмарка (in German) і дужкі выкінуты
+#str_vo_nl_officergernot_ch03sa01_021_inside_fight_club_ne_01,8dae8e1714b95f77,"Цудоўны бой. Вось, трымай. Твая доля.",
+#str_vo_nl_officergernot_ch03sa01_022_fight_club_ne_01,4869b6f7adb5d25d,"Можа, застанешся яшчэ на некалькі баёў? А раз ужо ты цяпер паўнапраўны член клуба, у нас знойдзецца, на што патраціць твае грошы.","рэмарка і дужкі выкінуты, як у ru"
+#str_vo_nl_officergernot_ch03sa01_022_inside_fight_club_ne_01,6626da2c36b405af,"Можа, застанешся яшчэ на некалькі баёў?[1.88]А раз ужо ты цяпер паўнапраўны член клуба, у нас знойдзецца, на што патраціць твае грошы.",
+#str_vo_nl_officerhans_ch03sa01_023_fight_knappy_lo_01,7f406fd6bb11b480,"Гэй! Ты яшчэ пашкадуеш, што нарадзіўся на свет!",рэмарка выкінута
+#str_vo_nl_officerjurgen_ch03sa01_023_fight_knappy_lo_01,f783fae819cc9693,"Гэй! Ты яшчэ пашкадуеш, што нарадзіўся на свет!",
+#str_vo_nl_officergernot_ch03sa01_024_fight_club_ne_01,62cd64e5288094a9,"Ведаеш, хто рвецца з табой біцца? Вілі «Дзік»! І ён прагне крыві.","рэмарка выкінута; Wiltschwein (sic) — Дзік, як у гласарыі (Wildschwein)"
+#str_vo_nl_officergernot_ch03sa01_024_inside_fight_club_ne_01,e5fb1fc08cf03dfa,"Ведаеш, хто рвецца з табой біцца? Вілі «^IДзік^I»! І ён прагне крыві.","Wiltschwein (sic) — Дзік, як у гласарыі (Wildschwein); ?: мянушка ў ^I — перакладзена, бо гласарый вырашыў «Дзік»"
+#str_vo_nl_officerfritz_ch03sa01_025_fight_wiltschwein_lo_01,4d1e657b9cfc4db6,"Прыгажунчык! Цябе родная маці не пазнае, калі я з табой скончу!",рэмарка выкінута
+#str_vo_nl_officerstefan_ch03sa01_025_fight_wiltschwein_lo_01,ef18a78e67eef6e2,"Прыгажунчык! Цябе родная маці не пазнае, калі я з табой скончу!",
+#str_vo_nl_officerstefan_ch03sa01_025_fight_wiltschwein_ne_01,ef18a78e67eef6e2,"Прыгажунчык! Цябе родная маці не пазнае, калі я з табой скончу!",
+#str_vo_nl_officerfritz_ch03sa01_026_fight_wiltschwein_lo_01,81f7bcbcea58f30a,Ха-ха-ха! Ты яшчэ будзеш маліць пра салодкае забыццё!,"рэмарка выкінута; хвост-рэмарка для распрацоўшчыкаў (If the player loses…) выкінуты, як у ru"
+#str_vo_nl_officerstefan_ch03sa01_026_fight_wiltschwein_lo_01,797999b57e684bf6,Ха-ха-ха! Ты яшчэ будзеш маліць пра салодкае забыццё!,
+#str_vo_nl_officergernot_ch03sa01_027_fight_club_ne_01,40d2c65f06cc6dbe,На сёння ўсё. А ты добрае відовішча наладзіў.,"рэмарка выкінута; хвост-рэмарка (If the player continues…) выкінуты, як у ru"
+#str_vo_nl_officergernot_ch03sa01_027_inside_fight_club_ne_01,d050804749d43f5d,На сёння ўсё. А ты добрае відовішча наладзіў.,
+#str_vo_nl_officergernot_ch03sa01_028_fight_club_ne_01,42b0615bf5ad117e,"Выдатнае відовішча. Думаю, баі ўсім спадабаліся.",рэмарка выкінута
+#str_vo_nl_officergernot_ch03sa01_028_inside_fight_club_ne_01,1ff35f17c9070717,"Выдатнае відовішча. Думаю, баі ўсім спадабаліся.",
+#str_vo_nl_officergernot_ch03sa01_029_fight_club_lo_01,6ca7703f544b8ef1,Гэй! Грошы не забудзь!,рэмарка выкінута
+#str_vo_nl_officergernot_ch03sa01_029_inside_fight_club_lo_01,e5cfaeae4e2603e8,Гэй! Грошы не забудзь!,
+#str_vo_nl_officergernot_ch03sa01_030_fight_club_ne_01,072b34694dfc95ae,"Наступным разам хоць бы ўдавай, што стараешся.",рэмарка выкінута (і laughs)
+#str_vo_nl_officergernot_ch03sa01_030_inside_fight_club_ne_01,6a34b3c50c7c1fd6,"Наступным разам хоць бы ўдавай, што стараешся.",
+#str_vo_nl_officergernot_ch03sa01_031_fight_club_ne_01,86da33733da869a2,"Кажуць, параза гартуе характар.",рэмарка выкінута (і laughs)
+#str_vo_nl_officergernot_ch03sa01_031_inside_fight_club_ne_01,99401c1e1e18b4c7,"Кажуць, параза гартуе характар.",
+#str_vo_nl_officergernot_ch03sa01_032_fight_club_ne_01,f49bc415d1ce1939,"Ну, затое відовішча было нядрэннае.",рэмарка выкінута
+#str_vo_nl_officergernot_ch03sa01_032_inside_fight_club_ne_01,faf8f689d95dabd7,"Ну, затое відовішча было нядрэннае.",
+#str_vo_nl_officergernot_ch03sa01_033_fight_club_ne_01,9768990dfca140e8,"То прайграеш, то выйграеш. Такое жыццё.",рэмарка выкінута
+#str_vo_nl_officergernot_ch03sa01_033_inside_fight_club_ne_01,f5a1849cd8cbec0b,"То прайграеш, то выйграеш. Такое жыццё.",
+#str_vo_nl_officergernot_ch03sa01_034_fight_club_ne_01,cc1de3051f402c7e,"Здаецца, ты хочаш паспрабаваць яшчэ раз.",рэмарка выкінута
+#str_vo_nl_officergernot_ch03sa01_034_inside_fight_club_ne_01,43af09da32918989,"Здаецца, ты хочаш паспрабаваць яшчэ раз.",
+#str_vo_nl_officergernot_ch03sa01_035_fight_club_ne_01,fb1c556f2b7d1000,Гатовы да рэваншу?,рэмарка выкінута
+#str_vo_nl_officergernot_ch03sa01_035_inside_fight_club_ne_01,e762cb6d8748f8a1,Гатовы да рэваншу?,
+#str_vo_nl_officergernot_ch03sa01_036_fight_club_ne_01,ba322c1ee71bbf0b,"Што, хочаш яшчэ адзін шанц?",рэмарка выкінута
+#str_vo_nl_officergernot_ch03sa01_036_inside_fight_club_ne_01,5de732803d02af6c,"Што, хочаш яшчэ адзін шанц?",
+#str_vo_nl_officergernot_ch03sa01_037_fight_club_lo_01,44ae558a493b18bf,Наш навічок хоча яшчэ!,рэмарка выкінута
+#str_vo_nl_officergernot_ch03sa01_037_inside_fight_club_lo_01,7e2586d0f15fbe52,Наш навічок хоча яшчэ!,
+#str_vo_nl_officergernot_ch03sa01_038_fight_club_lo_01,049bbfe73eb08c82,"Так, у нас яшчэ адзін бой!",рэмарка выкінута
+#str_vo_nl_officergernot_ch03sa01_038_inside_fight_club_lo_01,8413124b91d429a6,"Так, у нас яшчэ адзін бой!",
+#str_vo_nl_officerjurgen_ch03sa01_040_rainer_knappy_wiltschwein_ne_01,10a82fd67a7dca56,"Ха, вось ужо не думаў, што ты мяне адолееш, дружа. Віншую.",
+#str_vo_nl_officerhans_ch03sa01_041_rainer_knappy_wiltschwein_ne_01,e0799e1b5200c8e8,"Ага, вось ужо не думаў, што ты мяне адолееш, дружа. Віншую.",
+#str_vo_nl_officerfritz_ch03sa01_042_rainer_knappy_wiltschwein_ne_01,6a07c59c2d00cccb,"Дзік рады, што сустрэў роўнага. Наступным разам ён пераламае табе хрыбет.",рэмарка выкінута
+#str_vo_nl_officerstefan_ch03sa01_042_rainer_knappy_wiltschwein_ne_01,a7f9767a14d2c4e4,"Дзік рады, што сустрэў роўнага. Наступным разам ён пераламае табе хрыбет.","Дзік кажа пра сябе ў трэцяй асобе, як у EN"
+#str_vo_nl_officergernot_ch03sa01_043_rainer_knappy_wiltschwein_ne_01,051265af4b5dbe3c,"Так, гэта ўсё тваё, навічок. Бяры.",
+#str_vo_nl_officergernot_ch03sa01_044_rainer_knappy_wiltschwein_ne_01,6dd2a6f0305543cd,Ідзі патраць выйгрыш на піва. Ці на што душа пажадае.,
+#str_vo_nl_officergernot_ch03sa01_045_rainer_knappy_wiltschwein_ne_01,f7eca76c292e6525,"Ладныя грошы, га? І ўсе твае!",
+#str_vo_nl_officergernot_ch03sa01_046_fight_club_ne_01,752a2a4aa81b9a43,"Добра біўся, дружа.",рэмарка выкінута
+#str_vo_nl_officergernot_ch03sa01_046_inside_fight_club_ne_01,b20046aec87c256e,"Добра біўся, дружа.",
+#str_vo_nl_officerhans_ch03sa01_047_fight_knappy_lo_01,41d40da4fe0e7847,"Пагулялі — і хопіць, малы!",рэмарка выкінута
+#str_vo_nl_officerjurgen_ch03sa01_047_fight_knappy_lo_01,bcd9008b3da03d62,"Пагулялі — і хопіць, малы!",
+#str_vo_nl_officerfritz_ch03sa01_048_fight_wiltschwein_lo_01,c1d16493554b8604,"Спадабалася, прыгажунчык? Ха-ха-ха!",рэмарка выкінута
+#str_vo_nl_officerstefan_ch03sa01_048_fight_wiltschwein_lo_01,fef7089b4f50b25c,"Спадабалася, прыгажунчык? Ха-ха-ха!",
+#str_vo_nl_officerstefan_ch03sa01_048_fight_wiltschwein_ne_01,fef7089b4f50b25c,"Спадабалася, прыгажунчык? Ха-ха-ха!",
+#str_vo_nl_officerfritz_ch03sa01_049_vendor_ne_01,7170a8fe5bb5d17a,"Гэй, дружа. Калі прызавыя грошы паляць кішэню — у мяне ёсць што прадаць.",
+#str_vo_nl_officerstefan_ch03sa01_049_vendor_ne_01,cdbf54f5662bfd67,"Гэй, дружа. Калі прызавыя грошы паляць кішэню — у мяне ёсць што прадаць.","EN тут па-нямецку; перакладзена, як ru"
+#str_vo_nl_officerfritz_ch03sa01_050_vendor_ne_01,221c9f505250646b,"Гэй, дружа. Вось што ў мяне ёсць.",
+#str_vo_nl_officerstefan_ch03sa01_050_vendor_ne_01,d5093543f3bca016,"Гэй, дружа. Вось што ў мяне ёсць.","EN тут па-нямецку; перакладзена, як ru"
+#str_vo_nl_officerfritz_ch03sa01_051_vendor_ne_01,721e4f74149094cc,Віншую з перамогай. Тут тваім грашам заўсёды рады.,
+#str_vo_nl_officerstefan_ch03sa01_051_vendor_ne_01,9d117188dd6e2b8c,Віншую з перамогай. Тут тваім грашам заўсёды рады.,"EN тут па-нямецку; перакладзена, як ru"
+#str_vo_nl_officerfritz_ch03sa01_052_vendor_ne_01,d77f3ee2351ec06a,Што-небудзь упадабаў?,
+#str_vo_nl_officerstefan_ch03sa01_052_vendor_ne_01,f8639c21f9321d5b,Што-небудзь упадабаў?,рэмарка выкінута
+#str_vo_nl_officerfritz_ch03sa01_053_vendor_ne_01,c1111a494c58c424,Вось гэта — сапраўды добрая рэч.,
+#str_vo_nl_officerstefan_ch03sa01_053_vendor_ne_01,cf1539171a5dcad0,Вось гэта — сапраўды добрая рэч.,рэмарка выкінута
+#str_vo_nl_officerfritz_ch03sa01_054_vendor_ne_01,0ffefa12ded58ca1,Гэта вельмі ходкі тавар.,
+#str_vo_nl_officerstefan_ch03sa01_054_vendor_ne_01,27b1b0bdb14ac7b3,Гэта вельмі ходкі тавар.,рэмарка выкінута
+#str_vo_nl_officerfritz_ch03sa01_055_vendor_ne_01,a60f581afa1b9dcb,З гэтым не памылішся.,
+#str_vo_nl_officerstefan_ch03sa01_055_vendor_ne_01,cb9ce743d9a535bd,З гэтым не памылішся.,рэмарка выкінута
+#str_vo_nl_officerfritz_ch03sa01_056_vendor_ne_01,9cafe5e936cf2395,"Выдатны выбар, дружа.",
+#str_vo_nl_officerstefan_ch03sa01_056_vendor_ne_01,757a16fbdf1416cd,"Выдатны выбар, дружа.",рэмарка выкінута
+#str_vo_nl_officerfritz_ch03sa01_057_vendor_ne_01,3dc407d9d710b82b,"Ага, бачу, табе гэта якраз трэба.",
+#str_vo_nl_officerstefan_ch03sa01_057_vendor_ne_01,656eafd034bb429a,"Ага, бачу, табе гэта якраз трэба.",рэмарка выкінута
+#str_vo_nl_officerfritz_ch03sa01_058_vendor_ne_01,10821075003f83d6,"Што, усё ные?",
+#str_vo_nl_officerstefan_ch03sa01_058_vendor_ne_01,8f9fbce913392bd2,"Што, усё ные?",рэмарка выкінута
+#str_vo_nl_officerfritz_ch03sa01_059_vendor_ne_01,92b5cbf0b4f46993,Трымай.,
+#str_vo_nl_officerstefan_ch03sa01_059_vendor_ne_01,fc48373a90748d6d,Трымай.,рэмарка выкінута
+#str_vo_nl_officerfritz_ch03sa01_060_vendor_ne_01,2d70f138db8ebbe1,"Дзякуй, дружа.",
+#str_vo_nl_officerstefan_ch03sa01_060_vendor_ne_01,3b6197bc4a6bd165,"Дзякуй, дружа.",рэмарка выкінута

@@ -43,6 +43,53 @@
     "source_lang": "en"
    }
   },
+  "indiana-jones-great-circle": {
+   "name": "Indiana Jones and the Great Circle",
+   "stores": {
+    "steam": 2677660
+   },
+   "engine": "idtech",
+   "payload_schema": 1,
+   "version": "0.9",
+   "date": "2026-11-04",
+   "changes": "Першы выпуск: уся гульня і DLC «Ордэн волатаў»; праверка ў гульні працягваецца.",
+   "contents": "Перакладзены інтэрфейс, дзённік, нататкі і ўсе субтытры (45070 радкоў), разам з DLC «Ордэн волатаў». Агучка і ліцэнзійнае пагадненне застаюцца англійскімі. Версія 0.9: гульня яшчэ правяраецца — пішыце, калі нешта не так.",
+   "steam_buildid": "23432849",
+   "exe": "TheGreatCircle.exe",
+   "language_name": "Беларуская",
+   "replaces": "Русский",
+   "page": "https://github.com/stopthatnoise/belloc/releases/tag/indiana-jones-great-circle-v0.9",
+   "package": {
+    "url": "https://github.com/stopthatnoise/belloc/releases/download/indiana-jones-great-circle-v0.9/indiana-jones-great-circle-0.9.zip",
+    "sha256": "ce956cba92a1cd84195e549dd582afe3404a92da79c7d634c0c064066de53961",
+    "size": 995779
+   },
+   "probe": {
+    "schema": 1,
+    "engine": "idtech",
+    "game_id": "indiana-jones-great-circle",
+    "game": "Indiana Jones and the Great Circle",
+    "steam_appid": 2677660,
+    "steam_buildid": "23432849",
+    "version": "0.9",
+    "from_original": "(?s)\\A.+\\Z",
+    "idtech": {
+     "base": "base",
+     "target": "ru",
+     "langs": {
+      "en": 407,
+      "ru": 426
+     },
+     "rename": {
+      "#str_code_settings_language_ru_ru": "Беларуская"
+     },
+     "original": [
+      "#str_menu_eula_content"
+     ]
+    },
+    "source_lang": "en"
+   }
+  },
   "pony-island": {
    "name": "Pony Island",
    "stores": {
@@ -203,5 +250,5 @@
    }
   }
  },
- "updated": "2026-11-02"
+ "updated": "2026-11-04"
 }
