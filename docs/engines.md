@@ -10,6 +10,7 @@
 | `unity-textasset-csv` | Pony Island | CSV-табліца ў TextAsset класічных `.assets`: слупок рускай ← наш тэкст; шрыфты, надпісы сцэн |
 | `unreal-locres` | Clair Obscur: Expedition 33, Dispatch | `.locres` з `.pak` → свой мод-пак у `~mods` з культурай, якую займае беларуская |
 | `glacier` | 007 First Light | LOCR/DLGE у `.rpkg` → свой `chunkNpatchM.rpkg` і `patchlevel` |
+| `idtech` | Indiana Jones and the Great Circle | `lang/strings` мовы, якую займае беларуская, у кантэйнеры `.resources` (id Tech 7): новыя даныя — у канец таго ж файла, хэшы FarmHash кантэйнера пералічваюцца |
 | `telltale` | The Wolf Among Us | `.landb` у `.ttarch2` → наборы-перавызначэнні BelLoc побач з архівамі гульні; бітмапавыя шрыфты, Lua, надпісы на тэкстурах |
 | `csv-folder` | Esoteric Ebb | гульня сама чытае папку мовы з CSV па ID — пішам сваю папку |
 | `paradox` | (Crusader Kings III — праверана, перакладу няма) | `localization/replace/…` — толькі нашы `.yml` |

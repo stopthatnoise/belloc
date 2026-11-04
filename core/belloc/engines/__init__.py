@@ -11,6 +11,7 @@ ENGINES = {
     "unreal-locres": "unreal_locres",
     "paradox": "paradox",
     "telltale": "telltale",
+    "idtech": "idtech",
 }
 
 
