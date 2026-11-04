@@ -134,6 +134,7 @@ P.S. Не палохайся, калі ад тыбрскіх выпарэння�
 ЗАЎВАГА ЛЕКАРА: употай ад людзей дадавай адзін пугіл молатай валовай косці на кожныя пяць чалавек. Гэта ўмацоўвае іх перад боем.",
 #str_activitynote_dlc_collectable_colosseum_recipe_title,00f4d84ced92ebfa,Рэцэпт гладыятарскай кашы,
 #str_activitynote_dlc_collectable_colosseum_tarot_death_desc,0dd111d85479d3b3,Карта таро са старэйшым арканам «Смерць».,
+#str_activitynote_dlc_collectable_colosseum_tarot_death_inspect,,Карта таро з выявай старэйшага аркана «Смерць».,у арыгінале пуста — па ru
 #str_activitynote_dlc_collectable_colosseum_tarot_death_title,3e1915279b16eb82,Карта «Смерць»,
 #str_activitynote_dlc_collectable_comic_issue1_desc,baefa5447421a986,Італьянскі комікс пра гладыятара Максімуса Таўруса.,
 #str_activitynote_dlc_collectable_comic_issue1_inspect,89e5f4a209d9ca18,"Сага пра Максімуса Таўруса
@@ -517,6 +518,7 @@ P.S. Не палохайся, калі ад тыбрскіх выпарэння�
 #str_activitynote_dlc_collectable_palazzo_shelfcode_desc,96d770ed33c353b4,"Напалову абгарэлы аркуш паперы з нейкімі сімваламі. Можа, гэта код?",
 #str_activitynote_dlc_collectable_palazzo_shelfcode_title,8485da2bc621b176,Абгарэлы аркуш,
 #str_activitynote_dlc_collectable_palazzo_tarot_magician_desc,b287f407d64d76d6,Карта таро са старэйшым арканам «Маг».,
+#str_activitynote_dlc_collectable_palazzo_tarot_magician_inspect,,Карта таро з выявай старэйшага аркана «Маг».,у арыгінале пуста — па ru
 #str_activitynote_dlc_collectable_palazzo_tarot_magician_title,4fd804fba10d7d53,Карта «Маг»,
 #str_activitynote_dlc_collectable_popestudy_battlediary_page1_desc,58a76f988e381803,Сведчанне крыжаносца пра аблогу Антыёхіі.,
 #str_activitynote_dlc_collectable_popestudy_battlediary_page1_inspect,6e9acd4b8d108dbc,"Кастрычнік, год Гасподні 1097
@@ -643,6 +645,7 @@ P.S. Не палохайся, калі ад тыбрскіх выпарэння�
 Маёй уладай магістра і сілай непераможнага сонца гэтыя ўказанні абавязковыя да выканання.",
 #str_activitynote_dlc_collectable_waterserpent_instructions_title,34a58f791e375730,Будаўнічыя ўказанні,
 #str_activitynote_dlc_collectable_waterserpent_sketch_desc,578c2cc50679d3c4,Чарцяжы фантана са статуяй вадзянога змея і механізма лабірынта пад ім.,
+#str_activitynote_dlc_collectable_waterserpent_sketch_inspect,,"Замалёўкі, патрэбныя, каб разгадаць галаваломку з фантанам вадзянога змея.",у арыгінале пуста — па ru
 #str_activitynote_dlc_collectable_waterserpent_sketch_title,607a0c7c97f99750,Чарцяжы вадзянога змея,
 #str_activitynote_gizeh_activity_collectable_radiofrequency_article_desc,7704cf9910fa83e6,Чарнавік артыкула пра палітычныя хваляванні ў Ватыкане.,
 #str_activitynote_gizeh_activity_collectable_radiofrequency_article_inspect,1ee5cd613b650d1a,"Фашысцкія прыхвасні змагаюцца за палітычны ўплыў у Ватыкане

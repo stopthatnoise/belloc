@@ -492,6 +492,7 @@ key,src_hash,bel,note
 #str_vo_nl_officergernot_ch03lw00_676_working_gernot_ne_01,7ea8552709ddd1a3,Асцярожна. Падлога можа быць слізкая.,
 #str_vo_nl_officergernot_ch03lw00_677_working_gernot_ne_01,b82ddcdf0c1ebea2,Чорт... Забыўся там прыбраць...,
 #str_vo_nl_officergernot_ch03lw00_678_working_gernot_ne_01,2a9c42889ad75f23,Нехта тут насвінячыў...,
+#str_vo_nl_officergernot_ch03lw00_679_working_gernot_ne_01,,"(насвіствае, прыбіраючы)",у арыгінале пуста — па ru
 #str_vo_nl_officerhans_ch03lw00_680_working_hans_ne_01,e7c3ee756e3dc5f7,"Так, яшчэ крышачку.",
 #str_vo_nl_officerhans_ch03lw00_681_working_hans_ne_01,8b3b0f2c3df9ac2e,"Апускай. Стоп. Вось так. Не, пачакай...",
 #str_vo_nl_officerhans_ch03lw00_682_working_hans_ne_01,5f9a2b795615ba6a,Так.,
@@ -763,6 +764,7 @@ key,src_hash,bel,note
 #str_vo_nl_officerfritz_ch03lw00_949_working_fritz_ne_01,7ea8552709ddd1a3,Асцярожна. Падлога можа быць слізкая.,
 #str_vo_nl_officerfritz_ch03lw00_950_working_fritz_ne_01,b82ddcdf0c1ebea2,Чорт... Забыўся там прыбраць...,
 #str_vo_nl_officerfritz_ch03lw00_951_working_fritz_ne_01,2a9c42889ad75f23,Нехта тут насвінячыў...,
+#str_vo_nl_officerfritz_ch03lw00_952_working_fritz_ne_01,,\(пакашлівае\),у арыгінале пуста — па ru
 #str_vo_nl_officerstefan_ch03lw00_953_working_stefan_ne_01,e7c3ee756e3dc5f7,"Так, яшчэ крышачку.",
 #str_vo_nl_officerstefan_ch03lw00_954_working_stefan_ne_01,8b3b0f2c3df9ac2e,"Апускай. Стоп. Вось так. Не, пачакай...",
 #str_vo_nl_officerstefan_ch03lw00_955_working_stefan_ne_01,5f9a2b795615ba6a,Так.,

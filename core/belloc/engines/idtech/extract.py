@@ -34,17 +34,28 @@ def extract(loc: Loc, out: str | None = None):
     var = {c: int(s["langs"][c]) for c in langs}
     texts = {c: read_lang(base, var[c]) for c in langs}
     src = texts[loc.source_lang]
+    target = s.get("target", "ru")
+    tgt = texts.get(target) or read_lang(base, int(s["langs"][target]))
 
     res: dict[str, dict[str, dict[str, str]]] = {c: {} for c in langs}
     context: dict[str, dict[str, str]] = {}
     names: dict[str, dict[str, Counter]] = {c: {} for c in langs}
-    skipped = 0
+    skipped = only_target = 0
     original = set(s.get("original", []))
     for key in sorted(src, key=lambda k: (table_of(k), order(k))):
         pre, text = split_prefix(src[key])
-        if EMPTY.match(text) or key in original:
+        if key in original:
             skipped += 1
             continue
+        if EMPTY.match(text):
+            # у арыгінале пуста, а мова target паказвае свой тэкст (падзагаловак назвы
+            # гульні, рэмаркі «(пыхціць)»): без перакладу ён застаўся б рускім.
+            # Толькі ASCII («A» для #str_key_a) — і так не рускі, не бярэм
+            own = split_prefix(tgt.get(key, ""))[1]
+            if EMPTY.match(own) or own.isascii():
+                skipped += 1
+                continue
+            only_target += 1
         table = table_of(key)
         en_names = prefix_names(pre)
         for c in langs:
@@ -70,5 +81,6 @@ def extract(loc: Loc, out: str | None = None):
     n = Counter(t.split("/")[0] + ("/" + t.split("/")[1] if t.startswith("vo/") else "") for t in res[loc.source_lang])
     print(f"радкоў: {meta['strings'][loc.source_lang]} у {len(res[loc.source_lang])} табліцах "
           f"({', '.join(f'{k} {v}' for k, v in sorted(n.items()))}); пустых і [none]: {skipped}; "
+          f"пустых у арыгінале, але з тэкстам {target}: {only_target}; "
           f"імёнаў над субтытрамі: {len(res[loc.source_lang][NAMES])}")
     print(f"зборка {meta['package']}, мова {s.get('target', 'ru')} — у {meta['target_container']}")
