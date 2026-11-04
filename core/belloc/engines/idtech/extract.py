@@ -55,7 +55,8 @@ def extract(loc: Loc, out: str | None = None):
         if ctx:
             context.setdefault(table, {})[key] = ctx
     for c in langs:                           # падказка — найчасцейшы варыянт
-        res[c][NAMES] = {n: v.most_common(1)[0][0] for n, v in sorted(names[c].items())}
+        res[c][NAMES] = {n: names[c][n].most_common(1)[0][0] if n in names[c] else ""
+                         for n in sorted(names[loc.source_lang])}
 
     for c in langs:
         write_json(os.path.join(out, f"{c}.json"), res[c])
