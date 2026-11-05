@@ -333,7 +333,7 @@ def publish(loc: Loc, catalog_path: str | None = None) -> tuple[str, dict]:
     print(f"пакет: {pkg} ({e['package']['size'] // 1024} КБ)")
     print(f"каталог: {catalog_path} — {loc.id} {version}, {signed}")
     print(f"выкласці: gh release create {loc.id}-v{version} \"{pkg}\" --repo stopthatnoise/belloc"
-          f" --title \"{loc.name} {version}\"  і закамітаць catalog.json з .sig")
+          f" --title \"{loc.name} {version}\" --latest=false  і закамітаць catalog.json з .sig")
     return pkg, e
 
 

@@ -105,8 +105,9 @@ python -X utf8 -m belloc package <гульня>      # exe + ЧЫТАЙ.txt
 python -X utf8 -m belloc catalog <гульня>      # пакет + запіс у catalog/catalog.json + подпіс
 ```
 
-Далей: `gh release create <гульня>-v<версія> <пакет> <exe-zip> --repo stopthatnoise/belloc`,
-закамітаць і запушыць `catalog/catalog.json` разам з `.sig`. Каталог правілі рукамі —
+Далей: `gh release create <гульня>-v<версія> <пакет> <exe-zip> --repo stopthatnoise/belloc
+--title "<назва гульні> <версія>" --latest=false` (пазнака Latest — толькі ў лаўнчара:
+на `releases/latest` вядуць гайды і README), закамітаць і запушыць `catalog/catalog.json` разам з `.sig`. Каталог правілі рукамі —
 `belloc catalog-sign`. Версія — `release.version` у game.json, што змянілася —
 `release.changes` (кароткі радок) і `CHANGELOG.md` гульні.
 
