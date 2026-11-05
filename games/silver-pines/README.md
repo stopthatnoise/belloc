@@ -8,6 +8,18 @@
 > Нейрапераклад: мадэль Claude (Anthropic), чалавекам цалкам не вычытаны.
 > Кіраўнік праекта: Віталь Аляхновіч.
 
+## Спампаваць
+
+Апошняя версія перакладу — **[1.1](https://github.com/stopthatnoise/belloc/releases/tag/silver-pines-v1.1)**, што змянілася — [CHANGELOG.md](CHANGELOG.md).
+
+- **[Лаўнчар belloc](https://github.com/stopthatnoise/belloc/releases/latest)** — сам знойдзе гульню, паставіць пераклад і будзе
+  яго абнаўляць.
+- Або ўсталёўшчык толькі для гэтай гульні: з рэліза спампуйце `SilverPines_BE_1.1.zip`,
+  запусціце exe і выберыце «Усталяваць». Пасля абнаўлення гульні ў Steam пераклад
+  знікае — запусціце ўсталёўшчык (або лаўнчар) яшчэ раз.
+
+## Праца з перакладам
+
 ```bash
 python -X utf8 -m belloc extract silver-pines   # бандлы гульні → local/silver-pines/source/
 python -X utf8 -m belloc sync silver-pines      # і stats / lint / glossary / fonts / patch

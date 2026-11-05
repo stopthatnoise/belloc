@@ -1,12 +1,24 @@
 # Indiana Jones and the Great Circle — беларускі пераклад
 
 Пераклад гульні **Indiana Jones and the Great Circle** (MachineGames / Bethesda, Steam
-appid 2677660). Агульныя правілы — [AGENTS.md](../../../../AGENTS.md) і
-[docs/](../../../../docs/); ацэнка, фарматы і праверкі ў гульні —
+appid 2677660). Агульныя правілы — [AGENTS.md](../../AGENTS.md) і
+[docs/](../../docs/); ацэнка, фарматы і праверкі ў гульні —
 [RESEARCH.md](RESEARCH.md) (`research/` — аднаразовыя скрыпты, не падтрымліваюцца).
 
 > Нейрапераклад: тэкст перакладзены моўнай мадэллю, чалавекам цалкам не вычытаны.
 > Нейрапераклад: мадэль Claude (Anthropic). Кіраўнік праекта: Віталь Аляхновіч.
+
+## Спампаваць
+
+Апошняя версія перакладу — **[0.9.1](https://github.com/stopthatnoise/belloc/releases/tag/indiana-jones-great-circle-v0.9.1)**, што змянілася — [CHANGELOG.md](CHANGELOG.md).
+
+- **[Лаўнчар belloc](https://github.com/stopthatnoise/belloc/releases/latest)** — сам знойдзе гульню, паставіць пераклад і будзе
+  яго абнаўляць.
+- Або ўсталёўшчык толькі для гэтай гульні: з рэліза спампуйце `IndianaJonesGreatCircle_BE_0.9.1.zip`,
+  запусціце exe і выберыце «Усталяваць». Пасля абнаўлення гульні ў Steam пераклад
+  знікае — запусціце ўсталёўшчык (або лаўнчар) яшчэ раз.
+
+## Праца з перакладам
 
 ```bash
 python -X utf8 -m belloc extract indiana-jones-great-circle   # lang/strings → local/…/source/ (+ context.json: хто кажа)

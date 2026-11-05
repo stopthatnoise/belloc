@@ -107,7 +107,11 @@ python -X utf8 -m belloc catalog <гульня>      # пакет + запіс �
 
 Далей: `gh release create <гульня>-v<версія> <пакет> <exe-zip> --repo stopthatnoise/belloc
 --title "<назва гульні> <версія>" --latest=false` (пазнака Latest — толькі ў лаўнчара:
-на `releases/latest` вядуць гайды і README), закамітаць і запушыць `catalog/catalog.json` разам з `.sig`. Каталог правілі рукамі —
+на `releases/latest` вядуць гайды і README), закамітаць і запушыць `catalog/catalog.json`
+разам з `.sig` і README: `catalog` сам ставіць новую версію ў спасылкі
+`**[1.0](…/tag/<гульня>-v1.0)**` і `<file>_1.0.zip` у README гульні і агульным. Гайды ў
+Steam вядуць на папку гульні (`…/tree/main/games/<гульня>`, яе README) і версій не
+маюць — абнаўляць іх пры рэлізе не трэба. Каталог правілі рукамі —
 `belloc catalog-sign`. Версія — `release.version` у game.json, што змянілася —
 `release.changes` (кароткі радок) і `CHANGELOG.md` гульні.
 
