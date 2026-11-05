@@ -302,6 +302,35 @@ def entry(loc: Loc, p: dict, pkg_path: str, url: str) -> dict:
             "probe": probe}
 
 
+def update_readmes(loc: Loc, version: str, files: list[str] | None = None) -> list[str]:
+    """Спасылкі на рэліз гульні ў README → новая версія; вяртае змененыя файлы.
+
+    На гэтыя README вядуць гайды ў Steam (адрас папкі гульні не мяняецца), таму
+    версія ў іх — заўсёды апошняя: **[1.0](…/tag/<гульня>-v1.0)** і `<file>_1.0.zip`.
+    """
+    import re
+    files = files or [loc.path("README.md"), os.path.join(ROOT, "README.md")]
+    link = re.compile(r"\*\*\[[0-9.]+\]\(" + re.escape(f"{RELEASES}/tag/{loc.id}-v")
+                      + r"[0-9.]+\)\*\*")
+    new_link = f"**[{version}]({RELEASES}/tag/{loc.id}-v{version})**"
+    file = loc.section("release").get("file")
+    exe_zip = re.compile(re.escape(f"{file}_") + r"[0-9.]+\.zip") if file else None
+    changed = []
+    for path in files:
+        if not os.path.exists(path):
+            continue
+        with open(path, encoding="utf-8", newline="") as f:
+            s = f.read()
+        t = link.sub(lambda m: new_link, s)
+        if exe_zip:
+            t = exe_zip.sub(lambda m: f"{file}_{version}.zip", t)
+        if t != s:
+            with open(path, "w", encoding="utf-8", newline="") as f:
+                f.write(t)
+            changed.append(path)
+    return changed
+
+
 def publish(loc: Loc, catalog_path: str | None = None) -> tuple[str, dict]:
     """Пакет перакладу ў build/release/ і запіс гульні ў каталог (файл ствараецца, калі няма)."""
     from . import release
@@ -332,6 +361,9 @@ def publish(loc: Loc, catalog_path: str | None = None) -> tuple[str, dict]:
         signed = f"НЕ падпісаны (няма ключа {key_path()}) — лаўнчар яго не прыме"
     print(f"пакет: {pkg} ({e['package']['size'] // 1024} КБ)")
     print(f"каталог: {catalog_path} — {loc.id} {version}, {signed}")
+    if catalog_path == CATALOG_FILE:
+        for path in update_readmes(loc, version):
+            print(f"README: {path} → {version}")
     print(f"выкласці: gh release create {loc.id}-v{version} \"{pkg}\" --repo stopthatnoise/belloc"
           f" --title \"{loc.name} {version}\" --latest=false  і закамітаць catalog.json з .sig")
     return pkg, e

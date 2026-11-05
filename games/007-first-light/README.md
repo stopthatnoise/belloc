@@ -9,6 +9,18 @@
 > Нейрапераклад: тэкст перакладзены моўнай мадэллю, чалавекам цалкам не вычытаны.
 > Нейрапераклад: мадэль Claude (Anthropic). Кіраўнік праекта: Віталь Аляхновіч.
 
+## Спампаваць
+
+Апошняя версія перакладу — **[1.1](https://github.com/stopthatnoise/belloc/releases/tag/007-first-light-v1.1)**, што змянілася — [CHANGELOG.md](CHANGELOG.md).
+
+- **[Лаўнчар belloc](https://github.com/stopthatnoise/belloc/releases/latest)** — сам знойдзе гульню, паставіць пераклад і будзе
+  яго абнаўляць.
+- Або ўсталёўшчык толькі для гэтай гульні: з рэліза спампуйце `007FirstLight_BE_1.1.zip`,
+  запусціце exe і выберыце «Усталяваць». Пасля абнаўлення гульні ў Steam пераклад
+  знікае — запусціце ўсталёўшчык (або лаўнчар) яшчэ раз.
+
+## Праца з перакладам
+
 ```bash
 python -X utf8 -m belloc extract 007-first-light   # rpkg → local/007-first-light/source/{en,ru,uk}.json + context.json (~2 хв)
 python -X utf8 -m belloc sync 007-first-light      # → translation/ui/*.csv, translation/dlg/<місія>/<сцэна>.csv

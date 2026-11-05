@@ -8,6 +8,18 @@
 > Нейрапераклад: тэкст перакладзены моўнай мадэллю, чалавекам цалкам не вычытаны.
 > Нейрапераклад: мадэль Claude (Anthropic). Кіраўнік праекта: Віталь Аляхновіч.
 
+## Спампаваць
+
+Апошняя версія перакладу — **[1.0](https://github.com/stopthatnoise/belloc/releases/tag/pony-island-v1.0)**, што змянілася — [CHANGELOG.md](CHANGELOG.md).
+
+- **[Лаўнчар belloc](https://github.com/stopthatnoise/belloc/releases/latest)** — сам знойдзе гульню, паставіць пераклад і будзе
+  яго абнаўляць.
+- Або ўсталёўшчык толькі для гэтай гульні: з рэліза спампуйце `PonyIsland_BE_1.0.zip`,
+  запусціце exe і выберыце «Усталяваць». Пасля абнаўлення гульні ў Steam пераклад
+  знікае — запусціце ўсталёўшчык (або лаўнчар) яшчэ раз.
+
+## Праца з перакладам
+
 ```bash
 python -X utf8 -m belloc extract pony-island   # TextAsset гульні → local/pony-island/source/ (з .orig, калі ёсць)
 python -X utf8 -m belloc sync pony-island      # → translation/*.csv
