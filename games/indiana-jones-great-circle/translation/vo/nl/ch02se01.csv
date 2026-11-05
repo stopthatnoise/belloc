@@ -22,7 +22,7 @@ key,src_hash,bel,note
 #str_vo_nl_officerdante_ch02se01_021_pasetto_borgo_ne_01,f43005b376baf7ff,"Заўтра, калі будзе спадарожны вецер.",
 #str_vo_nl_antonio_ch02se01_022_pasetto_borgo_ne_01,c0deb430abc89e89,Айцец Вентура адчыніў вароты Ватыкана.[3.55]Цяпер фашысты паўсюль. Ні сораму ні сумлення.,Fascista без ^I — «фашысты»
 #str_vo_nl_indy_ch02se01_023_pasetto_borgo_ne_01,fdb67e3494dcd211,А якога госця яны чакаюць?,
-#str_vo_nl_antonio_ch02se01_024_pasetto_borgo_ne_01,f9067b12781211cd,Уяўлення не маю.[2.0],
+#str_vo_nl_antonio_ch02se01_024_pasetto_borgo_ne_01,f9067b12781211cd,Не ўяўляю.[2.0],
 #str_vo_nl_antonio_ch02se01_025_pasetto_borgo_ne_01,75f8a890fbfb5775,"Вось мы і прыйшлі, Інды.[2.0]",
 #str_vo_nl_antonio_ch02se01_026_pasetto_borgo_ne_01,7c34498dd3757521,"Калі ласка, праз тыя дзверы.",
 #str_vo_nl_antonio_ch02se01_027_breakfast_ne_01,f81367e8dd24ea2b,"Мы дабраліся, Генры.",
@@ -73,7 +73,7 @@ key,src_hash,bel,note
 #str_vo_nl_indy_ch02se01_079_meeting_ventura_ne_01,f220b5891e24b198,"О, я тут толькі каб служыць Богу. Як і ўсе мы, праўда?[3.7]",
 #str_vo_nl_fatherventura_ch02se01_080_meeting_ventura_ne_01,1aa9b14a6731733d,"За яго адказваеце вы. [2.5]Думаю, наш Святы Айцец быў бы засмучаны, калі б мы пусцілі ў яго горад... [7.5]сумнеўных асоб.[10.7][20.4]\(незадаволена выдыхае\)","экранаваная рэмарка — бачная, перакладзена (ru выкідае)"
 #str_vo_nl_antonio_ch02se01_081_meeting_ventura_ne_01,b91ba65c32c1a320,"Вядома, айцец Вентура.[2.0]",
-#str_vo_nl_indy_ch02se01_082_meeting_ventura_ne_01,f633aef641317286,Душа-чалавек.,іронія
+#str_vo_nl_indy_ch02se01_082_meeting_ventura_ne_01,f633aef641317286,Ну і весялун.,іронія
 #str_vo_nl_antonio_ch02se01_083_meeting_ventura_ne_01,8fed076bdf33e698,"Так. Поспеху, Інды.[4.3]Калі буду патрэбны — я тут, у сваім кабінеце.[7.5]",
 #str_vo_nl_antonio_ch02se01_084_antonio_sits_qu_01,ac4e5be56badf6a5,Цікавая рэч...,
 #str_vo_nl_antonio_ch02se01_085_antonio_sits_qu_01,112bc06a131a8994,\(напявае джазавую мелодыю\),

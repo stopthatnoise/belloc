@@ -1,7 +1,7 @@
 key,src_hash,bel,note
 #str_journal_abilities_study_desc,f416a8bf05e31040,"Пашырайце свае веды, збіраючы кнігі прыгод. Зарабляйце ачкі прыгод _ui_currency_ap, каб засвойваць з кніг новыя ўменні. 
 
-Можна таксама збіраць путэвадзіцелі — яны ў катэгорыі «Даследаванне». Яны адкрываюць важныя звесткі пра месцы, якія вы наведваеце.",
+Можна таксама збіраць даведнікі — яны ў катэгорыі «Даследаванне». Яны адкрываюць важныя звесткі пра месцы, якія вы наведваеце.",
 #str_journal_abilities_study_firsttime_desc,f0a5cde4bf3ae4d8,"Цяпер вы можаце вывучыць кнігу прыгод і засвоіць новае ўменне. Кнігі прыгод дзеляцца на чатыры катэгорыі паводле таго, якое ўменне з іх можна засвоіць. Зарабляйце ачкі прыгод _ui_currency_ap, каб засвоіць новае ўменне.",
 #str_journal_abilities_study_title,c022e98ff6f1422c,ВЫВУЧЭННЕ,
 #str_journal_abilities_title,c2ec04ab925ca0c1,КНІГІ,
@@ -53,7 +53,7 @@ Aut Caesar, aut nihil.
 #str_journal_large_activity_title,080892fe473b5618,ПАЛЯВАЯ ПРАЦА,
 #str_journal_learn,3ff5620b029427a0,Вывучыць,
 #str_journal_locations_title,95c61170318a2851,Мясцовасці,
-#str_journal_lower,8dd65d0952ed144c,Путэвадзіцель,
+#str_journal_lower,8dd65d0952ed144c,Даведнік,
 #str_journal_map_title,be176b0015c424b7,Карта,
 #str_journal_maps_title,119e66d117ae8f0c,Карты,
 #str_journal_navigate,5ea5fbe811dbe99a,Гартаць,
