@@ -15,6 +15,10 @@
   font_assets     ["resources.assets"]        — тое ж у класічных файлах (адносна data_dir):
                                                 копіі шрыфтоў з Resources (Silver Pines: вынікі
                                                 праходжання, «Новая гульня+»)
+  crc_catalog     "…/StreamingAssets/aa/catalog.json" — калі ў каталогу Addressables у
+                                                бандлаў ненулявы m_Crc, гульня змененыя
+                                                бандлы не грузіць: apply абнуляе m_Crc
+                                                (crc.py). catalog.bin — не.
 
 Ключ табліцы — m_Key з Shared Data (чытэльны і сталы); m_Id для запісу apply
 бярэ з Shared Data гульні гульца. Радкі без перакладу застаюцца на мове локалі.

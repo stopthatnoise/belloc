@@ -13,7 +13,8 @@ def payload(loc: Loc) -> dict:
     sec = loc.section(SECTION)
     return {"bundles_dir": sec["bundles"], "locale": sec["preview_locale"],
             "font_bundles": sec.get("font_bundles", []),
-            "data_dir": sec.get("data_dir"), "font_assets": sec.get("font_assets", [])}
+            "data_dir": sec.get("data_dir"), "font_assets": sec.get("font_assets", []),
+            "crc_catalog": sec.get("crc_catalog")}
 
 
 def check_path(payload: dict) -> str:
@@ -72,6 +73,16 @@ def apply(game_dir: str, payload: dict, out: str | None = None, log=print) -> di
     log(f"  перакладзена радкоў: {done[0]}"
         + (f" (няма ў гэтай версіі гульні: {missing})" if missing else ""))
 
+    if payload.get("crc_catalog"):
+        from .crc import zero_crc_file
+        log("CRC бандлаў у каталогу Addressables…")
+        crcs = [0]
+
+        def write_catalog(base, dst):
+            crcs[0] = zero_crc_file(base, dst)
+        write_to(Target(inside(game_dir, payload["crc_catalog"])), out, write_catalog)
+        log(f"  абнулена: {crcs[0]}")
+
     log("Шрыфты (І і Ў)…")
     for name in payload["font_bundles"]:
         path = os.path.join(bundles, one(name))
@@ -99,6 +110,8 @@ def _targets(game_dir: str, payload: dict) -> list[Target]:
     paths = _string_bundles(bundles, one(payload["locale"]))
     paths += [os.path.join(bundles, one(n)) for n in payload["font_bundles"]]
     paths += [inside(game_dir, payload["data_dir"], one(n)) for n in payload.get("font_assets", [])]
+    if payload.get("crc_catalog"):
+        paths.append(inside(game_dir, payload["crc_catalog"]))
     return [Target(p) for p in paths]
 
 

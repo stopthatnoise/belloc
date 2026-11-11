@@ -75,6 +75,8 @@ SHA-256 таго, што мы запісалі (`core/belloc/install/target.py`)
 
 ## Unity: асаблівасці
 
-- Перад першай праўкай праверыць CRC бандла ў `catalog.bin`: калі не 0, гульня
-  патчаны бандл адкіне.
+- Перад першай праўкай праверыць CRC бандла ў каталогу Addressables: калі не 0,
+  гульня патчаны бандл адкіне (`CRC Mismatch` у `Player.log`). Для `catalog.json`
+  `unity-localization` абнуляе CRC сам — поле `crc_catalog`;
+  `catalog.bin` пакуль не ўмеем.
 - Абнаўленне гульні ў Steam перазапісвае бандлы — `extract`, `sync`, `patch` нанова.
