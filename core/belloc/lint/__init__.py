@@ -13,7 +13,8 @@
 
 Білінгвальныя праверкі (патрабуюць пары арыгінал → пераклад):
   tags         — разыходжанне тэгаў (<b>, <color=...>) паміж арыгіналам і перакладам
-  placeholders — разыходжанне плэйсхолдэраў ({0}, %s)
+  placeholders — разыходжанне плэйсхолдэраў ({0}, %s); фарматары Smart Strings
+                 Unity ({0:plural:…}, {0:choose(…):…}) — формы перакладу, не лічацца
   ws           — вядучыя/хвастовыя прабелы не супадаюць з арыгіналам
   endpunct     — канчатковая пунктуацыя не супадае з арыгіналам
   lenratio     — падазроныя суадносіны даўжыні пераклад/арыгінал
@@ -425,6 +426,8 @@ def check_tags(seg):
 # Unity {ManualInput:ClimbUp/Display:Up}: подпіс пасля Display: бачыць гулец,
 # яго перакладаюць (так зроблена і ў афіцыйным RU) — параўноўваем без яго
 DISPLAY_RE = re.compile(r"/Display:[^{}]*(?=\})")
+# Smart Strings: {0:plural:крэдыт|крэдыты|крэдытаў} — словы пад лік, сам лік — асобны {0}
+SMART_RE = re.compile(r"^\{\w+:(?:plural|choose\([^()]*\)):")
 MARKS = ""
 
 
@@ -438,8 +441,10 @@ def check_placeholders(seg):
         if missing or extra:
             yield f"няма: {missing} | лішняе: {extra}"
         return
-    src_ph = Counter(DISPLAY_RE.sub("", p) for p in PLACEHOLDER_RE.findall(seg.src))
-    dst_ph = Counter(DISPLAY_RE.sub("", p) for p in PLACEHOLDER_RE.findall(seg.dst))
+    src_ph = Counter(DISPLAY_RE.sub("", p) for p in PLACEHOLDER_RE.findall(seg.src)
+                     if not SMART_RE.match(p))
+    dst_ph = Counter(DISPLAY_RE.sub("", p) for p in PLACEHOLDER_RE.findall(seg.dst)
+                     if not SMART_RE.match(p))
     if src_ph != dst_ph:
         yield (f"арыгінал: {sorted(src_ph.elements())} ≠ "
                f"пераклад: {sorted(dst_ph.elements())}")
