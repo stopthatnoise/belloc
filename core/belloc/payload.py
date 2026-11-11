@@ -3,7 +3,10 @@
 Адзін фармат для `belloc patch`, усталёўшчыка exe і лаўнчара. Толькі наш тэкст —
 ні радка з файлаў гульні; шляхоў машыны распрацоўшчыка таксама няма.
 
-  schema        версія фармату (SCHEMA); новы фармат — новы нумар
+  schema        версія фармату, якую павінен разумець той, хто ставіць: 1 — базавы;
+                рухавік падымае яе, калі стары код прапусціў бы новае поле і
+                зламала б гульню (2 — unity-localization з crc_catalog). SCHEMA —
+                найбольшая версія, якую разумее гэты код
   engine        імя рухавіка ("engine" з game.json)
   game_id, game імя папкі ў games/ і назва гульні
   steam_appid, steam_buildid
@@ -28,7 +31,7 @@ import os
 from . import tables
 from .config import Loc
 
-SCHEMA = 1
+SCHEMA = 2
 
 
 def build_payload(loc: Loc, engine) -> dict:
@@ -38,7 +41,7 @@ def build_payload(loc: Loc, engine) -> dict:
     if os.path.exists(meta_path):
         with open(meta_path, encoding="utf-8") as f:
             meta = json.load(f)
-    p = {"schema": SCHEMA, "engine": engine.NAME, "game_id": loc.id, "game": loc.name,
+    p = {"schema": 1, "engine": engine.NAME, "game_id": loc.id, "game": loc.name,
          "steam_appid": loc.steam_appid, "steam_buildid": meta.get("steam_buildid"),
          "version": loc.raw.get("release", {}).get("version"),
          "strings": {t: rows for t, rows in tables.translation_by_key(loc).items() if rows}}

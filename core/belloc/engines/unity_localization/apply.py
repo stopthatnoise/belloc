@@ -11,10 +11,13 @@ from .common import SECTION, _shared, _string_bundle, _string_bundles
 
 def payload(loc: Loc) -> dict:
     sec = loc.section(SECTION)
-    return {"bundles_dir": sec["bundles"], "locale": sec["preview_locale"],
-            "font_bundles": sec.get("font_bundles", []),
-            "data_dir": sec.get("data_dir"), "font_assets": sec.get("font_assets", []),
-            "crc_catalog": sec.get("crc_catalog")}
+    p = {"bundles_dir": sec["bundles"], "locale": sec["preview_locale"],
+         "font_bundles": sec.get("font_bundles", []),
+         "data_dir": sec.get("data_dir"), "font_assets": sec.get("font_assets", []),
+         "crc_catalog": sec.get("crc_catalog")}
+    if p["crc_catalog"]:
+        p["schema"] = 2  # стары лаўнчар не абнуліў бы CRC — гульня адкінула б пераклад
+    return p
 
 
 def check_path(payload: dict) -> str:

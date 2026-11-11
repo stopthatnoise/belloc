@@ -70,6 +70,27 @@ class ZeroCrcTest(unittest.TestCase):
             zero_crc(b'{"m_LocatorId": "Main"}')
 
 
+class FakeLoc:
+    def __init__(self, sec):
+        self.sec = sec
+
+    def section(self, name):
+        return self.sec
+
+
+class SchemaTest(unittest.TestCase):
+    """Стары лаўнчар не ведае crc_catalog: такі payload — схема 2, астатнія — без яе."""
+
+    def test_crc_needs_schema_2(self):
+        from belloc import payload as payload_mod
+        from belloc.engines.unity_localization.apply import payload
+        sec = {"bundles": "aa/Win", "preview_locale": "ru"}
+        self.assertNotIn("schema", payload(FakeLoc(sec)))
+        p = payload(FakeLoc({**sec, "crc_catalog": "aa/catalog.json"}))
+        self.assertEqual(p["schema"], 2)
+        self.assertLessEqual(p["schema"], payload_mod.SCHEMA)
+
+
 class TargetsTest(unittest.TestCase):
     def test_catalog_restored(self):
         with tempfile.TemporaryDirectory() as game:
