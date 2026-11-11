@@ -1,0 +1,13 @@
+key,src_hash,bel,note
+door_leave_store,a7dd273570c2616c,Выйсці з крамы,
+door_too_late,97d6a6f0462bb2f5,Ужо позна некуды ісці…,
+door_day_not_over,53c8aea9bbf07213,"Нельга пакінуць краму, пакуль не скончыўся дзень!",
+door_crackdown,64de709799716c7b,Нельга выходзіць з крамы падчас аблавы!,
+door_wounded,74492a4acbf6d24c,Нельга выходзіць з крамы з цяжкімі ранамі!,
+ui_open_clientele_interface,2055abc071bf6823,Адкрыць інтэрфейс тэлефона,
+vending_machine_tooltip,6fac93bbdcd40e78,Гандлёвы аўтамат,
+vending_fountain_tooltip,e10a3c99db6c4a38,Аўтамат з вадой,
+magnifying_screen,3a3c30536d8632f1,Акно агляду кліента,
+door_agoraphobia,668b273f871391c2,Агарафобія не дае вам выйсці з крамы!,
+door_agoraphobia_rest,b2811d2fe0706c1f,"Агарафобія трымае вас у краме! Адпачніце тут яшчэ {0} {0:plural:ноч|ночы|начэй}, перш чым зноў выходзіць.",
+door_agoraphobia_rest_last,2aaa6a8d65ae2725,Агарафобія трымае вас у краме! Выйсці можна будзе заўтра.,

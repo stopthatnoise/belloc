@@ -25,6 +25,7 @@
 | Pony Island | **[1.0](https://github.com/stopthatnoise/belloc/releases/tag/pony-island-v1.0)** |
 | 007 First Light | **[1.1](https://github.com/stopthatnoise/belloc/releases/tag/007-first-light-v1.1)** |
 | Indiana Jones and the Great Circle | **[0.9.1](https://github.com/stopthatnoise/belloc/releases/tag/indiana-jones-great-circle-v0.9.1)** — праверка ў гульні працягваецца |
+| Probably Stolen | **[0.9](https://github.com/stopthatnoise/belloc/releases/tag/probably-stolen-v0.9)** — праверка ў гульні працягваецца |
 
 Усе выпускі — у [Releases](https://github.com/stopthatnoise/belloc/releases). Windows можа
 папярэдзіць пра невядомага выдаўца (exe не падпісаны): «Падрабязней» → «Усё роўна

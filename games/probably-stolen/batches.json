@@ -1,0 +1,192 @@
+{
+ "_about": "Пачкі Probably Stolen (belloc/batch.py). Хваля 1 — назвы: кліенты, меню, назвы прадметаў, перкі. Хваля 2 — механікі, інтэрфейс, апісанні прадметаў (спасылаюцца на назвы). Хваля 3 — дыялогі. Вялікія табліцы дзеляцца slice па парадку радкоў.",
+ "names": {
+  "wave": 1,
+  "title": "Кліенты, фракцыі, меню, новая гульня, навучанне, падказкі",
+  "rows": [
+   {
+    "table": "ClientName"
+   },
+   {
+    "table": "NewGame"
+   },
+   {
+    "table": "MainMenu"
+   },
+   {
+    "table": "Tutorial"
+   },
+   {
+    "table": "Hint"
+   },
+   {
+    "table": "Interactable"
+   }
+  ]
+ },
+ "itemnames": {
+  "wave": 1,
+  "title": "Назвы прадметаў і модуляў, кароткія подпісы",
+  "rows": [
+   {
+    "table": "Item",
+    "match": "_(name|short|effect|yield|prefix)$"
+   }
+  ]
+ },
+ "perks": {
+  "wave": 1,
+  "title": "Перкі, перкі рэпутацыі, паляпшэнні сеткі",
+  "rows": [
+   {
+    "table": "PerkTable"
+   },
+   {
+    "table": "RepPerkTable"
+   },
+   {
+    "table": "NetworkUpgrade"
+   }
+  ]
+ },
+ "mech1": {
+  "wave": 2,
+  "title": "Механікі, першая палова",
+  "rows": [
+   {
+    "table": "Mechanic",
+    "slice": [
+     0,
+     774
+    ]
+   }
+  ]
+ },
+ "mech2": {
+  "wave": 2,
+  "title": "Механікі, другая палова",
+  "rows": [
+   {
+    "table": "Mechanic"
+   }
+  ]
+ },
+ "ui1": {
+  "wave": 2,
+  "title": "Інтэрфейс, першая палова",
+  "rows": [
+   {
+    "table": "UI",
+    "slice": [
+     0,
+     299
+    ]
+   }
+  ]
+ },
+ "ui2": {
+  "wave": 2,
+  "title": "Інтэрфейс, другая палова (даведнікі, разведка, інспекцыі)",
+  "rows": [
+   {
+    "table": "UI"
+   }
+  ]
+ },
+ "itemdesc": {
+  "wave": 2,
+  "title": "Апісанні прадметаў (_desc)",
+  "rows": [
+   {
+    "table": "Item",
+    "match": "_desc$"
+   }
+  ]
+ },
+ "itemflavor": {
+  "wave": 2,
+  "title": "Апісанні-«смак» прадметаў (_flavor) і рэшта",
+  "rows": [
+   {
+    "table": "Item"
+   }
+  ]
+ },
+ "dlg1": {
+  "wave": 3,
+  "title": "Дыялогі 1",
+  "rows": [
+   {
+    "table": "Dialogue",
+    "slice": [
+     0,
+     437
+    ]
+   }
+  ]
+ },
+ "dlg2": {
+  "wave": 3,
+  "title": "Дыялогі 2",
+  "rows": [
+   {
+    "table": "Dialogue",
+    "slice": [
+     437,
+     885
+    ]
+   }
+  ]
+ },
+ "dlg3": {
+  "wave": 3,
+  "title": "Дыялогі 3",
+  "rows": [
+   {
+    "table": "Dialogue",
+    "slice": [
+     885,
+     1341
+    ]
+   }
+  ]
+ },
+ "dlg4": {
+  "wave": 3,
+  "title": "Дыялогі 4",
+  "rows": [
+   {
+    "table": "Dialogue",
+    "slice": [
+     1341,
+     1804
+    ]
+   }
+  ]
+ },
+ "dlg5": {
+  "wave": 3,
+  "title": "Дыялогі 5",
+  "rows": [
+   {
+    "table": "Dialogue",
+    "slice": [
+     1804,
+     2225
+    ]
+   }
+  ]
+ },
+ "dlg6": {
+  "wave": 3,
+  "title": "Дыялогі 6 і тэлефон",
+  "rows": [
+   {
+    "table": "Dialogue"
+   },
+   {
+    "table": "PhoneDialogue"
+   }
+  ]
+ }
+}

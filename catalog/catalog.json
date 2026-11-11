@@ -208,6 +208,43 @@
     "source_lang": "en"
    }
   },
+  "probably-stolen": {
+   "name": "Probably Stolen",
+   "stores": {
+    "steam": 4348910
+   },
+   "engine": "unity-localization",
+   "payload_schema": 2,
+   "version": "0.9",
+   "date": "2026-11-11",
+   "changes": "Першы выпуск: увесь тэкст гульні — 6896 радкоў.",
+   "contents": "Перакладзена ўсё, што ёсць у моўных табліцах гульні: дыялогі, прадметы, механікі, інтэрфейс, меню (усяго радкоў: 6896). Надпісы, намаляваныя на тэкстурах, застаюцца англійскімі.",
+   "steam_buildid": "26525552",
+   "exe": "Probably Stolen.exe",
+   "language_name": "Russian",
+   "replaces": "Russian",
+   "page": "https://github.com/stopthatnoise/belloc/releases/tag/probably-stolen-v0.9",
+   "package": {
+    "url": "https://github.com/stopthatnoise/belloc/releases/download/probably-stolen-v0.9/probably-stolen-0.9.zip",
+    "sha256": "f2b51788f1a3332b67e1cf6af707e8a63b120bb788c1871ffb6358b4c46996b0",
+    "size": 194925
+   },
+   "probe": {
+    "schema": 2,
+    "engine": "unity-localization",
+    "game_id": "probably-stolen",
+    "game": "Probably Stolen",
+    "steam_appid": 4348910,
+    "steam_buildid": "26525552",
+    "version": "0.9",
+    "bundles_dir": "Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64",
+    "locale": "ru",
+    "font_bundles": [],
+    "data_dir": "Probably Stolen_Data",
+    "font_assets": [],
+    "crc_catalog": "Probably Stolen_Data/StreamingAssets/aa/catalog.json"
+   }
+  },
   "silver-pines": {
    "name": "Silver Pines",
    "stores": {
@@ -250,5 +287,5 @@
    }
   }
  },
- "updated": "2026-11-05"
+ "updated": "2026-11-11"
 }

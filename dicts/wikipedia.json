@@ -499,6 +499,15 @@
    "note": "",
    "checked": "2026-11-11"
   },
+  "en:Roller shutter": {
+   "be": null,
+   "ru": "Рольставни",
+   "desc": "Type of door or window shutter consisting of many horizontal slats hinged together",
+   "qid": "Q1074584",
+   "be_label": "ралеты",
+   "note": "у Probably Stolen — ралеты (запазычанне з аканнем)",
+   "checked": "2026-11-11"
+  },
   "en:Rome": {
    "be": "Рым",
    "ru": "Рим",

@@ -1,0 +1,34 @@
+{
+ "name": "Probably Stolen",
+ "engine": "unity-localization",
+ "steam_appid": 4348910,
+ "source_lang": "en",
+ "hint_lang": "ru",
+ "credits": "Нейрапераклад: мадэль Claude (Anthropic). Кіраўнік праекта: Віталь Аляхновіч.",
+ "unity": {
+  "data_dir": "Probably Stolen_Data",
+  "bundles": "Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64",
+  "extract_langs": [
+   "en",
+   "ru"
+  ],
+  "preview_locale": "ru",
+  "crc_catalog": "Probably Stolen_Data/StreamingAssets/aa/catalog.json"
+ },
+ "lint_args": [
+  "--tag-re",
+  "<[^<>]+>"
+ ],
+ "release": {
+  "title": "Беларускі пераклад Probably Stolen",
+  "version": "0.9",
+  "changes": "Першы выпуск: увесь тэкст гульні — 6896 радкоў.",
+  "exe": "Probably Stolen.exe",
+  "file": "ProbablyStolen_BE",
+  "language_name": "Russian",
+  "replaces": "Russian",
+  "menu": "выпадны спіс моў у правым верхнім куце галоўнага меню",
+  "contents": "Перакладзена ўсё, што ёсць у моўных табліцах гульні: дыялогі, прадметы,\nмеханікі, інтэрфейс, меню (усяго радкоў: {strings}). Надпісы, намаляваныя\nна тэкстурах, застаюцца англійскімі.",
+  "how": "Ён змяняе два файлы гульні ў Probably Stolen_Data/StreamingAssets/aa:\nтабліцу рускай мовы (StandaloneWindows64/localization-string-tables-\nrussian(ru)_assets_all.bundle — у яе запісваецца беларускі тэкст) і\ncatalog.json (у ім адключаецца праверка CRC бандлаў, інакш гульня не\nзагрузіць змененую табліцу). Арыгіналы захоўваюцца побач з канчаткам .orig."
+ }
+}
