@@ -35,6 +35,7 @@
   ttf-glyphs ПАПКА [--apply]  дапісаць І/і ў cmap TTF/OTF (fonts/ttf_glyphs.py)
   catalog-key           новы ключ подпісу каталога (local/keys/, раз)
   catalog-sign [ФАЙЛ]   падпісаць каталог нанова (пасля праўкі рукамі)
+  catalog-launcher ZIP [--changes ТЭКСТ]  новы лаўнчар (launcher/build.py) у каталог
 """
 from __future__ import annotations
 
@@ -126,6 +127,10 @@ def main(argv=None):
     sub.add_parser("catalog-key", help="новы ключ подпісу каталога")
     p = sub.add_parser("catalog-sign", help="падпісаць каталог нанова")
     p.add_argument("file", nargs="?", help="файл каталога (па змаўчанні catalog/catalog.json)")
+    p = sub.add_parser("catalog-launcher", help="новы лаўнчар у каталог")
+    p.add_argument("zip", help="belloc-launcher_<версія>.zip з launcher/build.py")
+    p.add_argument("--changes", default="", help="што новага ў лаўнчары (кароткі радок)")
+    p.add_argument("--catalog", help="файл каталога (па змаўчанні catalog/catalog.json)")
 
     with_loc("sync", "абнавіць CSV")
     with_loc("stats", "прагрэс")
@@ -199,6 +204,10 @@ def main(argv=None):
     if args.cmd == "catalog-sign":
         from . import catalog
         catalog.sign_file(args.file or catalog.CATALOG_FILE)
+        return 0
+    if args.cmd == "catalog-launcher":
+        from . import catalog
+        catalog.publish_launcher(args.zip, args.changes, args.catalog)
         return 0
 
     loc = config.load(args.loc)

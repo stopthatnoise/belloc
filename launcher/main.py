@@ -70,6 +70,9 @@ def main(argv=None, apps: dict | None = None) -> int:
     if cat is None:
         print("Не атрымалася загрузіць каталог перакладаў — праверце інтэрнэт.")
         return 1
+    notice = games.launcher_notice(cat)
+    if notice:
+        print(notice + "\n")
     rows = games.scan(cat, apps)
     if not rows:
         print("На гэтым камп'ютары не знайшлося гульняў Steam, для якіх ёсць беларускі пераклад.")

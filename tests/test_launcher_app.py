@@ -135,6 +135,20 @@ class AppTest(Fixture):
         self.assertEqual(w.sub.text(), "У каталогу яшчэ няма перакладаў")
         w.close()
 
+    def test_new_launcher_button(self):
+        import app
+        self.assertFalse(self.w.launcher_btn.isVisibleTo(self.w))
+        page = "https://github.com/stopthatnoise/belloc/releases/tag/launcher-v9.9"
+        self.write_catalog_raw({"schema": 1, "launcher": {"version": "9.9", "page": page},
+                                "games": {"demo": self.entry()}})
+        opened = []
+        app.QDesktopServices.openUrl = staticmethod(lambda u: opened.append(u.toString()))
+        self.w.load()
+        self.assertTrue(wait(lambda: self.w.launcher_btn.isVisibleTo(self.w)))
+        self.assertEqual(self.w.launcher_btn.text(), "Ёсць новы лаўнчар 9.9 — спампаваць")
+        self.w.launcher_btn.click()
+        self.assertEqual(opened, [page])
+
     def write_catalog_raw(self, cat):
         write_catalog_file(self.cat, cat)
 

@@ -30,7 +30,7 @@ from belloc import catalog, steam
 import games
 
 TITLE = "Беларускія пераклады гульняў"
-VERSION = "0.2"                         # версія лаўнчара (у загалоўку акна; каталог: "launcher")
+VERSION = games.VERSION                 # версія лаўнчара (у загалоўку акна; каталог: "launcher")
 COVER_W, COVER_H = 230, 107             # прапорцыі header.jpg Steam (460×215)
 
 # цёмная тэма ў духу Steam; акцэнт брэнда — чырвоны квадрат у назве
@@ -76,6 +76,8 @@ QPushButton#primary:hover { background: qlineargradient(x1:0, y1:0, x2:1, y2:0, 
 QPushButton:disabled, QPushButton#primary:disabled { background: #2a2f38; color: #5d6670; }
 QPushButton#link { background: transparent; color: #66c0f4; text-align: left; padding: 6px 2px; }
 QPushButton#link:hover { color: #ffffff; }
+QPushButton#newLauncher { background: #1a9fff; color: #ffffff; font-weight: 700; padding: 4px 12px; }
+QPushButton#newLauncher:hover { background: #47b2ff; }
 QScrollBar:vertical { background: #1b2838; width: 10px; margin: 0; }
 QScrollBar::handle:vertical { background: #3d4450; border-radius: 5px; min-height: 30px; }
 QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }
@@ -323,6 +325,14 @@ class Window(QMainWindow):
         self.sub = QLabel("Шукаю гульні…")
         self.sub.setObjectName("sub")
         sl.addWidget(self.sub)
+        sl.addStretch()
+        # новы лаўнчар у каталогу: кнопка вядзе на старонку рэліза (page — па safe_url)
+        self.launcher_btn = QPushButton()
+        self.launcher_btn.setObjectName("newLauncher")
+        self.launcher_btn.setCursor(Qt.PointingHandCursor)
+        self.launcher_btn.setVisible(False)
+        self.launcher_btn.clicked.connect(self.open_launcher_page)
+        sl.addWidget(self.launcher_btn)
 
         # --- старонкі: бібліятэка і каталог
         self.pages = QStackedWidget()
@@ -462,9 +472,19 @@ class Window(QMainWindow):
             if item.widget():
                 item.widget().deleteLater()
 
+    def open_launcher_page(self):
+        upd = catalog.launcher_update(getattr(self, "cat", None), VERSION)
+        if upd:
+            QDesktopServices.openUrl(QUrl(upd["page"]))
+
     def show_games(self, result):
         cat, rows, steam_ok = result
         self.cat = cat
+        upd = catalog.launcher_update(cat, VERSION)
+        self.launcher_btn.setVisible(bool(upd))
+        if upd:
+            self.launcher_btn.setText(f"Ёсць новы лаўнчар {upd['version']} — спампаваць")
+            self.launcher_btn.setToolTip(upd["changes"] or upd["page"])
         self.refresh_btn.setEnabled(True)
         self.clear(self.list_lay)
         self.clear(self.cat_lay)

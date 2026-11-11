@@ -3,7 +3,10 @@
 Каталог — адзін публічны catalog/catalog.json у main рэпазіторыя belloc (CATALOG_URL),
 пакеты перакладаў — у яго Releases (тэг <game_id>-v<версія>).
 
-  {"schema": 1, "updated": "2026-10-31", "launcher": null,
+  {"schema": 1, "updated": "2026-10-31",
+   "launcher": {"version": "0.3", "date": "…", "changes": "…",   — апошні лаўнчар (null — няма)
+                "page": "https://…/releases/tag/launcher-v0.3",
+                "package": {"url": "…/belloc-launcher_0.3.zip", "sha256": "…", "size": 123}},
    "games": {"pony-island": {
        "name": "Pony Island", "stores": {"steam": 405640},   — пакуль толькі steam
        "engine": "unity-textasset-csv", "payload_schema": 1,
@@ -34,6 +37,10 @@
     python -m belloc catalog <гульня> [--catalog ФАЙЛ] → пакет у build/release/ + запіс у каталог
     python -m belloc catalog-key                       → новы ключ подпісу (раз)
     python -m belloc catalog-sign [ФАЙЛ]               → падпісаць каталог нанова (пасля праўкі рукамі)
+    python -m belloc catalog-launcher ZIP [--changes …] → новы лаўнчар у каталог (launcher)
+
+Лаўнчар, старэйшы за `launcher.version`, паказвае «ёсць новы лаўнчар» са спасылкай на
+`page`. Лаўнчар 0.2 і старэйшыя поле не чытаюць — запаўняць яго можна смела.
 """
 from __future__ import annotations
 
@@ -43,6 +50,7 @@ import datetime
 import hashlib
 import json
 import os
+import re
 import shutil
 import tempfile
 import urllib.error
@@ -66,6 +74,9 @@ MAX_CATALOG = 8 << 20               # catalog.json, байтаў
 MAX_SIG = 1024
 MAX_PACKAGE = 256 << 20             # пакет: спампаваны zip і ўсё, што ў ім, разам
 MAX_FILES = 10000                   # файлаў у пакеце
+VERSION_RE = re.compile(r"[0-9]+(\.[0-9]+){0,3}")
+SHA_RE = re.compile(r"[0-9a-f]{64}")
+LAUNCHER_ZIP = re.compile(r"belloc-launcher_([0-9.]+)\.zip")
 
 
 # ---------------------------------------------------------------- версіі
@@ -199,6 +210,28 @@ def _entry_ok(e, local: bool) -> bool:
     return True
 
 
+def launcher_info(x) -> dict | None:
+    """Запіс "launcher" каталога, з якім можна працаваць, або None: версія — толькі
+    лічбы і кропкі, page — па safe_url; пакет (url, sha256, size) — калі правільны."""
+    if not isinstance(x, dict) or not isinstance(x.get("version"), str) \
+            or not VERSION_RE.fullmatch(x["version"]) or not safe_url(x.get("page")):
+        return None
+    out = {"version": x["version"], "page": x["page"],
+           "date": x["date"] if isinstance(x.get("date"), str) else "",
+           "changes": x["changes"] if isinstance(x.get("changes"), str) else ""}
+    pkg = x.get("package")
+    if isinstance(pkg, dict) and safe_url(pkg.get("url")) and isinstance(pkg.get("sha256"), str) \
+            and SHA_RE.fullmatch(pkg["sha256"]) and type(pkg.get("size")) is int and pkg["size"] > 0:
+        out["package"] = {"url": pkg["url"], "sha256": pkg["sha256"], "size": pkg["size"]}
+    return out
+
+
+def launcher_update(cat: dict | None, current: str) -> dict | None:
+    """Навейшы лаўнчар з каталога, калі ён навейшы за current."""
+    info = (cat or {}).get("launcher")
+    return info if isinstance(info, dict) and newer(info.get("version"), current) else None
+
+
 def fetch(src: str = CATALOG_URL, timeout: float = 5) -> dict | None:
     """Каталог або None (няма сеткі, бітая адказ, няма подпісу): без каталога ўсё працуе далей."""
     try:
@@ -212,6 +245,7 @@ def fetch(src: str = CATALOG_URL, timeout: float = 5) -> dict | None:
         return None
     # запіс з дзіўным id або палямі — не наш: адкідаем, астатнія працуюць
     local = "://" not in src
+    cat["launcher"] = launcher_info(cat.get("launcher"))
     cat["games"] = {gid: e for gid, e in cat["games"].items()
                     if paths.GAME_ID.fullmatch(gid) and ".." not in gid and _entry_ok(e, local)}
     return cat
@@ -350,15 +384,7 @@ def publish(loc: Loc, catalog_path: str | None = None) -> tuple[str, dict]:
             cat = json.load(f)
     cat["games"][loc.id] = e
     cat["games"] = dict(sorted(cat["games"].items()))
-    cat["updated"] = datetime.date.today().isoformat()
-    os.makedirs(os.path.dirname(os.path.abspath(catalog_path)), exist_ok=True)
-    with open(catalog_path, "w", encoding="utf-8", newline="\n") as f:
-        json.dump(cat, f, ensure_ascii=False, indent=1)
-    if os.path.exists(key_path()):
-        sign_file(catalog_path)
-        signed = "падпісаны"
-    else:
-        signed = f"НЕ падпісаны (няма ключа {key_path()}) — лаўнчар яго не прыме"
+    signed = _write_signed(cat, catalog_path)
     print(f"пакет: {pkg} ({e['package']['size'] // 1024} КБ)")
     print(f"каталог: {catalog_path} — {loc.id} {version}, {signed}")
     if catalog_path == CATALOG_FILE:
@@ -367,6 +393,40 @@ def publish(loc: Loc, catalog_path: str | None = None) -> tuple[str, dict]:
     print(f"выкласці: gh release create {loc.id}-v{version} \"{pkg}\" --repo stopthatnoise/belloc"
           f" --title \"{loc.name} {version}\" --latest=false  і закамітаць catalog.json з .sig")
     return pkg, e
+
+
+def _write_signed(cat: dict, catalog_path: str) -> str:
+    """Запісаць каталог і падпісаць, калі ёсць ключ; вяртае, ці падпісаны."""
+    cat["updated"] = datetime.date.today().isoformat()
+    os.makedirs(os.path.dirname(os.path.abspath(catalog_path)), exist_ok=True)
+    with open(catalog_path, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(cat, f, ensure_ascii=False, indent=1)
+    if os.path.exists(key_path()):
+        sign_file(catalog_path)
+        return "падпісаны"
+    return f"НЕ падпісаны (няма ключа {key_path()}) — лаўнчар яго не прыме"
+
+
+def publish_launcher(zip_path: str, changes: str = "", catalog_path: str | None = None) -> dict:
+    """Лаўнчар (zip з launcher/build.py) у каталог: версія — з імя файла, рэліз — launcher-v<версія>."""
+    name = os.path.basename(zip_path)
+    m = LAUNCHER_ZIP.fullmatch(name)
+    if not m or not VERSION_RE.fullmatch(m.group(1)):
+        raise SystemExit(f"чакаецца belloc-launcher_<версія>.zip, а не {name}")
+    version, tag = m.group(1), f"launcher-v{m.group(1)}"
+    info = {"version": version, "date": datetime.date.today().isoformat(), "changes": changes,
+            "page": f"{RELEASES}/tag/{tag}",
+            "package": {"url": f"{RELEASES}/download/{tag}/{name}", "sha256": sha256(zip_path),
+                        "size": os.path.getsize(zip_path)}}
+    catalog_path = catalog_path or CATALOG_FILE
+    with open(catalog_path, encoding="utf-8") as f:
+        cat = json.load(f)
+    cat["launcher"] = info
+    signed = _write_signed(cat, catalog_path)
+    print(f"каталог: {catalog_path} — лаўнчар {version}, {signed}")
+    print(f"выкласці: gh release create {tag} \"{zip_path}\" --repo stopthatnoise/belloc"
+          f" --title \"Лаўнчар беларускіх перакладаў {version}\"  і закамітаць catalog.json з .sig")
+    return info
 
 
 def cache_dir() -> str:

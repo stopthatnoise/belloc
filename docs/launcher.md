@@ -97,6 +97,11 @@ raw.githubusercontent.com), пакеты і exe — у Releases (тэг `<гул
 - **exe-усталёўшчык** пры запуску правярае каталог (3 с; без сеткі — моўчкі
   далей): «ёсць новая версія 1.2 — спампаваць: <старонка>».
 - **лаўнчар** паказвае «ёсць новая версія» ля кожнай гульні.
+- **сам лаўнчар** (з 0.3): калі ў каталогу `launcher.version` навейшая за яго `VERSION`
+  (`launcher/games.py`), уверсе — кнопка «Ёсць новы лаўнчар X — спампаваць» на старонку
+  рэліза (`page`, толькі па `safe_url`), у кансолі — радок са спасылкай. Лаўнчар 0.2 поле
+  `launcher` не чытае: каму патрэбны новы рухавік ці схема payload, той бачыць «патрэбна
+  новая версія лаўнчара» і абнаўляецца ўручную адзін раз.
 
 ## Як выпусціць версію
 
@@ -130,7 +135,13 @@ local/venv-release/Scripts/python -m pip install --no-deps <наша кола py
 
 ```bash
 python launcher/build.py      # → local/launcher/belloc-launcher_<версія>.zip (папка з belloc.exe)
+python -X utf8 -m belloc catalog-launcher local/launcher/belloc-launcher_<версія>.zip --changes "…"
 ```
+
+`catalog-launcher` піша ў каталог `launcher` (версія — з імя zip, старонка і спасылка —
+рэліз `launcher-v<версія>`, sha256 і памер) і падпісвае. Далей — `gh release create
+launcher-v<версія> <zip>` (гэты рэліз — Latest: на яго вядуць README і гайды), камміт
+`catalog.json` з `.sig`.
 
 - `--onedir`, не `--onefile`: з Qt, UnityPy і OpenCV гэта ~260 МБ (zip ~100 МБ), і
   адзін exe распакоўваўся б пры кожным запуску;
@@ -148,6 +159,9 @@ python launcher/build.py      # → local/launcher/belloc-launcher_<версія
 
 ## Далей
 
-- самаабнаўленне лаўнчара праз `launcher` у каталогу; подпіс exe (SmartScreen) — пакуль
-  не робім;
+- самаабнаўленне без браўзера: спампаваць `launcher.package` (sha256 з падпісанага
+  каталога), распакаваць побач, `--selftest` новай зборкі, потым замена — праз маленькі
+  `belloc.exe`, які запускае апошнюю папку `app-<версія>\` (запушчаны exe не перапісаць);
+  стары — для адкату. Папка ў Program Files — без правоў адміністратара толькі ручная
+  спампоўка. Подпіс exe (SmartScreen) — пакуль не робім;
 - GOG і Epic: пошук гульняў (рэестр GOG, маніфесты Epic) і ключы ў `stores`.

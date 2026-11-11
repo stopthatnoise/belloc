@@ -21,6 +21,7 @@ sys.path.insert(0, os.path.join(HERE, "..", "launcher"))
 from belloc import catalog, config, payload, release, tables  # noqa: E402
 from belloc.engines import paradox  # noqa: E402
 from belloc.install import state  # noqa: E402
+import games as launcher_games  # noqa: E402
 import main as launcher  # noqa: E402
 import run as installer  # noqa: E402
 
@@ -212,6 +213,56 @@ class LauncherTest(Fixture):
         with open(self.cat + catalog.SIG, "wb") as f:
             f.write(b"not base64!")
         self.assertIsNone(catalog.fetch(self.cat))
+
+    def write_with_launcher(self, launcher):
+        write_catalog_file(self.cat, {"schema": 1, "launcher": launcher, "games": {"demo": self.entry()}})
+
+    def test_launcher_field(self):
+        page = f"{catalog.RELEASES}/tag/launcher-v9.9"
+        ok = {"version": "9.9", "page": page, "changes": "новае",
+              "package": {"url": f"{catalog.RELEASES}/download/launcher-v9.9/belloc-launcher_9.9.zip",
+                          "sha256": "a" * 64, "size": 10}}
+        self.assertEqual(catalog.launcher_info(ok)["package"]["size"], 10)
+        for bad in (None, "0.3", {"version": "9.9"}, {**ok, "page": "http://evil.example/x"},
+                    {**ok, "page": "file:///C:/x.exe"}, {**ok, "version": "9.9; rm"}):
+            self.assertIsNone(catalog.launcher_info(bad), bad)
+        bad_pkg = catalog.launcher_info({**ok, "package": {**ok["package"], "url": "https://evil.example/x.zip"}})
+        self.assertNotIn("package", bad_pkg)                              # кнопка застаецца, пакета няма
+
+        self.write_with_launcher(ok)
+        cat = catalog.fetch(self.cat)
+        self.assertEqual(catalog.launcher_update(cat, "0.3")["version"], "9.9")
+        self.assertIsNone(catalog.launcher_update(cat, "9.9"))
+        self.assertIsNone(catalog.launcher_update(cat, "10.0"))
+        _, out = self.run_launcher("list")
+        self.assertIn(f"Ёсць новы лаўнчар 9.9 (у вас {launcher_games.VERSION}): {page}", out)
+
+        self.write_with_launcher({**ok, "page": "http://evil.example/x"})   # дзіўная спасылка — моўчкі
+        self.assertIsNone(catalog.fetch(self.cat)["launcher"])
+        _, out = self.run_launcher("list")
+        self.assertNotIn("новы лаўнчар", out)
+        self.write_with_launcher(None)                                       # каталог без лаўнчара
+        _, out = self.run_launcher("list")
+        self.assertNotIn("новы лаўнчар", out)
+
+    def test_publish_launcher(self):
+        z = os.path.join(self.tmp, "belloc-launcher_9.9.zip")
+        with open(z, "wb") as f:
+            f.write(b"zip")
+        os.environ["BELLOC_CATALOG_KEY"] = KEY
+        try:
+            with redirect_stdout(io.StringIO()):
+                info = catalog.publish_launcher(z, "выпраўленні", self.cat)
+        finally:
+            os.environ.pop("BELLOC_CATALOG_KEY")
+        self.assertEqual(info["page"], f"{catalog.RELEASES}/tag/launcher-v9.9")
+        got = catalog.fetch(self.cat)                                        # падпісаны і прачытаны
+        self.assertEqual(got["launcher"]["package"]["sha256"], catalog.sha256(z))
+        self.assertIn("demo", got["games"])                                  # гульні не крануты
+        bad = os.path.join(self.tmp, "launcher.zip")
+        open(bad, "wb").close()
+        with self.assertRaises(SystemExit):
+            catalog.publish_launcher(bad, "", self.cat)
 
 
 if __name__ == "__main__":

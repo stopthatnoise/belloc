@@ -12,6 +12,7 @@ from belloc import catalog, engines, steam
 from belloc.install import state
 from belloc.install.process import game_running
 
+VERSION = "0.3"                 # версія лаўнчара; каталог: "launcher" — навейшы лаўнчар
 LABELS = {"none": "не ўсталяваны", "installed": "усталяваны", "unknown": "усталяваны (версія невядомая)",
           "wiped": "зляцеў пасля абнаўлення гульні"}
 
@@ -149,6 +150,14 @@ def notes(row: dict) -> list[str]:
     if e.get("steam_buildid") and row["buildid"] and e["steam_buildid"] != row["buildid"]:
         out.append("версія гульні іншая, чым пры перакладзе — новыя радкі могуць быць неперакладзенымі")
     return out
+
+
+def launcher_notice(cat: dict | None) -> str | None:
+    """«Ёсць новы лаўнчар» для кансолі і акна, калі ў каталогу ён навейшы за гэты."""
+    upd = catalog.launcher_update(cat, VERSION)
+    if not upd:
+        return None
+    return f"Ёсць новы лаўнчар {upd['version']} (у вас {VERSION}): {upd['page']}"
 
 
 def describe(row: dict) -> str:
