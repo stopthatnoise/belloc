@@ -284,11 +284,16 @@ def stats(loc: Loc, max_rows: int = 40):
     print(f"  {'УСЯГО':{w}} {done:6}/{total:<6} ({done * 100 // max(total, 1)}%)")
 
 
-def pairs(loc: Loc, out: str):
-    """{арыгінал: bel} для лінтэра — лакальна, у build/ (патрэбны source/)."""
+def pairs(loc: Loc, out: str, hint_out: str | None = None):
+    """{арыгінал: bel} для лінтэра — лакальна, у build/ (патрэбны source/).
+
+    Калі `hint_out` зададзены — побач пішам {арыгінал: падказка} (звычайна
+    руская): лінтэр бярэ адтуль род для праверкі `gender`.
+    """
     if not has_source(loc):
         raise SystemExit(f"{loc.id}: pairs патрабуе тэксту гульні — спачатку extract")
-    res, clash = {}, 0
+    res, clash, hints = {}, 0, {}
+    hint_lang = loc.hint_lang
     for rows in load_all(loc).values():
         for r in rows:
             if r["bel"].strip():
@@ -297,10 +302,18 @@ def pairs(loc: Loc, out: str):
                     clash += 1
                     continue
                 res[src] = r["bel"]
+                if hint_lang:
+                    h = (r.get(hint_lang) or "").strip()
+                    if h and src not in hints:
+                        hints[src] = h
     os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
     with open(out, "w", encoding="utf-8", newline="\n") as f:
         json.dump({"strings": res}, f, ensure_ascii=False, indent=1)
     print(f"пар {len(res)}, адзін арыгінал з розным перакладам: {clash} (бярэцца першы)")
+    if hint_out:
+        with open(hint_out, "w", encoding="utf-8", newline="\n") as f:
+            json.dump({"strings": hints}, f, ensure_ascii=False, indent=1)
+        print(f"паказчыкаў для gender: {len(hints)}")
 
 
 def used_chars(loc: Loc) -> set[int]:

@@ -67,10 +67,12 @@ def game_lint_args(args) -> list[str]:
     return out
 
 
-def run_lint(loc, pairs, report, extra):
+def run_lint(loc, pairs, report, extra, hint=None):
     """Лінтэр з гласарыем, белымі спісамі і слоўнікамі гэтай гульні."""
     from . import lint
     argv = ["belloc.lint", "--pairs", pairs, "--report", report, *dicts.lint_args()]
+    if hint and os.path.exists(hint):
+        argv += ["--hint", hint]
     for path in loc.glossaries:
         argv += ["--glossary", path]
     if loc.lint_allow:
@@ -219,8 +221,9 @@ def main(argv=None):
         tables.pairs(loc, args.out or os.path.join(loc.build, "pairs.json"))
     elif args.cmd == "lint":
         pairs = os.path.join(loc.build, "pairs.json")
-        tables.pairs(loc, pairs)
-        return run_lint(loc, pairs, os.path.join(loc.build, "lint_report.md"), extra)
+        hints = os.path.join(loc.build, "pairs_hint.json")
+        tables.pairs(loc, pairs, hints)
+        return run_lint(loc, pairs, os.path.join(loc.build, "lint_report.md"), extra, hints)
     elif args.cmd == "idioms":
         from . import antykalka
         return antykalka.idioms_report(loc, args.out or os.path.join(loc.build, "idioms.md"),

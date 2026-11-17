@@ -9,6 +9,8 @@
   ruletters — рускія літары (и, щ, ъ)
   rusuffix  — рускія канчаткі (-ть, -тся, -ться)
   ushort    — кандыдаты на памылкі у/ў на стыку слоў
+  dash      — звычайны прабел перад працяжнікам «—» (мусіць быць неразрыўны,
+              па STYLE.md)
   latin     — лацінскія словы ў перакладзе
 
 Білінгвальныя праверкі (патрабуюць пары арыгінал → пераклад):
@@ -66,6 +68,11 @@ from dataclasses import dataclass
 CYR_VOWELS = "аеёіоуыэюя"
 CYR_VOWELS_ALL = CYR_VOWELS + CYR_VOWELS.upper()
 TAG_RE = re.compile(r"<[^<>]+>")
+# унутрырадковыя тэгі: стаяць **унутры** слова або фразы, мяжой слова не з'яўляюцца
+INLINE_RE = re.compile(r"<\s*/?\s*(?:shy|i|b|em|strong)\s*>", re.I)
+# мяккі перанос: яго расстаноўка залежыць ад мовы (у беларускай словы іншай
+# даўжыні), таму ў параўнанні тэгаў ён не ўдзельнічае — гэта фарматаванне
+SHY_RE = re.compile(r"<\s*/?\s*shy\s*>", re.I)
 PLACEHOLDER_RE = re.compile(r"\{[^{}]*\}|%[sdif]")
 CYR_WORD_RE = re.compile(r"[А-Яа-яЁёІіЎў][А-Яа-яЁёІіЎў'’-]*")
 # лацінскае слова разам з дыякрытыкай: без яе «Dâr» распадалася б
@@ -74,9 +81,10 @@ LAT_WORD_RE = re.compile(r"[A-Za-zÀ-ɏ][A-Za-zÀ-ɏ'-]*")
 RU_LETTERS_RE = re.compile(r"[иИщЩъЪ]")
 RU_SUFFIX_RE = re.compile(r"[А-Яа-яЁёІіЎў]+(?:ть|тся|ться)\b")
 
-MONO_CHECKS = ["spell", "names", "ruwords", "ruletters", "rusuffix", "ushort", "latin"]
+MONO_CHECKS = ["spell", "names", "ruwords", "ruletters", "rusuffix", "ushort", "latin",
+               "dash"]
 BI_CHECKS = ["tags", "placeholders", "ws", "endpunct", "lenratio", "dupes",
-             "untranslated", "glossary", "prefix"]
+             "untranslated", "glossary", "prefix", "gender"]
 ALL_CHECKS = MONO_CHECKS + BI_CHECKS
 
 
@@ -169,7 +177,19 @@ class Finding:
 
 
 def clean_markup(text: str) -> str:
-    return PLACEHOLDER_RE.sub(" ", TAG_RE.sub(" ", text))
+    # Унутрырадковыя тэгі (<shy>, <i>, <b>) выдаляем цалкам, а не прабелам:
+    # «Утрымлі<shy>вайце» і «<i>пера</i>прызначыць» — адно слова, і калі паставіць
+    # прабел, арфаграфія бачыць два невядомыя «словы» («вайце», «пера»).
+    # Блочныя тэгі (<br>, <sprite …>) прабелам замяняем — яны раздзяляюць.
+    cleaned = PLACEHOLDER_RE.sub(" ", TAG_RE.sub(" ", INLINE_RE.sub("", text)))
+    # Камбайнавыя дыякрытыкі (глітч-тэкст: сапсаваны друк, эфекты) — не літары:
+    # для слоўных праверак і падліку даўжыні іх трэба зняць, інакш тэкст
+    # разрываецца на кавалкі. Спачатку NFC — каб «й»/«ё», запісаныя асобнымі
+    # знакамі, зноў сталі літарамі. Націск (U+0301) пакідаем: гэта нашая
+    # свядомая паметка ў тэксце.
+    cleaned = unicodedata.normalize("NFC", cleaned)
+    return "".join(ch for ch in cleaned
+                   if unicodedata.category(ch) != "Mn" or ch == "\u0301")
 
 
 def excerpt(s: str, limit: int = 70) -> str:
@@ -410,8 +430,9 @@ def check_latin(segs, allow):
 # ---------------------------------------------------------------- білінгвальныя праверкі
 
 def check_tags(seg):
-    src_tags = Counter(TAG_RE.findall(seg.src))
-    dst_tags = Counter(TAG_RE.findall(seg.dst))
+    # <shy> — мяккі перанос: яго месцы залежаць ад мовы, таму не параўноўваем
+    src_tags = Counter(t for t in TAG_RE.findall(seg.src) if not SHY_RE.fullmatch(t))
+    dst_tags = Counter(t for t in TAG_RE.findall(seg.dst) if not SHY_RE.fullmatch(t))
     if src_tags != dst_tags:
         missing = list((src_tags - dst_tags).elements())
         extra = list((dst_tags - src_tags).elements())
@@ -421,6 +442,96 @@ def check_tags(seg):
         if extra:
             parts.append("лішнія: " + " ".join(extra[:5]))
         yield "; ".join(parts)
+
+
+# працяжнік у сказе пішам з неразрыўным прабелам перад ім (STYLE.md). Звычайны
+# прабел з'яўляецца, калі «-» памянялі на «—» ўжо пасля набору, калі радок
+# уставілі з іншай крыніцы або калі прабел не з той раскладкі. Нябачны, таму
+# лінтэр — адзінае месца, дзе гэта ловіцца. Праверка дзейнічае ўнутры радка:
+# працяжнік на пачатку радка (рэпліка дыялогу) не правяраецца — перад ім няма
+# тэксту, і неразрыўны прабел там не патрэбны.
+DASH_SPACE_RE = re.compile(r"[ \t]\u2014")
+
+
+def check_dash(seg):
+    n = len(DASH_SPACE_RE.findall(seg.dst))
+    if n:
+        yield (f"{n}× звычайны прабел перад «—» "
+               f"(трэба неразрыўны) — {excerpt(seg.dst)}")
+
+
+# ---------------------------------------------------------------- род (2-я асоба)
+# У беларускай, як і ў рускай, прошлы час дзеяслова не мае асобы, толькі род:
+# «ты сказаў» (м) / «ты сказала» (ж). Калі галоўная гераіня — жанчына, а ў
+# перакладзе стаіць мужчынская форма, гэта памылка, якую не бачыць ні spell,
+# ні glossary. Аракул — радок-падказка (звычайна руская): там род заўсёды
+# пазначаны. Праверка ўключаецца толькі калі ёсць --hint.
+HINT: dict[str, str] = {}
+# усе словы перакладу: па іх пазнаём дзеяслоў па пары «-ў» / «-ла»
+DST_WORDS: set[str] = set()
+TY_RE = re.compile(r"(?<![\w-])[Тт]ы(?![\w-])")
+# іншыя дзейнікі: калі пасля «ты» бліжэй стаіць «ён», «яна», «я» — гэта не 2-я асоба
+OTHER_SUBJ_RE = re.compile(r"(?<![\w-])(ён|яна|я|яны|яго|ёй|іх)(?![\w-])", re.I)
+HINT_FEM_RE = re.compile(r"(?<![\w-])([А-Яа-яЁё]{3,}(?:ла|лась))(?![\w-])")
+HINT_MASC_RE = re.compile(r"(?<![\w-])([А-Яа-яЁё]{3,}л)(?![\w-])")
+DST_MASC_RE = re.compile(r"(?<![\w-])([А-Яа-яЁёіў]{3,}(?:ў|ўся))(?![\w-])")
+DST_FEM_RE = re.compile(r"(?<![\w-])([А-Яа-яЁёіў]{3,}(?:ла|лася))(?![\w-])")
+
+
+def _near_ty(text: str, pos: int, span: int = 70) -> bool:
+    """Ці стаіць «ты» побач і ці застаецца яно дзейнікам гэтага дзеяслова.
+
+    Дзеяслоў можа стаяць і да «ты» («Замечала ли ты…»), таму глядзім абодва бакі;
+    калі ж «ты» стаіць раней, паміж ім і дзеясловам не павінна быць іншага
+    дзейніка («ён», «яна», «я»…).
+    """
+    lo = max(0, pos - span)
+    win = text[lo:pos + span]
+    tys = list(TY_RE.finditer(win))
+    if not tys:
+        return False
+    nearest = min(tys, key=lambda m: min(abs(lo + m.start() - pos), abs(lo + m.end() - pos)))
+    if lo + nearest.end() <= pos:
+        tail = text[lo + nearest.end():pos]
+        if OTHER_SUBJ_RE.search(tail):
+            return False
+    return True
+
+
+def _is_past_verb(word: str) -> bool:
+    """Дзеяслоў прошлага часу пазнаём па пары «-ў» / «-ла» у тэксце перакладу.
+
+    Так адсяваюцца назоўнікі («доказаў», «перагаворшчыкаў»), прыслоўі («зноў»)
+    і загадны лад («пастаў»): для іх пары з «-ла» у корпусе няма.
+    """
+    w = word.lower()
+    if w.endswith("ўся"):
+        base = w[:-3]
+        return (base + "лася") in DST_WORDS
+    if w.endswith("ў"):
+        base = w[:-1]
+        return (base + "ла") in DST_WORDS or (base + "лася") in DST_WORDS
+    return False
+
+
+def check_gender(seg):
+    """Кандыдат на памылку роду: у падказцы «ты …-ла», у нас «ты …-ў»."""
+    hint = HINT.get(seg.src or "")
+    if not hint:
+        return
+    hint_fem = [m.group(1) for m in HINT_FEM_RE.finditer(hint) if _near_ty(hint, m.start())]
+    hint_masc = [m.group(1) for m in HINT_MASC_RE.finditer(hint) if _near_ty(hint, m.start())]
+    if not hint_fem or hint_masc:
+        return
+    dst_masc = [m.group(1) for m in DST_MASC_RE.finditer(seg.dst)
+                if _near_ty(seg.dst, m.start()) and _is_past_verb(m.group(1))]
+    if not dst_masc:
+        return
+    dst_fem = [m.group(1) for m in DST_FEM_RE.finditer(seg.dst) if _near_ty(seg.dst, m.start())]
+    if dst_fem:
+        return
+    yield (f"род: у падказцы «{hint_fem[0]}» (ж), у нас «{dst_masc[0]}» (м) — "
+           f"{excerpt(seg.dst)}")
 
 
 # Unity {ManualInput:ClimbUp/Display:Up}: подпіс пасля Display: бачыць гулец,
@@ -635,6 +746,10 @@ def check_glossary(seg, compiled):
     for en, bel, en_re, stems in compiled:
         if en_re.search(seg.src_body) and stems and \
                 not any(st in dst_low for st in stems):
+            # назва, якую перакладчык свядома пакінуў лацінкай (ESCHATON, Quisach),
+            # — гэта рашэнне, а не разыходжанне з гласарыем
+            if fold(en).lower() in dst_low:
+                continue
             yield f"«{en}» → чакаецца «{bel}» — {excerpt(seg.dst)}"
 
 
@@ -675,6 +790,9 @@ def main():
     ap.add_argument("--marks", default="", metavar="CHARS",
                     help="знакі, колькасць якіх мусіць супадаць з арыгіналам "
                          "(праверка placeholders; Dispatch: «|^»)")
+    ap.add_argument("--hint", metavar="FILE",
+                    help="JSON {\"strings\": {арыгінал: падказка}} — радкі іншай "
+                         "мовы (звычайна рускай) для праверкі gender")
     ap.add_argument("--checks", metavar="LIST",
                     help="запусціць толькі гэтыя праверкі (праз коску)")
     ap.add_argument("--skip", metavar="LIST", default="",
@@ -703,6 +821,15 @@ def main():
         enabled -= {"glossary"}
     if not args.ink_prefix:
         enabled -= {"prefix"}
+    if args.hint:
+        try:
+            data = json.load(open(args.hint, encoding="utf-8"))
+        except (OSError, ValueError) as e:
+            sys.exit(f"{args.hint}: не чытаецца JSON ({e})")
+        strings = data.get("strings", data) if isinstance(data, dict) else {}
+        HINT.update({k: v for k, v in strings.items() if isinstance(v, str) and v.strip()})
+    if not HINT:
+        enabled -= {"gender"}
 
     segs: list[Segment] = []
     for p in args.pairs:
@@ -747,6 +874,11 @@ def main():
 
     wordlist = load_wordlist(args.wordlist) if args.wordlist else set()
 
+    if "gender" in enabled:
+        # слоўнік усіх формаў перакладу — каб адрозніць дзеяслоў ад назоўніка
+        for seg in segs:
+            DST_WORDS.update(w.lower() for w in CYR_WORD_RE.findall(clean_markup(seg.dst)))
+
     if enabled & {"spell", "names", "ruwords"}:
         findings += check_spell_and_ruwords(
             segs, args.be_dict, args.ru_dict, allow, enabled, wordlist)
@@ -757,12 +889,13 @@ def main():
 
     per_seg_mono = {"ruletters": check_ruletters,
                     "rusuffix": lambda s: check_rusuffix(s, allow),
-                    "ushort": check_ushort}
+                    "ushort": check_ushort,
+                    "dash": check_dash}
     per_seg_bi = {"tags": check_tags, "placeholders": check_placeholders,
                   "ws": check_ws, "endpunct": check_endpunct,
                   "lenratio": check_lenratio, "untranslated": check_untranslated,
                   "glossary": lambda s: check_glossary(s, glossary),
-                  "prefix": check_prefix}
+                  "prefix": check_prefix, "gender": check_gender}
 
     for seg in segs:
         for name, fn in per_seg_mono.items():
