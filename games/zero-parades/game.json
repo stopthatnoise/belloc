@@ -1,0 +1,26 @@
+{
+  "name": "Zero Parades",
+  "engine": "unity-localization",
+  "steam_appid": 2863680,
+  "source_lang": "en",
+  "hint_lang": "ru",
+  "extra_hints": [
+    "en_src"
+  ],
+  "lint_args": [
+    "--tag-re",
+    "(?<!<)</?(?:shy|b|em|strong|color(?:=[^<>]*)?)>",
+    "--skip",
+    "endpunct"
+  ],
+  "credits": "Нейрапераклад: мадэль DeepSeek 4.1-Flash пад кіраўніцтвам Арцёма Кузняцова",
+  "unity": {
+    "data_dir": "ZeroParades_Data",
+    "bundles": "ZeroParades_Data/StreamingAssets/aa/StandaloneWindows64",
+    "extract_langs": [
+      "en",
+      "ru"
+    ],
+    "preview_locale": "ru"
+  }
+}
