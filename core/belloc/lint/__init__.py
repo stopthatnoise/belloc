@@ -9,6 +9,8 @@
   ruletters — рускія літары (и, щ, ъ)
   rusuffix  — рускія канчаткі (-ть, -тся, -ться)
   ushort    — кандыдаты на памылкі у/ў на стыку слоў
+  ortho     — немагчымыя ў беларускім правапісе спалучэнні (ті, ді, рі,
+              жі, ші, чі, де, те, ре…, й пасля зычнай, 3+ «о»)
   latin     — лацінскія словы ў перакладзе
 
 Білінгвальныя праверкі (патрабуюць пары арыгінал → пераклад):
@@ -43,16 +45,21 @@
   --pairs FILE...  JSON {"strings": {арыгінал: пераклад}} або {арыгінал: пераклад}
   --mono FILE...   той жа JSON, але ключы — гэта ID: правяраюцца толькі значэнні
   --text FILE...   звычайны тэкст, правяраецца цалкам (толькі моўныя праверкі)
+  --csv FILE...    CSV перакладу; правяраецца слупок --csv-column (па змаўчанні
+                   bel), ключом у дакладзе служыць слупок en, калі ён ёсць
 
 Прыклад:
   python -m belloc.lint --pairs local/<гульня>/build/pairs.json \
       --dict local/dicts/be_BY --ru-dict local/dicts/ru_RU --wordlist local/dicts/slovy.txt \
       --glossary games/<гульня>/glossary.json --allow games/<гульня>/lint_allow.txt --report lint_report.md
+
+  python -m belloc.lint --csv local/<гульня>/build/review-*.csv --checks ortho
 """
 
 from __future__ import annotations
 
 import argparse
+import csv
 import gzip
 import shutil
 import json
@@ -62,6 +69,8 @@ import sys
 import unicodedata
 from collections import Counter, defaultdict
 from dataclasses import dataclass
+
+from ..ortho import word_problems
 
 CYR_VOWELS = "аеёіоуыэюя"
 CYR_VOWELS_ALL = CYR_VOWELS + CYR_VOWELS.upper()
@@ -74,7 +83,8 @@ LAT_WORD_RE = re.compile(r"[A-Za-zÀ-ɏ][A-Za-zÀ-ɏ'-]*")
 RU_LETTERS_RE = re.compile(r"[иИщЩъЪ]")
 RU_SUFFIX_RE = re.compile(r"[А-Яа-яЁёІіЎў]+(?:ть|тся|ться)\b")
 
-MONO_CHECKS = ["spell", "names", "ruwords", "ruletters", "rusuffix", "ushort", "latin"]
+MONO_CHECKS = ["spell", "names", "ruwords", "ruletters", "rusuffix", "ushort",
+               "ortho", "latin"]
 BI_CHECKS = ["tags", "placeholders", "ws", "endpunct", "lenratio", "dupes",
              "untranslated", "glossary", "prefix"]
 ALL_CHECKS = MONO_CHECKS + BI_CHECKS
@@ -199,6 +209,26 @@ def load_text(path: str) -> list[Segment]:
         for i, line in enumerate(f, 1):
             if line.strip():
                 segs.append(Segment(path, f"радок {i}", None, line.rstrip("\n")))
+    return segs
+
+
+def load_csv(path: str, column: str) -> list[Segment]:
+    """CSV перакладу: беларускі слупок — адзін, астатнія (ru, de) не чапаем.
+
+    Ключ для даклада — са слупка `key`, інакш `en`, інакш нумар радка.
+    """
+    segs = []
+    with open(path, encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f)
+        if column not in (reader.fieldnames or []):
+            sys.exit(f"{path}: няма слупка «{column}» "
+                     f"(ёсць: {', '.join(reader.fieldnames or [])})")
+        for i, row in enumerate(reader, 2):
+            dst = row.get(column) or ""
+            if dst.strip():
+                key = ((row.get("key") or row.get("en") or "").strip()
+                       or f"радок {i}")
+                segs.append(Segment(path, key, None, dst))
     return segs
 
 
@@ -386,6 +416,15 @@ def check_ushort(seg):
             k -= 1
         if k < 0 or text[k] not in CYR_VOWELS_ALL:
             yield f"«{m.group()}» не пасля галоснай (можа, «у»?) — {excerpt(text[max(0,m.start()-25):m.end()+15])}"
+
+
+def check_ortho(seg, allow):
+    text = clean_markup(seg.dst_body)
+    for w in CYR_WORD_RE.findall(text):
+        if allow.allows(w):
+            continue
+        for msg in word_problems(w):
+            yield f"{msg} — {excerpt(seg.dst)}"
 
 
 def check_latin(segs, allow):
@@ -650,6 +689,10 @@ def main():
                     help="JSON: ключ = ID, правяраюцца толькі значэнні")
     ap.add_argument("--text", nargs="*", default=[], metavar="FILE",
                     help="звычайны тэкставы файл")
+    ap.add_argument("--csv", nargs="*", default=[], metavar="FILE",
+                    help="CSV перакладу: правяраецца слупок --csv-column")
+    ap.add_argument("--csv-column", default="bel", metavar="NAME",
+                    help="слупок CSV з беларускім тэкстам (па змаўчанні bel)")
     ap.add_argument("--dict", dest="be_dict", metavar="PATH",
                     help="шлях да беларускага hunspell-слоўніка (без пашырэння)")
     ap.add_argument("--ru-dict", metavar="PATH",
@@ -684,8 +727,9 @@ def main():
                     help="колькі знаходак кожнай праверкі паказваць у кансолі")
     args = ap.parse_args()
 
-    if not (args.pairs or args.mono or args.text):
-        ap.error("трэба хаця б адзін уваходны файл (--pairs / --mono / --text)")
+    if not (args.pairs or args.mono or args.text or args.csv):
+        ap.error("трэба хаця б адзін уваходны файл "
+                 "(--pairs / --mono / --text / --csv)")
 
     if args.tag_re:
         global TAG_RE
@@ -711,6 +755,8 @@ def main():
         segs += load_kv_json(p, mono=True)
     for p in args.text:
         segs += load_text(p)
+    for p in args.csv:
+        segs += load_csv(p, args.csv_column)
     if args.ink_prefix:
         def strip_service(text: str) -> str:
             return INK_TOKEN_RE.sub(" ", INK_PREFIX_RE.sub("", text, count=1))
@@ -757,7 +803,8 @@ def main():
 
     per_seg_mono = {"ruletters": check_ruletters,
                     "rusuffix": lambda s: check_rusuffix(s, allow),
-                    "ushort": check_ushort}
+                    "ushort": check_ushort,
+                    "ortho": lambda s: check_ortho(s, allow)}
     per_seg_bi = {"tags": check_tags, "placeholders": check_placeholders,
                   "ws": check_ws, "endpunct": check_endpunct,
                   "lenratio": check_lenratio, "untranslated": check_untranslated,

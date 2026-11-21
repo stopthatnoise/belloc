@@ -55,6 +55,10 @@ git; усе каманды знаходзяць яе па імені. Да рэ�
 
 - `hint_lang` — мова-падказка (звычайна афіцыйная руская), можа быць `null`;
   `extra_hints` — дадатковыя (`["uk"]`);
+- `fallback_lang` — другая крыніца **па радку**, калі арыгінала `source_lang`
+  няма (гібрыд: `source_lang: "en"`, `fallback_lang: "de"`); рухавік выбірае
+  крыніцу для кожнага радка і піша ў працоўныя файлы `src_lang`, а `src_hash`
+  лічыць ад эфектыўнай крыніцы. Патрэбна рухавіку, які гэта падтрымлівае;
 - `lint_args` — дадатковыя аргументы лінтэра (напр. `["--tag-re", "<[^<>]+>"]`); можна
   толькі `--tag-re`, `--marks`, `--checks`, `--skip`, `--max-print`, `--ink-prefix`,
   `--paradox` (`cli.py: game_lint_args`). Рэгуляркі game.json і `batches.json` — без
@@ -131,7 +135,9 @@ python -X utf8 -m belloc wiki Q<нумар> --alias "<назва>"   # элем�
 ```
 
 - **Лінтэр.** Моўныя праверкі: `spell`, `names`, `ruwords` (галоўны дэтэктар
-  русізмаў), `ruletters`, `rusuffix`, `ushort` (у/ў), `latin`. Білінгвальныя: `tags`,
+  русізмаў), `ruletters`, `rusuffix`, `ushort` (у/ў), `ortho` (немагчымыя ў
+  правапісе спалучэнні ті/ді/рі/жі/ші/чі, де/те/ре, «й» пасля зычнай, 3+ «о» —
+  без слоўніка, таму працуе і на ўласных назвах), `latin`. Білінгвальныя: `tags`,
   `placeholders`, `ws`, `endpunct`, `lenratio`, `dupes`, `untranslated`, `glossary`.
   Лішнія опцыі: `--checks tags,placeholders`, `--skip names`, `--tag-re REGEX`.
   Белы спіс — `core/belloc/lint/allow_common.txt` (агульнае) і `lint_allow.txt` гульні.
