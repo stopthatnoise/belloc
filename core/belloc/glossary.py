@@ -32,6 +32,8 @@ import json
 import os
 import re
 
+from .ortho import text_problems
+
 TITLES = {
     "characters": "Персанажы", "places": "Месцы", "items": "Прадметы",
     "organizations": "Арганізацыі", "races": "Расы", "terms": "Тэрміны",
@@ -80,6 +82,10 @@ def validate(data: dict) -> list[str]:
                     errors.append(f"{sec}/{en}: спасылка на неіснуючы ключ «{ref.strip()}»")
             if info.get("gender", "м") not in ("м", "ж", "н", "мн", ""):
                 errors.append(f"{sec}/{en}: невядомы род «{info['gender']}»")
+            bel = info.get("bel", "")
+            if isinstance(bel, str):
+                for msg in text_problems(bel):
+                    errors.append(f"{sec}/{en}: {msg}")
     return errors
 
 
