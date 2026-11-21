@@ -148,9 +148,43 @@ def hint_langs(loc: Loc) -> list[str]:
     return ([loc.hint_lang] if loc.hint_lang else []) + loc.raw.get("extra_hints", [])
 
 
+def source_langs(loc: Loc) -> list[str]:
+    """Мовы, з якіх можа быць узяты радок: арыгінал, другая крыніца (fallback_lang),
+    апошняя крыніца (last_resort), затым падказкі. Падказка ў гэтым спісе таму, што
+    радок мог быць перакладзены з яе (спрэчны выпадак) — sync пазнае гэта па src_hash."""
+    langs = base_langs(loc) + ([loc.last_resort] if loc.last_resort else [])
+    langs += [h for h in hint_langs(loc) if h not in langs]
+    return list(dict.fromkeys(langs))
+
+
+def base_langs(loc: Loc) -> list[str]:
+    """Арыгінал і другая крыніца — з іх бярэцца новы радок (не з падказак)."""
+    return [loc.source_lang] + ([loc.fallback_lang] if loc.fallback_lang else [])
+
+
+def auto_text(loc: Loc, row: dict) -> str:
+    """Крыніца радка без уліку ручнога src_lang: арыгінал, інакш другая крыніца."""
+    text = row.get(loc.source_lang, "")
+    if not text and loc.fallback_lang:
+        text = row.get(loc.fallback_lang, "")
+    return text
+
+
+def effective_text(loc: Loc, row: dict) -> str:
+    """Тэкст, ад якога лічацца src_hash і лічыцца пераклад: радок мог быць узяты
+    не з асноўнай крыніцы (src_lang: "de", "ru" — гібрыд ці спрэчны выпадак)."""
+    lang = row.get("src_lang")
+    if lang and row.get(lang):
+        return row[lang]
+    return auto_text(loc, row)
+
+
 def fields(loc: Loc) -> list[str]:
     """Слупкі поўнага выгляду — для лакальных працоўных файлаў (пачкі)."""
-    return ["key", loc.source_lang] + hint_langs(loc) + ["bel", "note"]
+    cols = ["key", *source_langs(loc)]
+    if loc.fallback_lang or loc.last_resort:
+        cols.append("src_lang")             # з якой мовы ўзяты гэты радок
+    return cols + ["bel", "note"]
 
 
 def read_csv(path: str) -> list[dict]:
@@ -182,13 +216,14 @@ def load_repo(loc: Loc) -> dict[str, list[dict]]:
 def save(loc: Loc, table: str, rows: list[dict]):
     """Запісаць табліцу ў рэпазіторый: толькі key, src_hash, bel, note.
 
-    src_hash лічыцца з арыгінала, калі ён ёсць у радку, інакш застаецца
-    стары; ctx з note выразаецца; кавалкі арыгінала ў bel → заглушка.
+    src_hash лічыцца з эфектыўнай крыніцы радка (en, інакш de, або моўная
+    крыніца са src_lang), калі яна ёсць у радку, інакш застаецца стары; ctx з
+    note выразаецца; кавалкі арыгінала ў bel → заглушка.
     """
     out = []
     pat = from_original(loc.raw.get("from_original"))
     for r in rows:
-        text = r.get(loc.source_lang) or ""
+        text = effective_text(loc, r)
         out.append({"key": r["key"], "src_hash": src_hash(text) if text else r.get("src_hash", ""),
                     "bel": collapse(r.get("bel", ""), text, pat), "note": own_note(r.get("note", ""))})
     write_csv(table_path(loc, table), out, REPO_COLS)
@@ -210,8 +245,9 @@ def has_source(loc: Loc) -> bool:
 
 def load_all(loc: Loc) -> dict[str, list[dict]]:
     """Табліцы рэпазіторыя з далучаным тэкстам гульні (калі source/ ёсць)."""
+    langs = source_langs(loc)
     src = _source(loc, loc.source_lang)
-    hints = {lang: _source(loc, lang) for lang in hint_langs(loc)}
+    by_lang = {lang: _source(loc, lang) for lang in langs}
     context = _source(loc, "context")
     pat = from_original(loc.raw.get("from_original"))
     res = {}
@@ -221,9 +257,24 @@ def load_all(loc: Loc) -> dict[str, list[dict]]:
         for r in rows:
             k = r["key"]
             row = {"key": k, loc.source_lang: s.get(k, "")}
-            for lang, h in hints.items():
-                row[lang] = h.get(table, {}).get(k, "")
-            row.update(bel=expand(r["bel"], row[loc.source_lang], pat), note=r["note"],
+            for lang in langs[1:]:
+                row[lang] = by_lang[lang].get(table, {}).get(k, "")
+            # адкуль радок: спачатку пазнаём стары src_hash (радок мог быць
+            # перакладзены з DE ці RU), інакш — асноўная крыніца, другая крыніца
+            row["src_lang"] = ""
+            if r["src_hash"]:
+                for lang in langs:
+                    if row[lang] and src_hash(row[lang]) == r["src_hash"]:
+                        row["src_lang"] = lang
+                        break
+            if not row["src_lang"]:
+                for lang in base_langs(loc):                 # source_lang, fallback_lang
+                    if row[lang]:
+                        row["src_lang"] = lang
+                        break
+            if not row["src_lang"] and loc.last_resort and row.get(loc.last_resort):
+                row["src_lang"] = loc.last_resort            # радок без EN/DE — з RU, са сцягам
+            row.update(bel=expand(r["bel"], effective_text(loc, row), pat), note=r["note"],
                        ctx=c.get(k, ""), src_hash=r["src_hash"])
             full.append(row)
         res[table] = full
@@ -235,19 +286,42 @@ def sync(loc: Loc):
 
     Калі арыгінал змяніўся, а пераклад ужо быў — стары bel пераносіцца ў note
     як «stale: …», bel ачышчаецца. Ключы, якіх у гульні больш няма, выкідаюцца.
+    Радок, перакладзены з другой крыніцы (fallback_lang) ці з падказкі, пазнаецца
+    па src_hash — тады яго крыніца не мяняецца.
     """
     if not has_source(loc):
         raise SystemExit(f"{loc.id}: няма {os.path.join(loc.source, loc.source_lang + '.json')}"
                          " — спачатку extract")
-    src = _source(loc, loc.source_lang)
-    for table, strings in src.items():
+    langs = source_langs(loc)
+    base = base_langs(loc)
+    pick = base + ([loc.last_resort] if loc.last_resort else [])
+    by_lang = {lang: _source(loc, lang) for lang in langs}
+    tables = sorted({t for lang in pick for t in by_lang[lang]})
+    for table in tables:
+        texts = {lang: by_lang[lang].get(table, {}) for lang in langs}
+        keys, seen = [], set()
+        for lang in pick:
+            for k in texts[lang]:
+                if k not in seen:
+                    seen.add(k)
+                    keys.append(k)
         old = {r["key"]: r for r in read_csv(table_path(loc, table))}
         rows, stale = [], 0
-        for key, text in strings.items():
+        for key in keys:
             prev = old.pop(key, None)
-            h = src_hash(text)
+            row = {lang: texts[lang].get(key, "") for lang in langs}
+            lang = ""
+            if prev and prev["src_hash"]:
+                lang = next((l for l in langs if row[l] and src_hash(row[l]) == prev["src_hash"]), "")
+            if not lang:
+                lang = next((l for l in pick if row[l]), "")
+            h = src_hash(row[lang]) if lang else ""
             bel = prev["bel"] if prev else ""
             note = own_note(prev["note"]) if prev else ""
+            if lang and lang not in base:
+                flag = f"крыніца: {lang}"
+                if flag not in [p.strip() for p in note.split(" | ")]:
+                    note = f"{flag} | {note}" if note else flag
             if prev and prev["src_hash"] != h and bel:
                 note = f"stale: {bel}" + (f" | {note}" if note else "")
                 bel = ""
@@ -257,7 +331,8 @@ def sync(loc: Loc):
         if stale or old:
             print(f"{table}: састарэла {stale}, выдалена {len(old)}"
                   + (f" ({', '.join(list(old)[:5])}…)" if old else ""))
-    orphan = sorted(set(load_repo(loc)) - set(src))
+    known = set(tables)
+    orphan = sorted(set(load_repo(loc)) - known)
     if orphan:                             # не выдаляем: там можа быць пераклад
         print(f"табліц няма ў крыніцы ({len(orphan)}), CSV засталіся: {', '.join(orphan[:8])}"
               + ("…" if len(orphan) > 8 else ""))
@@ -292,7 +367,7 @@ def pairs(loc: Loc, out: str):
     for rows in load_all(loc).values():
         for r in rows:
             if r["bel"].strip():
-                src = r[loc.source_lang]
+                src = effective_text(loc, r)
                 if src in res and res[src] != r["bel"]:
                     clash += 1
                     continue

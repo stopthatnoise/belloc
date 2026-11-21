@@ -19,7 +19,13 @@
 game.json:
 
     {"name": "Silver Pines", "engine": "unity-localization", "steam_appid": 0,
-     "source_lang": "en", "hint_lang": "ru", "<секцыя рухавіка>": {…}}
+     "source_lang": "en", "fallback_lang": "de", "hint_lang": "ru",
+     "<секцыя рухавіка>": {…}}
+
+fallback_lang — другая крыніца **па радку**, калі арыгінала source_lang няма
+(гібрыд: BATTLETECH — англійская дзе знойдзеная, нямецкая дзе не).
+last_resort — крыніца для радкоў, дзе няма ні арыгінала, ні fallback (звычайна
+"ru"); такія радкі пазначаюцца ў note як «крыніца: …» і ідуць на вычытку.
 
 Каталог гульні: game_dir з local.json, інакш — бібліятэкі Steam па steam_appid.
 
@@ -64,6 +70,8 @@ class Loc:
     name: str
     engine: str
     source_lang: str = "en"           # з чаго перакладаем
+    fallback_lang: str | None = None  # другая крыніца па радку (гібрыд, гл. tables.py)
+    last_resort: str | None = None    # крыніца для радкоў без арыгінала і fallback (RU, са сцягам)
     hint_lang: str | None = "ru"      # падказка (можа не быць)
     steam_appid: int | None = None
     raw: dict = field(default_factory=dict)
@@ -162,6 +170,9 @@ def load(name_or_path: str) -> Loc:
     raw = _json(os.path.join(d, "game.json"))
     local = os.path.join(local_root(), gid)
     return Loc(id=gid, dir=d, local=local, name=raw["name"], engine=raw["engine"],
-               source_lang=raw.get("source_lang", "en"), hint_lang=raw.get("hint_lang", "ru"),
+               source_lang=raw.get("source_lang", "en"),
+               fallback_lang=raw.get("fallback_lang") or None,
+               last_resort=raw.get("last_resort") or None,
+               hint_lang=raw.get("hint_lang", "ru"),
                steam_appid=raw.get("steam_appid"), raw=raw,
                local_raw=_json(os.path.join(local, "local.json")))

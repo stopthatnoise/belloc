@@ -12,6 +12,7 @@ ENGINES = {
     "paradox": "paradox",
     "telltale": "telltale",
     "idtech": "idtech",
+    "battletech-csv": "battletech_csv",
 }
 
 

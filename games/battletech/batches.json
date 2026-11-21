@@ -1,0 +1,7690 @@
+{
+ "_about": "Пачкі BATTLETECH. Маршрутызацыя — па `ctx:` з extract (at=/use=/q=/len=): радок бярэ ПЕРШАЯ пачка ў парадку файла. `slice` ёсць толькі ў пробе (order: hash — выпадковы зрэз). Генератар: local/battletech/tools/make_batches.py.",
+ "_repeats": [
+  {
+   "tables": "^strings$",
+   "by": [
+    "en",
+    "de",
+    "ru"
+   ]
+  }
+ ],
+ "probe": {
+  "wave": 0,
+  "rows": [
+   {
+    "table": "strings",
+    "order": "hash",
+    "slice": [
+     0,
+     300
+    ]
+   }
+  ]
+ },
+ "ui-01": {
+  "wave": 1,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=Assembly\\-CSharp\\.dll(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=InControl\\.dll(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=backgrounds/"
+   }
+  ]
+ },
+ "ui-02": {
+  "wave": 1,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=constants/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=designMasks/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=enums/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=heatsinks/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=heraldry/"
+   }
+  ]
+ },
+ "ui-03": {
+  "wave": 1,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=milestoneSets/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=shipUpgrades/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=simGameConstants/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=simGameStatDesc/"
+   }
+  ]
+ },
+ "contracts-01": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/ambushconvoy/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/arenaskirmish/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/assassinate/"
+   }
+  ]
+ },
+ "contracts-02": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/capturebase/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/captureescort/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/coopbattle/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/defendbase/"
+   }
+  ]
+ },
+ "contracts-03": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/destroybase/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/escortsingle/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/firemission/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/itrom_attack/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/itrom_defense/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/panzyr_attack/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/panzyr_defense/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/rescue/"
+   }
+  ]
+ },
+ "contracts-04": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/simplebattle/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/smithon_attack/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/smithon_defense/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/story_1a_retreat/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/story_1b_retreat/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/story_2_threeyearslater/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/story_3_axylus/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/story_4_liberationofweldry/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/story_5_servedcold/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/story_6a_treasuretrove/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/story_6b_treasuretrove/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/story_7_gunboatdiplomacy/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/story_8_locura/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/story_9_downfall/"
+   }
+  ]
+ },
+ "contracts-05": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/threewaybattle/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/travelonly/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=contracts/tyrlon_attack/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_agroMech\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_biddingWar\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_blackMarket_CookieJar\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_blackMarket_Membership0\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_blackMarket_Membership1\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_blackMarket_Membership2\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_blackMarket_Membership3\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_blackMarket_Plague\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_blackMarket_ShakedownDisliked\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "contracts-06": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_blackMarket_Shakedown\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_cardsMechBay\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_cratesOfMistakes\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_distressCall_Davion\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_distressCall_Plague_Liao\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_exploringMoons\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_exploringRuins\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_friendOfAFriend\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_garageSale\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_guaranteedReturns\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_intro_Archangel\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_intro_Test9\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "contracts-07": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_kellsRequest\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_littleAccident\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_mechbayExtraHands\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_mechbayPowerSurge\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_mechbayTempImprovements\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_mercReviewBoard_Davion\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_mercReviewBoard_Liao\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_mercReviewBoard_Marik\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_newHolovids\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_nosyCustoms_Davion\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "contracts-08": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_oldFriend_FreeLancer\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_oldFriend_Gladiator\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_oldFriend_Mercenary\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_oldFriend_MerchantGuard\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_oldFriend_Pirate\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_oldFriend_Soldier\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_overworkedAndUnderpaid\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_pirateAmbush\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_plague_FluPlanetVaccine_Liao\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_plague_FluShipVaccine_Davion\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_plague_FluShip_Davion\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_plague_FluShip_Magistracy\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_plague_FluShip_Restoration\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "contracts-09": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_pokerNight\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_poolSkinnyDipping\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_powerSpike\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_researchSeniorStaff\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_researchYang\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_restAndRecreation\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_rumbleSeat\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_smugglingOnAccident\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_thePast_Accident\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_thePast_Bankrupt\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_thePast_Betrayed\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_thePast_Exiled\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "contracts-10": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_thePast_Loner\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_underfed\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_understaffed\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_unexpectedDebris\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_ventilationTrouble\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_co_wornCargoLifters\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_arcadeMercenaries\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_athleticCliffDivers\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_balloon\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_barracksFire\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_barracksWorkout\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_beyondRepair\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "contracts-11": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_bookishTriviaNight\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_bumpInTheNight\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_canWeKeepIt\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_carlylesBid\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_catapult\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_continuingEducation\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_corridorBocce\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_couplingunit\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_criminalTies\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "contracts-12": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_crowdedSpace\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_deadPool\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_demoralized\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_dependableInformant\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_disciplinaryMeasures\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_dishonestInformant\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_disturbingBehavior\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_doctorsOrders\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_doctorsOrders_Commander\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_drawStraws\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "contracts-13": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_dubiousIntentions\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_everybodyWins\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_fence_Pirate1_ac2\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_fence_Pirate2_srm4\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_fence_Pirate3_largeLaser\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_festivalOfLights\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_firstHarvest\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_goodAsNew\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_happyBirthday\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_hellOfADeal\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "contracts-14": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_honestLetters\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_hotTempers\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_hullIntegrity\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_inventoryShrinkage\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_ironMandible\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_jinxedAlbatross\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_knockedDown_Freelancer\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_knockedDown_Gladiator\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_knockedDown_Mercenary\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_knockedDown_MerchantGuard\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_knockedDown_Pirate\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_knockedDown_Soldier\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "contracts-15": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_leadershipMoment\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_librarySelfImprovement\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_lightInDarkness\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_localFood\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_localWildlife\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_meleeMechBay\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_memorialWall\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_merchantMedResearch\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "contracts-16": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_minorInfraction\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_moonlighting_LRM15\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_moonlighting_MedLaser\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_moonlighting_ac5\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_noGuarantees\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_noTechsNoMechs\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "contracts-17": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_nobleBonds\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_nobleClassWarfare\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_notALatrine\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_odeToTheXO\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_phantomPain\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_pickUpGame\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_plague_Rescue\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_plague_ShoreLeave1\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "contracts-18": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_plague_ShoreLeave2\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_powerInterlock\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_readingCorridor\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_rebelliousBloodsport\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_researchMurad\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_researchSumire\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_resignation\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_rustgut\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_smugglingOnPurpose\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_solarisChampionship\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_spotlight_behemoth\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_spotlight_dekker\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_spotlight_glitch\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "contracts-19": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_spotlight_medusa\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_strictlyBusiness\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_targetPractice\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_testProgram\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_theCompetition\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_tooManyRadishes\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_tournament\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_triage\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_unauthorizedStargazing\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_warning_criminal\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "contracts-20": {
+  "wave": 2,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/event_mw_wealthyWeddings\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/forcedevent_leopard_extension\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/forcedevent_leopard_lastCup\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/forcedevent_leopard_mechtechExpenses\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/forcedevent_leopard_medicalExpenses\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: (?!.*dialogueContent)at=events/forcedevent_leopard_shakedown\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "dialogue-01": {
+  "wave": 3,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=cast/"
+   }
+  ]
+ },
+ "dialogue-02": {
+  "wave": 3,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/ambushconvoy/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/assassinate/"
+   }
+  ]
+ },
+ "dialogue-03": {
+  "wave": 3,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/capturebase/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/captureescort/"
+   }
+  ]
+ },
+ "dialogue-04": {
+  "wave": 3,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/defendbase/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/destroybase/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/escortsingle/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/firemission/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/itrom_attack/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/itrom_defense/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/panzyr_attack/"
+   }
+  ]
+ },
+ "dialogue-05": {
+  "wave": 3,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/panzyr_defense/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/rescue/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/simplebattle/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/smithon_attack/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/smithon_defense/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/story_1a_retreat/"
+   }
+  ]
+ },
+ "dialogue-06": {
+  "wave": 3,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/story_1b_retreat/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/story_2_threeyearslater/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/story_3_axylus/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/story_4_liberationofweldry/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/story_5_servedcold/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/story_6a_treasuretrove/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/story_6b_treasuretrove/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/story_7_gunboatdiplomacy/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/story_8_locura/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/story_9_downfall/"
+   }
+  ]
+ },
+ "dialogue-07": {
+  "wave": 3,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/threewaybattle/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contracts/tyrlon_attack/"
+   }
+  ]
+ },
+ "dialogue-08": {
+  "wave": 3,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=conversations/"
+   }
+  ]
+ },
+ "descriptions-01": {
+  "wave": 4,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=abilities/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=ammunition/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=ammunitionBox/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=chassis/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Biome/"
+   }
+  ]
+ },
+ "descriptions-02": {
+  "wave": 4,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Campaign/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/CareerMode/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Components/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Contract/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Flashpoint/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/Lore2ndStIvesLancers\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/Lore3rdSuccessionWar\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/Lore4thRegulanHussars\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreADV\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreAdrar\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreAdvancedElectronicCodebreaker\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreAgroMech\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreAlrakisTigerfalcon\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreAmarisCivilWar\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreAmbergristVermouth\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreAnaMariaCentrella\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreAncestralBlackjack\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreAppian\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreArchangel\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreAresConventions\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreAtreus\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreAuriganCoalition\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreAuriganReach\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreAvengingAngel\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreAxylus\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreBCD\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreBattleMech\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreBaumannGroup\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreBlackEarth\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreBlackMarket\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreBlackReaper\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreBlackWidow\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreBloodChit\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreBobKurita\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreBountyHunter\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreBrainwashing\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreBrockway\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreCBill\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreCOIL\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreCalamarGigante\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "descriptions-03": {
+  "wave": 4,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreCaretaker\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreCassilda\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreCatapultSiegeWarfare\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreCavalor\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreCetiHussars\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreCholobara\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreChu\\-i\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreClausewitz\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreCluffsStand\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreComStarExplorerCorps\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreComStarPrecentor\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreComStar\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreConcordatConstabulary\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreConsecutiveDrops\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreCoromodir\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreCrowleyLizardCow\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreDEST\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreDMI\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreDameCatherine\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreDarEsSalaam\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreDavionAFFS\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreDeepPeriphery\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreDefendersOfAndurien\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreDobrev\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreDuchyOfAndurien\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreDuchyOfTamarind\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreDukeBisset\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreECM\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreEVA\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreElectra\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreEmeraldDawn\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreFagerholm\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreFedRats\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreFirstSuccessionWar\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreFivePillars\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreFjaldr\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreFlintoft\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreFoundingCouncil\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreFoundingHouses\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreGakuHironaka\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreGaledonRegulars\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreGaussRifle\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreGauthier\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreGeorgeSPatton\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreGlentworth\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreGrayDeath\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreGraysonCarlyle\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreGreatHouses\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreGyroslugRifle\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHPG\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHanseDavion\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHassidRicol\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHatchetman\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHellespontIndustrials\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHerotitus\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHighLordTamatiArano\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHolovidMercenaries\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHolovidMinorMajor\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHolovidRoughRiders\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHolovidTheFringers\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHolovidUnderCover\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHouseArano\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHouseCalderon\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHouseCentrella\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHouseDavion\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHouseDecimis\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHouseEspinosa\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHouseGallas\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHouseHumphreys\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHouseKarosas\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHouseKurita\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHouseLiao\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHouseMadeira\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHouseMarik\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHouseParata\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreHouseSteiner\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreISF\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreIndependence\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreInnerSphere\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreIronwood\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreIvoryCrescent\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreJumpShip\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreJustinAllard\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreKameaArano\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreKapteynAccords\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreKellHounds\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreKerensky\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreKittery\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreKorvinDoctrine\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreKuritaDCMS\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreKyallaCentrella\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreLadyDeath\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreLeamington\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreLeimbachRing\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreLiaoCBS\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreLiaoCCAF\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreLiaoReserves\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreLindsay\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreLocura\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreLongTom\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreLorixOrder\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreLosTech\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreLouthAbbey\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreLuthien\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreLycombDavionIntroTech\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreLyreton\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreMIIO\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreMIM\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreMagistracyOfCanopus\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreMagorian\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreMantharaka\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreMarikFWLM\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreMaskirovka\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreMastiff\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreMaximilianLiao\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreMechWarrior\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreMemoryCore\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreMenLojowen\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreMendham\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreMercenaryReviewBoard\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreMinistryOfTheCourt\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "descriptions-04": {
+  "wave": 4,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreMisjump\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreMitchel\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreModerbjorn\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreMorganKell\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreNAIS\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreNewAvalon\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreNewJakobstad\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreNewVallis\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreNewVulci\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreNewWalland\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreNonDiz\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreOperationLiberation\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreOutpostCastle\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LorePatrickKell\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LorePeatedScotch\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LorePerditionMassacre\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LorePerdition\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LorePilpala\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LorePiratePoint\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LorePrefectorateGuard\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LorePrimus\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LorePulseLaser\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreQuillarFizz\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreQuillar\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreRasalhague\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreRedRoost\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreRegulus\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreRepDavion\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreRepJustinAllard\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreRepKurita\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreRepLiao\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreRepLocals\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreRepMarik\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreRepPirates\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreRepSteiner\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreRepTaurian\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreRimwardPeriphery\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreRodigo\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreRumbleSeat\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreSAFE\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreSAgZone\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreSLDF\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreSamuelDannen\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreSarnaMandate\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreSchwartzSystem\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreShantiaProvince\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreShaulKhala\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreShaunavon\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreSho\\-sa\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreSianUniversity\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreSian\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreSolaris7\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreStLoris\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreStMarinusHouse\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreStarLeague\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreStasisTube\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreStefanAmaris\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreSteinerLCAF\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreSuccessionWars\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreSuccessorState\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreTBI\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreTCE\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreTMI\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreTarragona\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreTaurus\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreTerra\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreTest9\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreTharkad\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreThomasCalderon\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreTimbiquiDark\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreTortugaDominion\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreTripleFBurger\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreTsubaki\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreViribium\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreWarShip\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreYance\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreYardship\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreYorii\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreYorinagaKurita\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreYuris\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/LoreZaniah\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Lore/Lore_Template\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/MechData/"
+   }
+  ]
+ },
+ "descriptions-05": {
+  "wave": 4,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/MechWarriorData/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/MissingBaseDescriptionDef\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Reputation/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Settings/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=descriptions/Tutorials/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=upgrades/"
+   }
+  ]
+ },
+ "descriptions-06": {
+  "wave": 4,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=weapon/"
+   }
+  ]
+ },
+ "lore-01": {
+  "wave": 5,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=buildings/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=factions/"
+   }
+  ]
+ },
+ "lore-02": {
+  "wave": 5,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=lifepathNode/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=milestones/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_QAPilot\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Alaniz\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Archangel\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Bemis\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Bixby\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Bono\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Bozeman\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Brewer\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Brown\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Chang\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Chik\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "lore-03": {
+  "wave": 5,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Chung\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Cleary\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Cochran\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Coldfire\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Doochin\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Doukas\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Durand\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Eck\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Eckett\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Endorf\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_FalkA\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_FalkM\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Fielding\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Gibbs\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Godfrey\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Hardie\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Helterbran\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Heysek\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Hill\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Hollabaugh\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Hording\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Hurtado\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Huxley\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Jakes\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Kaufman\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Keane\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Korwes\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Lemos\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "lore-04": {
+  "wave": 5,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Leone\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Liebenow\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Loving\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Metke\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Miller\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Mzik\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Nick\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Oliver\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Piazza\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Reichenbach\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Reidinger\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Reinke\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Ryia\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Saada\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Sampson\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Shields\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Shvartz\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Slipais\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_SwansonA\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_SwansonK\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Test9\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Thomas\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Voyls\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_backer_Woods\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_commander_temp\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_cvs1_bullhorn\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_cvs2_gargoyle\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_cvs3_myrmidon\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_cvs4_overload\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_d10_brawler\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_d10_flanker\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_d10_gladiator\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_d10_lancer\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_d10_outrider\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_d10_recon\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_d10_scout\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_d10_sentinel\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_d10_sharpshooter\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_d10_skirmisher\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_d10_striker\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_d10_vanguard\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_d3_turret\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_defaultAITest\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_default\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_fp_BH_Geist\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_fp_BH_Geronimo\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_fp_BH_Reaper\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_fp_BW_ColinMaclaren\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_fp_BW_JohnHayes\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_fp_BW_LynnSheridan\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_fp_BW_NatashaKerensky\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_fp_Diva\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_fp_KellHound_2\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_fp_StienerLongRoad\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_fp_Valravn\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_fp_steelBeast\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_kbeta_apex\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_kbeta_arclight\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_kbeta_buckshot\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_kbeta_bulwark\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_kbeta_kraken\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_kbeta_mockingbird\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_kbeta_ozone\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_kbeta_paradise\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_kbeta_showboat\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_kbeta_sumo\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_kbeta_wildfire\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_kbeta_witness\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_privbeta_gn2\\-pl2\\-gt2\\-tc2\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_ronin_Apex\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_ronin_Arclight\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_ronin_Blockade\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "lore-05": {
+  "wave": 5,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_ronin_Buckshot\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_ronin_Kraken\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_ronin_Mockingbird\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_ronin_Ozone\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_ronin_Paradise\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_ronin_Showboat\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_ronin_Squire\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_ronin_Sumo\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_ronin_Wildfire\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_ronin_Witness\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_sim_starter_behemoth\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_sim_starter_dekker\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_sim_starter_glitch\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_sim_starter_medusa\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_story_KameaGuard1\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_story_KameaGuard2\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_story_KameaGuard3\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_story_SLDFAI\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_story_mastiff\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_testDummy\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_uw_siegebreaker2\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_uw_siegebreaker3\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_uw_siegebreaker4\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=pilot/pilot_vehicle_noncom\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Addasar\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Aea\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Ahlat\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Alamagordo\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Alexandria\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Alloway\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Amu\\ Darya\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Andarmax\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Antias\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Aomen\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Appian\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Aquagea\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Argos\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Arn\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Artru\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Athna\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_AtreusPrime\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Balawat\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Barras\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Bellatrix\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Bellerophon\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Bergtatt\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Bonavista\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Borden\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Borka\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Bringdam\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Brinton\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Brisbane\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Brixtana\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Bromhead\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_BuenosAires\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Burton\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Calseraigne\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Camadeirre\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Carmichael\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Carthage\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Cassilda\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_CatesHold\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Chandan\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Chennai\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Claybrooke\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Columbine\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Corodiz\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Coromodir\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Cursa\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Cygnus\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_DainmarMajoris\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Daol\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Decatur\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_DesolatePlains\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Detroit\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Dicon\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Diefenbaker\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Drozan\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Dunianshire\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_EarlyDawn\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Egress\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Enkra\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Espia\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Fjaldr\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_FlannagansNebulea\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Flaum\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Frazer\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Fronc\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Gangtok\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Gardnaus\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Gaucin\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Ghorepani\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Girondas\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Granera\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Guldra\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Gunthar\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Hastur\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Heliat\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Hellespont\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Hibuarius\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Horsham\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Hurik\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Ichlangis\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Illiushin\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Independence\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Ingonish\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Ishtar\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Itica\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Itrom\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Itsbur\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Jacomarle\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Jacson\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Jamestown\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_JansensHold\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Joppa\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Katinka\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Katla\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Kazu\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Kern\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Kimi\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Krakatau\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Kurvasa\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Laconis\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "lore-06": {
+  "wave": 5,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Landmark\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Larsha\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Leyda\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Linhauiguan\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_LiusMemory\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Lochmantle\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Lopez\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Lucknow\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Lurgatan\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Lyreton\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_MacLeodsLand\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Madras\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Maia\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Maldive\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Mandalas\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Mangzhangdian\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Mantharaka\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Mattisskogen\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Mazdru\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_McevansSacrifice\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Mechdur\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Menke\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Merdal\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Merlin\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Merope\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Midale\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Midthun\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Mithron\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Muridox\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Murris\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Mystras\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Naryn\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_NewAbilene\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_NewGanymede\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_NewRoland\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_NewVandenburg\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Niomede\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Nukus\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Ordino\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Paf\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Panzyr\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Payia\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Pell\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Peratallada\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Pernik\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Pilpala\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Pinard\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Piriapolis\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Pojos\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Portland\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Principia\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Prix\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Pyrrhus\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Qalzi\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Quimberton\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_RegisRoost\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Renfield\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Renown\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Repulse\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Ridgebrook\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Robsart\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Rockwellawan\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Rollis\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Rosendal\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_RyansFate\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Ryerson\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Sacromonte\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Sadurni\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Salardion\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Samantha\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Sax\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Segerica\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Shaun\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Shiba\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Sindalin\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Smithon\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Spencer\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Spitz\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Sunnywood\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Taurus\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Thurrock\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Tincalunas\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Tiverton\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Turin\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Tyrlon\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Umgard\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Untran\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_UrCruinne\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Valdives\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Vard\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Victoria\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Villanueva\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Ward\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Weitinger\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Weldry\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Wrentham\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_WyethsGlory\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_XantheIII\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Zangul\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Zanzibar\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=starsystem/starsystemdef_Zathras\\.json(?=#|;|\\s|$)"
+   }
+  ]
+ },
+ "asset-rest-01": {
+  "wave": 6,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1053\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1071\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1178\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1189\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1289\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1468\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1520\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1536\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1547\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1556\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1587\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1588\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1603\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1613\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1644\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1646\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1661\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1683\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1784\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1971\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@1982\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2023\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2032\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2058\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2138\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2144\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2185\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2214\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2262\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2336\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2339\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2427\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2510\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2547\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2579\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2615\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2634\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2641\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2667\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2748\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@2887\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@3028\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@3130\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@3270\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@3380\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@3723\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@3809\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@3985\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@3987\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@4484\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@4654\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@4748\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@4756\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@4897\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@4972\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@4984\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@5003\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@5066\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@5086\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@5246\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@5310\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@5555\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@6244\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@6308\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@7763\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@8021\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@8233\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@8234\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@8409\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@8651\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@8902\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@9004\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@9198\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@9210\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@9288\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@9293\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@9795\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=globalgamemanagers\\.assets@9801\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level0@1853\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level0@1876\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level10@1251\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level10@3345\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level11@5247\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level11@5248\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level11@5255\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level12@4389\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level13@1006\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level13@1027\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level13@1028\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level13@1029\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level13@1030\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level13@1031\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level13@1032\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level13@1033\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level13@1034\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level13@9972\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level14@6100\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level15@4696\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level16@4669\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level16@4673\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level17@5958\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level17@5967\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level18@4791\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level20@6077\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level20@6088\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level21@4289\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level21@4296\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level21@4298\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level21@4299\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level21@4326\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level22@5852\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level22@5898\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level23@7261\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level24@4984\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level25@7940\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level25@8145\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level25@8155\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level26@8398\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level27@8489\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level28@6949\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level29@7432\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level30@7369\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level30@7374\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level31@6042\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level32@7253\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level33@4871\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level34@9187\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level35@6780\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level36@4555\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level37@3981\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level38@6778\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level38@6813\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level38@6815\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level39@5114\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level40@6907\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level41@9566\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level41@9570\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level43@1269\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level44@9070\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level45@1196\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level46@7672\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level47@4113\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level48@3717\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level49@2395\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level50@8744\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level50@8766\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level51@7371\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level53@8241\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level54@7989\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level55@2419\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level56@1849\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level57@3099\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level57@3109\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level58@6322\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level59@6767\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level60@5823\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level61@6420\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level62@5412\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level63@1092\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level63@1093\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level63@1095\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level63@2861\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level64@2375\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level65@4792\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level66@4439\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level67@2787\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level68@2987\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level68@8319\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level68@8332\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level69@6013\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level69@6016\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level6@1755\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level6@1770\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level70@6332\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level71@7834\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level72@5331\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level74@9670\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level74@9750\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level75@1202\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level76@4402\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level77@3110\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level78@4210\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level79@4165\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level80@5277\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level81@4769\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level82@3149\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level83@4442\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level84@1839\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level85@1698\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level86@1392\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level87@2220\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level87@2221\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level88@1794\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level88@1833\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level88@3401\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level89@1836\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level8@5061\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level90@1524\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level91@6306\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level92@5274\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level92@5290\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level92@5295\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level92@5327\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level93@8051\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=level9@3689\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1014\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1090\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1284\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1405\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1407\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1471\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1472\\d*(?=;|\\s|$)"
+   }
+  ]
+ },
+ "asset-rest-02": {
+  "wave": 6,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1473\\d*(?=;|\\s|$)"
+   }
+  ]
+ },
+ "asset-rest-03": {
+  "wave": 6,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1474\\d*(?=;|\\s|$)"
+   }
+  ]
+ },
+ "asset-rest-04": {
+  "wave": 6,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1475\\d*(?=;|\\s|$)"
+   }
+  ]
+ },
+ "asset-rest-05": {
+  "wave": 6,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1476\\d*(?=;|\\s|$)"
+   }
+  ]
+ },
+ "asset-rest-06": {
+  "wave": 6,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1477\\d*(?=;|\\s|$)"
+   }
+  ]
+ },
+ "asset-rest-07": {
+  "wave": 6,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1478\\d*(?=;|\\s|$)"
+   }
+  ]
+ },
+ "asset-rest-08": {
+  "wave": 6,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1479\\d*(?=;|\\s|$)"
+   }
+  ]
+ },
+ "asset-rest-09": {
+  "wave": 6,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1480\\d*(?=;|\\s|$)"
+   }
+  ]
+ },
+ "asset-rest-10": {
+  "wave": 6,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1481\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@14820\\d*(?=;|\\s|$)"
+   }
+  ]
+ },
+ "asset-rest-11": {
+  "wave": 6,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@14821\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@14822\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@14823\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@14824\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@14825\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@14826\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@14827\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@14828\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@14829\\d*(?=;|\\s|$)"
+   }
+  ]
+ },
+ "asset-rest-12": {
+  "wave": 6,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1483\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1484\\d*(?=;|\\s|$)"
+   }
+  ]
+ },
+ "asset-rest-13": {
+  "wave": 6,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1485\\d*(?=;|\\s|$)"
+   }
+  ]
+ },
+ "asset-rest-14": {
+  "wave": 6,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1486\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1487\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1547\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1553\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1558\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1623\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1638\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1643\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1647\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1654\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1680\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1795\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1922\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1923\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1927\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1928\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1929\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1930\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1931\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1932\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1933\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1934\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1935\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1937\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1938\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1939\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1940\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1941\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1942\\d*(?=;|\\s|$)"
+   }
+  ]
+ },
+ "asset-rest-15": {
+  "wave": 6,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1943\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1946\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1947\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1948\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1949\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1950\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1951\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1953\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1954\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1955\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1956\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1957\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1958\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1962\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1963\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1964\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1965\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1966\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1967\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1968\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1969\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1970\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1971\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1972\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1973\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1974\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1975\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1976\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1977\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1978\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1979\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1980\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1982\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1983\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1984\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1985\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1986\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1987\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1989\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1990\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1991\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1992\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1993\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1994\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1995\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1996\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1997\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1998\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@1999\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2000\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2001\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2002\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2003\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2004\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2005\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2008\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2009\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2010\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2011\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2013\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2014\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2015\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2016\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2017\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2018\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2019\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2020\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2021\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2022\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2023\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2024\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2025\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2026\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2027\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2028\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2029\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2030\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2031\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2032\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2033\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2034\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2035\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2036\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2037\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2038\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2039\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2040\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2041\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2042\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2043\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2044\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2045\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2047\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2049\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2050\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2051\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2052\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2054\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2055\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2056\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2057\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2059\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2062\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2063\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2064\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2065\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2066\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2068\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2070\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2071\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2072\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2073\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2074\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2075\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2077\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2078\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2081\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2083\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2084\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2085\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2086\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2087\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2088\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2090\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2092\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2094\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2095\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2096\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2097\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2098\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2099\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2100\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2101\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2102\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2103\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2104\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2105\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2106\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2107\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2108\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2109\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2110\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2111\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2112\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2113\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2114\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2115\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2116\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2117\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2119\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2122\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2123\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2124\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2125\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2126\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2127\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2128\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2129\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2130\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2132\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2135\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2136\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2139\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2140\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2141\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2142\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2144\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2145\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2146\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2149\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2150\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2151\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2152\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2153\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2154\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2155\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2156\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2157\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2159\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2160\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2161\\d*(?=;|\\s|$)"
+   }
+  ]
+ },
+ "asset-rest-16": {
+  "wave": 6,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2162\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2164\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2165\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2167\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2168\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2170\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2173\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2174\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2175\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2176\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2177\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2178\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2180\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2181\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2183\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2185\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2186\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2187\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2188\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2189\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2191\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2192\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2193\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2194\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2195\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2196\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2197\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2198\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2199\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2201\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2204\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2205\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2206\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2207\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2209\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2210\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2213\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2215\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2216\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2217\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2219\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2221\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2222\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2223\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2224\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2226\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2228\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2229\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2230\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2231\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2236\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2237\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2239\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2241\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2242\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2243\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2244\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2245\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2246\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2247\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2249\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2250\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2251\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2252\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2253\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2254\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2255\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2256\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2257\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2258\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2259\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2260\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2263\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2264\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2265\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2268\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2270\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2272\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2273\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2275\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2277\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2278\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2279\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2280\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2281\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2282\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2283\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2284\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2286\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2288\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2290\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2291\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2292\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2293\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2294\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2295\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2297\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2300\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2301\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2302\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2303\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2304\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2308\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2310\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2311\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2312\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2313\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2314\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2316\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2317\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2318\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2319\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2320\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2322\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2323\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2324\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2325\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2326\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2327\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2333\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2336\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2337\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2338\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2341\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2344\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2345\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2346\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2347\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2348\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2349\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2350\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2352\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2353\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2355\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2356\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2359\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2360\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2363\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2365\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2366\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2369\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2370\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2373\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2375\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2376\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2377\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2378\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2379\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2381\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2382\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2386\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2387\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2388\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2389\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2390\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2391\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2392\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2393\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2395\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2396\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2397\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2398\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2401\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2404\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2406\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2407\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2409\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2410\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2411\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2414\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2416\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2417\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2420\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2422\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2424\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2425\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2426\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2429\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2430\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2432\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2434\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2435\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2437\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2439\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2442\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2445\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2446\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2447\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2449\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2450\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2451\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2452\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2455\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2456\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2457\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2459\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2460\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2462\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2464\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2467\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2469\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2470\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2473\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2476\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2477\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2480\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2483\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2485\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2486\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2490\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2491\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2492\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2493\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2495\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2496\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2498\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2501\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2502\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2503\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2505\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2508\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2509\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2511\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2514\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2518\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2519\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2523\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2524\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2527\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2530\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2535\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2536\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2538\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2539\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2540\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2543\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2544\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2545\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2547\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2548\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2549\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2550\\d*(?=;|\\s|$)"
+   }
+  ]
+ },
+ "asset-rest-17": {
+  "wave": 6,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2551\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2555\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2556\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2558\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2561\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2565\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2566\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2567\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2568\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2570\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2571\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2572\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2575\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2577\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2580\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2584\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2586\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2591\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2593\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2594\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2596\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2597\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2598\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2604\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2606\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2608\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2609\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2614\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2615\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2617\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2619\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2623\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2625\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2626\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2629\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2630\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2632\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2633\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2634\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2635\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2637\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2638\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2640\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2642\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2644\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2647\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2649\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2655\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2658\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2662\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2666\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2668\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2670\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2672\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2675\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2676\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2678\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2680\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2681\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2683\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2684\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2687\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2690\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2691\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2693\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2694\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2698\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2702\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2705\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2706\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2707\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2709\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2710\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2711\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2712\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2715\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2725\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2726\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2727\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2738\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2740\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2742\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2743\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2745\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2748\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2749\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2750\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2753\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2755\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2759\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2760\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2763\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2764\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2765\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2770\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2771\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2772\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2778\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2782\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2784\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2785\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2790\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2796\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2798\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2800\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2803\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2804\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2807\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2811\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2812\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2817\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2825\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2828\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2829\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2830\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2836\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2838\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2841\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2845\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2850\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2858\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@2860\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@3196\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@4526\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@4542\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@4730\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@5497\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=resources\\.assets@5711\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets0\\.assets@1073\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets0\\.assets@2681\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets0\\.assets@4689\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets0\\.assets@4702\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets0\\.assets@4703\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets0\\.assets@4704\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets0\\.assets@4712\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets0\\.assets@4713\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets0\\.assets@5170\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@1504\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@1674\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@1957\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@2579\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@3599\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@4662\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@4931\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@6774\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@8052\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@8120\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@8193\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@8231\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@8407\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@8586\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@8637\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@8642\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@8651\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@8658\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@8723\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@8729\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@8827\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@8857\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@8923\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@8994\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@9020\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets10\\.assets@9054\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets11\\.assets@4289\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets12\\.assets@5133\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets12\\.assets@5982\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets13\\.assets@1237\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets13\\.assets@1239\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets13\\.assets@1243\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets13\\.assets@1288\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets13\\.assets@1289\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets13\\.assets@1293\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets13\\.assets@1316\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets13\\.assets@1557\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets13\\.assets@2654\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets13\\.assets@4169\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets13\\.assets@9378\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets13\\.assets@9862\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets14\\.assets@4539\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets18\\.assets@5284\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets18\\.assets@5320\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets20\\.assets@4768\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets20\\.assets@5430\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets23\\.assets@1059\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets23\\.assets@1112\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets23\\.assets@1129\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets23\\.assets@1237\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets23\\.assets@1294\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets23\\.assets@6273\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets23\\.assets@6429\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets23\\.assets@8316\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets24\\.assets@3475\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets32\\.assets@5657\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets32\\.assets@6579\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets35\\.assets@1614\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets35\\.assets@5253\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets35\\.assets@8166\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets35\\.assets@8172\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets35\\.assets@8180\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets35\\.assets@8300\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets35\\.assets@8558\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets36\\.assets@4314\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets38\\.assets@4419\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets3\\.assets@2177\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets3\\.assets@2242\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets3\\.assets@2332\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets40\\.assets@7156\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets40\\.assets@7938\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets40\\.assets@8081\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets40\\.assets@8511\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets40\\.assets@8617\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets40\\.assets@8638\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets44\\.assets@1177\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets45\\.assets@1059\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets45\\.assets@1376\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets45\\.assets@1467\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets45\\.assets@4794\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets46\\.assets@1066\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets50\\.assets@3216\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets59\\.assets@7000\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets59\\.assets@7607\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets63\\.assets@4149\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets69\\.assets@2860\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets73\\.assets@9722\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets76\\.assets@2444\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets84\\.assets@1036\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets84\\.assets@1394\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets84\\.assets@1633\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets84\\.assets@4548\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets84\\.assets@4927\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets92\\.assets@3836\\d*(?=;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=sharedassets9\\.assets@8149\\d*(?=;|\\s|$)"
+   }
+  ]
+ },
+ "de-only-01": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:[3-9]|1[0-8])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-02": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:1[8-9]|2\\d{1}|3[0-4])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-03": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:3[4-9]|4\\d{1}|5[0-1])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-04": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:5[1-9]|6\\d{1}|7[0-4])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-05": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:7[5-9]|8\\d{1}|9\\d{1}|100)(?: —|$)"
+   }
+  ]
+ },
+ "de-only-06": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:10\\d{1}|11\\d{1}|12[0-3])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-07": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:12[3-9]|13\\d{1}|14[0-4])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-08": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:14[4-9]|15\\d{1}|16[0-6])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-09": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:16[6-9]|17\\d{1}|18[0-5])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-10": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:18[5-9]|19\\d{1}|20[0-1])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-11": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:20[1-9]|21\\d{1}|220)(?: —|$)"
+   }
+  ]
+ },
+ "de-only-12": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:22\\d{1}|23\\d{1})(?: —|$)"
+   }
+  ]
+ },
+ "de-only-13": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:239|24\\d{1}|25[0-7])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-14": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:25[7-9]|26\\d{1}|27[0-3])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-15": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:27[4-9]|28\\d{1}|29[0-4])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-16": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:29[4-9]|30\\d{1}|31[0-1])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-17": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:31[1-9]|32[0-7])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-18": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:32[7-9]|33\\d{1}|34[0-3])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-19": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:34[3-9]|35\\d{1}|36[0-4])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-20": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:36[4-9]|37\\d{1}|38[0-3])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-21": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:38[3-9]|39\\d{1}|400)(?: —|$)"
+   }
+  ]
+ },
+ "de-only-22": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:40\\d{1}|41\\d{1}|42[0-3])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-23": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:42[4-9]|43\\d{1}|44[0-8])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-24": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:449|45\\d{1}|46\\d{1}|47\\d{1}|48[0-1])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-25": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:48[1-9]|49\\d{1}|50\\d{1}|51[0-7])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-26": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:519|52\\d{1}|53\\d{1}|54\\d{1}|55\\d{1}|56\\d{1}|57[0-7])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-27": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:57[8-9]|58\\d{1}|59\\d{1}|60\\d{1}|61\\d{1}|62\\d{1}|63\\d{1}|64\\d{1}|65\\d{1}|66\\d{1}|67[0-1])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-28": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:67[2-9]|68\\d{1}|69\\d{1}|7\\d{2}|80\\d{1}|81\\d{1}|82\\d{1}|83\\d{1}|84[0-4])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-29": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:84[4-9]|85\\d{1}|86\\d{1}|87\\d{1}|88\\d{1}|89\\d{1}|9\\d{2}|100\\d{1}|101\\d{1}|102\\d{1}|103\\d{1}|104\\d{1}|105[0-1])(?: —|$)"
+   }
+  ]
+ },
+ "de-only-30": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:109[1-9]|11\\d{2}|12\\d{2}|13\\d{2}|14\\d{2}|15\\d{2}|16\\d{2})(?: —|$)"
+   }
+  ]
+ },
+ "de-only-31": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: use=de; len=(?:173[6-9]|174\\d{1}|175\\d{1}|176\\d{1}|177\\d{1}|178\\d{1}|179\\d{1}|18\\d{2}|19\\d{2}|20\\d{2}|21\\d{2}|22\\d{2}|23\\d{2}|240\\d{1}|241\\d{1}|242\\d{1}|243\\d{1}|244[0-2])(?: —|$)"
+   }
+  ]
+ },
+ "rest-01": {
+  "wave": 7,
+  "rows": [
+   {
+    "table": "strings",
+    "note": "^ctx: at=PortaitSettingsTest\\.json(?=#|;|\\s|$)"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=audioevents/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=backgroundQuestions/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=behaviorVariables/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=contentpacks/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=debug/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=dropship/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=flashpoints/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=genderedoptions/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=hardpoints/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=jumpjets/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=lance/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=loggerProfile/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=mech/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=regions/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=shops/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=tags/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=turretChassis/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=turrets/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=vehicle/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: at=vehicleChassis/"
+   },
+   {
+    "table": "strings",
+    "note": "^ctx: use=; len=0(?: —|$)"
+   }
+  ]
+ }
+}

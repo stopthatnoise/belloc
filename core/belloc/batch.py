@@ -15,6 +15,9 @@
   tables — рэгулярны выраз па імені табліцы (re.search) замест table: {"tables": "^101/(?!Line$)"}.
   slice — [ад, да] па нумары радка ў табліцы (як у Python, да — не ўключна; null — да канца):
   вялікую сцэну без чытэльных ключоў (ключ — лічбавы ID) дзеліць на кавалкі па парадку.
+  order — "hash": перад slice радкі табліцы ўпарадкоўваюцца па ключы (у BATTLETECH ключ —
+  хэш); так `slice: [0, 300]` дае выпадковы зрэз корпуса (проба), а не першыя радкі CSV,
+  дзе спачатку ўсе EN, потым DE (гл. tables.sync).
   Радок належыць ПЕРШАЙ пачцы (у парадку файла), якая яго ўзяла, — так
   «рэшта табліцы» апісваецца проста апошнім правілам без match.
 
@@ -73,7 +76,8 @@ def _signature(loc: Loc, rules: list[dict], table: str, r: dict):
     """Подпіс радка для пошуку паўтораў (або None — табліца не пад правілам)."""
     for i, rule in enumerate(rules):
         if tables.regex(rule["tables"], "_repeats").search(table):
-            sig = [r.get(f, "") for f in rule.get("by", [loc.source_lang])]
+            by = rule.get("by")
+            sig = [r.get(f, "") for f in by] if by else [tables.effective_text(loc, r)]
             if rule.get("note"):
                 m = tables.regex(rule["note"], "_repeats").search(r["note"])
                 sig += [g for g in m.groups() if g] if m else [r["note"]]
@@ -113,13 +117,16 @@ def assign(loc: Loc, repeats: dict | None = None, data: dict | None = None
             nt = tables.regex(rule["note"], name) if rule.get("note") else None
             lo, hi = rule.get("slice") or [None, None]
             for table in names:
-                for r in data[table][lo:hi]:
+                rows_in = data[table]
+                if rule.get("order") == "hash":
+                    rows_in = sorted(rows_in, key=lambda r: r["key"])
+                for r in rows_in[lo:hi]:
                     k = (table, r["key"])
                     if (k in claimed or (m and not m.search(r["key"])) or (x and x.search(r["key"]))
                             or (nt and not nt.search(r["note"]))):
                         continue
                     claimed.add(k)
-                    sig = _signature(loc, rules, table, r) if rules and r[loc.source_lang].strip() else None
+                    sig = _signature(loc, rules, table, r) if rules and tables.effective_text(loc, r).strip() else None
                     if sig is not None and sig in first:
                         repeats.setdefault(first[sig], []).append(k)
                         continue
@@ -128,7 +135,8 @@ def assign(loc: Loc, repeats: dict | None = None, data: dict | None = None
                     rows.append((table, r))
         out[name] = rows
     free = [(t, r["key"]) for t, rows in data.items() for r in rows
-            if (t, r["key"]) not in claimed and r[loc.source_lang].strip() and not r["bel"].strip()]
+            if (t, r["key"]) not in claimed and tables.effective_text(loc, r).strip()
+            and not r["bel"].strip()]
     return out, free
 
 
@@ -148,12 +156,13 @@ def status(loc: Loc):
     sp = spec(loc)
     print(f"  {'пачка':10} {'хваля':5} {'радкоў':>7} {'слоў':>6} {'зроблена':>9}  work/")
     for name, rows in batches.items():
-        need = [r for _, r in rows if r[loc.source_lang].strip()]
+        need = [r for _, r in rows if tables.effective_text(loc, r).strip()]
         done_main = sum(1 for r in need if r["bel"].strip())
-        w = sum(words(r[loc.source_lang]) for r in need if not r["bel"].strip())
+        w = sum(words(tables.effective_text(loc, r)) for r in need if not r["bel"].strip())
         work = ""
         if os.path.exists(work_path(loc, name)):
-            wr = [r for r in tables.read_csv(work_path(loc, name)) if r[loc.source_lang].strip()]
+            wr = [r for r in tables.read_csv(work_path(loc, name))
+                  if tables.effective_text(loc, r).strip()]
             work = f"{sum(1 for r in wr if r['bel'].strip())}/{len(wr)}"
         print(f"  {name:10} {sp[name].get('wave', ''):>5} {len(need):7} {w:6} {done_main:4}/{len(need):<4}  {work}")
     print(f"  радкоў без пачкі (неперакладзеных): {len(free)}"
@@ -171,7 +180,7 @@ def export(loc: Loc, names: list[str], force=False):
             continue
         rows = [{"table": t, **r} for t, r in batches[name]]
         tables.write_csv(path, rows, fields(loc))
-        todo = sum(1 for r in rows if r[loc.source_lang].strip() and not r["bel"].strip())
+        todo = sum(1 for r in rows if tables.effective_text(loc, r).strip() and not r["bel"].strip())
         print(f"{name}: {len(rows)} радкоў ({todo} перакладаць) → {path}")
 
 
@@ -190,12 +199,21 @@ def apply(loc: Loc, names: list[str], dry_run=False):
                 print(f"  {name}: {w['table']}/{w['key']} — няма ў translation, прапушчана")
                 skipped += 1
                 continue
-            if r[loc.source_lang] != w[loc.source_lang]:
+            if tables.auto_text(loc, r) != tables.auto_text(loc, w):
                 print(f"  {name}: {w['table']}/{w['key']} — арыгінал змяніўся, прапушчана")
                 skipped += 1
                 continue
-            if w["bel"] and (w["bel"], w["note"]) != (r["bel"], r["note"]):
-                r["bel"], r["note"] = w["bel"], w["note"]
+            note = w["note"]
+            lang = (w.get("src_lang") or "").strip()
+            if lang and lang != r.get("src_lang") and lang in tables.source_langs(loc):
+                # перакладзена не з асноўнай крыніцы (спрэчны выпадак) — пазнака ў note,
+                # каб такія радкі былі відныя ў рэпазіторыі асобным спісам
+                flag = f"крыніца: {lang}"
+                if flag not in [p.strip() for p in note.split(" | ")]:
+                    note = f"{flag} | {note}" if note else flag
+                r["src_lang"] = lang
+            if w["bel"] and (w["bel"], note) != (r["bel"], r["note"]):
+                r["bel"], r["note"] = w["bel"], note
                 touched.add(w["table"])
                 changed += 1
             if w["bel"]:
@@ -219,7 +237,7 @@ def pairs(loc: Loc, name: str) -> str:
     res, clash = {}, 0
     for w in read_work(loc, name):
         if w["bel"].strip():
-            src = w[loc.source_lang]
+            src = tables.effective_text(loc, w)
             if src in res and res[src] != w["bel"]:
                 clash += 1
                 continue

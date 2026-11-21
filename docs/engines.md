@@ -13,6 +13,7 @@
 | `idtech` | Indiana Jones and the Great Circle | `lang/strings` мовы, якую займае беларуская, у кантэйнеры `.resources` (id Tech 7): новыя даныя — у канец таго ж файла, хэшы FarmHash кантэйнера пералічваюцца |
 | `telltale` | The Wolf Among Us | `.landb` у `.ttarch2` → наборы-перавызначэнні BelLoc побач з архівамі гульні; бітмапавыя шрыфты, Lua, надпісы на тэкстурах |
 | `csv-folder` | Esoteric Ebb | гульня сама чытае папку мовы з CSV па ID — пішам сваю папку |
+| `battletech-csv` | BATTLETECH | плоская табліца `strings_<культура>.csv` (2 слупкі, `U+001F`, `\n`): наш тэкст — у калонку рускай мовы; крыніца па радку EN → DE |
 | `paradox` | (Crusader Kings III — праверана, перакладу няма) | `localization/replace/…` — толькі нашы `.yml` |
 
 Файлы гульні, якія мы перапісваем, захоўваюцца побач як `<файл>.orig`, а `<файл>.bel` —

@@ -211,7 +211,7 @@ def report(loc, out_md: str, examples: int = 5) -> int:
     stats = {}
     for table, trs in tables.load_all(loc).items():
         for r in trs:
-            src, bel = r[loc.source_lang], r["bel"]
+            src, bel = tables.effective_text(loc, r), r["bel"]
             if not src or not bel:
                 continue
             for e, vs, rx, qs in terms:

@@ -185,6 +185,14 @@
    "note": "",
    "checked": "2026-11-11"
   },
+  "en:Dhawan": {
+   "be": null,
+   "ru": null,
+   "desc": "Surname found in India",
+   "qid": "Q21493367",
+   "note": "",
+   "checked": "2026-11-20"
+  },
   "en:Egypt": {
    "be": "Егіпет",
    "ru": "Египет",
@@ -461,6 +469,15 @@
    "type": "ancient city, archaeological site, tell",
    "note": "",
    "checked": "2026-11-11"
+  },
+  "en:Okada": {
+   "be": null,
+   "ru": null,
+   "desc": "Surname list",
+   "qid": "Q47165952",
+   "type": "family name",
+   "note": "",
+   "checked": "2026-11-20"
   },
   "en:Passetto di Borgo": {
    "be": "Пасета",
