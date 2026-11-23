@@ -6,6 +6,8 @@ local/
 .venv/
 __pycache__/
 *.pyc
+*.egg-info/
+*.egg-link
 
 # зборка exe
 build/

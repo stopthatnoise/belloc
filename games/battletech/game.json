@@ -1,0 +1,21 @@
+{
+ "name": "BATTLETECH",
+ "engine": "battletech-csv",
+ "_about": "Unity 2018.4.2f1 (Mono), уласны пласт лакалізацыі HBS: тэкст — CSV у StreamingAssets/data/localization/strings_<культура>.csv. Беларуская — на месцы рускай (ru-RU). Крыніца па радку: англійская, дзе знойдзеная (source_lang), інакш нямецкая (fallback_lang); руская (hint_lang) — толькі для спрэчных выпадкаў. Ключ у CSV — гэта англійскі радок у нармалізаваным выглядзе, таму ў рэпазіторыі ключ — хэш. Ацэнка і доследы — RESEARCH.md.",
+ "steam_appid": 637090,
+ "source_lang": "en",
+ "fallback_lang": "de",
+ "hint_lang": "ru",
+ "credits": "Нейрапераклад: мадэль Claude (Anthropic). Кіраўнік праекта: Віталь Аляхновіч.",
+ "battletech_csv": {
+  "_about": "Палі рухавіка (дакументацыя — у docstring core/belloc/engines/battletech_csv/__init__.py, калі рухавік з'явіцца). Шляхі — адносна папкі гульні. Маніфест правіць не трэба: для CSV у ім ёсць запіс strings_ru-RU без хэша і бандла.",
+  "data_dir": "BattleTech_Data",
+  "csv_dir": "BattleTech_Data/StreamingAssets/data/localization",
+  "manifest": "BattleTech_Data/StreamingAssets/data/VersionManifest.csv",
+  "locale": "ru-RU",
+  "target": "ru",
+  "other_langs": ["de", "fr"],
+  "subtitles": "BattleTech_Data/StreamingAssets/Video/Subtitles",
+  "font_assets": ["resources.assets", "sharedassets0.assets"]
+ }
+}
