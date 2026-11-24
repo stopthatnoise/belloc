@@ -6,7 +6,7 @@
 
 | `engine` у game.json | гульні | як пераклад трапляе ў гульню |
 |---|---|---|
-| `unity-localization` | Silver Pines | пакет com.unity.localization: табліца мовы-падказкі ў Addressables-бандле перапісваецца нашым тэкстам; І/і/Ў/ў — у TMP-шрыфты |
+| `unity-localization` | Silver Pines, Zero Parades | пакет com.unity.localization: табліца мовы-падказкі ў Addressables-бандле перапісваецца нашым тэкстам (StringTable або адна маналітная табліца на ўсе радкі); І/і/Ў/ў — у TMP-шрыфты |
 | `unity-textasset-csv` | Pony Island | CSV-табліца ў TextAsset класічных `.assets`: слупок рускай ← наш тэкст; шрыфты, надпісы сцэн |
 | `unreal-locres` | Clair Obscur: Expedition 33, Dispatch | `.locres` з `.pak` → свой мод-пак у `~mods` з культурай, якую займае беларуская |
 | `glacier` | 007 First Light | LOCR/DLGE у `.rpkg` → свой `chunkNpatchM.rpkg` і `patchlevel` |
@@ -77,6 +77,10 @@ SHA-256 таго, што мы запісалі (`core/belloc/install/target.py`)
 
 - Перад першай праўкай праверыць CRC бандла ў каталогу Addressables: калі не 0,
   гульня патчаны бандл адкіне (`CRC Mismatch` у `Player.log`). Для `catalog.json`
-  `unity-localization` абнуляе CRC сам — поле `crc_catalog`;
-  `catalog.bin` пакуль не ўмеем.
+  `unity-localization` абнуляе CRC сам — поле `crc_catalog`; для бінарнага
+  `catalog.bin` — поле `crc_catalog_bin` разам з `hash_file` (md5 каталога, інакш
+  гульня возьме каталог са свайго кэша, дзе CRC яшчэ тыя).
+- `catalog.hash` у пастаўцы можа не супадаць з md5 свайго `catalog.bin` (бачылі ў
+  Zero Parades): гэта не памылка гульні, галоўнае — пісаць узгодненую пару, калі
+  сам каталог змяніўся.
 - Абнаўленне гульні ў Steam перазапісвае бандлы — `extract`, `sync`, `patch` нанова.

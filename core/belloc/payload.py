@@ -5,7 +5,8 @@
 
   schema        версія фармату, якую павінен разумець той, хто ставіць: 1 — базавы;
                 рухавік падымае яе, калі стары код прапусціў бы новае поле і
-                зламала б гульню (2 — unity-localization з crc_catalog). SCHEMA —
+                зламала б гульню (2 — unity-localization з crc_catalog; 3 — тое ж з
+                crc_catalog_bin/hash_file або з маналітнай табліцай). SCHEMA —
                 найбольшая версія, якую разумее гэты код
   engine        імя рухавіка ("engine" з game.json)
   game_id, game імя папкі ў games/ і назва гульні
@@ -31,7 +32,7 @@ import os
 from . import tables
 from .config import Loc
 
-SCHEMA = 2
+SCHEMA = 3
 
 
 def build_payload(loc: Loc, engine) -> dict:
