@@ -226,7 +226,7 @@ def idioms_report(loc, out_md: str, only_idioms=False) -> int:
             n_hits += len(hits)
             words = WORD.findall(_ru(ru))
             lines.append(f"### {table} / `{r['key']}`\n")
-            lines.append(f"- EN: {r[loc.source_lang]!r}")
+            lines.append(f"- EN: {tables.effective_text(loc, r)!r}")
             lines.append(f"- RU: {ru!r}")
             lines.append(f"- **BEL: {r['bel']!r}**" if r["bel"] else "- BEL: — (яшчэ не перакладзена)")
             for i, j, head, be, idiom in hits:

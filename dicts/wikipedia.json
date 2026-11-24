@@ -47,6 +47,16 @@
    "note": "",
    "checked": "2026-11-11"
   },
+  "en:Artemis": {
+   "be": "Артэміда",
+   "ru": "Артемида",
+   "desc": "Ancient Greek goddess",
+   "qid": "Q39503",
+   "type": "Greek deity, lunar deity, Olympian god",
+   "sex": "ж",
+   "note": "",
+   "checked": "2026-11-21"
+  },
   "en:Asháninka": {
    "be": null,
    "ru": "Ашанинка",
@@ -92,6 +102,16 @@
    "type": "art museum, room",
    "note": "",
    "checked": "2026-11-11"
+  },
+  "en:Carl von Clausewitz": {
+   "be": "Карл фон Клаўзевіц",
+   "ru": "Клаузевиц, Карл фон",
+   "desc": "Prussian military theorist (1780–1831)",
+   "qid": "Q76430",
+   "type": "human",
+   "sex": "м",
+   "note": "",
+   "checked": "2026-11-22"
   },
   "en:Casina Pio IV": {
    "be": null,
@@ -185,6 +205,14 @@
    "note": "",
    "checked": "2026-11-11"
   },
+  "en:Dhawan": {
+   "be": null,
+   "ru": null,
+   "desc": "Surname found in India",
+   "qid": "Q21493367",
+   "note": "",
+   "checked": "2026-11-20"
+  },
   "en:Egypt": {
    "be": "Егіпет",
    "ru": "Египет",
@@ -240,6 +268,16 @@
    "type": "garden",
    "note": "",
    "checked": "2026-11-11"
+  },
+  "en:George S. Patton": {
+   "be": "Джордж Сміт Патан",
+   "ru": "Паттон, Джордж Смит",
+   "desc": "United States Army general (1885–1945)",
+   "qid": "Q186492",
+   "type": "human",
+   "sex": "м",
+   "note": "",
+   "checked": "2026-11-22"
   },
   "en:Giza": {
    "be": "Гіза",
@@ -461,6 +499,15 @@
    "type": "ancient city, archaeological site, tell",
    "note": "",
    "checked": "2026-11-11"
+  },
+  "en:Okada": {
+   "be": null,
+   "ru": null,
+   "desc": "Surname list",
+   "qid": "Q47165952",
+   "type": "family name",
+   "note": "",
+   "checked": "2026-11-20"
   },
   "en:Passetto di Borgo": {
    "be": "Пасета",

@@ -13,6 +13,7 @@
 | `idtech` | Indiana Jones and the Great Circle | `lang/strings` мовы, якую займае беларуская, у кантэйнеры `.resources` (id Tech 7): новыя даныя — у канец таго ж файла, хэшы FarmHash кантэйнера пералічваюцца |
 | `telltale` | The Wolf Among Us | `.landb` у `.ttarch2` → наборы-перавызначэнні BelLoc побач з архівамі гульні; бітмапавыя шрыфты, Lua, надпісы на тэкстурах |
 | `csv-folder` | Esoteric Ebb | гульня сама чытае папку мовы з CSV па ID — пішам сваю папку |
+| `battletech-csv` | BATTLETECH | плоская табліца `strings_<культура>.csv` (2 слупкі, `U+001F`, `\n`): наш тэкст — у калонку рускай мовы; крыніца па радку EN → DE; субтытры — `subtitles.csv` (`file, idx, bel, note`) у рэпазіторыі, `<відэа>-Russian.srt` з `.orig`/`.bel` пры apply; TMP 1.x шрыфты і `RussianFontLocTable` — `battletech_csv/fonts.py` |
 | `paradox` | (Crusader Kings III — праверана, перакладу няма) | `localization/replace/…` — толькі нашы `.yml` |
 
 Файлы гульні, якія мы перапісваем, захоўваюцца побач як `<файл>.orig`, а `<файл>.bel` —
@@ -59,6 +60,7 @@ SHA-256 таго, што мы запісалі (`core/belloc/install/target.py`)
 | ёсць TTF/OTF (мод кладзе свае шрыфты) | `belloc ttf-glyphs <папка> --apply`: І/і → гліфы лацінскіх I/i у cmap. Ў/ў так не зробіш |
 | дынамічны шрыфт Unity (TTF у асеце Font) | `unity_textasset_csv/dyn_fonts.py`: І/і — cmap, Ў/ў — у + брэвіс з й |
 | статычны TMP-атлас у бандле (TTF няма) | `unity_localization/tmp_fonts.py`: І/і — спасылкі на гліфы I/i; Ў/ў — SDF у/У + брэвіс з й/Й; атлас расце ўверх |
+| статычны TMP **1.x** атлас у `.assets`/`.resS` (BATTLETECH) | `battletech_csv/fonts.py`: свой кодэк TMP 1.x, І/і/Ў/ў у слаты `щ ъ Щ Ъ`, слайсы 512×512 у `.resS`, пары `FontLocTable` з `fontmap.json` |
 | шрыфты ў `.ufont` Unreal | `unreal_locres/fonts.py`: гліфы з іншага шрыфта гульні з кірыліцай |
 | бітмапавыя шрыфты (Telltale `.font`) | `telltale/font.py`: літары малююцца з вольнага TTF (OFL) у атлас; TTF ляжаць у `games/<гульня>/fonts/` з `OFL.txt` і едуць ва ўсталёўшчык як `assets` |
 

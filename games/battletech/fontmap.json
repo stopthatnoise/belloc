@@ -1,0 +1,19 @@
+{
+ "_about": "Дадатковыя пары для RussianFontLocTable у BATTLETECH 1.9.1. Галоўнае меню (CAMPAIGN, CAREER, CREDITS) і частка інтэрфейсу выкарыстоўваюць шрыфты UnitedSans* без кірыліцы, якіх няма ў штатнай табліцы. Пары пераключаюць іх на Kairos RU, дзе ёсць І/і/Ў/ў. Гэта не тэкст гульні: толькі поўныя назвы шрыфтоў; pathID вызначаюцца з resources.assets пры патчы (belloc patch → battletech_csv/fonts.py; лакальны прататып — local/battletech/tools/fontmap_patch.py).",
+ "table": "RussianFontLocTable",
+ "culture": "ru-RU",
+ "pairs": [
+  ["UnitedSansExt-Black SDF", "Kairos Sans W1G SDF RU"],
+  ["UnitedSansExt-Bold SDF", "Kairos Sans W1G ExtraBold SDF RU"],
+  ["UnitedSansExt-Light SDF", "Kairos Sans W1G Ext SDF RU"],
+  ["UnitedSansExt-Medium SDF", "Kairos Sans W1G Ext Medium SDF RU"],
+  ["UnitedSansReg-Black SDF", "Kairos Sans W1G ExtraBold SDF RU"],
+  ["UnitedSansReg-Medium SDF", "Kairos Sans W1G SDF RU"],
+  ["UnitedSansReg-Thin SDF", "Kairos Sans W1G ExtraBold SDF RU"],
+  ["UnitedSansSemiExt-Bold SDF", "Kairos Sans W1G Ext Medium SDF RU"],
+  ["UnitedSansSemiExt-Light SDF", "Kairos Sans W1G Ext SDF RU"],
+  ["UnitedSansSemiExt-Medium SDF", "Kairos Sans W1G Ext SDF RU"],
+  ["UnitedSansSemiExt-Thin SDF", "Kairos Sans W1G Ext SDF RU"],
+  ["UnitedSerifReg-Black SDF", "Kairos Sans W1G ExtraBold SDF RU"]
+ ]
+}

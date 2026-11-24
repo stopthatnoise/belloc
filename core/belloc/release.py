@@ -163,7 +163,7 @@ def game_texts(loc: Loc) -> set[str]:
     """Радкі арыгінала і падказак з local/<гульня>/source/, якіх няма сярод нашых перакладаў."""
     ours = {v for kv in tables.translation_by_key(loc).values() for v in kv.values()}
     out = set()
-    for lang in [loc.source_lang] + tables.hint_langs(loc):
+    for lang in tables.source_langs(loc):
         p = os.path.join(loc.source, f"{lang}.json")
         if os.path.exists(p):
             with open(p, encoding="utf-8") as f:
