@@ -1,0 +1,680 @@
+{
+  "ui_menu": {
+    "wave": 1,
+    "title": "Меню, налады і інтэрфейс",
+    "rows": [
+      {
+        "table": "system",
+        "match": "^menu/"
+      }
+    ]
+  },
+  "ui_system": {
+    "wave": 1,
+    "title": "Астатні сістэмны тэкст",
+    "rows": [
+      {
+        "table": "system"
+      }
+    ]
+  },
+  "items": {
+    "wave": 2,
+    "title": "Прадметы і мадыфікатары навыкаў",
+    "rows": [
+      {
+        "table": "entities"
+      }
+    ]
+  },
+  "dialogue_01": {
+    "wave": 3,
+    "title": "Дыялогі, частка 1 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          0,
+          1343
+        ]
+      }
+    ]
+  },
+  "dialogue_02": {
+    "wave": 3,
+    "title": "Дыялогі, частка 2 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          1343,
+          2766
+        ]
+      }
+    ]
+  },
+  "dialogue_03": {
+    "wave": 3,
+    "title": "Дыялогі, частка 3 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          2766,
+          4028
+        ]
+      }
+    ]
+  },
+  "dialogue_04": {
+    "wave": 3,
+    "title": "Дыялогі, частка 4 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          4028,
+          5410
+        ]
+      }
+    ]
+  },
+  "dialogue_05": {
+    "wave": 3,
+    "title": "Дыялогі, частка 5 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          5410,
+          6771
+        ]
+      }
+    ]
+  },
+  "dialogue_06": {
+    "wave": 3,
+    "title": "Дыялогі, частка 6 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          6771,
+          8001
+        ]
+      }
+    ]
+  },
+  "dialogue_07": {
+    "wave": 3,
+    "title": "Дыялогі, частка 7 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          8001,
+          9398
+        ]
+      }
+    ]
+  },
+  "dialogue_08": {
+    "wave": 3,
+    "title": "Дыялогі, частка 8 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          9398,
+          10841
+        ]
+      }
+    ]
+  },
+  "dialogue_09": {
+    "wave": 3,
+    "title": "Дыялогі, частка 9 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          10841,
+          12183
+        ]
+      }
+    ]
+  },
+  "dialogue_10": {
+    "wave": 3,
+    "title": "Дыялогі, частка 10 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          12183,
+          13496
+        ]
+      }
+    ]
+  },
+  "dialogue_11": {
+    "wave": 3,
+    "title": "Дыялогі, частка 11 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          13496,
+          14955
+        ]
+      }
+    ]
+  },
+  "dialogue_12": {
+    "wave": 3,
+    "title": "Дыялогі, частка 12 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          14955,
+          16340
+        ]
+      }
+    ]
+  },
+  "dialogue_13": {
+    "wave": 3,
+    "title": "Дыялогі, частка 13 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          16340,
+          17577
+        ]
+      }
+    ]
+  },
+  "dialogue_14": {
+    "wave": 3,
+    "title": "Дыялогі, частка 14 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          17577,
+          18962
+        ]
+      }
+    ]
+  },
+  "dialogue_15": {
+    "wave": 3,
+    "title": "Дыялогі, частка 15 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          18962,
+          20308
+        ]
+      }
+    ]
+  },
+  "dialogue_16": {
+    "wave": 3,
+    "title": "Дыялогі, частка 16 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          20308,
+          21680
+        ]
+      }
+    ]
+  },
+  "dialogue_17": {
+    "wave": 3,
+    "title": "Дыялогі, частка 17 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          21680,
+          23039
+        ]
+      }
+    ]
+  },
+  "dialogue_18": {
+    "wave": 3,
+    "title": "Дыялогі, частка 18 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          23039,
+          24299
+        ]
+      }
+    ]
+  },
+  "dialogue_19": {
+    "wave": 3,
+    "title": "Дыялогі, частка 19 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          24299,
+          25672
+        ]
+      }
+    ]
+  },
+  "dialogue_20": {
+    "wave": 3,
+    "title": "Дыялогі, частка 20 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          25672,
+          27267
+        ]
+      }
+    ]
+  },
+  "dialogue_21": {
+    "wave": 3,
+    "title": "Дыялогі, частка 21 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          27267,
+          28445
+        ]
+      }
+    ]
+  },
+  "dialogue_22": {
+    "wave": 3,
+    "title": "Дыялогі, частка 22 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          28445,
+          29790
+        ]
+      }
+    ]
+  },
+  "dialogue_23": {
+    "wave": 3,
+    "title": "Дыялогі, частка 23 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          29790,
+          31129
+        ]
+      }
+    ]
+  },
+  "dialogue_24": {
+    "wave": 3,
+    "title": "Дыялогі, частка 24 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          31129,
+          32486
+        ]
+      }
+    ]
+  },
+  "dialogue_25": {
+    "wave": 3,
+    "title": "Дыялогі, частка 25 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          32486,
+          33926
+        ]
+      }
+    ]
+  },
+  "dialogue_26": {
+    "wave": 3,
+    "title": "Дыялогі, частка 26 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          33926,
+          35212
+        ]
+      }
+    ]
+  },
+  "dialogue_27": {
+    "wave": 3,
+    "title": "Дыялогі, частка 27 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          35212,
+          36632
+        ]
+      }
+    ]
+  },
+  "dialogue_28": {
+    "wave": 3,
+    "title": "Дыялогі, частка 28 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          36632,
+          37948
+        ]
+      }
+    ]
+  },
+  "dialogue_29": {
+    "wave": 3,
+    "title": "Дыялогі, частка 29 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          37948,
+          39042
+        ]
+      }
+    ]
+  },
+  "dialogue_30": {
+    "wave": 3,
+    "title": "Дыялогі, частка 30 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          39042,
+          40631
+        ]
+      }
+    ]
+  },
+  "dialogue_31": {
+    "wave": 3,
+    "title": "Дыялогі, частка 31 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          40631,
+          41922
+        ]
+      }
+    ]
+  },
+  "dialogue_32": {
+    "wave": 3,
+    "title": "Дыялогі, частка 32 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          41922,
+          43311
+        ]
+      }
+    ]
+  },
+  "dialogue_33": {
+    "wave": 3,
+    "title": "Дыялогі, частка 33 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          43311,
+          44496
+        ]
+      }
+    ]
+  },
+  "dialogue_34": {
+    "wave": 3,
+    "title": "Дыялогі, частка 34 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          44496,
+          45877
+        ]
+      }
+    ]
+  },
+  "dialogue_35": {
+    "wave": 3,
+    "title": "Дыялогі, частка 35 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          45877,
+          47504
+        ]
+      }
+    ]
+  },
+  "dialogue_36": {
+    "wave": 3,
+    "title": "Дыялогі, частка 36 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          47504,
+          48849
+        ]
+      }
+    ]
+  },
+  "dialogue_37": {
+    "wave": 3,
+    "title": "Дыялогі, частка 37 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          48849,
+          50103
+        ]
+      }
+    ]
+  },
+  "dialogue_38": {
+    "wave": 3,
+    "title": "Дыялогі, частка 38 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          50103,
+          51414
+        ]
+      }
+    ]
+  },
+  "dialogue_39": {
+    "wave": 3,
+    "title": "Дыялогі, частка 39 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          51414,
+          52812
+        ]
+      }
+    ]
+  },
+  "dialogue_40": {
+    "wave": 3,
+    "title": "Дыялогі, частка 40 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          52812,
+          54191
+        ]
+      }
+    ]
+  },
+  "dialogue_41": {
+    "wave": 3,
+    "title": "Дыялогі, частка 41 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          54191,
+          55576
+        ]
+      }
+    ]
+  },
+  "dialogue_42": {
+    "wave": 3,
+    "title": "Дыялогі, частка 42 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          55576,
+          56868
+        ]
+      }
+    ]
+  },
+  "dialogue_43": {
+    "wave": 3,
+    "title": "Дыялогі, частка 43 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          56868,
+          58214
+        ]
+      }
+    ]
+  },
+  "dialogue_44": {
+    "wave": 3,
+    "title": "Дыялогі, частка 44 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          58214,
+          59581
+        ]
+      }
+    ]
+  },
+  "dialogue_45": {
+    "wave": 3,
+    "title": "Дыялогі, частка 45 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          59581,
+          60944
+        ]
+      }
+    ]
+  },
+  "dialogue_46": {
+    "wave": 3,
+    "title": "Дыялогі, частка 46 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          60944,
+          62294
+        ]
+      }
+    ]
+  },
+  "dialogue_47": {
+    "wave": 3,
+    "title": "Дыялогі, частка 47 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          62294,
+          63629
+        ]
+      }
+    ]
+  },
+  "dialogue_48": {
+    "wave": 3,
+    "title": "Дыялогі, частка 48 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          63629,
+          65003
+        ]
+      }
+    ]
+  },
+  "dialogue_49": {
+    "wave": 3,
+    "title": "Дыялогі, частка 49 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          65003,
+          66350
+        ]
+      }
+    ]
+  },
+  "dialogue_50": {
+    "wave": 3,
+    "title": "Дыялогі, частка 50 з 50",
+    "rows": [
+      {
+        "table": "dialogue",
+        "slice": [
+          66350,
+          67708
+        ]
+      }
+    ]
+  }
+}
