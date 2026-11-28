@@ -131,7 +131,9 @@ python -X utf8 -m belloc wiki Q<нумар> --alias "<назва>"   # элем�
 ```
 
 - **Лінтэр.** Моўныя праверкі: `spell`, `names`, `ruwords` (галоўны дэтэктар
-  русізмаў), `ruletters`, `rusuffix`, `ushort` (у/ў), `latin`. Білінгвальныя: `tags`,
+  русізмаў), `ruletters`, `rusuffix`, `ushort` (у/ў), `ortho` (немагчымыя ў
+  правапісе спалучэнні ті/ді/рі/жі/ші/чі, де/те/ре, «й» пасля зычнай, 3+ «о» —
+  без слоўніка, таму працуе і на ўласных назвах), `latin`. Білінгвальныя: `tags`,
   `placeholders`, `ws`, `endpunct`, `lenratio`, `dupes`, `untranslated`, `glossary`.
   Лішнія опцыі: `--checks tags,placeholders`, `--skip names`, `--tag-re REGEX`.
   Белы спіс — `core/belloc/lint/allow_common.txt` (агульнае) і `lint_allow.txt` гульні.
